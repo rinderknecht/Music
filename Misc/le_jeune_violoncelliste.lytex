@@ -1,0 +1,36 @@
+%%%-*-latex-*-
+
+\documentclass[11pt,a4paper]{book}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+\usepackage[charter]{mathdesign}
+
+\begin{document}
+
+\chapter {Livre Premier}
+
+\section{Une berceuse (Schubert)}
+
+\lilypondfile{berceuse.ly}
+
+\newpage
+
+\section{Andante (Haydn)}
+
+\lilypondfile{andante.ly}
+
+\newpage
+
+\section{Folia (Corelli's variation)}
+
+\lilypondfile{cordelli.ly}
+
+\newpage
+
+\section{Recercada primera}
+
+\lilypondfile{recercada_primera.ly}
+
+\end{document}
