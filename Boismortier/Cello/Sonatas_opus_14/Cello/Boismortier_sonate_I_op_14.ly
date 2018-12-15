@@ -18,7 +18,7 @@
         \time 4/4
         \key sol \major
         \clef bass
-        re'8 do'8 si8\mordent la8 sol8 sol,8 r4                        % 1
+        re'8 do'8 si8\trill la8 sol8 sol,8 r4                          % 1
         si8 do'8 re'8 sol8 fad8 re8 r4                                 % 2
         re'8 do'16 si16 la8 si16 do'16 si8 la8 do'8 si8                % 3
         la8 sol8 fad8 sol8 la8 re8 r8 sol16 fad16                      % 4
@@ -31,11 +31,11 @@
         re'16 do'16 si16 la16
         si16 la16 sol16 fad16
         mi8\staccato dod'8\staccato
-        re'16 fad16 sol16 la16 si4(si16) si16 la16 sol16 la4           % 8
+        re'16\mp fad16 sol16 la16 si4(si16) si16\< la16 sol16 la4      % 8
         (la16) fad16 sol16 la16 si16 dod'16-1 re'16-2 mi'16            % 9
         la8\staccato re'8\mordent
-        mi8\staccato-1 dod'8\staccato-3
-        re16 mi16 fad16 sol16 la8\staccato la,8\staccato re2           % 10
+        mi8\staccato-1 dod'8\staccato-3\!
+        re16\f mi16 fad16 sol16 la8\staccato la,8\staccato re2         % 10
       }
       \repeat volta 2 {
         r4 r4 re'8 fad16 sol16 la8 re'16 do'16                         % 11
@@ -48,12 +48,14 @@
         mi,8\mf mi16 fad16-2 sold8-4\upbow mi8\upbow                   % 17
         la8 si8 dod'8 la8
         re'8 re16 mi16 fad8\upbow re8\upbow sol8 la8 si8 sol8          % 18
-        do'8 sol8 do'8 si8 la8 sol8 fad8 sol8                          % 19
-        la8 re'8 fad8 sol8 re8 re'8 fad8 sol8                          % 20
-        la8\p si8 do'4. si16\< la16 si4                                % 21
-        (si8)\! la16\mp sol16 la8 mi8 fad8 re8 re'4                    % 22
+        do'8 sol8 do'8 si8 la8\> sol8 fad8 sol8\!                      % 19
+        la8\p re'8 fad8 sol8 re8 re'8 fad8\< sol8                      % 20
+        la8 si8\! do'4.\mf si16\< la16 si4                             % 21
+        (si8)\! la16\f sol16 la8 mi8 fad8 re8 re'4                     % 22
         (re'8) do'16 si16 do'8 re'16 la16 si8\> sol8 la,8 fad8\!       % 23
-        sol8\p la8 sib8 do'8 re'8 mib'8-4 fad-2 sol8-3                 % 24
+        sol8 la8\staccato-\markup{\dynamic p \italic subito}
+        sib8\staccato do'8\staccato re'8\staccato
+        mib'8-4\staccato fad-2\staccato sol8-3\staccato                % 24
         do'8-4 sib8-2 la8 sol8-4 do4 re4                               % 25
         sol,8\f re8 sol8 la8 sib8 do'8 re'8 mib'8-4                    % 26
         fad8-2 sol8 do'8-4 sib8 la8 sol8-4 re8 fad8                    % 27
@@ -69,16 +71,16 @@
         \time 4/4
         \key sol \major
         \clef bass
-        r4 r4 re'8 do'8 si8\mordent la8                              % 1
+        r4 r4 re'8 do'8 si8\trill la8                                % 1
         sol8 sol,8 r4 re'8 do'16 si16 la8 si16 do'16                 % 2
         si8 la16 sol16 fad8 re8 sol8 fa8 mi8 re8                     % 3
         do8 si,8 la,8 sol,8 re8 re'16 do'16 si4                      % 4
         r8 mi'16 re'16 dod'8 re'16 mi'16 la8 sol16 fad16 mi8 la8     % 5
         fad8 re8 r8 fad8 sol8 sol,8 r8 sold8                         % 6
         la8 sol8 fad8 re8 sol,4 la,4                                 % 7
-        re,4 r16 re16 mi16 re16 dod4(dod16) la,16 si,16 dod16        % 8
-        re4 sol,4(sol,8) fad,8 sol,8 la,8                            % 9
-        re16 mi16 fad16 sol16 la8\staccato la,8\staccato re2         % 10
+        re,4\mp r16 re16 mi16 re16 dod4\<(dod16) la,16 si,16 dod16   % 8
+        re4 sol,4(sol,8) fad,8 sol,8 la,8\!                          % 9
+        re16\f mi16 fad16 sol16 la8\staccato la,8\staccato re2       % 10
       }
       \repeat volta 2 {
         re'8 fad16 sol16 la8 re'16 do'16 si8 la16 sol16 fad8 re8     % 11
@@ -89,12 +91,14 @@
         si,4 mi4 la,4 si,4                                           % 16
         mi4\mf r8 mi'8 dod'8 re'16 mi'16 la8 la8                     % 17
         fad8 re8 r8 re'8 si8 do'16 re'16 sol8 sol8                   % 18
-        mi8 do8 r8 sol8 do'8 si8 la8 sol8                            % 19
-        re4 r8 re'8 fad8 sol8 re8 re'8                               % 20
-        fad8\p sol8 fad8 re8 sol4\< r8 sol,8                         % 21
-        do4\mp\! dod4 re8 re,8 r8 si8                                % 22
+        mi8 do8 r8 sol8 do'8\> si8 la8 sol8\!                        % 19
+        re4\p r8 re'8 fad8 sol8 re8\< re'8                           % 20
+        fad8 sol8\! fad8\mf re8 sol4\< r8 sol,8                      % 21
+        do4\!\f dod4 re8 re,8 r8 si8                                 % 22
         mi4 fad4 sol8\> si,8 do8 re8\!                               % 23
-        sol,8\p re8 sol8 la8 sib8 do'8 re'8 mib'8                    % 24
+        sol,8 re8\staccato-\markup{\dynamic p \italic subito}
+        sol8\staccato la8\staccato sib8\staccato
+        do'8\staccato re'8\staccato mib'8\staccato                   % 24
         fad8 sol8 do'8 sib8 la8 sol8 re8 fad8                        % 25
         sol8\f la8 sib8 do'8 re'8 mib'8 fad8 sol8                    % 26
         do'8 sib8 la8 sol8 do4 re4                                   % 27
@@ -114,7 +118,7 @@
       \language "italiano"
       \override Hairpin.to-barline = ##f
       \repeat volta 2 {
-        \tempo Courante
+        \tempo Courante 4 = 70
         \time 3/4
         \key sol \major
         \clef bass
