@@ -18,7 +18,7 @@
         \time 4/4
         \key sol \major
         \clef bass
-        re'8 do'8 si8\trill la8 sol8 sol,8 r4                          % 1
+        re'8 do'8 si8\mordent la8 sol8 sol,8 r4                        % 1
         si8 do'8 re'8 sol8 fad8 re8 r4                                 % 2
         re'8 do'16 si16 la8 si16 do'16 si8 la8 do'8 si8                % 3
         la8 sol8 fad8 sol8 la8 re8 r8 sol16 fad16                      % 4
@@ -52,11 +52,12 @@
         la8\p re'8 fad8 sol8 re8 re'8 fad8\< sol8                      % 20
         la8 si8\! do'4.\mf si16\< la16 si4                             % 21
         (si8)\! la16\f sol16 la8 mi8 fad8 re8 re'4                     % 22
-        (re'8) do'16 si16 do'8 re'16 la16 si8\> sol8 la,8 fad8\!       % 23
+        (re'8) do'16 si16 do'8 re'16 la16 si8 sol8 la,8 fad8           % 23
         sol8 la8\staccato-\markup{\dynamic p \italic subito}
         sib8\staccato do'8\staccato re'8\staccato
         mib'8-4\staccato fad-2\staccato sol8-3\staccato                % 24
-        do'8-4 sib8-2 la8 sol8-4 do4 re4                               % 25
+        do'8-4\staccato sib8-2\staccato la8\staccato
+        sol8-4\staccato do4 re4                                        % 25
         sol,8\f re8 sol8 la8 sib8 do'8 re'8 mib'8-4                    % 26
         fad8-2 sol8 do'8-4 sib8 la8 sol8-4 re8 fad8                    % 27
         sol,16 la,16 si,16 do16 re8\staccato re,8\staccato sol,2       % 28
@@ -71,7 +72,7 @@
         \time 4/4
         \key sol \major
         \clef bass
-        r4 r4 re'8 do'8 si8\trill la8                                % 1
+        r4 r4 re'8 do'8 si8\mordent la8                              % 1
         sol8 sol,8 r4 re'8 do'16 si16 la8 si16 do'16                 % 2
         si8 la16 sol16 fad8 re8 sol8 fa8 mi8 re8                     % 3
         do8 si,8 la,8 sol,8 re8 re'16 do'16 si4                      % 4
@@ -95,11 +96,12 @@
         re4\p r8 re'8 fad8 sol8 re8\< re'8                           % 20
         fad8 sol8\! fad8\mf re8 sol4\< r8 sol,8                      % 21
         do4\!\f dod4 re8 re,8 r8 si8                                 % 22
-        mi4 fad4 sol8\> si,8 do8 re8\!                               % 23
+        mi4 fad4 sol8 si,8 do8 re8                                   % 23
         sol,8 re8\staccato-\markup{\dynamic p \italic subito}
         sol8\staccato la8\staccato sib8\staccato
         do'8\staccato re'8\staccato mib'8\staccato                   % 24
-        fad8 sol8 do'8 sib8 la8 sol8 re8 fad8                        % 25
+        fad8\staccato sol8\staccato do'8\staccato sib8\staccato
+        la8 sol8 re8 fad8                                            % 25
         sol8\f la8 sib8 do'8 re'8 mib'8 fad8 sol8                    % 26
         do'8 sib8 la8 sol8 do4 re4                                   % 27
         sol,16 la,16 si,16 do16 re8\staccato re,8\staccato sol,2     % 28
@@ -158,13 +160,13 @@
         re'8\staccato mi8\staccato dod'8\staccato                              % 21
         re8\staccato mi8\staccato fad8\staccato
         sol8\staccato la8\staccato fad8\staccato                               % 22
-        si8\downbow sol16\downbow la16 si16 la16 sol16 la16
+        si8\downbow \breathe sol16\downbow la16 si16 la16 sol16 la16
         si16 la16 sol16 si16                                                   % 23
-        la8\downbow fad16\downbow sol16
+        la8\downbow \breathe fad16\downbow sol16
         la16 sol16 fad16 sol16 la16 sol16 fad16 la16                           % 24
-        sol8\downbow mi16\downbow fad16
+        sol8\downbow \breathe mi16\downbow fad16
         sol16 fad16 mi16 fad16 sol16 fad16 mi16 sol16                          % 25
-        fad8\staccato re'8\staccato dod'8\staccato
+        fad8\staccato\f re'8\staccato dod'8\staccato
         re'8\staccato mi8\staccato dod'8\staccato                              % 26
         re'2 s4                                                                % 27
       }
@@ -201,10 +203,13 @@
         mi8 dod16 re16 mi8 dod8 mi8 dod8                                      % 20
         re8 sol8 la4 la,4                                                     % 21
         re8 dod8 re8 mi8 fad8 re8                                             % 22
-        sol8 mi16 fad16 sol16 fad16 mi16 fad16 sol16 fad16 mi16 sol16         % 23
-        fad8 re16 mi16 fad16 mi16 re16 mi16 fad16 mi16 re16 fad16             % 24
-        mi8 dod16 re16 mi16 re16 dod16 re16 mi16 re16 dod16 mi16              % 25
-        re8 sol,8 la,4 la,4                                                   % 26
+        sol8 \breathe mi16 fad16 sol16 fad16
+        mi16 fad16 sol16 fad16 mi16 sol16                                     % 23
+        fad8 \breathe re16 mi16 fad16 mi16
+        re16 mi16 fad16 mi16 re16 fad16                                       % 24
+        mi8 \breathe dod16 re16 mi16 re16 dod16
+        re16 mi16 re16 dod16 mi16                                             % 25
+        re8\f sol,8 la,4 la,4                                                 % 26
         re,2 s4                                                               % 27
       }
     }
