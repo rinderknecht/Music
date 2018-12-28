@@ -15,7 +15,7 @@
    \tempo Moderato
    \time 3/4
    \key fa \major
-   \clef bass
+   \clef tenor
    \mark\markup{\musicglyph #"scripts.segno"}
      fa'2-2\downbow la'4-3\flageolet                    % 1
    | re'2-1 fa'4-4                                      % 2
@@ -38,6 +38,7 @@
    | re'4-4 do'4(si4)                                   % 19
    | do'4\((do'8.\>) sib16\) la4\open\!                 % 20
    | do'4-2(fa'4-2) la4-1                               % 21
+   \clef bass
    | sold2-1 la4\open                                   % 22
    | si4-1 do'4.-2(re'8-4)                              % 23
    | si2-1\trill\downbow r4                             % 24
