@@ -216,7 +216,7 @@
      {re4 si,4}>> do4                           % 69
    re4 re,4. re,8                               % 70
    sol,4 sol4 la4                               % 71
-   si4 <<{re4.}\\ {la4.}>> sol8                 % 72
+   si4 <<{re4}\\ {la4.}>> sol8                  % 72
    <<
      \voiceOne re'4
      \new Voice {
