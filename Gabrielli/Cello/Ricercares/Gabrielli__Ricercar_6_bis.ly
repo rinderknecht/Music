@@ -189,14 +189,15 @@
       la8 \(sol8 la8 si8 do'8 la8} \\
      {\phrasingSlurDashed
       fad8 \(mi8 fad8 sol8 la8 fad8}>>            % 43
-  <<{si8\) s8} \\
-   {\autoBeamOff
-    sol16[sol,16]\)
-   la,16 \([si,16] do16\)
-   \autoBeamOn}>>
-   do'16 \(si16 do'16
-   la16\) si16 \(do'16 sol16                        % 44
-   fad8\)sol8 si,8\(do8 re8\) re,8\(                  % 45
+  \autoBeamOff
+  <<{si8\)} \\
+   {sol16[sol,16]\)}>>
+    la,16^\([si,16] do16[\)
+    do'16^\(si16 do'16] la16[\)
+   si16^\(do'16 sol16]
+   \autoBeamOn % 44
+   fad8\) sol8
+  si,8\(do8 re8\) re,8_\(                  % 45
    sol,8\) sol16\( la16
    si8 sol,8 re'8 re,8                          % 46
    sol,2\) si4_v                                    % 47
