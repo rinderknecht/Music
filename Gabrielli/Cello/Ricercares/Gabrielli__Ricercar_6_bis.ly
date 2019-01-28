@@ -22,7 +22,10 @@
    sol16\) si16\(la16 sol16\)
    do'16\(si16 do'16 la16\)
    si16 \(la16 si16 sol16\)
-   fad16 sol16\(mi16 fad16                           % 2
+   \override NoteHead.color = #blue
+   fad16
+   \override NoteHead.color = #black
+   sol16\(mi16 fad16                           % 2
    sol16\) si16\(la16 si16
    mi16\) la16\(sol16 la16
    fad16\) la16\(sol16 la16
@@ -45,8 +48,11 @@
    \(la16\) do'16\(si16 la16\)                       % 7
    si16\(la16 sol16\) si16
    \(la16 sol16 fad16\) la16
-   \(sol16 fad16 mi16\) fad16
-   sol16 la16\(si16 sol16                            % 8
+   \(sol16 fad16 mi16\)
+   \override NoteHead.color = #blue
+   fad16 sol16
+   \override NoteHead.color = #black
+   la16\(si16 sol16                            % 8
    la16\) si16\(do'16 la16
    si16\) sol16\(la16 si16
    mi16\) mi'16\(re'16 mi'16
@@ -79,13 +85,25 @@
    mi16\) la16 \(sol16 la16
    fad16\) la16 \(sol16 la16
    re16\) fad16\(mi16 fad16                          % 16
-   si,16\) sol16\(si16\) sol16
-   mi16\(sol16 do'16\) mi16
-   fad16\(la16 re'16\) la16
+                 si,16\) sol16\(si16\)
+   \override NoteHead.color = #blue
+   sol16
+   \override NoteHead.color = #black
+   mi16\(sol16 do'16\)
+   \override NoteHead.color = #blue
+   mi16
+   \override NoteHead.color = #black
+   fad16\(la16 re'16\)
+   \override NoteHead.color = #blue
+   la16
+   \override NoteHead.color = #black
    si16\(re'16\) sol16\(si16\)                       % 17
    la16\(do'16\) fad16\(la16\)
    sol16\(si16\) mi16\(sol16\)
-   fad16 re16\(mi16 fad16
+   \override NoteHead.color = #blue
+   fad16
+   \override NoteHead.color = #black
+   re16\(mi16 fad16
    si,16\) sol16\(la16 si16                          % 18
    mi16\) do16\( re16 mi16
    la,16\) la16\(si16 do'16_v
@@ -111,28 +129,51 @@
    fad'16\(sol'16\) mi'16\(fad'16\)
    re'16\(mi'16\) do'16\(re'16\)
    si16\(do'16\) la16\(si16\)                        % 24
-   sol16 fad16\(sol16 la16
+   \override NoteHead.color = #blue
+   sol16
+   \override NoteHead.color = #black
+   fad16\(sol16 la16
    sol16 la16\) fad16\(sol16
    la16 sol16 la16 si16\)
-   la16 do'16\(si16 la16\)                          % 25
+   \override NoteHead.color = #blue
+   la16
+   \override NoteHead.color = #black
+   do'16\(si16 la16\)                          % 25
    si16\(la16 sol16 la16\)
    si16\(do'16\) si16\(do'16\)
    la16\(sol16 fad16 sol16\)
    la16\(si16\) la16\(si16\)                        % 26
-   sol16\(fad16 mi16\) si16
+   sol16\(fad16 mi16\)
+   \override NoteHead.color = #blue
+   si16
+   \override NoteHead.color = #black
    mi'16\(re'16 do'16 si16
    do'16 si16 la16 sol16
    fad16 mi16 re16 do16                             % 27
-   si,16 la,16 sol,16\) si,16
+          si,16 la,16 sol,16\)
+   \override NoteHead.color = #blue
+   si,16
+   \override NoteHead.color = #black
    mi16\(fad16 sol16 mi16\)
    la16\(si16 do'16 la16\)
-   \(si16\) la16\(si16\) si,16                         % 28
-   mi8 mi'16\(fad'16
+   \(si16\) la16\(si16\)
+   \override NoteHead.color = #blue
+   si,16                         % 28
+   mi8
+   \override NoteHead.color = #black
+   mi'16\(fad'16
    sol'16_v\) sol16\(si16 sol16
    re'8\) fad'16\(sol'16
    la'16_v\) la16\(re'16 la16                        % 29
-   mi'8\) mi16 fad16
-   \(sol16\) fad16\(sol16\) mi16
+                   mi'8\)
+   \override NoteHead.color = #blue
+   mi16
+   \override NoteHead.color = #black
+   fad16
+   \(sol16\) fad16\(sol16\)
+   \override NoteHead.color = #blue
+   mi16
+   \override NoteHead.color = #black
    si16\(do'16\) si16\(do'16\)
    la16\(si16\) la16\(si16\)                          % 30
    sol16\(la16\) sol16\(la16\)
@@ -146,14 +187,21 @@
    fad8\) sol8\(la8 si8_v
    la8 re8 sol8\) si8\(                              % 33
    mi16\) do'16\(si16 do'16
-   la8.\stopped sol16
-   sol16\) sol,16 si,16\(re16\)
+   la8.\stopped sol16 sol16\)
+   \override NoteHead.color = #blue
+   sol,16
+   \override NoteHead.color = #black
+   si,16\(re16\)
    do16\(mi16\) la,16\(do16\)                         % 34
    si,16\(sol,16\) si,16\(sol,16\)
    re16\(fad16\) mi16\(sol16\)
    fad16\(re16\) la16\(fad16\)
    si16\(sol16\) mi16\(sol16\)                        % 35
-   la16\(fad16\) re16 la16
+   la16\(fad16\)
+   \override NoteHead.color = #blue
+   re16
+   \override NoteHead.color = #black
+   la16
    \(sol16\) mi16\(dod16\) sol16
    \(fad16\) re16\(fad16 la16
    re'16\) re16\(fad16 re16                        % 36
@@ -165,11 +213,7 @@
    <<{\phrasingSlurDashed
       si8\(s8 re8 sol8 si8 sol8}\\
      {\phrasingSlurDashed
-      s8 sol,16\(la,16 si,8 s4.}>>
-   % <<{\phrasingSlurDashed
-   %    si8\(s8 re8 s4.}\\
-   %   {\phrasingSlurDashed
-   %    s8 sol,16\(la,16 si,8 sol8 si8 sol8}>>     % 38
+      s8 sol,16\(la,16 si,8 s4.}>>     % 38
    <<{do'8\)} \\
      {mi8\)}>>
    \stemDown
@@ -198,16 +242,20 @@
    \autoBeamOn % 44
    fad8\) sol8
   si,8\(do8 re8\) re,8_\(                  % 45
-   sol,8\) sol16\( la16
+   sol,8\) sol16\(la16
    si8 sol,8 re'8 re,8                          % 46
-   sol,2\) si4_v                                    % 47
+   sol,2\) si4_v\(                                    % 47
    re'4 dod'4.\stopped re'8                             % 48
-   re'8 la8\(si8\) re8\(mi8\) sol8                    % 49
+   re'8\) la8\(si8\) re8\(mi8\) sol8                    % 49
    \(la8\) dod8\(re8\) fad8\(sol8\) si,8                  % 50
    \(dod8\) mi8\(fad8\) la,8\(si,8\) re8                  % 51
    \(mi8\) si,8\(dod8\) re8\(mi8\) fad8                   % 52
-   \(sol8\) la8\(si8\) sol8\(la8\) la,8                   % 53
-   re4. re'8 \(mi'8 si8                           % 54
+  \(sol8\) la8\(si8\) sol8\(la8\)
+   \override NoteHead.color = #blue
+  la,8                   % 53
+  re4.
+   \override NoteHead.color = #black
+  re'8 \(mi'8 si8                           % 54
    do'8 si8 do'8 la8\)
    re'16 \(do'16 re'16 la16\)                       % 55
    si16 \(do'16 si16 la16\)
@@ -219,7 +267,11 @@
    sol16\) re16 \(mi16 fad16
    sol16 fad16 mi16 fad16
    sol16 la16 si16 do'16                        % 58
-   re'4\) re,4 si4\(                                % 59
+                  re'4\)
+   \override NoteHead.color = #blue
+  re,4
+   \override NoteHead.color = #black
+  si4\(                                % 59
    do'8 mi,8 do,4\) mi'4                          % 60
    \(re'8 re8 si,4\) re'4                           % 61
    \(do'8 do8 la,4\) do'4\(                           % 62
@@ -237,14 +289,21 @@
    sol,4 sol4\(la4                               % 71
    si4 <<{re4}\\ {la4.}>> sol8\)                  % 72
    <<
-     \voiceOne re'4
+     \voiceOne
+     \override NoteHead.color = #blue
+     re'4
+     \override NoteHead.color = #black
      \new Voice {
        \phrasingSlurDashed
-       \voiceTwo si16 si16^\(la16 si16 sol16\)
+       \voiceTwo
+       \override NoteHead.color = #blue
+       si16
+       \override NoteHead.color = #black
+       si16^\(la16 si16 sol16\)
        si16^\(la16 si16 mi16\)
        sol16^\(fad16 mi16                        % 73
                fad16\)
-     la16^\(sol16 la16 fad16\)
+       la16^\(sol16 la16 fad16\)
      la16^\(sol16 la16 red16\)
      la16^\(sol16 fad16                       % 74
            sol16\)
@@ -256,20 +315,12 @@
        \voiceThree
        \stemDown
        \shiftOff
+       \override NoteHead.color = #blue
        sol,4
+       \override NoteHead.color = #black
      }
    >>
    \oneVoice
-%    si16\(la16 si16 mi16\)
-%    sol16 \(fad16 mi16                        % 73
-%            fad16\)
-%    la16 \(sol16 la16 fad16\)
-%    la16 \(sol16 la16 red16\)
-%    la16 \(sol16 fad16                       % 74
-%           sol16\)
-%    si16 \(la16 si16 mi16\)
-%    mi'16 \(re'16 mi'16 si16\)
-%    re'16 \(do'16 si16\)                        % 75
    do'16 \(re'16 do'16 re'16
    do'16 re'16 do'16 re'16
    mi'16 re'16 do'16 si16\)                       % 76
@@ -279,17 +330,29 @@
    fad16 \(sol16 fad16 sol16
    fad16 sol16 fad16 sol16
    la16 sol16 fad16 mi16\)                        % 78
-   red8 si8 \(mi8 la,8 si,8 si8\)                 % 79
-   mi4. mi'8 \(re'8 do'8\)                        % 80
+   \override NoteHead.color = #blue
+  red8
+   \override NoteHead.color = #black
+  si8 \(mi8 la,8 si,8 si8\)                 % 79
+   \override NoteHead.color = #blue
+  mi4.
+   \override NoteHead.color = #black
+  mi'8 \(re'8 do'8\)                        % 80
    <<{\phrasingSlurDashed
       \stemDown
-     re'8 s4 re'8\(do'8 si8\)}\\
+      \override NoteHead.color = #blue
+      re'8
+      \override NoteHead.color = #black
+      s4 re'8\(do'8 si8\)}\\
      {\phrasingSlurDashed
       \stemUp
       s8 si,8\(sol,8\) s4.}>>                 % 81
    <<{\phrasingSlurDashed
       \stemDown
-      do'8 s4 do'8\(si8 la8\)}\\
+      \override NoteHead.color = #blue
+      do'8
+      \override NoteHead.color = #black
+      s4 do'8\(si8 la8\)}\\
      {\phrasingSlurDashed
       \stemUp
       s8 la,8\(fad,8\) s4.}>>                 % 82

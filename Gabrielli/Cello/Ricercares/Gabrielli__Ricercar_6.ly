@@ -75,7 +75,7 @@
    la16 fad16 mi16 fad16
    re16 si16 la16 si16
    sol16 mi16 re16 mi16                         % 15
-   mi16 la16 sol16 la16
+   do16 la16 sol16 la16
    mi16 la16 sol16 la16
    fad16 la16 sol16 la16
    re16 fad16 mi16 fad16                        % 16
