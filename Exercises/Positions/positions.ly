@@ -42,7 +42,7 @@
 
    % Ligne 2
 
-   \repeat volta 2 { do'4-2 mi'4 si4  do'4 | mi'4-3 fa'4 re'4 mi'4 }
+   \repeat volta 2 { do'4-2 re'4 si4  do'4 | mi'4-3 fa'4 re'4 mi'4 }
    \repeat volta 2 { re'4-4 do'4 si4  re'4 | fa'4-4 mi'4 re'4 fa'4 }
    \repeat volta 2 { re'4-4 si4  do'4 re'4 | fa'4-4 re'4 mi'4 fa'4 }
 
@@ -58,7 +58,7 @@
 
    % Ligne 2
 
-   \repeat volta 2 { do'4-2 mi'4 si4  do'4 | fa'4-2  sol'4 mi'4 fa'4  }
+   \repeat volta 2 { do'4-2 re'4 si4  do'4 | fa'4-2  sol'4 mi'4 fa'4  }
    \repeat volta 2 { re'4-4 do'4 si4  re'4 | sol'4-4 fa'4  mi'4 sol'4 }
    \repeat volta 2 { re'4-4 si4  do'4 re'4 | sol'4-4 mi'4  fa'4 sol'4 }
 
