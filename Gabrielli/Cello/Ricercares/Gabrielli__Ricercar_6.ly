@@ -6,6 +6,20 @@
   composer = "Domenico Gabrielli (1689)"
 }
 
+ringsps = #"
+  0.15 setlinewidth
+  0.9 0.6 moveto
+  0.4 0.6 0.5 0 361 arc
+  stroke
+  1.0 0.6 0.5 0 361 arc
+  stroke
+  "
+
+vibrato = \markup {
+  \with-dimensions #'(-0.2 . 1.6) #'(0 . 1.2)
+  \postscript #ringsps
+}
+
 \score {
   \new Staff
    \with {instrumentName = #"Cello "}
@@ -31,9 +45,9 @@
    la16 sol16 fad16 mi16
    re16 re'16 do'16 re'16
    si16 sol16 la16 si16                         % 4
-   do'16_\markup{v} do'16 si16 do'16
+   do'16^\vibrato do'16 si16 do'16
    la16 fad16 sol16 la16
-   si16_\markup{v} si16 la16 si16
+   si16^\vibrato si16 la16 si16
    sol16 mi16 fad16 sol16                       % 5
    la16 la16 sol16 la16
    fad16 re16 mi16 fad16
@@ -51,9 +65,9 @@
    si16 sol16 la16 si16
    mi16 mi'16 re'16 mi'16
    do'16 la16 si16 do'16                        % 9
-   re'16_\markup{v} re'16 do'16 re'16
+   re'16^\vibrato re'16 do'16 re'16
    si16 sol16 la16 si16
-   do'16_\markup{v} si16 la16 sol16
+   do'16^\vibrato si16 la16 sol16
    re'16 do'16 re'16 re16                       % 10
    sol16 re'16 do'16 re'16
    mi'16 sol16 fad16 sol16
@@ -86,12 +100,12 @@
    la16 do'16 fad16 la16
    sol16 si16 mi16 sol16
    fad16 re16 mi16 fad16
-   si,16 sol16 la16 si16_\markup{v}             % 18
+   si,16 sol16 la16 si16^\vibrato             % 18
    mi16 do16 re16 mi16
-   la,16 la16 si16 do'16_\markup{v}
+   la,16 la16 si16 do'16^\vibrato
    si16 sol,16 la,16 si,16
    la,16 la16 si16 do'16                        % 19
-   re'16_\markup{v} fad16 mi16 re16
+   re'16^\vibrato fad16 mi16 re16
    sol16\p si,16 la,16 sol,16
    do16 mi16 re16 do16
    re16 fad16 mi16 re16                         % 20
@@ -103,7 +117,7 @@
    do'16 mi'16 re'16 do'16
    re'16 fad'16 mi'16 re'16
    mi'16 sol'16 fad'16 mi'16             % 22
-   fad'16_\markup{v} re16 mi16 fad16
+   fad'16^\vibrato re16 mi16 fad16
    sol16  fad16 mi16 re16
    do16 mi16 re16 do16
    re8 re,8                                     % 23
@@ -140,14 +154,14 @@
    si16 do'16 si16 do'16
    la16 si16 la16 si16                          % 30
    sol16 la16 sol16 la16
-   fad8.\stopped mi16_\markup{v}
+   fad8.\stopped mi16^\vibrato
    mi16 mi'16 mi'16 mi'16
    mi'16 re'16 do'16 si16                       % 31
-   la16 re'16_\markup{v} re'16 re'16
+   la16 re'16^\vibrato re'16 re'16
    re'16 do'16 si16 la16
-   sol16 do'16_\markup{v} do'16 do'16
+   sol16 do'16^\vibrato do'16 do'16
    do'16 si16 la16 sol16                        % 32
-   fad8 sol8 la8 si8_\markup{v}
+   fad8 sol8 la8 si8^\vibrato
    la8 re8 sol8 si8                             % 33
    mi16 do'16 si16 do'16
    la8.\stopped sol16
@@ -188,7 +202,7 @@
    fad8 sol8 si,8 do8 re8 re,8                  % 45
    sol,8 sol16 la16
    si8\upbow sol,8\upbow re'8 re,8              % 46
-   sol,2 si4_\markup{v}                         % 47
+   sol,2 si4^\vibrato                         % 47
    re'4 dod'4.\stopped re'8                     % 48
    re'8 la8 si8 re8 mi8 sol8                    % 49
    la8 dod8 re8 fad8 sol8 si,8                  % 50

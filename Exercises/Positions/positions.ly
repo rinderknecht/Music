@@ -86,7 +86,7 @@
 
    \repeat volta 2 { mi4-1 fa4 sol4 mi4 | sol4-1 la4 si4 sol4 }
    \repeat volta 2 { mi4-1 sol4 fa4 mi4 | sol4-1 si4 la4 sol4 }
-   \repeat volta 2 { fa4-1 mi4 sol4 fa4 | la4 sol4-1 si4 la4  }
+   \repeat volta 2 { fa4 mi4-1 sol4 fa4 | la4 sol4-1 si4 la4  }
 
    % Ligne 2
 
@@ -138,7 +138,7 @@
 
    \repeat volta 2 { si,4-3 do4  la,4 si,4 | re4 mi4 do4-1 re4 }
    \repeat volta 2 { do4-4  si,4 la,4 do4  | mi4 re4 do4-1 mi4 }
-   \repeat volta 2 { do4-4  la,4 si,4 do4  | mi4 do4-1 re4 do4 }
+   \repeat volta 2 { do4-4  la,4 si,4 do4  | mi4 do4-1 re4 mi4 }
 
    \break
 
