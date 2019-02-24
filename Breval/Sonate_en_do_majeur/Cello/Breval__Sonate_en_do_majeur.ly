@@ -49,9 +49,11 @@ allonger = \markup {
         sol2.-> la8\(si8\)                                % 11
         re'8\(do'8\) si\(la8\) sol8\(fad8\) mi8\(fad8\)   % 12
         sol4.\(fad16 mi16 re4\) re'4                      % 13
-        si4 si4 re'8^\allonger\<\(do'8\) si8 do'8        % 14
+        si4 si4 re'8^\allonger\<\(do'8\)
+        si8\tenuto do'8\tenuto                            % 14
         re'2.\!\> do'8 si8\!                              % 15
-        la4 la4 do'8^\allonger\(si8\) la8 si8            % 16
+        la4 la4 do'8^\allonger\(si8\)
+        la8\tenuto si8\tenuto                             % 16
         do'2.\> la4\!\downbow\f\(                         % 17
         si4\) do'4\turn\(re'4\) la4\p\(                   % 18
         si4\) do'4\turn\(re'4\) la4\(                     % 19
@@ -61,7 +63,8 @@ allonger = \markup {
         r4                                                % 21
         \mark \default
         do'4.->\downbow\(la8\) sol8\(fad8 mi8 fad8\)      % 22
-        sol8\<\(re8\) mi8 fad8 sol8\(la8\) si8 re'8\!     % 23
+        sol8\<\(re8\) mi8\tenuto fad8\tenuto
+        sol8\(la8\) si8\tenuto re'8\tenuto\!              % 23
         do'4.->\(la8\) sol8\>\(fad8 mi8 fad8\)            % 24
         sol4\!
         \tupletDown
@@ -120,36 +123,42 @@ allonger = \markup {
       re'2.-> do'8(si8)                                   % 40
       si8(la8) do'8(la8) sol8(fad8) mi8(fad8)             % 41
       sol4.\>(fad16 mi16 re4) re'4\p\upbow\!              % 42
-      si4 si4 re'8(do'8) si8 do'8                         % 43
+      si4_\markup{\italic{allonger, touche}}
+      si4 re'8^\allonger(do'8)
+      si8\tenuto do'8\tenuto                              % 43
       re'2. do'8\downbow si8                              % 44
-      la4 la4 do'8^\allonger(si8) la8 si8                 % 45
+      la4 la4 do'8^\allonger(si8)
+      la8\tenuto si8\tenuto                               % 45
       do'2.\upbow(do'4\tenuto)                            % 46
-      do'8\downbow^\allonger(si8) si2(do'4)               % 47
+      do'8^\allonger\downbow(si8) si2(do'4)               % 47
       \appoggiatura re'8 do'8(si8) si2(do'4)              % 48
       do'16\<\downbow(si8.) si16\upbow(do'8.)
       do'16\downbow(si8.) si16\upbow(la8.)                % 49
       la8-2(sold8-1) si8-4(sold8)\!
       mi4-4^\markup{\teeny III}
       mi4-1^\markup{\teeny II}\mf                         % 50
-      la4\downbow la4 do'8\downbow^\allonger(si8)
-      la8 si8                                             % 51
+      la4\downbow la4
+      do'8\downbow^\allonger(si8)
+      la8\tenuto si8\tenuto                               % 51
       do'4.(si8) la4 mi4                                  % 52
-      si4 si4 re'8(do'8) si8 do'8                         % 53
+      si4 si4 re'8(do'8)
+      si8\tenuto do'8\tenuto                              % 53
       re'4.\>(do'8) si4\! mi4\upbow\p                     % 54
       \mark \default
       la8\open(do'8 si8 la8 sold8-4)
       mi8(fad8-2 sold8)                                   % 55
-      la8\open(do'8 si8 la8 sold8-4)
+      la8\downbow\open(do'8 si8 la8 sold8-4)
       mi8(fad8-2 sold8)                                   % 56
       la8\< si8 do'8 re'8-1 mi'8-3\!
       r8 fa'4-4\>(                                        % 57
       re'8-1)\! r8 mi'4-3\>(do'8-2)\! r8 re'4\>(          % 58
       si8)\! r8 mi2->\< fad8(sold8)\!                     % 59
-      la8 si8 do'8-1 re'8 mi'4\! mi'4\f                   % 60
-      mi'8->(re'8 dod'8 re'8) re'4\tenuto(re'4\tenuto)    % 61
+      la8 si8 do'8 re'8-2 mi'4\! mi'4\f                   % 60
+      mi'8->(re'8 dod'8 re'8)
+      re'4\upbow\tenuto(re'4\upbow\tenuto)                % 61
       re'8->(do'8 si8 do'8) do'4\tenuto(do'4\tenuto)      % 62
       \appoggiatura re'8 do'8->(si8) si2->\>(la4)\!       % 63
-      sol8\mf\staccato fad8\staccato
+      sol8\mf\staccato fad8\staccato_\markup{\italic sec}
       sol8\staccato la8\staccato
       si8\staccato la8\staccato
       si8\staccato do'8\staccato                          % 64
@@ -157,11 +166,12 @@ allonger = \markup {
       si8\staccato do'8\staccato
       si8\staccato la8\staccato
       sol8\staccato fa8\staccato                          % 65
-      mi8\staccato^\markup{\italic "rit."}
-      do8\<(re8 mi8) fa8 sol8 la8 si8\!                   % 66
+      mi8^\markup{\italic "rit."}
+      do8\<re8 mi8 fa8 sol8 la8 si8\!                     % 66
       do'2->^\markup{\italic "a tempo"} re'2->            % 67
       do'2->(si4) do'4                                    % 68
-      la4.(si8) re'8(do'8) si8 la8                        % 69
+      la4.(si8) re'8^\allonger(do'8)
+      si8\tenuto la8\tenuto                               % 69
       sol4\>(fa\turn mi4)\! r4                            % 70
     }
 
@@ -195,7 +205,7 @@ allonger = \markup {
         la8 re8 la8 re8 la8 re8 fad8 re8                  % 17
         sol8 re8 la8 re8 si8 re8 fad8\p re8               % 18
         sol8 re8 la8 re8 si8 re8 fad8 re8                 % 19
-        la8 re8 la8 re8 si8 sol8 do8 sol8                 % 20
+        sol8 re8 la8 re8 si8 sol8 do8 sol8                % 20
         re8 re,8 sol,8 si,8 re8 fad8 la8 fad8             % 21
         re2 do2                                           % 22
         si,2 sol,4 si,4                                   % 23
@@ -211,7 +221,7 @@ allonger = \markup {
         sol4 r4 r4 r4                                     % 30
         si,4\f si,4 si,4 si,4                             % 31
         do4 do4 re4 re,4                                  % 32
-        sol4 r4 r4 r4                                     % 33
+        sol,4 r4 r4 r4                                    % 33
         si,4\p si,4 si,4 si,4                             % 34
         do4 do4 re4 re4                                   % 35
         sol8\f re8 sol8 re8 fad8 re8 fad8 re8             % 36

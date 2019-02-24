@@ -29,7 +29,7 @@ vibrato = \markup {
    \time 4/4
    \key sol \major
    \clef bass
-   re'16 do'16 si16 la16
+   re'16\fermata do'16 si16 la16
    sol16 si16 la16 sol16
    fad16 mi16 re16 mi16
    fad16 sol16 la16 fad16                       % 1
@@ -68,8 +68,9 @@ vibrato = \markup {
    re'16^\vibrato re'16 do'16 re'16
    si16 sol16 la16 si16
    do'16^\vibrato si16 la16 sol16
-   re'16 do'16 re'16 re16                       % 10
-   sol16 re'16 do'16 re'16
+   re'16\staccato do'16\staccato
+   re'16\staccato re16\staccato                 % 10
+   sol16\staccato re'16 do'16 re'16
    mi'16 sol16 fad16 sol16
    la16 do'16 si16 do'16
    re'16 fad16 mi16 fad16                       % 11
@@ -154,8 +155,8 @@ vibrato = \markup {
    si16 do'16 si16 do'16
    la16 si16 la16 si16                          % 30
    sol16 la16 sol16 la16
-   fad8.\stopped mi16^\vibrato
-   mi16 mi'16 mi'16 mi'16
+   fad8.\stopped mi16
+   mi16 mi'16^\vibrato mi'16 mi'16
    mi'16 re'16 do'16 si16                       % 31
    la16 re'16^\vibrato re'16 re'16
    re'16 do'16 si16 la16
