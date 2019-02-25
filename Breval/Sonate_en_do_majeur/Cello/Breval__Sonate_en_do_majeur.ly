@@ -134,7 +134,7 @@ retenir = \markup {
       si8(la8) do'8(la8) sol8(fad8) mi8(fad8)             % 41
       sol4.\>(fad16 mi16 re4) re'4\p\upbow\!              % 42
       si4_\markup{\italic{allonger, touche}}
-      si4 re'8(do'8)
+      si4 re'8^\allonger(do'8)
       si8\tenuto^\retenir do'8\tenuto                     % 43
       re'2. do'8\downbow si8                              % 44
       la4 la4 do'8^\allonger(si8)
