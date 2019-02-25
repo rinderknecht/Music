@@ -17,6 +17,16 @@ allonger = \markup {
   }
 }
 
+retenir = \markup {
+  \center-column {
+    \concat{
+      \arrow-head #X #LEFT ##f
+      \hspace #-1
+      \draw-line #'(-4 . 0)
+    }
+  }
+}
+
 \score {
   <<
     \new Staff
@@ -50,10 +60,10 @@ allonger = \markup {
         re'8\(do'8\) si\(la8\) sol8\(fad8\) mi8\(fad8\)   % 12
         sol4.\(fad16 mi16 re4\) re'4                      % 13
         si4 si4 re'8^\allonger\<\(do'8\)
-        si8\tenuto do'8\tenuto                            % 14
+        si8\tenuto^\retenir do'8\tenuto                   % 14
         re'2.\!\> do'8 si8\!                              % 15
         la4 la4 do'8^\allonger\(si8\)
-        la8\tenuto si8\tenuto                             % 16
+        la8\tenuto^\retenir si8\tenuto                    % 16
         do'2.\> la4\!\downbow\f\(                         % 17
         si4\) do'4\turn\(re'4\) la4\p\(                   % 18
         si4\) do'4\turn\(re'4\) la4\(                     % 19
@@ -124,11 +134,11 @@ allonger = \markup {
       si8(la8) do'8(la8) sol8(fad8) mi8(fad8)             % 41
       sol4.\>(fad16 mi16 re4) re'4\p\upbow\!              % 42
       si4_\markup{\italic{allonger, touche}}
-      si4 re'8^\allonger(do'8)
-      si8\tenuto do'8\tenuto                              % 43
+      si4 re'8(do'8)
+      si8\tenuto^\retenir do'8\tenuto                     % 43
       re'2. do'8\downbow si8                              % 44
       la4 la4 do'8^\allonger(si8)
-      la8\tenuto si8\tenuto                               % 45
+      la8\tenuto^\retenir si8\tenuto                      % 45
       do'2.\upbow(do'4\tenuto)                            % 46
       do'8^\allonger\downbow(si8) si2(do'4)               % 47
       \appoggiatura re'8 do'8(si8) si2(do'4)              % 48
@@ -139,10 +149,10 @@ allonger = \markup {
       mi4-1^\markup{\teeny II}\mf                         % 50
       la4\downbow la4
       do'8\downbow^\allonger(si8)
-      la8\tenuto si8\tenuto                               % 51
+      la8\tenuto^\retenir si8\tenuto                      % 51
       do'4.(si8) la4 mi4                                  % 52
-      si4 si4 re'8(do'8)
-      si8\tenuto do'8\tenuto                              % 53
+      si4 si4 re'8^\allonger(do'8)
+      si8\tenuto^\retenir do'8\tenuto                     % 53
       re'4.\>(do'8) si4\! mi4\upbow\p                     % 54
       \mark \default
       la8\open(do'8 si8 la8 sold8-4)
@@ -171,8 +181,71 @@ allonger = \markup {
       do'2->^\markup{\italic "a tempo"} re'2->            % 67
       do'2->(si4) do'4                                    % 68
       la4.(si8) re'8^\allonger(do'8)
-      si8\tenuto la8\tenuto                               % 69
+      si8\tenuto^\retenir la8\tenuto                      % 69
       sol4\>(fa\turn mi4)\! r4                            % 70
+      do'4.\mf(re'8 si8) sol8\>(la8 si8)\!                % 71
+      do'4.\p(re'8 si8) sol8(la 8 si8)                    % 72
+      do'8\downbow^\allonger\<\(si8\)
+      la8\upbow sol8\downbow
+      sol16\upbow\(fa8.\) fa16\upbow\(mi8.\)\!            % 73
+      mi2\>\(re4\)\! r4                                   % 74
+      re'2\downbow si2                                    % 75
+      sol2. fa4                                           % 76
+      re4->\< si,4-> sol,4-> fa,4->\!                     % 77
+      mi,4\f\downbow do'2\downbow(re'4\tenuto\p)          % 78
+      do'8(si8) la8 sol8 sol4 la8(si8)                    % 79
+      do'8\f do'8 do'2 re'8(do'8)                         % 80
+      do'8\>(si8 re'8) do'8 si8 la8 sol8 fa8\!            % 81
+      mi4 mi4 sol8(fa8) mi8 fa8                           % 82
+      sol2. fa8 mi8                                       % 83
+      re4 re4 fa8(mi8) re8 mi8                            % 84
+      fa2. re4\f\downbow(                                 % 85
+      mi4) fa4\turn(sol4) re4\p(                          % 86
+      mi4) fa4\turn\<(sol4)\! re4\f(                      % 87
+      mi8) do'8(si8) do'8\downbow la8 do'8 sol8 do'8      % 88
+      fa8 do'8 mi8 do'8 fa8 do'8 re8 do'8                 % 89
+      mi8\upbow do'8\p\downbow(si8 do'8)
+      la8 do'8 sol8 do'8                                  % 90
+      fa8 do'8 mi8 do'8 fa8 do'8 re8 do'8                 % 91
+      mi4
+      \appoggiatura re'8\downbow
+      \tuplet 3/2 {do'8\f si8 do'8}
+      \tuplet 3/2 {re'8 do'8 si8}
+      \tuplet 3/2 {la8 sol8 fa8}                          % 92
+      \tuplet 3/2 {mi8\upbow do'8\p do'8}
+      \appoggiatura re'8
+      \tuplet 3/2 {do'8 si8 do'8}
+      \tuplet 3/2 {re'8 do'8 si8}
+      \tuplet 3/2 {la8 sol8 fa8}                          % 93
+      \tuplet 3/2 {mi8\upbow do8(re8)\<}
+      \tuplet 3/2 {mi8 fa8 sol8}
+      \tuplet 3/2 {la8 si8 do'8}
+      \tuplet 3/2 {re'8 mi'8 fa'8\!}                      % 94
+      sol'4.\f do'8 si8(do'8) si8(do'8)                   % 95
+      la4.(re'8) do'4 si4\turn(                           % 96
+      do'4)
+      \tuplet 3/2 {do8\p\upbow re8 mi8}
+      \tuplet 3/2 {fa8 mi8 fa8}
+      \tuplet 3/2 {re8 mi8 fa8}                           % 97
+      \tuplet 3/2 {sol8\< fa8 sol8}
+      \tuplet 3/2 {mi8 fa8 sol8}
+      \tuplet 3/2 {la8 si8 do'8}
+      \tuplet 3/2 {si8 do'8 re'8\!}                       % 98
+      \tuplet 3/2 {do'8\> si8 la8}
+      \tuplet 3/2 {sol8 fa8 mi8}
+      \tuplet 3/2 {la8 sol8 fa8}
+      \tuplet 3/2 {mi8 re8 do8\!}                         % 99
+      sol,2.\downbow\((sol,8.) do'16\tenuto\downbow\)     % 100
+      \afterGrace re'1-1\startTrillSpan\upbow\<
+      {do'16-2 re'16-4\stopTrillSpan\!}                   % 101
+      do'4\downbow mi8.\f(fa32 mi32 re4)
+      <<sol,4-> sol4>>                                    % 102
+      mi4 mi8.(re32 mi32 re4)
+      <<sol,4-> sol4>>                                    % 103
+      mi4
+      <<sol,4\ff mi4 do'4\downbow>>
+      <<sol,2 mi2 do'2\downbow>>                          % 103
+      \bar "|."
     }
 
     \new Staff
@@ -260,6 +333,45 @@ allonger = \markup {
       sol4 sol,4 sol4 mi4                                 % 68
       fa4 re4 mi4 do4                                     % 69
       si,4\> si,4 do4 re4\!                               % 70
+      mi4\mf(fad4 sol4) r4                                % 71
+      mi4\p(fad4 sol4) r4                                 % 72
+      mi4 do4 si,4 do4                                    % 73
+      r4 sol4 sol,8 sol8 re8 si,8                         % 74
+      sol,8 re8 si,8 re8 sol,8 re8 si,8 re8               % 75
+      sol,8 re8 si,8 re8 sol,8 re8 si,8 re8               % 76
+      sol,8\<re8 si,8 re8 sol,8 re8 si,8 re8\!            % 77
+      do8\f mi16\upbow(fa16 sol16 fa16 mi16 re16)
+      do4\downbow r4                                      % 78
+      sol2\p fa2                                          % 79
+      mi8\f mi16\upbow(fa16 sol16 fa16 mi16 re16)
+      do4\downbow r4                                      % 80
+      sol4\> sol,4 la,4 si,4\!                            % 81
+      do8 sol,8 do8 sol,8 re8 sol,8 re8 sol,8             % 82
+      mi8 sol,8 mi8 sol,8 mi8 sol,8 re8 do8               % 83
+      si,8 sol,8 si,8 sol,8 do8 sol,8 do8 sol,8           % 84
+      re8 sol,8 re8 sol,8 re8 sol,8 si,8\f sol,8          % 85
+      do8 sol,8 re8 sol,8 mi8 sol,8 si,8\p sol,8          % 86
+      do8 sol,8 re8 sol,8 mi8 sol,8 si,8 sol,8            % 87
+      do4 r4 r4 r4                                        % 88
+      la4\f\downbow sol4 la4 fa4                          % 89
+      do4 r4 r4 r4                                        % 90
+      la4\p sol4 la4 fa4                                  % 91
+      do4 r4 r4 <<sol,4\f fa4>>                           % 92
+      mi4 r4 r4 <<sol,4\p fa4>>                           % 93
+      mi4 r4 r4 r4                                        % 94
+      mi4\mf mi4 mi4 mi4                                  % 95
+      fa4 fa4 sol4 sol,4                                  % 96
+      do4 r4 r4 r4                                        % 97
+      r4 do4\p\< fa4 re4\!                                % 98
+      mi4\> mi4 fa4 fa4\!                                 % 99
+      sol8 sol8 sol8 sol8 sol8 sol8 sol8 sol8             % 100
+      sol,8 sol,8 sol,8 sol,8 sol,8 sol,8 sol,8 sol,8     % 101
+      do8\f sol,8 do8 sol,8 si,8 sol,8 si,8 sol,8         % 102
+      do8\f sol,8 do8 sol,8 si,8 sol,8 si,8 sol,8         % 103
+      do4
+      <<do,4\ff do4\downbow>>
+      <<do,2 do2\downbow>>                                % 104
+      \bar "|."
     }
   >>
 }
