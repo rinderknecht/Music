@@ -24,7 +24,7 @@
           do16 la16 mi16 sol16
           fa16 la'16 re,,16 do'16
           si16 sol16 re16 fa16
-          mi16 sol16 do16 sib16                   % 1
+          mi16 sol'16 do,16 sib16                   % 1
           la16 fa16 do16 mi16
           re16 fa'16 si,,16 la'16
           sold8 mi,8 r16 mi'16 si'16 re16         % 2
@@ -34,7 +34,10 @@
           sol16 si16 re16 fa16                    % 3
           mi16 sol16 mi16 do16
           sol16 do16 re16 si16
-          do8 la,,8
+          do8
+          \clef bass
+          do,,,8
+          \clef treble
           r16 mi'''16 fa32(mi32 re32 do32)        % 4
           sol'16 re16 mi32(re32 dod32 re32)
           mi16 sol,16 la32(sol32 fa32 mi32)
@@ -72,7 +75,7 @@
           re16 si,16 re16 la'16
           sold16 si16 re16 fa16
           mi32 la32(sol32 fa32 mi32 re32 do32 si32)
-          la16 do16 mi,16 fad16                     % 14
+          la16 do16 mi,16 sold16                     % 14
           la,4 r16 la''16 re,,16 do'16
           si16 sol16 re16 fa16
           mi16 sol'16 do,,16 sib'16                  % 15
@@ -113,15 +116,54 @@
           mi16 sol'16 do,,16 sib'16                      % 28
           la16 fa16 do16 mi16
           re16 fa'16 si,,16 la'16
-          sold8
-          \clef bass
-          mi,,8
-          \clef treble
-          r16 mi''16 si'16 re16                          % 29
+          sold8 mi,8
+          r16 mi'16 si'16 re16                          % 29
           do16 la,16 mi'16 sol16
           fa16 la16 do16 mi16
           re16 si,16 re16 la'16
           sol16 si16 re16 fa16                           % 30
+          mi16 sol16 mi16 do16
+          sol16 do16 re16 si16
+          do8
+          \clef bass
+          do,,,8
+          \clef treble
+          r16 mi'''16 fa32(mi32 re32 do32)                  % 31
+          sol'16 re16 mi32(re32 dod32 re32)
+          mi16 sol,16 la32(sol32 fa32 mi32)
+          fa16 re16 fa16 la16
+          re16 fa16 sol32(fa32 mi32 re32)                   % 32
+          la'16 mi16 fad32(mi32 red32 mi32)
+          fad16 la,16 si32(la32 sold32 fad32)
+          sold16 mi16 sold16 si16
+          mi16 sold16 la32(sold32 fad32 mi32)               % 33
+          si'16 re,16 mi32(re32 dod32 re32)
+          fa16 re16 mi32(re32 dod32 re32)
+          sold16 re16 mi32(re32 dod32 re32)
+          si'16 re,16 mi32(re32 do32 si32)                   % 34
+          do16 la'32(sol32 fa32 mi32 re32 do32)
+          si16 la'16 mi,16 sol'16
+          la,16 fa'32(mi32 re32 do32 si32 la32)
+          sol16 fa'16 do,16 mi'16                            % 35
+          fa,16 re'32(do32 si32 la32 sold32 fad32)
+          mi16 re'16 la,16 do'16
+          re,16 do'16 fa16 la,16
+          sib16 re16 fa16 sib16                              % 36
+          \appoggiatura la8
+          sold4\trill(sold16)
+          fad32(sold32 la32 sold32 fad32 sold32)
+          la16 la,32(si32 do32 re32 mi32 fa32)
+          do,16 mi'16 mi,16 sold16                          % 37
+          la,4\fermata r4 r4 r4                             % 38
+          r4 r4 r4 r4                                       % 39
+          r4 r4 r4 r16 re'16 la16 do16                      % 40
+          si16 sol,16 re'16 fad16
+          mi16 sol16 si16 re16
+          do16 la,16 mi'16 sol16
+          fad16 la16 do16 mi16                              % 41
+          re16 sol16 mi16 do16
+          si16 sol'16 re,16 fad'16
+          sol,,4 r4                                         % 42
         }
       }
     }
@@ -170,6 +212,21 @@
         la8 la,8 r8 fa8 sol8 sol,8 r8 mi8          % 28
         fa8 fa,8 r8 re8 mi8 mi,16 fad,16 sold,8 mi,8   % 29
         la,8 la8 r8 la,8 si,8 si8 r8 si,8              % 30
+        do8 mi8 sol8 sol,8 do,8 do16 re16 mi8 do8      % 31
+        si,8 r8 dod8 r8 re8 re16 mi16 fa8 re8          % 32
+        la8 r8 red,8 r8 mi,8 mi16 fad16 sold8 fad8     % 33
+        mi8 fad8 sold8 la8 si8 la8 sold8 mi8           % 34
+        la8 r8 re8 mi8 fa8 r8 si,8 do8                 % 35
+        re8 r8 sold,8 la,8 re,2(                       % 36
+        re,8) re16 do16 re8 si,8 do8 re8 mi8 mi,8      % 37
+        la,8\fermata la16 sold16 la8 fad8
+        red8 sol16 fad16 mi8 re8                       % 38
+        do8 mi16 re16 do8 do'8
+        si8 mi16 re16 do8 si,8                         % 39
+        la,8 la16 sol16 fad8 re8 si,8 do8 re8 re,8     % 40
+        sol,8 sol8 r8 sol, la,8 la8 r8 la,8            % 41
+        si,8 do8 re8 re,8
+        sol,8 sol16 la16 sol8 fa8                      % 42
       }
     }
   >>
