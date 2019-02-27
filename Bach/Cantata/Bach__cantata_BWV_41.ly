@@ -2,7 +2,7 @@
 
 \version "2.18.2"
 \header {
-  title = "Cantata (Aria)"
+  title = "Cantata BWV 41 (Aria)"
   composer = "Johann Sebastian Bach"
 }
 
