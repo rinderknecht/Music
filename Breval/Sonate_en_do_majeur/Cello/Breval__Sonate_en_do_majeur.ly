@@ -240,7 +240,7 @@ retenir = \markup {
       {do'16-2 re'16-4\stopTrillSpan\!}                   % 101
       do'4\downbow mi8.\f(fa32 mi32 re4)
       <<sol,4-> sol4>>                                    % 102
-      mi4 mi8.(re32 mi32 re4)
+      mi4 mi8.(fa32 mi32 re4)
       <<sol,4-> sol4>>                                    % 103
       mi4
       <<sol,4\ff mi4 do'4\downbow>>
