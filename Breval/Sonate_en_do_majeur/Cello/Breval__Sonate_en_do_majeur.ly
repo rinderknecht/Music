@@ -19,7 +19,7 @@ allonger = \markup {
 
 retenir = \markup {
   \center-column {
-    \concat{
+    \concat {
       \arrow-head #X #LEFT ##f
       \hspace #-1
       \draw-line #'(-4 . 0)
