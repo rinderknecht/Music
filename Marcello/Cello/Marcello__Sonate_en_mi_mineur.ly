@@ -52,9 +52,9 @@ extdown = \markup {
     r8 si8                                                 % 1
     do'16(si16 la16 sol16) fad8(mi8)
     red4-1\mordent r8
-    si16-4(la16-2)                                         % 2
+    si16-4_\markup{\teeny II}(la16-2)                      % 2
     sold16-1(la16 si16) sold16
-    mi8-1_\markup{\teeny II} re'8 do'8.(si16)
+    mi8-1 re'8 do'8.(si16)
     la8\upbow la16\upbow(sol16)                            % 3
     fad16(sol16 la16) fad16 re8\open do'8-2
     si8.(la16) sol8\upbow re8\upbow\p                      % 4
@@ -103,15 +103,17 @@ extdown = \markup {
       sol8 si8 fad8 si8 sol8 mi8 si8 mi'8-4                 % 1
       do'16-2 si16 la16 sol16 fad8 si8
       sol8 mi8 r8 re'8\upbow                                % 2
-      si8 re'8 la8 re'8 si8 sol8 re'8 sol'8-4               % 3
-      mi'16 re'16-4 do'16 si16
+      si8 re'8 la8 re'8 si8 sol8
+      re'8 sol'8-4_\markup{\teeny II}                       % 3
+      mi'16 re'16-4_\markup{\teeny I} do'16 si16
       la8 re'8 si8 sol8
       re'16\f do'16 si16 la16                               % 4
       si8 sol8 re'16\p do'16 si16 la16 si8 sol8
       sol'16-4\f fa'16 mi'16-4 re'16                        % 5
-      mi'8 do'8 sol'16-4\p fa'16 mi'16-4 re'16
-      mi'16 re'16 do'16\< mi'16
-      re'16-4 do'16 si16 re'16                              % 6
+      mi'8 do'8-1^\extup sol'16\p^\markup{\teeny\circle 4}
+      fa'16 mi'16-4 re'16
+      mi'16 re'16 do'16-1^\extup\< mi'16
+      re'16^\markup{\teeny\circle 4} do'16 si16 re'16       % 6
       do'16 si16 la16 do'16
       si16 la16 sol16 si16\!
       la16\f(re'16) la16(re'16) la16(re'16) la16(re'16)     % 7
@@ -136,12 +138,14 @@ extdown = \markup {
       sol8 si8 fad8 si8 sol8 mi8 si8 mi'8-4                 % 14
       do'16-2 si16 la16 sol16 fad8 si8
       sol8 mi8 r8 si8-1\p\upbow                             % 15
-      sold8 si8 mi8 re'8 do'8 la8 la,8 la8                  % 16
+      sold8-4^\extdown si8^\markup{\teeny\circle 1}
+      mi8 re'8 do'8 la8 la,8 la8                            % 16
       fad8 la8 re8 do'8 si8 sol8 sol,8 re'8-2\f             % 17
       mi'16-4(re'16) do'16-2 si16
       mi'16-4(re'16) do'16-2 si16
-      do'16 si16 la16 sold16^\extdown
-      la16 do'16 si16 la16                                  % 18
+      do'16 si16 la16 sold16-1^\extdown
+      la16^\markup{\teeny\circle 0}
+      do'16 si16 la16                                       % 18
       re'16(do'16) si16 la16
       re'16(do'16) si16 la16
       si16 la16 sol16 fad16
