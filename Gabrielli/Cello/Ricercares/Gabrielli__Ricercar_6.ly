@@ -1,9 +1,24 @@
-#(set-global-staff-size 23)
+#(set-global-staff-size 21)
 
 \version "2.18.2"
+
 \header {
   title = "Ricercar VI"
   composer = "Domenico Gabrielli (1689)"
+}
+
+\language "italiano"
+
+extup = \markup {
+  \center-column {
+    \arrow-head #Y #UP ##t
+  }
+}
+
+extdown = \markup {
+  \center-column {
+    \arrow-head #Y #DOWN ##t
+  }
 }
 
 ringsps = #"
@@ -24,7 +39,6 @@ vibrato = \markup {
   \new Staff
    \with {instrumentName = #"Cello "}
    {
-   \language "italiano"
    \override Hairpin.to-barline = ##f
    \time 4/4
    \key sol \major
@@ -77,13 +91,15 @@ vibrato = \markup {
    sol16 si16 la16 si16
    do'16 mi16 re16 mi16
    fad16 la16 sol16 la16
-   si16 re16 dod16 re16                         % 12
+   si16 re16
+   dod16-4^\extdown_\markup{\teeny III}
+   re16^\markup{\teeny\circle 0}                % 12
    mi16 sol16 fad16 sol16
-   la16 dod16 si,16 dod16
-   re16 re'16 dod'16 re'16
+   la16 dod16-4 si,16 dod16
+   re16 re'16-3 dod'16 re'16
    fad16 re'16 dod'16 re'16                     % 13
    sol16 si16 la16 sol16
-   la8 la,8
+   la8 la,8-1
    re16 re'16 do'16 re'16
    si16 sol16 fad16 sol16                       % 14
    mi16 do'16 si16 do'16
