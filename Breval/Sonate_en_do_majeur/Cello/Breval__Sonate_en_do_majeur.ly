@@ -133,7 +133,7 @@ retenir = \markup {
       re'2.-> do'8(si8)                                   % 40
       si8(la8) do'8(la8) sol8(fad8) mi8(fad8)             % 41
       sol4.\>(fad16 mi16 re4) re'4\p\upbow\!              % 42
-      si4_\markup{\italic{allonger, touche}}
+      si4_\markup{\italic "allonger, touche"}
       si4 re'8^\allonger(do'8)
       si8\tenuto^\retenir do'8\tenuto                     % 43
       re'2. do'8\downbow si8                              % 44
@@ -146,7 +146,7 @@ retenir = \markup {
       do'16\downbow(si8.) si16\upbow(la8.)                % 49
       la8-2(sold8-1) si8-4(sold8)\!
       mi4-4^\markup{\teeny III}
-      mi4-1^\markup{\teeny II}\mf                         % 50
+      mi4-1^\markup{\teeny II}\upbow\mf                   % 50
       la4\downbow la4
       do'8\downbow^\allonger(si8)
       la8\tenuto^\retenir si8\tenuto                      % 51
@@ -155,19 +155,20 @@ retenir = \markup {
       si8\tenuto^\retenir do'8\tenuto                     % 53
       re'4.\>(do'8) si4\! mi4\upbow\p                     % 54
       \mark \default
-      la8\open(do'8 si8 la8 sold8-4)
-      mi8(fad8-2 sold8)                                   % 55
-      la8\downbow\open(do'8 si8 la8 sold8-4)
-      mi8(fad8-2 sold8)                                   % 56
-      la8\< si8 do'8 re'8-1 mi'8-3\!
-      r8 fa'4-4\>(                                        % 57
+      la8\open(do'8 si8 la8)
+      sold8-4\upbow(mi8 fad8-2 sold8)                     % 55
+      la8\downbow\open(do'8 si8 la8)
+      sold8-4\upbow (mi8 fad8-2 sold8)                    % 56
+      la8\< si8 do'8 re'8-1 mi'8-3^\allonger\!
+      r8 fa'4-4^\retenir\>(                               % 57
       re'8-1)\! r8 mi'4-3\>(do'8-2)\! r8 re'4\>(          % 58
       si8)\! r8 mi2->\< fad8(sold8)\!                     % 59
       la8 si8 do'8 re'8-2 mi'4\! mi'4\f                   % 60
       mi'8->(re'8 dod'8 re'8)
       re'4\upbow\tenuto(re'4\upbow\tenuto)                % 61
       re'8->(do'8 si8 do'8) do'4\tenuto(do'4\tenuto)      % 62
-      \appoggiatura re'8 do'8->(si8) si2->\>(la4)\!       % 63
+      \appoggiatura re'8 do'8^\allonger->(si8)
+      si2->^\retenir\>(la4)\!                             % 63
       sol8\mf\staccato fad8\staccato_\markup{\italic sec}
       sol8\staccato la8\staccato
       si8\staccato la8\staccato
@@ -175,38 +176,49 @@ retenir = \markup {
       re'8\staccato do'8\staccato
       si8\staccato do'8\staccato
       si8\staccato la8\staccato
-      sol8\staccato fa8\staccato                          % 65
-      mi8^\markup{\italic "rit."}
+      sol8\staccato fa8-2\staccato                        % 65
+      mi8^\markup{\italic "allonger, rit."}
       do8\<re8 mi8 fa8 sol8 la8 si8\!                     % 66
-      do'2->^\markup{\italic "a tempo"} re'2->            % 67
+      \mark\default
+      do'2\f->^\markup{\italic "a tempo"} re'2->          % 67
       do'2->(si4) do'4                                    % 68
       la4.(si8) re'8^\allonger(do'8)
       si8\tenuto^\retenir la8\tenuto                      % 69
       sol4\>(fa\turn mi4)\! r4                            % 70
-      do'4.\mf(re'8 si8) sol8\>(la8 si8)\!                % 71
+      do'4.\mf\downbow(re'8 si8) sol8\>(la8 si8)\!        % 71
       do'4.\p(re'8 si8) sol8(la 8 si8)                    % 72
       do'8\downbow^\allonger\<\(si8\)
       la8\upbow sol8\downbow
       sol16\upbow\(fa8.\) fa16\upbow\(mi8.\)\!            % 73
       mi2\>\(re4\)\! r4                                   % 74
-      re'2\downbow si2                                    % 75
-      sol2. fa4                                           % 76
+      re'2->\downbow si2->                                % 75
+      sol2.-> fa4                                         % 76
       re4->\< si,4-> sol,4-> fa,4->\!                     % 77
-      mi,4\f\downbow do'2\downbow(re'4\tenuto\p)          % 78
-      do'8(si8) la8 sol8 sol4 la8(si8)                    % 79
+      mi,4\f\downbow \breathe
+      do'2\downbow(re'4\downbow\tenuto\p)                 % 78
+      do'8\upbow(si8) la8\downbow sol8\upbow
+      sol4 la8(si8)                                       % 79
       do'8\f do'8 do'2 re'8(do'8)                         % 80
       do'8\>(si8 re'8) do'8 si8 la8 sol8 fa8\!            % 81
-      mi4 mi4 sol8(fa8) mi8 fa8                           % 82
+      mi4 mi4 sol8^\allonger(fa8)
+      mi8\tenuto^\retenir fa8\tenuto                      % 82
       sol2. fa8 mi8                                       % 83
-      re4 re4 fa8(mi8) re8 mi8                            % 84
+      re4 re4 fa8^\allonger(mi8)
+      re8\tenuto^\retenir mi8\tenuto                      % 84
       fa2. re4\f\downbow(                                 % 85
       mi4) fa4\turn(sol4) re4\p(                          % 86
-      mi4) fa4\turn\<(sol4)\! re4\f(                      % 87
+      mi4) fa4\turn\<(sol4)\!
+      \mark \default
+      re4\downbow\f(                                      % 87
       mi8) do'8(si8) do'8\downbow la8 do'8 sol8 do'8      % 88
       fa8 do'8 mi8 do'8 fa8 do'8 re8 do'8                 % 89
-      mi8\upbow do'8\p\downbow(si8 do'8)
-      la8 do'8 sol8 do'8                                  % 90
-      fa8 do'8 mi8 do'8 fa8 do'8 re8 do'8                 % 91
+      mi8\upbow do'8\p\downbow^\retenir(si8 do'8)
+      la8\staccato\upbow do'8\staccato
+      sol8\staccato do'8\staccato                         % 90
+      fa8\staccato do'8\staccato
+      mi8\staccato do'8\staccato
+      fa8\staccato do'8\staccato
+      re8\staccato do'8\staccato                          % 91
       mi4
       \appoggiatura re'8\downbow
       \tuplet 3/2 {do'8\f si8 do'8}
@@ -220,8 +232,9 @@ retenir = \markup {
       \tuplet 3/2 {mi8\upbow do8(re8)\<}
       \tuplet 3/2 {mi8 fa8 sol8}
       \tuplet 3/2 {la8 si8 do'8}
-      \tuplet 3/2 {re'8 mi'8 fa'8\!}                      % 94
-      sol'4.\f do'8 si8(do'8) si8(do'8)                   % 95
+      \tuplet 3/2 {re'8 mi'8 fa'8-2\!}                    % 94
+      sol'4.^\allonger\downbow\f(do'8\staccato)
+      si8\upbow(do'8) si8\upbow(do'8)                     % 95
       la4.(re'8) do'4 si4\turn(                           % 96
       do'4)
       \tuplet 3/2 {do8\p\upbow re8 mi8}
@@ -235,9 +248,10 @@ retenir = \markup {
       \tuplet 3/2 {sol8 fa8 mi8}
       \tuplet 3/2 {la8 sol8 fa8}
       \tuplet 3/2 {mi8 re8 do8\!}                         % 99
+      \mark \default
       sol,2.\downbow\((sol,8.) do'16\tenuto\downbow\)     % 100
       \afterGrace re'1-1\startTrillSpan\upbow\<
-      {do'16-2 re'16-4\stopTrillSpan\!}                   % 101
+      {do'16-2\downbow re'16-4\upbow\stopTrillSpan\!}     % 101
       do'4\downbow mi8.\f(fa32 mi32 re4)
       <<sol,4-> sol4>>                                    % 102
       mi4 mi8.(fa32 mi32 re4)

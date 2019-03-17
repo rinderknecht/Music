@@ -74,20 +74,20 @@ extover = \markup {
     si16(la16 sol8) r8 re'8-2
     mi'16(re'16 do'16-2 si16) la8(sol8)                    % 8
     fad4\mordent r8 si8
-    mi16(fad16-2^\extdown sold16-4 la16\open^\extover)
-    si16(do'16 re'16 si16)                                 % 9
+    mi16(fad16-2^\extdown sold16-4 la16\open)
+    si16^\extover(do'16 re'16 si16)                        % 9
     do'16(la16) si16(sold16-4^\extdown)
-    la8\open^\extover do'8 re16\open(mi16 fad16 sol16)
+    la8\open do'8^\extover re16\open(mi16 fad16 sol16)
     la16(si16 do'16 la16)                                  % 10
     si16(sol16) la16(fad16) sol8 mi8-2
     mi8.\trill(red32 mi32) fad8\upbow fad8-3\upbow         % 11
     fad8.\trill(mi32\< fad32) sol8\upbow sol8-2\upbow
     sol8.\trill(fad32 sol32) la8\upbow la8\upbow\!         % 12
     la4\fermata\f r16 la16\upbow(sol16 fad16)
-    sol16-4(mi16) fad16-4(red16) mi8-1 la8                 % 13
-    sol4 fad8.\trill(mi16) mi4. fad8                       % 14
-    red8-1^\extup si,8-3^\extover
-    mi8 fad8 sol4^\markup{\italic rit.}
+    sol16-4(mi16) fad16-4(red16) mi8-2 la8-4               % 13
+    sol4 fad8.\trill(mi16-1) mi4. fad8                     % 14
+    red8-1^\extup si,8-3
+    mi8^\extover fad8 sol4^\markup{\italic rit.}
     fad8.\trill(mi16)                                      % 15
     mi1                                                    % 17
     \bar "|."
@@ -145,7 +145,7 @@ extover = \markup {
       fad8 la8 re8 do'8 si8 sol8 sol,8 re'8-2\f             % 17
       mi'16-4(re'16) do'16-2 si16
       mi'16-4(re'16) do'16-2 si16
-      do'16 si16 la16 sold16-1^\extdown
+      do'16 si16 la16 sold16-4^\extdown
       la16\open^\extover do'16 si16 la16                    % 18
       re'16(do'16) si16 la16
       re'16(do'16) si16 la16
@@ -184,8 +184,8 @@ extover = \markup {
       si16 la16 sol16 fad16
       sol16\< mi16 fad16 sol16
       la16 si16 dod'16-1 red'16-3\!                         % 28
-      mi'8\f dod'8 mi'8 la'8\flageolet
-      sol'4-4 fad'8.\trill(mi'16)                           % 29
+      mi'8\f dod'8 mi'8 la'8-3\flageolet
+      sol'4-2 fad'8.\trill(mi'16)                           % 29
       mi'2. r4                                              % 30
     }
   }

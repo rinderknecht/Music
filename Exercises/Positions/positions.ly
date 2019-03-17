@@ -38,7 +38,7 @@
 
    \repeat volta 2 { si4-1 do'4 re'4 si4  | re'4-1 mi'4 fa'4 re'4 }
    \repeat volta 2 { si4-1 re'4 do'4 si4  | re'4-1 fa'4 mi'4 re'4 }
-   \repeat volta 2 { do'4-2 si4 re'4 do'4 | mi'4-3 do'4 fa'4 mi'4 }
+   \repeat volta 2 { do'4-2 si4 re'4 do'4 | mi'4-3 re'4 fa'4 mi'4 }
 
    % Ligne 2
 
