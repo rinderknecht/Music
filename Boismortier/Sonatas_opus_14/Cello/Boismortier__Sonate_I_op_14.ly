@@ -6,12 +6,31 @@
   composer = "Joseph Bodin de Boismortier (1726)"
 }
 
+\language "italiano"
+
+extup = \markup {
+  \center-column {
+    \arrow-head #Y #UP ##t
+  }
+}
+
+extdown = \markup {
+  \center-column {
+    \arrow-head #Y #DOWN ##t
+  }
+}
+
+extover = \markup {
+  \center-column {
+    \beam #0.75 #0 #0.75
+  }
+}
+
 \score {
   <<
     \new Staff
     \with {instrumentName = #"Cello "}
     {
-      \language "italiano"
       \override Hairpin.to-barline = ##f
       \repeat volta 2 {
         \tempo Gravement 8 = 70
@@ -25,9 +44,9 @@
         mi4 r8 la16\upbow sol16 fad8 mi16 re16 dod8 la,8               % 5
         re16 fad16 la16 re'16                                          % 6
         fad16 la16 re'16 la16
-        si16 sol16 si16 re'16-3
+        si16 sol16 si16 re'16-3^\extdown
         sold16-4 si16 mi'16-4 si16-1
-        dod'16-3 la16 si16 dod'16                                      % 7
+        dod'16-3^\extover la16 si16 dod'16                             % 7
         re'16 do'16 si16 la16
         si16 la16 sol16 fad16
         mi8\staccato dod'8\staccato
@@ -43,10 +62,11 @@
         fad4. sol8 la8 si8 do'4                                        % 13
         (do'8)\f si8 mi'4-4 red'8-3 si16-1 la16 si8  do'8              % 14
         do'16 la16 fad16 la16 si8 si8 si16 sol16 mi16 sol16 la8 la8    % 15
-        la16 fad16 red16 fad16 sol8 sol8
-        sol8 fad16 mi16 si,8\upbow red8-1\upbow                        % 16
-        mi,8\mf mi16 fad16-2 sold8-4\upbow mi8\upbow                   % 17
-        la8 si8 dod'8 la8
+        la16 fad16 red16-1^\extup fad16^\extover sol8 sol8
+        sol8 fad16 mi16 si,8\upbow red8-1^\extup\upbow                 % 16
+        mi,8^\extover\mf mi16 fad16-2^\extdown
+        sold8-4\upbow mi8\upbow                                        % 17
+        la8^\extover si8 dod'8 la8
         re'8 re16 mi16 fad8\upbow re8\upbow sol8 la8 si8 sol8          % 18
         do'8 sol8 do'8 si8 la8\> sol8 fad8 sol8\!                      % 19
         la8\p re'8 fad8 sol8 re8 re'8 fad8\< sol8                      % 20
@@ -54,19 +74,20 @@
         (si8)\! la16\f sol16 la8 mi8 fad8 re8 re'4                     % 22
         (re'8) do'16 si16 do'8 re'16 la16 si8 sol8 la,8 fad8           % 23
         sol8 la8\staccato-\markup{\dynamic p \italic subito}
-        sib8\staccato do'8\staccato re'8\staccato
-        mib'8-4\staccato fad-2\staccato sol8-3\staccato                % 24
-        do'8-4\staccato sib8-2\staccato la8\staccato
+        sib8^\extup\staccato do'8\staccato re'8\staccato
+        mib'8-4\staccato fad-2^\extover\staccato sol8-3\staccato       % 24
+        do'8-4\staccato_\markup{\teeny II}
+        sib8-2\staccato la8\staccato
         sol8-4\staccato do4 re4                                        % 25
-        sol,8\f re8 sol8 la8 sib8 do'8 re'8 mib'8-4                    % 26
-        fad8-2 sol8 do'8-4 sib8 la8 sol8-4 re8 fad8                    % 27
+        sol,8\f re8 sol8 la8 sib8^\extup do'8 re'8 mib'8-4             % 26
+        fad8-2^\extover sol8 do'8-4_\markup{\teeny II}
+        sib8 la8 sol8-4 re8 fad8                                       % 27
         sol,16 la,16 si,16 do16 re8\staccato re,8\staccato sol,2       % 28
       }
     }
     \new Staff
     \with {instrumentName = #"Cello "}
     {
-      \language "italiano"
       \override Hairpin.to-barline = ##f
       \repeat volta 2 {
         \time 4/4
@@ -110,14 +131,13 @@
   >>
 }
 
-\pageBreak
+%\pageBreak
 
 \score {
   <<
     \new Staff
     \with {instrumentName = #"Cello "}
     {
-      \language "italiano"
       \override Hairpin.to-barline = ##f
       \repeat volta 2 {
         \tempo Courante 4 = 70
@@ -136,9 +156,9 @@
         sol2 re'4                                                              % 6
         si8\downbow re'16\upbow do'16 si8\staccato\upbow
         sol8\staccato\upbow si8\staccato sol8-2\staccato                       % 7
-        mi'8-4 do'16-1 re'16 mi'8\staccato\upbow do'8\staccato\upbow
+        mi'8-4 do'16-1^\extup re'16 mi'8\staccato\upbow do'8\staccato\upbow
         mi'8\staccato do'8\staccato                                            % 8
-        re'8 si16-1 do'16 re'8\staccato\upbow si8\staccato\upbow
+        re'8 si16-1^\extover do'16 re'8\staccato\upbow si8\staccato\upbow
         re'8\staccato si8\staccato                                             % 9
         do'8 la16 si16 do'8\staccato\upbow la\staccato\upbow
         do'8\staccato la\staccato                                              % 10
@@ -170,11 +190,47 @@
         re'8\staccato mi8\staccato dod'8\staccato                              % 26
         re'2 s4                                                                % 27
       }
+      \repeat volta2 {
+        \partial 4 r8 la8\upbow
+        la8 re16 mi16 fad8 sol8 la8-4 dod-3                                    % 28
+        re2-4 r8 la8-1\upbow                                                   % 29
+        la8 si8 la8 sol8-2 fad8 re8\open                                       % 30
+        sol2 r8 re'8-2\upbow                                                   % 31
+        re'8 mi'8 re'8 do'8-2 si8 sol8                                         % 32
+        do'2-4 do'8 mi'8                                                       % 33
+        la4-1\upbow re'4-3\open \appoggiatura do'8-4 si4                       % 34
+        sold8-3 mi'16-4 re'16 mi'8 la8 mi'8 sol8-2                             % 35
+        fad-3 re'16 do'16 re'8 sol8 re'8 fa8                                   % 36
+        mi8 do'16(si16) do'16 re'16 do'16 si16 la16 sol16 fa16 mi16            % 37
+        re8 si16(la16) si16 do'16 si16 la16 sold16-4 fad16-2 mi16 re16         % 38
+        do8-2 la8-4 sold-3 la8 si,8-1 sold8                                    % 39
+        la,8-1 la16 si16 do'4 r8 re'16 do'16                                   % 40
+        si4 r8 do'16 si16 la4                                                  % 41
+        r8 si16 la16 sol8 la8 si8 sol8                                         % 42
+        do'8 mi8 red8-1 mi8-2 si,8-4 red8-1                                    % 43
+        mi4-2 mi'2-1(                                                          % 44
+        mi'4) re'8 do'8 si8 la8                                                % 45
+        si8 sol16 la16 si8\upbow do'8\downbow re'8 si8                         % 46
+        mi'8-1\upbow re'8-4 do'8 si8 la8 sol8                                  % 47
+        fad4\upbow re4 re'4-2                                                  % 48
+        mi'8-4\downbow do'16^\extup re'16 mi'8\upbow do'8\upbow mi'8 do'8      % 49
+        re'8^\extover si16-1 do'16 re'8\upbow si8\upbow re'8 si8               % 50
+        do'8 la16 si16 do'8\upbow la8\upbow do'8 la8                           % 51
+        si8 sol8 fad8 sol8 la,8 fad8                                           % 52
+        sol8 la8 si8 do'8 re'8 si8                                             % 53
+        mi'8-4\downbow do'16\downbow^\extup re'16
+        mi'16 re'16 do'16 re'16 mi'16 re'16 do'16 mi'16                        % 54
+        re'8-2^\extover si16-1\downbow do'16 re'16 do'16 si16 do'16
+        re'16 do'16 si16 re'16                                                 % 55
+        do'8\downbow la16\downbow si16 do'16 si16 la16 si16
+        do'16 si16 la16 do'16                                                  % 56
+        si8 sol8 fad8 sol8 la,8 fad8                                           % 57
+        sol2 r4                                                                % 58
+      }
     }
     \new Staff
     \with {instrumentName = #"Cello "}
     {
-      \language "italiano"
       \override Hairpin.to-barline = ##f
       \repeat volta 2 {
         \time 3/4
@@ -211,6 +267,41 @@
         re16 mi16 re16 dod16 mi16                                             % 25
         re8\f sol,8 la,4 la,4                                                 % 26
         re,2 s4                                                               % 27
+        \repeat volta 2 {
+          \partial 4 r4
+          r4 r4 r8 la8                                                        % 28
+          la8 re16 mi16 fad8 sol8 la8 dod8                                    % 29
+          re2 r8 re'8                                                         % 30
+          re'8 sol16 la16 si8 do'8 re'8 fad8                                  % 31
+          sol2 sol8 fa8                                                       % 32
+          mi8 do16 re16 mi8 do8 mi8 do8                                       % 33
+          fa8 re16 mi16 fa8 re8 fa8 re8                                       % 34
+          mi4 dod4 la,4                                                       % 35
+          re4 si,4 sol,4                                                      % 36
+          do4 la,4 fa,4                                                       % 37
+          si,4 sold,4 mi,4                                                    % 38
+          la,4 mi4 mi,4                                                       % 39
+          la,4 r8 la16 sol16 fad4                                             % 40
+          r8 sol16 fad16 mi4 r8 fad16 mi16                                    % 41
+          red8 si,8 mi8 fad8 sol8 mi8                                         % 42
+          la,4 si,4 si,4                                                      % 43
+          mi,8 mi16 fad16 sol8 fad8 sol8 mi8                                  % 44
+          fad8 re16 mi16 fad8 mi8 fad8 re8                                    % 45
+          sol,8 sol16 fad16 sol8 la8 si8 sol8                                 % 46
+          do'8 si8 la8 sol8 fad8 mi8                                          % 47
+          re8 re'8 do'8 re'8 si8 sol8                                         % 48
+          do'8 la16 si16 do'8 la8 do'8 la8                                    % 49
+          si8 sol16 la16 si8 sol8 si8 sol8                                    % 50
+          la8 fad16 sol16 la8 fad8 la8 fad8                                   % 51
+          sol8 do8 re4 re,4                                                   % 52
+          sol8 fad8 sol8 la8 si8 sol8                                         % 53
+          do'8 la16 si16 do'16 si16 la16 si16 do'16 si16 la16 do'16           % 54
+          si8 sol16 la16 si16 la16 sol16 la16 si16 la16 sol16 si16            % 55
+          la8 fad16 sol16 la16 sol16 fad16 sol16 la16 sol16 fad16 la16        % 56
+          sol8 do8 re4 re,4                                                   % 57
+          sol,2 r4                                                            % 58
+
+        }
       }
     }
   >>
