@@ -1,5 +1,3 @@
-% Recercada quarta (Ortiz)
-
 #(set-global-staff-size 21)
 
 \version "2.18.2"
