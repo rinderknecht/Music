@@ -19,7 +19,8 @@
       la,8 re'8(do'8 si8)                %  2
       do'8(mi8) fad8\upbow(do'8)         %  3
       sol,8 fad8 sol8 la8                %  4
-      sib8-1-x re8 sol8 sib8             %  5
+      sib8-1^\markup{\italic x}
+      re8 sol8 sib8                      %  5
       dod8 sib8 la8 dod8                 %  6
       re8 do8-3 sib,8-1 sold8-4          %  7
       la,8-1 mi8 sol8 la8                %  8
@@ -41,7 +42,8 @@
       do8-1 mi'8-3 re8 fa'8              % 24
       <<{do'4(si4)} \\ {mi2-1}>>         % 25
       la4\upbow do8 mi8                  % 26
-      la8 re8 si,8-2-x sold8             % 27
+      la8 re8 si,8-2^\markup{\italic x}
+      sold8                              % 27
       <<la,2 mi2 la2>>                   % 28
     }
     \repeat volta 2 {
@@ -56,7 +58,8 @@
       la8 do8 fa8 la8                    % 37
       sol,8 sib8 mi8-2 sib8              % 38
       la8 fa8 re8 si,8                   % 39
-      do8-4-x mib8 la8 do'8              % 40
+      do8-4^\markup{\italic x}
+      mib8 la8 do'8                      % 40
       mib'8-4 do'8-1 la8 sol8-4          % 41
       re,8 fad8 re8 do8                  % 42
       sib,8 re'8 la,8 do'8               % 43
@@ -81,7 +84,8 @@
       fa8-2 la8 re'8 fa8                 % 62
       <<{fa4(mi4)} \\ {la,2}>>           % 63
       re4 fa,8 la,8                      % 64
-      re8 fa,8-3-x mi,8-2 dod8-4         % 65
+      re8 fa,8-3^\markup{\italic x}
+      mi,8-2 dod8-4                      % 65
       <<re2 la,2 re,2>>                  % 66
     }
   }
