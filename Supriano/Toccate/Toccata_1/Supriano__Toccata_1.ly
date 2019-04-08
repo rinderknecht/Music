@@ -29,8 +29,8 @@
    fad'8 la8 mi'8 la8 re'8 la8                                     % 12
    dod'4 r8 la8 si8 dod'8                                          % 13
    re'8 la8 fad8 re8 la8 do'8                                      % 14
-   si8 re8 si,8 la,8 si,8 re8                                      % 15
-   sol8 re8 si,8 la,8 mi8 sol8                                     % 16
+   si8 re8 si,8 sol,8 si,8 re8                                     % 15
+   sol8 re8 si,8 sol,8 mi8 sol8                                    % 16
    dod8 mi8 la,8 sol8 fad8 mi8                                     % 17
    fad8 la8 re'8 fad8 mi8 dod'8                                    % 18
    re4 r8 re'8 re8 re'8                                            % 19
