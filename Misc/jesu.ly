@@ -1,16 +1,16 @@
-% Jesus bleibet meine Freude
-
 #(set-global-staff-size 21)
 
 \version "2.18.2"
+
 \header {
   title = "Jesus bleibet meine Freude"
   composer = "Johann Sebastian Bach"
 }
 
+\language "italiano"
+
 \score {
   \new Staff {
-   \language "italiano"
    \override Hairpin.to-barline = ##f
    \time 3/4
    \clef bass

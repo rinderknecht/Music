@@ -1,18 +1,18 @@
-% Non Piu Andrai (W.A. Mozart)
-
 #(set-global-staff-size 21)
 
 \version "2.18.2"
+
 \header {
   title = "Non più andrai"
-  composer = "W.A. Mozart"
+  composer = "W. A. Mozart"
 }
+
+\language "italiano"
 
 \score {
   \new Staff
    \with {instrumentName = #"Cello "}
    {
-   \language "italiano"
    \override Hairpin.to-barline = ##f
    \time 4/4
    \clef bass

@@ -1,16 +1,18 @@
 #(set-global-staff-size 21)
 
 \version "2.18.2"
+
 \header {
   title = "Toccata I"
   composer = "Francesco Paolo Supriano (1678-1753)"
 }
 
+\language "italiano"
+
 \score {
   \new Staff
    \with {instrumentName = #"Cello "}
    {
-   \language "italiano"
    \override Hairpin.to-barline = ##f
    \time 3/4
    \key do \major

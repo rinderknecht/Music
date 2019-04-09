@@ -1,12 +1,19 @@
-% Folia (Corelli's Variation)
+#(set-global-staff-size 21)
 
-% #(set-global-staff-size 24)
-\version "2.18.2" {
-  \language "italiano" {
+\version "2.18.2"
+\header {
+  title = "Folia"
+  composer = "Corelli"
+}
+
+\language "italiano"
+
+\score {
+  \new Staff
+   \with {instrumentName = #"Cello "}
+   {
     \clef "bass"
-    % \key si \minor
     \time 4/4
-    % \tempo "Andante"
     \override Hairpin.to-barline = ##f
       re'8 la8 re8 re'8 dod'8 mi8 la,8 dod'8
     | re'8 la8 re8 re8 mi8 sol,8 do,8 mi8
