@@ -1,6 +1,5 @@
-% Sonata I (Domenica Galli)
+#(set-global-staff-size 21)
 
-#(set-global-staff-size 23)
 \version "2.18.2"
 \header {
   title = "Sonata I"
