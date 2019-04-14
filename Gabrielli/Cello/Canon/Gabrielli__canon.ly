@@ -74,8 +74,8 @@ vibrato = \markup {
    sold16 fad16 sold16 la16 sold8 si8                                % 26
    dod'8 mi8 dod8 la8 mi4 r8 mi8                                     % 27
    la,4 mi8 dod8 sold16 la16 si16 la16 sold16 fad16 mi16 re16        % 28
-   dod4 mi'4 mi'4 mi'4                                               % 29
-   mi'4 dod'16 si16 dod'16 la16 si16 la16 si16 sold16
+   dod4 mi'4\mordent mi'4\mordent mi'4\mordent                       % 29
+   mi'4\mordent dod'16 si16 dod'16 la16 si16 la16 si16 sold16
    la16 sold16 la16 fad16                                            % 30
    sold8 mi8 la4 mi4 fad4                                            % 31
    mi4 dod16 re16 mi16 re16 dod8 mi'16 mi'16 mi'8. red'16            % 32
