@@ -1,9 +1,30 @@
 #(set-global-staff-size 21)
 
 \version "2.18.2"
+
 \header {
   title = "Cantata BWV 41 (Aria)"
   composer = "Johann Sebastian Bach"
+}
+
+\language "italiano"
+
+extup = \markup {
+  \center-column {
+    \arrow-head #Y #UP ##t
+  }
+}
+
+extdown = \markup {
+  \center-column {
+    \arrow-head #Y #DOWN ##t
+  }
+}
+
+extover = \markup {
+  \center-column {
+    \beam #0.75 #0 #0.75
+  }
 }
 
 \score {
@@ -11,7 +32,6 @@
     \new Staff
     \with {instrumentName = #"Piccolo"}
     {
-      \language "italiano"
       \override Hairpin.to-barline = ##f
       \tempo Adagio
       \time 4/4
@@ -26,8 +46,8 @@
           si16 sol16 re16 fa16
           mi16 sol'16-2 do,,16 sib'16                          % 1
           la16 fa16 do16 mi16
-          re16 fa'16-1^\markup{\italic x}
-          si,,16 la'16 sold8
+          re16 fa'16-1^\extup
+          si,,16^\extover la'16 sold8
           \clef bass
           mi,,8
           \clef treble
@@ -43,7 +63,7 @@
           do,,,8
           \clef treble
           r16 mi'''16\downbow
-          fa32-1^\markup{\italic x}\upbow(mi32 re32 do32)      % 4
+          fa32-1^\extup\upbow(mi32^\extover re32 do32)         % 4
           sol'16-2\tenuto(re16-4\tenuto)
           mi32-4(re32 dod32-1 re32)
           mi16\tenuto(sol,16-2\tenuto)
@@ -133,8 +153,8 @@
           si16 sol16 re16 fa16
           mi16 sol'16-2 do,,16 sib'16                          % 28
           la16 fa16 do16 mi16
-          re16 fa'16-1^\markup{\italic x}
-          si,,16 la'16 sold8
+          re16 fa'16-1^\extup
+          si,,16^\extover la'16 sold8
           \clef bass
           mi,,8
           \clef treble
@@ -150,7 +170,7 @@
           do,,,8
           \clef treble
           r16 mi'''16\downbow
-          fa32-1^\markup{\italic x}\upbow(mi32 re32 do32)      % 31
+          fa32-1^\extup\upbow(mi32^\extover re32 do32)        % 31
           sol'16-2\tenuto(re16-4\tenuto)
           mi32-4(re32 dod32-1 re32)
           mi16\tenuto(sol,16-2\tenuto)
@@ -233,7 +253,7 @@
         la8 la,8 r8 fa8\upbow sol8 sol,8
         r8 mi8\upbow                                   % 1
         fa8 fa,8 r8 re8\upbow
-        mi8 mi,16-2^\markup{\italic x} fad,16-4
+        mi8 mi,16-2^\extup fad,16-4^\extover
         sold,8-1\upbow mi,8-3\upbow                    % 2
         la,8 la8 r8 la,8\upbow si,8 si8
         r8 si,8\upbow                                  % 3
@@ -242,9 +262,9 @@
         si,8 r8 dod8 r8 re8
         re16 mi16 fa8\upbow re8\upbow                  % 5
         do8 r8 red,8 r8
-        mi,8 mi16 fad16-2^\markup{\italic x}
-        sold8\upbow fad8-2\upbow                       % 6
-        mi8-1 fad8-2^\markup{\italic x} sold8 la8
+        mi,8 mi16 fad16-2^\extup
+        sold8^\extover\upbow fad8-2\upbow              % 6
+        mi8-1 fad8-2^\extup sold8 la8^\extover
         si8 la8 sold8 mi8                              % 7
         la8 r8 re8\upbow mi8-1\upbow fa8 r8 si,8 do8   % 8
         re8 r8 sold,8-1\upbow la,8-1\upbow re,2(       % 9
@@ -253,8 +273,8 @@
         la8 la,8 r8 re8\upbow sol8 sol,8
         r8 do8\upbow                                   % 11
         fa8 fa,8 r8 re8\upbow mi8 do8 si,8 la,8        % 12
-        mi8 fad8-2^\markup{\italic x}
-        sold8-4 mi8 la8 la,8 r8 la8\upbow              % 13
+        mi8 fad8-2^\extup
+        sold8-4 mi8^\extover la8 la,8 r8 la8\upbow     % 13
         si8 si,8 r8 si,8\upbow do8 la,8 mi8 mi,8       % 14
         la8 la,8 r8 re8\upbow sol8 sol,8 r8 do8\upbow  % 15
         fa8 fa,8 r8 si,8\upbow mi8 mi,8
@@ -274,7 +294,7 @@
         la8 la,8 r8 fa8\upbow sol8 sol,8
         r8 mi8\upbow                                   % 28
         fa8 fa,8 r8 re8\upbow
-        mi8 mi,16-2^\markup{\italic x} fad,16-4
+        mi8 mi,16-2^\extup fad,16-4^\extover
         sold,8-1\upbow mi,8-3\upbow                    % 29
         la,8 la8 r8 la,8\upbow si,8 si8
         r8 si,8\upbow                                  % 30
@@ -283,9 +303,9 @@
         si,8 r8 dod8 r8 re8
         re16 mi16 fa8\upbow re8\upbow                  % 32
         do8 r8 red,8 r8
-        mi,8 mi16 fad16-2^\markup{\italic x}
-        sold8\upbow fad8-2\upbow                       % 33
-        mi8-1 fad8-2^\markup{\italic x} sold8 la8
+        mi,8 mi16 fad16-2^\extup
+        sold8^\extover\upbow fad8-2\upbow              % 33
+        mi8-1 fad8-2^\extup sold8^\extover la8
         si8 la8 sold8 mi8                              % 34
         la8 r8 re8\upbow mi8-1\upbow fa8 r8 si,8 do8   % 35
         re8 r8 sold,8-1\upbow la,8-1\upbow re,2(       % 36
