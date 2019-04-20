@@ -49,12 +49,12 @@ extover = \markup {
         dod'16-3^\extover la16 si16 dod'16                             % 7
         re'16 do'16 si16 la16
         si16 la16 sol16 fad16
-        mi8\staccato dod'8\staccato
+        mi8-. dod'8-.
         re'16\mp fad16 sol16 la16 si4(si16) si16\< la16 sol16 la4      % 8
         (la16) fad16 sol16 la16 si16 dod'16-1 re'16-2 mi'16            % 9
-        la8\staccato re'8\mordent
-        mi8\staccato-1 dod'8\staccato-3\!
-        re16\f mi16 fad16 sol16 la8\staccato la,8\staccato re2         % 10
+        la8-. re'8\mordent
+        mi8-.-1 dod'8-.-3\!
+        re16\f mi16 fad16 sol16 la8-. la,8-. re2                       % 10
       }
       \repeat volta 2 {
         r4 r4 re'8 fad16 sol16 la8 re'16 do'16                         % 11
@@ -73,16 +73,16 @@ extover = \markup {
         la8 si8\! do'4.\mf si16\< la16 si4                             % 21
         (si8)\! la16\f sol16 la8 mi8 fad8 re8 re'4                     % 22
         (re'8) do'16 si16 do'8 re'16 la16 si8 sol8 la,8 fad8           % 23
-        sol8 la8\staccato-\markup{\dynamic p \italic subito}
-        sib8^\extup\staccato do'8\staccato re'8\staccato
-        mib'8-4\staccato fad-2^\extover\staccato sol8-3\staccato       % 24
-        do'8-4\staccato_\markup{\teeny II}
-        sib8-2\staccato la8\staccato
-        sol8-4\staccato do4 re4                                        % 25
+        sol8 la8-.-\markup{\dynamic p \italic subito}
+        sib8^\extup-. do'8-. re'8-.
+        mib'8-4-. fad-2^\extover-. sol8-3-.                            % 24
+        do'8-4-._\markup{\teeny II}
+        sib8-2-. la8-.
+        sol8-4-. do4 re4                                               % 25
         sol,8\f re8 sol8 la8 sib8^\extup do'8 re'8 mib'8-4             % 26
         fad8-2^\extover sol8 do'8-4_\markup{\teeny II}
         sib8 la8 sol8-4 re8 fad8                                       % 27
-        sol,16 la,16 si,16 do16 re8\staccato re,8\staccato sol,2       % 28
+        sol,16 la,16 si,16 do16 re8-. re,8-. sol,2                     % 28
       }
     }
     \new Staff
@@ -102,7 +102,7 @@ extover = \markup {
         la8 sol8 fad8 re8 sol,4 la,4                                 % 7
         re,4\mp r16 re16 mi16 re16 dod4\<(dod16) la,16 si,16 dod16   % 8
         re4 sol,4(sol,8) fad,8 sol,8 la,8\!                          % 9
-        re16\f mi16 fad16 sol16 la8\staccato la,8\staccato re2       % 10
+        re16\f mi16 fad16 sol16 la8-. la,8-. re2                     % 10
       }
       \repeat volta 2 {
         re'8 fad16 sol16 la8 re'16 do'16 si8 la16 sol16 fad8 re8     % 11
@@ -118,14 +118,14 @@ extover = \markup {
         fad8 sol8\! fad8\mf re8 sol4\< r8 sol,8                      % 21
         do4\!\f dod4 re8 re,8 r8 si8                                 % 22
         mi4 fad4 sol8 si,8 do8 re8                                   % 23
-        sol,8 re8\staccato-\markup{\dynamic p \italic subito}
-        sol8\staccato la8\staccato sib8\staccato
-        do'8\staccato re'8\staccato mib'8\staccato                   % 24
-        fad8\staccato sol8\staccato do'8\staccato sib8\staccato
+        sol,8 re8-.-\markup{\dynamic p \italic subito}
+        sol8-. la8-. sib8-.
+        do'8-. re'8-. mib'8-.                                        % 24
+        fad8-. sol8-. do'8-. sib8-.
         la8 sol8 re8 fad8                                            % 25
         sol8\f la8 sib8 do'8 re'8 mib'8 fad8 sol8                    % 26
         do'8 sib8 la8 sol8 do4 re4                                   % 27
-        sol,16 la,16 si,16 do16 re8\staccato re,8\staccato sol,2     % 28
+        sol,16 la,16 si,16 do16 re8-. re,8-. sol,2                   % 28
       }
     }
   >>
@@ -145,64 +145,59 @@ extover = \markup {
         \key sol \major
         \clef bass
         \partial 4 r8 re'8\upbow                                               % 0
-        re'8\downbow sol16 la16 si8\staccato\upbow
-        do'8\staccato\upbow re'8\staccato fad8\staccato                        % 1
+        re'8\downbow sol16 la16 si8-.\upbow
+        do'8-.\upbow re'8-. fad8-.                                             % 1
         sol2 re4                                                               % 2
-        si,8\downbow re16 do16 si,8\staccato\upbow sol,8\staccato\upbow
-        si,8\staccato sol,8\staccato                                           % 3
+        si,8\downbow re16 do16 si,8-.\upbow sol,8-.\upbow si,8-. sol,8-.       % 3
         do2 do'4                                                               % 4
-        la8\downbow do'16 si16 la8\staccato\upbow fad8\staccato\upbow
-        re8\staccato fad8\staccato                                             % 5
+        la8\downbow do'16 si16 la8-.\upbow fad8-.\upbow re8-. fad8-.           % 5
         sol2 re'4                                                              % 6
-        si8\downbow re'16\upbow do'16 si8\staccato\upbow
-        sol8\staccato\upbow si8\staccato sol8-2\staccato                       % 7
-        mi'8-4 do'16-1^\extup re'16 mi'8\staccato\upbow do'8\staccato\upbow
-        mi'8\staccato do'8\staccato                                            % 8
-        re'8 si16-1^\extover do'16 re'8\staccato\upbow si8\staccato\upbow
-        re'8\staccato si8\staccato                                             % 9
-        do'8 la16 si16 do'8\staccato\upbow la\staccato\upbow
-        do'8\staccato la\staccato                                              % 10
-        si8\staccato sol8\staccato fad8\staccato
-        sol8\staccato la,8\staccato fad8\staccato                              % 11
+        si8\downbow re'16\upbow do'16 si8-.\upbow
+        sol8-.\upbow si8-. sol8-2-.                                            % 7
+        mi'8-4 do'16-1^\extup re'16 mi'8-.\upbow do'8-.\upbow mi'8-. do'8-.    % 8
+        re'8 si16-1^\extover do'16 re'8-.\upbow si8-.\upbow re'8-. si8-.       % 9
+        do'8 la16 si16 do'8-.\upbow la-.\upbow do'8-. la-.                     % 10
+        si8-. sol8-. fad8-. sol8-. la,8-. fad8-.                               % 11
         sol4\p si4 mi'4-4(                                                     % 12
         mi'4) la4 re'4-4\<(                                                    % 13
         re'4) sol4  do'4(                                                      % 14
         do'4) fad4 si4(                                                        % 15
         si4) mi4 la4                                                           % 16
         fad4 re4 la4\!                                                         % 17
-        si8\downbow\f sol16 la16 si8\staccato\upbow sol8\staccato\upbow
-        si8\staccato sol8\staccato                                             % 18
-        la8 fad16 sol16 la8\staccato\upbow fad8\staccato\upbow
-        la8\staccato fad8\staccato                                             % 19
-        sol8 mi16 fad16 sol8\staccato\upbow mi8\staccato\upbow
-        sol8\staccato mi8\staccato                                             % 20
-        fad8\staccato re'8\staccato dod'8\staccato
-        re'8\staccato mi8\staccato dod'8\staccato                              % 21
-        re8\staccato mi8\staccato fad8\staccato
-        sol8\staccato la8\staccato fad8\staccato                               % 22
+        si8\downbow\f sol16 la16 si8-.\upbow sol8-.\upbow si8-. sol8-.         % 18
+        la8 fad16 sol16 la8-.\upbow fad8-.\upbow la8-. fad8-.                  % 19
+        sol8 mi16 fad16 sol8-.\upbow mi8-.\upbow sol8-. mi8-.                  % 20
+        fad8-. re'8-. dod'8-. re'8-. mi8-. dod'8-.                             % 21
+        re8-. mi8-. fad8-. sol8-. la8-. fad8-.                                 % 22
         si8\downbow \breathe sol16\downbow la16 si16 la16 sol16 la16
         si16 la16 sol16 si16                                                   % 23
         la8\downbow \breathe fad16\downbow sol16
         la16 sol16 fad16 sol16 la16 sol16 fad16 la16                           % 24
         sol8\downbow \breathe mi16\downbow fad16
         sol16 fad16 mi16 fad16 sol16 fad16 mi16 sol16                          % 25
-        fad8\staccato\f re'8\staccato dod'8\staccato
-        re'8\staccato mi8\staccato dod'8\staccato                              % 26
-        re'2 s4                                                                % 27
+        fad8-.\f re'8-. dod'8-. re'8-. mi8-. dod'8-.                           % 26
+        re'2 r4                                                                % 27
       }
       \repeat volta2 {
         \partial 4 r8 la8\upbow
-        la8 re16 mi16 fad8 sol8 la8-4 dod-3                                    % 28
-        re2-4 r8 la8-1\upbow                                                   % 29
-        la8 si8 la8 sol8-2 fad8 re8\open                                       % 30
+        la8\downbow re16 mi16
+%        fad8\upbow sol8\upbow la8-4 dod-3                                      % 28
+        fad8\upbow sol8\upbow la8 dod-4^\extdown                               % 28
+%        re2-4 r8 la8-1\upbow                                                   % 29
+        re2\open^\extover r8 la8\upbow                                         % 29
+%        la8 si8 la8 sol8-2 fad8 re8\open                                       % 30
+        la8 si8 la8 sol8 fad8 re8\open                                         % 30
         sol2 r8 re'8-2\upbow                                                   % 31
         re'8 mi'8 re'8 do'8-2 si8 sol8                                         % 32
-        do'2-4 do'8 mi'8                                                       % 33
-        la4-1\upbow re'4-3\open \appoggiatura do'8-4 si4                       % 34
-        sold8-3 mi'16-4 re'16 mi'8 la8 mi'8 sol8-2                             % 35
-        fad-3 re'16 do'16 re'8 sol8 re'8 fa8                                   % 36
+%        do'2-4 do'8 mi'8                                                       % 33
+        do'2 do'8 mi'8-4                                                       % 33
+%        la4-1\upbow re'4-3\open \appoggiatura do'8-4 si4                       % 34
+        la4\open\upbow re'4-4 \appoggiatura do'8 si4                           % 34
+        sold8-3 mi'16-4 re'16 mi'8-. la8-. mi'8-. sol8-2-.                     % 35
+        fad-3 re'16 do'16 re'8-. sol8-. re'8-. fa8-.                           % 36
         mi8 do'16(si16) do'16 re'16 do'16 si16 la16 sol16 fa16 mi16            % 37
-        re8 si16(la16) si16 do'16 si16 la16 sold16-4 fad16-2 mi16 re16         % 38
+        re8 si16(la16) si16 do'16 si16 la16
+        sold16-4^\extdown fad16-2 mi16-1^\extover re16\open                    % 38
         do8-2 la8-4 sold-3 la8 si,8-1 sold8                                    % 39
         la,8-1 la16 si16 do'4 r8 re'16 do'16                                   % 40
         si4 r8 do'16 si16 la4                                                  % 41
@@ -210,21 +205,23 @@ extover = \markup {
         do'8 mi8 red8-1 mi8-2 si,8-4 red8-1                                    % 43
         mi4-2 mi'2-1(                                                          % 44
         mi'4) re'8 do'8 si8 la8                                                % 45
-        si8 sol16 la16 si8\upbow do'8\downbow re'8 si8                         % 46
+        si8 sol16 la16 si8-.\upbow do'8-.\downbow re'8-. si8-.                 % 46
         mi'8-1\upbow re'8-4 do'8 si8 la8 sol8                                  % 47
         fad4\upbow re4 re'4-2                                                  % 48
-        mi'8-4\downbow do'16^\extup re'16 mi'8\upbow do'8\upbow mi'8 do'8      % 49
-        re'8^\extover si16-1 do'16 re'8\upbow si8\upbow re'8 si8               % 50
-        do'8 la16 si16 do'8\upbow la8\upbow do'8 la8                           % 51
+        mi'8-4\downbow do'16-1^\extup re'16
+        mi'8-.\upbow do'8-.\upbow mi'8-. do'8-.                                % 49
+        re'8^\extover si16-1 do'16
+        re'8-.\upbow si8-.\upbow re'8-. si8-.                                  % 50
+        do'8 la16 si16 do'8-.\upbow la8-.\upbow do'8-. la8-.                   % 51
         si8 sol8 fad8 sol8 la,8 fad8                                           % 52
         sol8 la8 si8 do'8 re'8 si8                                             % 53
-        mi'8-4\downbow do'16\downbow^\extup re'16
+        mi'8-4\downbow \breathe do'16\downbow^\extup re'16
         mi'16 re'16 do'16 re'16 mi'16 re'16 do'16 mi'16                        % 54
-        re'8-2^\extover si16-1\downbow do'16 re'16 do'16 si16 do'16
+        re'8-2^\extover \breathe si16-1\downbow do'16 re'16 do'16 si16 do'16
         re'16 do'16 si16 re'16                                                 % 55
-        do'8\downbow la16\downbow si16 do'16 si16 la16 si16
+        do'8\downbow \breathe la16\downbow si16 do'16 si16 la16 si16
         do'16 si16 la16 do'16                                                  % 56
-        si8 sol8 fad8 sol8 la,8 fad8                                           % 57
+        si8-.\f sol8-. fad8-. sol8-. la,8-. fad8-.                             % 57
         sol2 r4                                                                % 58
       }
     }
@@ -266,7 +263,7 @@ extover = \markup {
         mi8 \breathe dod16 re16 mi16 re16 dod16
         re16 mi16 re16 dod16 mi16                                             % 25
         re8\f sol,8 la,4 la,4                                                 % 26
-        re,2 s4                                                               % 27
+        re,2 r4                                                               % 27
         \repeat volta 2 {
           \partial 4 r4
           r4 r4 r8 la8                                                        % 28
