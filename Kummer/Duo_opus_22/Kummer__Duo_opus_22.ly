@@ -3,7 +3,7 @@
 \version "2.18.2"
 
 \header {
-  title = "Duo pour deux violoncelles (op. 22) (Cello I)"
+  title = "Sonate opus 22 (Cello I)"
   composer = "F. A. Kummer"
 }
 
@@ -30,6 +30,17 @@ retenir = \markup {
     \concat {
       \arrow-head #X #LEFT ##f
       \hspace #-1
+      \draw-line #'(-4 . 0)
+    }
+  }
+}
+
+retenirAppuyer = \markup {
+  \center-column {
+    \concat {
+      \arrow-head #X #LEFT ##f
+      \hspace #-1
+      \override #'(thickness . 3)
       \draw-line #'(-4 . 0)
     }
   }
@@ -93,7 +104,7 @@ extover = \markup {
       fad4\downbow-\markup{talon} la4-1(si4 do'4)                      % 26
       si4-3(sib2-2\>) la8-4\!(sol8-2)                                  % 27
       fad4-1-\markup{\dynamic f \italic subito}\downbow^\allongercourt
-      re'2-2^\retenir(dod'4)                                           % 28
+      re'2-2^\retenirAppuyer(dod'4)                                    % 28
       re'4\downbow re'2(dod'4)                                         % 29
       re'4-4(do'2 la8 fad8)                                            % 30
       re4.\upbow\>(mi8 fad8 sol8 la8-1 lad8-2)\!                       % 31
@@ -102,7 +113,7 @@ extover = \markup {
       si4\upbow(la2 si4)                                               % 33
       si4-1\downbow(do'4 re'4 do'4)                                    % 34
       do'4\upbow(si2 do'8 dod'8)                                       % 35
-      re'4\downbow^\allongercourt-\markup{léger}
+      re'4\downbow^\allongercourt
       sol'2-4\<fad'4\downbow(                                          % 36
       fa'4) mi'2 re'4-4\downbow\!(                                     % 37
       re'4) dod'4\upbow(si4 dod'4)                                     % 38
