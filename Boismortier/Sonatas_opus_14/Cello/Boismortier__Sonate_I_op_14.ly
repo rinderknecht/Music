@@ -73,7 +73,7 @@ extover = \markup {
         la8 si8\! do'4.\mf si16\< la16 si4                             % 21
         (si8)\! la16\f sol16 la8 mi8 fad8 re8 re'4                     % 22
         (re'8) do'16 si16 do'8 re'16 la16 si8 sol8 la,8 fad8           % 23
-        sol8 la8-.-\markup{\dynamic p \italic subito}
+        sol8 la8-.\sp %-\markup{\dynamic p \italic subito}
         sib8^\extup-. do'8-. re'8-.
         mib'8-4-. fad-2^\extover-. sol8-3-.                            % 24
         do'8-4-._\markup{\teeny II}
@@ -118,7 +118,7 @@ extover = \markup {
         fad8 sol8\! fad8\mf re8 sol4\< r8 sol,8                      % 21
         do4\!\f dod4 re8 re,8 r8 si8                                 % 22
         mi4 fad4 sol8 si,8 do8 re8                                   % 23
-        sol,8 re8-.-\markup{\dynamic p \italic subito}
+        sol,8 re8-.\sp %-\markup{\dynamic p \italic subito}
         sol8-. la8-. sib8-.
         do'8-. re'8-. mib'8-.                                        % 24
         fad8-. sol8-. do'8-. sib8-.
