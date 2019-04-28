@@ -68,10 +68,10 @@ extover = \markup {
   \new Staff
   \with {instrumentName = #"Cello I"}
   {
-    \override TextScript.avoid-slur = #'inside
-    \override TextScript.outside-staff-priority = ##f
-    \override Score.Fingering.avoid-slur = #'inside
-    \override Score.StrokeFinger.avoid-slur = #'inside
+%    \override TextScript.avoid-slur = #'inside
+%    \override TextScript.outside-staff-priority = ##f
+%    \override Score.Fingering.avoid-slur = #'inside
+%    \override Score.StrokeFinger.avoid-slur = #'inside
     \override Hairpin.to-barline = ##f
     \tempo Allegro
     \time 4/4
@@ -105,8 +105,8 @@ extover = \markup {
       sol4^\allonger\downbow(fad4) mi4^\allonger(la4)                  % 23
       re4-.^\allongercourt\downbow la4-1(si4-3 do'4-4)                 % 24
       si4-3^\retenir(sib2-2) la8-4^\allonger(sol8-2)                   % 25
-      fad4\downbow-\markup{talon} la4-1(si4 do'4)                      % 26
-      si4-3(sib2-2\>) la8-4\!(sol8-2)                                  % 27
+      fad4^\allongercourt\downbow-\markup{talon} la4-1(si4 do'4)       % 26
+      si4-3^\retenir(sib2-2\>) la8-4^\allonger\!(sol8-2)               % 27
       fad4-1\sf\downbow^\allongercourt
       re'2-2^\retenirAppuyer(dod'4)                                    % 28
       re'4\downbow re'2(dod'4)                                         % 29

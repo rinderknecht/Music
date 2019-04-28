@@ -152,8 +152,62 @@ extover = \markup {
       sol,8(re8 si8 re8) sol,8(re8 do'8 re8)                           % 71
       sol,8(re8 si8 re8) sol,8(re8 si8 re8)                            % 72
       sol,2 r4 r4                                                      % 73
-      \bar "|."
     }
+    si1\f                                                              % 74
+    sol,1                                                              % 75
+    <<sol,4\f re4 sol'2.>> re'4                                        % 76
+    si2-> sol2->                                                       % 77
+    mi1                                                                % 78
+    mi1                                                                % 79
+    mi'2.-> si4                                                        % 80
+    sold2-> mi2->                                                      % 81
+    do4\p(mi4 do4 mi4)                                                 % 82
+    si,4(mi4 si,4 mi4)                                                 % 83
+    sold,4(mi4 sold,4 mi4)                                             % 84
+    la,4(mi4 la,4 mi4)                                                 % 85
+    re4(mi4) do4(mi4)                                                  % 86
+    si,4(mi4) la,4(mi4)                                                % 87
+    re4(fa4) red4(fad4)                                                % 88
+    mi2 r4 r4                                                          % 89
+    mi'2.\p(la4)                                                       % 90
+    la2(sold2)                                                         % 91
+    mi'2.(si4)                                                         % 92
+    re'2(dod'2)                                                        % 93
+    re'2-> do'!2->                                                     % 94
+    sib2-> la2->                                                       % 95
+    sol4(la4 sib4 sol4)                                                % 96
+    fa2(mi2)                                                           % 97
+    fa4 r8 do'8\p-.\upbow si!8(do'8) r8 do'8-.                         % 98
+    re'8(do'8) r8 do'8-. do'8\<(re'8 mi'8 fa'8                         % 99
+    sol'4)\! r8 do'8 si8(do'8) r8 do'8                                 % 100
+    reb'8(do'8) r8 do'8-. do'8(mi'8 fa'8 sol'8                         % 101
+    la'8) r8 <<fa4\p la4\upbow>> r4 <<fa4 la4\upbow>>                  % 102
+    r4 <<fa4 la4\downbow>> la4(fa4)                                    % 103
+    mi8 r8 <<mi4 dod'4>> r4 <<mi4 dod'4\upbow>>                        % 104
+    r4 <<mi4 dod'4\downbow>> mi4(la4)                                  % 105
+    re8-.\< mi8-. re8-. do8-. si,!8-. sol,8-. la,8-. si,8-.\!          % 106
+    do4\f si,4 la,4 re4                                                % 107
+    sol,8(si,8 re8 fad8) sol2\p(                                       % 108
+    fa!2 re2)                                                          % 109
+    <<la,,4\f sol,4 mi2.>> mi4                                         % 110
+    do2-> mi2->                                                        % 111
+    sol,2(la,4 lad,4)                                                  % 112
+    si,4(la,4) si,4-. re4-.                                            % 113
+    <<sol,4\f re4 si2.>> sol4                                          % 114
+    si,2-> la,4(si,4)                                                  % 115
+    do2(re4 red4)                                                      % 116
+    mi4-. do4-. mi4(sol4)                                              % 117
+    mi4\p(sol,4 mi4 sol,4)                                             % 118
+    re4(sol,4 re4 sol,4)                                               % 119
+    fa4(re4 fa4 sol,4)                                                 % 120
+    mi4(sol,4 mi4 sol,4)                                               % 121
+    re4(sold4 la4 si4)                                                 % 122
+    do'4->(si4-> la4-> sol!4->)                                        % 123
+    fa4\pp r4 mi4 r4                                                   % 124
+    red4 r4 re!4 r4                                                    % 125
+    do8\p(sol,8 do8 sol,8) re8(sol,8 do8 sol,8)                        % 126
+    do8(sol,8 si,8 sol,8) si,8(sol,8 do8 sol,8)                        % 127
+    dod8(sol,8 re8 sol,8) mi8(sol,8 re8 sol,8)                         % 128
   }
 }
 
