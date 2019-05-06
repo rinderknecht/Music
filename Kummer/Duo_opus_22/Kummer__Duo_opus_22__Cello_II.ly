@@ -366,3 +366,160 @@ extover = \markup {
     \bar "|."
   }
 }
+
+\score {
+  \new Staff
+  \with {instrumentName = #"Cello II"}
+  {
+    \override Hairpin.to-barline = ##f
+    \tempo "Allegro scherzoso"
+    \time 2/4
+    \key do \major
+    \clef bass
+    <<do,8-.\p( mi8>>
+    <<do,8-. mi8>>
+    <<do,8-. fa8>>
+    <<do,8-.) fa8>>                                                    % 1
+    <<do,8-.( mi8>>
+    <<do,8-. mi8>>
+    <<do,8-. mi8>>
+    <<do,8-.) mi8>>                                                    % 2
+    <<do,8-.( mi8>>
+    <<do,8-. mi8>>
+    <<do,8-. fa8>>
+    <<do,8-.) fa8>>                                                    % 3
+    <<do,8-.( mi8>>
+    <<do,8-. mi8>>
+    <<do,8-. mi8>>
+    <<do,8-.) mi8>>                                                    % 4
+    <<do,8-.( fa8>>
+    <<do,8-. fa8>>
+    <<do,8-. mi8>>
+    <<do,8-.) mi8>>                                                    % 5
+    <<do,8-.( la,8>>
+    <<do,8-. la,8>>
+    <<do,8-. sol,8>>
+    <<do,8-.) sol,8>>                                                  % 6
+    fa8-. mi8-. si,8-. do8-.                                           % 7
+    sol,8(si,8) re8(fa8)                                               % 8
+    <<do,8-.( mi8>>
+    <<do,8-. mi8>>
+    <<do,8-. fa8>>
+    <<do,8-.) fa8>>                                                    % 9
+    <<do,8-.( mi8>>
+    <<do,8-. mi8>>
+    <<do,8-. mi8>>
+    <<do,8-.) mi8>>                                                    % 10
+    <<do,8-.( mi8>>
+    <<do,8-. mi8>>
+    <<do,8-. fa8>>
+    <<do,8-.) fa8>>                                                    % 11
+    <<do,8-.( mi8>>
+    <<do,8-. mi8>>
+    <<do,8-. mi8>>
+    <<do,8-.) mi8>>                                                    % 12
+    <<do,8-.->( red8>>
+    <<do,8-. red8>>
+    <<do,8-. mi8>>
+    <<do,8-.) mi8>>                                                    % 13
+    <<do,8-.->( red8>>
+    <<do,8-. red8>>
+    <<do,8-. mi8>>
+    <<do,8-.) mi8>>                                                    % 14
+    <<sol,8-.( mi8>>
+    <<sol,8-.) mi8>>
+    <<sol,8-.( fa8>>
+    <<sol,8-.) fa8>>                                                   % 15
+    <<sol,8-. mi8>>
+    mi8(do8 si,8)                                                      % 16
+    <<la,8-.\p( mi8>>
+    <<la,8-. mi8>>
+    <<la,8-. mi8>>
+    <<la,8-.) mi8>>                                                    % 17
+    <<la,8-.( fa8>>
+    <<la,8-. fa8>>
+    <<la,8-. mi8>>
+    <<la,8-.) mi8>>                                                    % 18
+    <<la,8-.( mi8>>
+    <<la,8-. mi8>>
+    <<la,8-. mi8>>
+    <<la,8-.) mi8>>                                                    % 19
+    <<la,8-.( fa8>>
+    <<la,8-. fa8>>
+    <<la,8-. mi8>>
+    <<la,8-.) mi8>>                                                    % 20
+    <<la,8-.\<( fad8>>
+    <<la,8-. fad8>>
+    <<la,8-. fad8>>
+    <<la,8-.)\! fad8>>                                                 % 21
+    <<la,4-> fad4>>
+    <<la,4-> fad4>>                                                    % 22
+    <<la,4 fad4>> r4                                                   % 23
+    r4 r4                                                              % 24
+    si4.\p\downbow(do'8)                                               % 25
+    re'4.(sol'8)                                                       % 26
+    fad'4.(mi'8)                                                       % 27
+    re'4.(do'8)                                                        % 28
+    si4.(do'8)                                                         % 29
+    re'4.(sol'8)                                                       % 30
+    fad'4.(mi'8)                                                       % 31
+    re'4.(do'8)                                                        % 32
+    si4.(la8)\<                                                        % 33
+    sol2                                                               % 34
+    do'4.(si8)\!                                                       % 35
+    la8(re'8 dod'8 do'8)                                               % 36
+    si4.(la8)                                                          % 37
+    la8(sol8) sol8-. sol8-.                                            % 38
+    re'8(do'4 si8)                                                     % 39
+    si4(la4)                                                           % 40
+    fad'4(
+    \appoggiatura {sol'16 fad'16}
+    mi'8 fad'8)                                                        % 41
+    sol'8(fad'8 mi'8 re'8)                                             % 42
+    re'4.(do'8)\<                                                      % 43
+    si2                                                                % 44
+    do'4 re'4                                                          % 45
+    mi'4 mi'4\!                                                        % 46
+    fa'!4.->(mi'8)                                                     % 47
+    fa'4.->(mi'8)                                                      % 48
+    fa'8 r8 sol4\p(                                                    % 49
+    fa4 re4)                                                           % 50
+    <<do,8-.( mi8>>
+    <<do,8-. mi8>>
+    <<do,8-. fa8>>
+    <<do,8-.) fa8>>                                                    % 51
+    <<do,8-.( mi8>>
+    <<do,8-. mi8>>
+    <<do,8-. mi8>>
+    <<do,8-.) mi8>>                                                    % 52
+    <<do,8-.( mi8>>
+    <<do,8-. mi8>>
+    <<do,8-. fa8>>
+    <<do,8-.) fa8>>                                                    % 53
+    <<do,8-.( mi8>>
+    <<do,8-. mi8>>
+    <<do,8-. mi8>>
+    <<do,8-.) mi8>>                                                    % 54
+    <<do,8-.( fa8>>
+    <<do,8-. fa8>>
+    <<do,8-. mi8>>
+    <<do,8-.) mi8>>                                                    % 55
+    <<do,8-.( la,8>>
+    <<do,8-. la,8>>
+    <<do,8-. sol,8>>
+    <<do,8-.) sol,8>>                                                  % 56
+    fa8-. mi8-. si,8-. do8-.                                           % 57
+    sol,8(si,8) re8(fa8)                                               % 58
+    <<do,8-.( mi8>>
+    <<do,8-. mi8>>
+    <<do,8-. fa8>>
+    <<do,8-.) fa8>>                                                    % 59
+    <<do,8-.( mi8>>
+    <<do,8-. mi8>>
+    <<do,8-. mi8>>
+    <<do,8-.) mi8>>                                                    % 60
+
+
+    \bar "|."
+   }
+}
