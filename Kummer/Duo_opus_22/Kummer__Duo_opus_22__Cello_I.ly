@@ -9,7 +9,15 @@
 
 \language "italiano"
 
-allonger = \markup {
+allongerTrois = \markup {
+  \center-column {
+    \combine
+    \draw-line #'(-6 . 0)
+    \arrow-head #X #RIGHT ##f
+  }
+}
+
+allongerDeux = \markup {
   \center-column {
     \combine
     \draw-line #'(-4 . 0)
@@ -17,7 +25,7 @@ allonger = \markup {
   }
 }
 
-allongercourt = \markup {
+allongerUne = \markup {
   \center-column {
     \combine
     \draw-line #'(-2 . 0)
@@ -94,7 +102,7 @@ extover = \markup {
       re'2\upbow(do'2)                                                 % 12
       fa'1-2\<                                                         % 13
       fa'4\upbow\!\>(mi'4 la4\open si4-1)\!                            % 14
-      do'2\downbow si4..(la16)                                         % 15
+      do'2\downbow^\allongerUne si4..(la16)                            % 15
       la2\downbow\open sol4(fa4)                                       % 16
       mi4\p\downbow(sol,4 mi4 sol,4)                                   % 17
       re4\upbow(sol,4 re4 sol,4)                                       % 18
@@ -102,12 +110,12 @@ extover = \markup {
       mi4\upbow(sol4 mi4 sol4)                                         % 20
       fa4\downbow(sol4 fa4 mib4)                                       % 21
       re4\upbow(fad4 sol4 la4)                                         % 22
-      sol4^\allonger\downbow(fad4) mi4^\allonger(la4)                  % 23
-      re4-.^\allongercourt\downbow la4-1(si4-3 do'4-4)                 % 24
-      si4-3^\retenir(sib2-2) la8-4^\allonger(sol8-2)                   % 25
-      fad4^\allongercourt\downbow-\markup{talon} la4-1(si4 do'4)       % 26
-      si4-3^\retenir(sib2-2\>) la8-4^\allonger\!(sol8-2)               % 27
-      fad4-1\sf\downbow^\allongercourt
+      sol4^\allongerDeux\downbow(fad4) mi4^\allongerDeux(la4)          % 23
+      re4-.^\allongerUne\downbow la4-1(si4-3 do'4-4)                   % 24
+      si4-3^\retenir(sib2-2) la8-4^\allongerDeux(sol8-2)               % 25
+      fad4^\allongerUne\downbow-\markup{talon} la4-1(si4 do'4)         % 26
+      si4-3^\retenir(sib2-2\>) la8-4^\allongerDeux\!(sol8-2)           % 27
+      fad4-1\sf\downbow^\allongerUne
       re'2-2^\retenirAppuyer(dod'4)                                    % 28
       re'4\downbow re'2(dod'4)                                         % 29
       re'4-4(do'2 la8 fad8)                                            % 30
@@ -117,7 +125,7 @@ extover = \markup {
       si4\upbow(la2 si4)                                               % 33
       si4-1\downbow(do'4 re'4 do'4)                                    % 34
       do'4\upbow(si2 do'8 dod'8)                                       % 35
-      re'4\downbow^\allongercourt
+      re'4\downbow^\allongerUne
       sol'2-4\<fad'4\downbow(                                          % 36
       fa'4) mi'2 re'4-4\downbow\!(                                     % 37
       re'4) dod'4\upbow(si4 dod'4)                                     % 38
@@ -127,24 +135,25 @@ extover = \markup {
       sol8\downbow(re8 fad8 re8) fad8(re8 sol8 re8)                    % 41
       sold8-4^\extdown(re8^\extover la8 re8) si8(re8 la8 re8)          % 42
       la8(re8 sol8 re8) sol8(re8 la8 lad8-1)                           % 43
-      si2-1 la4(do'4)                                                  % 44
+      si2-1\mp la4(do'4)                                               % 44
       sol4(si4) fad4(la4)                                              % 45
-      mi2 la,4(do4)                                                    % 46
-      re2 re2                                                          % 47
+      mi2\< la,4(do4)                                                  % 46
+      re2 re2\!                                                        % 47
       \mark \default
-      sol,4-.\f si8-.\upbow do'8-. dod'8(re'8 do'8) si8-.              % 48
+      sol,4-.\f si8-.\upbow do'8-.
+      dod'8^\allongerTrois(re'8 do'8) si8-.                            % 48
       si8(la8) la-.\downbow sol8-. fad8-. mi8-. re8-. do8-.            % 49
-      si,4 si8-.\upbow\p do'8-. dod'8(re'8 do'8) si8-.                 % 50
+      si,4 si8-.\upbow\p do'8-. dod'8^\allongerTrois(re'8 do'8) si8-.  % 50
       si8(la8) la8-. sol8-. fad8-. mi8-. re8-. do8-.                   % 51
       si,8-. re8-. sol4\downbow\((sol8) mi8-.\) la4\upbow\((           % 52
       la8\<) fad8-.\)
       si4\downbow(si8) sol8-.\upbow
       do'4\downbow(          % 53
-      do'4)\! la'2-3\flageolet\>(do'4)\!                                % 54
+      do'4)\! la'2-3\flageolet\>(do'4)\!                               % 54
       do'8\downbow\p(si8) re'8-.\upbow(si8-.) si8(la8)
       do'8-.\upbow(la8-.)                                              % 55
-      la8\downbow(sol8) si8-.\upbow(sol-.) sol8(fad8)
-      la-.\upbow(fad8-.)                                               % 56
+      la8-2\downbow(sol8-1) si8-4-.\upbow(sol-1-.) sol8-2(fad8-1)
+      la8-4-.\upbow(fad8-1-.)                                          % 56
       sol4\downbow sol8-.\f\upbow la8-.\downbow
       lad8-1(si8-2 la8\open) sol8-.-4\downbow                          % 57
       sol8\upbow(fad8) fad8-.\downbow mi8-. re8-. do8-. si,8-. la,8-.  % 58
@@ -164,7 +173,8 @@ extover = \markup {
       sol1(                                                            % 72
       sol2) r2                                                         % 73
       }
-      \mark \default
+
+    \mark \default
       <<sol,4\f re4 sol'2.-4>> re'4-4                                  % 74
       si2-> sol2->                                                     % 75
       fa1                                                              % 76
@@ -180,7 +190,7 @@ extover = \markup {
       do'4.->(si8) si4.->(la8)                                         % 86
       re'2 do'2                                                        % 87
       si2 do'4.->(la8)                                                 % 88
-      mi4-.\downbow^\allongercourt re4\upbow(do4 si,4)                 % 89
+      mi4-.\downbow^\allongerUne re4\upbow(do4 si,4)                   % 89
       do4(mi4 do4 mi4)                                                 % 90
       si,4(mi4 si,4 mi4)                                               % 91
       sold,4-1(mi4-2 sold,4 mi4)                                       % 92
