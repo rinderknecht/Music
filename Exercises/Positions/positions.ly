@@ -104,9 +104,9 @@
 
    % Ligne 2
 
-   \repeat volta 2 { fa4-2  sol4 mi4 fa4  | si4  do'4 la4-1 si4  }
-   \repeat volta 2 { sol4-4 fa4  mi4 sol4 | do'4 si4  la4-1 do'4 }
-   \repeat volta 2 { sol4-4 mi4  fa4 sol4 | do'4 la4  si4-1 do'4 }
+   \repeat volta 2 { fa4-2  sol4 mi4 fa4  | si4  do'4  la4-1 si4  }
+   \repeat volta 2 { sol4-4 fa4  mi4 sol4 | do'4 si4   la4-1 do'4 }
+   \repeat volta 2 { sol4-4 mi4  fa4 sol4 | do'4 la4-1 si4   do'4 }
 
    \break
 
