@@ -72,6 +72,76 @@
    mi2. re8 do8 si,4 re4                                          % 54
    do4 do'4 si4 mi4 fad?4 sold4                                   % 55
    la2(la8) si8 la8 sol8 fa4 re4                                  % 56
+   sol2(sol8) la8 sol8 fa8 mi4 do4                                % 57
+   fa2(fa8) sol8 fa8 mi8 re4 si,4                                 % 58
+   mi2(mi8) fa8 mi8 re8 do4 la,4                                  % 59
+   re2(re8) mi8 re8 do8 si,4 sol,4                                % 60
+   do4 do'4 mi4 fa4 sol4 sol,4                                    % 61
+   do4 sol,4 do4 re4 mi4 fa4                                      % 62
+   sol4 fa8 mi8 re4 do4 re4 mi4                                   % 63
+   fa4 mi4 fa4 mi4 fa4 re4                                        % 64
+   mi8 fa8 mi8 re8 do8 re8 do8 si,8 la,4 la8 sol8                 % 65
+   fa4 mi8 re8 do4 re4 mi4 mi,4                                   % 66
+   la,4 la4 si4 do'4 la4 si4                                      % 67
+   sol4 la4 fa4 sol4 mi4 fa4                                      % 68
+   re4 si,4 do4 fa4 sol4 sol,4                                    % 69
+   do4 do'8 do'8 do'4 do8 do8 do8 re8 mi8 fa8                     % 70
+   sol4 sol,8 sol,8 sol,4 sol8 sol8 sol8 fa8 mi8 re8              % 71
+   re4 re'8 re'8 re'4 re8 re8 re8 mi8 fa8 sol8                    % 72
+   la4 la,8 la,8 la,4 la8 la8 la8 sol8 fa8 mi8                    % 73
+   mi4 fa4 mi4 re4 do4 si,4                                       % 74
+   la4 si4 la4 sol4 fa4 mi4                                       % 75
+   re4 mi4 re4 do4 si,4 la,4                                      % 76
+   mi4 fa4 mi4 re4 do4 si,4                                       % 77
+   la,4 la8 si8 do'4 do8 re8 mi4 mi8 fa8                          % 78
+   sol4 fa8 mi8 re4 re'8 dod'8 re'4 do'?8 si8                     % 79
+   la4 do8 si,8 la,4 do'8 si8 la4 sol8 fa8                        % 80
+   mi4 fa8 mi8 re4 mi8 re8 do4 re8 do8                            % 81
+   si,4 re8 do8 si,4 re8 do8 si,8 do8 re8 mi8                     % 82
+   do4 la,4 la4 si4 do'4 sold4                                    % 83
+   la4 mi4 fa4 re4 mi4 mi,4                                       % 84
+   la,2 r2 r2                                                     % 85
+   mi'4 mi'4 la4 la4 mi4 mi4                                      % 86
+   do4 la,4 la8 si8 do'8 si8 la8 sol8 fad8 mi8                    % 87
+   si8 do'8 si8 la8 sol8 la8 sol8 fad?8 mi4 do4                   % 88
+   do'8 re'8 do'8 si8 la8 si8 la8 sol8 fad8 sol8 fad8 mi8         % 89
+   si8 la8 si8 do'8 si8 do'8 si8 do'8 la8 si8 la8 si8             % 90
+   sol8 la8 sol8 fad?8 mi8 fad?8 sol8 la8 si4 si,4                % 91
+   mi8 fa8 mi8 re8 do4 do'4 si4 do'4                              % 92
+   la8 si8 la8 sol8 fa4 mi4 re4 sol4                              % 93
+   mi8 fa8 mi8 re8 do4 do'4 si4 la4                               % 94
+   sol8 la8 si8 sol8 do'8 si8 la8 sol8 la8 sol8 fa8 mi8           % 95
+   fa8 mi8 fa8 sol8 la8 sol8 la8 fa8 sol4 sol,4                   % 96
+   do4 mi'4 mi'4 re'8 do'8 si4 re'4                               % 97
+   do'4 si8 la8 sold4 si4 mi4 fad?8 sold?8                        % 98
+   la4 do'8 si8 la8 si8 la8 sol8 fa8 sol8 fa8 mi8                 % 99
+   re8 mi8 re8 do8 si,4 la,4 mi4 mi,4                             % 100
+   la,8 si,8 do8 re8 mi8 fa8 mi8 re8 do8 re8 do8 si,8             % 101
+   la,8 si,8 do8 si,8 la,8 si,8 do8 si,8 la,8 si,8 do8 la,8       % 102
+   si,8 do8 re8 do8 si,8 do8 re8 do8 si,8 do8 re8 si,8            % 103
+   do8 re8 mi8 re8 do8 re8 mi8 re8 do8 re8 mi8 do8                % 104
+   re8 mi8 fa8 mi8 re8 mi8 fa8 mi8 re8 mi8 fa8 re8                % 105
+   mi8 fa8 sol8 fa8 mi8 fa8 sol8 fa8 mi8 fa8 sol8 mi8             % 106
+   fa8 sol8 la8 sol8 fa8 sol8 la8 sol8 fa8 sol8 la8 fa8           % 107
+   sol8 la8 si8 la8 sol8 la8 si8 la8 sol8 la8 si8 sol8            % 108
+   la8 si8 do'8 si8 la8 si8 do'8 si8 la8 si8 do'8 la8             % 109
+   si8 do'8 re'8 do'8 si8 do'8 re'8 do'8 si8 do'8 re'8 si8        % 110
+   do'8 re'8 do'8 si8 la8 si8 la8 sol8 fa8 sol8 fa8 mi8           % 111
+   re8 mi8 fa8 mi8 re8 mi8 fa8 mi8 re8 do8 si,8 la,8              % 112
+   sol,4 la,4 sol,4 fa,4 mi,4 re,4                                % 113
+   do,4 re,4 mi,4 fa,4 sol,4 sol4                                 % 114
+   do'4 do4 r4 do8 re8 mi8 fa8 mi8 fa8                            % 115
+   sol4 sol,4 r4 sol,8 la,8 si,8 do8 si,8 do8                     % 116
+   re4 re,4 r4 re8 mi8 fa8 mi8 fa8 re8                            % 117
+   la4 la,4 r4 la8 si8 do'8 si8 do' la8                           % 118
+   mi'4 re'4 do'4 si4 la4 sol4                                    % 119
+   fa4 mi4 re4 do4 si,4 la,4                                      % 120
+   sold,4 fa,4 mi,4 re,4 do,4 si,4                                % 121
+   do4 do,4 re4 re,4 mi4 mi,4                                     % 122
+   fa4 fa,4 sol4 sol,4 la4 la,4                                   % 123
+   si4 si,4 do'4 do4 re4 fa4                                      % 124
+   mi8 fa8 mi8 re8 do4 re4 mi4 mi,4                               % 125
+   la,4 do'8 si8 la4 do8 si,8 la,4 la8 sol8                       % 126
    \bar "|."
  }
 }
