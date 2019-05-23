@@ -142,6 +142,33 @@
    si4 si,4 do'4 do4 re4 fa4                                      % 124
    mi8 fa8 mi8 re8 do4 re4 mi4 mi,4                               % 125
    la,4 do'8 si8 la4 do8 si,8 la,4 la8 sol8                       % 126
+   fa4 fa,8 mi,8 re,4 re8 do8 si,4 si8 la8                        % 127
+   sol4 si,8 la,8 sol,4 re'8 do'8 si4 sol,8 fa,8                  % 128
+   mi,4 mi'8 re'8 do'4 la,8 si,8 do4 re8 mi8                      % 129
+   fa4 la8 sol8 fa4 mi8 fa8 re4 sol8 fa8                          % 130
+   mi4 do8 re8 mi4 sol8 fa8 mi8 re8 mi8 do8                       % 131
+   si,4 re'8 do'8 si4 re'8 do'8 si8 re'8 do'8 si8                 % 132
+   do'4 la8 sol8 fa4 re,8 mi,8 fad,8 sol,8 la,8 fad,8             % 133
+   sol,8 sol8 sol8 sol8 re8 sol8 sol8 sol8 si,8 sol8 sol8 sol8    % 134
+   mi8 sol8 sol8 sol8 do8 do'8 do'8 do'8 sol8 do'8 do'8 do'8      % 135
+   la8 do'8 do'8 do'8 fa8 la8 la8 la8 fa8 la8 la8 la8             % 136
+   re4 mi4 fa4 mi4 fa4 re4                                        % 137
+   mi4 mi,4 sold,4 sold4 la4 la,4                                 % 138
+   si,4 si4 do'4 do4 re4 re'4                                     % 139
+   mi'4 mi4 fa4 fa,4 sol,4 sol4                                   % 140
+   la4 la,4 si,4 si4 do'4 do4                                     % 141
+   re4 mi4 fa4 la4 sol4 sol,4                                     % 142
+   do4 r4 re4 r4 mi4 r4                                           % 143
+   fa8 fa8 r4 re8 re8 r4 si,8 si,8 r4                             % 144
+   mi8 fa8 mi8 re8 do4 re4 mi4 mi,4                               % 145
+   fa,4 mi,8 re,8 do,4 re,4 mi,4 mi'4                             % 146
+   do'4 si8 la8 sold4 la8 si8 mi4 fad?8 sold?8                    % 147
+   la4 mi4 fa4 re4 mi4 mi,4                                       % 148
+   la,8 la8 sol8 fa8 mi8 fa8 mi8 re8 do8 re8 do8 si,8             % 149
+   la,8 si,8 la,8 si,8 do8 re8 do8 si,8 do8 re8 do8 re8           % 150
+   mi4 la4 si4 mi4 la4 do4                                        % 151
+   re2 r4 re4 mi2                                                 % 152
+   la,2 mi2 mi,2                                                  % 153
    \bar "|."
  }
 }
