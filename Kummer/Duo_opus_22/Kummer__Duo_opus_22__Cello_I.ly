@@ -3,7 +3,7 @@
 \version "2.18.2"
 
 \header {
-  title = "Sonate opus 22 (Cello I)"
+  title = "Duo opus 22 (Cello I)"
   composer = "F. A. Kummer"
 }
 
@@ -182,7 +182,7 @@ extover = \markup {
       fa1                                                              % 77
       sold'2.-> mi'4-2                                                 % 78
       si2-4-> sold2-1->                                                % 79
-      re1-2                                                            % 80
+      re1-2_\markup{\teeny III}                                        % 80
       re1                                                              % 81
       mi'2.-2\p(la4\open)                                              % 82
       la2-2(sold2-1)                                                   % 83
@@ -201,15 +201,15 @@ extover = \markup {
       sib,\downbow(la,4 sol,4 sib,4)                                   % 96
       do1                                                              % 97
       \mark \default
-      fa,4 <<fa4\p la4>> r4 <<fa4 la4\upbow>>                          % 98
+      fa,4 <<fa4\p la4\upbow>> r4 <<fa4 la4\upbow>>                    % 98
       r4 <<fa4 la4\downbow>> la4(fa4)                                  % 99
-      mi4 <<sib,4 mi4>> r4 <<sib,4 mi4\upbow>>                         % 100
+      mi4 <<sib,4 mi4\upbow>> r4 <<sib,4 mi4\upbow>>                   % 100
       r4 <<sib,4 mi4\downbow>> sol,4(do,4)                             % 101
       fa,4 r8 do'8-.\p\upbow si8(do'8) r8 do'8-.                       % 102
       re'8\downbow(do'8) r8 do'8-.\upbow\<
       do'8\downbow(re'8 mi'8 fa'8)                                     % 103
-      sol'4\!\upbow r8 la8\upbow sib-1(la8) r8 la8                     % 104
-      sib8(la8) r8 la8\upbow\< la8\downbow(dod'8 re'8 mi'8)            % 105
+      sol'4\!\upbow r8 la8\upbow sib-1^\extup(la8) r8 la8              % 104
+      sib8(la8) r8^\extover la8\upbow\< la8\downbow(dod'8 re'8 mi'8)   % 105
       fa'4\! la'4-3\flageolet sol'4(fa'4)                              % 106
       mi'2\f fad'4(mi'8 fad'8)                                         % 107
       sol'4 r4 sol2\p\upbow                                            % 108
@@ -228,7 +228,7 @@ extover = \markup {
       sol'2.(si4)                                                      % 120
       re'2(do'2)                                                       % 121
       fa'1                                                             % 122
-      mi'4->(re'4-> do'4-> si4->)                                      % 123
+      mi'4--(re'4-- do'4-- si4--)                                      % 123
       la4\pp r4 sol4 r4                                                % 124
       fad4 r4 fa4 r4                                                   % 125
       mi2_\markup{\italic "dolce"}(fa4 mi4)                            % 126
@@ -248,22 +248,22 @@ extover = \markup {
       <<fa1 la1>>                                                      % 140
       <<{mi2 fa2}\\ {\stemUp sol,2(sol,2) \stemNeutral}>>              % 141
       \mark \default
-      mi4 mi'8-1-.\f fa'8-. fad'8(sol'8 fa'8) mi'8-.                   % 142
-      mi'8(re'8-4) re'8-. do'8-. si8-. la8-. sol8-. fa8-.              % 143
+      mi4 mi'8-1-.\f fa'8-. fad'8(sol'8 fa'8) mi'8-.\downbow           % 142
+      mi'8\upbow(re'8-4) re'8-. do'8-. si8-. la8-. sol8-. fa8-.        % 143
       mi4 mi8\p-. fa8-. fad8(sol8 fa8) mi8-.                           % 144
       mi8\upbow(re8) re8-.\downbow do8-. si,8-. la,8-. sol,8-. fa,8-.  % 145
       mi,8-. sol,8-. do4\((do8) la,8-.\) re4\((                        % 146
-      re8) si,8-.\) mi4\((mi8) do8-.\) fa4(                            % 147
+      re8\<) si,8-.\) mi4(mi8) do8-.\upbow fa4\!\f\downbow(            % 147
       fa4) re'8-.\upbow(do'8-. si-. la8-. sol8-. fa8-.)                % 148
       mi4 sol'4.\>(fa'8 la8 re'8)\!                                    % 149
       re'8\p(do'8) r8 do'8-.\upbow do'8\downbow(si8) r8 si8-.          % 150
-      do'4\f do'8-. re'8-1-. red'8(mi'8 re'8) do'8-2-.                 % 151
+      do'4\f do'8-. re'8-1-. red'8(mi'8 re'8) do'8-2-.\downbow         % 151
       do'8(si8) si8-. la8-. sol8-. fa8-. mi8-. re8-.                   % 152
-      do4 do8\p-. re8-. red8-1(mi8 re8 ) do8-4-.                       % 153
-      do8(si,8) si,8-. la,8-. sol,8-. fa,8-. mi,8-. re,8-.             % 154
+      do4 do8\p-. re8-. red8-1(mi8 re8 ) do8-4-.\downbow               % 153
+      do8\upbow(si,8) si,8-. la,8-. sol,8-. fa,8-. mi,8-. re,8-.       % 154
       do,4.(mi,8-.) fa,4.(re,8-.)                                      % 155
       sol,4.\<(mi,8-.) la,4.(fa,8-.)\!                                 % 156
-      si,4 si8-.(la8-. sol8-. fa8-. mi8-. re8-.)                       % 157
+      si,4 si8-.\upbow(la8-. sol8-. fa8-. mi8-. re8-.)                 % 157
       do4 r4 <<fa4 la4\upbow>> r4                                      % 158
       r4 <<sol,4\p mi4\downbow>> r4 <<sol,4 re4\upbow>>                % 159
       <<sol,8 mi8>> r8 mi4\<(fa4 fad4)                                 % 160
@@ -272,7 +272,7 @@ extover = \markup {
       re'4 mi'4-1 fa'8.(fa'16-.) sol'8.(sol'16-.)                      % 162
       la'4-3\flageolet\f r4 si4 r4                                     % 163
       do'2 r2                                                          % 164
-      sol'2.(si4)                                                      % 165
+      sol'2.\upbow(si4)                                                % 165
       do'2 r2                                                          % 166
       sol'2.(si4)                                                      % 167
       do'2\pp(si4 re'4)                                                % 168
@@ -282,6 +282,8 @@ extover = \markup {
       \bar "|."
   }
 }
+
+\pageBreak
 
 \score {
   \new Staff
@@ -398,6 +400,8 @@ extover = \markup {
     \bar "|."
   }
 }
+
+\pageBreak
 
 \score {
   \new Staff
