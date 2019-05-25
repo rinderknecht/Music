@@ -192,8 +192,8 @@
    re8 si16 la16 si8 re8 do8 la16 sold16 la8 do8                  % 172
    si,8 sold16 fad16 sold8 si,8 la,16 do16 si,16 re16
    do16 mi16 re16 fa?16                                           % 173
-   mi8 do'4 mi8 fa8 re'4 si8                  % XXX               % 174
-   sold8 mi4 si,8 do8 do'4 si8                % XXX               % 175
+   mi8 do'4 mi8[fa8] re'4 si8                                     % 174
+   sold8 mi4 si,8[do8] do'4 si8                                   % 175
    la16 si16 sol16 la16 fa8 mi4 re8 do16 re16 do16 si,16          % 176
    la,8 la4 si16 do'16 sold8 la8 re8 fa8                          % 177
    mi8 si,8 do8 sold,8 la,8 fa,8 re,8 mi,8                        % 178
@@ -205,8 +205,8 @@
    si16 re16 do16 si,16                                           % 182
    do8 la16 sold16 la16 do16 si,16 la,16 si,16 si16
    la4 sol?16 fad?16                                              % 183
-   sol16 si16 mi'4 re'16 do'16 re'16 re16 re'4 do'16 si16 % XXX   % 184
-   do'16 do16 do'4 si16 la16 si16 si,16 si4 la16 sol?16   % XXX   % 185
+   sol16 si16 mi'4 re'16[do'16 re'16 re16] re'4 do'16 si16        % 184
+   do'16 do16 do'4 si16[la16 si16 si,16] si4 la16 sol?16          % 185
    la16 la,16 la4 si16 la16 sold8 la8 fa8 mi16 re16               % 186
    mi16 fa16 mi16 re16 do16 do'16 si16 la16
    si16 mi16 re16 do16 si,16 si16 la16 sold16                     % 187
@@ -240,7 +240,7 @@
    mi8(do8) sol8 do'8 re'8(la8)
    si8(sol8) do'8 re8 do'8(si8)                                   % 208
    do'4 do,8 do'8 re'8(do'8) sib8(do'8) la8 sold8(la8) si?8       % 209
-   la8(si8) do'8 re'8(si8) la8 sold8(mi8) la8) la4 sold8          % 210
+   la8(si8) do'8 re'8(si8) la8 sold8(mi8) la8 la4 sold8           % 210
    la4 do'8 red8 si8(la8) sol8(la8) si8 do8 red8(mi8)             % 211
    si,4 si8 red8 si8 si8 sol4 mi8 si,8 mi8 mi8                    % 212
    do4 la8 mi8 la8 la8 fad4 re8 la,8 re8 re8                      % 213
