@@ -1,4 +1,5 @@
 #(set-global-staff-size 21)
+% #(set-default-paper-size "a4" 'landscape)
 
 \version "2.18.2"
 \header {

@@ -32,11 +32,11 @@
    la8 re8 mi4 la,4 r8 la8                                        % 15
    sold8 la8 si8 do'8 si8 mi8 do'8 si8                            % 16
    la8 sol8 fa8 mi8 si4 mi'8 mi'8                                 % 17
-   red'8 mi'8 si8 dod'8 re'4 re'8 re'8                            % 18
-   dod'8 re'8 la8 si8 do'8 si8 la8 sol8                           % 19
+   red'8 mi'8 si8 dod'8 re'?4 re'8 re'8                           % 18
+   dod'8 re'8 la8 si8 do'?8 si8 la8 sol8                          % 19
    fad8 mi8 si8 si,8 mi4 la8 la8                                  % 20
-   sold8 la8 mi8 fad8 sol4 sol8 sol8                              % 21
-   fad8 sol re8 mi8 fa8 mi8 re8 do8                               % 22
+   sold8 la8 mi8 fad8 sol?4 sol8 sol8                             % 21
+   fad8 sol re8 mi8 fa?8 mi8 re8 do8                              % 22
    si,8 la,8 mi8 mi,8 la,4 do'8 do8                               % 23
    sol8 do'8 la8 si8 sol8 la8 fa8 sol8                            % 24
    mi8 do8 sol8 sol8 la8 si8 do'8 re'8                            % 25
@@ -45,11 +45,11 @@
    sol8 sol8 fa8 mi8 re8 re'8 do'8 si8                            % 28
    la8 la,8 do8 la,8 mi8 do'8 si8 la8                             % 29
    sold8 la8 si8 do'8 si8 mi8 la4(                                % 30
-   la4) sold4 la8 sol8 fa8 mi8                                    % 31
+   la4) sold4 la8 sol?8 fa8 mi8                                   % 31
    re8 do16 re16 mi4. re8 do8 si,8                                % 32
    la,8 mi8 la4. sol8 fa8 mi8                                     % 33
    re8 la8 re'4. do'8 si8 la8                                     % 34
-   sold8 mi8 la8 sol16 fa16 mi8 re16 do16 re8 mi8                 % 35
+   sold8 mi8 la8 sol?16 fa16 mi8 re16 do16 re8 mi8                % 35
    la,8 la8 si8 do'8 red8 la8 sol8 fad?8                          % 36
    sol,8 la,8 si,8 si16 la16 sol8 la8 fad8 si8                    % 37
    mi8 la8 fa8 sol8 mi8 fa8 re8 si,8                              % 38
@@ -58,7 +58,7 @@
    sol8 fa8 mi8 re8 do'8 si8 la8 sol8                             % 41
    fa8 sol8 la8 fa8 sol8 fa8 mi8 re8                              % 42
    do8 fa8 sol8 sol,8 do8 do'4 si16 la16                          % 43
-   sold8 si8 mi8 fad?16 sold16 la8 si16 do'16 fa8 la8             % 44
+   sold8 si8 mi8 fad?16 sold16 la8 si16 do'16 fa?8 la8            % 44
    re8 mi16 fa16 si,8 re8 sold,8 la,16 si,16 mi,8 mi8             % 45
    la8 do'8 si8 re'8 do'8 si16 la16 si8 la16 sol16                % 46
    la8 sol16 fa16 sol8 fa16 mi16 fa8 mi8 re8 do8                  % 47
