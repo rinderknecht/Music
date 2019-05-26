@@ -3,8 +3,9 @@
 \version "2.18.2"
 
 \header {
-  title = "Lettre à Élise"
+  title    = "Lettre à Élise"
   composer = "Ludwig van Beethoven"
+  tagline  = ""
 }
 
 \language "italiano"

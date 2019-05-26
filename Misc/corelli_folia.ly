@@ -2,8 +2,9 @@
 
 \version "2.18.2"
 \header {
-  title = "Folia"
+  title    = "Folia"
   composer = "Corelli"
+  tagline  = ""
 }
 
 \language "italiano"

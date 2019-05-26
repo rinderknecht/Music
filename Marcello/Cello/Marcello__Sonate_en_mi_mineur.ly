@@ -3,8 +3,9 @@
 \version "2.18.2"
 
 \header {
-  title = "Sonate en mi mineur (op. 1, no. 2)"
+  title    = "Sonate en mi mineur (op. 1, no. 2)"
   composer = "Benedetto Marcello"
+  tagline  = ""
 }
 
 \language "italiano"

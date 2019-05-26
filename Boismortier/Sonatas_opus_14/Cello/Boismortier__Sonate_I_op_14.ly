@@ -2,8 +2,9 @@
 
 \version "2.18.2"
 \header {
-  title = "Sonate I (opus 14)"
+  title    = "Sonate I (opus 14)"
   composer = "Joseph Bodin de Boismortier (1726)"
+  tagline  = ""
 }
 
 \language "italiano"

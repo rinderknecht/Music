@@ -2,8 +2,9 @@
 
 \version "2.18.2"
 \header {
-  title = "Ricercar I"
+  title    = "Ricercar I"
   composer = "Domenico Gabrielli (1689)"
+  tagline  = ""
 }
 
 \score {

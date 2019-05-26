@@ -2,8 +2,9 @@
 
 \version "2.18.2"
 \header {
-  title = "Andante"
+  title    = "Andante"
   composer = "Haydn"
+  tagline  = ""
 }
 
 \language "italiano"

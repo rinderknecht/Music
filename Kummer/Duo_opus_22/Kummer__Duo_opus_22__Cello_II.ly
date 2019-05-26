@@ -3,8 +3,9 @@
 \version "2.18.2"
 
 \header {
-  title = "Sonate opus 22 (Cello II)"
+  title    = "Sonate opus 22 (Cello II)"
   composer = "F. A. Kummer"
+  tagline  = ""
 }
 
 \language "italiano"

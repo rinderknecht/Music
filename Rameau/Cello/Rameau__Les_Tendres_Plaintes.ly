@@ -2,8 +2,9 @@
 
 \version "2.18.2"
 \header {
-  title = "Les Tendres Plaintes"
+  title    = "Les Tendres Plaintes"
   composer = "Jean-Philippe Rameau (1724)"
+  tagline  = ""
 }
 
 \score {

@@ -3,8 +3,9 @@
 \version "2.18.2"
 
 \header {
-  title = "Canon"
+  title    = "Canon for two cellos"
   composer = "Domenico Gabrielli (1689)"
+  tagline  = ""
 }
 
 \language "italiano"

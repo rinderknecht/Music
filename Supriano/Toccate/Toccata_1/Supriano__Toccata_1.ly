@@ -3,8 +3,9 @@
 \version "2.18.2"
 
 \header {
-  title = "Toccata I"
+  title    = "Toccata I"
   composer = "Francesco Paolo Supriano (1678-1753)"
+  tagline  = ""
 }
 
 \language "italiano"

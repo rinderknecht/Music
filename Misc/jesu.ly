@@ -3,8 +3,9 @@
 \version "2.18.2"
 
 \header {
-  title = "Jesus bleibet meine Freude"
+  title    = "Jesus bleibet meine Freude"
   composer = "Johann Sebastian Bach"
+  tagline  = ""
 }
 
 \language "italiano"

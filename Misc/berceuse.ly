@@ -7,8 +7,9 @@
 \language "italiano"
 
 \header {
-  title = "Berceuse"
+  title    = "Berceuse"
   composer = "Franz Schubert"
+  tagline  = ""
 }
 
 \score {

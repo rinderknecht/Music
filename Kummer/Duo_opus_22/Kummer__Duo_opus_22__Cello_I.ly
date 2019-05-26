@@ -3,8 +3,9 @@
 \version "2.18.2"
 
 \header {
-  title = "Duo opus 22 (Cello I)"
+  title    = "Duo opus 22 (Cello I)"
   composer = "F. A. Kummer"
+  tagline  = ""
 }
 
 \language "italiano"

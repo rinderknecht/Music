@@ -3,7 +3,8 @@
 \version "2.18.2"
 
 \header {
-  title = "La Folia (variations)"
+  title   = "La Folia (variations)"
+  tagline = ""
 }
 
 \language "italiano"

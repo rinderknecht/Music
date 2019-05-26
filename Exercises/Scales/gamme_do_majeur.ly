@@ -2,8 +2,9 @@
 
 \version "2.18.2"
 \header {
-  title = "Gamme Do Majeur"
+  title    = "Gamme Do Majeur"
   composer = ""
+  tagline  = ""
 }
 
 \score {

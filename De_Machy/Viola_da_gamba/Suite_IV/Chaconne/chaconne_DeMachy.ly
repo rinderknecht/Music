@@ -1,10 +1,10 @@
-% Prelude (De Machy)
 #(set-global-staff-size 21)
 
 \version "2.18.2"
 \header {
-  title = "Chaconne"
+  title    = "Chaconne (Suite IV)"
   composer = "De Machy"
+  tagline  = ""
 }
 
 \score {

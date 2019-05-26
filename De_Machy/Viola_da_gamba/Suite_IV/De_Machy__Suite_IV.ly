@@ -2,8 +2,9 @@
 
 \version "2.18.2"
 \header {
-  title = "Suite IV (Pieces de Violle)"
+  title    = "Suite IV (Pièces de Violle)"
   composer = "Le Sieur De Machy (1680-1695)"
+  tagline  = ""
 }
 
 \score {
@@ -12,7 +13,7 @@
       \language "italiano"
       \override Hairpin.to-barline = ##f
       \repeat volta 2 {
-        \tempo Prelude
+        \tempo Prélude
         \time 4/4
         \clef tenor
         \key sol \major

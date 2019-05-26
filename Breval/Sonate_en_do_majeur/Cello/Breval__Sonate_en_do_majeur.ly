@@ -3,8 +3,9 @@
 \version "2.18.2"
 
 \header {
-  title = "Sonate en do majeur"
+  title    = "Sonate en do majeur"
   composer = "Jean-Baptiste Bréval"
+  tagline  = ""
 }
 
 \language "italiano"

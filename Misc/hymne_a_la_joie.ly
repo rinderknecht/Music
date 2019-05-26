@@ -3,8 +3,9 @@
 \version "2.18.2"
 
 \header {
-  title = "Hymne à la joie"
+  title    = "Hymne à la joie"
   composer = "Beethoven"
+  tagline  = ""
 }
 
 \language "italiano"

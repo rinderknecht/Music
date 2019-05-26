@@ -3,8 +3,9 @@
 \version "2.18.2"
 
 \header {
-  title = "Non più andrai"
+  title    = "Non più andrai"
   composer = "W. A. Mozart"
+  tagline  = ""
 }
 
 \language "italiano"

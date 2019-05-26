@@ -3,8 +3,9 @@
 \version "2.18.2"
 
 \header {
-  title = "Capriccio 4"
+  title    = "Capriccio 4"
   composer = "Joseph Marie Dall'Abaco"
+  tagline  = ""
 }
 
 \language "italiano"

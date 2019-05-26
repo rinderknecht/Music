@@ -2,8 +2,9 @@
 
 \version "2.18.2"
 \header {
-  title = "Exercices de position"
+  title    = "Exercices de position"
   composer = "Alexis Girard"
+  tagline  = ""
 }
 
 \language "italiano"

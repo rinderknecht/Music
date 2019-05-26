@@ -3,8 +3,9 @@
 \version "2.18.2"
 
 \header {
-  title = "Sonata I"
+  title    = "Sonata I"
   composer = "Domenico Galli"
+  tagline  = ""
 }
 
 \language "italiano"

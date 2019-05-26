@@ -3,8 +3,9 @@
 \version "2.18.2"
 
 \header {
-  title = "Sonate III pour violon (basse continue)"
+  title    = "Sonate III pour violon (basse continue)"
   composer = "Corelli"
+  tagline  = ""
 }
 
 \language "italiano"
