@@ -23,7 +23,7 @@
    sol8 la8 si8 mi8 la8 sol8 fa8 re8                              % 6
    mi4. re16 mi16 do8 re16 mi16 la,8 la16 sol16                   % 7
    fa4. sol16 la16 re8 mi16 fa16 si,8 mi16 re16                   % 8
-   do4. si,16 do16 la,8 si,16 do16 fa,8 fa16 do16                 % 9
+   do4. si,16 do16 la,8 si,16 do16 fa,8 fa16 mi16                 % 9
    re8 do8 si,8 la,8 mi8 do'4 si8(                                % 10
    si8) la4 sold8 la8 re8 mi8 fa8                                 % 11
    sol8 fa4 mi4 re4 do8                                           % 12
