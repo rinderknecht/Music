@@ -37,7 +37,7 @@
    | sib,4 sib4 sol4                        % 19
    | r4 la4\upbow fad4                      % 20
    | r4 sol4 mib4                           % 21
-   | r4 re4\upbow sib,4                     % 22
+   | r4 re4 sib,4                           % 22
    | do4 re4 mib4                           % 23
    | re8 mib8 re8 do8 sib,8 la,8            % 24
    | sol,4 re4--(re,4--)                    % 25
@@ -62,15 +62,15 @@
    | la4) sol2(                             % 44
    | sol4) fa2                              % 45
    | sol4 la2                               % 46
-   | re4 sol4 sol4                          % 47
+   | re4\downbow sol4 sol4                  % 47
    | mib4 fa4 fa4                           % 48
    | re4 mib4 mib4                          % 49
    | do4 re4 re4                            % 50
    | sib,8 la,8 sol,8 la,8 sib,8 do8        % 51
    | re4. do8 sib,4                         % 52
    | do4 re4 re,4                           % 53
-   | sol,2.                                 % 54
-   | sol8 la8 sib8 sol8 la8 fa8             % 55
+   | sol,2.--(                              % 54
+   | sol8--) la8 sib8 sol8 la8 fa8          % 55
    | sib4 sib,8 do8 re8 mib8                % 56
    | fa8 sol8 fa8 mib8 re4                  % 57
    | mib8 re8 do8 re8 mib8 fa8              % 58
