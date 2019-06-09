@@ -129,8 +129,8 @@ extover = \markup {
       re'4\downbow^\allongerUne
       sol'2-4\<fad'4\downbow(                                          % 36
       fa'4) mi'2 re'4-4\downbow\!(                                     % 37
-      re'4) dod'4\upbow(si4 dod'4)                                     % 38
-      re'4 do'8(la8) fad8-. re8-. do8-. la,8-.                         % 39
+      re'4\mf) dod'4\upbow(si4 dod'4)                                  % 38
+      re'4 do'8\>(la8) fad8-. re8-. do8-. la,8-.\!                     % 39
       sol,8\downbow\p(re8 sol8 re8)
       la8\open\upbow(re8 sol8 re8)                                     % 40
       sol8\downbow(re8 fad8 re8) fad8(re8 sol8 re8)                    % 41
@@ -209,7 +209,7 @@ extover = \markup {
       fa,4 r8 do'8-.\p\upbow si8(do'8) r8 do'8-.                       % 102
       re'8\downbow(do'8) r8 do'8-.\upbow\<
       do'8\downbow(re'8 mi'8 fa'8)                                     % 103
-      sol'4\!\upbow r8 la8\upbow sib-1(la8) r8 la8                     % 104
+      sol'4\!\upbow r8 la8-.\upbow sib-1(la8) r8 la8-.                 % 104
       sib8(la8) r8^\extover la8\upbow\< la8\downbow(dod'8 re'8 mi'8)   % 105
       fa'4\! la'4-3\flageolet sol'4(fa'4)                              % 106
       mi'2\f fad'4(mi'8 fad'8)                                         % 107
@@ -274,9 +274,9 @@ extover = \markup {
       re'4 mi'4-1 fa'8.(fa'16-.) sol'8.(sol'16-.)                      % 162
       la'4-3\flageolet\f r4 si4 r4                                     % 163
       do'2 r2                                                          % 164
-      sol'2.\upbow(si4)                                                % 165
+      sol'2.\upbow(si4-1)                                              % 165
       do'2 r2                                                          % 166
-      sol'2.(si4)                                                      % 167
+      sol'2.(si4-1)                                                    % 167
       do'2\pp(si4 re'4)                                                % 168
       do'2(si4 re'4)                                                   % 169
       do'4 r4 <<sol4-2\f mi'4-4>> r4                                   % 170
