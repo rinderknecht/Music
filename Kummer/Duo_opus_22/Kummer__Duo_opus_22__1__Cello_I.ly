@@ -249,7 +249,8 @@ extover = \markup {
       <<fa1 la1>>                                                      % 140
       <<{mi2 fa2}\\ {\stemUp sol,2(sol,2) \stemNeutral}>>              % 141
       \mark \default
-      mi4 mi'8-1-.\f fa'8-. fad'8(sol'8 fa'8) mi'8-.\downbow           % 142
+      mi4 mi'8-1-.\f fa'8-2-.
+      fad'8-3(sol'8-4 fa'8-2) mi'8-1-.\downbow                         % 142
       mi'8\upbow(re'8-4) re'8-. do'8-. si8-. la8-. sol8-. fa8-.        % 143
       mi4 mi8\p-. fa8-. fad8(sol8 fa8) mi8-.                           % 144
       mi8\upbow(re8) re8-.\downbow do8-. si,8-. la,8-. sol,8-. fa,8-.  % 145
