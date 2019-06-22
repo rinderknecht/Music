@@ -183,7 +183,7 @@
 
 \score {
   \new Staff
-   \with {instrumentName = #"Corde IV"}
+  \with {instrumentName = \markup{\bold {Corde IV}}}
    {
    \override Hairpin.to-barline = ##f
    \time 4/4
