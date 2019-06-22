@@ -120,7 +120,7 @@ extdown = \markup {
     mib'4.-4\> re'8-4\!(sib!8-1^\extup sol8)                           % 21
     reb'4.-3\> do'8\!(la8 fa8-1)                                       % 22
     lab2-4\sf sol8-4\upbow(fa8)                                        % 23
-    mi4\downbow do'8-4\upbow(si8-3 sib8-3 sol8-4)                      % 24
+    mi4\downbow do'8-4\upbow(si8-3 sib8-2 sol8-4)                      % 24
     fa2.\p                                                             % 25
     la2.-1                                                             % 26
     do'4(re'4 do'4)                                                    % 27
@@ -176,8 +176,8 @@ extdown = \markup {
     sol2 r4                                                            % 71
     do'4-2(sib4) la4                                                   % 72
     re'4.(do'8) sib4                                                   % 73
-    sib4.-1\<(si8 do'4)\!                                              % 74
-    do'4.-1\<(dod'8 re'4)\!                                            % 75
+    sib4.-1\<(si8-2 do'4-3)\!                                          % 74
+    do'4.-1\<(dod'8-2 re'4-3)\!                                        % 75
     mib'4.-4\> re'8-4\!(sib8-1^\extup sol8)                            % 76
     reb'4.-3\> do'8\!(la8 fa8-1)                                       % 77
     lab2-4\sf sol8-4\upbow(fa8)                                        % 78
@@ -187,8 +187,8 @@ extdown = \markup {
     do'4(re'4 do'4)                                                    % 82
     do'8(sib8) la4 r4                                                  % 83
     re'2\downbow\<(sol'4)\!                                            % 84
-    do'2\<(fa'4)\!                                                     % 85
-    sib4\downbow(la4 do'4                                              % 86
+    do'2-2\<(fa'4)\!                                                   % 85
+    sib4-2_\markup{\teeny II}\downbow(la4 do'4                         % 86
                           do'8 sib8)
     sol'16-4(fa'16 mi'16 re'16-4 do'16 sib16-1^\extup la16 sol16)      % 87
     fa2\turn(sol8 mi8)                                                 % 88
