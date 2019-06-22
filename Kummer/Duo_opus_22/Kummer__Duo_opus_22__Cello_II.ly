@@ -119,7 +119,7 @@ extover = \markup {
       si2 la!4(do'4)                                                   % 36
       sol4\<(si4) fa4(la4)\!                                           % 37
       mi2 <<{sol2(fad4)}\\{la,2 la,4}>> r4 r4 r4                  % 38 % 39
-      si2_\markup{\italic dolce}(do'4 si4)                             % 40
+      si2_\markup{\italic "dolce"}(do'4 si4)                           % 40
       si4(la2 si4)                                                     % 41
       si4(do'4 re'4 do'4)                                              % 42
       do'4(si2 do'8 dod'8)                                             % 43
@@ -214,12 +214,12 @@ extover = \markup {
     sol,2 do2                                                          % 131
     fa1\<                                                              % 132
     mi4\!\>(re4 si,4 sol,4)\!                                          % 133
-    mi2_\markup{\italic dolce}(fa4 mi4)                                % 134
+    mi2_\markup{\italic "dolce"}(fa4 mi4)                              % 134
     mi4(re2 mi4)                                                       % 135
     mi4(fa4 sol4 fa4)                                                  % 136
     fa4(mi2 fa4)                                                       % 137
     sol4 do'2 si4(                                                     % 138
-    si4)\< fa'2 mi'4\((mi'4)\! sol'4\) la4(re'4)                 % 139 % 140
+    si4)\< fa'2 mi'4\((mi'4)\! fa'4\) la4(re'4)                 % 139 % 140
     do'2 si4(la8 si8)                                                  % 141
     do'4 do'8\f-. re'8-. red'8(mi'8 re'8) do'8-.                       % 142
     do'8(si8) si8-. la8-. sol8-. fa8-. mi8-. re8-.                     % 143
@@ -235,7 +235,7 @@ extover = \markup {
     mi4 mi8\p-. fa8-. fad8(sol8 fa8) mi8-.                             % 153
     mi8(re8) re8-. do8-. si,8-. la,8-. sol,8-. fa,8-.                  % 154
     mi,8-. sol,8-. do4\((do8) la,8-.\)
-    re4\<\((re8) si,8-.\) mi4\((mi8) do8-.\) fa4(                % 155 % 156
+    re4\<\((re8) si,8-.\) mi4\downbow(mi8) do8-.\upbow fa4(      % 155 % 156
     fa4\!) re'8-.(do'8-. si8-. la8-. sol8-. fa8-.)                     % 157
     mi4 sol'4->\((sol'8) fa'8 la8 re'8\)                               % 158
     re'8\p(do'8) r8 do'8-. do'8(si8) r8 si8-.                          % 159
@@ -254,6 +254,8 @@ extover = \markup {
     \bar "|."
   }
 }
+
+\pageBreak
 
 \score {
   \new Staff
@@ -367,6 +369,8 @@ extover = \markup {
     \bar "|."
   }
 }
+
+\pageBreak
 
 \score {
   \new Staff
