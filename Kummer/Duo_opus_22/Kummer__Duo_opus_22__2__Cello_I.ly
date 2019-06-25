@@ -114,7 +114,7 @@ extdown = \markup {
     sib4.-2\>(la8 sol8-1 sold8-2)\!                                    % 15
     la2-3 r4                                                           % 16
     do'4-2\p(sib4-1^\extup) la4                                        % 17
-    re'4.(do'8) sib4                                                   % 18
+    re'4.(do'8) sib4-1^\extup                                          % 18
     sib4.-1\<(si8-2 do'4-3)\!                                          % 19
     do'4.-1\<(dod'8-2 re'4-3)\!                                        % 20
     mib'4.-4\> re'8-4\!(sib!8-1^\extup sol8)                           % 21
@@ -123,7 +123,7 @@ extdown = \markup {
     mi4\downbow do'8-4\upbow(si8-3 sib8-2 sol8-4)                      % 24
     fa2.\p                                                             % 25
     la2.-1                                                             % 26
-    do'4(re'4 do'4)                                                    % 27
+    do'4-4(re'4-3\open do'4)                                           % 27
     do'8(sib8) la4 r4                                                  % 28
     re'2\downbow\<(sol'4)\!                                            % 29
     do'2-2\<(fa'4)\!                                                   % 30
@@ -138,7 +138,7 @@ extdown = \markup {
     re8(la8) sol8(la8) fa8(la8)                                        % 36
     mi8(la8) re8(la8) sol8(la8)                                        % 37
     fa8(re8) mi8(fa8 sol8-4 sold8-4)                                   % 38
-    la8(re'8 dod'8 la8) sol!8(mi8)                                     % 39
+    la8(re'8-4 dod'8 la8) sol!8(mi8)                                   % 39
     re8(la8) sol8(la8) fa8(la8)                                        % 40
     mi8(la8) re8(la8) dod'8(la8)                                       % 41
     do'!8-3(si!8-2 sib8-1 la8\open) lab8-4(fa8-2)                      % 42
@@ -184,7 +184,7 @@ extdown = \markup {
     mi4\downbow do'8-4\upbow(si!8 sib8 sol8)                           % 79
     fa2.\p\turn                                                        % 80
     la2.-1                                                             % 81
-    do'4(re'4 do'4)                                                    % 82
+    do'4-4(re'4-3\open do'4)                                           % 82
     do'8(sib8) la4 r4                                                  % 83
     re'2\downbow\<(sol'4)\!                                            % 84
     do'2-2\<(fa'4)\!                                                   % 85
@@ -194,13 +194,13 @@ extdown = \markup {
     fa2\turn(sol8 mi8)                                                 % 88
     fa8-.\upbow do8\upbow(sib,8-2 la,8 sol,8\open fa,8-3)              % 89
     mi,2.-2(                                                           % 90
-    mib,8-1) fad,8-4(sol,8 la,8 sib,8-2 do8                            % 91
+    mib,8-1) fad,8-4(sol,8 la,8-1 sib,8-2 do8                          % 91
     si,!8)\<fa'!8(mi'8 re'8 do'8 si8)\!                                % 92
     do'4 fa'4.\>(do'8)\!                                               % 93
     <<{do'2^\retenirQuatre(re'8 do'8)}\\{mi2.\pp}>>                    % 94
     fa2\turn(sol8 mi8)                                                 % 95
     fa2\turn(sol8 mi8)                                                 % 96
-    fa4-. fa4-.(fa4-.)                                                 % 97
+    fa4-. fa4--(fa4--)                                                 % 97
     fa2 r4                                                             % 98
     \bar "|."
   }
