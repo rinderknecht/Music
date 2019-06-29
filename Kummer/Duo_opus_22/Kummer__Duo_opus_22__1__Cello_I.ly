@@ -82,7 +82,7 @@ extover = \markup {
 %    \override Score.Fingering.avoid-slur = #'inside
 %    \override Score.StrokeFinger.avoid-slur = #'inside
     \override Hairpin.to-barline = ##f
-    \tempo Allegro
+    \tempo "Allegro" 4 = 100
     \time 4/4
     \key do \major
     \clef bass
