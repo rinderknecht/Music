@@ -134,7 +134,7 @@ extover = \markup {
       sol,8\downbow\p(re8 sol8 re8)
       la8\open\upbow(re8 sol8 re8)                                     % 40
       sol8\downbow(re8 fad8 re8) fad8(re8 sol8 re8)                    % 41
-      sold8-4^\extdown(re8^\extover la8 re8) si8(re8 la8 re8)          % 42
+      sold8\4(re8 la8 re8) si8(re8 la8 re8)                            % 42
       la8(re8 sol8 re8) sol8(re8 la8 lad8-1)                           % 43
       si2-1\mp la4(do'4)                                               % 44
       sol4(si4) fad4(la4)                                              % 45
@@ -154,8 +154,8 @@ extover = \markup {
       do'4)\! la'2-3\flageolet\>(do'4)\!                               % 54
       do'8\downbow\p(si8) re'8-.\upbow(si8-.) si8(la8)
       do'8-.\upbow(la8-.)                                              % 55
-      la8-2\downbow(sol8-1^\extup) si8-4-.\upbow(sol-1-.)
-      sol8-2^\extover(fad8-1) la8-4-.\upbow(fad8-1-.)                  % 56
+      la8-2\downbow(sol8\1) si8-4-.\upbow(sol-1-.)
+      sol8-2(fad8-1) la8-4-.\upbow(fad8-1-.)                           % 56
       sol4\downbow sol8-.\f\upbow la8-.\open\downbow
       lad8-1(si8-2 la8\open) sol8-.-4\downbow                          % 57
       sol8\upbow(fad8) fad8-.\downbow mi8-. re8-. do8-. si,8-. la,8-.  % 58
@@ -163,8 +163,8 @@ extover = \markup {
       sol8(fad8) fad8-. mi8-. re8-. do8-. si,8-. la,8-.                % 60
       sol,4.\downbow(si,8-.) do4.\upbow(la,8-.)                        % 61
       re4.\downbow(si,8-.) mi4.\upbow(do8-.)                           % 62
-      fad2\downbow red2-1^\extup\!                                     % 63
-      r4^\extover mi4\p\downbow r4 do4\upbow                           % 64
+      fad2\downbow red2\1\!                                            % 63
+      r4 mi4\p\downbow r4 do4\upbow                                    % 64
       r4 re4\downbow r4 re4\upbow                                      % 65
       sol,2 r2                                                         % 66
       re4\open\upbow(re'2-3\flageolet fad4-1)                          % 67
@@ -210,7 +210,7 @@ extover = \markup {
       re'8\downbow(do'8) r8 do'8-.\upbow\<
       do'8\downbow(re'8 mi'8 fa'8)                                     % 103
       sol'4\!\upbow r8 la8-.\upbow sib-1(la8) r8 la8-.                 % 104
-      sib8(la8) r8^\extover la8\upbow\< la8\downbow(dod'8 re'8 mi'8)   % 105
+      sib8(la8) r8 la8\upbow\< la8\downbow(dod'8 re'8 mi'8)            % 105
       fa'4\! la'4-3\flageolet sol'4(fa'4)                              % 106
       mi'2\f fad'4(mi'8 fad'8)                                         % 107
       sol'4 r4 sol2\p\upbow                                            % 108
@@ -242,7 +242,7 @@ extover = \markup {
       mi'4-3(fa'2-4)\! r4                                              % 133
       do8\p(sol,8 do8 sol,8) re8(sol,8 do8 sol,8)                      % 134
       do8(sol,8 si,8 sol,8) si,8(sol,8 do8 sol,8)                      % 135
-      dod8-4^\extdown(sol,8^\extover re8 sol,8) mi8(sol,8 re8 sol,8)   % 136
+      dod8\4(sol,8 re8 sol,8) mi8(sol,8 re8 sol,8)                     % 136
       re8(sol,8 do!8 sol,8) do8(sol,8 re8 sol,8)                       % 137
       mi2 re2                                                          % 138
       sol,2 do2                                                        % 139

@@ -137,7 +137,7 @@ extover = \markup {
     sib8(sol8) fa4 mi4\trill                                           % 60
     re8-. la,8(sol,8 fa,8 mi,8 re,8)                                   % 61
     dod,2.                                                             % 62
-    r8 reb8^\markup{\italic pizz.} do8 si,8 la,8 sol,8                 % 63
+    r8 reb8^\markup{\italic pizz.} do8 sib,8 la,8 sol,8                % 63
     \bar "||"
     fa,8\p fa8 mi8 re8 do8 la,8                                        % 64
     fa,8 fa8 mi8 re8 do8 sib,8                                         % 65
