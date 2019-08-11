@@ -3,7 +3,7 @@
 \version "2.18.2"
 
 \header {
-  title    = "Duo opus 22 (3/3, cello I)"
+  title    = "Duo I opus 22 (3/3, cello I)"
   composer = "F. A. Kummer"
   tagline  = ""
 }
@@ -83,31 +83,33 @@ extover = \markup {
     \key do \major
     \clef bass
 
-    do'8.\p(si32 do'32 re'8 si8)                                       % 1
-    do'8-. mi'8-. sol'4\>                                              % 2
-    do'8.(si32 do'32 re'8 si8)                                         % 3
-    do'8-. mi'8-. sol'4                                                % 4
-    la'4(sol'8) r8                                                     % 5
+    \mark \default
+    do'8.\p(si32 do'32 re'8) si8\downbow                               % 1
+    do'8-.\upbow mi'8-.-1 sol'4\>                                      % 2
+    do'8.(si32 do'32 re'8) si8\downbow                                 % 3
+    do'8-.\upbow mi'8-.-1 sol'4                                        % 4
+    la'4-3\flageolet(sol'8) r8                                         % 5
     fa'4(mi'8)\! r8                                                    % 6
     re'8-. do'8-. fa'8-. mi'8-.                                        % 7
-    re'4 sol4                                                          % 8
-    do'8.(si32 do'32 re'8 si8)                                         % 9
-    do'8-. mi'8-. sol'4\>                                              % 10
-    do'8.\!(si32 do'32 re'8 si8)                                       % 11
-    do'8-. mi'8-. sol'4\>                                              % 12
+    re'4 sol4_\markup{\teeny "IV"}                                     % 8
+    do'8.(si32 do'32 re'8) si8\downbow                                 % 9
+    do'8-.\upbow mi'8-. sol'4\>                                        % 10
+    do'8.\!(si32 do'32 re'8) si8\downbow                               % 11
+    do'8-.\upbow mi'8-. sol'4\>                                        % 12
     fad'4(sol'8) r8                                                    % 13
     la'4(sol'8)\! r8                                                   % 14
-    do'8.\!(si32 do'32 re'8 si8)                                       % 15
-    do'4 r4                                                            % 16
+    do'8.\!(si32 do'32 re'8) si8\downbow                               % 15
+    do'4\upbow_\markup{\teeny "I"} r4                                  % 16
+    \mark \default
     do'4\p(si8 la8)                                                    % 17
     sold8-. si8-. la8.(si16)                                           % 18
     do'4(si8 la8)                                                      % 19
     sold8-. si8-. la8.(si16)                                           % 20
-    do'4.\<(re'8)\!                                                    % 21
-    mib'8\>(re'8) mib'8(re'8)\!                                        % 22
-    mi'!8(re'8) do'8-. la8-.                                           % 23
+    do'4.\downbow\<(re'8-1)\!                                          % 21
+    mib'8-2\upbow\>(re'8) mib'8(re'8)\!                                % 22
+    mi'!8-3(re'8) do'8-.-2 la8-.                                       % 23
     fad8-. re8-. do8-. la,8-.                                          % 24
-    sol,8\p(re8 si8 re8)                                               % 25
+    sol,8\downbow\p(re8 si8 re8)                                       % 25
     sol,8(re8 si8 re8)                                                 % 26
     la,8(re8 do'8 re8)                                                 % 27
     la,8(re8 fad8 re8)                                                 % 28
@@ -115,7 +117,7 @@ extover = \markup {
     sol,8(re8 si8 re8)                                                 % 30
     la,8(re8 do'8 re8)                                                 % 31
     la,8(re8 fad8 re8)                                                 % 32
-    sol,8(re8 sol,8 re8)                                               % 33
+    sol,8\downbow(re8 sol,8 re8)                                       % 33
     do8(mi8 do8 mi8)                                                   % 34
     la,8(mi8 la,8 mi8)                                                 % 35
     re8(fad8 re8 fad8)                                                 % 36
@@ -126,29 +128,31 @@ extover = \markup {
     do8(re8 do8 re8)                                                   % 41
     si,8(re8 si,8 re8)                                                 % 42
     la,8(re8 fad8 re8)                                                 % 43
-    sold,8\<(re8 fa!8 re8)                                             % 44
+    sold,8\1\<(re8 fa!8 re8)                                           % 44
     la,8-. la,8-. si,8-. sol,!8-.                                      % 45
-    do8-. sol,8-. dod8-. sol,8-.\!                                     % 46
-    re8\>(sol,8 re8 dod8)                                              % 47
+    do8-.-1 sol,8-. dod8-.-2 sol,8-.\!                                 % 46
+    re8-3\>(sol,8 re8 dod8)                                            % 47
     re8(sol,8 re8 dod8)\!                                              % 48
-    re8 r8 sol4\p(                                                     % 49
-    la4 si4)                                                           % 50
-    do'8.(si32 do'32 re'8 si8)                                         % 51
-    do'8-. mi'8-. sol'4\>                                              % 52
-    do'8.(si32 do'32 re'8 si8)                                         % 53
-    do'8-. mi'8-. sol'4                                                % 54
+    re8-3 r8 sol4-4\p\upbow                                            % 49
+    la4 si4\upbow                                                      % 50
+    \mark \default
+    do'8.(si32 do'32 re'8) si8\downbow                                 % 51
+    do'8-.\upbow mi'8-. sol'4\>                                        % 52
+    do'8.(si32 do'32 re'8) si8\downbow                                 % 53
+    do'8-.\upbow mi'8-. sol'4                                          % 54
     la'4(sol'8) r8                                                     % 55
     fa'4(mi'8)\! r8                                                    % 56
     re'8-. do'8-. fa'8-. mi'8-.                                        % 57
-    re'4 sol4                                                          % 58
-    do'8.(si32 do'32 re'8 si8)                                         % 59
-    do'8-. mi'8-. sol'4\>                                              % 60
-    do'8.\!(si32 do'32 re'8 si8)                                       % 61
-    do'8-. mi'8-. sol'4\>                                              % 62
+    re'4 sol4_\markup{\teeny "IV"}                                     % 58
+    do'8.(si32 do'32 re'8) si8\downbow                                 % 59
+    do'8-.\upbow mi'8-. sol'4\>                                        % 60
+    do'8.\!(si32 do'32 re'8) si8\downbow                               % 61
+    do'8-.\upbow mi'8-. sol'4\>                                        % 62
     fad'4(sol'8) r8                                                    % 63
     la'4(sol'8)\! r8                                                   % 64
-    do'8.\!(si32 do'32 re'8 si8)                                       % 65
-    do'4 r4                                                            % 66
+    do'8.\!(si32 do'32 re'8) si8\downbow                               % 65
+    do'4\upbow_\markup{\teeny "I"} r4                                  % 66
+    \mark \default
     la,8\mf(do8 mi8 la8)                                               % 67
     la4(sold4)                                                         % 68
     do8(mi8 la8 do'8)                                                  % 69

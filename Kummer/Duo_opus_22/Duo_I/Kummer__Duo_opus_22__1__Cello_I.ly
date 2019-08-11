@@ -3,7 +3,7 @@
 \version "2.18.2"
 
 \header {
-  title    = "Duo opus 22 (1/3, cello I)"
+  title    = "Duo I opus 22 (1/3, cello I)"
   composer = "F. A. Kummer"
   tagline  = ""
 }

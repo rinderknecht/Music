@@ -3,7 +3,7 @@
 \version "2.18.2"
 
 \header {
-  title    = "Duo opus 22 (2/3, cello I)"
+  title    = "Duo I opus 22 (2/3, cello I)"
   composer = "F. A. Kummer"
   tagline  = ""
 }
@@ -146,7 +146,7 @@ extdown = \markup {
     mi8\downbow(re8) dod2\4                                            % 35
     \bar "||"
     \mark \default
-    re8\downbow(la8)^\markup{\teeny "pointe"}
+    re8\downbow(la8)^\markup{\teeny "pointe, legato"}
     sol8(la8) fa8(la8)                                                 % 36
     mi8\upbow(la8) re8(la8) sol8(la8)                                  % 37
     fa8\downbow^\allongerDeux(re8) mi8(fa8 sol8-4 sold8-4)             % 38
@@ -167,7 +167,8 @@ extdown = \markup {
     fa8(mi8 re8 do8 si,8 sib,!8                                        % 51
     la,8) r8 <<{re4.\upbow(fa8)} \\ {la,2\f}>>                         % 52
     <<la,4 mi4>> r4 r4                                                 % 53
-    re8\downbow\p(la8) sol8(la8) fa8(la8)                              % 54
+    re8\downbow\p(la8)^\markup{\teeny "pointe, legato"}
+    sol8(la8) fa8(la8)                                                 % 54
     mi8(la8) re8(la8) sol8(la8)                                        % 55
     fa8^\allongerDeux(re8) mi8(fa8 sol8 sold8)                         % 56
     la8(re'8 dod'8 la8) sol!8^\allongerDeux(mi8)                       % 57
@@ -175,7 +176,8 @@ extdown = \markup {
     la,8(mi8 la8 sol8) fa8(re8)                                        % 59
     sol,8(sib,8) la,2                                                  % 60
     re4 r4 r4                                                          % 61
-    r8 sib8\downbow(la8 sol8 fa8 mi8)                                  % 62
+    r8 sib8_\markup{\teeny "talon"}\downbow
+    (la8 sol8 fa8 mi8)                                                 % 62
     mi4 r4 r4                                                          % 63
     \bar "||"
     \mark \default
@@ -199,7 +201,8 @@ extdown = \markup {
     la2.-1                                                             % 81
     do'4-4(re'4-3\open do'4)                                           % 82
     do'8(sib8 la4) r4                                                  % 83
-    re'2\downbow^\allongerTrois(sol'4)                                 % 84
+    re'2_\markup{\teeny "alléger"}
+    \downbow^\allongerTrois(sol'4)                                     % 84
     do'2-2^\allongerTrois(fa'4)                                        % 85
     sib4-2_\markup{\teeny II}\downbow(la4) do'4\((                     % 86
                           do'8) sib8\)
