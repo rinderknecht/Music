@@ -10,18 +10,6 @@
 
 \language "italiano"
 
-extup = \markup {
-  \center-column {
-    \arrow-head #Y #UP ##t
-  }
-}
-
-extdown = \markup {
-  \center-column {
-    \arrow-head #Y #DOWN ##t
-  }
-}
-
 ringsps = #"
   0.15 setlinewidth
   0.9 0.6 moveto
@@ -83,9 +71,8 @@ vibrato = \markup {
    re'16^\vibrato re'16 do'16 re'16
    si16 sol16 la16 si16
    do'16^\vibrato si16 la16 sol16
-   re'16\staccato do'16\staccato
-   re'16\staccato re16\staccato                 % 10
-   sol16\staccato re'16 do'16 re'16
+   re'16-. do'16-. re'16-. re16-.               % 10
+   sol16-. re'16 do'16 re'16
    mi'16 sol16 fad16 sol16
    la16 do'16 si16 do'16
    re'16 fad16 mi16 fad16                       % 11
@@ -93,8 +80,8 @@ vibrato = \markup {
    do'16 mi16 re16 mi16
    fad16 la16 sol16 la16
    si16 re16
-   dod16-4^\extdown_\markup{\teeny III}
-   re16^\markup{\teeny\circle 0}                % 12
+   dod16-\4_\markup{\teeny III}
+   re16\open                                    % 12
    mi16 sol16 fad16 sol16
    la16 dod16-4 si,16 dod16
    re16 re'16-3 dod'16 re'16
@@ -148,11 +135,11 @@ vibrato = \markup {
    la16 sol16 la16 si16
    la16 do'16 si16 la16                         % 25
    si16 la16 sol16 la16
-   si16\staccato do'16\staccato
-   si16\staccato do'16\staccato
+   si16-. do'16-.
+   si16-. do'16-.
    la16 sol16 fad16 sol16
-   la16\staccato si16\staccato
-   la16\staccato si16\staccato                  % 26
+   la16-. si16-.
+   la16-. si16-.                  % 26
    sol16 fad16 mi16 si16
    mi'16 re'16 do'16 si16
    do'16 si16 la16 sol16
@@ -162,12 +149,12 @@ vibrato = \markup {
    la16 si16 do'16 la16
    si16 la16 si16 si,16                         % 28
    mi8 mi'16 fad'16
-   sol'16 sol16\staccato
-   si16\staccato sol16\staccato
-   re'8\staccato fad'16 sol'16
-   la'16 la16\staccato
-   re'16\staccato la16\staccato                 % 29
-   mi'8\staccato mi16(fad16)
+   sol'16 sol16-.
+   si16-. sol16-.
+   re'8-. fad'16 sol'16
+   la'16 la16-.
+   re'16-. la16-.                 % 29
+   mi'8-. mi16(fad16)
    sol16 fad16 sol16 mi16
    si16 do'16 si16 do'16
    la16 si16 la16 si16                          % 30
@@ -288,9 +275,9 @@ vibrato = \markup {
    la16 sol16 fad16 mi16                        % 78
    red8 si8 mi8 la,8 si,8 si8                   % 79
    mi4. mi'8(re'8\stopped do'8)                 % 80
-   re'8 si,8\staccato sol,8\staccato
+   re'8 si,8-. sol,8-.
    re'8(do'8\stopped si8)                       % 81
-   do'8 la,8\staccato fad,8\staccato
+   do'8 la,8-. fad,8-.
    do'8(si8\stopped la8)                        % 82
    si8 do'8 re'8 do'16 si16 la8 si8             % 83
    do'8 si16 la16 sol8 la8 si8 la16 sol16       % 84

@@ -49,10 +49,10 @@
      | fa4 r8 la,8(la8 sold8)
      | la8(sold8 la8 mi8) sol8(fa8)
      | re4 r8 fa,8(la,8 re8)
-     | mi4 r8^\markup{\italic{rit.}} la,8(fa8 mi8) |
+     | mi4 r8^\markup{\small\italic "rit."} la,8(fa8 mi8) |
    }
    \alternative {
-     {re4 r8^\markup{\italic{a tempo}} mi8\<(fa8 sol8)\!}
+     {re4 r8^\markup{\small\italic "a tempo"} mi8\<(fa8 sol8)\!}
      {re2 r4}
      }
    \bar "|."

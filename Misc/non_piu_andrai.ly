@@ -47,8 +47,8 @@
    | sol8 sol8 si8 sol8 re4 re4
    | sol8 sol8 si8 sol8 re4 re4
    | sol8 sol8 si8 sol8 re4 re4
-   | sol8 sol8 si8 sol8 re4^\markup{\italic rit.} re4
-   | sol,2^\markup{\italic tempo} r2
+   | sol8 sol8 si8 sol8 re4^\markup{\small\italic "rit."} re4
+   | sol,2^\markup{\small\italic "tempo"} r2
    | do4\upbow r4 do4 r4
    | sol,4 sol4 sol,4 r4
    | sol,4 r4 sol,4 r4

@@ -10,61 +10,6 @@
 
 \language "italiano"
 
-allonger = \markup {
-  \center-column {
-    \combine
-    \draw-line #'(-4 . 0)
-    \arrow-head #X #RIGHT ##f
-  }
-}
-
-allongercourt = \markup {
-  \center-column {
-    \combine
-    \draw-line #'(-2 . 0)
-    \arrow-head #X #RIGHT ##f
-  }
-}
-
-retenir = \markup {
-  \center-column {
-    \concat {
-      \arrow-head #X #LEFT ##f
-      \hspace #-1
-      \draw-line #'(-4 . 0)
-    }
-  }
-}
-
-retenirAppuyer = \markup {
-  \center-column {
-    \concat {
-      \arrow-head #X #LEFT ##f
-      \hspace #-1
-      \override #'(thickness . 3)
-      \draw-line #'(-4 . 0)
-    }
-  }
-}
-
-extup = \markup {
-  \center-column {
-    \arrow-head #Y #UP ##t
-  }
-}
-
-extdown = \markup {
-  \center-column {
-    \arrow-head #Y #DOWN ##t
-  }
-}
-
-extover = \markup {
-  \center-column {
-    \beam #0.75 #0 #0.75
-  }
-}
-
 \score {
   \new Staff
   \with {instrumentName = #"Cello II"}
@@ -74,7 +19,7 @@ extover = \markup {
     \time 3/4
     \key fa \major
     \clef bass
-    fa,8\p^\markup{\italic pizz.} fa8 mi8 re8 do8 la,8                 % 1
+    fa,8\p^\markup{\small\italic "pizz."} fa8 mi8 re8 do8 la,8         % 1
     fa,8 fa8 mi8 re8 do8 sib,8                                         % 2
     la,8\< fa8 sib,8 fa8 la,8 fa8\!                                    % 3
     sol,8 mi8 fa,8 la,8 do8 fa8                                        % 4
@@ -108,7 +53,7 @@ extover = \markup {
     sol,8 re8 sib,4 r4                                                 % 32
     la,8 do,8 la,8 do,8 sib,8 do,8                                     % 33
     la,8 fa,8 fa4 r4                                                   % 34
-    r4 r8 la8\upbow_\markup{\italic arco}(sib8 la8)                    % 35
+    r4 r8 la8\upbow_\markup{\small\italic "arco"}(sib8 la8)            % 35
     \bar "||"
     fa'4.\>(mi'8) re'4                                                 % 36
     sol'4.(fa'8) mi'4\!                                                % 37
@@ -137,7 +82,7 @@ extover = \markup {
     sib8(sol8) fa4 mi4\trill                                           % 60
     re8-. la,8(sol,8 fa,8 mi,8 re,8)                                   % 61
     dod,2.                                                             % 62
-    r8 reb8^\markup{\italic pizz.} do8 sib,8 la,8 sol,8                % 63
+    r8 reb8^\markup{\small\italic "pizz."} do8 sib,8 la,8 sol,8        % 63
     \bar "||"
     fa,8\p fa8 mi8 re8 do8 la,8                                        % 64
     fa,8 fa8 mi8 re8 do8 sib,8                                         % 65
@@ -165,7 +110,7 @@ extover = \markup {
     sol,8 re8 sib,4 r4                                                 % 87
     la,8\p do,8 la,8 do,8 sib,8 do,8                                   % 88
     la,4 r4 r4                                                         % 89
-    r8 re'8\upbow_\markup{\italic arco}(do'8 sib8 la8 sol8             % 90
+    r8 re'8\upbow_\markup{\small\italic "arco"}(do'8 sib8 la8 sol8     % 90
     fad8) mib'8(re'8 do'8 sib8 la8                                     % 91
     lab8)\< r8 si,4(fa4)\!                                             % 92
     <<do,2.-> la,2.>>                                                  % 93

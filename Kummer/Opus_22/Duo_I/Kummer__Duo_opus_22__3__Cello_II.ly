@@ -10,61 +10,6 @@
 
 \language "italiano"
 
-allonger = \markup {
-  \center-column {
-    \combine
-    \draw-line #'(-4 . 0)
-    \arrow-head #X #RIGHT ##f
-  }
-}
-
-allongercourt = \markup {
-  \center-column {
-    \combine
-    \draw-line #'(-2 . 0)
-    \arrow-head #X #RIGHT ##f
-  }
-}
-
-retenir = \markup {
-  \center-column {
-    \concat {
-      \arrow-head #X #LEFT ##f
-      \hspace #-1
-      \draw-line #'(-4 . 0)
-    }
-  }
-}
-
-retenirAppuyer = \markup {
-  \center-column {
-    \concat {
-      \arrow-head #X #LEFT ##f
-      \hspace #-1
-      \override #'(thickness . 3)
-      \draw-line #'(-4 . 0)
-    }
-  }
-}
-
-extup = \markup {
-  \center-column {
-    \arrow-head #Y #UP ##t
-  }
-}
-
-extdown = \markup {
-  \center-column {
-    \arrow-head #Y #DOWN ##t
-  }
-}
-
-extover = \markup {
-  \center-column {
-    \beam #0.75 #0 #0.75
-  }
-}
-
 \score {
   \new Staff
   \with {instrumentName = #"Cello II"}
@@ -303,10 +248,10 @@ extover = \markup {
     <<do,8-. red8>>
     <<do,8-. mi8>>
     <<do,8-.) do8>>                                                    % 113
-    <<sol,4_\markup{\italic "rit."} mi4>>
+    <<sol,4_\markup{\small\italic "rit."} mi4>>
     <<sol,4 fa4>>                                                      % 114
     \bar "||"
-    do,8_\markup{\italic "a tempo"}(sol,8 do,8 sol,8)                  % 115
+    do,8_\markup{\small\italic "a tempo"}(sol,8 do,8 sol,8)            % 115
     re,8(sol,8 re,8 sol,8)                                             % 116
     do,8(sol,8 do,8 sol,8)                                             % 117
     re,8(sol,8 re,8 sol,8)                                             % 118

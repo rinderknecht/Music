@@ -10,40 +10,6 @@
 
 \language "italiano"
 
-arrowdown = \markup {
-  \center-column {
-    \combine
-    \draw-line #'(0 . 2)
-    \arrow-head #Y #DOWN ##f
-  }
-}
-
-arrowup = \markup {
-  \center-column {
-    \combine
-    \arrow-head #Y #UP ##f
-    \draw-line #'(0 . -2)
-  }
-}
-
-extup = \markup {
-  \center-column {
-    \arrow-head #Y #UP ##t
-  }
-}
-
-extdown = \markup {
-  \center-column {
-    \arrow-head #Y #DOWN ##t
-  }
-}
-
-extover = \markup {
-  \center-column {
-    \beam #0.75 #0 #0.75
-  }
-}
-
 \score {
   \new Staff {
     \tempo Adagio
@@ -67,18 +33,18 @@ extover = \markup {
     si4 r8 fad8                                            % 5
     sol16.\<(si32\staccato) la16.(do'32\staccato)
     si16.(re'32-2\staccato)
-    do'16.-1^\extup(mi'32\staccato)\!
-    re'8-4^\extover fad8 sol8 do'8                         % 6
+    do'16.-\1(mi'32\staccato)\!
+    re'8-4 fad8 sol8 do'8                                  % 6
     si4\> la8.\trill(sol16)\!
     sol16.\mp(si32\staccato) la16.(sol32\staccato)
     re'8. do'16                                            % 7
     si16(la16 sol8) r8 re'8-2
     mi'16(re'16 do'16-2 si16) la8(sol8)                    % 8
     fad4\mordent r8 si8
-    mi16(fad16-2^\extdown sold16-4 la16\open)
-    si16^\extover(do'16 re'16 si16)                        % 9
-    do'16(la16) si16(sold16-4^\extdown)
-    la8\open do'8^\extover re16\open(mi16 fad16 sol16)
+    mi16(fad16-\2 sold16-4 la16\open)
+    si16(do'16 re'16 si16)                                 % 9
+    do'16(la16) si16(sold16-\4)
+    la8\open do'8 re16\open(mi16 fad16 sol16)
     la16(si16 do'16 la16)                                  % 10
     si16(sol16) la16(fad16) sol8 mi8-2
     mi8.\trill(red32 mi32) fad8\upbow fad8-3\upbow         % 11
@@ -87,8 +53,8 @@ extover = \markup {
     la4\fermata\f r16 la16\upbow(sol16 fad16)
     sol16-4(mi16) fad16-4(red16) mi8-2 la8-4               % 13
     sol4 fad8.\trill(mi16-1) mi4. fad8                     % 14
-    red8-1^\extup si,8-3
-    mi8^\extover fad8 sol4^\markup{\italic rit.}
+    red8-\1 si,8-3
+    mi8 fad8 sol4^\markup{\small\italic "rit."}
     fad8.\trill(mi16)                                      % 15
     mi1                                                    % 17
     \bar "|."
@@ -113,10 +79,10 @@ extover = \markup {
       re'16\f do'16 si16 la16                               % 4
       si8 sol8 re'16\p do'16 si16 la16 si8 sol8
       sol'16-4\f fa'16 mi'16-4 re'16                        % 5
-      mi'8 do'8-1^\extup sol'16-4\p^\extover
+      mi'8 do'8-\1 sol'16-4\p
       fa'16 mi'16-4 re'16
-      mi'16 re'16 do'16-1^\extup\< mi'16
-      re'16-4^\extover do'16 si16 re'16                     % 6
+      mi'16 re'16 do'16-\1\< mi'16
+      re'16-4 do'16 si16 re'16                              % 6
       do'16 si16 la16 do'16
       si16 la16 sol16 si16\!
       la16\f(re'16) la16(re'16) la16(re'16) la16(re'16)     % 7
@@ -141,13 +107,12 @@ extover = \markup {
       sol8 si8 fad8 si8 sol8 mi8 si8 mi'8-4                 % 14
       do'16-2 si16 la16 sol16 fad8 si8
       sol8 mi8 r8 si8-1\p\upbow                             % 15
-      sold8-4^\extdown si8-1^\extover
-      mi8 re'8 do'8 la8 la,8 la8                            % 16
+      sold8-\4 si8-1 mi8 re'8 do'8 la8 la,8 la8             % 16
       fad8 la8 re8 do'8 si8 sol8 sol,8 re'8-2\f             % 17
       mi'16-4(re'16) do'16-2 si16
       mi'16-4(re'16) do'16-2 si16
-      do'16 si16 la16 sold16-4^\extdown
-      la16\open^\extover do'16 si16 la16                    % 18
+      do'16 si16 la16 sold16-\4
+      la16\open do'16 si16 la16                             % 18
       re'16(do'16) si16 la16
       re'16(do'16) si16 la16
       si16 la16 sol16 fad16

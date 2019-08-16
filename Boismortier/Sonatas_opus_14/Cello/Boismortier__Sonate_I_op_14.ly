@@ -9,24 +9,6 @@
 
 \language "italiano"
 
-extup = \markup {
-  \center-column {
-    \arrow-head #Y #UP ##t
-  }
-}
-
-extdown = \markup {
-  \center-column {
-    \arrow-head #Y #DOWN ##t
-  }
-}
-
-extover = \markup {
-  \center-column {
-    \beam #0.75 #0 #0.75
-  }
-}
-
 \score {
   <<
     \new Staff
@@ -45,9 +27,9 @@ extover = \markup {
         mi4 r8 la16\upbow sol16 fad8 mi16 re16 dod8 la,8               % 5
         re16 fad16 la16 re'16                                          % 6
         fad16 la16 re'16 la16
-        si16 sol16 si16 re'16-3^\extdown
+        si16 sol16 si16 re'16-\3
         sold16-4 si16 mi'16-4 si16-1
-        dod'16-3^\extover la16 si16 dod'16                             % 7
+        dod'16-3 la16 si16 dod'16                                      % 7
         re'16 do'16 si16 la16
         si16 la16 sol16 fad16
         mi8-. dod'8-.
@@ -63,25 +45,24 @@ extover = \markup {
         fad4. sol8 la8 si8 do'4                                        % 13
         (do'8)\f si8 mi'4-4 red'8-3 si16-1 la16 si8  do'8              % 14
         do'16 la16 fad16 la16 si8 si8 si16 sol16 mi16 sol16 la8 la8    % 15
-        la16 fad16 red16-1^\extup fad16^\extover sol8 sol8
-        sol8 fad16 mi16 si,8\upbow red8-1^\extup\upbow                 % 16
-        mi,8^\extover\mf mi16 fad16-2^\extdown
+        la16 fad16 red16-\1 fad16 sol8 sol8
+        sol8 fad16 mi16 si,8\upbow red8-\1\upbow                       % 16
+        mi,8\mf mi16 fad16-\2
         sold8-4\upbow mi8\upbow                                        % 17
-        la8^\extover si8 dod'8 la8
+        la8 si8 dod'8 la8
         re'8 re16 mi16 fad8\upbow re8\upbow sol8 la8 si8 sol8          % 18
         do'8 sol8 do'8 si8 la8\> sol8 fad8 sol8\!                      % 19
         la8\p re'8 fad8 sol8 re8 re'8 fad8\< sol8                      % 20
         la8 si8\! do'4.\mf si16\< la16 si4                             % 21
         (si8)\! la16\f sol16 la8 mi8 fad8 re8 re'4                     % 22
         (re'8) do'16 si16 do'8 re'16 la16 si8 sol8 la,8 fad8           % 23
-        sol8 la8-.\sp %-\markup{\dynamic p \italic subito}
-        sib8^\extup-. do'8-. re'8-.
-        mib'8-4-. fad-2^\extover-. sol8-3-.                            % 24
+        sol8 la8-.\sp sib8-\1-. do'8-. re'8-.
+        mib'8-4-. fad-2-. sol8-3-.                                     % 24
         do'8-4-._\markup{\teeny II}
         sib8-2-. la8-.
         sol8-4-. do4 re4                                               % 25
-        sol,8\f re8 sol8 la8 sib8^\extup do'8 re'8 mib'8-4             % 26
-        fad8-2^\extover sol8 do'8-4_\markup{\teeny II}
+        sol,8\f re8 sol8 la8 sib8-\1 do'8 re'8 mib'8-4                 % 26
+        fad8-2 sol8 do'8-4_\markup{\teeny II}
         sib8 la8 sol8-4 re8 fad8                                       % 27
         sol,16 la,16 si,16 do16 re8-. re,8-. sol,2                     % 28
       }
@@ -119,8 +100,7 @@ extover = \markup {
         fad8 sol8\! fad8\mf re8 sol4\< r8 sol,8                      % 21
         do4\!\f dod4 re8 re,8 r8 si8                                 % 22
         mi4 fad4 sol8 si,8 do8 re8                                   % 23
-        sol,8 re8-.\sp %-\markup{\dynamic p \italic subito}
-        sol8-. la8-. sib8-.
+        sol,8 re8-.\sp sol8-. la8-. sib8-.
         do'8-. re'8-. mib'8-.                                        % 24
         fad8-. sol8-. do'8-. sib8-.
         la8 sol8 re8 fad8                                            % 25
@@ -155,8 +135,8 @@ extover = \markup {
         sol2 re'4                                                              % 6
         si8\downbow re'16\upbow do'16 si8-.\upbow
         sol8-.\upbow si8-. sol8-2-.                                            % 7
-        mi'8-4 do'16-1^\extup re'16 mi'8-.\upbow do'8-.\upbow mi'8-. do'8-.    % 8
-        re'8 si16-1^\extover do'16 re'8-.\upbow si8-.\upbow re'8-. si8-.       % 9
+        mi'8-4 do'16-\1 re'16 mi'8-.\upbow do'8-.\upbow mi'8-. do'8-.          % 8
+        re'8 si16-1 do'16 re'8-.\upbow si8-.\upbow re'8-. si8-.                % 9
         do'8 la16 si16 do'8-.\upbow la-.\upbow do'8-. la-.                     % 10
         si8-. sol8-. fad8-. sol8-. la,8-. fad8-.                               % 11
         sol4\p si4 mi'4-4(                                                     % 12
@@ -182,23 +162,18 @@ extover = \markup {
       \repeat volta2 {
         \partial 4 r8 la8\upbow
         la8\downbow re16 mi16
-%        fad8\upbow sol8\upbow la8-4 dod-3                                      % 28
-        fad8\upbow sol8\upbow la8 dod-4^\extdown                               % 28
-%        re2-4 r8 la8-1\upbow                                                   % 29
-        re2\open^\extover r8 la8\upbow                                         % 29
-%        la8 si8 la8 sol8-2 fad8 re8\open                                       % 30
+        fad8\upbow sol8\upbow la8 dod-\4                                       % 28
+        re2\open r8 la8\upbow                                                  % 29
         la8 si8 la8 sol8 fad8 re8\open                                         % 30
         sol2 r8 re'8-2\upbow                                                   % 31
         re'8 mi'8 re'8 do'8-2 si8 sol8                                         % 32
-%        do'2-4 do'8 mi'8                                                       % 33
         do'2 do'8 mi'8-4                                                       % 33
-%        la4-1\upbow re'4-3\open \appoggiatura do'8-4 si4                       % 34
         la4\open\upbow re'4-4 \appoggiatura do'8 si4                           % 34
         sold8-3 mi'16-4 re'16 mi'8-. la8-. mi'8-. sol8-2-.                     % 35
         fad-3 re'16 do'16 re'8-. sol8-. re'8-. fa8-.                           % 36
         mi8 do'16(si16) do'16 re'16 do'16 si16 la16 sol16 fa16 mi16            % 37
         re8 si16(la16) si16 do'16 si16 la16
-        sold16-4^\extdown fad16-2 mi16-1^\extover re16\open                    % 38
+        sold16-\4 fad16-2 mi16-1 re16\open                                     % 38
         do8-2 la8-4 sold-3 la8 si,8-1 sold8                                    % 39
         la,8-1 la16 si16 do'4 r8 re'16 do'16                                   % 40
         si4 r8 do'16 si16 la4                                                  % 41
@@ -209,16 +184,16 @@ extover = \markup {
         si8 sol16 la16 si8-.\upbow do'8-.\downbow re'8-. si8-.                 % 46
         mi'8-1\upbow re'8-4 do'8 si8 la8 sol8                                  % 47
         fad4\upbow re4 re'4-2                                                  % 48
-        mi'8-4\downbow do'16-1^\extup re'16
+        mi'8-4\downbow do'16-\1 re'16
         mi'8-.\upbow do'8-.\upbow mi'8-. do'8-.                                % 49
-        re'8^\extover si16-1 do'16
+        re'8 si16-1 do'16
         re'8-.\upbow si8-.\upbow re'8-. si8-.                                  % 50
         do'8 la16 si16 do'8-.\upbow la8-.\upbow do'8-. la8-.                   % 51
         si8 sol8 fad8 sol8 la,8 fad8                                           % 52
         sol8 la8 si8 do'8 re'8 si8                                             % 53
-        mi'8-4\downbow \breathe do'16\downbow^\extup re'16
+        mi'8-4\downbow \breathe do'16-\1\downbow re'16
         mi'16 re'16 do'16 re'16 mi'16 re'16 do'16 mi'16                        % 54
-        re'8-2^\extover \breathe si16-1\downbow do'16 re'16 do'16 si16 do'16
+        re'8-2 \breathe si16-1\downbow do'16 re'16 do'16 si16 do'16
         re'16 do'16 si16 re'16                                                 % 55
         do'8\downbow \breathe la16\downbow si16 do'16 si16 la16 si16
         do'16 si16 la16 do'16                                                  % 56

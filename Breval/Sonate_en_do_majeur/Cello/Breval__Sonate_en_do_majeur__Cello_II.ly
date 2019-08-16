@@ -10,24 +10,6 @@
 
 \language "italiano"
 
-allonger = \markup {
-  \center-column {
-    \combine
-    \draw-line #'(-4 . 0)
-    \arrow-head #X #RIGHT ##f
-  }
-}
-
-retenir = \markup {
-  \center-column {
-    \concat {
-      \arrow-head #X #LEFT ##f
-      \hspace #-1
-      \draw-line #'(-4 . 0)
-    }
-  }
-}
-
 \score {
     \new Staff
     \with {instrumentName = #"Cello II"}

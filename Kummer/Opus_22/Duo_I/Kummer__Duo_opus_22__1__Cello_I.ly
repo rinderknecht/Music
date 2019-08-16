@@ -50,37 +50,15 @@ retenirAppuyer = \markup {
       \arrow-head #X #LEFT ##f
       \hspace #-1
       \override #'(thickness . 3)
-      \draw-line #'(-4 . 0)
+      \draw-line #'(-5 . 0)
     }
   }
-}
-
-extup = \markup {
-  \center-column {
-    \arrow-head #Y #UP ##t
-  }
-}
-
-extdown = \markup {
-  \center-column {
-    \arrow-head #Y #DOWN ##t
-  }
-}
-
-extover = \markup {
-%  \center-column {
-%    \beam #0.75 #0 #0.75
-%  }
 }
 
 \score {
   \new Staff
   \with {instrumentName = #"Cello I"}
   {
-%    \override TextScript.avoid-slur = #'inside
-%    \override TextScript.outside-staff-priority = ##f
-%    \override Score.Fingering.avoid-slur = #'inside
-%    \override Score.StrokeFinger.avoid-slur = #'inside
     \override Hairpin.to-barline = ##f
     \tempo "Allegro" 4 = 100
     \time 4/4
@@ -114,7 +92,8 @@ extover = \markup {
       sol4^\allongerDeux\downbow(fad4) mi4^\allongerDeux(la4)          % 23
       re4-.^\allongerUne\downbow la4-1(si4-3 do'4-4)                   % 24
       si4-3^\retenir(sib2-2) la8-4^\allongerDeux(sol8-2)               % 25
-      fad4^\allongerUne\downbow-\markup{talon} la4-1(si4 do'4)         % 26
+      fad4^\allongerUne\downbow-\markup{\small "talon"}
+      la4-1(si4 do'4)                                                  % 26
       si4-3^\retenir(sib2-2\>) la8-4^\allongerDeux\!(sol8-2)           % 27
       fad4-1\sf\downbow^\allongerUne
       re'2-2^\retenirAppuyer(dod'4)                                    % 28
@@ -122,7 +101,7 @@ extover = \markup {
       re'4-4(do'2 la8 fad8)                                            % 30
       re4.\upbow\>(mi8 fad8 sol8 la8-1 lad8-2)\!                       % 31
       \mark \default
-      si2-3\downbow_\markup{\italic "dolce"}(do'4 si4)                 % 32
+      si2-3\downbow_\markup{\small\italic "dolce"}(do'4 si4)           % 32
       si4\upbow(la2 si4)                                               % 33
       si4-1\downbow(do'4 re'4 do'4)                                    % 34
       do'4\upbow(si2 do'8 dod'8)                                       % 35
@@ -232,7 +211,7 @@ extover = \markup {
       mi'4--(re'4-- do'4-- si4--)                                      % 123
       la4\pp r4 sol4 r4                                                % 124
       fad4 r4 fa4 r4                                                   % 125
-      mi2_\markup{\italic "dolce"}(fa4 mi4)                            % 126
+      mi2_\markup{\small\italic "dolce"}(fa4 mi4)                      % 126
       mi4(re2 mi4)                                                     % 127
       mi4(fa4 sol4 fa4)                                                % 128
       fa4(mi2 fa4)                                                     % 129

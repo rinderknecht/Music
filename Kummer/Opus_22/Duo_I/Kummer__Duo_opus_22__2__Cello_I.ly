@@ -14,10 +14,10 @@
   page-count = #1
 }
 
-allongerTrois = \markup {
+allongerUne = \markup {
   \center-column {
     \combine
-    \draw-line #'(-6 . 0)
+    \draw-line #'(-2 . 0)
     \arrow-head #X #RIGHT ##f
   }
 }
@@ -30,31 +30,11 @@ allongerDeux = \markup {
   }
 }
 
-allongerUne = \markup {
+allongerTrois = \markup {
   \center-column {
     \combine
-    \draw-line #'(-2 . 0)
+    \draw-line #'(-6 . 0)
     \arrow-head #X #RIGHT ##f
-  }
-}
-
-allongerAppuyer = \markup {
-  \center-column {
-    \combine
-    \override #'(thickness . 3)
-    \draw-line #'(-2 . 0)
-    \arrow-head #X #RIGHT ##f
-%    \hspace #-1
-  }
-}
-
-retenir = \markup {
-  \center-column {
-    \concat {
-      \arrow-head #X #LEFT ##f
-      \hspace #-1
-      \draw-line #'(-4 . 0)
-    }
   }
 }
 
@@ -67,35 +47,6 @@ retenirQuatre = \markup {
     }
   }
 }
-
-retenirAppuyer = \markup {
-  \center-column {
-    \concat {
-      \arrow-head #X #LEFT ##f
-      \hspace #-1
-      \override #'(thickness . 3)
-      \draw-line #'(-4 . 0)
-    }
-  }
-}
-
-extup = \markup {
-  \center-column {
-    \arrow-head #Y #UP ##t
-  }
-}
-
-extdown = \markup {
-  \center-column {
-    \arrow-head #Y #DOWN ##t
-  }
-}
-
-% extover = \markup {
-%   \center-column {
-%     \beam #0.75 #0 #0.75
-%   }
-% }
 
 \score {
   \new Staff
@@ -146,7 +97,7 @@ extdown = \markup {
     mi8\downbow(re8) dod2\4                                            % 35
     \bar "||"
     \mark \default
-    re8\downbow(la8)^\markup{\teeny "pointe, legato"}
+    re8\downbow(la8)^\markup{\small "pointe, legato"}
     sol8(la8) fa8(la8)                                                 % 36
     mi8\upbow(la8) re8(la8) sol8(la8)                                  % 37
     fa8\downbow^\allongerDeux(re8) mi8(fa8 sol8-4 sold8-4)             % 38
@@ -156,7 +107,7 @@ extdown = \markup {
     do'!8-3(si!8-2 sib8-1 la8\open) lab8-4(fa8-2)                      % 42
     <<{la,!4^\allongerUne do4^\retenirQuatre(si,!8 sib,8)} \\
       {do,4 do,2}>>                                                    % 43
-    la,8-.\p^\allongerUne^\markup{\teeny "milieu"}
+    la,8-.\p^\allongerUne^\markup{\small "milieu"}
     la,8(sol,8 fa,8 mi,8 re,8)                                         % 44
     do,2.(                                                             % 45
     do,8) sib,!8(la,8 sol,8 fa,8 mib,8                                 % 46
@@ -167,7 +118,7 @@ extdown = \markup {
     fa8(mi8 re8 do8 si,8 sib,!8                                        % 51
     la,8) r8 <<{re4.\upbow(fa8)} \\ {la,2\f}>>                         % 52
     <<la,4 mi4>> r4 r4                                                 % 53
-    re8\downbow\p(la8)^\markup{\teeny "pointe, legato"}
+    re8\downbow\p(la8)^\markup{\small "pointe, legato"}
     sol8(la8) fa8(la8)                                                 % 54
     mi8(la8) re8(la8) sol8(la8)                                        % 55
     fa8^\allongerDeux(re8) mi8(fa8 sol8 sold8)                         % 56
@@ -176,7 +127,7 @@ extdown = \markup {
     la,8(mi8 la8 sol8) fa8(re8)                                        % 59
     sol,8(sib,8) la,2                                                  % 60
     re4 r4 r4                                                          % 61
-    r8 sib8_\markup{\teeny "talon"}\downbow
+    r8 sib8_\markup{\small "talon"}\downbow
     (la8 sol8 fa8 mi8)                                                 % 62
     mi4 r4 r4                                                          % 63
     \bar "||"
@@ -201,7 +152,7 @@ extdown = \markup {
     la2.-1                                                             % 81
     do'4-4(re'4-3\open do'4)                                           % 82
     do'8(sib8 la4) r4                                                  % 83
-    re'2_\markup{\teeny "alléger"}
+    re'2_\markup{\small "alléger"}
     \downbow^\allongerTrois(sol'4)                                     % 84
     do'2-2^\allongerTrois(fa'4)                                        % 85
     sib4-2_\markup{\teeny II}\downbow(la4) do'4\((                     % 86

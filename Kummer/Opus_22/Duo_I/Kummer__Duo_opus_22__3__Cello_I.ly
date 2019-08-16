@@ -10,69 +10,6 @@
 
 \language "italiano"
 
-allongerTrois = \markup {
-  \center-column {
-    \combine
-    \draw-line #'(-6 . 0)
-    \arrow-head #X #RIGHT ##f
-  }
-}
-
-allongerDeux = \markup {
-  \center-column {
-    \combine
-    \draw-line #'(-4 . 0)
-    \arrow-head #X #RIGHT ##f
-  }
-}
-
-allongerUne = \markup {
-  \center-column {
-    \combine
-    \draw-line #'(-2 . 0)
-    \arrow-head #X #RIGHT ##f
-  }
-}
-
-retenir = \markup {
-  \center-column {
-    \concat {
-      \arrow-head #X #LEFT ##f
-      \hspace #-1
-      \draw-line #'(-4 . 0)
-    }
-  }
-}
-
-retenirAppuyer = \markup {
-  \center-column {
-    \concat {
-      \arrow-head #X #LEFT ##f
-      \hspace #-1
-      \override #'(thickness . 3)
-      \draw-line #'(-4 . 0)
-    }
-  }
-}
-
-extup = \markup {
-  \center-column {
-    \arrow-head #Y #UP ##t
-  }
-}
-
-extdown = \markup {
-  \center-column {
-    \arrow-head #Y #DOWN ##t
-  }
-}
-
-extover = \markup {
-  \center-column {
-    \beam #0.75 #0 #0.75
-  }
-}
-
 \score {
   \new Staff
   \with {instrumentName = #"Cello I"}
@@ -188,21 +125,21 @@ extover = \markup {
     la,8\<(do8 mi8 la8)\!                                              % 99
     la4(sold4)                                                         % 100
     do8\<(mi8 la8 do'8)\!                                              % 101
-    do'4_\markup{\italic "rit."}(si4)                                  % 102
+    do'4_\markup{\small\italic "rit."}(si4)                            % 102
     mi8\<(la8) do'8(mi'8)\!                                            % 103
     mi'8(re'8) fa'8-. mi'8-.                                           % 104
     re'8-. do'8-. si8-. la8-.                                          % 105
     sold2\>(                                                           % 106
     sol!2)\!                                                           % 107
-    do'8.\p(si32 do'32 re'8 si8)                                       % 108
-    do'8-. mi'8-. sol'4\>                                              % 109
-    do'8.(si32 do'32 re'8 si8)                                         % 110
+    do'8.\p(si32 do'32 re'8) si8\downbow                               % 108
+    do'8-.\upbow mi'8-. sol'4\>                                        % 109
+    do'8.(si32 do'32 re'8) si8\downbow                                 % 110
     do'8-. mi'8-. sol'4                                                % 111
     fad'4(sol'8)\! r8                                                  % 112
     la'4(sol'8) mi'8-.                                                 % 113
-    do'8.(si32 do'32 re'8 si8)                                         % 114
+    do'8.(si32 do'32 re'8) si8\downbow                                 % 114
     \bar "||"
-    do'8_\markup{\italic "a tempo"}
+    do'8_\markup{\small\italic "a tempo"}
     mi16(fa16) sol16-. la16-. si16-. do'16-.                           % 115
     do'16(si16) re'16-. do'16-. si16(la16) sol16-. fa16-.              % 116
     mi8-. mi16(fa16) sol16-. la16-. si16-. do'16-.                     % 117
@@ -227,16 +164,16 @@ extover = \markup {
     fa'2\>                                                             % 136
     mi'8\f\!-. do'8-. sol8-. mi8-.                                     % 137
     do8 r8 sol8 r8                                                     % 138
-    do'8.\p(si32 do'32 re'8 si8)                                       % 139
+    do'8.\p(si32 do'32 re'8) si8\downbow                               % 139
     do'8-.(mi'8-.) sol'4(                                              % 140
     fad'8 fa'8) mi'4                                                   % 141
     mi'8(re'8) do'8(si8)                                               % 142
-    do'8.\p(si32 do'32 re'8 si8)                                       % 143
+    do'8.\p(si32 do'32 re'8) si8\downbow                               % 143
     do'8-.(mi'8-.) sol'4(                                              % 144
     fad'8 fa'8) mi'4                                                   % 145
     mi'8(re'8) do'8(si8)                                               % 146
-    do'8.(si32 do'32 re'8 si8)                                         % 147
-    do'8.(si32 do'32 re'8 si8)                                         % 148
+    do'8.(si32 do'32 re'8) si8\downbow                                 % 147
+    do'8.(si32 do'32 re'8) si8\downbow                                 % 148
     do'8-.\f sol,8-. do8-. mi8-.                                       % 149
     sol8-. do'8-. mi'8-. sol'8-.                                       % 150
     mi'8 r8 <<mi8.( do'8.>><<mi16) do'16-.>>                           % 151
