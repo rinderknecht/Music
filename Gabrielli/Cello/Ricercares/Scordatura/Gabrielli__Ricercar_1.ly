@@ -49,7 +49,7 @@
    | sib,4 do4 re4                          % 17
    | mib4 fa4 fa,4                          % 18
    | sib,4 do'4 la4                         % 19
-   | r4 la4\upbow fad4                      % 20
+   | r4 si4\upbow fad4                      % 20
    | r4 la4 mib4                            % 21
    | r4 re4 sib,4                           % 22
    | do4 re4 mib4                           % 23
