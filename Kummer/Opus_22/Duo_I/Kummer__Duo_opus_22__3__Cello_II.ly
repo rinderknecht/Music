@@ -200,7 +200,7 @@
     do'8-. si8-. la8-. sold8-.                                         % 81
     la8-. mi8-. do8-. la,8-.                                           % 82
     fa,2\p                                                             % 83
-    mi,8(la,8 do8 mi8)                                                 % 84
+    mi,8(sol,8 do8 mi8)                                                % 84
     fa4 fa,4                                                           % 85
     mi,8(sol,8) do8(mi8)                                               % 86
     fa8->(mi8) re8->(do8)                                              % 87

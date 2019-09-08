@@ -10,6 +10,14 @@
 
 \language "italiano"
 
+allongerQuatre = \markup {
+  \center-column {
+    \combine
+    \draw-line #'(-9 . 0)
+    \arrow-head #X #RIGHT ##f
+  }
+}
+
 \score {
   \new Staff
   \with {instrumentName = #"Cello I"}
@@ -25,16 +33,16 @@
     do'8-.\upbow mi'8-.-1 sol'4\>                                      % 2
     do'8.(si32 do'32 re'8) si8\downbow                                 % 3
     do'8-.\upbow mi'8-.-1 sol'4                                        % 4
-    la'4-3\flageolet(sol'8) r8                                         % 5
-    fa'4(mi'8)\! r8                                                    % 6
+    la'4-3\flageolet->(sol'8) r8                                       % 5
+    fa'4->(mi'8)\! r8                                                  % 6
     re'8-. do'8-. fa'8-. mi'8-.                                        % 7
     re'4 sol4                                                          % 8
     do'8.(si32 do'32 re'8) si8\downbow                                 % 9
     do'8-.\upbow mi'8-. sol'4\>                                        % 10
     do'8.\!(si32 do'32 re'8) si8\downbow                               % 11
     do'8-.\upbow mi'8-. sol'4\>                                        % 12
-    fad'4(sol'8) r8                                                    % 13
-    la'4(sol'8)\! r8                                                   % 14
+    fad'4->(sol'8) r8                                                  % 13
+    la'4->(sol'8)\! r8                                                 % 14
     do'8.\!(si32 do'32 re'8) si8\downbow                               % 15
     do'4\upbow_\markup{\teeny "I"} r4                                  % 16
     \mark \default
@@ -68,25 +76,25 @@
     sold,8\1\<(re8 fa!8 re8)                                           % 44
     la,8-. la,8-. si,8-. sol,!8-.                                      % 45
     do8-.-1 sol,8-. dod8-.-2 sol,8-.\!                                 % 46
-    re8-3\>(sol,8 re8 dod8)                                            % 47
-    re8(sol,8 re8 dod8)\!                                              % 48
-    re8-3 r8 sol4-4\p\upbow                                            % 49
-    la4 si4\upbow                                                      % 50
+    re8-3^\allongerQuatre\>(sol,8 re8 dod8)                            % 47
+    re8^\allongerQuatre(sol,8 re8 dod8)\!                              % 48
+    re8-3 r8 sol4-4\<\p\upbow                                          % 49
+    la4si4\!\upbow                                                     % 50
     \mark \default
     do'8.(si32 do'32 re'8) si8\downbow                                 % 51
     do'8-.\upbow mi'8-. sol'4\>                                        % 52
     do'8.(si32 do'32 re'8) si8\downbow                                 % 53
     do'8-.\upbow mi'8-. sol'4                                          % 54
-    la'4(sol'8) r8                                                     % 55
-    fa'4(mi'8)\! r8                                                    % 56
+    la'4->(sol'8) r8                                                   % 55
+    fa'4->(mi'8)\! r8                                                  % 56
     re'8-. do'8-. fa'8-. mi'8-.                                        % 57
     re'4 sol4                                                          % 58
     do'8.(si32 do'32 re'8) si8\downbow                                 % 59
     do'8-.\upbow mi'8-. sol'4\>                                        % 60
     do'8.\!(si32 do'32 re'8) si8\downbow                               % 61
     do'8-.\upbow mi'8-. sol'4\>                                        % 62
-    fad'4(sol'8) r8                                                    % 63
-    la'4(sol'8)\! r8                                                   % 64
+    fad'4->(sol'8) r8                                                  % 63
+    la'4->(sol'8)\! r8                                                 % 64
     do'8.\!(si32 do'32 re'8) si8\downbow                               % 65
     do'4\upbow_\markup{\teeny "I"} r4                                  % 66
     \mark \default
@@ -132,7 +140,6 @@
     re'8-. do'8-. si8-. la8-.                                          % 105
     sold2\downbow\>                                                    % 106
     sol!2\upbow\!                                                      % 107
-    \mark \default
     do'8.\p(si32 do'32 re'8) si8\downbow                               % 108
     do'8-.\upbow mi'8-. sol'4\>                                        % 109
     do'8.(si32 do'32 re'8) si8\downbow                                 % 110
@@ -141,6 +148,7 @@
     la'4\upbow(sol'8) mi'8-.\upbow                                     % 113
     do'8.\downbow(si32 do'32 re'8) si8\upbow                           % 114
     \bar "||"
+    \mark \default
     do'8\downbow_\markup{\small\italic "a tempo"}
     mi16(fa16) sol16-. la16-. si16-. do'16-.                           % 115
     do'16(si16) re'16-. do'16-. si16(la16) sol16-. fa16-.              % 116
@@ -166,6 +174,7 @@
     fa'2\>                                                             % 136
     mi'8\f\!-. do'8-. sol8-. mi8-.                                     % 137
     do8 r8 sol8 r8                                                     % 138
+    \mark \default
     do'8.\p(si32 do'32 re'8) si8\downbow                               % 139
     do'8-.(mi'8-.) sol'4(                                              % 140
     fad'8 fa'8) mi'4                                                   % 141
