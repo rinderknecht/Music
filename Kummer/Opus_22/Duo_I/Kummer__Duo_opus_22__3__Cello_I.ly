@@ -156,8 +156,8 @@ allongerQuatre = \markup {
     do'16(si16) re'16-. do'16-. si16(la16) sol16-. fa16-.              % 118
     mi16(re16 mi16 fa16 sol16 la16 si16 do'16)                         % 119
     re'16(do'16 si16 la16 sol16 fa16 mi16 re16)                        % 120
-    mi16(fa16 sol16 la16 si16 do'16 re'16 mi'16)                       % 121
-    fa'16(mi'16 re'16 do'16 si16 la16 sol16 fa16)                      % 122
+    mi16(fa16 sol16 la16 si16 do'16 re'16-1 mi'16-3)                   % 121
+    fa'16-4\upbow(mi'16-3 re'16-1 do'16 si16 la16 sol16 fa16)          % 122
     sol16\<(la16 si16 do'16 re'16 mi'16 fa'16 sol'16)\!                % 123
     la'2\>                                                             % 124
     sol'8\f\!-. mi'8-. do'8-. sol8-.                                   % 125
@@ -170,9 +170,9 @@ allongerQuatre = \markup {
     si16(la16 sol16 fa16 mi16 re16 do16 si,16)                         % 132
     do16(re16 mi16 fa16 sol16 la16 si16 do'16)                         % 133
     re'16(do'16 si16 la16 sol16 fa16 mi16 re16)                        % 134
-    mi16\<(fa16 sol16 la16 si16 do'16 re'16 mi'16)\!                   % 135
-    fa'2\>                                                             % 136
-    mi'8\f\!-. do'8-. sol8-. mi8-.                                     % 137
+    mi16\<(fa16 sol16 la16 si16 do'16 re'16-1 mi'16-3)\!               % 135
+    fa'2-4\>                                                           % 136
+    mi'8-3\f\!-. do'8-. sol8-. mi8-.                                   % 137
     do8 r8 sol8 r8                                                     % 138
     \mark \default
     do'8.\p(si32 do'32 re'8) si8\downbow                               % 139

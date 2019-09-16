@@ -19,6 +19,7 @@
     \time 2/4
     \key do \major
     \clef bass
+    \mark \default
     <<do,8-.\p( mi8>>
     <<do,8-. mi8>>
     <<do,8-. fa8>>
@@ -75,6 +76,7 @@
     <<sol,8-.) fa8>>                                                   % 15
     <<sol,8-. mi8>>
     mi8(do8 si,8)                                                      % 16
+    \mark \default
     <<la,8-.\p( mi8>>
     <<la,8-. mi8>>
     <<la,8-. mi8>>
@@ -127,6 +129,7 @@
     fa'4.->(mi'8)                                                      % 48
     fa'8 r8 sol4\p(                                                    % 49
     fa4 re4)                                                           % 50
+    \mark \default
     <<do,8-.( mi8>>
     <<do,8-. mi8>>
     <<do,8-. fa8>>
@@ -183,6 +186,7 @@
     <<sol,8-.) fa8>>                                                   % 65
     <<do,4 sol,4 mi4>> r4                                              % 66
     \bar "||"
+    \mark \default
     r4 r4                                                              % 67
     si,8\mf\upbow(re8 sold8 si8)                                       % 68
     si4(la4)                                                           % 69
@@ -199,6 +203,7 @@
     mi'8(re'8) fa'8\f-. re'8-.                                         % 80
     do'8-. si8-. la8-. sold8-.                                         % 81
     la8-. mi8-. do8-. la,8-.                                           % 82
+    \mark \default
     fa,2\p                                                             % 83
     mi,8(sol,8 do8 mi8)                                                % 84
     fa4 fa,4                                                           % 85
@@ -251,6 +256,7 @@
     <<sol,4_\markup{\small\italic "rit."} mi4>>
     <<sol,4 fa4>>                                                      % 114
     \bar "||"
+    \mark \default
     do,8_\markup{\small\italic "a tempo"}(sol,8 do,8 sol,8)            % 115
     re,8(sol,8 re,8 sol,8)                                             % 116
     do,8(sol,8 do,8 sol,8)                                             % 117
@@ -275,6 +281,7 @@
     la'2-3\flageolet\>                                                 % 136
     sol'8-8-.\!\f mi'8-. do'8-. sol8-.                                 % 137
     mi8 r8 <<sol,8 re8>> r8                                            % 138
+    \mark \default
     <<do,8-.\p( mi8>>
     <<do,8-.) mi8>>
     <<do,8-.( fa8>>
