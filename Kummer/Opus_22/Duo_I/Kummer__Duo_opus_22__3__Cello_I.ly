@@ -46,10 +46,10 @@ allongerQuatre = \markup {
     do'8.\!(si32 do'32 re'8) si8\downbow                               % 15
     do'4\upbow_\markup{\teeny "I"} r4                                  % 16
     \mark \default
-    do'4\p(si8 la8)                                                    % 17
-    sold8-. si8-. la8.(si16)                                           % 18
+    do'4-4\p(si8 la8)                                                  % 17
+    sold8-1-. si8-. la8.-1(si16)                                       % 18
     do'4(si8 la8)                                                      % 19
-    sold8-. si8-. la8.(si16)                                           % 20
+    sold8-1-. si8-. la8.-1(si16)                                       % 20
     do'4.\downbow\<(re'8-1)\!                                          % 21
     mib'8-2\upbow\>(re'8) mib'8(re'8)\!                                % 22
     mi'!8-3(re'8) do'8-.-2 la8-.                                       % 23
