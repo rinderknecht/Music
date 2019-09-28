@@ -10,6 +10,13 @@
 
 \language "italiano"
 
+% iPad Pro 12.9
+%
+% \Paper {
+%   paper-width = 195\mm
+%   paper-height = 260\mm
+% }
+
 allongerUne = \markup {
   \center-column {
     \combine
@@ -27,7 +34,7 @@ allongerUne = \markup {
    \key re \major
    \clef bass
    re'8\downbow dod'16(si16) la16 si16 sol16 la16
-   fad8^\allongerUne re8\upbow r8 mi8\upbow                           % 1
+   fad8 re8\upbow r8 mi8\upbow                                        % 1
    fad8-1^\markup{\musicglyph #"scripts.segno"}
    sol8 la8 la,8-1_\markup{\teeny III}
    re16 re'16 dod'16 si16 la8 sol8                                    % 2
@@ -36,26 +43,25 @@ allongerUne = \markup {
    re8 sol8 mi8 fad8 si,4^\allongerUne re8\upbow mi\upbow             % 4
    fad8 si8 re'4.(dod'8) si4(                                         % 5
    si8) sol8 mi8 fad8 si,4\upbow re8-4
-   sol8^\markup{\bold\teeny (2)}_\markup{\teeny II}                   % 6
-   dod8^\markup{\bold\teeny (3)}_\markup{\teeny III}
+   sol8^\markup{\bold\teeny (2)}                                      % 6
+   dod8^\markup{\bold\teeny (3)}
    mi8-3 mi8 re8 re4.^\allongerUne
-   si16-3\upbow_\markup{\teeny II} la16\downbow                       % 7
+   si16-3\upbow la16\downbow                                          % 7
    sol4.-4(fad8) fad16 sol16 fad16 mi16 re8 re'16(dod'16)             % 8
    si16 dod'16 si16 la16 sol16 la16 si16 dod'16 re'4. fad8-1          % 9
    sol16 la16 sol16 fad16 mi16-1 fad16 sol16-2
    la16^\markup{\bold\teeny (4)}
    fad8^\markup{\bold\teeny (1)} la8 fad8 re8\open                    % 10
-   mi16-1 fad16 mi16 re16 dod16-1_\markup{\teeny III}
-   re16^\markup{\bold\teeny (2)} mi16 dod16 re4
-   r8 si8-3_\markup{\teeny II}                                        % 11
-   si4 lad4 si16 dod'16\4 si16 la16
-   sol16-1 la16^\markup{\bold\teeny (3)} sol16-3 fad16                % 12
-   mi16\1 sol16 fad16 sol16 dod16-3_\markup{\teeny III}
-   fad16^\markup{\bold\teeny (1)}
-   mi16-1_\markup{\teeny II} fad16 re4. mi16(fad16)                   % 13
+   mi16-1 fad16 mi16 re16 dod16-1
+   re16^\markup{\bold\teeny (2)} mi16 dod16 re4 r8 si8-3              % 11
+   si4 lad4 si16-2 dod'16-4 si16 la16\1
+   sol16-1 la16^\markup{\bold\teeny (3)} sol16 fad16-3                % 12
+   mi16-1 sol16 fad16 sol16 dod16-3
+   fad16^\markup{\bold\teeny (1)} mi16-1 fad16
+   re4.\open mi16(fad16)                                              % 13
    sol16 si16 la16 si16 mi16 la16-4 sol16 la16
    fad8^\markup{\bold\teeny (1)}
-   re'4^\markup{\bold\teeny (2)}_\markup{\teeny I} do'8-2\downbow     % 14
+   re'4^\markup{\bold\teeny (2)} do'8-2\downbow                       % 14
    si16\upbow sol16 fad16 sol16 mi8 dod8\4 re4 fad4                   % 15
    sol8\upbow sol,8 la,4 re,4^\allongerUne re'4\upbow(                % 16
    re'8) dod'16 si16 la16 si16 sol16 la16 fad8 re8 fad8 mi16(re16)    % 17
