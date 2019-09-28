@@ -12,7 +12,7 @@
 
 % iPad Pro 12.9
 %
-% \Paper {
+% \paper {
 %   paper-width = 195\mm
 %   paper-height = 260\mm
 % }
