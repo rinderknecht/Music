@@ -1,17 +1,26 @@
 #(set-global-staff-size 21)
 
 \version "2.18.2"
+
 \header {
   title = "Menuet (Suite I) (Arrangement by Andrea Ferrante)"
   composer = "Johann Sebastian Bach"
 }
+
+\language "italiano"
+
+% iPad Pro 12.9
+
+% \paper {
+%   paper-width  = 195\mm
+%   paper-height = 260\mm
+% }
 
 \score {
   <<
     \new Staff
     \with {instrumentName = #"Cello "}
     {
-      \language "italiano"
       \override Hairpin.to-barline = ##f
       \repeat volta 2 {
         \time 3/4
