@@ -10,6 +10,11 @@
 
 \language "italiano"
 
+% \paper {
+%   paper-width  = 195\mm
+%   paper-height = 260\mm
+% }
+
 \score {
   \new Staff
   \with {instrumentName = #"Cello "}{
