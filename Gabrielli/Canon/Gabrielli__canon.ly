@@ -11,9 +11,9 @@
 \language "italiano"
 
 % iPad Pro 12.9
-%
+
 % \paper {
-%   paper-width = 195\mm
+%   paper-width  = 195\mm
 %   paper-height = 260\mm
 % }
 

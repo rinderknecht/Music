@@ -8,10 +8,18 @@
   tagline  = ""
 }
 
+\language "italiano"
+
+% iPad Pro 12.9
+
+% \paper {
+%   paper-width  = 195\mm
+%   paper-height = 260\mm
+% }
+
 \score {
   \new Staff \with {\remove "Time_signature_engraver"}
   {
-    \language "italiano"
     \clef bass
     <do, sol, re sol>1
   }
@@ -25,7 +33,6 @@
   \new Staff
   \with {instrumentName = #"Cello "}
   {
-   \language "italiano"
    \override Hairpin.to-barline = ##f
    \time 3/4
    \key do \major %sol \minor
