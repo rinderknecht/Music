@@ -1,6 +1,7 @@
 #(set-global-staff-size 21)
 
 \version "2.18.2"
+
 \header {
   title    = "Sonate I (opus 14)"
   composer = "Joseph Bodin de Boismortier (1726)"
@@ -8,6 +9,13 @@
 }
 
 \language "italiano"
+
+% iPad Pro 12.9
+
+\paper {
+  paper-width  = 195\mm
+  paper-height = 260\mm
+}
 
 \score {
   <<
