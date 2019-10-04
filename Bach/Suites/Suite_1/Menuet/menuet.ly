@@ -5,6 +5,7 @@
 \header {
   title = "Menuet (Suite I) (Arrangement by Andrea Ferrante)"
   composer = "Johann Sebastian Bach"
+  tagline  = ""
 }
 
 \language "italiano"
