@@ -12,10 +12,10 @@
 
 % iPad Pro 12.9
 
-% \paper {
-%   paper-width  = 195\mm
-%   paper-height = 260\mm
-% }
+\paper {
+  paper-width  = 195\mm
+  paper-height = 260\mm
+}
 
 allongerUne = \markup {
   \center-column {
@@ -107,11 +107,11 @@ allongerUne = \markup {
    mi4 la,4 si,4.\2 si,8                                              % 36
    dod8\4 la,8 la4.-2 si16 la16 sold8.(la16)                          % 37
    la4 dod4^\markup{\bold\teeny (1)} re4\open mi4-1                   % 38
-   fad4 la,4 si,4 dod4\4                                              % 39
+   fad4 la,4 si,4\2 dod4\4                                            % 39
    re4 la8 si16 la16 sol8 la16 si16 la8.(sol16)                       % 40
    fad4 fad8-2 fad,8^\markup{\bold\teeny (4)} sol,4 la,4-1            % 41
    re4\open re'8 re'8 mi'8-4 mi'8 mi'8 re'16 mi'16                    % 42
-   fad'8-4\upbow re'8-4\upbow fad8 si8 sol8 mi8 la8 la,8              % 43
+   fad'8-3\upbow re'8-4\upbow fad8 si8 sol8 mi8 la8 la,8              % 43
    re4 r16 la16 sol16 fad16 si4 r16 dod'16 si16 dod'16                % 44
    re'16-2 la16^\markup{\bold\teeny (4)}
    sol16 la16 fad4 r16 sol16 fad16 sol16 mi4-1                        % 45
