@@ -90,14 +90,15 @@ allongerUne = \markup {
    \mark \default
    r8 la,8\upbow mi16 re16 mi16 fad16 mi16 fad16 mi16 re16            % 25
    dod16-4 si,16 dod16 la,16\1 la16-4 sold16 la16 fad16
-   sold16 fad16 sold16 la16 sold8 si8-2                               % 26
+   sold16^\markup{\bold\teeny (3)} fad16 sold16 la16 sold8 si8-2      % 26
    dod'8^\markup{\bold\teeny (4)}
    mi8-1 dod8\4 la8\open mi4 r8 mi8                                   % 27
    la,4 mi8-4\upbow dod8^\markup{\bold\teeny (1)}\upbow
    sold16^\markup{\bold\teeny (1)}
    la16 si16 la16 sold16 fad16-3 mi16 re16                            % 28
    dod4\4 mi'4-1 mi'4 mi'4                                            % 29
-   mi'4\downbow dod'16-4 si16 dod'16 la16-2 si16 la16 si16 sold16
+   mi'4\downbow dod'16-4\downbow si16 dod'16 la16-2
+   si16 la16 si16 sold16
    la16 sold16 la16 fad16-2                                           % 30
    sold8^\markup{\bold\teeny (4)} mi8\1 la4\open mi4 fad4             % 31
    mi4 dod16-1 re16 mi16 re16 dod8
@@ -109,9 +110,9 @@ allongerUne = \markup {
    dod8\4 la,8 la4.-2 si16 la16 sold8.(la16)                          % 37
    la4 dod4^\markup{\bold\teeny (1)} re4\open mi4-1                   % 38
    fad4 la,4 si,4\2 dod4\4                                            % 39
-   re4 la8 si16 la16 sol8 la16 si16 la8.(sol16)                       % 40
+   re4\downbow la8 si16 la16 sol8 la16 si16 la8.(sol16)               % 40
    fad4 fad8-2 fad,8^\markup{\bold\teeny (4)} sol,4 la,4-1            % 41
-   re4\open re'8 re'8 mi'8-4 mi'8 mi'8 re'16 mi'16                    % 42
+   re4\open\upbow re'8 re'8 mi'8-4 mi'8 mi'8 re'16 mi'16              % 42
    fad'8-3\upbow re'8-4\upbow fad8 si8 sol8 mi8 la8 la,8              % 43
    re4 r16 la16 sol16 fad16 si4 r16 dod'16 si16 dod'16                % 44
    re'16-2 la16^\markup{\bold\teeny (4)}
@@ -120,7 +121,8 @@ allongerUne = \markup {
    fad16\downbow fad16 mi16 fad16 re16-4 re16 dod16 re16
    si,16^\markup{\bold\teeny (1)} mi16-4 re16 mi16
    dod16-3 dod16 si,16 dod16                                          % 46
-   re4\open si,4-3 sol,4 la,4                                         % 47
+   re4^\markup{\bold\teeny (4)}
+   si,4^\markup{\bold\teeny (1)} sol,4\open la,4-1                    % 47
    re,4 r4 r4 r4                                                      % 48
    \bar "|."
  }
