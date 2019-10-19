@@ -12,10 +12,10 @@
 
 % iPad Pro 12.9
 
-\paper {
-  paper-width  = 195\mm
-  paper-height = 260\mm
-}
+% \paper {
+%   paper-width  = 195\mm
+%   paper-height = 260\mm
+% }
 
 allongerUne = \markup {
   \center-column {
@@ -88,7 +88,9 @@ allongerUne = \markup {
    dod8^\markup{\bold\teeny(1)} dod16 re16 mi8\upbow mi,8-3\upbow     % 24
    la,4
    \mark \default
-   r8 la,8\upbow mi16 re16 mi16 fad16 mi16 fad16 mi16 re16            % 25
+   r8 la,8\upbow
+   mi16^\markup{\italic "laisser 1"} re16 mi16 fad16
+   mi16 fad16 mi16 re16                                               % 25
    dod16-4 si,16 dod16 la,16\1 la16-4 sold16 la16 fad16
    sold16^\markup{\bold\teeny (3)} fad16 sold16 la16 sold8 si8-2      % 26
    dod'8^\markup{\bold\teeny (4)}
@@ -104,15 +106,18 @@ allongerUne = \markup {
    mi4 dod16-1 re16 mi16 re16 dod8
    mi'16^\markup{\bold\teeny (2)} mi'16 mi'8.(red'16)                 % 32
    mi'4 la4.^\markup{\bold\teeny (2)} sold8 fad4-3                    % 33
-   mi4 r8 dod'8 si4 r8 la8                                            % 34
-   sold8\4 mi8 dod4\4 re2                                             % 35
-   mi4 la,4 si,4.\2 si,8                                              % 36
-   dod8\4 la,8 la4.-2 si16 la16 sold8.(la16)                          % 37
+   mi4 r8
+   \mark \default dod'8 si4 r8 la8                                    % 34
+   sold8-4 mi8\1 dod4^\markup{\bold\teeny (4)} re2                    % 35
+   mi4 la,4 si,4.^\markup{\bold\teeny (2)} si,8                       % 36
+   dod8^\markup{\bold\teeny (4)} la,8 la4.-2 si16 la16 sold8.(la16)   % 37
    la4 dod4^\markup{\bold\teeny (1)} re4\open mi4-1                   % 38
    fad4 la,4 si,4\2 dod4\4                                            % 39
    re4\downbow la8 si16 la16 sol8 la16 si16 la8.(sol16)               % 40
    fad4 fad8-2 fad,8^\markup{\bold\teeny (4)} sol,4 la,4-1            % 41
-   re4\open\upbow re'8 re'8 mi'8-4 mi'8 mi'8 re'16 mi'16              % 42
+   re4\open\upbow
+   \mark \default
+   re'8 re'8 mi'8-4 mi'8 mi'8 re'16 mi'16                             % 42
    fad'8-3\upbow re'8-4\upbow fad8 si8 sol8 mi8 la8 la,8              % 43
    re4\downbow r16 la16 sol16 fad16 si4 r16 dod'16 si16 dod'16        % 44
    re'16-2\downbow la16^\markup{\bold\teeny (4)}
