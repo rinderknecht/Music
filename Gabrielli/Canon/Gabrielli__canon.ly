@@ -12,10 +12,10 @@
 
 % iPad Pro 12.9
 
-% \paper {
-%   paper-width  = 195\mm
-%   paper-height = 260\mm
-% }
+\paper {
+  paper-width  = 195\mm
+  paper-height = 260\mm
+}
 
 allongerUne = \markup {
   \center-column {
@@ -114,13 +114,15 @@ allongerUne = \markup {
    fad4 fad8-2 fad,8^\markup{\bold\teeny (4)} sol,4 la,4-1            % 41
    re4\open\upbow re'8 re'8 mi'8-4 mi'8 mi'8 re'16 mi'16              % 42
    fad'8-3\upbow re'8-4\upbow fad8 si8 sol8 mi8 la8 la,8              % 43
-   re4 r16 la16 sol16 fad16 si4 r16 dod'16 si16 dod'16                % 44
-   re'16-2 la16^\markup{\bold\teeny (4)}
+   re4\downbow r16 la16 sol16 fad16 si4 r16 dod'16 si16 dod'16        % 44
+   re'16-2\downbow la16^\markup{\bold\teeny (4)}
    sol16 la16 fad4^\markup{\bold\teeny (1)}
-   r16 sol16 fad16 sol16 mi4-1                                        % 45
-   fad16\downbow fad16 mi16 fad16 re16-4 re16 dod16 re16
-   si,16^\markup{\bold\teeny (1)} mi16-4 re16 mi16
-   dod16-3 dod16 si,16 dod16                                          % 46
+   r16 sol16 fad16 sol16 mi4-1\downbow                                % 45
+   fad16\downbow fad16 mi16 fad16
+   re16-4 re16 dod16^\markup{\bold\teeny (3)} re16
+   si,16^\markup{\bold\teeny (1)} mi16-4
+   re16^\markup{\bold\teeny (2)} mi16
+   dod16-3 dod16 si,16^\markup{\bold\teeny (1)} dod16                 % 46
    re4^\markup{\bold\teeny (4)}
    si,4^\markup{\bold\teeny (1)} sol,4\open la,4-1                    % 47
    re,4 r4 r4 r4                                                      % 48
