@@ -85,7 +85,8 @@ allongerUne = \markup {
    la16 si8\upbow^\markup{\bold\teeny (4)} si8\upbow                  % 22
    si8(la8) r8 la8 la8 mi16-1 fad16 sold4-1                           % 23
    la4^\markup{\bold\teeny (2)} r8 la8
-   dod8^\markup{\bold\teeny(1)} dod16 re16 mi8\upbow mi,8-3\upbow     % 24
+   dod8^\markup{\bold\teeny(1)} dod16 re16
+   mi8^\markup{\bold\teeny (4)}\upbow mi,8-3\upbow                    % 24
    la,4
    \mark \default
    r8 la,8\upbow
