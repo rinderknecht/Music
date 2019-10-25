@@ -26,11 +26,11 @@
    \time 3/4
    \key fa \major
    \clef tenor
-   \mark\markup{\musicglyph #"scripts.segno"}
+   \repeat volta 2 {
      fa'2-2\downbow la'4-3\flageolet                    % 1
-   | re'2-1 fa'4-4                                      % 2
-   | mi'4-3(re'4-1) dod'4-1                             % 3
-   | re'2-2 sol'4-4                                     % 4
+   | re'2-1 fa'4^\markup{\bold\teeny (4)}               % 2
+   | mi'4^\markup{\bold\teeny (3)}(re'4) dod'4-1        % 3
+   | re'2^\markup{\bold\teeny (2)} sol'4-4              % 4
    | fa'4-2(mi'4) re'4-2                                % 5
    | mi'4-4 dod'4-1(re'4)                               % 6
    | mi'4-1 fa'4.-2(sol'8-4)                            % 7
@@ -61,8 +61,8 @@
    | do'8-4\upbow(si8) la8-3(sol8-1) fa8-2(mi8-1)       % 29
    | fa4^\markup{\small\italic "rit."} mi4(la4-4)       % 30
    | do4.-2\downbow si,8-1 la,4-1                       % 31
-   | la,2.
-     \mark\markup{\musicglyph #"scripts.segno"}         % 32
-   \bar "|."
+   | la,2.                                              % 32
+     }
+%   \bar "|."
  }
 }
