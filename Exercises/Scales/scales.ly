@@ -48,3 +48,16 @@
    \bar "|."
  }
 }
+
+\score {
+  \new Staff
+   \with {instrumentName = #"Cello"}
+   {
+   \override Hairpin.to-barline = ##f
+   \time 4/4
+   \clef "treble"
+   la1 do'1 mi'1 sol'1 si'1 re''1 fa''1 la''1
+   do'''1 mi'''1
+   \bar "|."
+ }
+}
