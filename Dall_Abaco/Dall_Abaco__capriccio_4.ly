@@ -10,6 +10,8 @@
 
 \language "italiano"
 
+% iPad Pro 12.9
+
 % \paper {
 %   paper-width  = 195\mm
 %   paper-height = 260\mm
@@ -38,7 +40,9 @@
       sib8-\1 re8 sol8 sib8-\1                                        % 13
       do8 sol8 mi'8-3 sib8^\markup{\bold\teeny (4)}                   % 14
       la8^\markup{\bold\teeny (3)} mi'8 fa'8 la8                      % 15
-      do8-1 fa'8^\markup{\bold\teeny (2)} mi'8 re'8\open              % 16
+      do8^\markup{\bold\teeny (1)}
+      fa'8^\markup{\bold\teeny (4)} mi'8
+      re'8^\markup{\bold\teeny (1)}                                   % 16
       mi'8 dod8^\markup{\bold\teeny (2)} mi8-1 sol,8                  % 17
       fa,8 la,8 re8 fa8                                               % 18
       la8 re'8 si8 la8                                                % 19
