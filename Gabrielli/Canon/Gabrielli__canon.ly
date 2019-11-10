@@ -104,11 +104,12 @@ allongerUne = \markup {
    si16 la16 si16 sold16
    la16 sold16 la16 fad16-2                                           % 30
    sold8^\markup{\bold\teeny (4)} mi8\1 la4\open mi4 fad4             % 31
-   mi4 dod16-1 re16 mi16 re16 dod8
-   mi'16^\markup{\bold\teeny (2)} mi'16 mi'8.(red'16)                 % 32
+   mi4\upbow dod16-1 re16 mi16 re16 dod8
+   mi'16^\markup{\bold\teeny (2)} mi'16 mi'8.(red'16)           % 32
    mi'4 la4.^\markup{\bold\teeny (2)} sold8 fad4-3                    % 33
    mi4 r8
-   \mark \default dod'8 si4 r8 la8                                    % 34
+   \mark \default
+   dod'8\upbow si4 r8 la8                                             % 34
    sold8-4 mi8\1 dod4^\markup{\bold\teeny (4)} re2                    % 35
    mi4 la,4 si,4.^\markup{\bold\teeny (2)} si,8                       % 36
    dod8^\markup{\bold\teeny (4)} la,8 la4.-2 si16 la16 sold8.(la16)   % 37
