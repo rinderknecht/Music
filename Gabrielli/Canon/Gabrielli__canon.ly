@@ -17,6 +17,20 @@
 %   paper-height = 260\mm
 % }
 
+ringsps = #"
+  0.15 setlinewidth
+  0.9 0.6 moveto
+  0.4 0.6 0.5 0 361 arc
+  stroke
+  1.0 0.6 0.5 0 361 arc
+  stroke
+  "
+
+vibrato = \markup {
+  \with-dimensions #'(-0.2 . 1.6) #'(0 . 1.2)
+  \postscript #ringsps
+}
+
 allongerUne = \markup {
   \center-column {
     \combine
@@ -51,7 +65,8 @@ allongerUne = \markup {
    \mark \default
    si16-3\upbow la16\downbow                                          % 7
    sol4.-4(fad8) fad16 sol16 fad16 mi16 re8 re'16(dod'16)             % 8
-   si16 dod'16 si16 la16 sol16 la16 si16 dod'16 re'4. fad8-1          % 9
+   si16 dod'16 si16 la16 sol16 la16 si16 dod'16
+   re'4.^\vibrato fad8-1                                              % 9
    sol16 la16 sol16 fad16 mi16-1 fad16 sol16-2
    la16^\markup{\bold\teeny (4)}
    fad8^\markup{\bold\teeny (1)} la8 fad8 re8\open                    % 10
@@ -59,7 +74,8 @@ allongerUne = \markup {
    re16^\markup{\bold\teeny (2)} mi16 dod16 re4
    \mark \default
    r8 si8-2\upbow                                                     % 11
-   si4 lad4 si16-2 dod'16^\markup{\bold\teeny (4)} si16 la16\1
+   si4^\vibrato lad4^\vibrato
+   si16-2 dod'16^\markup{\bold\teeny (4)} si16 la16\1
    sol16-1 la16^\markup{\bold\teeny (3)} sol16 fad16-3                % 12
    mi16 sol16-2 fad16 sol16
    dod16^\markup{\bold\teeny (3)}
@@ -67,16 +83,17 @@ allongerUne = \markup {
    re4.\open mi16(fad16)                                              % 13
    sol16 si16 la16 si16 mi16 la16-4 sol16 la16
    fad8^\markup{\bold\teeny (1)}
-   re'4^\markup{\bold\teeny (2)} do'8-2\downbow                       % 14
+   re'4^\vibrato^\markup{\bold\teeny (2)} do'8-2\downbow              % 14
    si16\upbow sol16 fad16 sol16 mi8 dod8\4 re4 fad4                   % 15
-   sol8\upbow sol,8 la,4 re,4^\allongerUne
+   sol8\upbow sol,8 la,4^\vibrato re,4^\allongerUne
    \mark \default
    re'4\upbow(                                                        % 16
-   re'8) dod'16 si16 la16 si16 sol16 la16 fad8 re8 fad8 mi16(re16)    % 17
+   re'8) dod'16\mordent si16 la16 si16 sol16 la16
+   fad8 re8 fad8 mi16(re16)                                           % 17
    la8 mi8 dod8\4 la,8 re8 si,8 re'4                                  % 18
-   dod'4 mi8 dod8\4 si,4 si4-3^\allongerUne                           % 19
+   dod'4\upbow mi8 dod8\4 si,4 si4-3^\allongerUne                     % 19
    la2(la4.) sold8-1                                                  % 20
-   la4
+   la4^\vibrato
    \mark \default
    r8 mi'8-2\upbow mi'8\downbow si16-1 dod'16
    re'8\upbow re'8\upbow                                              % 21
@@ -85,7 +102,7 @@ allongerUne = \markup {
    la16 si8\upbow^\markup{\bold\teeny (4)} si8\upbow                  % 22
    si8(la8) r8 la8 la8 mi16-1 fad16 sold4-1                           % 23
    la4^\markup{\bold\teeny (2)} r8 la8
-   dod8^\markup{\bold\teeny(1)} dod16 re16
+   dod8^\markup{\bold\teeny(1)} dod16 re16^\markup{\bold\teeny (2)}
    mi8^\markup{\bold\teeny (4)}\upbow mi,8-3\upbow                    % 24
    la,4
    \mark \default
@@ -99,14 +116,14 @@ allongerUne = \markup {
    la,4 mi8-4\upbow dod8^\markup{\bold\teeny (1)}\upbow
    sold16^\markup{\bold\teeny (1)}
    la16 si16 la16 sold16 fad16-3 mi16 re16                            % 28
-   dod4\4 mi'4-1 mi'4 mi'4                                            % 29
+   dod4\4 mi'4-1^\vibrato mi'4^\vibrato mi'4^\vibrato                 % 29
    mi'4\downbow dod'16-4\downbow si16 dod'16 la16-2
    si16 la16 si16 sold16
    la16 sold16 la16 fad16-2                                           % 30
-   sold8^\markup{\bold\teeny (4)} mi8\1 la4\open mi4 fad4             % 31
+   sold8^\markup{\bold\teeny (4)} mi8\1 la4\open mi4-1 fad4           % 31
    mi4\upbow dod16-1 re16 mi16 re16 dod8
-   mi'16^\markup{\bold\teeny (2)} mi'16 mi'8.(red'16)           % 32
-   mi'4 la4.^\markup{\bold\teeny (2)} sold8 fad4-3                    % 33
+   mi'16^\markup{\bold\teeny (2)} mi'16 mi'8.^\vibrato(red'16)        % 32
+   mi'4^\vibrato la4.^\markup{\bold\teeny (2)} sold8 fad4-3           % 33
    mi4 r8
    \mark \default
    dod'8\upbow si4 r8 la8                                             % 34
