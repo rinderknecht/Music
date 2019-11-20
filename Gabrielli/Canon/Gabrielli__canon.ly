@@ -100,19 +100,17 @@ allongerUne = \markup {
    re'8(dod'8) r8 dod'8^\markup{\bold\teeny (3)}\upbow
    dod'8 sold16-1_\markup{\teeny "II"}
    la16 si8\upbow^\markup{\bold\teeny (4)} si8\upbow                  % 22
-   si8(la8) r8 la8 la8 mi16-1 fad16 sold4-1                           % 23
+   si8(la8) r8 la8 la8 mi16-1 fad16 sold4-1^\vibrato                  % 23
    la4^\markup{\bold\teeny (2)} r8 la8
    dod8^\markup{\bold\teeny(1)} dod16 re16^\markup{\bold\teeny (2)}
    mi8^\markup{\bold\teeny (4)}\upbow mi,8-3\upbow                    % 24
    la,4
    \mark \default
-   r8 la,8\upbow
-   mi16^\markup{\italic "laisser 1"} re16 mi16 fad16
-   mi16 fad16 mi16 re16                                               % 25
+   r8 la,8\upbow mi16 re16 mi16 fad16 mi16 fad16 mi16 re16            % 25
    dod16-4 si,16 dod16 la,16\1 la16-4 sold16 la16 fad16
    sold16^\markup{\bold\teeny (3)} fad16 sold16 la16 sold8 si8-2      % 26
    dod'8^\markup{\bold\teeny (4)}
-   mi8-1 dod8\4 la8\open mi4 r8 mi8                                   % 27
+   mi8-1 dod8\4 la8\open mi4^\vibrato r8 mi8                          % 27
    la,4 mi8-4\upbow dod8^\markup{\bold\teeny (1)}\upbow
    sold16^\markup{\bold\teeny (1)}
    la16 si16 la16 sold16 fad16-3 mi16 re16                            % 28
