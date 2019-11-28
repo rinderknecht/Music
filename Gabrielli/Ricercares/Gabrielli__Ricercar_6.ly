@@ -12,10 +12,10 @@
 
 % iPad Pro 12.9
 
-% \paper {
-%   paper-width  = 195\mm
-%   paper-height = 260\mm
-% }
+\paper {
+  paper-width  = 195\mm
+  paper-height = 260\mm
+}
 
 ringsps = #"
   0.15 setlinewidth
@@ -225,11 +225,11 @@ vibrato = \markup {
    fad8^\markup{\bold\teeny (2)}
    sol8 si,8^\markup{\bold\teeny (2)}                  % 50
    dod8%^\markup{\bold\teeny (4)}
-   \set fingeringOrientations = #'(left)
+   \set fingeringOrientations = #'(down)
    <mi-1>8 fad8 la,8 si,8 re8                          % 51
    mi8 si,8\2 dod8\4 re8 mi8 fad8                      % 52
    sol8 la8 si8 sol8 la8 la,8                          % 53
-   re4. re'8 mi'8 si8                                  % 54
+   re4. re'8-2 mi'8 si8-1                              % 54
    do'8 si8 do'8 la8
    re'16 do'16 re'16 la16                              % 55
    si16 do'16 si16 la16
@@ -242,11 +242,14 @@ vibrato = \markup {
    sol16 fad16 mi16 fad16
    sol16 la16 si16 do'16                               % 58
    re'4 re,4 si4                                       % 59
-   do'8 mi,8 do,4 mi'4                                 % 60
-   re'8 re8 si,4 re'4                                  % 61
+   do'8 mi,8 do,4
+   {\set fingeringOrientations = #'(left)
+    <mi'-1>4}                                          % 60
+   {\set fingeringOrientations = #'(left)
+    <re'-4>8} re8 si,4 re'4                            % 61
    do'8 do8 la,4 do'4                                  % 62
    si8 sol,8 do'8 la,8 re'8 si,8                       % 63
-   mi'8 do8 si8 si,8 la8 la,8                          % 64
+   mi'8-1 do8-4 si8 si,8 la8 la,8                      % 64
    sol8 sol,8 la,8 si,8 do8 re8                        % 65
    mi4 <<{do'4 do'4} \\ {mi4 fad4}>>                   % 66
    <<{si4 <<sol4 re4>> <<sol4 re4>>} \\
@@ -258,10 +261,14 @@ vibrato = \markup {
    re4 re,4. re,8                                      % 70
    sol,4 sol4 la4                                      % 71
    si4 <<{re4}\\ {la4.^\stopped}>> sol8                % 72
-   <<
-     \voiceOne re'4
+    <<
+     \set fingeringOrientations = #'(left)
+     \voiceOne <re'-1>4
      \new Voice {
-       \voiceTwo si16 si16 la16 si16
+       \set fingeringOrientations = #'(left)
+       \voiceTwo <si\finger\markup{\circle 4}>16
+       \set fingeringOrientations = #'(up)
+       <si-1>16 la16 si16
      }
      \new Voice {
        \voiceThree
@@ -275,13 +282,13 @@ vibrato = \markup {
    mi16 sol16 fad16 mi16                               % 73
    fad16 la16 sol16 la16
    fad16 la16 sol16 la16
-   red16 la16 sol16 fad16                              % 74
+   red16\1 la16 sol16 fad16                            % 74
    sol16 si16 la16 si16
-   mi16 mi'16 re'16 mi'16
-   si16 re'16 do'16 si16                               % 75
+   mi16 mi'16-4 re'16 mi'16
+   si16-1 re'16 do'16 si16                             % 75
    do'16 re'16 do'16 re'16
    do'16 re'16 do'16 re'16
-   mi'16 re'16 do'16 si16                              % 76
+   mi'16-4 re'16-4 do'16 si16                          % 76
    la16 si16 la16 si16
    la16 si16 la16 si16
    do'16 si16 la16 sol16                               % 77
@@ -289,7 +296,12 @@ vibrato = \markup {
    fad16 sol16 fad16 sol16
    la16 sol16 fad16 mi16                               % 78
    red8\1 si8 mi8 la,8 si,8 si8                        % 79
-   mi4.-4 mi'8(re'8\stopped do'8_\1)                   % 80
+    mi4.
+    \set fingeringOrientations = #'(left)
+    <mi'-4>8
+    (re'8\stopped
+    \set fingeringOrientations = #'(right)
+    <do'\finger\markup{\circle 1}>8)                             % 80
    re'8-4 si,8-. sol,8-.
    re'8(do'8\stopped si8)                              % 81
    do'8 la,8-. fad,8-.
