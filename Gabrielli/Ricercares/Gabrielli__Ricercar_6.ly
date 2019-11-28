@@ -12,10 +12,10 @@
 
 % iPad Pro 12.9
 
-% \paper {
-%   paper-width  = 195\mm
-%   paper-height = 260\mm
-% }
+\paper {
+  paper-width  = 195\mm
+  paper-height = 260\mm
+}
 
 ringsps = #"
   0.15 setlinewidth
@@ -288,8 +288,8 @@ vibrato = \markup {
    fad16 sol16 fad16 sol16
    fad16 sol16 fad16 sol16
    la16 sol16 fad16 mi16                               % 78
-   red8 si8 mi8 la,8 si,8 si8                          % 79
-   mi4.-4 mi'8(re'8\stopped do'8_\1)                    % 80
+   red8\1 si8 mi8 la,8 si,8 si8                        % 79
+   mi4.-4 mi'8(re'8\stopped do'8_\1)                   % 80
    re'8-4 si,8-. sol,8-.
    re'8(do'8\stopped si8)                              % 81
    do'8 la,8-. fad,8-.
@@ -303,10 +303,10 @@ vibrato = \markup {
       <re'\finger\markup{(2)}>8
      }\\
      {\set fingeringOrientations = #'(left)
-      <sol-2>8 sol8 <fad\finger\markup{(1)}>8}>>           % 86
+      <sol-2>8 sol8 <fad\finger\markup{(1)}>8}>>       % 86
    <<{\set fingeringOrientations = #'(left)
       re'4. <do'-2>8 do'8 do'8}\\
-     {fad4. <mi-1>8 mi8 mi8}>>                           % 87
+     {fad4. <mi-1>8 mi8 mi8}>>                         % 87
    <<{do'4. do'8 si8 la8}\\
      {re2.(}>>                                         % 88
    <<{si4 la4.\stopped sol8}\\
@@ -315,14 +315,14 @@ vibrato = \markup {
    <<{\set fingeringOrientations = #'(left)
       <mi'-4>8 mi'8 mi'8}\\
      {\set fingeringOrientations = #'(left)
-      <sol-2>8 sol8 sol8}>>                              % 90
+      <sol-2>8 sol8 sol8}>>                            % 90
     <<{\set fingeringOrientations = #'(left)
        la4. <re'\finger\markup{(2)}>8 re'8 re'8}\\
-     {fad4. <fad\finger\markup{(1)}>8 fad8 fad8}>>      % 91
+     {fad4. <fad\finger\markup{(1)}>8 fad8 fad8}>>     % 91
     <<{sol4.-1
        \set fingeringOrientations = #'(left)
        <do'-2>8 do'8 do'8}\\
-     {mi4._\4 <mi-1>8 mi8 mi8}>>                         % 92
+     {mi4._\4 <mi-1>8 mi8 mi8}>>                       % 92
    <<{do'4. do'8 si8 la8}\\
      {re2.(}>>                                         % 93
    <<{si4 la4.\stopped sol8}\\
