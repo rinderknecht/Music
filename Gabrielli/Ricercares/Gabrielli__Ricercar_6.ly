@@ -157,11 +157,11 @@ vibrato = \markup {
    la16 si16 do'16 la16
    si16 la16 si16 si,16                                % 28
    mi8 mi'16-1 fad'16
-   sol'16-4 sol16-. si16-. sol16-.
+   sol'16-4 sol16-.-4 si16-. sol16-.
    re'8-. fad'16-3 sol'16
    {\set fingeringOrientations = #'(left)
     <la'-3\flageolet>16}
-   la16-.\open re'16-.-2 la16-.      % 29
+   la16-.\open re'16-.-2 la16-.                        % 29
    mi'8-.^\markup{\bold\teeny (4)} mi16-1(fad16)
    sol16 fad16 sol16 mi16
    si16 do'16 si16 do'16
@@ -221,10 +221,11 @@ vibrato = \markup {
    sol,2 si4^\vibrato                                  % 47
    re'4 dod'4.\stopped re'8                            % 48
    re'8 la8 si8 re8 mi8 sol8                           % 49
-   la8 dod8-4 re8
-   fad8^\markup{\bold\teeny (2)}
-   sol8 si,8^\markup{\bold\teeny (2)}                  % 50
-   dod8%^\markup{\bold\teeny (4)}
+   la8 dod8-3 re8^\markup{\bold\teeny (4)}
+   fad8^\markup{\bold\teeny (1)}
+   sol8^\markup{\bold\teeny (2)}
+   si,8^\markup{\bold\teeny (1)}                       % 50
+   dod8_\markup{\bold\teeny (3)}
    \set fingeringOrientations = #'(down)
    <mi-1>8 fad8 la,8 si,8 re8                          % 51
    mi8 si,8\2 dod8\4 re8 mi8 fad8                      % 52
@@ -301,10 +302,10 @@ vibrato = \markup {
     <mi'-4>8
     (re'8\stopped
     \set fingeringOrientations = #'(right)
-    <do'\finger\markup{\circle 1}>8)                             % 80
+    <do'\finger\markup{\circle 1}>8)                   % 80
    re'8-4 si,8-. sol,8-.
    re'8(do'8\stopped si8)                              % 81
-   do'8 la,8-. fad,8-.
+   do'8 la,8-. fad,8-.\4
    do'8(si8\stopped la8)                               % 82
    si8 do'8 re'8 do'16 si16 la8 si8                    % 83
    do'8 si16 la16 sol8 la8 si8 la16 sol16              % 84
@@ -333,9 +334,11 @@ vibrato = \markup {
      {fad4. <fad\finger\markup{(1)}>8 fad8 fad8}>>     % 91
     <<{sol4.-1
        \set fingeringOrientations = #'(left)
-       <do'-2>8 do'8 do'8}\\
-     {mi4._\4 <mi-1>8 mi8 mi8}>>                       % 92
-   <<{do'4. do'8 si8 la8}\\
+       <do'-4>8 do'8 do'8}\\
+     {mi4._\4 <mi-3>8 mi8 mi8}>>                       % 92
+    <<{
+      \set fingeringOrientations = #'(left)
+      <do'-2>4. do'8 si8 la8}\\
      {re2.(}>>                                         % 93
    <<{si4 la4.\stopped sol8}\\
      {re2.)}>>                                         % 94
