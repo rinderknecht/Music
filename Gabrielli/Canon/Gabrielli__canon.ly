@@ -147,7 +147,7 @@ allongerUne = \markup {
    dod16-3 dod16 si,16^\markup{\bold\teeny (1)} dod16                 % 46
    re4^\markup{\bold\teeny (4)}
    si,4^\markup{\bold\teeny (1)} sol,4\open la,4-1                    % 47
-   re,4 r4 r4 r4                                                      % 48
+   re,4^\vibrato r4 r4 r4                                             % 48
    \bar "|."
  }
 }
