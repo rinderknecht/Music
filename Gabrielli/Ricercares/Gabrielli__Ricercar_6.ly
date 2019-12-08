@@ -253,13 +253,10 @@ vibrato = \markup {
    si8 sol,8 do'8 la,8 re'8 si,8                       % 63
    mi'8-1 do8-4 si8 si,8 la8 la,8                      % 64
    sol8 sol,8 la,8 si,8 do8 re8                        % 65
-   mi4 <<{do'4 do'4} \\ {mi4 fad4}>>                   % 66
-   <<{si4 re'4 re'4}\\
-     {sol4 <<sol4 si,4>> <<sol4 si,4>>}>>              % 67
-   <<{mi'4 la4 la4} \\
-     {<<sol4 do4>> <<mi4 do4>> <<mi4 do4>>}>>          % 68
-   <<{la4 re'4} \\
-     {re4 <<sol4 si,4>>}>> do4                         % 69
+   mi4 <<do'4 mi4>> <<do'4 fad4>>                      % 66
+   <<si4 sol4>> <<sol4 si,4>> <<sol4 si,4>>            % 67
+   <<sol4 do4>> <<la4 mi4 do4>> <<la4 mi4 do4>>        % 68
+   <<la4 re4>> <<sol4 si,4>> do4                       % 69
    % Original score:
    % <<{si4 <<sol4 re4>> <<sol4 re4>>} \\
    %   {sol4 si,4 si,4}>>                                % 67
@@ -269,7 +266,7 @@ vibrato = \markup {
    %   {re4 si,4}>> do4                                  % 69
    re4 re,4. re,8                                      % 70
    sol,4 sol4 la4                                      % 71
-   si4 <<{re4}\\ {la4.^\stopped}>> sol8                % 72
+   si4 <<re4 la4.^\stopped>> sol8                      % 72
     <<
      \set fingeringOrientations = #'(left)
      \voiceOne <re'-1>4
@@ -318,7 +315,7 @@ vibrato = \markup {
    si8 do'8 re'8 do'16 si16 la8 si8                    % 83
    do'8 si16 la16 sol8 la8 si8 la16 sol16              % 84
    fad8 sol8 la8 sol16 fad16 mi8 fad8                  % 85
-   sol4.
+   sol4.\mf
    <<{\set fingeringOrientations = #'(left)
       <mi'-4>8 mi'8
       <re'\finger\markup{(2)}>8
@@ -329,9 +326,9 @@ vibrato = \markup {
       re'4. <do'-2>8 do'8 do'8}\\
      {fad4. <mi-1>8 mi8 mi8}>>                         % 87
    <<{do'4. do'8 si8 la8}\\
-     {re2.(}>>                                         % 88
+     {re2.}>>                                          % 88
    <<{si4 la4.\stopped sol8}\\
-     {re2.)}>>                                         % 89
+     {re2.}>>                                          % 89
    sol4.\p
    <<{\set fingeringOrientations = #'(left)
       <mi'-4>8 mi'8 mi'8}\\
@@ -342,14 +339,13 @@ vibrato = \markup {
      {fad4. <fad\finger\markup{(1)}>8 fad8 fad8}>>     % 91
     <<{sol4.-1
        \set fingeringOrientations = #'(left)
-       <do'-4>8 do'8 do'8}\\
-     {mi4._\4 <mi-3>8 mi8 mi8}>>                       % 92
+       <do'-2>8 do'8 do'8}\\
+     {mi4._\4 <mi-1>8 mi8 mi8}>>                       % 92
     <<{do'4. do'8 si8 la8}\\
-      {\set fingeringOrientations = #'(left)
-       <re\finger\markup{(1)}>2.(}>>                   % 93
-   <<{si4 la4.\stopped sol8-1}\\
-     {re2.)}>>                                         % 94
-   <<{sol,2.}\\{sol2.}>>                               % 95
+      {re2.}>>                                         % 93
+   <<{si4 la4.\stopped sol8}\\
+     {re2.}>>                                          % 94
+   <<{sol,2.}\\{sol2.\f}>>                             % 95
    \bar "|."
  }
 }
