@@ -210,8 +210,10 @@ vibrato = \markup {
    <<{do'8} \\ {mi16 sol16 la16 si16}>>
    do'16 re'16 do'16 si16
    la16 si16 la16 sol16                                % 42
-   <<{la8 sol8 la8 si8 do'8 la8} \\
-     {fad8 mi8 fad8 sol8 la8 fad8}>>                   % 43
+    <<{\set fingeringOrientations = #'(left)
+      la8 sol8 la8 si8 <do'-4>8 la8} \\
+      {\set fingeringOrientations = #'(left)
+       fad8 mi8 fad8 sol8 la8 <fad-3>8}>>              % 43
    <<{si8} \\ {sol16 sol,16 la,16 si,16}>>
    do16 do'16 si16 do'16
    la16 si16 do'16 sol16                               % 44
@@ -245,20 +247,26 @@ vibrato = \markup {
    re'4 re,4 si4                                       % 59
    do'8 mi,8 do,4
    {\set fingeringOrientations = #'(left)
-    <mi'-1>4}                                          % 60
-   {\set fingeringOrientations = #'(left)
-    <re'-4>8} re8 si,4 re'4                            % 61
+    <mi'-4>4}                                          % 60
+   re'8 re8\open si,4-3 re'4                           % 61
    do'8 do8 la,4 do'4                                  % 62
    si8 sol,8 do'8 la,8 re'8 si,8                       % 63
    mi'8-1 do8-4 si8 si,8 la8 la,8                      % 64
    sol8 sol,8 la,8 si,8 do8 re8                        % 65
    mi4 <<{do'4 do'4} \\ {mi4 fad4}>>                   % 66
-   <<{si4 <<sol4 re4>> <<sol4 re4>>} \\
-     {sol4 si,4 si,4}>>                                % 67
-   <<{<<mi4 sol4>> <<mi4 la4>> <<mi4 la4>>} \\
-     {do4 do4 do4}>>                                   % 68
-   <<{la4 <<re4 sol4>>} \\
-     {re4 si,4}>> do4                                  % 69
+   <<{si4 re'4 re'4}\\
+     {sol4 <<sol4 si,4>> <<sol4 si,4>>}>>              % 67
+   <<{mi'4 la4 la4} \\
+     {<<sol4 do4>> <<mi4 do4>> <<mi4 do4>>}>>          % 68
+   <<{la4 re'4} \\
+     {re4 <<sol4 si,4>>}>> do4                         % 69
+   % Original score:
+   % <<{si4 <<sol4 re4>> <<sol4 re4>>} \\
+   %   {sol4 si,4 si,4}>>                                % 67
+   % <<{<<mi4 sol4>> <<mi4 la4>> <<mi4 la4>>} \\
+   %   {do4 do4 do4}>>                                   % 68
+   % <<{la4 <<re4 sol4>>} \\
+   %   {re4 si,4}>> do4                                  % 69
    re4 re,4. re,8                                      % 70
    sol,4 sol4 la4                                      % 71
    si4 <<{re4}\\ {la4.^\stopped}>> sol8                % 72
@@ -336,11 +344,10 @@ vibrato = \markup {
        \set fingeringOrientations = #'(left)
        <do'-4>8 do'8 do'8}\\
      {mi4._\4 <mi-3>8 mi8 mi8}>>                       % 92
-    <<{
-      \set fingeringOrientations = #'(left)
-      <do'-2>4. do'8 si8 la8}\\
-     {re2.(}>>                                         % 93
-   <<{si4 la4.\stopped sol8}\\
+    <<{do'4. do'8 si8 la8}\\
+      {\set fingeringOrientations = #'(left)
+       <re\finger\markup{(1)}>2.(}>>                   % 93
+   <<{si4 la4.\stopped sol8-1}\\
      {re2.)}>>                                         % 94
    <<{sol,2.}\\{sol2.}>>                               % 95
    \bar "|."
