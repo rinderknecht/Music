@@ -89,7 +89,7 @@ vibrato = \markup {
    red8 si,8 dod!8 red!8                                          % 36
    sold,8 sold8 la8 si8 mi8 dod8 re8 mi8                          % 37
    la,8 fad8 sol8 la8 re8 si,8 do!8 re8                           % 38
-   la,8 mi8 fa!8 sol8 do8 do'16 si16 la16 sol16 fa16 mi16         % 39
+   sol,8 mi8 fa!8 sol8 do8 do'16 si16 la16 sol16 fa16 mi16        % 39
    re8 do8 sol8 sol,8 do16 do'16 si16 do'16
    sol16 mi16 do16 sol,16                                         % 40
    do,4 r4 r2                                                     % 41
