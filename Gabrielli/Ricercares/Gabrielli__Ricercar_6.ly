@@ -134,8 +134,8 @@ vibrato = \markup {
    sol16  fad16 mi16 re16
    do16 mi16 re16 do16
    re8 re,8                                            % 23
-   sol,8\open sol'16-4(
    \set fingeringOrientations = #'(left)
+   sol,8\open <sol'-4>16(
     <la'-3\flageolet>16)
    fad'16(sol'16) mi'16(fad'16)
    re'16-2(mi'16) do'16-2(re'16)
