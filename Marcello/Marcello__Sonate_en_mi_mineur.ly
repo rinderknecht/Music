@@ -12,13 +12,14 @@
 
 % iPad Pro 12.9
 
-\paper {
-  paper-width  = 195\mm
-  paper-height = 260\mm
-}
+% \paper {
+%   paper-width  = 195\mm
+%   paper-height = 260\mm
+% }
 
 \score {
-  \new Staff {
+  \new Staff
+  \with {instrumentName = #"Cello "}{
     \tempo Adagio
     \clef bass
     \time 4/4
@@ -28,7 +29,7 @@
     si8. la16 sol16(fad16 mi8)
     r8 si8                                                 % 1
     do'16(si16 la16 sol16) fad8(mi8)
-    red4-1\mordent r8
+    red4_1\mordent r8
     si16-4_\markup{\teeny II}(la16-2)                      % 2
     sold16-1(la16 si16) sold16
     mi8-1 re'8 do'8.(si16)
@@ -38,24 +39,30 @@
     mi16.(sol32\staccato) fad16.(la32\staccato)
     sol16.(si32\staccato) la16.(do'32\staccato)
     si4 r8 fad8                                            % 5
+    \set fingeringOrientations = #'(left)
     sol16.\<(si32\staccato) la16.(do'32\staccato)
-    si16.(re'32-2\staccato)
-    do'16.-\1(mi'32\staccato)\!
+    si16.(<re'-2>32\staccato)
+    <do'\finger\markup{\circle 1}>16.(mi'32\staccato)\!
     re'8-4 fad8 sol8 do'8                                  % 6
     si4\> la8.\trill(sol16)\!
     sol16.\mp(si32\staccato) la16.(sol32\staccato)
     re'8. do'16                                            % 7
     si16(la16 sol8) r8 re'8-2
-    mi'16(re'16 do'16-2 si16) la8(sol8)                    % 8
+    mi'16(re'16
+    \set fingeringOrientations = #'(left)
+    <do'-2>16 si16) la8(sol8)                              % 8
     fad4\mordent r8 si8
-    mi16(fad16-\2 sold16-4 la16\open)
+    mi16(fad16-\2 sold16\4 la16\open)
     si16(do'16 re'16 si16)                                 % 9
     do'16(la16) si16(sold16-\4)
     la8\open do'8 re16\open(mi16 fad16 sol16)
     la16(si16 do'16 la16)                                  % 10
     si16(sol16) la16(fad16) sol8 mi8-2
-    mi8.\trill(red32 mi32) fad8\upbow fad8-3\upbow         % 11
-    fad8.\trill(mi32\< fad32) sol8\upbow sol8-2\upbow
+    mi8.\trill(red32 mi32) fad8\upbow
+    \set fingeringOrientations = #'(below)
+    <fad-3>8\upbow                                         % 11
+    fad8.\trill(mi32\< fad32) sol8\upbow
+    <sol-2>8\upbow
     sol8.\trill(fad32 sol32) la8\upbow la8\upbow\!         % 12
     la4\fermata\f r16 la16\upbow(sol16 fad16)
     sol16-4(mi16) fad16-4(red16) mi8-2 la8-4               % 13
@@ -69,7 +76,8 @@
 }
 
 \new score {
-  \new Staff {
+  \new Staff
+  \with {instrumentName = #"Cello "}{
     \tempo Allegro
     \clef bass
     \time 4/4
@@ -81,12 +89,14 @@
       sol8 si8 fad8 si8 sol8 mi8 si8 mi'8-4                 % 1
       do'16-2 si16 la16 sol16 fad8 si8
       sol8 mi8 r8 re'8\upbow                                % 2
-      si8 re'8 la8 re'8 si8 sol8 re'8 sol'8-4               % 3
+      si8 re'8 la8 re'8 si8 sol8 re'8
+      \set fingeringOrientations = #'(left)
+      <sol'-4>8                                             % 3
       mi'16 re'16-4 do'16 si16 la8 re'8 si8 sol8
       re'16\f do'16 si16 la16                               % 4
       si8 sol8 re'16\p do'16 si16 la16 si8 sol8
-      sol'16-4\f fa'16 mi'16-4 re'16                        % 5
-      mi'8 do'8-\1 sol'16-4\p
+      <sol'-4>16\f fa'16 mi'16-4 re'16                      % 5
+      mi'8 do'8-\1 <sol'-4>16\p
       fa'16 mi'16-4 re'16
       mi'16 re'16 do'16-\1\< mi'16
       re'16-4 do'16 si16 re'16                              % 6
@@ -113,8 +123,8 @@
       si8 sol8 r8 si8\upbow                                 % 13
       sol8 si8 fad8 si8 sol8 mi8 si8 mi'8-4                 % 14
       do'16-2 si16 la16 sol16 fad8 si8
-      sol8 mi8 r8 si8-1\p\upbow                             % 15
-      sold8-\4 si8-1 mi8 re'8 do'8 la8 la,8 la8             % 16
+      sol8 mi8 r8 <si-1>\p\upbow                            % 15
+      sold8-\4 si8 mi8 re'8 do'8 la8 la,8 la8               % 16
       fad8 la8 re8 do'8 si8 sol8 sol,8 re'8-2\f             % 17
       mi'16-4(re'16) do'16-2 si16
       mi'16-4(re'16) do'16-2 si16
@@ -157,8 +167,8 @@
       si16 la16 sol16 fad16
       sol16\< mi16 fad16 sol16
       la16 si16 dod'16-1 red'16-3\!                         % 28
-      mi'8\f dod'8 mi'8 la'8-3\flageolet
-      sol'4-2 fad'8.\trill(mi'16)                           % 29
+      mi'8\f dod'8 mi'8 <la'-3\flageolet>8
+      sol'4-4 fad'8.\trill(mi'16)                           % 29
       mi'2. r4                                              % 30
     }
   }
