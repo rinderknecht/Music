@@ -12,10 +12,10 @@
 
 % iPad Pro 12.9
 
-% \paper {
-%   paper-width  = 195\mm
-%   paper-height = 260\mm
-% }
+\paper {
+  paper-width  = 195\mm
+  paper-height = 260\mm
+}
 
 \score {
   \new Staff
@@ -35,13 +35,15 @@
    re'4\downbow fad4\upbow la4\upbow                               % 8
    re'4 r8 la8 dod'8 la8                                           % 9
    re'8 la8 re'8 la8 re'8 la8                                      % 10
-   mi'8 la8 mi'8 la8 mi'8 la8                                      % 11
-   fad'8 la8 mi'8 la8 re'8 la8                                     % 12
+   mi'8-1
+   la8^\markup{\bold\teeny (1)}_\markup{\teeny "II"}
+   mi'8 la8 mi'8 la8                                               % 11
+   fad'8 la8 mi'8 la8 re'8-4 la8                                   % 12
    dod'4 r8 la8 si8 dod'8                                          % 13
    re'8 la8 fad8 re8 la8 do'8                                      % 14
    si8 re8 si,8 sol,8 si,8 re8                                     % 15
    sol8 re8 si,8 sol,8 mi8 sol8                                    % 16
-   dod8 mi8 la,8 sol8 fad8 mi8                                     % 17
+   dod8\4 mi8 la,8 sol8 fad8 mi8                                   % 17
    fad8 la8 re'8 fad8 mi8 dod'8                                    % 18
    re4 r8 re'8 re8 re'8                                            % 19
    mi8 do'8 mi8 do'8 fad8 do'8                                     % 20
@@ -55,32 +57,50 @@
    do4\downbow mi4\upbow sol4\upbow                                % 28
    do'4 r8 sol8 si8 sol8                                           % 29
    do'8 sol8 do'8 sol8 do'8 sol8                                   % 30
-   re'8 sol8 re'8 sol8 re'8 sol8                                   % 31
-   mi'8 sol8 re'8 sol8 do'8 sol8                                   % 32
+   re'8-2 sol8^\markup{\bold\teeny (2)}_\markup{\teeny "II"}
+   re'8 sol8 re'8 sol8                                             % 31
+   mi'8^\markup{\bold\teeny (4)} sol8 re'8 sol8 do'8-2 sol8        % 32
    si4 r8 sol8 la8 si8                                             % 33
    do'8 sol8 do'8 sol8 do'8 sol8                                   % 34
    la8 fa8 la8 fa8 la8 fa8                                         % 35
    re'8 la8 re'8 la8 re'8 la8                                      % 36
    si8 sol8 si8 sol8 si8 sol8                                      % 37
-   mi'8 si8 mi'8 si8 mi'8 si8                                      % 38
-   do'8 la8 do'8 la8 do'8 la8                                      % 39
+   mi'8-1 si8^\markup{\bold\teeny (3)}_\markup{\teeny "II"}
+   mi'8 si8 mi'8 si8                                               % 38
+   do'8^\markup{\bold\teeny (4)}_\markup{\teeny "II"}
+   la8^\markup{\bold\teeny (1)}_\markup{\teeny "II"}
+   do'8 la8 do'8 la8                                               % 39
    \clef tenor
-   fa'8 la8 fa'8 la8 fa'8 la8                                      % 40
-   re'8 si8 re'8 si8 re'8 si8                                      % 41
-   sol'8 si8 sol'8 si8 sol'8 si8                                   % 42
-   mi'8 do'8 mi'8 do'8 mi'8 do'8                                   % 43
-   fa'8 la8 fa'8 la8 fa'8 la8                                      % 44
-   re'8 si8 re'8 si8 re'8 si8                                      % 45
-   mi'8 sol8 mi'8 sol8 mi'8 sol8                                   % 46
-   do'8 la8 do'8 la8 do'8 la8                                      % 47
+   fa'8^\markup{\bold\teeny (2)}
+   la8^\markup{\bold\teeny (1)}_\markup{\teeny "II"}
+   fa'8 la8 fa'8 la8                                               % 40
+   re'8^\markup{\bold\teeny (1)}_\markup{\teeny "III"}
+   si8^\markup{\bold\teeny (3)}_\markup{\teeny "II"}
+   re'8 si8 re'8 si8                                               % 41
+   sol'8^\markup{\bold\teeny (4)}_\markup{\teeny "I"}
+   si8^\markup{\bold\teeny (3)}_\markup{\teeny "II"}
+   sol'8 si8 sol'8 si8                                             % 42
+   mi'8^\markup{\bold\teeny (1)}_\markup{\teeny "I"}
+   do'8^\markup{\bold\teeny (4)}_\markup{\teeny "II"}
+   mi'8 do'8 mi'8 do'8                                             % 43
+   fa'8^\markup{\bold\teeny (2)}_\markup{\teeny "I"}
+   la8^\markup{\bold\teeny (1)}_\markup{\teeny "II"}
+   fa'8 la8 fa'8 la8                                               % 44
+   re'8^\markup{\bold\teeny (1)}_\markup{\teeny "III"}
+   si8^\markup{\bold\teeny (3)}_\markup{\teeny "II"}
+   re'8 si8 re'8 si8                                               % 45
+   mi'8-4_\markup{\teeny "I"}
+   sol8^\markup{\bold\teeny (2)}_\markup{\teeny "II"}
+   mi'8 sol8  mi'8 sol8                                            % 46
+   do'8-2 la8 do'8 la8 do'8 la8                                    % 47
    re'8 do'8 si8 la8 sol8 fa8                                      % 48
    mi4 r8
    \clef bass
    re'8 do'8 si8                                                   % 49
    do'8 re'8 si4\trill r8 la8                                      % 50
-   la4 r8 mi8 sold8 mi8                                            % 51
+   la4 r8 mi8 sold8\4 mi8                                          % 51
    la8 mi8 si8 mi8 do'8 mi8                                        % 52
-   si4 r8 mi8 fad8 sold8                                           % 53
+   si4 r8 mi8 fad8\2 sold8\4                                       % 53
    la8 re8 mi4 mi,4                                                % 54
    la,4 r8 la8 la8 si8                                             % 55
    do'8 mi8 fad8 la8 re8 do'8                                      % 56
