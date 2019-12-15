@@ -73,8 +73,8 @@ vibrato = \markup {
    sol16 la16 si16 sol16                               % 8
    la16 si16 do'16 la16
    si16 sol16 la16 si16
-   mi16 mi'16 re'16 mi'16
-   do'16^\vibrato la16 si16 do'16                      % 9
+   mi16 mi'16-4 re'16 mi'16
+   do'16_2^\vibrato la16 si16 do'16                    % 9
    re'16^\vibrato re'16 do'16 re'16
    si16 sol16 la16 si16
    do'16^\vibrato si16 la16 sol16
@@ -294,7 +294,7 @@ vibrato = \markup {
    si16-1 re'16 do'16 si16                             % 75
    do'16 re'16 do'16 re'16
    do'16 re'16 do'16 re'16
-   mi'16-4 re'16-4 do'16 si16                          % 76
+   mi'16-4 re'16 do'16-2 si16                          % 76
    la16 si16 la16 si16
    la16 si16 la16 si16
    do'16 si16 la16 sol16                               % 77
@@ -345,7 +345,7 @@ vibrato = \markup {
       {re2.}>>                                         % 93
    <<{si4 la4.\stopped sol8}\\
      {re2.}>>                                          % 94
-   <<{sol,2.}\\{sol2.\f}>>                             % 95
+   <<{sol,2.}\\{sol2.\mf}>>                            % 95
    \bar "|."
  }
 }
