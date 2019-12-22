@@ -100,11 +100,11 @@
    do'8 re'8 si4\trill r8 la8                                      % 50
    la4 r8 mi8 sold8\4 mi8                                          % 51
    la8 mi8 si8 mi8 do'8 mi8                                        % 52
-   si4 r8 mi8 fad8\2 sold8\4                                       % 53
+   si4 r8 mi8 fad8\2 sold8^\markup{\bold\teeny (4)}                % 53
    la8 re8 mi4 mi,4                                                % 54
    la,4 r8 la8 la8 si8                                             % 55
    do'8 mi8 fad8 la8 re8 do'8                                      % 56
-   si4 r8 sol8 la8 si8                                             % 57
+   si4\stopped r8 sol8 la8 si8                                     % 57
    do'8 si8 la8 sol8 fad8 mi8                                      % 58
    re4 r8 re8 mi8 fad8                                             % 59
    sol8 si,8 la,4.\trill sol,8                                     % 60
