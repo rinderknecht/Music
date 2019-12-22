@@ -127,8 +127,10 @@ vibrato = \markup {
    sol16 si16 la16 sol16
    la16 do'16 si16 la16                                % 21
    si16 re'16 do'16 si16
-   do'16-1 mi'16\4 re'16\2 do'16
-   re'16-1 fad'16\4 mi'16\2 re'16
+   do'16-1 mi'16\4
+   re'16^\markup{\bold\teeny (2)} do'16
+   re'16-1 fad'16\4
+   mi'16^\markup{\bold\teeny (2)} re'16
    mi'16-1 sol'16 fad'16 mi'16                         % 22
    fad'16^\vibrato re16 mi16-1 fad16
    sol16  fad16 mi16 re16
