@@ -25,7 +25,7 @@
     \time 4/4
     \key mi \minor
     \override Hairpin.to-barline = ##f
-    mi16.\mf(sol32\staccato) fad16.(mi32\staccato)
+    mi16.\mf(sol32-.) fad16.(mi32-.)
     si8. la16 sol16(fad16 mi8)
     r8 si8                                                 % 1
     do'16(si16 la16 sol16) fad8(mi8)
@@ -34,25 +34,26 @@
     sold16-1(la16 si16) sold16
     mi8-1 re'8 do'8.(si16)
     la8\upbow la16\upbow(sol16)                            % 3
-    fad16(sol16 la16) fad16 re8\open do'8-2
+    fad16(sol16 la16) fad16 re8\open do'8
     si8.(la16) sol8\upbow re8\upbow\p                      % 4
-    mi16.(sol32\staccato) fad16.(la32\staccato)
-    sol16.(si32\staccato) la16.(do'32\staccato)
+    mi16.(sol32-.) fad16.(la32-.)
+    sol16.(si32-.) la16.(do'32-.)
     si4 r8 fad8                                            % 5
     \set fingeringOrientations = #'(left)
-    sol16.\<(si32\staccato) la16.(do'32\staccato)
-    si16.(<re'-2>32\staccato)
-    <do'\finger\markup{\circle 1}>16.(mi'32\staccato)\!
+    sol16.\<(si32-.) la16.(do'32-.)
+    si16.(<re'-2>32-.)
+    <do'\finger\markup{\circle 1}>16.(mi'32-.)\!
     re'8-4 fad8 sol8 do'8                                  % 6
     si4\> la8.\trill(sol16)\!
-    sol16.\mp(si32\staccato) la16.(sol32\staccato)
+    sol16.\mp(si32-.) la16.(sol32-.)
     re'8. do'16                                            % 7
     si16(la16 sol8) r8 re'8-2
     mi'16(re'16
     \set fingeringOrientations = #'(left)
     <do'-2>16 si16) la8(sol8)                              % 8
     fad4\mordent r8 si8
-    mi16(fad16-\2 sold16\4 la16\open)
+    mi16(fad16-\2
+    sold16^\markup{\bold\teeny (4)} la16\open)
     si16(do'16 re'16 si16)                                 % 9
     do'16(la16) si16(sold16-\4)
     la8\open do'8 re16\open(mi16 fad16 sol16)
