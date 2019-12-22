@@ -152,7 +152,8 @@ allongerUne = \markup {
    mi4 la,4 si,4.^\markup{\bold\teeny (2)} si,8                       % 36
    dod8^\markup{\bold\teeny (4)} la,8 la4.-2 si16 la16 sold8.(la16)   % 37
    la4 dod4^\markup{\bold\teeny (1)} re4\open mi4-1                   % 38
-   fad4 la,4 si,4\2 dod4\4                                            % 39
+   fad4 la,4 si,4\2
+   dod4^\markup{\bold\teeny (4)}                                      % 39
    re4\downbow la8 si16 la16 sol8 la16 si16 la8.(sol16)               % 40
    fad4 fad8-2 fad,8^\markup{\bold\teeny (4)} sol,4 la,4-1            % 41
    re4\open\upbow
