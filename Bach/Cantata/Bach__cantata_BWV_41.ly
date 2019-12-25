@@ -85,7 +85,7 @@
           re,16 do'16 fa16 la,16
           sib16 re16 fa16 sib16-3                      % 9
           \appoggiatura si8
-          sold4\trill(sold16)
+          sold4\stopped(sold16)
           fad32(sold32 la32 sold32 fad32 sold32)
           la16 la,32(si32 do32 re32 mi32 fa32)
           do,16-4 mi'16 mi,16 sold16                   % 10
@@ -192,7 +192,7 @@
           re,16 do'16 fa16 la,16
           sib16 re16 fa16 sib16-3                      % 36
           \appoggiatura si8
-          sold4\trill(sold16)
+          sold4\stopped(sold16)
           fad32(sold32 la32 sold32 fad32 sold32)
           la16 la,32(si32 do32 re32 mi32 fa32)
           do,16-4 mi'16 mi,16 sold16                   % 37
