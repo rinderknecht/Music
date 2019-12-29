@@ -38,7 +38,7 @@
       re'4^\markup{\bold\teeny (2)} r4\fermata
       re'4-1_\markup{\small\italic "canzone"}
       \set fingeringOrientations = #'(left)
-      <fa'\finger\markup{(4)}>8.\trill mi'16                             % 5
+      <fa'\finger\markup{(4)}>8.-+ mi'16                                 % 5
       re'4.^\markup{\bold\teeny (1)} mi'8-1 fa'8 sol'16 fa'16
       mi'8 re'8-2                                                        % 6
       mi'8^\markup{\bold\teeny (4)} re'8 do'8^\markup{\bold\teeny (1)}
@@ -47,7 +47,7 @@
       re'16-1 mi'16^\markup{\bold\teeny (3)}
       fa'8 mi'16 re'16 mi'8 fa'4 r8 la8\open                             % 9
       sib16-1 do'16\2 re'8^\markup{\bold\teeny (4)}
-      do'8\trill sib8 la8\open sol8-4 fa8 fa'16-4 do'16\1                % 10
+      do'8-+ sib8 la8\open sol8-4 fa8 fa'16-4 do'16\1                    % 10
       re'16-1
       mi'16^\markup{\bold\teeny (3)}
       fa'8^\markup{\bold\teeny (4)}
