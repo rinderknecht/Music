@@ -12,10 +12,10 @@
 
 % iPad Pro 12.9
 
-\paper {
-  paper-width  = 195\mm
-  paper-height = 260\mm
-}
+% \paper {
+%   paper-width  = 195\mm
+%   paper-height = 260\mm
+% }
 
 \score {
   \new Staff
@@ -70,7 +70,7 @@
    sib8 sib8 sib8 sol8 la8 la8 la8 fa8                                  % 39
    sol8 fa8 mi8 la8 re8 re8 fa8 re8                                     % 40
    mi8 mi8 sol8 mi8 fa8 fa8 la8 fa8                                     % 41
-   sol8 sol8 sib8 sol8 la8 la8 si8 si8                                  % 42
+   sol8 sol8 sib8 sol8 la8 la8 si?8 si8                                 % 42
    dod'8 dod'8 re'8 re'8 la8 la8 sol8 sol8                              % 43
    fa8 fa8 mi8 mi8 re8 fa8 mi8 re8                                      % 44
    do8 mi8 re8 do8 sib,8 re8 do8 sib,8                                  % 45
