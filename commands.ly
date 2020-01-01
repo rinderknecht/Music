@@ -99,3 +99,6 @@ vibrato = \markup {
 %    \override TextScript.outside-staff-priority = ##f
 %    \override Score.Fingering.avoid-slur = #'inside
 %    \override Score.StrokeFinger.avoid-slur = #'inside
+
+
+% \markup{\musicglyph #"scripts.segno"}
