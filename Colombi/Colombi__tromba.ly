@@ -12,10 +12,10 @@
 
 % iPad Pro 12.9
 
-% \paper {
-%   paper-width  = 195\mm
-%   paper-height = 260\mm
-% }
+\paper {
+  paper-width  = 195\mm
+  paper-height = 260\mm
+}
 
 \score {
   <<
@@ -167,7 +167,7 @@
       \tuplet 3/2 { si,8 la,8 si,8 }
       sol,4
       \tuplet 3/2 { re'8 do'8 re'8 }                                      % 54
-      \time 3/8
+      \time 6/8
       si8. la16 sol8 re'8\p do'8 re'8                                     % 55
       si8. la16 sol8 re'8 mi'16 re'16 do'16 si16                          % 56
       <<la4. fad4.>> re'8 do'8 re'8                                       % 57
@@ -275,8 +275,8 @@
       sol1                                                                % 53
       sol,2.
       \tuplet 3/2 { sol8 la8 si8 }                                        % 54
-      \time 3/8
-      sol8. fad16 mi8 sol8 la8 si8                                        % 55
+      \time 6/8
+      sol8. fad16 mi8 sol8\p la8 si8                                      % 55
       sol8. fad16 mi8 sol8 do4                                            % 56
       re4. sol8 la8 si8                                                   % 57
       sol8. fad16 mi8 sol8 la8 si8                                        % 58
