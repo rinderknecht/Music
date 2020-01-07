@@ -65,7 +65,7 @@
     <<{fad4 la8 si4}\\
       {la,4 fad8 sol8 mi8 la8}>>
     re8 la,8 sol,8 fad,8 sol,8 la,8                                     % 20
-    re,4.\(re,4. re,4.\)                                                % 21
+    re,4.(re,4. re,4.)                                                  % 21
     \bar "|."
   }
 }

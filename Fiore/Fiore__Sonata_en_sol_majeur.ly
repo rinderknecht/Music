@@ -31,8 +31,8 @@
       r4 re4 sol2                                                         % 1
       r4 sol4 <<si2 re2>>                                                 % 2
       r4 si4 re'2                                                         % 3
-      r8 re'8 mi'8 si8 do'32\(si32 la32 si32\)
-      do'32\(re'32 mi'32 re'32\) do'8.-+ si16                             % 4
+      r8 re'8 mi'8 si8 do'32(si32 la32 si32)
+      do'32(re'32 mi'32 re'32) do'8.-+ si16                               % 4
       <<si2 re2>>
 
       \tempo "Presto"
@@ -103,14 +103,14 @@
       \time 4/4
       \key sol \major
       \clef "bass"
-      sol,1\(                                                             % 1
-      sol,1\)                                                             % 2
+      sol,1(                                                              % 1
+      sol,1)                                                              % 2
       sol,1                                                               % 3
       sol,1                                                               % 4
-      sol,2 sol,2\(                                                       % 5
+      sol,2 sol,2(                                                        % 5
       sol,1                                                               % 6
       sol,1                                                               % 7
-      sol,1\)                                                             % 8
+      sol,1)                                                              % 8
       \bar "||"
       sol2 fad2                                                           % 9
       sol4 fad4 mi8 re8 dod4                                              % 10
@@ -123,7 +123,7 @@
       sol,1                                                               % 17
       \repeat volta 2 {
         \tempo "Allegro"
-        sol2\(sol4\) fad4                                                 % 18
+        sol2(sol4) fad4                                                   % 18
         sol4. sol8 fad4. fad8                                             % 19
         mi4. mi8 re4. re8                                                 % 20
         dod8 re8 la,4 re2                                                 % 21
@@ -179,7 +179,7 @@
       mi2. do'4 si4 la4                                                   % 22
       sol4 la4 fad2. mi4                                                  % 23
       mi2. fad4 sol4 la4                                                  % 24
-      si4 do'8\(si8\) la2. sol8\(la8\)                                    % 25
+      si4 do'8(si8) la2. sol8(la8)                                        % 25
       si2 si,2 r2                                                         % 26
     }
 
@@ -193,8 +193,8 @@
       \clef "bass"
       mi1 r2                                                              % 1
       r2 red2 si,2                                                        % 2
-      mi1.\(                                                              % 3
-      mi2\) fad2 mi2                                                      % 4
+      mi1.(                                                               % 3
+      mi2) fad2 mi2                                                       % 4
       red1.                                                               % 5
       mi1 mi2                                                             % 6
       red1 si,2                                                           % 7
@@ -258,7 +258,7 @@
       \time 12/8
       \key sol \major
       \clef "bass"
-      sol2.\(sol4.\) fad4.                                                % 1
+      sol2.(sol4.) fad4.                                                  % 1
       sol4. mi4. fad4. re4.                                               % 2
       mi4. do4. re4. sol4.                                                % 3
       red?4. la,4. red4. sol4.                                            % 4

@@ -59,7 +59,7 @@
    sol,16(la,16 sib,16 do16) re16(do16 si,16 do16) re16(si,16 do16 re16) % 27
    sol,8 re'8.\(do'16(sib16 la16)\) sol8\(fa16(mi16)\)                   % 28
    re16(do16 sib,16 la,16)
-   sol,8_\markup{\italic "cresc."} sol8 la8 fa8                          % 29
+   sol,8_\markup{\small\italic "cresc."} sol8 la8 fa8                    % 29
    sib8 fa8 re8 sib,8 fa8 fa,8                                           % 30
    sol,8 sol8 la8 fa8 re8 la8                                            % 31
    sib8 sol8 re8 sib,8 sol,8 sol8                                        % 32
@@ -95,7 +95,7 @@
    sol8\(fa16(mi16) re16(do16 si,16 do16) re16(si,16 do16 re16)\)        % 59
    sol,8 re'8\f sib8 sol8 re'8 sib8                                      % 60
    la8 re'8 sib8 sol8 do'8 la8                                           % 61
-   sib8 fa8_\markup{\italic "dim."} re8 sib,8 fa8 fa,8                   % 62
+   sib8 fa8_\markup{\small\italic "dim."} re8 sib,8 fa8 fa,8             % 62
    sol,8 sol,8 re8 si,8 do8 re8                                          % 63
    sol,2.                                                                % 64
    \bar "|."
