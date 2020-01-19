@@ -12,10 +12,10 @@
 
 % iPad Pro 12.9
 
-% \paper {
-%   paper-width  = 195\mm
-%   paper-height = 260\mm
-% }
+\paper {
+  paper-width  = 195\mm
+  paper-height = 260\mm
+}
 
 \score {
   <<
@@ -24,10 +24,10 @@
       \repeat volta 2 {
         \tempo Prélude
         \time 4/4
-        \clef tenor
+        \clef "tenor"
         \key sol \major
         sol'8 fad'8\stopped mi'8 re'8 do'8 si8 sol8 re'8              % 1
-        \clef bass
+        \clef "bass"
         \key sol \major
         sol8 fad8\stopped mi8 re8 do8 si,8\stopped la,8 sol,8         % 2
         re8 do8 si,8 la,8\stopped sol,8 fad,8 mi,8 re,8               % 3
@@ -40,13 +40,13 @@
         do8 do8 do8 si,8 sol8 do8 la8 re8                             % 10
         si8 si8 si8 do8 do'8 la8 re'8 sol8                            % 11
         fa8 mi8\stopped re8 do8
-          \clef tenor
-          \key sol \major
-          mi'8 fa'8 sol'8 fa'8                                        % 12
+        \clef "tenor"
+        \key sol \major
+        mi'8 fa'8 sol'8 fa'8                                          % 12
         la8 mi'8\stopped re'8 dod'8\stopped
-          \clef bass
-          \key sol \major
-          la8 sol8 mi8 fa8\mordent                                    % 13
+        \clef "bass"
+        \key sol \major
+        la8 sol8 mi8 fa8\mordent                                      % 13
         re8 la8 la,8 re8 re,8 la,8 si,8 do8                           % 14
         la,8 mi8 fad8 sol8\mordent do8 si,8 do8 la,8                  % 15
         la8 sol8 la8 fad8\stopped re'8 do'8 re'8 r8

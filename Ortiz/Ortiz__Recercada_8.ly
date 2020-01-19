@@ -12,14 +12,9 @@
 
 % iPad Pro 12.9
 
-% \paper {
-%   paper-width  = 195\mm
-%   paper-height = 260\mm
-% }
-
-\header {
-  title = "Recercada VIII"
-  composer = "Diego Ortiz (1553)"
+\paper {
+  paper-width  = 195\mm
+  paper-height = 260\mm
 }
 
 \score {

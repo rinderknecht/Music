@@ -12,10 +12,10 @@
 
 % iPad Pro 12.9
 
-% \paper {
-%   paper-width  = 195\mm
-%   paper-height = 260\mm
-% }
+\paper {
+  paper-width  = 195\mm
+  paper-height = 260\mm
+}
 
 \score {
   \new Staff
@@ -24,7 +24,8 @@
    \override Hairpin.to-barline = ##f
    \time 3/4
    \key do \major
-   \clef bass
+   \clef "bass"
+
    sol,4\downbow si,4\upbow re4\upbow                              % 1
    sol4\downbow r8 re8 fad8 re8                                    % 2
    sol8 re8 sol8 re8 sol8 re8                                      % 3

@@ -13,24 +13,24 @@
 
 \section{Une berceuse (Schubert)}
 
-\lilypondfile{berceuse.ly}
+\lilypondfile{Schubert__Berceuse.ly}
 
 \newpage
 
 \section{Andante (Haydn)}
 
-\lilypondfile{andante.ly}
+\lilypondfile{Haydn__Andante.ly}
 
 \newpage
 
 \section{Folia (Corelli's variation)}
 
-\lilypondfile{cordelli.ly}
+\lilypondfile{Corelli__La_folia.ly}
 
 \newpage
 
-\section{Recercada primera}
+%\section{Recercada primera}
 
-\lilypondfile{recercada_primera.ly}
+%\lilypondfile{recercada_primera.ly}
 
 \end{document}

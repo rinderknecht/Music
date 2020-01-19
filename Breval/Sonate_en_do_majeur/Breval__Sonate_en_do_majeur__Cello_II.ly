@@ -22,7 +22,7 @@
       \override Hairpin.to-barline = ##f
       \time 4/4
       \key do \major
-      \clef bass
+      \clef "bass"
       do8\f do8 mi8 do8 sol8 sol,8 si,8 sol,8             % 1'
       do8 do8 sol,8 mi,8 do,4                             % 2'
       \repeat volta 2 {

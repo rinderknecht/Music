@@ -12,16 +12,16 @@
 
 % iPad Pro 12.9
 
-% \paper {
-%   paper-width  = 195\mm
-%   paper-height = 260\mm
-% }
+\paper {
+  paper-width  = 195\mm
+  paper-height = 260\mm
+}
 
 \score {
   \new Staff
   \with {instrumentName = #"Cello "}{
     \tempo Adagio
-    \clef bass
+    \clef "bass"
     \time 4/4
     \key mi \minor
     \override Hairpin.to-barline = ##f
@@ -80,7 +80,7 @@
   \new Staff
   \with {instrumentName = #"Cello "}{
     \tempo Allegro
-    \clef bass
+    \clef "bass"
     \time 4/4
     \key mi \minor
     \override Hairpin.to-barline = ##f
