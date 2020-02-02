@@ -71,7 +71,7 @@
         re'8) si8 dod'8 re'8                                              % 27
         dod'8-+ la8 re'8 mi'8-2                                           % 28
         fad'8(mi'16 re'16\1) mi'4-+                                       % 29
-        re'8-1 si8-1 la8 sol8                                             % 30
+        re'8-4 si8 la8 sol8                                               % 30
         fad8 re'16 fad16 mi8 dod'8                                        % 31
         \cadenzaOn
         re'8\upbow re4
@@ -132,6 +132,8 @@
   >>
 }
 
+\pageBreak
+
 %% 2 Gavotte
 
 \score {
@@ -164,24 +166,36 @@
       }
 
       \repeat volta 2 {
-        \partial 2 mi'4 mi'4                                             % 00
-        dod'4 la4 mi'8 la8 mi'8 la8                                      % 12
-        fad'(mi'8) re'4 fad'4 fad'4                                      % 13
-        fad'4 mi'8 re'8 dod'4 si4                                        % 14
-        lad4-+ fad4 si8 fad8 si8 fad8                                    % 15
-        dod'8 fad8 dod'8 mi'8 fad8 mi'8 fad8 mi'8                        % 16
-        mi'4-+ re'4 fad'4 fad4                                           % 17
-        sol4 mi'8(dod'8) re'4 dod'4-+                                    % 18
-        si4 re'8(dod'8) si8(la8) sol8(fad8)                              % 19
-        sol4 mi'8(re'8) dod'8(si8) la8(sol8)                             % 20
-        fad4 fad'8(mi'8) re'8(dod'8) si8(la8)                            % 21
+        \partial 2 mi'4-4 mi'4                                           % 00
+        dod'4^\markup{\bold\teeny (1)}
+        la4^\markup{\bold\teeny (4)} mi'8 la8 mi'8 la8                   % 12
+        \set fingeringOrientations = #'(left)
+        <fad'-4>8(mi'8) re'4\1 fad'4 fad'4                               % 13
+        fad'4
+        \slurDashed
+        mi'8(re'8\1)
+        \slurSolid
+        dod'4-4 si4^\markup{\bold\teeny (2)}                             % 14
+        lad4-+ fad4^\markup{\bold\teeny (4)}
+        si8 fad8 si8 fad8                                                % 15
+        dod'8-1 fad8^\markup{\bold\teeny (1)}
+        dod'8 mi'8 fad8 mi'8 fad8 mi'8                                   % 16
+        <mi'-+-2>4 re'4\1 fad'4^\markup{\bold\teeny (4)} fad4-1          % 17
+        sol4 mi'8^\markup{\bold\teeny (4)}(
+        dod'8_\markup{\bold\teeny (1)}) re'4 dod'4-+                     % 18
+        si4-1 re'8(dod'8) si8(la8) sol8(fad8)                            % 19
+        sol4
+        <mi'-4>8(re'8) dod'8(si8-1) la8(sol8)                            % 20
+        fad4 <fad'-3>8(mi'8) re'8-4(dod'8) si8(la8)                      % 21
         si8(dod'8) re'4 sol4 fad4                                        % 22
         mi4-+ la,4 la8 re8 la8 re8                                       % 23
         si8 sol8 si8 re'8 mi8 re'8 mi8 re'8                              % 24
         \slurDashed
-        re'4-+(dod'4) la8 re'8 fad8 la8                                  % 25
+        \set fingeringOrientations = #'(left)
+        <re'-+-2>4(dod'4) la8 re'8 fad8^\markup{\bold\teeny (1)} la8     % 25
         \slurSolid
-        sol8 fad'8 mi'8 re'8 la4 dod'4-+                                 % 26
+        sol8 fad'8-4 mi'8^\markup{\bold\teeny (2)} re'8\1
+        la4 <dod'-+-3>4                                                  % 26
         re'8 fad8 sol8 la8 fad8 sol8 la8 si8                             % 27
         mi8 fad8 sol8 la8 re8 fad8 mi8-+ re8                             % 28
         la4 la,4 dod'4 si8-+(la8)                                        % 29
@@ -236,6 +250,8 @@
     }
   >>
 }
+
+\pageBreak
 
 %% 3 Posément
 
@@ -372,6 +388,8 @@
     }
   >>
 }
+
+\pageBreak
 
 %% 3 Menuet I
 
