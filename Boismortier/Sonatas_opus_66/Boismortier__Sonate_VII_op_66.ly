@@ -36,12 +36,12 @@
         re'16(dod'16) re'8 re8 re'8-2                                     % 1
         mi'16(re'16) mi'8 la8\open re'16-4(dod'16)                        % 2
         si8 mi8 mi8 la8                                                   % 3
-        fad8.-+ mi16 re8 la8                                              % 4
+        \acciaccatura sol8(fad8.) mi16 re8 la8                            % 4
         re'16(dod'16) re'8 re8 re'8-2                                     % 5
         mi'16(re'16) mi'8 la8 mi'8-1                                      % 6
         fad'8 mi'8 re'8-4 dod'8                                           % 7
-        si8-+ sold8\4 la8 si8                                             % 8
-        dod'4 si4-+                                                       % 9
+        \acciaccatura dod'8(si8) sold8\4 la8 si8                          % 8
+        dod'4 \acciaccatura dod'8(si4)                                    % 9
         la8 fad8 mi8 re8                                                  % 10
         dod8-3 la16^\markup{\teeny\bold (4)} dod16
         si,8 sold8^\markup{\teeny\bold (3)}                               % 11
@@ -60,17 +60,17 @@
         si8-1_\markup{\teeny I} dod'8                                     % 16
         re'4-2 mi'4                                                       % 17
         dod'8 fad'8-3 si8-1_\markup{\teeny I} dod'8                       % 18
-        re'4 dod'4-+                                                      % 19
+        re'4 \acciaccatura re'8(dod'4)                                    % 19
         si4 r8 re'8-2\upbow                                               % 20
         la8 mi'8 sol8^\markup{\bold\teeny (2)} sol8                       % 21
-        sol8-+ fad4 si8-1\upbow                                           % 22
+        \acciaccatura la8(sol8) fad4 si8-1\upbow                          % 22
         mi8\downbow la8 mi8 mi8                                           % 23
-        mi8-+ re4 sol8\downbow(                                           % 24
+        \acciaccatura fad8(mi8) re4 sol8\downbow(                         % 24
         sol8) fad4 si8(                                                   % 25
         si8) la4 re'8(                                                    % 26
         re'8) si8 dod'8 re'8                                              % 27
-        dod'8-+ la8 re'8 mi'8-2                                           % 28
-        fad'8(mi'16 re'16\1) mi'4-+                                       % 29
+        \acciaccatura re'8(dod'8) la8 re'8 mi'8-2                         % 28
+        fad'8(mi'16 re'16\1) mi'4                                         % 29
         re'8-4 si8 la8 sol8                                               % 30
         fad8 re'16 fad16 mi8 dod'8                                        % 31
         \cadenzaOn
@@ -115,7 +115,7 @@
         si,8 dod8 re8 si,8                                                % 20
         dod4 r8 la8                                                       % 21
         re8 la8 re8 re8                                                   % 22
-        re8-+ dod4 la,8                                                   % 23
+        \acciaccatura mi8(re8) dod4 la,8                                  % 23
         si,8 si,8 si,8 dod8                                               % 24
         re8 re8 re8 sol,8                                                 % 25
         re8 re16 mi16 fad8 re8                                            % 26
@@ -141,6 +141,7 @@
     \new Staff
     \with {instrumentName = #"Cello"}
     {
+      \set fingeringOrientations = #'(left)
       \set Score.barNumberVisibility = #all-bar-numbers-visible
       \override Hairpin.to-barline = ##f
       \tempo "Gavotte"
@@ -150,56 +151,51 @@
 
       \repeat volta 2 {
         \partial 2 re'4 fad4                                             % 0
-        sol4-2 mi'4^\markup{\bold\teeny (4)}_\markup{\teeny I}
+        sol4-2 mi'4^\markup{\bold\teeny (4)}
         dod'4^\markup{\bold\teeny (1)}
-        la4^\markup{\bold\teeny (4)}_\markup{\teeny II}                  % 1
+        la4^\markup{\bold\teeny (4)}                                     % 1
         fad4-3 re4 si8 re'8 sol8 si8                                     % 2
         mi8 la8 dod8\4 mi8 re8 fad8 mi8 re8                              % 3
-        dod4-+_\4 la,4 la4 re'4                                          % 4
-        \appoggiatura dod'8(si4) mi'4-4 dod'4-+ re'4                     % 5
-        mi'2-1 fad'4 la4                                                 % 6
-        sold4-1 la8-1 si8\2 dod'4\4 si4-+                                % 7
-        la4-2 mi'4^\markup{\bold\teeny (2)} sold4 mi'4                   % 8
+        dod4\4 la,4 la4 re'4                                             % 4
+        \appoggiatura dod'8(si4) mi'4-4
+        \acciaccatura re'8(dod'4) re'4                                   % 5
+        mi'2-1 fad'4 la4-1                                               % 6
+        sold4-1 la8-1 si8\2 dod'4\4
+        \acciaccatura dod'8(si4)                                         % 7
+        la4-2 mi'4 sold4 mi'4                                            % 8
         la4 mi'4 si4^\markup{\bold\teeny (4)} mi'4                       % 9
         dod'4-1 mi'4 la4\open mi'4-1                                     % 10
-        fad'8 mi'8 re'8 dod'8 si2-+                                      % 11
+        fad'8 mi'8 re'8 dod'8 \acciaccatura dod'8(si2)                   % 11
       }
 
       \repeat volta 2 {
         \partial 2 mi'4-4 mi'4                                           % 00
         dod'4^\markup{\bold\teeny (1)}
-        la4^\markup{\bold\teeny (4)} mi'8 la8 mi'8 la8                   % 12
-        \set fingeringOrientations = #'(left)
+        la4^\markup{\bold\teeny (4)} mi'8 la8\open mi'8 la8              % 12
         <fad'-4>8(mi'8) re'4\1 fad'4 fad'4                               % 13
-        fad'4
-        \slurDashed
-        mi'8(re'8\1)
-        \slurSolid
-        dod'4-4 si4^\markup{\bold\teeny (2)}                             % 14
-        lad4-+ fad4^\markup{\bold\teeny (4)}
+        fad'4 mi'8(re'8\1) dod'4-4 si4^\markup{\bold\teeny (2)}          % 14
+        \acciaccatura si8(lad4) fad4^\markup{\bold\teeny (4)}
         si8 fad8 si8 fad8                                                % 15
         dod'8-1 fad8^\markup{\bold\teeny (1)}
         dod'8 mi'8 fad8 mi'8 fad8 mi'8                                   % 16
-        <mi'-+-2>4 re'4\1 fad'4^\markup{\bold\teeny (4)} fad4-1          % 17
-        sol4 mi'8^\markup{\bold\teeny (4)}(
-        dod'8_\markup{\bold\teeny (1)}) re'4 dod'4-+                     % 18
-        si4-1 re'8(dod'8) si8(la8) sol8(fad8)                            % 19
-        sol4
-        <mi'-4>8(re'8) dod'8(si8-1) la8(sol8)                            % 20
+        \acciaccatura fad'8(mi'4-2) re'4\1 fad'4 fad4-1                  % 17
+        sol4 mi'8(dod'8) re'4 \acciaccatura re'8(dod'4)                  % 18
+        si4-1 re'8(dod'8) si8(la8) sol8-2(fad8)                          % 19
+        sol4 mi'8(re'8) dod'8-3(si8) la8(sol8)                           % 20
         fad4 <fad'-3>8(mi'8) re'8-4(dod'8) si8(la8)                      % 21
         si8(dod'8) re'4 sol4 fad4                                        % 22
-        mi4-+ la,4 la8 re8 la8 re8                                       % 23
+        \acciaccatura fad8(mi4) la,4 la8 re8 la8 re8                     % 23
         si8 sol8 si8 re'8 mi8 re'8 mi8 re'8                              % 24
-        \slurDashed
         \set fingeringOrientations = #'(left)
-        <re'-+-2>4(dod'4) la8 re'8 fad8^\markup{\bold\teeny (1)} la8     % 25
-        \slurSolid
-        sol8 fad'8-4 mi'8^\markup{\bold\teeny (2)} re'8\1
-        la4 <dod'-+-3>4                                                  % 26
+        \acciaccatura mi'8(<re'-2>4)(dod'4) la8\upbow
+        re'8\upbow fad8^\markup{\bold\teeny (1)} la8                     % 25
+        sol8 <fad'-4>8 mi'8 re'8\1 la4
+        \acciaccatura re'8(dod'4-3)                                      % 26
         re'8 fad8 sol8 la8 fad8 sol8 la8 si8                             % 27
-        mi8 fad8 sol8 la8 re8 fad8 mi8-+ re8                             % 28
-        la4 la,4 dod'4 si8-+(la8)                                        % 29
-        re'8 la8 si8 mi8 fad4 mi4-+                                      % 30
+        mi8 fad8 sol8 la8 re8 fad8
+        \acciaccatura fad8(mi8) re8                                      % 28
+        la4 la,4 dod'4 \acciaccatura dod'8(si8)(la8)                     % 29
+        re'8 la8 si8 mi8 fad4 \acciaccatura fad8(mi4)                    % 30
         re2 s4 s4                                                        % 31
       }
     }
@@ -251,7 +247,7 @@
   >>
 }
 
-\pageBreak
+%\pageBreak
 
 %% 3 Posément
 
@@ -268,39 +264,40 @@
       \clef "bass"
       \repeat volta 2 {
         re'8 re16 mi16 fad8 re8 la8 re'8                                 % 1
-        dod'4-+ la4 r4                                                   % 2
+        \acciaccatura re'8(dod'4) la4 r4                                 % 2
         re'8(dod'8) si8(la8) sol8(fad8)                                  % 3
         si4. dod'8 re'4                                                  % 4
         sol8(fad8) sol8(mi8) fad8(re8)                                   % 5
         mi4 la,4 la4                                                     % 6
         si16 la16 sol16 fad16 mi8 si8 dod'8 la8                          % 7
         re'4. fad'8 mi'8 la8                                             % 8
-        la8 re'8 mi'4 dod'4-+                                            % 9
+        la8 re'8 mi'4 \acciaccatura re'8(dod'4)                          % 9
         re'4 re2                                                         % 10
       }
       fad'8 re'8 la8 fad8 re8 fad'8                                      % 11
-      mi'4.-+ la8 dod'8 la8                                              % 12
+      \acciaccatura fad'8(mi'4.) la8 dod'8 la8                           % 12
       re'8 si8 sold8 si8 mi8 re'8                                        % 13
-      dod'8.-+(si16) la 4 mi'4                                           % 14
+      \acciaccatura re'8(dod'8.)(si16) la 4 mi'4                         % 14
       fad'8 re'8 si8 re'8 fad8 la8                                       % 15
       sold8 si8 mi4 si8.(dod'32 re'32)                                   % 16
-      dod'4-+ si8 mi8 si8.(dod'32 re'32)                                 % 17
-      dod'4-+ si8 mi'8 si8 re'8                                          % 18
-      dod'16(si16) la8 si4 sold4-+                                       % 19
+      \acciaccatura re'8(dod'4) si8 mi8 si8.(dod'32 re'32)               % 17
+      \acciaccatura re'8(dod'4) si8 mi'8 si8 re'8                        % 18
+      dod'16(si16) la8 si4 \acciaccatura la8(sold4)                      % 19
       la4 la,2                                                           % 20
       re'8 re16 mi16 fad8 re8 la8 re'8                                   % 21
-      dod'4-+ la4 r4                                                     % 22
+      \acciaccatura re'8(dod'4) la4 r4                                   % 22
       re'8(dod'8) si8(la8) sol8(fad8)                                    % 23
       si4. dod'8 re'4                                                    % 24
       sol8(fad8) sol8(mi8) fad8(re8)                                     % 25
       mi4 la,4 la4                                                       % 26
       si16 la16 sol16 fad16 mi8 si8 dod'8 la8                            % 27
       re'4. fad'8 mi'8 la8                                               % 28
-      la8 re'8 mi'4 dod'4-+                                              % 29
+      la8 re'8 mi'4 \acciaccatura re'8(dod'4)                            % 29
       re'4 re2                                                           % 30
       fad'8 mi'8 re'8 dod'8 si4                                          % 31
       mi'8 re'8 dod'8 si8 lad4                                           % 32
-      si8 dod'8 dod'4.-+(si16 dod'16)                                    % 33
+      si8 dod'8
+      \acciaccatura re'8(dod'4.)(si16 dod'16)                            % 33
       re'4 \appoggiatura dod'8(si4) r4                                   % 34
       \tuplet 3/2 {re'8(dod'8 re'8)} fad4 re'4                           % 35
       \tuplet 3/2 {re'8(dod'8 re'8)} si8 sol8 si,8 sol,8                 % 36
@@ -310,14 +307,14 @@
       mi'2 la4                                                           % 40
       \bar "||"
       re'8 re16 mi16 fad8 re8 la8 re'8                                   % 41
-      dod'4-+ la4 r4                                                     % 42
+      \acciaccatura re'8(dod'4) la4 r4                                   % 42
       re'8(dod'8) si8(la8) sol8(fad8)                                    % 43
       si4. dod'8 re'4                                                    % 44
       sol8(fad8) sol8(mi8) fad8(re8)                                     % 45
       mi4 la,4 la4                                                       % 46
       si16 la16 sol16 fad16 mi8 si8 dod'8 la8                            % 47
       re'4. fad'8 mi'8 la8                                               % 48
-      la8 re'8 mi'4 dod'4-+                                              % 49
+      la8 re'8 mi'4 \acciaccatura re'8(dod'4)                            % 49
       re'4 re2                                                           % 50
       \bar "|."
     }
@@ -332,7 +329,7 @@
       \repeat volta 2 {
         re2 r4                                                           % 1
         la8 la,16 si,16 dod8 la,8 mi8 la8                                % 2
-        fad4-+ re4 r4                                                    % 3
+        \acciaccatura sol8(fad4) re4 r4                                  % 3
         sol8(fad8) sol8(la8) fad8(sol8)                                  % 4
         mi4 dod4 re4                                                     % 5
         la,4. la8 fad8 re8                                               % 6
@@ -353,7 +350,7 @@
       la,4 la8 sol!8 fad8 mi8                                            % 20
       re2 r4                                                             % 21
       la8 la,16 si,16 dod8 la,8 mi8 la8                                  % 22
-      fad4-+ re4 r4                                                      % 23
+      \acciaccatura sol8(fad4) re4 r4                                    % 23
       sol8(fad8) sol8(la8) fad8(sol8)                                    % 24
       mi4 dod4 re4                                                       % 25
       la,4. la8 fad8 re8                                                 % 26
@@ -377,7 +374,7 @@
       \bar "||"
       re2 r4                                                             % 41
       la8 la,16 si,16 dod8 la,8 mi8 la8                                  % 42
-      fad4-+ re4 r4                                                      % 43
+      \acciaccatura sol8(fad4) re4 r4                                    % 43
       sol8(fad8) sol8(la8) fad8(sol8)                                    % 44
       mi4 dod4 re4                                                       % 45
       la,4. la8 fad8 re8                                                 % 46
