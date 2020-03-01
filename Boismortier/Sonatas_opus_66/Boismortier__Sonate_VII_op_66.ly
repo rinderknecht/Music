@@ -171,17 +171,19 @@
       \set fingeringOrientations = #'(left)
 
       \repeat volta 2 {
-        \partial 2 <mi'-4>4\downbow mi'4                                   % 00
+        \partial 2 <mi'-4>4\downbow mi'4                                 % 00
         dod'4^\markup{\bold\teeny (1)}
         la4^\markup{\bold\teeny (4)} mi'8 la8\open mi'8 la8              % 12
         <fad'-4>8(mi'8) re'4\1 fad'4 fad'4                               % 13
         fad'4 mi'8(re'8\1) dod'4-4 si4^\markup{\bold\teeny (2)}          % 14
-        \acciaccatura si8(lad4) fad4^\markup{\bold\teeny (4)}
-        si8 fad8 si8 fad8                                                % 15
+        \acciaccatura si8(lad4) fad4-3 si8 fad8 si8 fad8                 % 15
         dod'8-1 fad8^\markup{\bold\teeny (1)}
         dod'8 mi'8 fad8 mi'8 fad8 mi'8                                   % 16
-        \acciaccatura fad'8(mi'4-2) re'4\1 fad'4 fad4-1                  % 17
-        sol4 mi'8(dod'8) re'4 \acciaccatura re'8(dod'4)                  % 18
+        \acciaccatura fad'8(mi'4-2) re'4\1
+        fad'4^\markup{\bold\teeny (4)} fad4-1                            % 17
+        sol4 mi'8^\markup{\bold\teeny (4)}(
+        dod'8) re'4^\markup{\bold\teeny (2)}
+        \acciaccatura re'8(dod'4)                                        % 18
         si4-1 re'8(dod'8) si8(la8) sol8-2(fad8)                          % 19
         sol4 mi'8(re'8) dod'8-3(si8) la8(sol8)                           % 20
         fad4 <fad'-3>8(mi'8) re'8-4(dod'8) si8(la8)                      % 21
