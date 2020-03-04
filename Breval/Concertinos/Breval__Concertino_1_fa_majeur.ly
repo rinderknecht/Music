@@ -3,7 +3,7 @@
 \version "2.18.2"
 
 \header {
-  title    = "Concertino 1"
+  title    = "Concertino 1 en fa majeur"
   composer = "Jean-Baptiste Bréval (1755-1825)"
   tagline  = ""
 }
@@ -68,12 +68,12 @@ retenirTrois = \markup {
       \mark \default
       \partial 4 <la'-3>8.\flageolet\upbow\f(<sol'-4>16)                  % 0
       fa'4 fa'4(fa'8) mi'16(fa'16 sol'16 fa'16 mi'16 re'16-4)             % 1
-      do'4 do'4(do'8) si!16(do'16 re'16 do'16 sib16\1 la16)               % 2
+      do'4 do'4(do'8) si!16(do'16 re'16 do'16 sib16 la16)                 % 2
       fad4(sol8 la8)
-      \tuplet 3/2 {sib8\1( do'8 dod'8} \tuplet 3/2 {re'8 sib8 sol8)}      % 3
+      \tuplet 3/2 {sib8( do'8 dod'8} \tuplet 3/2 {re'8 sib8 sol8)}        % 3
       fa!4.(sol16 fa16 mi4) <la'-3>8.\flageolet(<sol'-4>16)               % 4
       fa'4 fa'4(fa'8) mi'16(fa'16 sol'16 fa'16 mi'16 re'16-4)             % 5
-      do'4 do'4(do'8) si!16(do'16 re'16 do'16 sib16_\1 la16)              % 6
+      do'4 do'4(do'8) si!16(do'16 re'16 do'16 sib16 la16)                 % 6
       \tuplet 3/2 {fad8(sol8 la8}
       \tuplet 3/2 {sib8 do'8 re'8)} fa!4(mi4)                             % 7
       sol2(fa4) \breathe do4\mf\upbow                                     % 8
@@ -123,8 +123,9 @@ retenirTrois = \markup {
       \tuplet 3/2 {re'8-4\< do'8 si!8}
       \tuplet 3/2 {la8 si8 do'8}
       \tuplet 3/2 {re'8-1 mi'8 fa'8\!}                                    % 31
-      sol,2\f\open \afterGrace <re'-1>2\trill( {<do'-1>16 re'16)}         % 32
-      do'4 \breathe mi'2-4 re'8-4-- do'8--                                % 33
+      sol,2\f\open \afterGrace re'2\trill(_\markup{\bold\teeny (1)}
+      {<do'-1>16 re'16)}                                                  % 32
+      do'4 \breathe mi'2\4 re'8\2-- do'8--                                % 33
       si!4 fa'2-2 mi'8-- re'8-4--                                         % 34
       do'4 do'4 re'8. re'16 si!8. si16                                    % 35
       do'4 <<do,4\ff sol,4 mi4 do'4\downbow>>
@@ -138,14 +139,14 @@ retenirTrois = \markup {
     \tuplet 3/2 {do'8( si8 re'8} \tuplet 3/2 {do'8 si8 la8)}              % 39
     sol4.(fa8 mi4) \breathe sol4                                          % 40
     do'4 do'4(do'8) si!16(do'16 re'16 do'16 si16 do'16)                   % 41
-    do'8-- sib8\1--\> sib2.                                               % 42
+    do'8-- sib!8--\> sib2.                                                % 42
     \tuplet 3/2 {la8\!\mf mi'8-4 dod'8^\markup{\bold\teeny (1)}}
-    \tuplet 3/2 {la8 mi8-1 dod8\4}
+    \tuplet 3/2 {la8 mi8-1 dod8}
     \tuplet 3/2 {la,8 dod8 mi8} \tuplet 3/2 {sol8 fa8 mi8}                % 43
     \tuplet 3/2 {fa8 re8( fa8} \tuplet 3/2 {la8) fa8( la8}
     \tuplet 3/2 {re'8) la8( <re'-1>8} \tuplet 3/2 {fa'8) mi'8 re'8}       % 44
-    \tuplet 3/2 {dod'8-1 mi'8 dod'8} \tuplet 3/2 {la8 mi8-1 dod8\4}
-    \tuplet 3/2 {la,8 dod8_\4 mi8} \tuplet 3/2 {sol8 fa8 mi8}             % 45
+    \tuplet 3/2 {dod'8-1 mi'8 dod'8} \tuplet 3/2 {la8 mi8-1 dod8}
+    \tuplet 3/2 {la,8 dod8 mi8} \tuplet 3/2 {sol8 fa8 mi8}                % 45
     \tuplet 3/2 {fa8 re8( fa8} \tuplet 3/2 {la8) fa8( la8}
     \tuplet 3/2 {re'8) la8( <re'-1>8} \tuplet 3/2 {fa'8) mi'8 re'8}       % 46
     \tuplet 3/2 {dod'8-1(mi'8) la8} \tuplet 3/2 {dod'8\>(mi'8) la8}
@@ -153,12 +154,12 @@ retenirTrois = \markup {
     \tuplet 3/2 {re'8-4\p re8( mi8} \tuplet 3/2 {fa8) mi8 re8}
     \tuplet 3/2 {re'8 mi8( fa8} \tuplet 3/2 {sol8) fa8 mi8}               % 48
     \tuplet 3/2 {fa8 re8\< mi8} \tuplet 3/2 {fa8 sol8 la8}
-    \tuplet 3/2 {sib8\1 la8 sol8} \tuplet 3/2 {fa8 mi8 re8\!}             % 49
+    \tuplet 3/2 {sib8 la8 sol8} \tuplet 3/2 {fa8 mi8 re8\!}               % 49
     la,2\f mi2\>                                                          % 50
     \tuplet 3/2 {re'8-4\p re8( mi8} \tuplet 3/2 {fa8) mi8 re8}
     \tuplet 3/2 {re'8 mi8( fa8} \tuplet 3/2 {sol8) fa8 mi8}               % 51
     \tuplet 3/2 {fa8 re8\< mi8} \tuplet 3/2 {fa8 sol8 la8}
-    \tuplet 3/2 {sib8\1 la8 sol8} \tuplet 3/2 {fa8 mi8 re8\!}             % 52
+    \tuplet 3/2 {sib8 la8 sol8} \tuplet 3/2 {fa8 mi8 re8\!}               % 52
     la,2\f \afterGrace mi2\trill( {re16 mi16)}                            % 53
     re4 re'2\f dod'4(                                                     % 54
     re'4) re'2\mf dod'4(                                                  % 55
@@ -166,8 +167,8 @@ retenirTrois = \markup {
     do'4) si!4\) sib2(                                                    % 57
     sib4) <re'-3>8.\flageolet(do'16-4) do'4(sib4)                         % 58
     \tuplet 3/2 {la8^\markup{\bold\teeny (1)} fa8-2( mi8\<}
-    \tuplet 3/2 {fa8) sol8 la8} \tuplet 3/2 {sib8\1 sol8( fad8}
-    \tuplet 3/2 {sol8) la8 sib8\1}                                        % 59
+    \tuplet 3/2 {fa8) sol8 la8} \tuplet 3/2 {sib8 sol8( fad8}
+    \tuplet 3/2 {sol8) la8 sib8}                                          % 59
     \tuplet 3/2 {do'8 la8 sib8}
     \tuplet 3/2 {si!8 do'8 dod'8}
     \tuplet 3/2 {re'8 do'!8 sib!8}
@@ -196,15 +197,17 @@ retenirTrois = \markup {
     mi2.\pp(fa4)\<                                                        % 74
     mi2.(fa4)                                                             % 75
     sol2.(la4)                                                            % 76
-    \tuplet 3/2 {sib8\f do'8 re'8} \tuplet 3/2 {mi'8 fa'8 fad'8}
-    \tuplet 3/2 {sol'8 fa'8 mi'8} \tuplet 3/2 {re'8 do'8 sib8}            % 77
+    \tuplet 3/2 {sib8\f do'8 re'8} \tuplet 3/2 {mi'8-1 fa'8 fad'8}
+    \tuplet 3/2 {sol'8 fa'8 mi'8} \tuplet 3/2 {re'8-4 do'8 sib8}          % 77
     \tuplet 3/2 {la8 sol8 la8} \tuplet 3/2 {sib8 do'8 dod'8}
     \tuplet 3/2 {re'8 do'8 sib8} \tuplet 3/2 {la8 sol8 fa8}               % 78
     do2 \afterGrace <sol-1>2\trill( {<fa-1>16 sol16)}                     % 79
-    fa4-1 <la-4>2-> sol8-4-- fa8--                                        % 80
-    mi4 <sib-2>2-> la8-- sol8--                                           % 81
-    fa4 fa'4 sol'8. sol'16 mi'8. mi'16                                    % 82
-    fa'4 fa4\downbow fa,4\downbow r4\fermata
+    fa4-1 la2\4-> sol8\2-- fa8--                                          % 80
+    mi4-1 <sib-4>2-> la8^\markup{\bold\teeny (3)}--
+    sol8^\markup{\bold\teeny (2)}--                                       % 81
+    fa4\1 <fa'-2>4 sol'8. sol'16 mi'8. mi'16                              % 82
+    fa'4 fa4^\markup{\bold\teeny (4)}_\markup{\bold\teeny III}\downbow
+    fa,4-4\downbow r4\fermata
     \bar "|."                                                             % 83
   }
 }
