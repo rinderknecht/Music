@@ -17,42 +17,6 @@
   paper-height = 260\mm
 }
 
-allonger = \markup {
-  \center-column {
-    \combine
-    \draw-line #'(-4 . 0)
-    \arrow-head #X #RIGHT ##f
-  }
-}
-
-allongerTrois = \markup {
-  \center-column {
-    \combine
-    \draw-line #'(-6 . 0)
-    \arrow-head #X #RIGHT ##f
-  }
-}
-
-retenir = \markup {
-  \center-column {
-    \concat {
-      \arrow-head #X #LEFT ##f
-      \hspace #-1
-      \draw-line #'(-4 . 0)
-    }
-  }
-}
-
-retenirTrois = \markup {
-  \center-column {
-    \concat {
-      \arrow-head #X #LEFT ##f
-      \hspace #-1
-      \draw-line #'(-6 . 0)
-    }
-  }
-}
-
 \score {
   \new Staff
   \with {instrumentName = #"Cello "}
@@ -76,8 +40,9 @@ retenirTrois = \markup {
       do'4 do'4(do'8) si!16(do'16 re'16 do'16 sib16 la16)                 % 6
       \tuplet 3/2 {fad8(sol8 la8}
       \tuplet 3/2 {sib8 do'8 re'8)} fa!4(mi4)                             % 7
-      sol2(fa4) \breathe do4\mf\upbow                                     % 8
+      sol2(fa4) \breathe
       \mark \default
+      do4\mf\upbow                                                        % 8
       la,8(do8 fa8 la8-1) do'4(fa'4)                                      % 9
       <la'-3>4.\flageolet(<sol'-4>8) fa'8(mi'8 re'8-4 do'8)               % 10
       sol,8(do8 mi8 sol8) do'4(<mi'-1>4)                                  % 11
@@ -108,7 +73,8 @@ retenirTrois = \markup {
       \tuplet 3/2 {do'8\f sol8( do'8}
       \tuplet 3/2 {mi'8-4) re'8^\markup{\bold\teeny (2)} do'8\1}
       \tuplet 3/2 {re'8 sol8-1( re'8^\markup{\bold\teeny (1)}}
-      \tuplet 3/2 {fa'8)^\markup{\bold\teeny (4)} mi'8 re'8}              % 27
+      \tuplet 3/2 {fa'8)^\markup{\bold\teeny (4)}
+                   mi'8^\markup{\bold\teeny (3)} re'8}                    % 27
       \tuplet 3/2 {do'8-4_\markup{\teeny II} mi'8( fa'8}
       \tuplet 3/2 {sol'8) mi'8 do'8}
       \tuplet 3/2 {sol,8\open si!8 ( fa'8} \tuplet 3/2 {sol'8) fa'8 si8}  % 28
@@ -125,12 +91,13 @@ retenirTrois = \markup {
       \tuplet 3/2 {re'8-1 mi'8 fa'8\!}                                    % 31
       sol,2\f\open \afterGrace re'2\trill(_\markup{\bold\teeny (1)}
       {<do'-1>16 re'16)}                                                  % 32
-      do'4 \breathe mi'2\4 re'8\2-- do'8--                                % 33
-      si!4 fa'2-2 mi'8-- re'8-4--                                         % 34
+      do'4 \breathe mi'2-4 re'8-4-- do'8--                                % 33
+      si!4-3 fa'2-2 mi'8-- re'8-4--                                       % 34
       do'4 do'4 re'8. re'16 si!8. si16                                    % 35
       do'4 <<do,4\ff sol,4 mi4 do'4\downbow>>
       <<do,4 sol,4 mi4 do'4\downbow>>                                     % 36
     }
+    \pageBreak
     \set Score.currentBarNumber = #37
     \partial 4 <sol'-4>8.(\f\upbow fa'16)                                 % 00
     mi'4 mi'4(mi'8) fa'16(mi'16 sol'16 fa'16 mi'16 re'16-4)               % 37
@@ -202,9 +169,8 @@ retenirTrois = \markup {
     \tuplet 3/2 {la8 sol8 la8} \tuplet 3/2 {sib8 do'8 dod'8}
     \tuplet 3/2 {re'8 do'8 sib8} \tuplet 3/2 {la8 sol8 fa8}               % 78
     do2 \afterGrace <sol-1>2\trill( {<fa-1>16 sol16)}                     % 79
-    fa4-1 la2\4-> sol8\2-- fa8--                                          % 80
-    mi4-1 <sib-4>2-> la8^\markup{\bold\teeny (3)}--
-    sol8^\markup{\bold\teeny (2)}--                                       % 81
+    fa4^\markup{\bold\teeny (1)} la2\4-> sol8\2-- fa8--                   % 80
+    mi4-1 <sib\1>2-> la8-4-- sol8^\markup{\bold\teeny (2)}--              % 81
     fa4\1 <fa'-2>4 sol'8. sol'16 mi'8. mi'16                              % 82
     fa'4 fa4^\markup{\bold\teeny (4)}_\markup{\bold\teeny III}\downbow
     fa,4-4\downbow r4\fermata
