@@ -4,7 +4,7 @@
 
 \header {
   title    = "Sonate II (opus 50)"
-  composer = "Joseph Bodin de Boismortier (17XX)"
+  composer = "Joseph Bodin de Boismortier (1734)"
   tagline  = ""
 }
 
@@ -39,8 +39,8 @@
     }
     \repeat volta 2 {
       \partial 4.
-      la8.(si16) do'8                                                     % 00
-      \set Score.currentBarNumber = # 8
+      la8.(si16) do'8                                                     % 0
+      \set Score.currentBarNumber = #8
       si8.-+(do'16) re'8 re'8(do'8) si8 la8 re8-. do8-.
       si,8 sol16(la16) fad16(sol16)                                       % 8
       mi8 do8-. si,8-. la,8 fad16(sol16) mi16(fad16)
@@ -51,11 +51,215 @@
       si8.-+ la16 sol8 re'4 re'8                                          % 11
       re'8.(do'16) si8 la8.(si16) sol8 fad8.-+(mi16) re8 sol4 sol8        % 12
       sol8(fad8) mi8 la4 la8 la8(sol8) fad8 re'4 re'8                     % 13
-      re'8.(do'16) si8 la4-+ sol8 sol4 re8
-      mi16(re16 mi16 sol16) fad16(la16)                                   % 14
-      sol16(fad16 sol16 si16) si16(la16 si16 re'16) do'16(si16)
+      re'8.(do'16) si8 la4-+ sol8 sol4 re8\p\<
+      mi16(re16 mi16 sol16) fad16(la16\!)                                 % 14
+      sol16(fad16 sol16 si16) la16(do'16)
+      si16(la16 si16 re'16) do'16(si16)
       la8-+ re8 do8 re'4 re'8                                             % 15
+      re'8. do'16 si8 la4-+ sol8 <<sol4. si4.>>                           % 16
+    }
+  }
+}
 
+\score {
+  \new Staff
+  \with {instrumentName = #"Cello"}
+  {
+    \override Hairpin.to-barline = ##f
+    \tempo "Allemande: Allegro"
+    \time 4/4
+    \key sol \major
+    \clef "bass"
+
+    \repeat volta 2 {
+      \partial 8 re8\f                                                    % 0
+      sol8 si8 re8 fad8-+ sol,8 sol8 r8 re8                               % 1
+      sol8 si16(la16) sol16(fad16) mi16(re16) mi8 sol16(fad16)
+      mi16(re16) do16(si,16)                                              % 2
+      do8 la16 sol16 fad16(mi16) re16(do16) si,16(la,16) sol,4 si8\mf     % 3
+      la8 re'8(re'16) do'16 si16 la16 sol8 do'8(do'16) si16 la16 sol16    % 4
+      fad8 si8(si16) la16 sol16 fad16
+      mi8 la8(la16) sol16 fad16 mi16                                      % 5
+      re8 sol8 fad8-+ sol8 la16(si16) do'4 si8                            % 6
+      la8 sol8 fad8-+ sol8 la8 re4 la8\f                                  % 7
+      si16(la16) si8(si16) re'16 dod'16 si16
+      \acciaccatura re'8 dod'8 \acciaccatura si8 la8 re'8 fad8            % 8
+      sol,8 si8 fad8 mi8-+ re16\mf re'16 mi16 re'16
+      fad16 re'16 fad16 re'16                                             % 9
+      sol16 re'16 fad16 re'16 sol16 re'16 mi16 re'16
+      dod'16 re'16 dod'16\f si16 la16 sol16 fad16 mi16                    % 10
+      fad8 re'8 mi8 dod'8 re'4. \skip8                                    % 11
+    }
+    \repeat volta 2 {
+      \partial 8 re'8\mp
+      si16(do'16 re'16) si16 si16(do'16 re'16) fa!16 fa8-+ mi4 mi'8       % 12
+      dod'16(re'16 mi'16) dod'16 dod'16(re'16 mi'16) sol16
+      sol8-+ fad4 fad'8                                                   % 13
+      red'16(mi'16 fad'16) red'16 red'16(mi'16 fad'16) la16
+      la8-+ sol4 si8(                                                     % 14
+      si8) do'16 si16 la16 sol16 fad16 mi16 red4.-+ mi8                   % 15
+      fad16(sol16 la16) fad16 si,16 la16 sol16 fad16
+      sol16(la16 si16) sol16 si,16 si16 la16 sol16                        % 16
+      la16(si16 do'16) la16 si,16 do'16 si16 la16 si8 mi'4 re'8(          % 17
+      re'8) do'4 si4 la4 sol8                                             % 18
+      fad8-+ mi8 si,8 red8 mi8 si8 mi'4(                                  % 19
+      mi'8) re'16(dod'16) re'8 dod'16(si16) dod'8 si16(lad16)
+      si16(dod'16) re'8                                                   % 20
+      mi8 dod'8 fad8 lad8 si8 si,4 si16(do'!32 re'32)                     % 21
+      do'8 si8 la8-+ sold8 la8 la,4 la16(si32 do'32)                      % 22
+      si8 la8 sol8-+ fad8 sol8 sol,4 sol16(la32 si32)                     % 23
+      la8 sol8 fad8-+ mi8 fad8 re8( re16) fa!16 mi16 re16                 % 24
+      mi16\p(do'16) do'16(mi16) mi16 sol16 fad?16 mi16
+      fad16\<(re'16) re'16(fad16) fad16 la16 sol16 fad16                  % 25
+      sol16(mi'16) mi'16(sol16) sol16 si16 la16 sol16
+      la16(fad'16) fad'16(la16) la16 do'16 si16 la16\!                    % 26
+      si16\f(sol'16) sol'16(si16) si16 re'16 do'16 si16
+      mi'8 fad8 sol8 do'8                                                 % 27
+      si16-+(la16) sol8 re8 fad8
+      sol,16\mf sol16 la,16 sol16 si,16 sol16 sol,16 sol16                % 28
+      do16\< sol16 si,16 sol16 do16 sol16 la,16 sol16\!
+      fad16\f sol16 fad16 mi16 re16 do16 si,16 la,16                      % 29
+      si,8 sol8 la,8 fad8 <<sol,4. sol4.>>                                % 30
+
+    }
+  }
+}
+
+\pageBreak
+
+\score {
+  \new Staff
+  \with {instrumentName = #"Cello"}
+  {
+    \override Hairpin.to-barline = ##f
+    \tempo "Largo"
+    \time 4/4
+    \key sol \major
+    \clef "bass"
+
+    \repeat volta 2 {
+      \partial 2 sol4_\markup{\bold\italic "pp-p"}( fad8-+ mi8)            % 0
+      re4( sol4) fad8( sol8 la8 fad8)                                      % 1
+      sol4( re4) sol4( fad8-+ mi8)                                         % 2
+      re4( sol4) fad8( sol8) la8( fad8)                                    % 3
+      sol2                                                                 % 4
+    }
+    \repeat volta 2 {
+      \partial 2 si8\mf( la8 si8 do'8)                                     % 0
+      si4-+( la4) si8( la8 si8 do'8)                                       % 5
+      si2-+ re'8( si8 do'8 la8)                                            % 6
+      \tuplet 3/4 {si8( do'8 re'8)} \tuplet 3/4 {do'8( si8 la8)}
+      \tuplet 3/4 {si8( do'8 re'8)} \tuplet 3/4 {do'8( re'8 si8)}          % 7
+      la2-+ sol4\mp( fad8-+ mi8)                                           % 8
+      re4( sol4) fad8( sol8 la8 fad8)                                      % 9
+      sol4( re4) sol4( fad8-+ mi8)                                         % 10
+      re4( sol4) fad8( sol8 la8 fad8)                                      % 11
+      sol2 sol'8\mf( fad'8) sol'8( re'8)                                   % 12
+      mi'4 re'4 mi'8( re'8) do'8( mi'8)                                    % 13
+      re'4 \acciaccatura do'8 si4 re'4 do'8( si8)                          % 14
+      la4 re'4 fad4.-+ sol8                                                % 15
+      la4 re4 fad8\p( sol8 la8) re8                                        % 16
+      sol8(\< la8 si8) re8 la8(si8 do'8) re8                               % 17
+      si8( do'8 re'8) re8\! do'8.\mf( re'16) re'8.-+( do'32 re'32)         % 18
+      mi'4. re'8 do'8( si8) la8-+( sol8)                                   % 19
+      re'2 sol4\mf fad8-+( mi8)                                            % 20
+      re4( sol4) fad8( sol8 la8 fad8)                                      % 21
+      sol4( re4) sol4 fad8-+(mi8)                                          % 22
+      re4 sol4 fad8( sol8 la8 fad8)                                        % 23
+      sol2 si8\mp re'8 la8 re'8                                            % 24
+      si8 re'8 sol8 si8 do8 mi'8 re'8 do'8                                 % 25
+      si8 re8 sol,8 si8 la8 re'8 sol8 re'8                                 % 26
+      fad8 re'8 re8 fad8 sol,8 si8 mi8 la8                                 % 27
+      fad8 la,8 re,8 la8 do'8\p la8 re8 do'8                               % 28
+      do'8( si8) sol,8 si8\mp re'8 si8 mi8 re'8                            % 29
+      re'8( dod'8) la,8\< dod'8
+      re'16( dod'16 re'16 si16) mi'16( re'16 mi'16 dod'16)                 % 30
+      fad'16( mi'16 fad'16 re'16) sol'16( fad'16 sol'16 mi'16)\!
+      fad'8\f re'8 la8 dod'8                                               % 31
+      re'8( do'!16 si16 la32 sol32 fad32 mi32 re32 do32 si,32 la,32)
+      sol4\p( fad8-+ mi8)                                                  % 32
+      re8( sol8 re8 sol8) fad8( sol8 la8 fad8)                             % 33
+      sol4( re4) sol4\pp( fad8-+ mi8)                                      % 34
+      re8( sol8 re8) sol8
+      fad16(_\markup{\small\italic "morendo"} sol16 fad16) sol16
+      la16( sol16 la16) fad16                                              % 35
+      sol2                                                                 % 36
+    }
+  }
+}
+
+\pageBreak
+
+\score {
+  \new Staff
+  \with {instrumentName = #"Cello"}
+  {
+    \override Hairpin.to-barline = ##f
+    \tempo "Giga"
+    \time 6/8
+    \key sol \major
+    \clef "bass"
+
+    \repeat volta 2 {
+      \partial 8 re8_\markup{\bold\italic "f-p"}                           % 0
+      sol4^\markup{\small\italic "staccato"} re8 sol,4 si8                 % 1
+      la4 re8 fad,4 do'8                                                   % 2
+      si8 do'8 re'8 sol8 la8 si8                                           % 3
+      la4.-+ re4 re'8                                                      % 4
+      re'8 do'8 si8 do'8 re8 do'8                                          % 5
+      do'8 si8 la8 si8 re8 si8                                             % 6
+      si8 do'8 si8 la8 si8 sol8                                            % 7
+      fad4.-+( fad4) re8                                                   % 8
+      sol8 re8 sol8 si8 sol8 si8                                           % 9
+      la8 re8 la8 do'8 la8 do'8                                            % 10
+      si8 sol8 si8 re'8 si8 re'8                                           % 11
+      dod'4.-+( dod'4) la8                                                 % 12
+      re'8 la8 re'8 fad'8 re'8 fad'8                                       % 13
+      mi'8 la8 mi'8 sol'8 mi'8 sol'8                                       % 14
+      fad'8 mi'8 re'8 mi8 re'8 dod'8                                       % 15
+      re4 re'8 la,4 dod'8                                                  % 16
+      si,4 si8 fad,4 la8                                                   % 17
+      sol,4 sol8 re,4 fad8                                                 % 18
+      mi,4 sol8 la,4 sol8                                                  % 19
+      fad8 mi8 re8 la8 sol8 fad8                                           % 20
+      sol,8 mi8 re8 la,8 re8 dod8                                          % 21
+      re8 re'8 do'!8 si8 la8 sol8                                          % 22
+      fad8 mi8 re8 fad,8 sol,8 la,8                                        % 23
+      re,4.( re,4)                                                         % 24
+    }
+    \repeat volta 2 {
+      \partial 4 la4\mf                                                    % 0
+      \set Score.currentBarNumber = #25
+     re'4 la8 re4 do'8                                                     % 25
+      do'4.-+ si4 si8                                                      % 26
+      mi'4 si8 mi4 re'8                                                    % 27
+      re'4.-+ do'4 mi'8                                                    % 28
+      fa!8 re'8 do'8 si8 do'8 la8                                          % 29
+      mi8 sold8 si8 re8 si8 re8                                            % 30
+      do8 mi8 la8 si,8 la8 sold8                                           % 31
+      la8 do'8 mi'8 la8 do'8 la8                                           % 32
+      fad8 la8 re'8 sol8 si8 sol8                                          % 33
+      mi8 sol8 do'8 fad8 la8 fad8                                          % 34
+      red8 si,8 mi8 la,8 mi8 red8                                          % 35
+      mi8 sol8 si8 mi8 sol8 mi8                                            % 36
+      re8 fad8 la8 do8 la8 do8\p                                           % 37
+      si,8 re8 si,8 sol,8 re8 fa8                                          % 38
+      mi8\< sol8 mi8 la,8 mi8 sol8                                         % 39
+      fad8 la8 re'8 re8 re'8 re8                                           % 40
+      mi8 do'8 mi8 fad8 mi8 re8                                            % 41
+      sol4.\! la16\f( si16 do'8) la8                                       % 42
+      si8 re8 sol,8 la16\p( si16 do'8) la8                                 % 43
+      si8 re8 sol,8 la16\f( si16 do'8) la8                                 % 44
+      si8 la8 sol8 re8 sol8 fad8                                           % 45
+      sol,4 sol'8 re4 fad'8                                                % 46
+      mi4 mi'8 si,4 re'8                                                   % 47
+      do4 do'8 sol,4 si8                                                   % 48
+      la,4 do'8 re4 do'8                                                   % 49
+      si8 la8 sol8 re'8 do'8 si8                                           % 50
+      mi8 la8 sol8 re8 sol8 fad8                                           % 51
+      sol8 sol'8 fa'8 mi'8 re'8 do'8                                       % 52
+      si8 la8 sol8 si,8 do8 re8                                            % 53
+      sol,4.( sol,4)                                                       % 54
     }
   }
 }
