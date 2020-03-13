@@ -41,10 +41,10 @@
       \partial 4.
       la8.(si16) do'8                                                     % 0
       \set Score.currentBarNumber = #8
-      si8.-+(do'16) re'8 re'8(do'8) si8 la8 re8-. do8-.
+      si8.-+(do'16) re'8 re'8(do'8) si8 la8 re8-! do8-!
       si,8 sol16(la16) fad16(sol16)                                       % 8
-      mi8 do8-. si,8-. la,8 fad16(sol16) mi16(fad16)
-      red8 si,8-. la,8-. mi4 mi8                                          % 9
+      mi8 do8-! si,8-! la,8 fad16(sol16) mi16(fad16)
+      red8 si,8-! la,8-! mi4 mi8                                          % 9
       mi8.(fad16) sol8 fad4-+ mi8 mi4. \breathe
       mi'8.(fad'16) sol'8                                                 % 10
       re'4 la8 la16(si16 la16 si16) do'16(la16)

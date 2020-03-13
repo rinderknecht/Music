@@ -1,4 +1,4 @@
-#(set-global-staff-size 20)
+#(set-global-staff-size 21)
 
 \version "2.18.2"
 
@@ -13,7 +13,7 @@
 % iPad Pro 12.9
 
 \paper {
-  paper-width  = 195\mm
+  paper-width  = 210\mm
   paper-height = 260\mm
 }
 
@@ -70,7 +70,7 @@ retenir = \markup {
     si8(la8 <fad-1>8 sold8)                                               % 16
     la4.\open\<(si8-1)                                                    % 17
     re'4.(do'8)\!                                                         % 18
-    <mi'-4>4.\>(mi8-1)                                                    % 19
+    <mi'-4>4.\>(<mi-1>8)                                                  % 19
     sol4.(fad8)\!                                                         % 20
     \mark \default
     sol4\p^\allongerUne re8^\retenir\<(sol8                               % 21
@@ -79,7 +79,7 @@ retenir = \markup {
     si4.(la8)\!                                                           % 24
     sol4\p^\allongerUne\> sol,8^\retenir(do8                              % 25
     mi8 sol8 do'8 <mi'-1>8)\!                                             % 26
-    si4.-3\pp(sol8-4)                                                     % 27
+    si4.^\markup{\bold\teeny (3)}\pp(sol8-4)                              % 27
     mi4.(re8)                                                             % 28
     sol4 <si-3>4\mf->\<                                                   % 29
     \clef "tenor"
@@ -99,9 +99,9 @@ retenir = \markup {
     mi'8(<re'-4>8 dod'8 si8)                                              % 40
     <mi'-3>4.(re'8)                                                       % 41
     dod'8-3(si8 la8\open sold8-3)                                         % 42
-    fad8-1\<(mi' re'8 dod'8)\!                                            % 43
-    si8\>(la8 <fad-1>8 sold8)\!                                           % 44
-    la4^\markup{\bold\teeny (4)}\< dod'4->                                % 45
+    fad8^\markup{\bold\teeny (1)}\<(mi' re'8 dod'8)\!                     % 43
+    si8-3\>(la8 <fad-1>8 sold8)\!                                         % 44
+    la4\open\< dod'4-3->                                                  % 45
     mi'4-> <la'-3>4\flageolet                                             % 46
     la'2\!\f                                                              % 47
     <sol'-4>8(fad'8 mi'8 re'8-2)                                          % 48
@@ -118,17 +118,17 @@ retenir = \markup {
     \tempo "Tempo I"
     si4.\p(re'8)                                                          % 59
     <mi'-1>8(sol'8 fad'8 <mi'-3>8)                                        % 60
-    re'4.(si8-4)                                                          % 61
-    la8-2(sol8 <mi-1>8 fad8)                                              % 62
+    re'4.^\markup{\bold\teeny (1)}(si8\4)                                 % 61
+    la8\2(sol8 <mi-1>8 fad8)                                              % 62
     sol4.-2\<(la8)                                                        % 63
     fad4.-3(mi8)\!                                                        % 64
     do'4.\>(re'8)                                                         % 65
     si4.(la8)\!                                                           % 66
     do'4.(<mi'-1>8)                                                       % 67
     fa'8(<la'-3>8\flageolet sol'8 fa'8)                                   % 68
-    mi'4.(<do'-4>8)                                                       % 69
+    mi'4.(do'8^\markup{\bold\teeny (4)})                                  % 69
     si8(la8 <fad-1>8 sold8)                                               % 70
-    la4.\open\<(si8)                                                      % 71
+    la4.\open\<(si8-1)                                                    % 71
     re'4.(do'8)\!                                                         % 72
     <mi'-4>4.\>(<mi-1>8)                                                  % 73
     sol4.(fad8)\!                                                         % 74
@@ -138,7 +138,7 @@ retenir = \markup {
     si4.(la8)\!                                                           % 78
     sol4\p^\allongerUne\> sol,8^\retenir(do8                              % 79
     mi8 sol8 do'8 <mi'-1>8)\!                                             % 80
-    si4.-3\pp(sol8-4)                                                     % 81
+    si4^\markup{\bold\teeny (3)}\pp(sol8-4)                               % 81
     mi4.(re8)                                                             % 82
     sol2(                                                                 % 83
     sol2)\<                                                               % 84
