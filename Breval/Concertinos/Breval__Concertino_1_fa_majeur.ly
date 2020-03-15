@@ -62,7 +62,7 @@
       fa'8(mi'8 <re'-4>8 do'8) si!8(la8 sol8 fa8)                         % 23
       \mark \default
       \tuplet 3/2 {mi8\f\downbow( sol8 si!8)}
-      \tuplet 3/2 {do'8 sol8 mi8}
+      \tuplet 3/2 {do'8^\markup{\small\italic "legato"} sol8 mi8}
       \tuplet 3/2 {fa8( si8 do'8)} \tuplet 3/2 {re'8 si8 fa8}             % 24
       \tuplet 3/2 {mi8\mf(sol8 si!8)} \tuplet 3/2 {do'8 sol8 mi8}
       \tuplet 3/2 {fa8(si8 do'8)} \tuplet 3/2 {re'8 si8 fa8}              % 25

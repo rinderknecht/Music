@@ -100,8 +100,8 @@ retenir = \markup {
     <mi'-3>4.(re'8)                                                       % 41
     dod'8-3(si8 la8\open sold8-3)                                         % 42
     fad8^\markup{\bold\teeny (1)}\<(mi' re'8 dod'8)\!                     % 43
-    si8-3\>(la8 <fad-1>8 sold8)\!                                         % 44
-    la4^\markup{\bold\teeny (4)}\< dod'4^\markup{\bold\teeny (1)}->       % 45
+    si8-1\>(la8 fad8 sold8\4)\!                                           % 44
+    la4\open\< dod'4->                                                    % 45
     mi'4-1-> <la'-3>4\flageolet                                           % 46
     la'2\!\f                                                              % 47
     <sol'-4>8(fad'8 mi'8 re'8-2)                                          % 48
@@ -116,6 +116,7 @@ retenir = \markup {
     mi4.\>^\markup{\small\italic "poco rit."}(sol8)                       % 57
     fad4.(re8)\!                                                          % 58
     \tempo "Tempo I"
+    \mark \default
     si4.\p(re'8)                                                          % 59
     <mi'-1>8(sol'8 fad'8 <mi'-3>8)                                        % 60
     re'4.^\markup{\bold\teeny (1)}(si8\4)                                 % 61
