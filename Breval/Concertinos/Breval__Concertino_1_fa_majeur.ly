@@ -49,7 +49,7 @@
       sol'2 fa'8(mi'8 <re'-2>8 dod'8)                                     % 12
       \tuplet 3/2 {re'8( dod'8 mi'8} \tuplet 3/2 {re'8 dod'8 mi'8)}
       \tuplet 3/2 {re'8( dod'8 mi'8} \tuplet 3/2 {re'8 dod'8 mi'8)}       % 13
-      \tuplet 3/2 {re'8( la8 si!8} \tuplet 3/2 {dod'8-3 re'8 mi'8-1)}
+      \tuplet 3/2 {re'8( la8 si!8-1} \tuplet 3/2 {dod'8 re'8 mi'8-1)}
       \tuplet 3/2 {fa'8( mi'8 sol'8} \tuplet 3/2 {fa'8 mi'8 re'8-4)}      % 14
       do'!2(si!4) \breathe sol4\f                                         % 15
       do'2 re'2                                                           % 16
@@ -92,8 +92,8 @@
       sol,2\f\open \afterGrace re'2\trill(_\markup{\bold\teeny (1)}
       {<do'-1>16 re'16)}                                                  % 32
       do'4 \breathe mi'2-4 re'8-4-- do'8--                                % 33
-      si!4-3 fa'2-2 mi'8-- re'8-4--                                       % 34
-      do'4 do'4 re'8. re'16 si!8. si16                                    % 35
+      si!4-1 fa'2-2 mi'8-- re'8-4--                                       % 34
+      do'4 do'4 re'8.( re'16) si!8.( si16)                                % 35
       do'4 <<do,4\ff sol,4 mi4 do'4\downbow>>
       <<do,4 sol,4 mi4 do'4\downbow>>                                     % 36
     }
