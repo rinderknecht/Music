@@ -13,8 +13,11 @@
 % iPad Pro 12.9
 
 \paper {
-  paper-width  = 210\mm
+  paper-width  = 195\mm
   paper-height = 260\mm
+  indent = #0
+%  line-width = #188
+  ragged-last = ##t
 }
 
 allongerUne = \markup {
@@ -35,16 +38,9 @@ retenir = \markup {
   }
 }
 
-% \layout {
-%   \context {
-%     \Staff
-%     \override VerticalAxisGroup.staff-staff-spacing = #30
-%   }
-% }
-
 \score {
   \new Staff
-  \with {instrumentName = #"Cello "}
+%  \with {instrumentName = #"Cello "}
   {
     \override Hairpin.to-barline = ##f
     \tempo "Allegretto con moto"

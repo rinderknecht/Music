@@ -1,3 +1,9 @@
+\layout {
+  indent = #0
+  line-width = #188
+  ragged-last = ##t
+}
+
 extup = \markup {
   \center-column {
     \arrow-head #Y #UP ##t
