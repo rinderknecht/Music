@@ -17,6 +17,14 @@
   paper-height = 260\mm
 }
 
+allongerUne = \markup {
+  \center-column {
+    \combine
+    \draw-line #'(-2 . 0)
+    \arrow-head #X #RIGHT ##f
+  }
+}
+
 \score {
   \new Staff
   \with {instrumentName = #"Cello "}
@@ -70,18 +78,20 @@
       \tuplet 3/2 {mi8 fa8 sol8}
       \tuplet 3/2 {la8 mi8 fa8}
       \tuplet 3/2 {sol8 la8 si!8}                                         % 26
-      \tuplet 3/2 {do'8\f sol8( do'8}
+      \tuplet 3/2 {do'8^\allongerUne\f sol8( do'8}
       \tuplet 3/2 {mi'8-4) re'8^\markup{\bold\teeny (2)} do'8\1}
-      \tuplet 3/2 {re'8 sol8-1( re'8^\markup{\bold\teeny (1)}}
+      \tuplet 3/2 {re'8^\allongerUne sol8-1( re'8^\markup{\bold\teeny (1)}}
       \tuplet 3/2 {fa'8)^\markup{\bold\teeny (4)}
                    mi'8^\markup{\bold\teeny (3)} re'8}                    % 27
-      \tuplet 3/2 {do'8-4_\markup{\teeny II} mi'8( fa'8}
+      \tuplet 3/2 {do'8-4^\allongerUne_\markup{\teeny II} mi'8( fa'8}
       \tuplet 3/2 {sol'8) mi'8 do'8}
-      \tuplet 3/2 {sol,8\open si!8 ( fa'8} \tuplet 3/2 {sol'8) fa'8 si8}  % 28
-      \tuplet 3/2 {do'8\mf^\markup{\bold\teeny (4)} mi'8( fa'8}
+      \tuplet 3/2 {sol,8\open^\allongerUne si!8 ( fa'8}
+      \tuplet 3/2 {sol'8) fa'8 si8}                                       % 28
+      \tuplet 3/2 {do'8\mf^\allongerUne mi'8( fa'8}
       \tuplet 3/2 {sol'8) mi'8 do'8}
-      \tuplet 3/2 {sol,8\open si!8 ( fa'8} \tuplet 3/2 {sol'8) fa'8 si8}  % 29
-      \tuplet 3/2 {do'8^\markup{\bold\teeny (4)} mi'8( fa'8}
+      \tuplet 3/2 {sol,8\open^\allongerUne si!8 ( fa'8}
+      \tuplet 3/2 {sol'8) fa'8 si8}                                       % 29
+      \tuplet 3/2 {do'8^\allongerUne mi'8( fa'8}
       \tuplet 3/2 {sol'8) mi'8( fa'8}
       \tuplet 3/2 {sol'8) mi'8( fa'8}
       \tuplet 3/2 {sol'8) mi'8( fa'8}                                     % 30
@@ -93,7 +103,7 @@
       {<do'-1>16 re'16)}                                                  % 32
       do'4 \breathe mi'2-4 re'8-4-- do'8--                                % 33
       si!4-1 fa'2-2 mi'8-- re'8-4--                                       % 34
-      do'4 do'4 re'8.( re'16) si!8.( si16)                                % 35
+      do'4 do'4 re'8. re'16 si!8. si16                                    % 35
       do'4 <<do,4\ff sol,4 mi4 do'4\downbow>>
       <<do,4 sol,4 mi4 do'4\downbow>>                                     % 36
     }

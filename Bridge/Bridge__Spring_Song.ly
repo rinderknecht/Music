@@ -93,12 +93,12 @@ retenir = \markup {
     si4 re'4                                                              % 38
     <fad'-3>2\p\!                                                         % 39
     mi'8(<re'-4>8 dod'8 si8)                                              % 40
-    <mi'-3>4.(re'8)                                                       % 41
-    dod'8-3(si8 la8\open sold8-3)                                         % 42
-    fad8^\markup{\bold\teeny (1)}\<(mi' re'8 dod'8)\!                     % 43
-    si8-1\>(la8 fad8 sold8\4)\!                                           % 44
-    la4\open\< dod'4->                                                    % 45
-    mi'4-1-> <la'-3>4\flageolet                                           % 46
+    <mi'-4>4.(re'8)                                                       % 41
+    dod'8(<si-4>8 la8 sold8^\markup{\bold\teeny (1)})                     % 42
+    <fad-1>8\<(mi' re'8 dod'8)\!                                          % 43
+    si8-4\>(la8 <fad-1>8 sold8)\!                                         % 44
+    la4^\markup{\bold\teeny (4)}\< dod'4->^\markup{\bold\teeny (1)}       % 45
+    mi'4^\markup{\bold\teeny (4)}-> <la'-3>4\flageolet                    % 46
     la'2\!\f                                                              % 47
     <sol'-4>8(fad'8 mi'8 re'8-2)                                          % 48
     do'4.\1(mi'8)                                                         % 49
@@ -146,7 +146,7 @@ retenir = \markup {
     <sol'-1>2\>(                                                          % 87
     sol'2)\!                                                              % 88
     <si'-3>4.\p(<sol'-1>8)                                                % 89
-    mi'4.-3_\markup{\small III}(re'8)                                     % 90
+    mi'4.-3_\markup{\small II}(re'8)                                      % 90
     mi4.-1(re8)                                                           % 91
     <mi'-3>4.\fermata\>(re'8)\!                                           % 92
     re'2(                                                                 % 93
