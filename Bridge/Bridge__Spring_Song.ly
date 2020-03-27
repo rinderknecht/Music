@@ -86,8 +86,8 @@ retenir = \markup {
     fad'8(mi'8 <re'-4>8 dod'8)                                            % 34
     si8\<(<la'-3>8\flageolet <sol'-4>8 fad'8)                             % 35
     mi'8\>(<re'-4>8 dod'8 re'8)\!                                         % 36
-    si4
     \mark \default
+    si4
     \clef "bass"
     fad4->\>                                                              % 37
     si4 re'4                                                              % 38

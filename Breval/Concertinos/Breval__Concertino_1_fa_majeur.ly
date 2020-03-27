@@ -78,8 +78,8 @@ allongerUne = \markup {
       \tuplet 3/2 {mi8 fa8 sol8}
       \tuplet 3/2 {la8 mi8 fa8}
       \tuplet 3/2 {sol8 la8 si!8}                                         % 26
-      \tuplet 3/2 {do'8^\allongerUne\f sol8( do'8}
-      \tuplet 3/2 {mi'8-4) re'8^\markup{\bold\teeny (2)} do'8\1}
+      \tuplet 3/2 {do'8-1^\allongerUne\f sol8\2( do'8}
+      \tuplet 3/2 {mi'8\4) re'8\2 do'8}
       \tuplet 3/2 {re'8^\allongerUne sol8-1( re'8^\markup{\bold\teeny (1)}}
       \tuplet 3/2 {fa'8)^\markup{\bold\teeny (4)}
                    mi'8^\markup{\bold\teeny (3)} re'8}                    % 27
