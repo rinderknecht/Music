@@ -15,12 +15,21 @@
 \paper {
   paper-width  = 195\mm
   paper-height = 260\mm
+  indent = #0
 }
 
-allonger = \markup {
+allongerUne = \markup {
   \center-column {
     \combine
-    \draw-line #'(-4 . 0)
+    \draw-line #'(-2 . 0)
+    \arrow-head #X #RIGHT ##f
+  }
+}
+
+allongerQuatre = \markup {
+  \center-column {
+    \combine
+    \draw-line #'(-9 . 0)
     \arrow-head #X #RIGHT ##f
   }
 }
@@ -29,6 +38,14 @@ allongerTrois = \markup {
   \center-column {
     \combine
     \draw-line #'(-6 . 0)
+    \arrow-head #X #RIGHT ##f
+  }
+}
+
+allongerDeux = \markup {
+  \center-column {
+    \combine
+    \draw-line #'(-4 . 0)
     \arrow-head #X #RIGHT ##f
   }
 }
@@ -43,6 +60,16 @@ retenir = \markup {
   }
 }
 
+retenirDeux = \markup {
+  \center-column {
+    \concat {
+      \arrow-head #X #LEFT ##f
+      \hspace #-1
+      \draw-line #'(-5 . 0)
+    }
+  }
+}
+
 retenirTrois = \markup {
   \center-column {
     \concat {
@@ -53,15 +80,27 @@ retenirTrois = \markup {
   }
 }
 
+retenirQuatre = \markup {
+  \center-column {
+    \concat {
+      \arrow-head #X #LEFT ##f
+      \hspace #-1
+      \draw-line #'(-8 . 0)
+    }
+  }
+}
 \score {
     \new Staff
-    \with {instrumentName = #"Cello I"}
+%    \with {instrumentName = #"Cello I"}
     {
       \override Hairpin.to-barline = ##f
       \tempo Allegro
       \time 4/4
       \key do \major
-      \clef bass
+      \clef "bass"
+
+      \set fingeringOrientations = #'(left)
+
       << sol,2\f mi2 do'2\downbow >>
       << sol,2 re2 si2\downbow >>                         % 1'
       << do,2. sol,2. mi2. do'2.\downbow >>               % 2'
@@ -75,7 +114,7 @@ retenirTrois = \markup {
         sol4\(fa4\turn mi4\) r4                           % 5
         do'4.\mf\downbow\(re'8\> si8\) sol8\(la8 si8\!\)  % 6
         do'4.\p\(re'8 si8\) sol8\(la8 si8\)               % 7
-        do'8\downbow^\allonger\<\(si8\)
+        do'8\downbow^\allongerUne\<\(si8\)
         la8\upbow sol8\downbow
         sol16\upbow\(fa8.\) fa16\upbow\(mi8.\)\!          % 8
         mi2\>\(re4\)\! r4                                 % 9
@@ -84,15 +123,15 @@ retenirTrois = \markup {
         sol2.-> la8\(si8\)                                % 11
         re'8\(do'8\) si\(la8\) sol8\(fad8\) mi8\(fad8\)   % 12
         sol4.\(fad16 mi16 re4\) re'4                      % 13
-        si4 si4 re'8^\allonger\<\(do'8\)
+        si4 si4 re'8^\allongerUne\<\(do'8\)
         si8\tenuto^\retenir do'8\tenuto                   % 14
         re'2.\!\> do'8 si8\!                              % 15
-        la4 la4 do'8^\allonger\(si8\)
+        la4 la4 do'8^\allongerUne\(si8\)
         la8\tenuto^\retenir si8\tenuto                    % 16
         do'2.\> la4\!\downbow\f\(                         % 17
         si4\) do'4\turn\(re'4\) la4\p\(                   % 18
         si4\) do'4\turn\(re'4\) la4\(                     % 19
-        si4\) do'4\< re'4 mi'4-1\!                        % 20
+        si4\) do'4\< re'4 <mi'-1>4\!                      % 20
         << {\stemDown si2->\(la4\)}\\
            {re2\>\(re4\)\!} >>
         r4                                                % 21
@@ -120,6 +159,7 @@ retenirTrois = \markup {
         re,8-. fad8-.                                     % 28
         sol,8-.\p\upbow si8-. si,8-. re'8-. la,8-. do'8-.
         re,8-. fad8\downbow\(                             % 29
+        \bar "||"
         \mark \default
         \stemDown
         \tuplet 3/2 {sol8\) sol,8\upbow\< la,8}
@@ -155,56 +195,60 @@ retenirTrois = \markup {
       si8(la8) do'8(la8) sol8(fad8) mi8(fad8)             % 41
       sol4.\>(fad16 mi16 re4) re'4\p\upbow\!              % 42
       si4_\markup{\small\italic "allonger, touche"}
-      si4 re'8^\allonger(do'8)
+      si4 re'8^\allongerUne(do'8)
       si8\tenuto^\retenir do'8\tenuto                     % 43
       re'2. do'8\downbow si8                              % 44
-      la4 la4 do'8^\allonger(si8)
+      la4 la4 do'8^\allongerUne(si8)
       la8\tenuto^\retenir si8\tenuto                      % 45
       do'2.\upbow(do'4\tenuto)                            % 46
-      do'8^\allonger\downbow(si8) si2(do'4)               % 47
+      do'8^\allongerUne\downbow(si8) si2(do'4)               % 47
       \appoggiatura re'8 do'8(si8) si2(do'4)              % 48
       do'16\<\downbow(si8.) si16\upbow(do'8.)
       do'16\downbow(si8.) si16\upbow(la8.)                % 49
-      la8-2(sold8-1) si8-4(sold8)\!
-      mi4-4^\markup{\teeny III}
-      mi4-1^\markup{\teeny II}\upbow\mf                   % 50
+      la8-2(sold8) si8(sold8)\!
+      mi4^\markup{\teeny III}^\markup{\bold\teeny (4)}
+      mi4-1\upbow\mf                                      % 50
       la4\downbow la4
-      do'8\downbow^\allonger(si8)
+      do'8\downbow^\allongerUne(si8)
       la8\tenuto^\retenir si8\tenuto                      % 51
       do'4.(si8) la4 mi4                                  % 52
-      si4 si4 re'8^\allonger(do'8)
+      si4 si4 re'8^\allongerUne(do'8)
       si8\tenuto^\retenir do'8\tenuto                     % 53
       re'4.\>(do'8) si4\! mi4\upbow\p                     % 54
+
       \mark \default
       la8\open(do'8 si8 la8)
-      sold8-4\upbow(mi8 fad8-2 sold8)                     % 55
-      la8\downbow\open(do'8 si8 la8)
-      sold8-4\upbow (mi8 fad8-2 sold8)                    % 56
-      la8\< si8 do'8 re'8-1 mi'8-3^\allonger\!
-      r8 fa'4-4^\retenir\>(                               % 57
-      re'8-1)\! r8 mi'4-3\>(do'8-2)\! r8 re'4\>(          % 58
+      sold8-4\upbow(mi8^\markup{\bold\teeny x1}
+      fad8^\markup{\bold\teeny (2)} sold8)                % 55
+      la8\downbow\open(do'8-2 si8 la8)
+      sold8-4\upbow(mi8^\markup{\bold\teeny x1}
+      fad8^\markup{\bold\teeny (2)} sold8)                % 56
+      la8\< si8 do'8 re'8-1 mi'8^\allongerUne\!
+      r8 fa'4^\retenirTrois\>(                            % 57
+      re'8)\! r8 mi'4^\markup{\bold\teeny (3)}\>(
+      do'8-2)\! r8 re'4\>(                                % 58
       si8)\! r8 mi2->\< fad8(sold8)\!                     % 59
       la8 si8 do'8 re'8-2 mi'4\! mi'4\f                   % 60
       mi'8->(re'8 dod'8 re'8)
       re'4\upbow\tenuto(re'4\upbow\tenuto)                % 61
-      re'8->(do'8 si8 do'8) do'4\tenuto(do'4\tenuto)      % 62
-      \appoggiatura re'8 do'8^\allonger->(si8)
-      si2->^\retenir\>(la4)\!                             % 63
+      <re'-4>8->(do'8 si8 do'8) do'4\tenuto(do'4\tenuto)  % 62
+      \appoggiatura re'8 do'8^\allongerDeux->(si8)
+      si2->^\retenirTrois\>(la4)\!                        % 63
       sol8\mf-. fad8-._\markup{\small\italic "sec"}
       sol8-. la8-. si8-. la8-. si8-. do'8-.               % 64
       re'8-. do'8-. si8-. do'8-. si8-. la8-.
-      sol8-. fa8-2-.                                      % 65
+      sol8-. fa!8-.                                       % 65
       mi8^\markup{\small\italic "allonger, rit."}
       do8\<re8 mi8 fa8 sol8 la8 si8\!                     % 66
       \mark\default
       do'2\f->^\markup{\small\italic "a tempo"} re'2->    % 67
       do'2->(si4) do'4                                    % 68
-      la4.(si8) re'8^\allonger(do'8)
+      la4.(si8) re'8^\allongerDeux(do'8)
       si8\tenuto^\retenir la8\tenuto                      % 69
       sol4\>(fa\turn mi4)\! r4                            % 70
       do'4.\mf\downbow(re'8 si8) sol8\>(la8 si8)\!        % 71
       do'4.\p(re'8 si8) sol8(la 8 si8)                    % 72
-      do'8\downbow^\allonger\<\(si8\)
+      do'8\downbow^\allongerUne\<\(si8\)
       la8\upbow sol8\downbow
       sol16\upbow\(fa8.\) fa16\upbow\(mi8.\)\!            % 73
       mi2\>\(re4\)\! r4                                   % 74
@@ -217,10 +261,10 @@ retenirTrois = \markup {
       sol4 la8(si8)                                       % 79
       do'8\f do'8 do'2 re'8(do'8)                         % 80
       do'8\>(si8 re'8) do'8 si8 la8 sol8 fa8\!            % 81
-      mi4 mi4 sol8^\allonger(fa8)
+      mi4 mi4 sol8^\allongerUne(fa8)
       mi8\tenuto^\retenir fa8\tenuto                      % 82
       sol2. fa8 mi8                                       % 83
-      re4 re4 fa8^\allonger(mi8)
+      re4 re4 fa8^\allongerUne(mi8)
       re8\tenuto^\retenir mi8\tenuto                      % 84
       fa2. re4\f\downbow(                                 % 85
       mi4) fa4\turn(sol4) re4\p(                          % 86
@@ -246,9 +290,9 @@ retenirTrois = \markup {
       \tuplet 3/2 {mi8\upbow do8(re8)\<}
       \tuplet 3/2 {mi8 fa8 sol8}
       \tuplet 3/2 {la8 si8 do'8}
-      \tuplet 3/2 {re'8 mi'8 fa'8-2\!}                    % 94
+      \tuplet 3/2 {re'8 mi'8-1 fa'8\!}                    % 94
       sol'4.^\allongerTrois\downbow\f(do'8-.)
-      si8\upbow(do'8) si8\upbow(do'8)                     % 95
+      <si-1>8\upbow(do'8) si8\upbow(do'8)                 % 95
       la4.(re'8) do'4 si4\turn(                           % 96
       do'4)
       \tuplet 3/2 {do8\p\upbow re8 mi8}
