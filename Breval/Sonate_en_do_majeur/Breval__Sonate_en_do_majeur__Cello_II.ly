@@ -13,11 +13,12 @@
 \paper {
   paper-width  = 195\mm
   paper-height = 260\mm
+  indent = #0
 }
 
 \score {
     \new Staff
-    \with {instrumentName = #"Cello II"}
+%    \with {instrumentName = #"Cello II"}
     {
       \override Hairpin.to-barline = ##f
       \time 4/4
