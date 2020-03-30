@@ -102,13 +102,13 @@ retenir = \markup {
     mi'4^\markup{\bold\teeny (4)}-> <la'-3>4\flageolet                    % 46
     la'2\!\f                                                              % 47
     <sol'-4>8(fad'8 mi'8 re'8-2)                                          % 48
-    do'4.\1(mi'8)                                                         % 49
+    do'4.^\markup{\bold\teeny x1}(mi'8)                                   % 49
     re'8-4(do'8 si8 la8)                                                  % 50
     <la'-3>2\flageolet\pp                                                 % 51
     <sol'-4>8(fad'8 mi'8 re'8-2)                                          % 52
-    do'4.\1(mi'8)                                                         % 53
+    do'4.^\markup{\bold\teeny x1}(mi'8)                                   % 53
     re'8-4(do'8 si8 la8)                                                  % 54
-    <do'-1>4.\<(mi'8\4)                                                   % 55
+    <do'-1>4.\<(mi'8^\markup{\bold\teeny x4})                             % 55
     la4.\open(do'8-2)\!                                                   % 56
     mi4.\>^\markup{\small\italic "poco rit."}(sol8)                       % 57
     fad4.(re8)\!                                                          % 58
@@ -116,8 +116,8 @@ retenir = \markup {
     \mark \default
     si4.\p(re'8)                                                          % 59
     <mi'-1>8(sol'8 fad'8 <mi'-3>8)                                        % 60
-    re'4.^\markup{\bold\teeny (1)}(si8\4)                                 % 61
-    la8\2(sol8 <mi-1>8 fad8)                                              % 62
+    re'4.^\markup{\bold\teeny (1)}(si8^\markup{\bold\teeny x4})           % 61
+    la8^\markup{\bold\teeny x2}(sol8 <mi-1>8 fad8)                        % 62
     sol4.-2\<(la8)                                                        % 63
     fad4.-3(mi8)\!                                                        % 64
     do'4.\>(re'8)                                                         % 65
