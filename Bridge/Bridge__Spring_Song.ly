@@ -138,22 +138,22 @@ retenir = \markup {
     si4.^\markup{\bold\teeny (3)}\pp(sol8-4)                              % 81
     mi4.(re8)                                                             % 82
     \mark \default
+    \clef "tenor"
     sol2(                                                                 % 83
     sol2)\<                                                               % 84
     <si-3>2(                                                              % 85
-    <re'-3>2\flageolet)\!                                                 % 86
-    \clef "tenor"
+    <re'-2>2)\!                                                           % 86
     <sol'-1>2\>(                                                          % 87
     sol'2)\!                                                              % 88
     <si'-3>4.\p(<sol'-1>8)                                                % 89
     mi'4.-3_\markup{\small II}(re'8)                                      % 90
     mi4.-1(re8)                                                           % 91
-    <mi'-3>4.\fermata\>(re'8)\!                                           % 92
-    re'2(                                                                 % 93
+    <mi'-3>4.\fermata\downbow\>(re'8)\!                                   % 92
+    re'2\upbow(                                                           % 93
     re'2)(                                                                % 94
     re'2)(                                                                % 95
     re'2)(                                                                % 96
-    re'4) re'4(                                                           % 97
+    re'4) re'4\downbow(                                                   % 97
     sol'2-4\pp)(                                                          % 98
     sol'2)\fermata                                                        % 99
     \bar "|."
