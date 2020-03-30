@@ -54,8 +54,9 @@ retenir = \markup {
     \mark \default
     si4.\p(re'8_\markup{\small\italic "espressivo"})                      % 5
     mi'8-1(sol'8 fad'8 mi'8-3)                                            % 6
-    re'4.^\markup{\bold\teeny (1)}(si8\4)                                 % 7
-    la8\2(sol8^\markup{\bold\teeny (1)} <mi-1>8 fad8)                     % 8
+    re'4.^\markup{\bold\teeny (1)}(si8^\markup{\bold\teeny x4})           % 7
+    la8^\markup{\bold\teeny x2}(sol8^\markup{\bold\teeny (1)}
+    <mi-1>8 fad8)                                                         % 8
     sol4.-2\<(la8)                                                        % 9
     fad4.-3(mi8)\!                                                        % 10
     do'4.\>(re'8)                                                         % 11
