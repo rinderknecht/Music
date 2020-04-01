@@ -83,17 +83,24 @@
    % Ligne 1
 
    \clef "tenor"
+   \key la \major
 
-   \repeat volta 2 {mi'4-1^\markup "Positions 4-5"
-                           fa'4  sol'4 mi'4 | fa'4-1  sol'4\2 la'4\3  fa'4 }
-   \repeat volta 2 {mi'4-1 sol'4 fa'4  mi'4 | fa'4-1  la'4\3  sol'4\2 fa'4 }
-   \repeat volta 2 {fa'4-2 mi'4  sol'4 fa'4 | sol'4\2 fa'4-1  la'4\3  sol'4}
+   \repeat volta 2
+     {mi'4-1^\markup "Positions 4-5"
+      fad'4 sold'4 mi'4 | fad'4-1  sold'4\2 la'4\3  fad'4 }
+   \repeat volta 2
+     {mi'4-1 sold'4 fad'4  mi'4 | fad'4-1  la'4\3  sold'4\2 fad'4 }
+   \repeat volta 2
+     {fad'4-2 mi'4\1  sold'4 fad'4 | sold'4\2 fad'4-1  la'4\3  sold'4}
 
    % Ligne 2
 
-   \repeat volta 2 {fa'4-2  sol'4 mi'4 fa'4  | sol'4\2 la'4\3  fa'4-1  sol'4}
-   \repeat volta 2 {sol'4-4 fa'4  mi'4 sol'4 | la'4\3  sol'4\2 fa'4-1  la'4}
-   \repeat volta 2 {sol'4-4 mi'4  fa'4 sol'4 | la'4\3  fa'4-1  sol'4\2 la'4}
+   \repeat volta 2
+     {fad'4-2  sold'4 mi'4 fad'4  | sold'4\2 la'4\3  fad'4-1  sold'4}
+   \repeat volta 2
+     {sold'4-4 fad'4 mi'4 sold'4 | la'4\3  sold'4\2 fad'4-1  la'4}
+   \repeat volta 2
+     {sold'4-4 mi'4  fad'4 sold'4 | la'4\3  fad'4-1  sold'4\2 la'4}
  }
 }
 
@@ -104,7 +111,7 @@
    \override Hairpin.to-barline = ##f
    \time 4/4
    \key do \major
-   \clef bass
+   \clef "bass"
 
    % Ligne 1
 
