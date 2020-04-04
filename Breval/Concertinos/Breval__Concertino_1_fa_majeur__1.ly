@@ -16,6 +16,10 @@
   paper-width  = 195\mm
   paper-height = 260\mm
   indent = #0
+  print-page-number = ##f
+  ragged-last-bottom = ##t
+  ragged-bottom = ##f
+%  ragged-last = ##t
 }
 
 allongerUne = \markup {
@@ -110,8 +114,9 @@ allongerUne = \markup {
       do'4 <<do,4\ff sol,4 mi4 do'4\downbow>>
       <<do,4 sol,4 mi4 do'4\downbow>>                                     % 36
     }
-    \pageBreak
+    \pageTurn
     \set Score.currentBarNumber = #37
+    \mark \default
     \partial 4 <sol'-4>8.(\f\upbow fa'16)                                 % 00
     mi'4 mi'4(mi'8) fa'16(mi'16 sol'16 fa'16 mi'16 re'16-4)               % 37
     do'4 do'4(do'8) si!16(do'16 re'16 do'16 si16 la16)                    % 38
@@ -123,15 +128,16 @@ allongerUne = \markup {
     \tuplet 3/2 {la8\!\mf mi'8-4 dod'8^\markup{\bold\teeny (1)}}
     \tuplet 3/2 {la8 mi8-1 dod8}
     \tuplet 3/2 {la,8 dod8 mi8} \tuplet 3/2 {sol8 fa8 mi8}                % 43
-    \tuplet 3/2 {fa8 re8( fa8} \tuplet 3/2 {la8) fa8( la8}
+    \tuplet 3/2 {fa8\downbow re8( fa8} \tuplet 3/2 {la8) fa8( la8}
     \tuplet 3/2 {re'8) la8( <re'-1>8} \tuplet 3/2 {fa'8) mi'8 re'8}       % 44
     \tuplet 3/2 {dod'8-1 mi'8 dod'8} \tuplet 3/2 {la8 mi8-1 dod8}
     \tuplet 3/2 {la,8 dod8 mi8} \tuplet 3/2 {sol8 fa8 mi8}                % 45
-    \tuplet 3/2 {fa8 re8( fa8} \tuplet 3/2 {la8) fa8( la8}
+    \tuplet 3/2 {fa8\downbow re8( fa8} \tuplet 3/2 {la8) fa8( la8}
     \tuplet 3/2 {re'8) la8( <re'-1>8} \tuplet 3/2 {fa'8) mi'8 re'8}       % 46
     \tuplet 3/2 {dod'8-1(mi'8) la8} \tuplet 3/2 {dod'8\>(mi'8) la8}
     \tuplet 3/2 {dod'8(mi'8) la8} \tuplet 3/2 {dod'8(mi'8) la8\!}         % 47
-    \tuplet 3/2 {re'8-4\p re8( mi8} \tuplet 3/2 {fa8) mi8 re8}
+    \mark \default
+    \tuplet 3/2 {re'8-4\p\downbow re8( mi8} \tuplet 3/2 {fa8) mi8 re8}
     \tuplet 3/2 {re'8 mi8( fa8} \tuplet 3/2 {sol8) fa8 mi8}               % 48
     \tuplet 3/2 {fa8 re8\< mi8} \tuplet 3/2 {fa8 sol8 la8}
     \tuplet 3/2 {sib8 la8 sol8} \tuplet 3/2 {fa8 mi8 re8\!}               % 49
@@ -141,7 +147,7 @@ allongerUne = \markup {
     \tuplet 3/2 {fa8 re8\< mi8} \tuplet 3/2 {fa8 sol8 la8}
     \tuplet 3/2 {sib8 la8 sol8} \tuplet 3/2 {fa8 mi8 re8\!}               % 52
     la,2\f \afterGrace mi2\trill( {re16 mi16)}                            % 53
-    re4 re'2\f dod'4(                                                     % 54
+    re4\downbow re'2\f dod'4(                                             % 54
     re'4) re'2\mf dod'4(                                                  % 55
     re'4) <re'-3>2\flageolet\p <do'!-4>4\downbow\((                       % 56
     do'4) si!4\) sib2(                                                    % 57
@@ -156,7 +162,8 @@ allongerUne = \markup {
     \tempo "poco rall."
     \tuplet 3/2 {mi8\f do8 si,!8} \tuplet 3/2 {do8 sol,8 mi,8}
     do,4\fermata \breathe
-    \tempo "tempo"
+    \mark \default
+    \tempo "a tempo"
     <la'-3>8.\flageolet\f(<sol'-4>16)                                     % 61
     fa'4 fa'4(fa'8) mi'16(fa'16 sol'16 fa'16 mi'16 re'16-4)               % 62
     do'4 do'4(do'8) si!16(do'16 re'16 do'16 sib!16 la16)                  % 63
@@ -190,49 +197,5 @@ allongerUne = \markup {
     fa'4 fa4^\markup{\bold\teeny (4)}_\markup{\bold\teeny III}\downbow
     fa,4-4\downbow r4\fermata
     \bar "|."                                                             % 83
-  }
-}
-
-\pageBreak
-
-\score {
-  \new Staff
-%  \with {instrumentName = #"Cello "}
-  {
-    \override Hairpin.to-barline = ##f
-    \tempo "Adagio" 4 = 72
-    \time 3/4
-    \key sib \major
-    \clef "bass"
-    \set fingeringOrientations = #'(left)
-
-    <re'-1>4\p( mib'4 fa'4)                                               % 1
-    sib2-2( si!4)                                                         % 2
-    do'4^\markup{\bold\teeny (4)}( mib'4-1
-    sol'4^\markup{\bold\teeny x4})                                        % 3
-    sib4.-2( do'16 sib16 la4)                                             % 4
-    fa2 sib4(                                                             % 5
-    sib4) la8.(\< sib16) do'4(                                            % 6
-    do'4) sib8.( do'16) re'4\((                                           % 7
-    re'8) do'8\) si!8( do'8-1) mib'8^\markup{\bold\teeny (4)}(
-    sol'8-4)\!                                                            % 8
-    sib2\>( do'4)\!                                                       % 9
-    sib2 r4                                                               % 10
-    re'4.\f-1( mib'16 fa'16) mib'8( re'8)                                 % 11
-    re'8-4( do'8) do'2                                                    % 12
-    <sol'-4>4 mi'!4( sib4)\>                                              % 13
-    sib8( la8) la2\!                                                      % 14
-    do'4\p-1( re'4 mib'4)                                                 % 15
-    re'2.\<                                                               % 16
-    mi'4-1 sol'2\!                                                        % 17
-    fa'8( mi'!8) re'8-4(do'8) sib8(la8)                                   % 18
-    dod'16(re'16 sib16\> sol16) fa4( mi4)                                 % 19
-    sol2( fa4)\! \breathe                                                 % 20
-    do'2.\p                                                               % 21
-    sib2.                                                                 % 22
-    la8\<(do'8) re'8(mi'8) fa'8-- sol'8--\!                               % 23
-    fa'2\>( mi4)\! \breathe                                               % 24
-    do'8.-1\<(re'16) mib'4\! mib'4                                        % 25
-    re'4 la4(do'4)                                                        % 26
   }
 }

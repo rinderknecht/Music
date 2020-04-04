@@ -17,7 +17,9 @@
   paper-height = 260\mm
   indent = #0
 %  line-width = #188
-  ragged-last = ##t
+%  ragged-last = ##t
+  ragged-last-bottom = ##t
+  ragged-bottom = ##f
 }
 
 allongerUne = \markup {
@@ -149,7 +151,7 @@ retenir = \markup {
     <si'-3>4.\p(<sol'-1>8)                                                % 89
     mi'4.-3_\markup{\small II}(re'8)                                      % 90
     mi4.-1(re8)                                                           % 91
-    <mi'-3>4.\fermata\downbow\>(re'8)\!                                   % 92
+    <mi'-3>4.\fermata\downbow_\markup{\small I}\>(re'8)\!                 % 92
     re'2\upbow(                                                           % 93
     re'2)(                                                                % 94
     re'2)(                                                                % 95
