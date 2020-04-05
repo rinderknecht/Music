@@ -30,6 +30,7 @@ allongerUne = \markup {
   \new Staff
 %  \with {instrumentName = #"Cello "}
   {
+    \set fingeringOrientations = #'(left)
     \override Hairpin.to-barline = ##f
     \tempo "Adagio" 4 = 72
     \time 3/4
@@ -65,5 +66,55 @@ allongerUne = \markup {
     fa'2\>( mi4)\! \breathe                                               % 24
     do'8.-1\<(re'16) mib'4\! mib'4                                        % 25
     re'4 la4(do'4)                                                        % 26
+    do'8\>( sib8) sib2\! \breathe                                         % 27
+    re'2.-3\p                                                             % 28
+    mib'2.                                                                % 29
+    sol4( fad8) mib'8( re'8 do'8)                                         % 30
+    do'16-2( re'16 la16 sib16) sib2                                       % 31
+    re'4\f( sol'4-4) fa'4                                                 % 32
+    fa'8( mi'8) mi'2                                                      % 33
+    do'4( fa'4) mib'!4                                                    % 34
+    re'4-4\< do'8( re'8) mib'8( fa'8)\!                                   % 35
+    fad'16( sol'16 mib'16 do'16) sib4(\> la4)                             % 36
+    sib2\! r4                                                             % 37
+    fa'2.\mf                                                              % 38
+    sol'2.                                                                % 39
+    sib4( la8 sol'8( fa'8 mib'8-1)                                        % 40
+    mib'8-2( re'8) re'2                                                   % 41
+    mib'2.\p(                                                             % 42
+    mib'8) re'8-4( do'8 sib8 la4)                                         % 43
+    re'2.(                                                                % 44
+    re'8)\> do'8( sib8 la8 sol4)\!                                        % 45
+    la4\pp( <do'-1>4 mib'4)                                               % 46
+    sol2( fad4) \breathe                                                  % 47
+    la4.-1\p_\markup{\small\italic "a poco anima"}
+    sib8( do'8 sib8)                                                      % 48
+    la8(\< <do'-1>8_\markup{\teeny II} mib'8)\!
+    re'8\>( do'8 <sib-2>8)\!                                              % 49
+    la4. sib8( do'8 sib8)                                                 % 50
+    la8\<( fad8) re8( mi8) fad8-- sol8--\!                                % 51
+    \tempo "poco rall."
+    la8--\> sib8-- do'4-- dod'4--\!                                       % 52
+    \tempo "a tempo"
+    <re'-1>4\p( mib'4 fa'4)                                               % 53
+    sib2( si4-2)                                                          % 54
+    <do'-1>4( mib'4 sol'4)                                                % 55
+    <sib-2>4.( do'16 sib16 la4)                                           % 56
+    fa2 <sib-1>4(                                                         % 57
+    sib4) la8.(\< sib16) do'4(                                            % 58
+    do'4) sib8.( do'16) re'4\!(                                           % 59
+    re'4) fad8\>( sol8) do'8-4( sib8)                                     % 60
+    la4\!
+    \clef "tenor"
+    fa'4\p fa'4                                                           % 61
+    fa'2.\<(                                                              % 62
+    fa'4) sol'4-1-- la'4-2--                                              % 63
+    sib'8\p\!( la'8) <sol'-1>8( <fa'-4>8) mib'8-- re'8--                  % 64
+    sol'2.                                                                % 65
+    solb'2.-3                                                             % 66
+    \tempo "poco rall."
+    <fa'-4>8\>( <mib'-2>16 <re'-1>16) <do'-4>4.( sib8)                    % 67
+    sib2.\fermata\!\p                                                     % 68
+    \bar "|."
   }
 }
