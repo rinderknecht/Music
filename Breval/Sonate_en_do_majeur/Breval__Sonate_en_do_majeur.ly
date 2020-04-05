@@ -33,6 +33,14 @@ allongerTrois = \markup {
   }
 }
 
+allongerQuatre = \markup {
+  \center-column {
+    \combine
+    \draw-line #'(-8 . 0)
+    \arrow-head #X #RIGHT ##f
+  }
+}
+
 retenir = \markup {
   \center-column {
     \concat {
@@ -43,12 +51,32 @@ retenir = \markup {
   }
 }
 
+retenirDeux = \markup {
+  \center-column {
+    \concat {
+      \arrow-head #X #LEFT ##f
+      \hspace #-1
+      \draw-line #'(-5 . 0)
+    }
+  }
+}
+
 retenirTrois = \markup {
   \center-column {
     \concat {
       \arrow-head #X #LEFT ##f
       \hspace #-1
       \draw-line #'(-6 . 0)
+    }
+  }
+}
+
+retenirQuatre = \markup {
+  \center-column {
+    \concat {
+      \arrow-head #X #LEFT ##f
+      \hspace #-1
+      \draw-line #'(-8 . 0)
     }
   }
 }
@@ -182,7 +210,7 @@ retenirTrois = \markup {
       la8\downbow\open(do'8 si8 la8)
       sold8-4\upbow (mi8 fad8-2 sold8)                    % 56
       la8\< si8 do'8 re'8-1 mi'8-3^\allonger\!
-      r8 fa'4-4^\retenir\>(                               % 57
+      r8 fa'4-4^\retenirQuatre\>(                         % 57
       re'8-1)\! r8 mi'4-3\>(do'8-2)\! r8 re'4\>(          % 58
       si8)\! r8 mi2->\< fad8(sold8)\!                     % 59
       la8 si8 do'8 re'8-2 mi'4\! mi'4\f                   % 60
@@ -190,7 +218,7 @@ retenirTrois = \markup {
       re'4\upbow\tenuto(re'4\upbow\tenuto)                % 61
       re'8->(do'8 si8 do'8) do'4\tenuto(do'4\tenuto)      % 62
       \appoggiatura re'8 do'8^\allonger->(si8)
-      si2->^\retenir\>(la4)\!                             % 63
+      si2->^\retenirDeux\>(la4)\!                             % 63
       sol8\mf-. fad8-._\markup{\small\italic "sec"}
       sol8-. la8-. si8-. la8-. si8-. do'8-.               % 64
       re'8-. do'8-. si8-. do'8-. si8-. la8-.
@@ -248,7 +276,7 @@ retenirTrois = \markup {
       \tuplet 3/2 {mi8 fa8 sol8}
       \tuplet 3/2 {la8 si8 do'8}
       \tuplet 3/2 {re'8 mi'8 fa'8-2\!}                    % 94
-      sol'4.^\allongerTrois\downbow\f(do'8-.)
+      sol'4.^\allongerQuatre\downbow\f(do'8-.)
       si8\upbow(do'8) si8\upbow(do'8)                     % 95
       la4.(re'8) do'4 si4\turn(                           % 96
       do'4)

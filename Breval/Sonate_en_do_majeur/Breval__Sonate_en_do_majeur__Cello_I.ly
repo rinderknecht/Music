@@ -26,10 +26,10 @@ allongerUne = \markup {
   }
 }
 
-allongerQuatre = \markup {
+allongerDeux = \markup {
   \center-column {
     \combine
-    \draw-line #'(-9 . 0)
+    \draw-line #'(-4 . 0)
     \arrow-head #X #RIGHT ##f
   }
 }
@@ -42,10 +42,10 @@ allongerTrois = \markup {
   }
 }
 
-allongerDeux = \markup {
+allongerQuatre = \markup {
   \center-column {
     \combine
-    \draw-line #'(-4 . 0)
+    \draw-line #'(-9 . 0)
     \arrow-head #X #RIGHT ##f
   }
 }
