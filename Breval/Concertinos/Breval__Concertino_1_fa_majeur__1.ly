@@ -16,6 +16,8 @@
   paper-width  = 195\mm
   paper-height = 260\mm
   indent = #0
+  page-count = #2
+  line-width = #184
   print-page-number = ##f
   ragged-last-bottom = ##t
   ragged-bottom = ##f
@@ -73,6 +75,7 @@ allongerUne = \markup {
       si!2.\pp(do'4)\<                                                    % 21
       re'2.(mi'4-1)                                                       % 22
       fa'8(mi'8 <re'-4>8 do'8) si!8(la8 sol8 fa8)                         % 23
+      \bar "||"
       \mark \default
       \tuplet 3/2 {mi8\f\downbow( sol8 si!8)}
       \tuplet 3/2 {do'8^\markup{\small\italic "legato"} sol8 mi8}
@@ -125,7 +128,7 @@ allongerUne = \markup {
     sol4.(fa8 mi4) \breathe sol4                                          % 40
     do'4 do'4(do'8) si!16(do'16 re'16 do'16 si16 do'16)                   % 41
     do'8-- sib!8--\> sib2.                                                % 42
-    \tuplet 3/2 {la8\!\mf mi'8-4 dod'8^\markup{\bold\teeny (1)}}
+    \tuplet 3/2 {la8\!\mf <mi'-4>8 dod'8^\markup{\bold\teeny (1)}}
     \tuplet 3/2 {la8 mi8-1 dod8}
     \tuplet 3/2 {la,8 dod8 mi8} \tuplet 3/2 {sol8 fa8 mi8}                % 43
     \tuplet 3/2 {fa8\downbow re8( fa8} \tuplet 3/2 {la8) fa8( la8}
@@ -136,13 +139,14 @@ allongerUne = \markup {
     \tuplet 3/2 {re'8) la8( <re'-1>8} \tuplet 3/2 {fa'8) mi'8 re'8}       % 46
     \tuplet 3/2 {dod'8-1(mi'8) la8} \tuplet 3/2 {dod'8\>(mi'8) la8}
     \tuplet 3/2 {dod'8(mi'8) la8} \tuplet 3/2 {dod'8(mi'8) la8\!}         % 47
+    \bar "||"
     \mark \default
-    \tuplet 3/2 {re'8-4\p\downbow re8( mi8} \tuplet 3/2 {fa8) mi8 re8}
+    \tuplet 3/2 {<re'-4>8\p\downbow re8( mi8} \tuplet 3/2 {fa8) mi8 re8}
     \tuplet 3/2 {re'8 mi8( fa8} \tuplet 3/2 {sol8) fa8 mi8}               % 48
     \tuplet 3/2 {fa8 re8\< mi8} \tuplet 3/2 {fa8 sol8 la8}
     \tuplet 3/2 {sib8 la8 sol8} \tuplet 3/2 {fa8 mi8 re8\!}               % 49
     la,2\f mi2\>                                                          % 50
-    \tuplet 3/2 {re'8-4\p re8( mi8} \tuplet 3/2 {fa8) mi8 re8}
+    \tuplet 3/2 {<re'-4>8\p re8( mi8} \tuplet 3/2 {fa8) mi8 re8}
     \tuplet 3/2 {re'8 mi8( fa8} \tuplet 3/2 {sol8) fa8 mi8}               % 51
     \tuplet 3/2 {fa8 re8\< mi8} \tuplet 3/2 {fa8 sol8 la8}
     \tuplet 3/2 {sib8 la8 sol8} \tuplet 3/2 {fa8 mi8 re8\!}               % 52
@@ -159,18 +163,20 @@ allongerUne = \markup {
     \tuplet 3/2 {si!8 do'8 dod'8}
     \tuplet 3/2 {re'8 do'!8 sib!8}
     \tuplet 3/2 {la8 sol8 fa8\!}                                          % 60
-    \tempo "poco rall."
-    \tuplet 3/2 {mi8\f do8 si,!8} \tuplet 3/2 {do8 sol,8 mi,8}
-    do,4\fermata \breathe
+    \tuplet 3/2 {mi8\f do8_\markup{\small\italic "poco rall."} si,!8}
+    \tuplet 3/2 {do8 sol,8 mi,8}
+    do,2
+    \bar "||"
     \mark \default
-    \tempo "a tempo"
-    <la'-3>8.\flageolet\f(<sol'-4>16)                                     % 61
+    \partial 4
+    <la'-3>8.\flageolet_\markup{\small\italic "a tempo"}( <sol'-4>16)     % 61
+    \set Score.currentBarNumber = #62
     fa'4 fa'4(fa'8) mi'16(fa'16 sol'16 fa'16 mi'16 re'16-4)               % 62
     do'4 do'4(do'8) si!16(do'16 re'16 do'16 sib!16 la16)                  % 63
     \tuplet 3/2 {fad8( sol8 la8} \tuplet 3/2 {sib8 do'8 re'8)}
     fa!4(mi4)                                                             % 64
     sol2(fa4) \breathe do4\mf                                             % 65
-    la,8(do8 fa8 <la-1>8) do'4(fa'4)                                      % 66
+    la,8(do8 fa8 la8-1) do'4(fa'4)                                        % 66
     <la'-3>4.\flageolet(<sol'-4>8) fa'8(mi'8 <re'-4>8 do'8)               % 67
     la,8(do8 mi8 sol8) <do'-4>4(mi'4)                                     % 68
     sol'4.(fa'8)\< mi'8(<re'-4>8 do'8 sib8)\!                             % 69

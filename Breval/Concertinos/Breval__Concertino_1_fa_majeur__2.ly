@@ -16,6 +16,11 @@
   paper-width  = 195\mm
   paper-height = 260\mm
   indent = #0
+  line-width = #184
+  print-page-number = ##f
+  ragged-last-bottom = ##t
+  ragged-bottom = ##f
+%  ragged-last = ##t
 }
 
 allongerUne = \markup {
@@ -79,7 +84,7 @@ allongerUne = \markup {
     sib2\! r4                                                             % 37
     fa'2.\mf                                                              % 38
     sol'2.                                                                % 39
-    sib4( la8 sol'8( fa'8 mib'8-1)                                        % 40
+    sib4( la8 sol'8 fa'8 mib'8-1)                                         % 40
     mib'8-2( re'8) re'2                                                   % 41
     mib'2.\p(                                                             % 42
     mib'8) re'8-4( do'8 sib8 la4)                                         % 43
@@ -92,11 +97,10 @@ allongerUne = \markup {
     la8(\< <do'-1>8_\markup{\teeny II} mib'8)\!
     re'8\>( do'8 <sib-2>8)\!                                              % 49
     la4. sib8( do'8 sib8)                                                 % 50
-    la8\<( fad8) re8( mi8) fad8-- sol8--\!                                % 51
-    \tempo "poco rall."
+    la8^\markup{\small\italic "poco rall."}\<( fad8) re8( mi8)
+    fad8-- sol8--\!                                                       % 51
     la8--\> sib8-- do'4-- dod'4--\!                                       % 52
-    \tempo "a tempo"
-    <re'-1>4\p( mib'4 fa'4)                                               % 53
+    <re'-1>4\p( mib'4_\markup{\small\italic "a tempo"} fa'4)              % 53
     sib2( si4-2)                                                          % 54
     <do'-1>4( mib'4 sol'4)                                                % 55
     <sib-2>4.( do'16 sib16 la4)                                           % 56
@@ -112,8 +116,8 @@ allongerUne = \markup {
     sib'8\p\!( la'8) <sol'-1>8( <fa'-4>8) mib'8-- re'8--                  % 64
     sol'2.                                                                % 65
     solb'2.-3                                                             % 66
-    \tempo "poco rall."
-    <fa'-4>8\>( <mib'-2>16 <re'-1>16) <do'-4>4.( sib8)                    % 67
+    <fa'-4>8\>(^\markup{\small\italic "poco rall."} <mib'-2>16
+    <re'-1>16) <do'-4>4.( sib8)                                           % 67
     sib2.\fermata\!\p                                                     % 68
     \bar "|."
   }
