@@ -17,9 +17,9 @@
   paper-height = 260\mm
   indent = #0
   print-page-number = ##f
-  ragged-last-bottom = ##f
+  ragged-last-bottom = ##t
   ragged-bottom = ##f
-%  line-width = #188
+  line-width = #184
 %  ragged-last = ##t
 }
 
@@ -134,6 +134,7 @@ retenirCinq = \markup {
     la'4->(sol'8)\! r8                                                 % 14
     do'8.-2\!(si32 do'32 re'8) si8\downbow                             % 15
     do'4\upbow_\markup{\teeny "I"} r4                                  % 16
+    \bar "||"
     \mark \default
     do'4-4\p(si8 la8)                                                  % 17
     sold8-1-. si8-. la8.-1(si16)                                       % 18
@@ -169,6 +170,7 @@ retenirCinq = \markup {
     re8^\allongerCinq(sol,8 re8 dod8)\!                                % 48
     re8^\markup{\bold\teeny (3)} r8 sol4-4\<\p\upbow                   % 49
     la4 si4\!\upbow                                                    % 50
+    \bar "||"
     \mark \default
     do'8.(si32 do'32 re'8) si8\downbow                                 % 51
     do'8-.\upbow mi'8-.-1 sol'4\>                                      % 52
@@ -186,6 +188,7 @@ retenirCinq = \markup {
     <la'-3>4\flageolet->(sol'8)\! r8                                   % 64
     do'8.-2\!(si32 do'32 re'8) si8\downbow                             % 65
     do'4\upbow_\markup{\teeny "I"} r4                                  % 66
+    \bar "||"
     \mark \default
     la,8\mf(do8 mi8 la8-2)                                             % 67
     la4(sold4)                                                         % 68
@@ -202,7 +205,9 @@ retenirCinq = \markup {
     re'4(do'4)                                                         % 79
     fa8(la8) re'8\f-. si8-.                                            % 80
     la8-. re8-. mi8-. mi8-.                                            % 81
-    la,4 \mark \default r4                                             % 82
+    la,4
+    \bar "||"
+    \mark \default r4                                             % 82
     la,8\p\upbow(do8 fa8 la8)                                          % 83
     sib4 sib,4                                                         % 84
     la,8(do8) fa8-. la8-.                                              % 85
@@ -263,6 +268,7 @@ retenirCinq = \markup {
     fa'2^\markup{\bold\teeny (4)}\>                                    % 136
     mi'8^\markup{\bold\teeny (3)}\f\!-. do'8-2-. sol8-. mi8-.          % 137
     do8 r8 sol8 r8                                                     % 138
+    \bar "||"
     \mark \default
     do'8.\p(si32 do'32 re'8) si8\downbow                               % 139
     do'8-.(<mi'-1>8-.) sol'4(                                          % 140

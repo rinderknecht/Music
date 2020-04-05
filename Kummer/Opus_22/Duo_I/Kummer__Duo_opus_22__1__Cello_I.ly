@@ -1,4 +1,4 @@
-#(set-global-staff-size 21)
+#(set-global-staff-size 20)
 
 \version "2.18.2"
 
@@ -16,9 +16,10 @@
   paper-width  = 195\mm
   paper-height = 260\mm
   indent = #0
+  page-count = #2
   print-page-number = ##f
-%  line-width = #188
-  ragged-last-bottom = ##f
+  line-width = #184
+  ragged-last-bottom = ##t
   ragged-bottom = ##f
 %  ragged-last = ##t
 }
@@ -121,7 +122,7 @@ retenirCinq = \markup {
       <<do,4\f sol,4 mi4 do'2.>> sol4                                  % 1
       mi2-> do2->-2                                                    % 2
       si,2(do4 dod)                                                    % 3
-      re2^\markup{\bold\teeny (4)}\upbow r2                            % 4
+      re2_\markup{\bold\teeny (4)}\upbow r2                            % 4
       <<sol,4\f re4 re'2.>> si4                                        % 5
       sol2-> fa2->                                                     % 6
       mi2(fa4 fad4)                                                    % 7
@@ -149,8 +150,9 @@ retenirCinq = \markup {
       fad4\sf\downbow^\allongerUne
       re'2_\markup{\bold\teeny (2)}^\retenirAppuyer(dod'4)             % 28
       re'4\downbow re'2(dod'4)                                         % 29
-      re'4-4(do'2 la8 fad8)                                            % 30
-      re4.\upbow\>(mi8 fad8 sol8 la8-1 lad8)\!                         % 31
+      <re'-4>4(do'2 la8 fad8)                                          % 30
+      re4.\upbow\>(mi8 fad8 sol8 <la-1>8 lad8)\!                       % 31
+      \bar "||"
       \mark \default
       si2\downbow_\markup{\small\italic "dolce"}(do'4 si4)             % 32
       si4\upbow(la2 si4)                                               % 33
@@ -170,6 +172,7 @@ retenirCinq = \markup {
       sol4(si4) fad4(la4)                                              % 45
       mi2\< la,4(do4)                                                  % 46
       re2 re2\!                                                        % 47
+      \bar "||"
       \mark \default
       sol,4-.\f si8-.\upbow do'8-.
       dod'8^\allongerTrois(re'8 do'8) si8-.                            % 48
@@ -204,116 +207,125 @@ retenirCinq = \markup {
       sol2(fad4 la4)                                                   % 71
       sol1(                                                            % 72
       sol2) r2                                                         % 73
-      }
-
+    }
+    \pageTurn
     \mark \default
-      <<sol,4\f re4 sol'2.-4>> re'4-4                                  % 74
-      si2-> sol2->                                                     % 75
-      fa1                                                              % 76
-      fa1                                                              % 77
-      sold'2.-> mi'4-2                                                 % 78
-      si2^\markup{\bold\teeny (4)}->
-      sold2^\markup{\bold\teeny (1)}->                                 % 79
-      re1^\markup{\bold\teeny (2)}_\markup{\teeny III}                 % 80
-      re1                                                              % 81
-      <mi'-2>2.\p(la4\open)                                            % 82
-      la2-2(sold2)                                                     % 83
-      mi'2.(<si-1>4)                                                   % 84
-      re'2(do'2)                                                       % 85
-      do'4.->(si8) si4.->(la8)                                         % 86
-      re'2 do'2                                                        % 87
-      si2 do'4.->(la8)                                                 % 88
-      mi4-.\downbow^\allongerUne re4\upbow(do4 si,4)                   % 89
-      do4(mi4 do4 mi4)                                                 % 90
-      si,4(mi4 si,4 mi4)                                               % 91
-      sold,4-1(mi4^\markup{\bold\teeny (2)} sold,4 mi4)                % 92
-      sol,!4(mi4-1 sol,4 mi4)                                          % 93
-      fa4(la4) mi4(sol4)                                               % 94
-      re4(fa4) do4(mi4)                                                % 95
-      sib,\downbow(la,4 sol,4 sib,4)                                   % 96
-      do1                                                              % 97
-      \mark \default
-      fa,4 <<fa4\p la4\upbow>> r4 <<fa4 la4\upbow>>                    % 98
-      r4 <<fa4 la4\downbow>> la4(fa4)                                  % 99
-      mi4 <<sib,4 mi4\upbow>> r4 <<sib,4 mi4\upbow>>                   % 100
-      r4 <<sib,4 mi4\downbow>> sol,4(do,4)                             % 101
-      fa,4 r8 do'8-.\p\upbow si8(do'8) r8 do'8-.                       % 102
-      re'8\downbow(do'8) r8 do'8-.\upbow\<
-      do'8\downbow(re'8 mi'8-1 fa'8)                                   % 103
-      sol'4\!\upbow r8 la8-.\upbow sib-1(la8) r8 la8-.                 % 104
-      sib8(la8) r8 la8\upbow\< la8\downbow(dod'8 re'8 mi'8-1)          % 105
-      fa'4\! <la'-3>4\flageolet sol'4(fa'4)                            % 106
-      mi'2\f fad'4(mi'8 fad'8)                                         % 107
-      sol'4 r4 sol2-4\p\upbow                                          % 108
-      la2\downbow si2                                                  % 109
-      \mark \default
-      <<do,4\f sol,4 mi4 do'2.>> sol4                                  % 110
-      mi2-> do2-2->                                                    % 111
-      si,2(do4 dod4)                                                   % 112
-      re2^\markup{\bold\teeny (4)} r2                                  % 113
-      <<sol,4\f re4 re'2.>> si4                                        % 114
-      sol2-> fa2->                                                     % 115
-      mi2(fa4 fad4)                                                    % 116
-      sol2 r2                                                          % 117
-      <sol'-4>2.\p(do'4)                                               % 118
-      do'2(si2)                                                        % 119
-      sol'2.(si4)                                                      % 120
-      re'2(do'2)                                                       % 121
-      fa'1                                                             % 122
-      mi'4--(re'4-- do'4-- si4--)                                      % 123
-      la4\pp r4 sol4 r4                                                % 124
-      fad4 r4 fa4 r4                                                   % 125
-      mi2_\markup{\small\italic "dolce"}(fa4 mi4)                      % 126
-      mi4(re2 mi4)                                                     % 127
-      mi4(fa4 sol4 fa4)                                                % 128
-      fa4(mi2 fa4)                                                     % 129
-      sol4 do'2 si4(                                                   % 130
-      si4) <fa'-2>2(mi'4)                                              % 131
-      la4\<(si8 do'8 re'4-1 red'4)                                     % 132
-      mi'4(fa'2)\! r4                                                  % 133
-      do8\p(sol,8 do8 sol,8) re8(sol,8 do8 sol,8)                      % 134
-      do8(sol,8 si,8 sol,8) si,8(sol,8 do8 sol,8)                      % 135
-      dod8^\markup{\bold\teeny x4}(sol,8 re8 sol,8)
-      mi8(sol,8 re8 sol,8)                                             % 136
-      re8(sol,8 do!8 sol,8) do8(sol,8 re8 sol,8)                       % 137
-      mi2 re2                                                          % 138
-      sol,2 do2                                                        % 139
-      <<fa1 la1>>                                                      % 140
-      <<{mi2 fa2}\\ {\stemUp sol,2(sol,2) \stemNeutral}>>              % 141
-      \mark \default
-      mi4 mi'8-1-.\f fa'8-.
-      fad'8(sol'8 fa'8) mi'8-.\downbow                                 % 142
-      mi'8\upbow(re'8-4) re'8-. do'8-. si8-. la8-. sol8-. fa8-.        % 143
-      mi4 mi8\p-. fa8-. fad8(sol8 fa8) mi8-.                           % 144
-      mi8\upbow(re8) re8-.\downbow do8-. si,8-. la,8-. sol,8-. fa,8-.  % 145
-      mi,8-. sol,8-. do4\((do8) la,8-.\) re4\((                        % 146
-      re8\<) si,8-.\) mi4(mi8) do8-.\upbow fa4\!\f\downbow(            % 147
-      fa4) re'8-.\upbow(do'8-. si-. la8-. sol8-. fa8-.)                % 148
-      mi4 sol'4.\>(fa'8 la8 re'8)\!                                    % 149
-      re'8\p(do'8) r8 do'8-.\upbow do'8\downbow(si8) r8 si8-.          % 150
-      do'4\f do'8-. re'8-1-.
-      red'8(mi'8 re'8) do'8-2-.\downbow                                % 151
-      do'8(si8) si8-. la8-. sol8-. fa8-. mi8-. re8-.                   % 152
-      do4 do8\p-. re8-. red8-1(mi8 re8 ) do8-4-.\downbow               % 153
-      do8\upbow(si,8) si,8-. la,8-. sol,8-. fa,8-. mi,8-. re,8-.       % 154
-      do,4.(mi,8-.) fa,4.(re,8-.)                                      % 155
-      sol,4.\<(mi,8-.) la,4.(fa,8-.)\!                                 % 156
-      si,4 si8-.\upbow(la8-. sol8-. fa8-. mi8-. re8-.)                 % 157
-      do4 r4 <<fa4 la4\upbow>> r4                                      % 158
-      r4 <<sol,4\p mi4\downbow>> r4 <<sol,4 re4\upbow>>                % 159
-      <<sol,8 mi8>> r8 mi4\<(fa4 fad4)                                 % 160
-      sol8.\downbow(sol16-.) la8.\upbow(la16-.)
-      si8.\downbow(si16-.) do'8.\upbow(do'16-.)\!                      % 161
-      re'4 mi'4-1 fa'8.(fa'16-.) sol'8.(sol'16-.)                      % 162
-      <la'-3>4\flageolet\f r4 si4 r4                                   % 163
-      do'2 r2                                                          % 164
-      sol'2.\upbow(<si-1>4)                                            % 165
-      do'2 r2                                                          % 166
-      sol'2.(<si-1>4)                                                  % 167
-      do'2\pp(si4 re'4)                                                % 168
-      do'2(si4 re'4)                                                   % 169
-      do'4 r4 << <sol-2>4\f <mi'-4>4>> r4                              % 170
-      << <mi-1>1 <do'-2>1\fermata>>                                    % 171
-      \bar "|."
+    <<sol,4\f re4 sol'2.-4>> re'4-4                                    % 74
+    si2-> sol2->                                                       % 75
+    fa1                                                                % 76
+    fa1                                                                % 77
+    sold'2.-> mi'4-2                                                   % 78
+    si2^\markup{\bold\teeny (4)}->
+    sold2^\markup{\bold\teeny (1)}->                                   % 79
+    re1^\markup{\bold\teeny (2)}_\markup{\teeny III}                   % 80
+    re1                                                                % 81
+    <mi'-2>2.\p(la4\open)                                              % 82
+    la2-2(sold2)                                                       % 83
+    mi'2.(<si-1>4)                                                     % 84
+    re'2(do'2)                                                         % 85
+    do'4.->(si8) si4.->(la8)                                           % 86
+    re'2 do'2                                                          % 87
+    si2 do'4.->(la8)                                                   % 88
+    mi4-.\downbow^\allongerUne re4\upbow(do4 si,4)                     % 89
+    do4(mi4 do4 mi4)                                                   % 90
+    si,4(mi4 si,4 mi4)                                                 % 91
+    sold,4-1(mi4^\markup{\bold\teeny (2)} sold,4 mi4)                  % 92
+    sol,!4(mi4-1 sol,4 mi4)                                            % 93
+    fa4(la4) mi4(sol4)                                                 % 94
+    re4(fa4) do4(mi4)                                                  % 95
+    sib,\downbow(la,4 sol,4 sib,4)                                     % 96
+    do1                                                                % 97
+    \bar "||"
+    \mark \default
+    fa,4 <<fa4\p la4\upbow>> r4 <<fa4 la4\upbow>>                      % 98
+    r4 <<fa4 la4\downbow>> la4(fa4)                                    % 99
+    mi4 <<sib,4 mi4\upbow>> r4 <<sib,4 mi4\upbow>>                     % 100
+    r4 <<sib,4 mi4\downbow>> sol,4(do,4)                               % 101
+    fa,4 r8
+    \clef "tenor"
+    do'8-.\p\upbow si8(do'8) r8 do'8-.                                 % 102
+    re'8\downbow(do'8) r8 do'8-.\upbow\<
+    do'8\downbow(re'8 <mi'-1>8 fa'8)                                   % 103
+    sol'4\!\upbow r8 la8-.\upbow sib-1(la8) r8 la8-.                   % 104
+    sib8(la8) r8 la8\upbow\< la8\downbow(dod'8 re'8 mi'8-1)            % 105
+    fa'4\! <la'-3>4\flageolet sol'4(fa'4)                              % 106
+    mi'2\f fad'4(mi'8 fad'8)                                           % 107
+    sol'4 r4 <sol-4>2\p\upbow                                          % 108
+    la2\downbow si2                                                    % 109
+    \bar "||"
+    \mark \default
+    \clef "bass"
+    <<do,4\f sol,4 mi4 do'2.>> sol4                                    % 110
+    mi2-> do2-2->                                                      % 111
+    si,2(do4 dod4)                                                     % 112
+    re2^\markup{\bold\teeny (4)} r2                                    % 113
+    <<sol,4\f re4 re'2.>> si4                                          % 114
+    sol2-> fa2->                                                       % 115
+    mi2(fa4 fad4)                                                      % 116
+    sol2 r2                                                            % 117
+    \clef "tenor"
+    <sol'-4>2.\p(do'4)                                                 % 118
+    do'2(si2)                                                          % 119
+    sol'2.(si4)                                                        % 120
+    re'2(do'2)                                                         % 121
+    fa'1                                                               % 122
+    mi'4--(re'4-- do'4-- si4--)                                        % 123
+    \clef "bass"
+    la4\pp r4 sol4 r4                                                  % 124
+    fad4 r4 fa4 r4                                                     % 125
+    mi2_\markup{\small\italic "dolce"}(fa4 mi4)                        % 126
+    mi4(re2 mi4)                                                       % 127
+    mi4(fa4 sol4 fa4)                                                  % 128
+    fa4(mi2 fa4)                                                       % 129
+    sol4 do'2 si4(                                                     % 130
+    si4) <fa'-2>2(mi'4)                                                % 131
+    la4\<(si8 do'8 <re'-1>4 red'4)                                     % 132
+    mi'4(fa'2)\! r4                                                    % 133
+    do8\p(sol,8 do8 sol,8) re8(sol,8 do8 sol,8)                        % 134
+    do8(sol,8 si,8 sol,8) si,8(sol,8 do8 sol,8)                        % 135
+    dod8^\markup{\bold\teeny x4}(sol,8 re8 sol,8)
+    mi8(sol,8 re8 sol,8)                                               % 136
+    re8(sol,8 do!8 sol,8) do8(sol,8 re8 sol,8)                         % 137
+    mi2 re2                                                            % 138
+    sol,2 do2                                                          % 139
+    <<fa1 la1>>                                                        % 140
+    <<{mi2 fa2}\\ {\stemUp sol,2(sol,2) \stemNeutral}>>                % 141
+    \bar "||"
+    \mark \default
+    mi4 <mi'-1>8-.\f fa'8-.
+    fad'8(sol'8 fa'8) mi'8-.\downbow                                   % 142
+    mi'8\upbow(re'8-4) re'8-. do'8-. si8-. la8-. sol8-. fa8-.          % 143
+    mi4 mi8\p-. fa8-. fad8(sol8 fa8) mi8-.                             % 144
+    mi8\upbow(re8) re8-.\downbow do8-. si,8-. la,8-. sol,8-. fa,8-.    % 145
+    mi,8-. sol,8-. do4\((do8) la,8-.\) re4\((                          % 146
+    re8\<) si,8-.\) mi4(mi8) do8-.\upbow fa4\!\f\downbow(              % 147
+    fa4) re'8-.\upbow(do'8-. si-. la8-. sol8-. fa8-.)                  % 148
+    mi4 sol'4.\>(fa'8 la8 re'8)\!                                      % 149
+    re'8\p(do'8) r8 do'8-.\upbow do'8\downbow(si8) r8 si8-.            % 150
+    do'4\f do'8-. <re'-1>8-.
+    red'8(mi'8 re'8) <do'-2>8-.\downbow                                % 151
+    do'8(si8) si8-. la8-. sol8-. fa8-. mi8-. re8-.                     % 152
+    do4 do8\p-. re8-. red8-1(mi8 re8 ) do8-4-.\downbow                 % 153
+    do8\upbow(si,8) si,8-. la,8-. sol,8-. fa,8-. mi,8-. re,8-.         % 154
+    do,4.(mi,8-.) fa,4.(re,8-.)                                        % 155
+    sol,4.\<(mi,8-.) la,4.(fa,8-.)\!                                   % 156
+    si,4 si8-.\upbow(la8-. sol8-. fa8-. mi8-. re8-.)                   % 157
+    do4 r4 <<fa4 la4\upbow>> r4                                        % 158
+    r4 <<sol,4\p mi4\downbow>> r4 <<sol,4 re4\upbow>>                  % 159
+    <<sol,8 mi8>> r8 mi4\<(fa4 fad4)                                   % 160
+    sol8.\downbow(sol16-.) la8.\upbow(la16-.)
+    si8.\downbow(si16-.) do'8.\upbow(do'16-.)\!                        % 161
+    \clef "tenor"
+    re'4 mi'4-1 fa'8.(fa'16-.) sol'8.(sol'16-.)                        % 162
+    <la'-3>4\flageolet\f r4 si4 r4                                     % 163
+    do'2 r2                                                            % 164
+    sol'2.\upbow(<si-1>4)                                              % 165
+    do'2 r2                                                            % 166
+    sol'2.(<si-1>4)                                                    % 167
+    do'2\pp(si4 re'4)                                                  % 168
+    do'2(si4 re'4)                                                     % 169
+    do'4 r4 << <sol-2>4\f <mi'-4>4>> r4                                % 170
+    << <mi-1>1 <do'-2>1\fermata>>                                      % 171
+    \bar "|."
   }
 }

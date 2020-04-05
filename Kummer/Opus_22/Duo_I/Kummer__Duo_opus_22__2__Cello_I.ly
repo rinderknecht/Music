@@ -17,9 +17,10 @@
   paper-height = 260\mm
   indent = #0
   print-page-number = ##f
-%  ragged-last-bottom = ##f
   ragged-bottom = ##f
-%  line-width = #188
+  line-width = #184
+  ragged-last-bottom = ##t
+  ragged-bottom = ##f
 %  ragged-last = ##t
 }
 
@@ -34,7 +35,7 @@ allongerCinq = \markup {
 allongerQuatre = \markup {
   \center-column {
     \combine
-    \draw-line #'(-9 . 0)
+    \draw-line #'(-7 . 0)
     \arrow-head #X #RIGHT ##f
   }
 }
@@ -163,7 +164,7 @@ retenirCinq = \markup {
     re8\downbow(la8) sol8(la8) fa8(la8)                                % 40
     mi8\upbow(la8) re8(la8) dod'8(la8)                                 % 41
     do'!8-3(si!8 sib8 la8\open) lab8-4(fa8-2)                          % 42
-    <<{la,!4^\allongerUne do4^\retenirCinq(si,!8 sib,8)} \\
+    <<{la,!4^\allongerUne do4^\retenirCinq_(si,!8 sib,8)} \\
       {do,4 do,2}>>                                                    % 43
     la,8-.\p^\allongerUne^\markup{\small\italic "milieu"}
     la,8(sol,8 fa,8 mi,8 re,8)                                         % 44
@@ -211,8 +212,8 @@ retenirCinq = \markup {
     la2.-1                                                             % 81
     do'4(<re'-3>4\flageolet do'4)                                      % 82
     do'8(sib8 la4) r4                                                  % 83
-    re'2\downbow^\allongerTrois(sol'4)                                 % 84
-    <do'-2>2^\allongerTrois(fa'4)                                      % 85
+    re'2\downbow^\allongerQuatre(sol'4)                                 % 84
+    <do'-2>2^\allongerQuatre(fa'4)                                      % 85
     <sib-2>4_\markup{\teeny II}\downbow(la4) do'4\((                   % 86
     do'8) sib8\)
     <sol'-4>16(fa'16 mi'16 re'16-4 do'16
@@ -223,7 +224,7 @@ retenirCinq = \markup {
     mib,8) fad,8_(sol,8 la,8-1 sib,8 do8                               % 91
     si,!8)\<fa'!8(mi'8 re'8 do'8 si8)\!                                % 92
     do'4 fa'4.\>(do'8)\!                                               % 93
-    <<{do'2^\retenirCinq(re'8 do'8)}\\{mi2.\pp}>>                       % 94
+    <<{do'2^\retenirCinq_(re'8 do'8)}\\{mi2.\pp}>>                       % 94
     fa2\turn(sol8 mi8)                                                 % 95
     fa2\turn(sol8 mi8)                                                 % 96
     fa4-. fa4--(fa4--)                                                 % 97
