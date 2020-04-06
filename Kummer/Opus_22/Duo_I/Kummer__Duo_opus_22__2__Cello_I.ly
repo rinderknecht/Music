@@ -1,4 +1,4 @@
-#(set-global-staff-size 21)
+#(set-global-staff-size 20)
 
 \version "2.18.2"
 
@@ -16,6 +16,7 @@
   paper-width  = 195\mm
   paper-height = 260\mm
   indent = #0
+  page-count = #1
   print-page-number = ##f
   ragged-bottom = ##f
   line-width = #184
@@ -150,7 +151,7 @@ retenirCinq = \markup {
     <do'-2>2\<(fa'4)\!                                                 % 30
     <sib-2>4_\markup{\teeny II}\downbow(la4) do'4\((                   % 31
     do'8) sib8\) sol'16\downbow(fa'16 mi'16 re'16-4 do'16
-    sib16_\markup{\bold\teeny x1} la16 sol16)                          % 32
+    sib16^\markup{\bold\teeny x1} la16 sol16)                          % 32
     fa2\upbow\turn(sol8 mi8)                                           % 33
     fa4\downbow r8 la8\open\upbow(sol8 fa8)                            % 34
     mi8\downbow(re8) dod2_\markup{\bold\teeny x4}                      % 35
@@ -163,11 +164,12 @@ retenirCinq = \markup {
     la8\downbow(<re'-4>8 dod'8 la8) sol!8(mi8)                         % 39
     re8\downbow(la8) sol8(la8) fa8(la8)                                % 40
     mi8\upbow(la8) re8(la8) dod'8(la8)                                 % 41
-    do'!8-3(si!8 sib8 la8\open) lab8-4(fa8-2)                          % 42
+    do'!8-3(si!8 sib8 la8\open)
+    lab8^\markup{\bold\teeny (4)}(fa8)                                 % 42
     <<{la,!4^\allongerUne do4^\retenirCinq_(si,!8 sib,8)} \\
       {do,4 do,2}>>                                                    % 43
-    la,8-.\p^\allongerUne^\markup{\small\italic "milieu"}
-    la,8(sol,8 fa,8 mi,8 re,8)                                         % 44
+    la,8-.\p^\allongerUne
+    la,8(^\markup{\small\italic "milieu"} sol,8 fa,8 mi,8 re,8)        % 44
     do,2.(                                                             % 45
     do,8) sib,!8(la,8 sol,8 fa,8 mib,8                                 % 46
     re,8) do8(sib,8 la,8 sol,8 fad,8^\markup{\bold\teeny x4})          % 47
@@ -203,28 +205,30 @@ retenirCinq = \markup {
     re'4.(do'8) sib4                                                   % 73
     <sib-1>4.\<(si8 do'4)\!                                            % 74
     <do'-1>4.\<(dod'8 re'4)\!                                          % 75
-    mib'4.^\markup{\bold\teeny (4)}\> <re'-4>8\!(
+    mib'4.\>^\markup{\bold\teeny (4)}
+    <re'-4>8\!(
     sib8_\markup{\bold\teeny x1} sol8)                                 % 76
-    reb'4.^\markup{\bold\teeny (3)}\> do'8\!(la8 fa8-1)                % 77
+    reb'4.\>^\markup{\bold\teeny (3)}
+    do'8\!(la8 fa8-1)                                                  % 77
     lab2^\markup{\bold\teeny (4)}\sf <sol-4>8\upbow(fa8)               % 78
     mi4\downbow <do'-4>8\upbow(si!8 sib8 sol8-4)                       % 79
     fa2.\p\turn                                                        % 80
     la2.-1                                                             % 81
     do'4(<re'-3>4\flageolet do'4)                                      % 82
-    do'8(sib8 la4) r4                                                  % 83
-    re'2\downbow^\allongerQuatre(sol'4)                                 % 84
-    <do'-2>2^\allongerQuatre(fa'4)                                      % 85
+    do'8\upbow(sib8 la4) r4                                            % 83
+    re'2^\allongerQuatre(sol'4)                                        % 84
+    <do'-2>2^\allongerQuatre(fa'4)                                     % 85
     <sib-2>4_\markup{\teeny II}\downbow(la4) do'4\((                   % 86
     do'8) sib8\)
     <sol'-4>16(fa'16 mi'16 re'16-4 do'16
-    sib16_\markup{\bold\teeny x1} la16 sol16)                          % 87
+    sib16^\markup{\bold\teeny x1} la16 sol16)                          % 87
     fa2\turn(sol8 mi8)                                                 % 88
     fa8-.\downbow do8\upbow(sib,8 la,8 sol,8 fa,8)                     % 89
     <mi,-2>2.(                                                         % 90
     mib,8) fad,8_(sol,8 la,8-1 sib,8 do8                               % 91
     si,!8)\<fa'!8(mi'8 re'8 do'8 si8)\!                                % 92
     do'4 fa'4.\>(do'8)\!                                               % 93
-    <<{do'2^\retenirCinq_(re'8 do'8)}\\{mi2.\pp}>>                       % 94
+    <<{do'2^\retenirCinq_(re'8 do'8)}\\{mi2.\pp}>>                     % 94
     fa2\turn(sol8 mi8)                                                 % 95
     fa2\turn(sol8 mi8)                                                 % 96
     fa4-. fa4--(fa4--)                                                 % 97
