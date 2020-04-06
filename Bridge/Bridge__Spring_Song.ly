@@ -148,9 +148,10 @@ retenir = \markup {
     <re'-2>2)\!                                                           % 86
     <sol'-1>2\>(                                                          % 87
     sol'2)\!                                                              % 88
-    <si'-3>4.\p(<sol'-1>8)                                                % 89
-    mi'4.-3_\markup{\small II}(re'8)                                      % 90
-    mi4.-1(re8)                                                           % 91
+    <si'-3>4.\p(sol'8_\markup{\bold\teeny (1)})                           % 89
+    mi'4.^\markup{\bold\teeny (3)}_\markup{\small II}(
+    re'8^\markup{\bold\teeny (2)})                                        % 90
+    mi4.-1\upbow(re8)                                                     % 91
     <mi'-3>4.\fermata\downbow_\markup{\small I}\>(re'8)\!                 % 92
     re'2\upbow(                                                           % 93
     re'2)(                                                                % 94
