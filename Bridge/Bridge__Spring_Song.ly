@@ -16,7 +16,8 @@
   paper-width  = 195\mm
   paper-height = 260\mm
   indent = #0
-%  line-width = #188
+  page-count = #1
+  line-width = #184
 %  ragged-last = ##t
   ragged-last-bottom = ##t
   ragged-bottom = ##f
@@ -71,6 +72,7 @@ retenir = \markup {
     re'4.(do'8)\!                                                         % 18
     <mi'-4>4.\>(<mi-1>8)                                                  % 19
     sol4.(fad8)\!                                                         % 20
+    \bar "||"
     \mark \default
     sol4\p^\allongerUne re8^\retenir\<(sol8                               % 21
     si8 re'8 <fad'-3>8 sol'8)\!                                           % 22
@@ -89,6 +91,7 @@ retenir = \markup {
     fad'8(mi'8 <re'-4>8 dod'8)                                            % 34
     si8\<(<la'-3>8\flageolet <sol'-4>8 fad'8)                             % 35
     mi'8\>(<re'-4>8 dod'8 re'8)\!                                         % 36
+    \bar "||"
     \mark \default
     si4
     \clef "bass"
@@ -104,19 +107,19 @@ retenir = \markup {
     mi'4^\markup{\bold\teeny (4)}-> <la'-3>4\flageolet                    % 46
     la'2\!\f                                                              % 47
     <sol'-4>8(fad'8 mi'8 re'8-2)                                          % 48
-    do'4.^\markup{\bold\teeny x1}(mi'8)                                   % 49
+    do'4._\markup{\bold\teeny x1}(mi'8)                                   % 49
     re'8-4(do'8 si8 la8)                                                  % 50
     <la'-3>2\flageolet\pp                                                 % 51
     <sol'-4>8(fad'8 mi'8 re'8-2)                                          % 52
-    do'4.^\markup{\bold\teeny x1}(mi'8)                                   % 53
+    do'4._\markup{\bold\teeny x1}(mi'8)                                   % 53
     re'8-4(do'8 si8 la8)                                                  % 54
     <do'-1>4.\<(mi'8^\markup{\bold\teeny x4})                             % 55
     la4.\open(do'8-2)\!                                                   % 56
     mi4.\>^\markup{\small\italic "poco rit."}(sol8)                       % 57
     fad4.(re8)\!                                                          % 58
-    \tempo "Tempo I"
+    \bar "||"
     \mark \default
-    si4.\p(re'8)                                                          % 59
+    si4.\p(^\markup{\small\italic "a tempo"} re'8)                        % 59
     <mi'-1>8(sol'8 fad'8 <mi'-3>8)                                        % 60
     re'4.^\markup{\bold\teeny (1)}(si8^\markup{\bold\teeny x4})           % 61
     la8^\markup{\bold\teeny x2}(sol8 <mi-1>8 fad8)                        % 62
@@ -126,7 +129,7 @@ retenir = \markup {
     si4.(la8)\!                                                           % 66
     do'4.(<mi'-1>8)                                                       % 67
     fa'8(<la'-3>8\flageolet sol'8 fa'8)                                   % 68
-    mi'4.(do'8^\markup{\bold\teeny (4)})                                  % 69
+    mi'4.(do'8_\markup{\bold\teeny (4)})                                  % 69
     si8(la8 <fad-1>8 sold8)                                               % 70
     la4.\open\<(si8-1)                                                    % 71
     re'4.(do'8)\!                                                         % 72
@@ -140,6 +143,7 @@ retenir = \markup {
     mi8 sol8 do'8 <mi'-1>8)\!                                             % 80
     si4.^\markup{\bold\teeny (3)}\pp(sol8-4)                              % 81
     mi4.(re8)                                                             % 82
+    \bar "||"
     \mark \default
     \clef "tenor"
     sol2(                                                                 % 83
@@ -149,8 +153,8 @@ retenir = \markup {
     <sol'-1>2\>(                                                          % 87
     sol'2)\!                                                              % 88
     <si'-3>4.\p(sol'8_\markup{\bold\teeny (1)})                           % 89
-    mi'4.^\markup{\bold\teeny (3)}_\markup{\small II}(
-    re'8^\markup{\bold\teeny (2)})                                        % 90
+    mi'4._\markup{\bold\teeny (3)}_\markup{\small II}(
+    re'8_\markup{\bold\teeny (2)})                                        % 90
     mi4.-1\upbow(re8)                                                     % 91
     <mi'-3>4.\fermata\downbow_\markup{\small I}\>(re'8)\!                 % 92
     re'2\upbow(                                                           % 93
