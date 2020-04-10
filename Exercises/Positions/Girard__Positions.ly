@@ -233,16 +233,18 @@
 
    % Ligne 1
 
+   \key la \major
+
    \repeat volta 2 {re4-1^\markup "Positions 4-5"
-                          mi4 fa4 re4     | mi4 fa4  sol4 mi4}
-   \repeat volta 2 {re4-1 fa4 mi4 re4     | mi4 sol4 fa4  mi4}
-   \repeat volta 2 {mi4-3 re4 fa4 mi4     | fa4 mi4  sol4 fa4}
+                          mi4 fad4 re4     | mi4 fad4  sold4 mi4}
+   \repeat volta 2 {re4-1 fad4 mi4 re4     | mi4 sold4 fad4  mi4}
+   \repeat volta 2 {mi4-3 re4 fad4 mi4     | fad4 mi4  sold4 fad4}
 
    % Ligne 2
 
-   \repeat volta 2 {mi4-3 fa4 re4 mi4     | fa4  sol4 mi4 fa4}
-   \repeat volta 2 {fa4-4 mi4 re4 fa4     | sol4 fa4  mi4 sol4}
-   \repeat volta 2 {fa4-4 re4 mi4 fa4     | sol4 mi4  fa4 sol4}
+   \repeat volta 2 {mi4-3 fad4 re4 mi4     | fad4  sold4 mi4 fad4}
+   \repeat volta 2 {fad4-4 mi4 re4 fad4     | sold4 fad4  mi4 sold4}
+   \repeat volta 2 {fad4-4 re4 mi4 fad4     | sold4 mi4  fad4 sold4}
  }
 }
 
@@ -302,15 +304,17 @@
 
    % Ligne 1
 
-   \repeat volta 2 {sol,4-1^\markup "Positions 4-5"
-                            la,4    si,4  sol,4 | la,4 si,4 do4  la,4}
-   \repeat volta 2 {sol,4-1 si,4    la,4  sol,4 | la,4 do4  si,4 la,4}
-   \repeat volta 2 {la,4    sol,4-1 si,4  la,4  | si,4 la,4 do4  si,4}
+   \key la \major
+
+   \repeat volta 2 {sold,4-1^\markup "Positions 4-5"
+                            la,4    si,4  sold,4 | la,4 si,4 dod4  la,4}
+   \repeat volta 2 {sold,4-1 si,4    la,4  sold,4 | la,4 dod4  si,4 la,4}
+   \repeat volta 2 {la,4    sold,4-1 si,4  la,4  | si,4 la,4 dod4  si,4}
 
    % Ligne 2
 
-   \repeat volta 2 {la,4 si,4    sol,4-1 la,4 | si,4 do4  la,4 si,4}
-   \repeat volta 2 {si,4 la,4    sol,4-1 si,4 | do4  si,4 la,4 do4}
-   \repeat volta 2 {si,4 sol,4-1 la,4    si,4 | do4 la,4 si,4 do4}
+   \repeat volta 2 {la,4 si,4    sold,4-1 la,4 | si,4 dod4  la,4 si,4}
+   \repeat volta 2 {si,4 la,4    sold,4-1 si,4 | dod4  si,4 la,4 dod4}
+   \repeat volta 2 {si,4 sold,4-1 la,4    si,4 | dod4 la,4 si,4 dod4}
  }
 }
