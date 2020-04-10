@@ -160,16 +160,18 @@
 
    % Ligne 1
 
+   \key la \major
+
    \repeat volta 2 {la4-1^\markup "Positions 4-5"
-                          si4  do'4 la4 | si4  do'4 re'4  si4}
-   \repeat volta 2 {la4-1 do'4 si4  la4 | si4  re'4  do'4 si4}
-   \repeat volta 2 {si4-3 la4  do'4 si4 | do'4 si4  re'4  do'4}
+                    si4  dod'4 la4 | si4-1  dod'4\2 re'4\3  si4}
+   \repeat volta 2 {la4-1 dod'4 si4  la4 | si4-1  re'4  dod'4 si4}
+   \repeat volta 2 {si4-3 la4  dod'4 si4 | dod'4 si4-1  re'4  dod'4}
 
    % Ligne 2
 
-   \repeat volta 2 {si4-1  do'4 la4 si4  | do'4 re'4  si4  do'4}
-   \repeat volta 2 {do'4-4 si4  la4 do'4 | re'4  do'4 si4  re'4}
-   \repeat volta 2 {do'4-4 la4  si4 do'4 | re'4  si4  do'4 re'4}
+   \repeat volta 2 {si4-1  dod'4 la4 si4  | dod'4 re'4  si4-1  dod'4}
+   \repeat volta 2 {dod'4-4 si4  la4 dod'4 | re'4  dod'4 si4-1  re'4}
+   \repeat volta 2 {dod'4-4 la4  si4 dod'4 | re'4  si4-1  dod'4 re'4}
  }
 }
 
