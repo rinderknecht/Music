@@ -16,7 +16,7 @@
   paper-width  = 195\mm
   paper-height = 260\mm
   indent = #0
-  page-count = #2
+  page-count = #3
   line-width = #184
   print-page-number = ##f
   ragged-last-bottom = ##t
@@ -44,8 +44,9 @@ allongerUne = \markup {
     \set fingeringOrientations = #'(left)
 
     \repeat volta 2 {
-      \mark \default
       \partial 4 <la'-3>8.\flageolet\upbow\f(<sol'-4>16)                  % 0
+      \bar "||"
+      \mark \default
       fa'4 fa'4(fa'8) mi'16(fa'16 sol'16 fa'16 mi'16 re'16-4)             % 1
       do'4 do'4(do'8) si!16(do'16 re'16 do'16 sib16 la16)                 % 2
       fad4(sol8 la8)
@@ -56,8 +57,9 @@ allongerUne = \markup {
       \tuplet 3/2 {fad8(sol8 la8}
       \tuplet 3/2 {sib8 do'8 re'8)} fa!4(mi4)                             % 7
       sol2(fa4) \breathe
-      \mark \default
       do4\mf\upbow                                                        % 8
+      \bar "||"
+      \mark \default
       la,8(do8 fa8 la8-1) do'4(fa'4)                                      % 9
       <la'-3>4.\flageolet(<sol'-4>8) fa'8(mi'8 re'8-4 do'8)               % 10
       sol,8(do8 mi8 sol8) do'4(<mi'-1>4)                                  % 11
@@ -119,8 +121,9 @@ allongerUne = \markup {
     }
     \pageTurn
     \set Score.currentBarNumber = #37
-    \mark \default
     \partial 4 <sol'-4>8.(\f\upbow fa'16)                                 % 00
+    \bar "||"
+    \mark \default
     mi'4 mi'4(mi'8) fa'16(mi'16 sol'16 fa'16 mi'16 re'16-4)               % 37
     do'4 do'4(do'8) si!16(do'16 re'16 do'16 si16 la16)                    % 38
     \tuplet 3/2 {sol8( la8 si!8} \tuplet 3/2 {do'8 si8 re'8)}
@@ -165,43 +168,46 @@ allongerUne = \markup {
     \tuplet 3/2 {la8 sol8 fa8\!}                                          % 60
     \tuplet 3/2 {mi8\f do8_\markup{\small\italic "poco rall."} si,!8}
     \tuplet 3/2 {do8 sol,8 mi,8}
-    do,2
-    \bar "||"
-    \mark \default
+    do,4\fermata
     \partial 4
     <la'-3>8.\flageolet_\markup{\small\italic "a tempo"}( <sol'-4>16)     % 61
+    \bar "||"
+    \mark \default
     \set Score.currentBarNumber = #62
     fa'4 fa'4(fa'8) mi'16(fa'16 sol'16 fa'16 mi'16 re'16-4)               % 62
     do'4 do'4(do'8) si!16(do'16 re'16 do'16 sib!16 la16)                  % 63
+    fad4( sol8 la8) \tuplet 3/2 {sib8( do'8 dod'8}
+    \tuplet 3/2 {re'8 sib8 sol8)}                                         % 64
+    fa!4.( sol16 fa16 mi4) la'8.( sol'16)                                 % 65
+    fa'4 fa'4( fa'8) mi'16( fa'16 sol'16 fa'16 mi'16 re'16)               % 66
+    do'4 do'4( do'8) si16( do'16 re'16 do'16 sib16 la16)                  % 67
     \tuplet 3/2 {fad8( sol8 la8} \tuplet 3/2 {sib8 do'8 re'8)}
-    fa!4(mi4)                                                             % 64
-    sol2(fa4) \breathe do4\mf                                             % 65
-    la,8(do8 fa8 la8-1) do'4(fa'4)                                        % 66
-    <la'-3>4.\flageolet(<sol'-4>8) fa'8(mi'8 <re'-4>8 do'8)               % 67
-    la,8(do8 mi8 sol8) <do'-4>4(mi'4)                                     % 68
-    sol'4.(fa'8)\< mi'8(<re'-4>8 do'8 sib8)\!                             % 69
+    fa!4(mi4)                                                             % 68
+    sol2(fa4) \breathe do4\mf                                             % 69
+    la,8(do8 fa8 la8-1) do'4(fa'4)                                        % 70
+    <la'-3>4.\flageolet(<sol'-4>8) fa'8(mi'8 <re'-4>8 do'8)               % 71
+    sol,8(do8 mi8 sol8) <do'-4>4(mi'4)                                    % 72
+    sol'4.(fa'8)\< mi'8(<re'-4>8 do'8 sib8)\!                             % 73
     \tuplet 3/2 {la8\f(fa8 la8)} \tuplet 3/2 {do'8 la8 fa8}
-    \tuplet 3/2 {mi8(sol8 la8)} \tuplet 3/2 {sib8 do'8 sib8}              % 70
+    \tuplet 3/2 {mi8(sol8 la8)} \tuplet 3/2 {sib8 do'8 sib8}              % 74
     \tuplet 3/2 {la8\mf fa8( la8} \tuplet 3/2 {do'8) la8 fa8}
-    \tuplet 3/2 {mi8 sol8( la8} \tuplet 3/2 {sib8) do'8 sib8}             % 71
+    \tuplet 3/2 {mi8 sol8( la8} \tuplet 3/2 {sib8) do'8 sib8}             % 75
     \tuplet 3/2 {la8\> do'8 sib8} \tuplet 3/2 {la8 sol8 fa8}
-    \tuplet 3/2 {mi8 sol8 fa8} \tuplet 3/2 {mi8 re8 do8\!}                % 72
-    mi2.\p(fa4)                                                           % 73
-    mi2.\pp(fa4)\<                                                        % 74
-    mi2.(fa4)                                                             % 75
-    sol2.(la4)                                                            % 76
-    \tuplet 3/2 {sib8\f do'8 re'8} \tuplet 3/2 {mi'8-1 fa'8 fad'8}
-    \tuplet 3/2 {sol'8 fa'8 mi'8} \tuplet 3/2 {re'8-4 do'8 sib8}          % 77
+    \tuplet 3/2 {mi8 sol8 fa8} \tuplet 3/2 {mi8 re8 do8\!}                % 76
+    mi2.\p(fa4)                                                           % 77
+    mi2.\pp(fa4)\<                                                        % 78
+    mi2.(fa4)                                                             % 79
+    sol2.(la4)                                                            % 80
+    \tuplet 3/2 {sib8\f do'8 re'8} \tuplet 3/2 {<mi'-1>8 fa'8 fad'8}
+    \tuplet 3/2 {sol'8 fa'8 mi'8} \tuplet 3/2 {re'8-4 do'8 sib8}          % 81
     \tuplet 3/2 {la8 sol8 la8} \tuplet 3/2 {sib8 do'8 dod'8}
-    \tuplet 3/2 {re'8 do'8 sib8} \tuplet 3/2 {la8 sol8 fa8}               % 78
-    do2 \afterGrace <sol-1>2\trill( {<fa-1>16 sol16)}                     % 79
-    fa4^\markup{\bold\teeny (1)} la2^\markup{\bold\teeny x4}->
-    sol8--^\markup{\bold\teeny x2} fa8--                                  % 80
-    mi4-1 <sib>2^\markup{\bold\teeny x1}->
-    la8-4-- sol8^\markup{\bold\teeny (2)}--                               % 81
-    fa4^\markup{\bold\teeny x1} <fa'-2>4 sol'8. sol'16 mi'8. mi'16        % 82
-    fa'4 fa4^\markup{\bold\teeny (4)}_\markup{\bold\teeny III}\downbow
-    fa,4-4\downbow r4\fermata
-    \bar "|."                                                             % 83
+    \tuplet 3/2 {re'8 do'8 sib8} \tuplet 3/2 {la8 sol8 fa8}               % 82
+    do2 \afterGrace <sol-1>2\trill_( {<fa-1>16 sol16)}                    % 83
+    fa4^\markup{\bold\teeny (1)} la2_\markup{\bold\teeny x4}->
+    <sol-4>8-- fa8--                                                      % 84
+    mi4 <sib-2>2-> la8-- sol8-4--                                         % 85
+    fa4 <fa'-2>4 sol'8. sol'16 mi'8. mi'16                                % 86
+    fa'4 fa4\downbow fa,4\downbow r4\fermata
+    \bar "|."                                                             % 87
   }
 }
