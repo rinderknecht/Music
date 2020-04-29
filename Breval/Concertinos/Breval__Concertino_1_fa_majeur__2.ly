@@ -45,10 +45,10 @@ allongerUne = \markup {
 
     <re'-1>4\p( mib'4 fa'4)                                               % 1
     sib2-2( si!4)                                                         % 2
-    do'4^\markup{\bold\teeny (4)}( mib'4-1
-    sol'4^\markup{\bold\teeny x4})                                        % 3
+    do'4^\markup{\bold\teeny (4)}(
+    mib'4^\markup{\bold\teeny x1} sol'4)                                  % 3
     sib4.-2( do'16 sib16 la4)                                             % 4
-    fa2 sib4(                                                             % 5
+    fa2-2 sib4^\markup{\bold\teeny x1}(                                   % 5
     sib4) la8.(\< sib16) do'4(                                            % 6
     do'4) sib8.( do'16) re'4\((                                           % 7
     re'8) do'8\) si!8( do'8-1) mib'8^\markup{\bold\teeny (4)}(
@@ -57,9 +57,9 @@ allongerUne = \markup {
     sib2 r4                                                               % 10
     re'4.\f-1( mib'16 fa'16) mib'8( re'8)                                 % 11
     re'8-4( do'8) do'2                                                    % 12
-    <sol'-4>4 mi'!4( sib4)\>                                              % 13
+    <sol'-4>4 mi'!4( sib4^\markup{\bold\teeny (2)})\>                     % 13
     sib8( la8) la2\!                                                      % 14
-    do'4\p-1( re'4 mib'4)                                                 % 15
+    do'4\p-2( re'4-1 mib'4)                                               % 15
     re'2.\<                                                               % 16
     mi'4-1 sol'2\!                                                        % 17
     fa'8( mi'!8) re'8-4(do'8) sib8(la8)                                   % 18
@@ -68,7 +68,7 @@ allongerUne = \markup {
     do'2.\p                                                               % 21
     sib2.                                                                 % 22
     la8\<(do'8) re'8(mi'8) fa'8-- sol'8--\!                               % 23
-    fa'2\>( mi4)\! \breathe                                               % 24
+    fa'2\>( mi'4)\! \breathe                                              % 24
     do'8.-1\<(re'16) mib'4\! mib'4                                        % 25
     re'4 la4(do'4)                                                        % 26
     do'8\>( sib8) sib2\! \breathe                                         % 27
@@ -78,8 +78,8 @@ allongerUne = \markup {
     do'16-2( re'16 la16 sib16) sib2                                       % 31
     re'4\f( sol'4-4) fa'4                                                 % 32
     fa'8( mi'8) mi'2                                                      % 33
-    do'4( fa'4) mib'!4                                                    % 34
-    re'4-4\< do'8( re'8) mib'8( fa'8)\!                                   % 35
+    do'4^\markup{\bold\teeny (4)}( fa'4) mib'!4^\markup{\bold\teeny x1}   % 34
+    re'4-4\< do'8( re'8) mib'8-1( fa'8)\!                                 % 35
     fad'16( sol'16 mib'16 do'16) sib4(\> la4)                             % 36
     sib2\! r4                                                             % 37
     fa'2.\mf                                                              % 38
@@ -91,20 +91,20 @@ allongerUne = \markup {
     re'2.(                                                                % 44
     re'8)\> do'8( sib8 la8 sol4)\!                                        % 45
     la4\pp( <do'-1>4 mib'4)                                               % 46
-    sol2( fad4) \breathe                                                  % 47
+    sol2(^\markup{\bold\teeny (3)} fad4) \breathe                         % 47
     la4.-1\p_\markup{\small\italic "a poco anima"}
     sib8( do'8 sib8)                                                      % 48
     la8(\< <do'-1>8_\markup{\teeny II} mib'8)\!
-    re'8\>( do'8 <sib-2>8)\!                                              % 49
+    re'8\>( do'8 sib8-2)\!                                                % 49
     la4. sib8( do'8 sib8)                                                 % 50
-    la8^\markup{\small\italic "poco rall."}\<( fad8) re8( mi8)
+    la8^\markup{\small\italic "poco rall."}\<( fad8-3) re8( mi8)
     fad8-- sol8--\!                                                       % 51
     la8--\> sib8-- do'4-- dod'4--\!                                       % 52
     <re'-1>4\p( mib'4_\markup{\small\italic "a tempo"} fa'4)              % 53
-    sib2( si4-2)                                                          % 54
-    <do'-1>4( mib'4 sol'4)                                                % 55
-    <sib-2>4.( do'16 sib16 la4)                                           % 56
-    fa2 <sib-1>4(                                                         % 57
+    sib2( si4-3)                                                          % 54
+    do'-4( mib'4^\markup{\bold\teeny x1} sol'4)                           % 55
+    sib4.-2( do'16 sib16 la4)                                             % 56
+    fa2-2 sib4^\markup{\bold\teeny x1}(                                   % 57
     sib4) la8.(\< sib16) do'4(                                            % 58
     do'4) sib8.( do'16) re'4\!(                                           % 59
     re'4) fad8\>( sol8) do'8-4( sib8)                                     % 60
