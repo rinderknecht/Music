@@ -43,6 +43,7 @@ allongerUne = \markup {
     \clef "bass"
     \set fingeringOrientations = #'(left)
 
+    \mark \default
     <re'-1>4\p( mib'4 fa'4)                                               % 1
     sib2-2( si!4)                                                         % 2
     do'4^\markup{\bold\teeny (4)}(
@@ -55,22 +56,25 @@ allongerUne = \markup {
     sol'8-4)\!                                                            % 8
     sib2\>( do'4)\!                                                       % 9
     sib2 r4                                                               % 10
-    re'4.\f-1( mib'16 fa'16) mib'8( re'8)                                 % 11
+    re'4.\f-1( mib'16_\markup{\bold\teeny (2)} fa'16) mib'8( re'8)        % 11
     re'8-4( do'8) do'2                                                    % 12
     <sol'-4>4 mi'!4( sib4^\markup{\bold\teeny (2)})\>                     % 13
     sib8( la8) la2\!                                                      % 14
-    do'4\p-2( re'4-1 mib'4)                                               % 15
+    do'4\p-1( re'4_\markup{\bold\teeny (3)}
+    mib'4_\markup{\bold\teeny (4)})                                       % 15
     re'2.\<                                                               % 16
     mi'4-1 sol'2\!                                                        % 17
     fa'8( mi'!8) re'8-4(do'8) sib8(la8)                                   % 18
     dod'16(re'16 sib16\> sol16) fa4( mi4)                                 % 19
     sol2( fa4)\! \breathe                                                 % 20
+    \bar "||"
+    \mark \default
     do'2.\p                                                               % 21
     sib2.                                                                 % 22
     la8\<(do'8) re'8(mi'8) fa'8-- sol'8--\!                               % 23
     fa'2\>( mi'4)\! \breathe                                              % 24
     do'8.-1\<(re'16) mib'4\! mib'4                                        % 25
-    re'4 la4(do'4)                                                        % 26
+    re'4 la4( do'4-2)                                                     % 26
     do'8\>( sib8) sib2\! \breathe                                         % 27
     re'2.-3\p                                                             % 28
     mib'2.                                                                % 29
@@ -80,8 +84,10 @@ allongerUne = \markup {
     fa'8( mi'8) mi'2                                                      % 33
     do'4^\markup{\bold\teeny (4)}( fa'4) mib'!4^\markup{\bold\teeny x1}   % 34
     re'4-4\< do'8( re'8) mib'8-1( fa'8)\!                                 % 35
-    fad'16( sol'16 mib'16 do'16) sib4(\> la4)                             % 36
+    fad'16( sol'16 mib'16_\markup{\bold\teeny x1} do'16) sib4(\> la4)     % 36
     sib2\! r4                                                             % 37
+    \bar "||"
+    \mark \default
     fa'2.\mf                                                              % 38
     sol'2.                                                                % 39
     sib4( la8 sol'8 fa'8 mib'8-1)                                         % 40
