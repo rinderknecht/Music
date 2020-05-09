@@ -144,26 +144,28 @@ retenir = \markup {
     \mark \default
     la4. la8 re4. la8                                                    % 39
     sol4 la4 sol8 re8 re8. dod16                                         % 40
-    re8 re'8 dod'4 si4 la4                                               % 41
+    re8 re'8 dod'4 si4\upbow la4\upbow                                   % 41
     re8. mi16 fad4 si4 mi8. mi16                                         % 42
     fad8. fad'16 fad'16 sol'16 fad'16 mi'16 re'8. re'16
     re'16 mi'16 re'16 dod'16                                             % 43
     si4 re'4 re'16 do'16 si16 do'16 la8. la16                            % 44
     \clef "tenor"
-    la8. la'16 la'16 si'16 la'16 sol'16 fad'8. fad'16
+    la8. la'16-2 la'16 si'16 la'16 sol'16-2 fad'8. fad'16
     fad'16 sol'16 fad'16 mi'16                                           % 45
     \clef "bass"
     re'16 do'16 si16 do'16 la8. la16 sol8 re'8 dod'8. dod'16             % 46
     re'8 re'4 dod'4 si4 la8(                                             % 47
     la8) sol4 fad8( fad8.) mi16 mi4                                      % 48
-    fad8 fad'4 mi'8
+    fad8\upbow fad'4 mi'8
     \clef "tenor"
-    re'8 re''4 do''8                                                     % 49
-    si'4 re''8 la'8 si'4 la'4                                            % 50
-    la'4
+    re'8 re''4-4 do''8                                                   % 49
+    si'4\upbow re''8 la'8-2 si'4 la'4                                    % 50
+    la'4\downbow
     \clef "bass"
     la8. sol16 fad4 fad'8. mi'16                                         % 51
     re'4. re'8 re'4 dod'4                                                % 52
+    \mark \default
+    \bar "||"
     re'8 re8 dod8 dod'8 si8 si,8 la,8 la8                                % 53
     sol8 sol'8 fad'8 fad8  mi8 si8 mi8 mi'8                              % 54
     fad'8 fad8 mi8 mi'8  re'8 re8 dod8 dod'8                             % 55
