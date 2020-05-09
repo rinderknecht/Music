@@ -84,9 +84,9 @@ allongerUne = \markup {
     re'4\f( sol'4-4) fa'4                                                 % 32
     fa'8( mi'8) mi'2                                                      % 33
     do'4^\markup{\bold\teeny (4)}( fa'4) mib'!4^\markup{\bold\teeny x1}   % 34
-    re'4-4\< do'8( re'8) mib'8-1( fa'8)\!                                 % 35
-    fad'16\upbow( sol'16 mib'16_\markup{\bold\teeny x1}
-    do'16) sib4(\> la4)                                                   % 36
+    re'4-4\< do'8( re'8) mib'8-1( fa'8)\!^\markup{\bold\teeny x2}         % 35
+    fad'16\upbow( sol'16 mib'16
+    do'16)^\markup{\bold\teeny (4)} sib4-2(\> la4)                        % 36
     sib2\!\upbow r4                                                       % 37
     \bar "||"
     \mark \default
@@ -121,8 +121,9 @@ allongerUne = \markup {
     fa'4\p fa'4                                                           % 61
     fa'2.\<(                                                              % 62
     fa'4) sol'4-1-- la'4--^\markup{\bold\teeny x2}                        % 63
-    sib'8\p\!(^\markup{\bold\teeny (4)} la'8)
-    sol'8( fa'8-4) mib'8-- re'8--^\markup{\bold\teeny (1)}                % 64
+    sib'8\p\!(^\markup{\bold\teeny x3} la'8)
+    sol'8( fa'8-4) mib'8--^\markup{\bold\teeny (2)}
+    re'8--_\markup{\bold\teeny (1)}                                       % 64
     sol'2.-4                                                              % 65
     solb'2.                                                               % 66
     <fa'-4>8\>(^\markup{\small\italic "poco rall."}
