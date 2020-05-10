@@ -40,7 +40,7 @@ vibrato = \markup {
 
 \score {
   \new Staff
-   \with {instrumentName = #"Cello "}
+%   \with {instrumentName = #"Cello "}
    {
    \override Hairpin.to-barline = ##f
    \time 4/4
