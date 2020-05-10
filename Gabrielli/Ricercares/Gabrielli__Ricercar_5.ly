@@ -15,6 +15,13 @@
 \paper {
   paper-width  = 195\mm
   paper-height = 260\mm
+  indent = #0
+  page-count = #1
+  line-width = #184
+  print-page-number = ##f
+  ragged-last-bottom = ##t
+  ragged-bottom = ##f
+%  ragged-last = ##t
 }
 
 ringsps = #"

@@ -15,13 +15,20 @@
 \paper {
   paper-width  = 195\mm
   paper-height = 260\mm
+  indent = #0
+  page-count = #3
+  line-width = #184
+  print-page-number = ##f
+  ragged-last-bottom = ##t
+  ragged-bottom = ##f
+%  ragged-last = ##t
 }
 
 \score {
   \new Staff
-   \with {instrumentName = #"Cello "}
+%   \with {instrumentName = #"Cello "}
    {
-   \override Hairpin.to-barline = ##f
+%   \override Hairpin.to-barline = ##f
    \time 4/4
    \key re \major
    \clef "bass"
