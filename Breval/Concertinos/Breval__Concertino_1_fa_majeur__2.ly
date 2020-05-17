@@ -123,7 +123,7 @@ allongerUne = \markup {
     fa'4\p fa'4                                                           % 61
     fa'2.\<(                                                              % 62
     fa'4) sol'4-1-- la'4--^\markup{\bold\teeny x2}                        % 63
-    sib'8\p\!(^\markup{\bold\teeny x3} la'8)
+    sib'8\mf\!(^\markup{\bold\teeny x3} la'8)
     sol'8( fa'8-4) mib'8--^\markup{\bold\teeny (2)}
     re'8--_\markup{\bold\teeny (1)}                                       % 64
     sol'2.-4                                                              % 65

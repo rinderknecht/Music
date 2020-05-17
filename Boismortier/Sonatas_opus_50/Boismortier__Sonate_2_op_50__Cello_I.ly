@@ -3,7 +3,7 @@
 \version "2.18.2"
 
 \header {
-  title    = "Sonate II (opus 50)"
+  title    = "Sonate II (opus 50) (cello I)"
   composer = "Joseph Bodin de Boismortier (1734)"
   tagline  = ""
 }
@@ -15,11 +15,18 @@
 \paper {
   paper-width  = 195\mm
   paper-height = 260\mm
+  indent = #0
+  page-count = #4
+  line-width = #184
+  print-page-number = ##f
+  ragged-last-bottom = ##t
+  ragged-bottom = ##f
+%  ragged-last = ##t
 }
 
 \score {
   \new Staff
-  \with {instrumentName = #"Cello"}
+%  \with {instrumentName = #"Cello I"}
   {
     \override Hairpin.to-barline = ##f
     \repeat volta 2 {
@@ -61,11 +68,11 @@
         {<<do4 sol4>> \skip 8 dod4 \skip 8 <<re,4 la,4>> \skip 8 si,4}>>  % 12
       <<{sol8_(fad8) mi8 la4 la8 la8_(sol8) fad8 re'4 re'8}\\
         {do4 \skip 8 dod4 \skip 8 re4 \skip 8 <<si,4 sol4>>}>>            % 13
-      <<{re'8._(do'16) si8 la4-+ sol8 sol4 re8\p\<}\\
+      <<{re'8._(do'16) si8 la4-+ sol8 sol4 re8\p}\\
         {<<do4 sol4>> \skip 8 re4 \skip 8 sol,4 \skip 8}>>
-      mi16(re16 mi16 sol16) fad16(la16\!)                                 % 14
+      mi16\<(re16 mi16 sol16) fad16(la16)                                 % 14
       sol16(fad16 sol16 si16) la16(do'16)
-      si16(la16 si16 re'16) do'16(si16)
+      si16(la16 si16 re'16) do'16(si16)\!
       la8-+ re8-! do8-! <<{re'4 re'8}\\{<<si,4 sol4>>}>>                  % 15
       <<{re'8._(do'16) si8 la4-+ sol8 si4.}\\
         {<<do4 sol4>> \skip 8 re4 \skip 8 <<sol,4. re4.>>}>>              % 16
@@ -73,9 +80,11 @@
   }
 }
 
+\pageBreak
+
 \score {
   \new Staff
-  \with {instrumentName = #"Cello"}
+%  \with {instrumentName = #"Cello"}
   {
     \override Hairpin.to-barline = ##f
     \tempo "Allemanda (allegro)"
@@ -96,10 +105,10 @@
       la8 sol8 fad8-+ sol8 la8 re4 la8\f                                  % 7
       si16(la16) si8(si16) re'16 dod'16 si16
       \acciaccatura re'8 dod'8 \acciaccatura si8 la8 re'8 fad8            % 8
-      sol,8 si8 <<{fad8 mi8-+}\\ {la,4}>> re16\mf re'16 mi16 re'16
+      sol,8 si8 <<{fad8 mi8-+}\\ {la,4}>> re16\mf\< re'16 mi16 re'16
       fad16 re'16 fad16 re'16                                             % 9
       sol16 re'16 fad16 re'16 sol16 re'16 mi16 re'16
-      dod'16 re'16 dod'16\f si16 la16 sol16 fad16 mi16                    % 10
+      dod'16 re'16\! dod'16\f si16 la16 sol16 fad16 mi16                  % 10
       fad8 re'8 mi8 dod'8 <<re'4. fad4. la,4. re,4.>>                     % 11
     }
     \repeat volta 2 {
@@ -142,7 +151,7 @@
 
 \score {
   \new Staff
-  \with {instrumentName = #"Cello"}
+%  \with {instrumentName = #"Cello"}
   {
     \override Hairpin.to-barline = ##f
     \tempo "Largo"
@@ -213,7 +222,7 @@
 
 \score {
   \new Staff
-  \with {instrumentName = #"Cello"}
+%  \with {instrumentName = #"Cello"}
   {
     \override Hairpin.to-barline = ##f
     \tempo "Giga (staccato)"
@@ -249,7 +258,7 @@
       re,4.( re,4)                                                         % 24
     }
     \repeat volta 2 {
-      \partial 4 la4\mf                                                    % 0
+      \partial 8 la8\mf                                                    % 0
       \set Score.currentBarNumber = #25
       re'4 la8 re4 do'8                                                    % 25
       do'4.-+ si4 si8                                                      % 26
