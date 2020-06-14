@@ -118,7 +118,7 @@
     re'8\< re'8 re'8 re'8\!                                               % 72
     re'4( dod'8) re'16-1( mi'16)                                          % 73
     fa'8\< fa'8 fa'8 fa'8\!                                               % 74
-    fa'4( mi'8-3) mi'16-1( fa'16)                                         % 75
+    fa'4( mi'8)^\markup{\bold\teeny (3)} mi'16-1( fa'16)                  % 75
     sol'8\< sol'8 sol'8 sol'8\!                                           % 76
     sol'4 fa'4(                                                           % 77
     fa'4)\> mi'4(                                                         % 78
@@ -143,7 +143,7 @@
     fa8 fa8 re'8 re'8                                                     % 94
     do'4( la8) do'16(\< sib16)                                            % 95
     la8 fa'16-4( mi'16) re'8 sol'16( fa'16)                               % 96
-    fa'4\f( fa'8) re'16( do'16)                                           % 97
+    fa'4\f( mi'8) re'16( do'16)                                           % 97
     sib16\>( do'16) la16( sib16) sol16( la16) fa16( sol16)                % 98
     mi16( fa16) re16( mi16) do8\! do'16\p( la16)                          % 99
     fa8 fa8 re'8 re'8                                                     % 100

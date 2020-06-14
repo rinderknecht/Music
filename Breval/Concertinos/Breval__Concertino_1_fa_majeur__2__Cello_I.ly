@@ -71,7 +71,7 @@ allongerUne = \markup {
     \mark \default
     do'2.\p                                                               % 21
     sib2.\upbow                                                           % 22
-    la8\<(do'8) re'8(mi'8) fa'8-- sol'8--\!                               % 23
+    la8\<(do'8) re'8(mi'8) fa'8 sol'8\!                                   % 23
     fa'2\>( mi'4)\! \breathe                                              % 24
     <do'-1>8.\upbow\<(re'16) mib'4\! mib'4                                % 25
     re'4 la4( do'4-2)                                                     % 26
@@ -92,11 +92,11 @@ allongerUne = \markup {
     \mark \default
     fa'2.\mf                                                              % 38
     sol'2.                                                                % 39
-    sib4( la8 sol'8 fa'8 mib'8-2)                                         % 40
+    sib4( la8) sol'8( fa'8 mib'8-2)                                       % 40
     mib'8( re'8) re'2                                                     % 41
-    mib'2.\p\upbow(                                                       % 42
+    mib'2.\p\downbow(                                                     % 42
     mib'8) re'8-4( do'8 sib8 la4)                                         % 43
-    re'2.\upbow(                                                          % 44
+    re'2.\downbow(                                                        % 44
     re'8)\> do'8( sib8 la8 sol4)\!                                        % 45
     la4\pp( <do'-1>4 mib'4)                                               % 46
     sol2(^\markup{\bold\teeny (3)} fad4) \breathe                         % 47
@@ -122,10 +122,10 @@ allongerUne = \markup {
     \clef "tenor"
     fa'4\p fa'4                                                           % 61
     fa'2.\<(                                                              % 62
-    fa'4) sol'4-1-- la'4--^\markup{\bold\teeny x2}                        % 63
-    sib'8\mf\!(^\markup{\bold\teeny x3} la'8)
-    sol'8( fa'8-4) mib'8--^\markup{\bold\teeny (2)}
-    re'8--_\markup{\bold\teeny (1)}                                       % 64
+    fa'4) sol'4-1 la'4^\markup{\bold\teeny x2}                            % 63
+    sib'8\f\!(^\markup{\bold\teeny x3} la'8)
+    sol'8( fa'8-4) mib'8^\markup{\bold\teeny (2)}
+    re'8_\markup{\bold\teeny (1)}                                         % 64
     sol'2.-4                                                              % 65
     solb'2.                                                               % 66
     <fa'-4>8\>(^\markup{\small\italic "poco rall."}
