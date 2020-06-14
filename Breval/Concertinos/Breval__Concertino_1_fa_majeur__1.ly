@@ -24,13 +24,13 @@
 %  ragged-last = ##t
 }
 
-allongerUne = \markup {
-  \center-column {
-    \combine
-    \draw-line #'(-2 . 0)
-    \arrow-head #X #RIGHT ##f
-  }
-}
+% allongerUne = \markup {
+%   \center-column {
+%     \combine
+%     \draw-line #'(-2 . 0)
+%     \arrow-head #X #RIGHT ##f
+%   }
+% }
 
 \score {
   \new Staff
@@ -88,22 +88,28 @@ allongerUne = \markup {
       \tuplet 3/2 {mi8 fa8 sol8}
       \tuplet 3/2 {la8 mi8 fa8}
       \tuplet 3/2 {sol8 la8 si!8}                                         % 26
-      \tuplet 3/2 {do'8-1^\allongerUne\f
+      \tuplet 3/2 {do'8-1\f%^\allongerUne
                    sol8^\markup{\bold\teeny x2}( do'8}
       \tuplet 3/2 {mi'8^\markup{\bold\teeny x4})
                    re'8^\markup{\bold\teeny x2} do'8}
-      \tuplet 3/2 {re'8^\allongerUne sol8-1( re'8^\markup{\bold\teeny (1)}}
+      \tuplet 3/2 {re'8%^\allongerUne
+                   sol8-1( re'8^\markup{\bold\teeny (1)}}
       \tuplet 3/2 {fa'8)^\markup{\bold\teeny (4)}
                    mi'8^\markup{\bold\teeny (3)} re'8}                    % 27
-      \tuplet 3/2 {do'8-4^\allongerUne_\markup{\teeny II} mi'8( fa'8}
+      \tuplet 3/2 {do'8-4_\markup{\teeny II}%^\allongerUne
+                   mi'8( fa'8}
       \tuplet 3/2 {sol'8) mi'8 do'8}
-      \tuplet 3/2 {sol,8\open^\allongerUne si!8 ( fa'8}
+      \tuplet 3/2 {sol,8\open%^\allongerUne
+                   si!8 ( fa'8}
       \tuplet 3/2 {sol'8) fa'8 si8}                                       % 28
-      \tuplet 3/2 {do'8\mf^\allongerUne mi'8( fa'8}
+      \tuplet 3/2 {do'8\mf%^\allongerUne
+                   mi'8( fa'8}
       \tuplet 3/2 {sol'8) mi'8 do'8}
-      \tuplet 3/2 {sol,8\open^\allongerUne si!8 ( fa'8}
+      \tuplet 3/2 {sol,8\open%^\allongerUne
+                   si!8 ( fa'8}
       \tuplet 3/2 {sol'8) fa'8 si8}                                       % 29
-      \tuplet 3/2 {do'8^\allongerUne mi'8( fa'8}
+      \tuplet 3/2 {do'8%^\allongerUne
+                   mi'8( fa'8}
       \tuplet 3/2 {sol'8) mi'8( fa'8}
       \tuplet 3/2 {sol'8) mi'8( fa'8}
       \tuplet 3/2 {sol'8) mi'8( fa'8}                                     % 30

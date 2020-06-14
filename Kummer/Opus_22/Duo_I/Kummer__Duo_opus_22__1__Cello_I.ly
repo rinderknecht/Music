@@ -24,86 +24,86 @@
 %  ragged-last = ##t
 }
 
-allongerCinq = \markup {
-  \center-column {
-    \combine
-    \draw-line #'(-10 . 0)
-    \arrow-head #X #RIGHT ##f
-  }
-}
+% allongerCinq = \markup {
+%   \center-column {
+%     \combine
+%     \draw-line #'(-10 . 0)
+%     \arrow-head #X #RIGHT ##f
+%   }
+% }
 
-allongerQuatre = \markup {
-  \center-column {
-    \combine
-    \draw-line #'(-9 . 0)
-    \arrow-head #X #RIGHT ##f
-  }
-}
+% allongerQuatre = \markup {
+%   \center-column {
+%     \combine
+%     \draw-line #'(-9 . 0)
+%     \arrow-head #X #RIGHT ##f
+%   }
+% }
 
-allongerTrois = \markup {
-  \center-column {
-    \combine
-    \draw-line #'(-6 . 0)
-    \arrow-head #X #RIGHT ##f
-  }
-}
+% allongerTrois = \markup {
+%   \center-column {
+%     \combine
+%     \draw-line #'(-6 . 0)
+%     \arrow-head #X #RIGHT ##f
+%   }
+% }
 
-allongerDeux = \markup {
-  \center-column {
-    \combine
-    \draw-line #'(-4 . 0)
-    \arrow-head #X #RIGHT ##f
-  }
-}
+% allongerDeux = \markup {
+%   \center-column {
+%     \combine
+%     \draw-line #'(-4 . 0)
+%     \arrow-head #X #RIGHT ##f
+%   }
+% }
 
-allongerUne = \markup {
-  \center-column {
-    \combine
-    \draw-line #'(-2 . 0)
-    \arrow-head #X #RIGHT ##f
-  }
-}
+% allongerUne = \markup {
+%   \center-column {
+%     \combine
+%     \draw-line #'(-2 . 0)
+%     \arrow-head #X #RIGHT ##f
+%   }
+% }
 
-retenir = \markup {
-  \center-column {
-    \concat {
-      \arrow-head #X #LEFT ##f
-      \hspace #-1
-      \draw-line #'(-4 . 0)
-    }
-  }
-}
+% retenir = \markup {
+%   \center-column {
+%     \concat {
+%       \arrow-head #X #LEFT ##f
+%       \hspace #-1
+%       \draw-line #'(-4 . 0)
+%     }
+%   }
+% }
 
-retenirAppuyer = \markup {
-  \center-column {
-    \concat {
-      \arrow-head #X #LEFT ##f
-      \hspace #-1
-      \override #'(thickness . 3)
-      \draw-line #'(-5 . 0)
-    }
-  }
-}
+% retenirAppuyer = \markup {
+%   \center-column {
+%     \concat {
+%       \arrow-head #X #LEFT ##f
+%       \hspace #-1
+%       \override #'(thickness . 3)
+%       \draw-line #'(-5 . 0)
+%     }
+%   }
+% }
 
-retenirQuatre = \markup {
-  \center-column {
-    \concat {
-      \arrow-head #X #LEFT ##f
-      \hspace #-1
-      \draw-line #'(-8 . 0)
-    }
-  }
-}
+% retenirQuatre = \markup {
+%   \center-column {
+%     \concat {
+%       \arrow-head #X #LEFT ##f
+%       \hspace #-1
+%       \draw-line #'(-8 . 0)
+%     }
+%   }
+% }
 
-retenirCinq = \markup {
-  \center-column {
-    \concat {
-      \arrow-head #X #LEFT ##f
-      \hspace #-1
-      \draw-line #'(-9 . 0)
-    }
-  }
-}
+% retenirCinq = \markup {
+%   \center-column {
+%     \concat {
+%       \arrow-head #X #LEFT ##f
+%       \hspace #-1
+%       \draw-line #'(-9 . 0)
+%     }
+%   }
+% }
 
 \score {
   \new Staff
@@ -133,7 +133,8 @@ retenirCinq = \markup {
       re'2\upbow(do'2)                                                 % 12
       fa'1-2\<                                                         % 13
       fa'4\!\>(mi'4 la4\open si4-1)\!                                  % 14
-      do'2\downbow^\allongerUne si4..(la16)                            % 15
+      do'2\downbow%^\allongerUne
+      si4..(la16)                                                      % 15
       la2\downbow\open sol4(fa4)                                       % 16
       mi4\p\downbow(sol,4 mi4 sol,4)                                   % 17
       re4\upbow(sol,4 re4 sol,4)                                       % 18
@@ -141,14 +142,22 @@ retenirCinq = \markup {
       mi4\upbow(sol4 mi4 sol4)                                         % 20
       fa4\downbow(sol4 fa4 mib4)                                       % 21
       re4\upbow(fad4 sol4 la4)                                         % 22
-      sol4^\allongerDeux\downbow(fad4) mi4^\allongerDeux(la4)          % 23
-      re4-.^\allongerUne\downbow la4-1(si4 do'4)                       % 24
-      si4^\retenir(sib2) la8-4^\allongerDeux( sol8)                    % 25
-      fad4^\allongerUne\downbow-\markup{\small\italic "talon"}
+      sol4\downbow(%^\allongerDeux
+      fad4) mi4(%^\allongerDeux
+      la4)                                                             % 23
+      re4-.\downbow%^\allongerUne
+      la4-1(si4 do'4)                                                  % 24
+      si4(%^\retenir
+      sib2) la8-4(%^\allongerDeux
+      sol8)                                                            % 25
+      fad4\downbow-\markup{\small\italic "talon"}%^\allongerUne
       la4-1(si4 do'4)                                                  % 26
-      si4^\retenir(sib2\>) la8-4^\allongerDeux\!(sol8)                 % 27
-      fad4\sf\downbow^\allongerUne
-      re'2_\markup{\bold\teeny (2)}^\retenirAppuyer(dod'4)             % 28
+      si4(%^\retenir
+      sib2\>) la8-4\!(%^\allongerDeux
+      sol8)                                                            % 27
+      fad4\sf\downbow%^\allongerUne
+      re'2_\markup{\bold\teeny (2)}(%^\retenirAppuyer
+      dod'4)                                                           % 28
       re'4\downbow re'2(dod'4)                                         % 29
       <re'-4>4(do'2 la8 fad8)                                          % 30
       re4.\upbow\>(mi8 fad8 sol8 <la-1>8 lad8)\!                       % 31
@@ -158,7 +167,7 @@ retenirCinq = \markup {
       si4\upbow(la2 si4)                                               % 33
       si4-1\downbow(do'4 re'4 do'4)                                    % 34
       do'4\upbow(si2 do'8 dod'8)                                       % 35
-      re'4\downbow^\allongerUne
+      re'4\downbow%^\allongerUne
       sol'2-4\<fad'4\downbow(                                          % 36
       fa'4) mi'2 re'4-4\downbow\!(                                     % 37
       re'4\mf) dod'4\upbow(si4 dod'4)                                  % 38
@@ -172,16 +181,20 @@ retenirCinq = \markup {
       sol4(si4) fad4(la4)                                              % 45
       mi2\< la,4(do4)                                                  % 46
       re2 re2\!                                                        % 47
+
       \bar "||"
       \mark \default
       sol,4-.\f si8-.\upbow do'8-.
-      dod'8^\allongerTrois(re'8 do'8) si8-.                            % 48
+      dod'8(%^\allongerTrois
+      re'8 do'8) si8-.                                                 % 48
       si8(la8) la-.\downbow sol8-. fad8-. mi8-. re8-. do8-.            % 49
-      si,4 si8-.\upbow\p do'8-. dod'8^\allongerTrois(re'8 do'8) si8-.  % 50
+      si,4 si8-.\upbow\p do'8-. dod'8(%^\allongerTrois
+      re'8 do'8) si8-.                                                 % 50
       si8(la8) la8-. sol8-. fad8-. mi8-. re8-. do8-.                   % 51
       si,8-. re8-.
-      sol4^\allongerDeux\downbow\((sol8) mi8-.\)
-      la4^\allongerDeux\upbow\((                                       % 52
+      sol4\downbow\((%^\allongerDeux
+                    sol8) mi8-.\)
+      la4\upbow\((%^\allongerDeux                                      % 52
       la8\<) fad8-.\)
       si4\downbow(si8) sol8-.\upbow do'4\downbow(                      % 53
       do'4)\! <la'-3>2\flageolet\>(do'4)\!                             % 54
@@ -226,7 +239,8 @@ retenirCinq = \markup {
     do'4.->(si8) si4.->(la8)                                           % 86
     re'2 do'2                                                          % 87
     si2 do'4.->(la8)                                                   % 88
-    mi4-.\downbow^\allongerUne re4\upbow(do4 si,4)                     % 89
+    mi4-.\downbow%^\allongerUne
+    re4\upbow(do4 si,4)                                                % 89
     do4(mi4 do4 mi4)                                                   % 90
     si,4(mi4 si,4 mi4)                                                 % 91
     sold,4-1(mi4^\markup{\bold\teeny (2)} sold,4 mi4)                  % 92

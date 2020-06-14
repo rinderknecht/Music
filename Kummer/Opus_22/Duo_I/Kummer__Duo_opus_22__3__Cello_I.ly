@@ -23,86 +23,86 @@
 %  ragged-last = ##t
 }
 
-allongerCinq = \markup {
-  \center-column {
-    \combine
-    \draw-line #'(-10 . 0)
-    \arrow-head #X #RIGHT ##f
-  }
-}
+% allongerCinq = \markup {
+%   \center-column {
+%     \combine
+%     \draw-line #'(-10 . 0)
+%     \arrow-head #X #RIGHT ##f
+%   }
+% }
 
-allongerQuatre = \markup {
-  \center-column {
-    \combine
-    \draw-line #'(-9 . 0)
-    \arrow-head #X #RIGHT ##f
-  }
-}
+% allongerQuatre = \markup {
+%   \center-column {
+%     \combine
+%     \draw-line #'(-9 . 0)
+%     \arrow-head #X #RIGHT ##f
+%   }
+% }
 
-allongerTrois = \markup {
-  \center-column {
-    \combine
-    \draw-line #'(-6 . 0)
-    \arrow-head #X #RIGHT ##f
-  }
-}
+% allongerTrois = \markup {
+%   \center-column {
+%     \combine
+%     \draw-line #'(-6 . 0)
+%     \arrow-head #X #RIGHT ##f
+%   }
+% }
 
-allongerDeux = \markup {
-  \center-column {
-    \combine
-    \draw-line #'(-4 . 0)
-    \arrow-head #X #RIGHT ##f
-  }
-}
+% allongerDeux = \markup {
+%   \center-column {
+%     \combine
+%     \draw-line #'(-4 . 0)
+%     \arrow-head #X #RIGHT ##f
+%   }
+% }
 
-allongerUne = \markup {
-  \center-column {
-    \combine
-    \draw-line #'(-2 . 0)
-    \arrow-head #X #RIGHT ##f
-  }
-}
+% allongerUne = \markup {
+%   \center-column {
+%     \combine
+%     \draw-line #'(-2 . 0)
+%     \arrow-head #X #RIGHT ##f
+%   }
+% }
 
-retenir = \markup {
-  \center-column {
-    \concat {
-      \arrow-head #X #LEFT ##f
-      \hspace #-1
-      \draw-line #'(-4 . 0)
-    }
-  }
-}
+% retenir = \markup {
+%   \center-column {
+%     \concat {
+%       \arrow-head #X #LEFT ##f
+%       \hspace #-1
+%       \draw-line #'(-4 . 0)
+%     }
+%   }
+% }
 
-retenirAppuyer = \markup {
-  \center-column {
-    \concat {
-      \arrow-head #X #LEFT ##f
-      \hspace #-1
-      \override #'(thickness . 3)
-      \draw-line #'(-5 . 0)
-    }
-  }
-}
+% retenirAppuyer = \markup {
+%   \center-column {
+%     \concat {
+%       \arrow-head #X #LEFT ##f
+%       \hspace #-1
+%       \override #'(thickness . 3)
+%       \draw-line #'(-5 . 0)
+%     }
+%   }
+% }
 
-retenirQuatre = \markup {
-  \center-column {
-    \concat {
-      \arrow-head #X #LEFT ##f
-      \hspace #-1
-      \draw-line #'(-8 . 0)
-    }
-  }
-}
+% retenirQuatre = \markup {
+%   \center-column {
+%     \concat {
+%       \arrow-head #X #LEFT ##f
+%       \hspace #-1
+%       \draw-line #'(-8 . 0)
+%     }
+%   }
+% }
 
-retenirCinq = \markup {
-  \center-column {
-    \concat {
-      \arrow-head #X #LEFT ##f
-      \hspace #-1
-      \draw-line #'(-9 . 0)
-    }
-  }
-}
+% retenirCinq = \markup {
+%   \center-column {
+%     \concat {
+%       \arrow-head #X #LEFT ##f
+%       \hspace #-1
+%       \draw-line #'(-9 . 0)
+%     }
+%   }
+% }
 
 
 \score {
@@ -166,8 +166,10 @@ retenirCinq = \markup {
     sold,8^\markup{\bold\teeny x1}\<(re8 fa!8 re8)                     % 44
     la,8-. la,8-. si,8-. sol,!8-.                                      % 45
     do8-.-1 sol,8-. dod8-.^\markup{\bold\teeny (2)} sol,8-.\!          % 46
-    re8^\markup{\bold\teeny (3)}^\allongerCinq\>(sol,8 re8 dod8)       % 47
-    re8^\allongerCinq(sol,8 re8 dod8)\!                                % 48
+    re8^\markup{\bold\teeny (3)}\>(%^\allongerCinq
+    sol,8 re8 dod8)                                                    % 47
+    re8(%^\allongerCinq
+    sol,8 re8 dod8)\!                                                  % 48
     re8^\markup{\bold\teeny (3)} r8 sol4-4\<\p\upbow                   % 49
     la4 si4\!\upbow                                                    % 50
     \bar "||"
