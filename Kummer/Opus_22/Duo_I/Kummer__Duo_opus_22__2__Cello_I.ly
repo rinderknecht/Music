@@ -1,4 +1,4 @@
-#(set-global-staff-size 20)
+#(set-global-staff-size 19)
 
 \version "2.18.2"
 
@@ -121,15 +121,15 @@
     \mark \default
     fa2.\p                                                             % 1
     la2.-1                                                             % 2
-    do'4\<(<re'-3>4\flageolet do'4)\!                                  % 3
+    do'4\<(re'4-3\flageolet do'4)\!                                    % 3
     do'8\upbow(sib8 la4) r4                                            % 4
-    <re'-4>2\downbow sol4                                              % 5
+    re'2-4\downbow sol4                                                % 5
     do'2 fa4                                                           % 6
     sib4-2 sib8\>(do'8) la8(sib8)\!                                    % 7
     sol2-4 r4                                                          % 8
     fa2.\turn                                                          % 9
     la2.-1                                                             % 10
-    do'4\<(<re'-3>4\flageolet do'4)\!                                  % 11
+    do'4\<(re'4-3\flageolet do'4)\!                                    % 11
     do'8(sib8 la4) r4                                                  % 12
     re'2\downbow sol4                                                  % 13
     do'2 fa4                                                           % 14
@@ -142,19 +142,19 @@
     mib'4.-4\> re'8-4\!(sib!8^\markup{\bold\teeny x1} sol8)            % 21
     reb'4.^\markup{\bold\teeny (3)}\> do'8\!(la8 fa8-1)                % 22
     lab2-4\sf sol8-4\upbow(fa8)                                        % 23
-    mi4\downbow <do'-4>8\upbow(si8 sib8 sol8-4)                        % 24
+    mi4\downbow do'8-4\upbow(si8 sib8 sol8-4)                          % 24
     fa2.\p                                                             % 25
     la2.-1                                                             % 26
-    do'4(<re'-3>4\open do'4)                                           % 27
+    do'4(re'4-3\flageolet do'4)                                        % 27
     do'8(sib8 la4) r4                                                  % 28
     re'2\downbow\<(sol'4)\!                                            % 29
-    <do'-2>2\<(fa'4)\!                                                 % 30
-    <sib-2>4_\markup{\teeny II}\downbow(la4) do'4\((                   % 31
+    do'2-2\<(fa'4)\!                                                   % 30
+    sib4-2_\markup{\teeny II}\downbow(la4) do'4\((                     % 31
     do'8) sib8\) sol'16\downbow(fa'16 mi'16 re'16-4 do'16
     sib16^\markup{\bold\teeny x1} la16 sol16)                          % 32
     fa2\upbow\turn(sol8 mi8)                                           % 33
     fa4\downbow r8 la8\open\upbow(sol8 fa8)                            % 34
-    mi8\downbow(re8) dod2_\markup{\bold\teeny x4}                      % 35
+    mi8\downbow(re8) dod2^\markup{\bold\teeny x4}                      % 35
     \bar "||"
     \mark \default
     re8\downbow(la8)^\markup{\small\italic "pointe, legato"}
@@ -162,11 +162,11 @@
     mi8\upbow(la8) re8(la8) sol8(la8)                                  % 37
     fa8\downbow(%^\allongerDeux
     re8) mi8(fa8 sol8 sold8-4)                                         % 38
-    la8\downbow(<re'-4>8 dod'8 la8) sol!8(mi8)                         % 39
+    la8\downbow(re'8-4 dod'8 la8) sol!8(mi8)                           % 39
     re8\downbow(la8) sol8(la8) fa8(la8)                                % 40
     mi8\upbow(la8) re8(la8) dod'8(la8)                                 % 41
     do'!8-3(si!8 sib8 la8\open)
-    lab8^\markup{\bold\teeny (4)}(fa8)                                 % 42
+    lab8-4(fa8)                                                        % 42
     <<{la,!4%^\allongerUne
        do4_(%^\retenirCinq
        si,!8 sib,8)} \\
@@ -202,7 +202,7 @@
     \mark \default
     fa2.\p                                                             % 64
     la2.-1                                                             % 65
-    do'4\<(<re'-3>4\flageolet do'4)\!                                  % 66
+    do'4\<(re'4-3\flageolet do'4)\!                                    % 66
     do'8\upbow(sib8 la4) r4                                            % 67
     re'2\downbow sol4                                                  % 68
     do'2 fa4                                                           % 69
@@ -210,24 +210,24 @@
     sol2 r4                                                            % 71
     <do'-2>4(sib4) la4                                                 % 72
     re'4.(do'8) sib4                                                   % 73
-    <sib-1>4.\<(si8 do'4)\!                                            % 74
-    <do'-1>4.\<(dod'8 re'4)\!                                          % 75
+    sib4.-1\<(si8 do'4)\!                                              % 74
+    do'4.-1\<(dod'8 re'4)\!                                            % 75
     mib'4.\>^\markup{\bold\teeny (4)}
-    <re'-4>8\!(
+    re'8-4\!(
     sib8_\markup{\bold\teeny x1} sol8)                                 % 76
     reb'4.\>^\markup{\bold\teeny (3)}
     do'8\!(la8 fa8-1)                                                  % 77
     lab2^\markup{\bold\teeny (4)}\sf <sol-4>8\upbow(fa8)               % 78
-    mi4\downbow <do'-4>8\upbow(si!8 sib8 sol8-4)                       % 79
+    mi4\downbow do'8-4\upbow(si!8 sib8 sol8-4)                         % 79
     fa2.\p\turn                                                        % 80
     la2.-1                                                             % 81
-    do'4(<re'-3>4\flageolet do'4)                                      % 82
+    do'4(re'4-3\flageolet do'4)                                        % 82
     do'8\upbow(sib8 la4) r4                                            % 83
     re'2(%^\allongerQuatre
     sol'4)                                                             % 84
-    <do'-2>2(%^\allongerQuatre
+    do'2-2(%^\allongerQuatre
     fa'4)                                                              % 85
-    <sib-2>4_\markup{\teeny II}\downbow(la4) do'4\((                   % 86
+    sib4-2_\markup{\teeny II}\downbow(la4) do'4\((                     % 86
     do'8) sib8\)
     <sol'-4>16(fa'16 mi'16 re'16-4 do'16
     sib16^\markup{\bold\teeny x1} la16 sol16)                          % 87

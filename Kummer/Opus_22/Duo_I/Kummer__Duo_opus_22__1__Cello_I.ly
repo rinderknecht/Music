@@ -159,8 +159,8 @@
       re'2_\markup{\bold\teeny (2)}(%^\retenirAppuyer
       dod'4)                                                           % 28
       re'4\downbow re'2(dod'4)                                         % 29
-      <re'-4>4(do'2 la8 fad8)                                          % 30
-      re4.\upbow\>(mi8 fad8 sol8 <la-1>8 lad8)\!                       % 31
+      re'4-4(do'2 la8 fad8)                                            % 30
+      re4.\upbow\>(mi8 fad8 sol8 la8-1 lad8)\!                         % 31
       \bar "||"
       \mark \default
       si2\downbow_\markup{\small\italic "dolce"}(do'4 si4)             % 32
@@ -197,7 +197,7 @@
       la4\upbow\((%^\allongerDeux                                      % 52
       la8\<) fad8-.\)
       si4\downbow(si8) sol8-.\upbow do'4\downbow(                      % 53
-      do'4)\! <la'-3>2\flageolet\>(do'4)\!                             % 54
+      do'4)\! la'2-3\flageolet\>(do'4)\!                               % 54
       do'8\downbow\p(si8) re'8-.\upbow(si8-.) si8(la8)
       do'8-.\upbow(la8-.)                                              % 55
       la8-2\downbow(sol8_\markup{\bold\teeny x1}) si8-.\upbow(sol-.)
@@ -213,9 +213,9 @@
       r4 mi4\p\downbow r4 do4\upbow                                    % 64
       r4 re4\downbow r4 re4\upbow                                      % 65
       sol,2 r2                                                         % 66
-      re4\upbow(<re'-3>2\flageolet fad4-1)                             % 67
+      re4\upbow(re'2-3\flageolet fad4-1)                               % 67
       sol2 r2                                                          % 68
-      re4\upbow(<re'-3>2\flageolet fad4-1)                             % 69
+      re4\upbow(re'2-3\flageolet fad4-1)                               % 69
       sol2\pp(fad4 la4)                                                % 70
       sol2(fad4 la4)                                                   % 71
       sol1(                                                            % 72

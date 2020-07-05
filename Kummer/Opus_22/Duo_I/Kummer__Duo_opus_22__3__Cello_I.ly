@@ -16,6 +16,7 @@
   paper-width  = 195\mm
   paper-height = 260\mm
   indent = #0
+  page-count = #2
   print-page-number = ##f
   ragged-last-bottom = ##t
   ragged-bottom = ##f
@@ -122,7 +123,7 @@
     do'8-.\upbow mi'8-.-1 sol'4\>                                      % 2
     do'8.-2(si32 do'32 re'8) si8\downbow                               % 3
     do'8-.\upbow mi'8-.-1 sol'4                                        % 4
-    <la'-3>4\flageolet->(sol'8) r8                                     % 5
+    la'4->-3\flageolet(sol'8) r8                                       % 5
     fa'4->(mi'8)\! r8                                                  % 6
     re'8-4-. do'8-. fa'8-.-2 mi'8-.                                    % 7
     re'4-4 sol4                                                        % 8
@@ -178,7 +179,7 @@
     do'8-.\upbow mi'8-.-1 sol'4\>                                      % 52
     do'8.-2(si32 do'32 re'8) si8\downbow                               % 53
     do'8-.\upbow mi'8-.-1 sol'4                                        % 54
-    <la'-3>4\flageolet->(sol'8) r8                                     % 55
+    la'4->-3\flageolet(sol'8) r8                                       % 55
     fa'4->(mi'8)\! r8                                                  % 56
     re'8-4-. do'8-. fa'8-2-. mi'8-.                                    % 57
     re'4-4 sol4                                                        % 58
@@ -187,7 +188,7 @@
     do'8.-2\!(si32 do'32 re'8) si8\downbow                             % 61
     do'8-.\upbow mi'8-1-. sol'4\>                                      % 62
     fad'4->(sol'8) r8                                                  % 63
-    <la'-3>4\flageolet->(sol'8)\! r8                                   % 64
+    la'4->-3\flageolet(sol'8)\! r8                                     % 64
     do'8.-2\!(si32 do'32 re'8) si8\downbow                             % 65
     do'4\upbow_\markup{\teeny "I"} r4                                  % 66
     \bar "||"
@@ -209,14 +210,14 @@
     la8-. re8-. mi8-. mi8-.                                            % 81
     la,4
     \bar "||"
-    \mark \default r4                                             % 82
+    \mark \default r4                                                  % 82
     la,8\p\upbow(do8 fa8 la8)                                          % 83
     sib4 sib,4                                                         % 84
     la,8(do8) fa8-. la8-.                                              % 85
     sib4.(do'16 sib16)                                                 % 86
     la8\>(sol8) sib8(la8)\!                                            % 87
-    re'8(do'8) <fa'-2>8-. mi'8-.                                       % 88
-    <re'-3>8-.\flageolet do'8-.-4 sib8-. la8-.                         % 89
+    re'8(do'8) fa'8-2-. mi'8-.                                         % 88
+    re'8-3-.\flageolet do'8-.-4 sib8-. la8-.                           % 89
     la4-3(sol8) r8                                                     % 90
     <fa,-4>2                                                           % 91
     mi,8(sol,8 do8 mi8)                                                % 92
@@ -241,7 +242,7 @@
     do'8.-2(si32 do'32 re'8) si8\downbow                               % 110
     do'8-.\upbow mi'8-1-. sol'4                                        % 111
     fad'4\downbow(sol'8)\! r8                                          % 112
-    <la'-3>4\flageolet\upbow(sol'8) mi'8-.\upbow                       % 113
+    la'4-3\flageolet\upbow(sol'8) mi'8-.\upbow                         % 113
     <do'-2>8.\downbow(si32 do'32 re'8) si8\upbow                       % 114
     \bar "||"
     \mark \default
@@ -255,7 +256,7 @@
     mi16(fa16 sol16 la16 si16 do'16 re'16-1 mi'16)                     % 121
     fa'16\upbow(mi'16 re'16-4 do'16 si16 la16 sol16 fa16)              % 122
     sol16\<(la16 si16 do'16 re'16 mi'16-1 fa'16 sol'16)\!              % 123
-    <la'-3>2\flageolet\>                                               % 124
+    la'2-3\flageolet\>                                                 % 124
     sol'8\f\!-. mi'8-. do'8-2-. sol8-.                                 % 125
     mi8-. do8-. sol,8-. <<re8 si8-.>>                                  % 126
     do8\p(sol,8 do,8 sol,8)                                            % 127
@@ -277,7 +278,7 @@
     fad'8 fa'8) mi'4                                                   % 141
     mi'8(re'8-4) do'8(si8)                                             % 142
     do'8.\p(si32 do'32 re'8) si8\downbow                               % 143
-    do'8-.(<mi'-1>8-.) sol'4(                                          % 144
+    do'8-.(mi'8-1-.) sol'4(                                            % 144
     fad'8 fa'8) mi'4                                                   % 145
     mi'8(re'8-4) do'8(si8)                                             % 146
     do'8.\downbow(si32 do'32 re'8) si8\downbow                         % 147

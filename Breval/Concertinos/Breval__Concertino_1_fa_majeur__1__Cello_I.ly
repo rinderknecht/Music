@@ -44,14 +44,14 @@
     \set fingeringOrientations = #'(left)
 
     \repeat volta 2 {
-      \partial 4 <la'-3>8.\flageolet\upbow\f(<sol'-4>16)                  % 0
+      \partial 4 la'8.-3\flageolet\upbow\f(<sol'-4>16)                    % 0
       \bar "||"
       \mark \default
       fa'4 fa'4(fa'8) mi'16(fa'16 sol'16 fa'16 mi'16 re'16-4)             % 1
       do'4 do'4(do'8) si!16(do'16 re'16 do'16 sib16 la16)                 % 2
       fad4(sol8 la8)
       \tuplet 3/2 {sib8( do'8 dod'8} \tuplet 3/2 {re'8 sib8 sol8)}        % 3
-      fa!4.(sol16 fa16 mi4) <la'-3>8.\flageolet(<sol'-4>16)               % 4
+      fa!4.(sol16 fa16 mi4) la'8.-3\flageolet(<sol'-4>16)                 % 4
       fa'4 fa'4(fa'8) mi'16(fa'16 sol'16 fa'16 mi'16 re'16-4)             % 5
       do'4 do'4(do'8) si!16(do'16 re'16 do'16 sib16 la16)                 % 6
       \tuplet 3/2 {fad8(sol8 la8}
@@ -61,9 +61,9 @@
       \bar "||"
       \mark \default
       la,8(do8 fa8 la8-1) do'4(fa'4)                                      % 9
-      <la'-3>4.\flageolet(<sol'-4>8) fa'8(mi'8 re'8-4 do'8)               % 10
+      la'4.-3\flageolet(sol'8-4) fa'8(mi'8 re'8-4 do'8)                   % 10
       sol,8(do8 mi8 sol8) do'4(<mi'-1>4)                                  % 11
-      sol'2 fa'8(mi'8 <re'-2>8 dod'8)                                     % 12
+      sol'2 fa'8(mi'8 re'8-2 dod'8)                                       % 12
       \tuplet 3/2 {re'8( dod'8 mi'8} \tuplet 3/2 {re'8 dod'8 mi'8)}
       \tuplet 3/2 {re'8( dod'8 mi'8} \tuplet 3/2 {re'8 dod'8 mi'8)}       % 13
       \tuplet 3/2 {re'8( la8 si!8-1} \tuplet 3/2 {dod'8 re'8 mi'8-1)}
@@ -137,11 +137,11 @@
     sol4.(fa8 mi4) \breathe sol4                                          % 40
     do'4 do'4(do'8) si!16(do'16 re'16 do'16 si16 do'16)                   % 41
     do'8-- sib!8--\> sib2.                                                % 42
-    \tuplet 3/2 {la8\!\mf <mi'-4>8 dod'8^\markup{\bold\teeny (1)}}
+    \tuplet 3/2 {la8\!\mf mi'8-4 dod'8^\markup{\bold\teeny (1)}}
     \tuplet 3/2 {la8 mi8-1 dod8}
     \tuplet 3/2 {la,8 dod8 mi8} \tuplet 3/2 {sol8 fa8 mi8}                % 43
     \tuplet 3/2 {fa8\downbow re8( fa8} \tuplet 3/2 {la8) fa8( la8}
-    \tuplet 3/2 {re'8) la8( <re'-1>8} \tuplet 3/2 {fa'8) mi'8 re'8}       % 44
+    \tuplet 3/2 {re'8) la8( re'8-1} \tuplet 3/2 {fa'8) mi'8 re'8}         % 44
     \tuplet 3/2 {dod'8-1 mi'8 dod'8} \tuplet 3/2 {la8 mi8-1 dod8}
     \tuplet 3/2 {la,8 dod8 mi8} \tuplet 3/2 {sol8 fa8 mi8}                % 45
     \tuplet 3/2 {fa8\downbow re8( fa8} \tuplet 3/2 {la8) fa8( la8}
@@ -150,21 +150,21 @@
     \tuplet 3/2 {dod'8(mi'8) la8} \tuplet 3/2 {dod'8(mi'8) la8\!}         % 47
     \bar "||"
     \mark \default
-    \tuplet 3/2 {<re'-4>8\p\downbow re8( mi8} \tuplet 3/2 {fa8) mi8 re8}
+    \tuplet 3/2 {re'8-4\p\downbow re8( mi8} \tuplet 3/2 {fa8) mi8 re8}
     \tuplet 3/2 {re'8 mi8( fa8} \tuplet 3/2 {sol8) fa8 mi8}               % 48
     \tuplet 3/2 {fa8 re8\< mi8} \tuplet 3/2 {fa8 sol8 la8}
     \tuplet 3/2 {sib8 la8 sol8} \tuplet 3/2 {fa8 mi8 re8\!}               % 49
     la,2\f mi2\>                                                          % 50
-    \tuplet 3/2 {<re'-4>8\p re8( mi8} \tuplet 3/2 {fa8) mi8 re8}
+    \tuplet 3/2 {re'8-4\p re8( mi8} \tuplet 3/2 {fa8) mi8 re8}
     \tuplet 3/2 {re'8 mi8( fa8} \tuplet 3/2 {sol8) fa8 mi8}               % 51
     \tuplet 3/2 {fa8 re8\< mi8} \tuplet 3/2 {fa8 sol8 la8}
     \tuplet 3/2 {sib8 la8 sol8} \tuplet 3/2 {fa8 mi8 re8\!}               % 52
     la,2\f \afterGrace mi2\trill( {re16 mi16)}                            % 53
     re4\downbow re'2\f dod'4(                                             % 54
     re'4) re'2\mf dod'4(                                                  % 55
-    re'4) <re'-3>2\flageolet\p <do'!-4>4\downbow\((                       % 56
+    re'4) re'2-3\flageolet\p <do'!-4>4\downbow\((                         % 56
     do'4) si!4\) sib2(                                                    % 57
-    sib4) <re'-3>8.\flageolet(do'16-4) do'4(sib4)                         % 58
+    sib4) re'8.-3\flageolet(do'16-4) do'4(sib4)                           % 58
     \tuplet 3/2 {la8^\markup{\bold\teeny (1)} fa8-2( mi8\<}
     \tuplet 3/2 {fa8) sol8 la8} \tuplet 3/2 {sib8 sol8( fad8}
     \tuplet 3/2 {sol8) la8 sib8}                                          % 59
@@ -176,7 +176,7 @@
     \tuplet 3/2 {do8 sol,8 mi,8}
     do,4\fermata
     \partial 4
-    <la'-3>8.\flageolet_\markup{\small\italic "a tempo"}( <sol'-4>16)     % 61
+    la'8.-3\flageolet_\markup{\small\italic "a tempo"}( sol'16-4)         % 61
     \bar "||"
     \mark \default
     \set Score.currentBarNumber = #62
@@ -191,9 +191,9 @@
     fa!4(mi4)                                                             % 68
     sol2(fa4) \breathe do4\mf                                             % 69
     la,8(do8 fa8 la8-1) do'4(fa'4)                                        % 70
-    <la'-3>4.\flageolet(<sol'-4>8) fa'8(mi'8 <re'-4>8 do'8)               % 71
-    sol,8(do8 mi8 sol8) <do'-4>4(mi'4)                                    % 72
-    sol'4.(fa'8)\< mi'8(<re'-4>8 do'8 sib8)\!                             % 73
+    la'4.-3\flageolet(sol'8-4) fa'8(mi'8 re'8-4 do'8)                     % 71
+    sol,8(do8 mi8 sol8) do'4-4(mi'4)                                      % 72
+    sol'4.(fa'8)\< mi'8(re'8-4 do'8 sib8)\!                               % 73
     \tuplet 3/2 {la8\f(fa8 la8)} \tuplet 3/2 {do'8 la8 fa8}
     \tuplet 3/2 {mi8(sol8 la8)} \tuplet 3/2 {sib8 do'8 sib8}              % 74
     \tuplet 3/2 {la8\mf fa8( la8} \tuplet 3/2 {do'8) la8 fa8}
@@ -204,15 +204,15 @@
     mi2.\pp(fa4)\<                                                        % 78
     mi2.(fa4)                                                             % 79
     sol2.(la4)                                                            % 80
-    \tuplet 3/2 {sib8\f do'8 re'8} \tuplet 3/2 {<mi'-1>8 fa'8 fad'8}
+    \tuplet 3/2 {sib8\f do'8 re'8} \tuplet 3/2 {mi'8-1 fa'8 fad'8}
     \tuplet 3/2 {sol'8 fa'8 mi'8} \tuplet 3/2 {re'8-4 do'8 sib8}          % 81
     \tuplet 3/2 {la8 sol8 la8} \tuplet 3/2 {sib8 do'8 dod'8}
     \tuplet 3/2 {re'8 do'8 sib8} \tuplet 3/2 {la8 sol8 fa8}               % 82
     do2 \afterGrace <sol-1>2\trill_( {<fa-1>16 sol16)}                    % 83
     fa4^\markup{\bold\teeny (1)} la2_\markup{\bold\teeny x4}->
-    <sol-4>8-- fa8--                                                      % 84
+    sol8-4-- fa8--                                                        % 84
     mi4 <sib-2>2-> la8-- sol8-4--                                         % 85
-    fa4 <fa'-2>4 sol'8. sol'16 mi'8. mi'16                                % 86
+    fa4 fa'4-2 sol'8. sol'16 mi'8. mi'16                                  % 86
     fa'4 fa4\downbow fa,4\downbow r4\fermata
     \bar "|."                                                             % 87
   }

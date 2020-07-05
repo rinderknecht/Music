@@ -44,7 +44,7 @@ allongerUne = \markup {
     \set fingeringOrientations = #'(left)
 
     \mark \default
-    <re'-1>4\p( mib'4 fa'4)                                               % 1
+    re'4-1\p( mib'4 fa'4)                                                 % 1
     sib2-2( si!4)                                                         % 2
     do'4^\markup{\bold\teeny (4)}(
     mib'4^\markup{\bold\teeny x1} sol'4)                                  % 3
@@ -56,11 +56,11 @@ allongerUne = \markup {
     sol'8-4)\!                                                            % 8
     sib2\>( do'4)\!                                                       % 9
     sib2\upbow r4                                                         % 10
-    <re'-1>4.\f( mib'16^\markup{\bold\teeny (2)} fa'16) mib'8( re'8)      % 11
+    re'4.-1\f( mib'16^\markup{\bold\teeny (2)} fa'16) mib'8( re'8)        % 11
     re'8-4( do'8) do'2                                                    % 12
-    <sol'-4>4 mi'!4( sib4^\markup{\bold\teeny (2)})\>                     % 13
+    sol'4-4 mi'!4( sib4^\markup{\bold\teeny (2)})\>                       % 13
     sib8( la8) la2\!                                                      % 14
-    <do'-1>4\p( re'4^\markup{\bold\teeny (3)}
+    do'4-1\p( re'4^\markup{\bold\teeny (3)}
     mib'4^\markup{\bold\teeny (4)})                                       % 15
     re'2.\upbow\<                                                         % 16
     mi'4-1 sol'2\!                                                        % 17
@@ -112,8 +112,8 @@ allongerUne = \markup {
     \bar "||"
     <re'-1>4\p(^\markup{\small\italic "a tempo"} mib'4 fa'4)              % 53
     sib2\upbow( si4-3)                                                    % 54
-    <do'-4>4( mib'4^\markup{\bold\teeny x1} sol'4)                        % 55
-    <sib-2>4.\upbow( do'16 sib16 la4)                                     % 56
+    do'4-4( mib'4^\markup{\bold\teeny x1} sol'4)                          % 55
+    sib4.-2\upbow( do'16 sib16 la4)                                       % 56
     fa2-2 sib4^\markup{\bold\teeny x1}(                                   % 57
     sib4) la8.\downbow(\< sib16) do'4(                                    % 58
     do'4) sib8.\downbow( do'16) re'4\!(                                   % 59
