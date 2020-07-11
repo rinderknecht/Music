@@ -108,7 +108,7 @@
     red'4( mi'8) mi'16-1( fa'16)                                          % 54
     sol'8 do'16-1( re'16)^\markup{\bold\teeny x2} mi'8 sol16-1( la16)     % 55
     sib!2                                                                 % 56
-    mi'4-3 re'4                                                           % 57
+    mi'4^\markup{\bold\teeny (3)} re'4                                    % 57
     dod'2-3(                                                              % 58
     dod'2)                                                                % 59
     re'16( la16) re'16( la16) fa16( la16) mi16( la16)                     % 60
@@ -132,7 +132,7 @@
     sol'8\< sol'8 sol'8 sol'8\!                                           % 76
     sol'4 fa'4(                                                           % 77
     fa'4)\> mi'4(                                                         % 78
-    mi'4) re'4(                                                           % 79
+    mi'4) re'4-4(                                                         % 79
     re'4) do'4\((                                                         % 80
     do'4) re'4\)                                                          % 81
     \mark \default
@@ -146,7 +146,7 @@
     re'16( do'16) sib16( do'16) sib16( la16) sol16( fa16)                 % 87
     mi16( do16) re16\<( mi16) fa16( sol16) la16(si16)\!                   % 88
     do'16( si16) do'16(si16) do'8 r8                                      % 89
-    do'16\p( si16) do'16( si16) do'8 r8                                   % 90
+    do'16-4\p\upbow( si16) do'16( si16) do'8 r8                           % 90
     do'16\pp^\markup{\small\italic "poco rall."}( si16)
     do'16( si16) do'8 \breathe
     do'16-2\mf^\markup{\small\italic "a tempo"}( la16)                    % 91
@@ -179,11 +179,11 @@
     \bar "||"
     fa4 r8 la8-3\f\downbow(                                               % 115
     sib4.) la8(                                                           % 116
-    sol4.)^\markup{\bold\teeny (1)} sold8(                                % 117
+    sol4.)^\markup{\bold\teeny (1)} sold8^\markup{\bold\teeny (2)}(       % 117
     la4.) sol!8-4\>(                                                      % 118
     fa4.) la8-3(                                                          % 119
     sib8) r8 sol8^\markup{\bold\teeny (1)} r8                             % 120
-    la8 r8 fa8-2 r8                                                       % 121
+    la8 r8 fa8-2 r8_\markup{\italic\small "vitesse d'archet, touche"}     % 121
     sol8 r8 mi8 r8                                                        % 122
     fa8^\markup{\small\italic "calando"} r8 fa8 r8                        % 123
     fa,2\pp\fermata                                                       % 124

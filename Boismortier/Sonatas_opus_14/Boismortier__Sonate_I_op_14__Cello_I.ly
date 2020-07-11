@@ -16,7 +16,7 @@
   paper-width  = 195\mm
   paper-height = 260\mm
   indent = #0
-%  page-count = #5
+  page-count = #4
   line-width = #184
   print-page-number = ##f
   ragged-last-bottom = ##t
