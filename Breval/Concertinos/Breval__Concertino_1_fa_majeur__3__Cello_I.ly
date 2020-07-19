@@ -66,11 +66,11 @@
       si,8-> sol,8-> r8 mi16\mf\upbow( fa16)                              % 22
       sol8 la16( si16) do'8 <re'-2>16( mi'16)                             % 23
       la4. si16( do'16)                                                   % 24
-      <re'-1>16( mi'16) fa'16 re'16 si16( do'16) re'16 si16               % 25
+      <re'-1>16( mi'16) fa'16 re'16 si16-1( do'16) re'16 si16             % 25
       sol16( fad16) sol16( fad16) sol8 mi16( fa16)                        % 26
       sol8 la16( si16) do'8 <re'-2>16( mi'16)                             % 27
       la4. si16( do'16)                                                   % 28
-      <re'-1>16\<( mi'16) fa'16 re'16 si16( do'16) re'16 si16\!           % 29
+      re'16-1\<( mi'16) fa'16 re'16 si16-1( do'16) re'16 si16\!           % 29
       \mark \default
       \bar "||"
       do'16\f do16 re16 mi16 fa16 sol16 la16 si16                         % 30
@@ -112,7 +112,7 @@
     dod'2-3(                                                              % 58
     dod'2)                                                                % 59
     re'16( la16) re'16( la16) fa16( la16) mi16( la16)                     % 60
-    fa16( la16) mi16( la16) fa16( la16) mi16( la16)                       % 61
+    fa16( la16) re'16( la16) fa16( la16) mi16( la16)                      % 61
     fa16( re16) mi16 fa16 sol16 la16 si16 dod'16                          % 62
     re'16(dod'16) re'16 dod'16 re'16 dod'16 re'16 dod'16                  % 63
     re'16 do'!16 sib16 la16 sol16 fa16 mi16 re16                          % 64
@@ -180,7 +180,7 @@
     fa4 r8 la8-3\f\downbow(                                               % 115
     sib4.) la8(                                                           % 116
     sol4.)^\markup{\bold\teeny (1)} sold8^\markup{\bold\teeny (2)}(       % 117
-    la4.) sol!8-4\>(                                                      % 118
+    la4.^\markup{\bold\teeny (3)}) sol!8-4\>(                             % 118
     fa4.) la8-3(                                                          % 119
     sib8) r8 sol8^\markup{\bold\teeny (1)} r8                             % 120
     la8 r8 fa8-2 r8_\markup{\italic\small "vitesse d'archet, touche"}     % 121
