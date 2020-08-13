@@ -35,6 +35,7 @@
    \clef "bass"
    \set fingeringOrientations = #'(left)
 
+   \mark \default
    \partial 2
    re'4-1\p\downbow mi'8 fa'8                                             % 0
    mi'4-.( re'4-.) la4^\markup{\bold\teeny (3)}
@@ -44,7 +45,7 @@
    sol8( fa8) mi8-1 re8\open fa4
    \afterGrace mi4\trill_( {re16 mi16)}                                   % 3
    re4 r4 re'4-1\downbow mi'8 fa'8                                        % 4
-   mi'4-.( re'4-.) la4^\markup{\bold\teeny (3)} re'8\open la8-1           % 5
+   mi'4-.( re'4-.) la4^\markup{\bold\teeny (3)} re'8-3\flageolet la8-1    % 5
    sib4-2-.( la4-.) la4 sib8 do'8                                         % 6
    sib8->( la8) sol8-2 fa8^\markup{\bold\teeny x1} la4
    \afterGrace sol4\trill_( {fa16 sol16)}                                 % 7
@@ -57,12 +58,13 @@
    \tuplet 3/2 {re8\open fa8 mi8)}                                        % 12
    la,2\upbow la4-1\downbow\< sib8^\markup{\small\italic "legato"}
    do'8                                                                   % 13
-   sib2 si4-1 dod'8 re'8                                                  % 14
-   dod'2 mi'4-1 fa'8 sol'8\!                                              % 15
-   sol'8-4\f( fa'8) mi'8-3 re'8^\markup{\bold\teeny (1)}
+   sib2\upbow si4-1 dod'8 re'8                                            % 14
+   dod'2\upbow mi'4-1 fa'8 sol'8\!                                        % 15
+   sol'8-4\f( fa'8)^\markup{\bold\teeny (2)}
+   mi'8-3 re'8^\markup{\bold\teeny (1)}
    fa'8^\markup{\bold\teeny (4)}( mi'8) re'8-2 dod'8                      % 16
-   re'2 re'2-1\downbow(                                                   % 17
-   re'4) mi'8 fa'8 mi'2\upbow(                                            % 18
+   re'2 re'2\downbow(                                                     % 17
+   re'4) mi'8-1 fa'8 mi'2\upbow(                                          % 18
    mi'4) fad'8-3 sol'8 fad'2\downbow                                      % 19
    \clef "tenor"
    \time 2/4
@@ -70,14 +72,18 @@
    sib'8^\markup{\bold\teeny x3}                                          % 20
    \time 4/4
    sib'2. la'8--( sol'8--)                                                % 21
-   sol'8-4( fa'8) mi'8-3 re'8^\markup{\bold\teeny (1)}
+   sol'8-4( fa'8)^\markup{\bold\teeny (2)}
+   mi'8-3 re'8^\markup{\bold\teeny (1)}
    fa'8^\markup{\bold\teeny (4)}(
    mi'8) re'8-2 dod'8^\markup{\bold\teeny (1)}                            % 22
-   re'4 r4
+   re'4
+   \mark \default
+   r4
    \clef "bass"
    << <la-1>4\f <fa'-2-->4\downbow >>
    do'4-2--_\markup{\small\italic "mosso"}                                % 23
-   <<fa4 re'4-->> la4\open-- <<re4-- sib4-1-->> fa4-2                     % 24
+   <<fa4 re'4-->> la4\open-- <<re4-- sib4^\markup{\bold\teeny x1}-->>
+   fa4^\markup{\bold\teeny (2)}                                           % 24
    << sib,4 sol4\< >> re8 mi8^\markup{\small\italic "legato"}
    fa8( sol8) la8 sib8^\markup{\bold\teeny x1}                            % 25
    la8 sol8 fa8 mi8 fa8 do8 sib,8 la,8\!\ff                               % 26
@@ -85,16 +91,18 @@
    sib8^\markup{\bold\teeny x1} do'8                                      % 27
    re'8 do'8 sib8 do'8 sib8 la8 sol8-1 la8^\markup{\bold\teeny (3)}       % 28
    sib4^\markup{\bold\teeny (4)} sol8 la8\open
-   sib8-1( do'8) re'8-1 mi'8                                              % 29
+   sib8(^\markup{\bold\teeny x1} do'8) re'8-1 mi'8                        % 29
    fa'8 mi'8 re'8 mi'8 re'8-4 do'8 sib8^\markup{\bold\teeny x1}
    do'8^\markup{\small\italic "legato"}                                   % 30
-   re'4\< sib8 do'8 re'8-1( mi'8) fa'8-2 sol'8\!                          % 31
+   re'4\< sib8^\markup{\bold\teeny x1} do'8 re'8-1( mi'8) fa'8-2 sol'8\!  % 31
    la'8-3\flageolet\f mi'8-1\<
    fa'8_\markup{\small\italic "molto cresc."} do'8-2 re'8 la8
    sib8^\markup{\bold\teeny x1} fa8                                       % 32
-   sol8 re8 mi8 sib,8 do,8 sol,8 la,8 fa,8\!                              % 33
+   sol8 re8 mi8 sib,8 do8 sol,8 la,8 fa,8\!                               % 33
    do,4 << <la-1>4 <fa'-2>4>> do,4 << <sol-1>4 <mi'-3>4>>                 % 34
-   << <la-1>2 <fa'-2>2 >> fa8\f\downbow
+   << <la-1>2 <fa'-2>2 >>
+   \mark \default
+   fa8\f\downbow
    sol8_\markup{\small\italic "legato"} la8 sib8^\markup{\bold\teeny x1}  % 35
    do'8 la8\open re'8 la8\open do'8 la8\open sol'8-4 la8                  % 36
    fa'8 la8 mi'8 la8 fa'8 do'8-2 la8\open sib8^\markup{\bold\teeny x1}    % 37
@@ -104,21 +112,23 @@
    fa'8 la8 re'8-4 la8 do'8( la8) fa8-.( sol8-.)                          % 41
    la8\p->( do'8) la8-.( fa8-.) sol8->( sib8) sol8-.( mi8-.)              % 42
    fa8 do8 la,8 do8\< fa8 sol8 la8 sib^\markup{\bold\teeny x1}\!          % 43
+   \bar "||"
+   \mark \default
    <<{\set fingeringOrientations = #'(left)
       \stemDown do'8\mf\downbow[ s8 re'8\upbow] s8 do'8[ s8 <sol'-4>8]}\\
-     {\stemUp s8 la8-+ s8 la8-+ s8 la8-+ s8 la8-+}>>  % 44
+     {\stemUp s8 la8-+ s8 la8-+ s8 la8-+ s8 la8-+}>>                      % 44
    <<{\set fingeringOrientations = #'(left)
       \stemDown fa'8[ s8 mi'8] s8}\\
      {\stemUp s8 la8-+ s8 la8-+}>>
    fa'8 do'8-2 la8 sib8^\markup{\bold\teeny x1}                           % 45
    <<{\set fingeringOrientations = #'(left)
       \stemDown do'8[ s8 re'8] s8 do'8[ s8 <sol'-4>8] s8}\\
-     {\stemUp s8 la8-+ s8 la8-+ s8 la8-+ s8 la8-+}>>  % 46
+     {\stemUp s8 la8-+ s8 la8-+ s8 la8-+ s8 la8-+}>>                      % 46
    <<{\stemDown fa'8[ s8 mi'8] s8 fa'8[ s8 fa'8\upbow] sol'8\upbow}\\
-     {\stemUp s8 la8-+ s8 la8-+ s8 la8-+ s8 s8}>>          % 47
+     {\stemUp s8 la8-+ s8 la8-+ s8 la8-+ s8 s8}>>                         % 47
    <<{\stemDown la'8-3\flageolet\downbow[ s8 sol'8\upbow] s8
       fa'8[ s8 mi'8] s8}\\
-     {\stemUp s8 la8-+ s8 la8-+ s8 la8-+ s8 la8-+}>>  % 48
+     {\stemUp s8 la8-+ s8 la8-+ s8 la8-+ s8 la8-+}>>                      % 48
    <<{\stemDown fa'8[ s8 re'8-4] s8}\\
      {\stemUp s8 la8-+ s8 la8-+}>>
    do'8( la8) fa8-.( sol8-.)                                              % 49
@@ -130,6 +140,8 @@
    << re4 mi'4-1\upbow >> mi'8 fad'8 << sol,4 si4 sol'4\downbow >> r4     % 53
    \compressFullBarRests
    R1*3                                                                % 54-56
+   \mark \default
+   \bar "||"
    r8\p re8-.\open \upbow mi8-. fa8-. mi8-. fa8-. sol8-.-1
    la8-.^\markup{\bold\teeny (4)}                                         % 57
    sol8-._\markup{\small\italic "non rit."} la8-. sib8-1--

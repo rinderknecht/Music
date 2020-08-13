@@ -103,7 +103,7 @@
       mi16^\markup{\bold\teeny (2)}
       fad16^\markup{\bold\teeny (4)})
       sol16-4 mi16 fad16 sol16
-      dod,16-1(la,16 mi16 fad16) sol16-4 mi16 fad16 sol16               % 20
+      dod,16-1 la,16( mi16 fad16) sol16-4 mi16 fad16 sol16              % 20
       do,!16 la,16(re16 mi16) fad16 re16 mi16 fad16
       do,16 la,16(re16 mi16) fad16 re16 mi16 fad16                      % 21
       do,16 la,16(re16 fad16) la16(dod'16 re'8\fermata)(
@@ -125,9 +125,8 @@
       re'16\(la16 fad16\) mi16
       fad16-1 la16^\markup{\bold\teeny (4)}
       re16^\markup{\bold\teeny (4)}_\markup{\teeny III} fad16-3
-      la,16 re16 dod16-4 si,16 la,16\1 sol,16\open
-      fad,16 mi,16                  % 28
-      re,8 <do'!-2>16(si16 la16 sol16 fad16 mi16
+      la,16 re16 dod16-4 si,16 la,16\1 sol,16\open  fad,16 mi,16        % 28
+      re,8\1 <do'!-2>16(si16 la16 sol16 fad16 mi16
       re16) do'16-4_\markup{\teeny II}(si16 la16
       sol16-4 fad16 mi16 re16                                           % 29
       do!16-1_\markup{\teeny III}) si16\4_\markup{\teeny II}(
