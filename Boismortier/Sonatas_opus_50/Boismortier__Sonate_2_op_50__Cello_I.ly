@@ -203,28 +203,31 @@
       sol8(\< la8 si8) re8 la8(si8 do'8) re8                               % 17
       si8( do'8 re'8) re8\! do'8.\mf( re'16) re'8.-2-+( do'32\1 re'32)     % 18
       mi'4.^\markup{\bold\teeny (4)} re'8 do'8-2( si8) la8-+( sol8)        % 19
-      <<re'2 fad2 la,2 re,2>> <<{sol4\mf_( fad8-+ mi8)}\\{sol,2}>>         % 20
+      <<re'2 fad2 la,2 re,2>> <<{sol4-4\mf_( fad8-+ mi8)}\\{sol,2}>>       % 20
       <<{re4_( sol4) fad8-1_( sol8 la8 fad8)}\\{sol,2 sol,2}>>             % 21
       <<{sol4_( re4) sol4-4_( fad8-+ mi8)}\\{sol,2 sol,2}>>                % 22
       <<{re4_( sol4) fad8-1_( sol8 la8 fad8)}\\{sol,2 sol,2}>>             % 23
       <<sol2-4 sol,2>> si8\mp re'8 la8 re'8                                % 24
-      si8 re'8 sol8 si8 do8 mi'8 re'8 do'8                                 % 25
+      si8 re'8 sol8 si8 do8 mi'8-4 re'8 do'8-2                             % 25
       si8 re8 sol,8 si8 la8 re'8 sol8 re'8                                 % 26
       fad8 re'8 re8 fad8 sol,8 si8 mi8 la8                                 % 27
       fad8 la,8 re,8 la8 do'8\p la8 re8 do'8                               % 28
       do'8( si8) sol,8 si8\mp re'8 si8 mi8 re'8                            % 29
       re'8( dod'8) la,8\< dod'8
-      re'16( dod'16 re'16 si16) mi'16( re'16 mi'16 dod'16)                 % 30
-      fad'16( mi'16 fad'16 re'16) sol'16( fad'16 sol'16 mi'16)\!
-      fad'8\f re'8 la8 dod'8                                               % 31
+      re'16( dod'16 re'16 si16) mi'16(-4 re'16
+      mi'16 dod'16)^\markup{\bold\teeny (1)}                               % 30
+      fad'16(-4 mi'16 fad'16 re'16)\1
+      sol'16-4( fad'16 sol'16 mi'16)\!
+      fad'8\f re'8-4 la8 dod'8                                             % 31
       re'8( do'!16 si16 la32 sol32 fad32 mi32 re32 do32 si,32 la,32)
       <<{sol4\p_( fad8-+ mi8)}\\{sol,2}>>                                  % 32
-      <<{re8_( sol8 re8 sol8) fad8_( sol8 la8 fad8)}\\{sol,2 sol,2}>>      % 33
-      <<{sol4_( re4) sol4\pp_( fad8-+ mi8)}\\{sol,2 sol,2}>>               % 34
+      <<{re8_( sol8 re8 sol8) fad8-1_( sol8 la8 fad8)}\\
+        {sol,2 sol,2\open}>>                                               % 33
+      <<{sol4_( re4) sol4-4\pp_( fad8-+ mi8)}\\{sol,2 sol,2}>>             % 34
       <<{re8_( sol8 re8 sol8)
-         fad16_(_\markup{\small\italic "morendo"} sol16 fad16 sol16)
+         fad16-1_(_\markup{\small\italic "morendo"} sol16 fad16 sol16)
          la16_( sol16 la16 fad16)}\\
-        {sol,2 sol,2}>>                                                    % 35
+        {sol,2 sol,2\open}>>                                               % 35
       <<sol2 sol,2>>                                                       % 36
     }
   }
@@ -245,7 +248,7 @@
     \repeat volta 2 {
       \partial 8 re8_\markup{\bold\italic "f-p"}                           % 0
       sol4 re8 sol,4 si8                                                   % 1
-      la4 re8 fad,4 do'8                                                   % 2
+      la4 re8 fad,4\4 do'8                                                 % 2
       si8 do'8 re'8 sol8 la8 si8                                           % 3
       la4.-+ re4 re'8                                                      % 4
       re'8 do'8 si8 do'8 re8 do'8                                          % 5
@@ -256,17 +259,17 @@
       la8 re8 la8 do'8 la8 do'8                                            % 10
       si8 sol8 si8 re'8 si8 re'8                                           % 11
       <<{dod'4.-+_( dod'4)}\\{<<mi4 la,4>>}>> la8                          % 12
-      re'8 la8 re'8 fad'8 re'8 fad'8                                       % 13
-      mi'8 la8 mi'8 sol'8 mi'8 sol'8                                       % 14
-      fad'8 mi'8 re'8 mi8 re'8 dod'8                                       % 15
+      re'8 la8 re'8 fad'8-4 re'8\1 fad'8                                   % 13
+      mi'8-1 la8 mi'8 sol'8-4 mi'8 sol'8                                   % 14
+      fad'8-4 mi'8 re'8\1 mi8-1 re'8 dod'8                                 % 15
       re4 re'8 la,4 dod'8                                                  % 16
-      si,4 si8 fad,4 la8                                                   % 17
+      si,4 si8 fad,4\4 la8                                                 % 17
       sol,4 sol8 re,4 fad8                                                 % 18
       mi,4 sol8 la,4 sol8                                                  % 19
       fad8 mi8 re8 la8 sol8 fad8                                           % 20
       sol,8 mi8 re8 la,8 re8 dod8                                          % 21
       re8 re'8 do'!8 si8 la8 sol8                                          % 22
-      fad8 mi8 re8 fad,8 sol,8 la,8                                        % 23
+      fad8 mi8 re8 fad,8\4 sol,8 la,8                                      % 23
       re,4.( re,4)                                                         % 24
     }
     \repeat volta 2 {
@@ -274,15 +277,15 @@
       \set Score.currentBarNumber = #25
       re'4 la8 re4 do'8                                                    % 25
       do'4.-+ si4 si8                                                      % 26
-      mi'4 si8 mi4 re'8                                                    % 27
-      re'4.-+ do'4 mi'8                                                    % 28
-      fa!8 re'8 do'8 si8 do'8 la8                                          % 29
-      mi8 sold8 si8 re8 si8 re8                                            % 30
-      do8 mi8 la8 si,8 la8 sold8                                           % 31
-      la8 do'8 mi'8 la8 do'8 la8                                           % 32
+      mi'4-4 si8-1 mi4 re'8                                                % 27
+      re'4.-+ do'4 mi'8-4                                                  % 28
+      fa!8-2 re'8 do'8 si8 do'8 la8                                        % 29
+      mi8 sold8\4 si8 re8 si8 re8                                          % 30
+      do8 mi8 la8 si,8 la8 sold8\4                                         % 31
+      la8 do'8 mi'8-4 la8 do'8-2 la8                                       % 32
       fad8 la8 re'8 sol8 si8 sol8                                          % 33
       mi8 sol8 do'8 fad8 la8 fad8                                          % 34
-      red8 si,8 mi8 fad,8 mi8 red8                                         % 35
+      red8\1 si,8 mi8 fad,8\4 mi8 red8                                     % 35
       mi8 sol8 si8 mi8 sol8 mi8                                            % 36
       re8 fad8 la8 do8 la8 do8\p                                           % 37
       si,8 re8 si,8 sol,8 re8 fa8                                          % 38
@@ -293,13 +296,15 @@
       si8 re8 sol,8 la16\p( si16 do'8) la8                                 % 43
       si8 re8 sol,8 la16\f( si16 do'8) la8                                 % 44
       si8 la8 sol8 re8 sol8 fad8                                           % 45
-      sol,4 sol'8 re4 fad'8                                                % 46
-      mi4 mi'8 si,4 re'8                                                   % 47
+      sol,4 sol'8-4 re4^\markup{\bold\teeny (1)} fad'8                     % 46
+      mi4^\markup{\bold\teeny (3)}_\markup{\teeny III}
+      mi'8^\markup{\bold\teeny (1)}
+      si,4-3 re'8                                                          % 47
       do4 do'8 sol,4 si8                                                   % 48
       la,4 do'8 re4 do'8                                                   % 49
       si8 la8 sol8 re'8 do'8 si8                                           % 50
       do8 la8 sol8 re8 sol8 fad8                                           % 51
-      sol8 sol'8 fa'8 mi'8 re'8 do'8                                       % 52
+      sol8 sol'8-4 fa'8 mi'8 re'8-4 do'8                                   % 52
       si8 la8 sol8 si,8 do8 re8                                            % 53
       sol,4.( sol,4)                                                       % 54
     }
