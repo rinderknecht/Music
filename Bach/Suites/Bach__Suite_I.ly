@@ -115,9 +115,9 @@
       re,16 la,16(re16 fad16) la16 si16 do'16 la16
       si16\(sol16 re16\) do16 si,16 sol,16 la,16 si,16                  % 25
       re,16 sol,16\( si,16 re16\) sol16-1 la16\2 si16\4 sol16
-      dod'16-4( si16^\markup{\bold\teeny (2)}
+      dod'16-4(_\markup{\teeny II} si16^\markup{\bold\teeny (2)}
       la16\1 sib16)^\markup{\bold\teeny (1)}
-      sib16-3_\markup{\teeny II}(la16^\markup{\bold\teeny (2)}
+      sib16-3_\markup{\teeny II}( la16^\markup{\bold\teeny (2)}
       sold16^\markup{\bold\teeny (1)} la16)                             % 26
       la16-4(sol!16^\markup{\bold\teeny (2)}
       fad16^\markup{\bold\teeny (1)} sol16)
