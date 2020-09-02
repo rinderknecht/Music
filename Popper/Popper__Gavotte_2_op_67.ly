@@ -67,7 +67,7 @@
    sol'8-4\upbow\f( fa'8)^\markup{\bold\teeny (2)}
    mi'8-3 re'8^\markup{\bold\teeny (1)}
    fa'8^\markup{\bold\teeny (4)}( mi'8)^\markup{\bold\teeny (3)}
-   re'8-2 dod'8                                                           % 16
+   re'8-2 dod'8^\markup{\bold\teeny (1)}                                  % 16
    re'2 re'2\downbow(                                                     % 17
    re'4) mi'8-1 fa'8 mi'2\upbow(                                          % 18
    mi'4) fad'8-3 sol'8 fad'2\downbow                                      % 19
@@ -80,7 +80,8 @@
    sol'8-4( fa'8)^\markup{\bold\teeny (2)}
    mi'8-3 re'8^\markup{\bold\teeny (1)}
    fa'8^\markup{\bold\teeny (4)}(
-   mi'8) re'8-2 dod'8^\markup{\bold\teeny (1)}                            % 22
+   mi'8)^\markup{\bold\teeny (3)}
+   re'8-2 dod'8^\markup{\bold\teeny (1)}                                  % 22
    re'4
    \mark \default
    r4
@@ -186,7 +187,7 @@
    sol'8(^\markup{\bold\teeny (4)} fa'8)^\markup{\bold\teeny (2)}
    mi'8-3 re'8^\markup{\bold\teeny (1)}
    fa'8(^\markup{\bold\teeny (4)} mi'8)^\markup{\bold\teeny (3)}
-   re'8-2 dod'8                                                           % 75
+   re'8-2 dod'8^\markup{\bold\teeny (1)}                                  % 75
    re'2\upbow\< re'2\downbow(                                             % 76
    re'4) mi'8-1 fa'8 mi'2\upbow(                                          % 77
    mi'4) fad'8-3 sol'8 fad'2\downbow                                      % 78
@@ -198,10 +199,12 @@
    sol'8-4( fa'8)^\markup{\bold\teeny (2)}
    mi'8-3 re'8^\markup{\bold\teeny (1)}
    fa'8(^\markup{\bold\teeny (4)} mi'8)^\markup{\bold\teeny (3)}
-   re'8-2 dod'8                                                           % 81
+   re'8-2 dod'8^\markup{\bold\teeny (1)}                                  % 81
    sib'2.-3\ff la'8--( sol'8--)                                           % 82
-   sol'8-4(_\markup{\small\italic "un poco rit."} fa'8) mi'8-3 re'8
-   fa'8( mi'8) re'8-2 dod'8                                               % 83
+   sol'8-4(_\markup{\small\italic "un poco rit."}
+   fa'8)^\markup{\bold\teeny (2)} mi'8-3 re'8^\markup{\bold\teeny (1)}
+   fa'8(^\markup{\bold\teeny (4)} mi'8)^\markup{\bold\teeny (3)}
+   re'8-2 dod'8^\markup{\bold\teeny (1)}                                  % 83
    << re2 re'2\fermata >>                                                 % 84
    \bar "|."
  }
