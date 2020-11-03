@@ -42,7 +42,7 @@
    fad'16-3\mf( sol'16 fad'8) mi'16( fad'16 mi'8)
    re'16-2( mi'16 re'8) dod'16( re'16 dod'8)                             % 5
    si8-1 si16( dod'16 re'8) si8 dod'4( fad'8-3) r8                       % 6
-   fad'16-3\mf( sol'16 fad'8) mi'16( fad'16 mi'8)
+   fad'16-3( sol'16 fad'8) mi'16( fad'16 mi'8)
    re'16-2( mi'16 re'8) dod'16( re'16 dod'8)                             % 7
    si8-1 si16( dod'16 re'8) dod'8 si4( si,8) r8                          % 8
    la'4-3\flageolet->\f mi'8-1 sol'8 fad'8
@@ -50,7 +50,7 @@
    fad'4^\markup{\bold\teeny x4} dod'8-1 mi'8 re'8
    re'16-4( dod'16 si8) si8--                                            % 10
    la'4-3\flageolet->\f mi'8-1 sol'8 fad'8
-   re'16-4( dod'16 re'8) re'8-1--                                        % 11
+   re'16-4( dod'16 re'8) re'8--                                          % 11
    re8-> re8( mi8->) mi8( fad8->) fad16( sol16 fad8) r8                  % 12
    fad'16-3\mf( sol'16 fad'8) mi'16( fad'16 mi'8)
    re'16-2( mi'16 re'8) dod'16( re'16 dod'8)                             % 13
@@ -65,7 +65,7 @@
    dod'8^\markup{\bold\teeny (1)} dod'16( re'16 mi'8) dod'8
    re'8 mi'8-1 fad'4                                                     % 18
    \clef "tenor"
-   si16-1_\markup{\teeny II}( la'16^\markup{\bold\teeny (3)})
+   si16-1_\markup{\teeny II}( la'16^\markup{\bold\teeny x3})
    la'16( fad'16^\markup{\bold\teeny (1)}) la'8(
    sol'8^\markup{\bold\teeny x2})
    la16-1( sol'16) sol'16( mi'16) sol'8( fad'8)                          % 19
@@ -120,11 +120,34 @@
    mi'16(^\markup{\bold\teeny (4)} re'16) re'16( dod'16)
    dod'16-3( si16) si16( la16) dod'16(\> si16) si16( la16)
    la16\open\!( sol16) sol16(\< mi16)                                    % 40
-   re16 re16 mi16 mi16 la16 la16 dod'16 dod'16\! re'16 re'16
+   re16 re16 mi16 fad16 fad16 la16 dod'16 dod'16\! re'16 re'16
    fad'16-3 fad'16 la'16-3\flageolet la'16 fad'16-1 fad'16               % 41
    re'4^\markup{\bold\teeny x3} r4 r2                                    % 42
 
+   \bar "||"
+   \mark \default
+   fad'16-3\mf( sol'16 fad'8) mi'16( fad'16 mi'8)
+   re'16-2( mi'16 re'8) dod'16( re'16 dod'8)                             % 43
+   si8-1 si16( dod'16 re'8) si8 dod'4( fad'8-3) r8                       % 44
+   fad'16-3\mf( sol'16 fad'8) mi'16( fad'16 mi'8)
+   re'16-2( mi'16 re'8) dod'16( re'16 dod'8)                             % 45
+   si8-1 si16( dod'16 re'8) dod'8 si4( si,8) r8                          % 46
+   la'4-3\flageolet->\f mi'8-1 sol'8 fad'8
+   re'16-4( dod'16 re'8) re'8-1--                                        % 47
+   fad'4^\markup{\bold\teeny x4} dod'8-1 mi'8 re'8
+   re'16-4( dod'16 si8) si8--                                            % 48
+   la'4-3\flageolet->\f mi'8-1 sol'8 fad'8
+   re'16-4( dod'16 re'8) re'8-1--                                        % 49
+   re8-> re8( mi8->) mi8( fad8->) fad16( sol16 fad8) r8                  % 50
+   fad'16-3\mf( sol'16 fad'8) mi'16( fad'16 mi'8)
+   re'16-2( mi'16 re'8) dod'16( re'16 dod'8)                             % 51
+   si8-1 si16( dod'16 re'8) si8 dod'4( fad'8-3) r8                       % 52
+   fad'16-3\mf( sol'16 fad'8) mi'16( fad'16 mi'8)
+   re'16-2( mi'16 re'8) dod'16( re'16 dod'8)                             % 53
+   si8-1 si16( dod'16 re'8) dod'8 si4( si,8) r8                          % 54
+   R2*4^\markup{\small\italic "rit."}                                    % 55-56
 
    \bar "||"
+
  }
 }
