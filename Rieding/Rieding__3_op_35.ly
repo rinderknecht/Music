@@ -120,7 +120,7 @@
    mi'16(^\markup{\bold\teeny (4)} re'16) re'16( dod'16)
    dod'16-3( si16) si16( la16) dod'16(\> si16) si16( la16)
    la16\open\!( sol16) sol16(\< mi16)                                    % 40
-   re16 re16 mi16 fad16 fad16 la16 dod'16 dod'16\! re'16 re'16
+   re16 re16 fad16 fad16 la16 la16 dod'16 dod'16\! re'16 re'16
    fad'16-3 fad'16 la'16-3\flageolet la'16 fad'16-1 fad'16               % 41
    re'4^\markup{\bold\teeny x3} r4 r2                                    % 42
 
