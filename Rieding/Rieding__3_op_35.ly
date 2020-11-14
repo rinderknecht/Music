@@ -16,7 +16,7 @@
   paper-width  = 195\mm
   paper-height = 260\mm
   indent = #0
-  page-count = #2
+  page-count = #3
   line-width = #184
   print-page-number = ##f
   ragged-last-bottom = ##t
@@ -49,7 +49,7 @@
    re'16-4( dod'16 re'8) re'8-1--                                        % 9
    fad'4^\markup{\bold\teeny x4} dod'8-1 mi'8 re'8
    re'16-4( dod'16 si8) si8--                                            % 10
-   la'4-3\flageolet->\f mi'8-1 sol'8 fad'8
+   la'4-3\flageolet-> mi'8-1 sol'8 fad'8
    re'16-4( dod'16 re'8) re'8--                                          % 11
    re8-> re8( mi8->) mi8( fad8->) fad16( sol16 fad8) r8                  % 12
    fad'16-3\mf( sol'16 fad'8) mi'16( fad'16 mi'8)
@@ -136,8 +136,8 @@
    re'16-4( dod'16 re'8) re'8-1--                                        % 47
    fad'4^\markup{\bold\teeny x4} dod'8-1 mi'8 re'8
    re'16-4( dod'16 si8) si8--                                            % 48
-   la'4-3\flageolet->\f mi'8-1 sol'8 fad'8
-   re'16-4( dod'16 re'8) re'8-1--                                        % 49
+   la'4-3\flageolet-> mi'8-1 sol'8 fad'8
+   re'16-4( dod'16 re'8) re'8--                                          % 49
    re8-> re8( mi8->) mi8( fad8->) fad16( sol16 fad8) r8                  % 50
    fad'16-3\mf( sol'16 fad'8) mi'16( fad'16 mi'8)
    re'16-2( mi'16 re'8) dod'16( re'16 dod'8)                             % 51
@@ -145,9 +145,73 @@
    fad'16-3\mf( sol'16 fad'8) mi'16( fad'16 mi'8)
    re'16-2( mi'16 re'8) dod'16( re'16 dod'8)                             % 53
    si8-1 si16( dod'16 re'8) dod'8 si4( si,8) r8                          % 54
-   R2*4^\markup{\small\italic "rit."}                                    % 55-56
+   R2*4^\markup{\small\italic "rit."}                                 % 55-56
 
    \bar "||"
-
+   \mark \default
+   si,4\mf( mi4)_\markup{\small\italic "espressivo"}
+   re4( sol4)                                                            % 57
+   fad4( re'4)-3\flageolet do'2-4                                        % 58
+   si4( la4) mi4-1( fad4)                                                % 59
+   sol4-2( mi'4) re'2                                                    % 60
+   \clef "tenor"
+   sol'4.\f-2( fad'8)^\markup{\bold\teeny (1)}
+   la'4.(^\markup{\bold\teeny (3)} sol'8)                                % 61
+   fad'4( re'4) la4( si4)                                                % 62
+   \clef "bass"
+   dod'!4.( si8) la8( sol8 mi8\> fad8)                                   % 63
+   re2 do2\!                                                             % 64
+   si,4\mf( mi4) re4( sol4)                                              % 65
+   fad4( re'4) do'2                                                      % 66
+   si4( la4) mi4( fad4)                                                  % 67
+   sol-2( mi'4) re'2                                                     % 68
+   mi'4\f( re'4) do'4-2( si4)                                            % 69
+   \clef "tenor"
+   la4( la'4) sol'4-4( mi'4)                                             % 70
+   dod'!4-1( re'4) si'4.-3_\markup{\small\italic "rit."}(
+   la'8)^\markup{\bold\teeny (2)}                                        % 71
+   sol'2.-1\> si'4-3\!                                                   % 72
+   la'8-3->( si8-1)_\markup{\teeny "II"} si16( do'16 si8)
+   sol'8->-4( si8-3) si16( do'16 si8)                                    % 73
+   \clef "bass"
+   mi16 mi16\< fad16 fad16 sol16 sol16\! la16 la16
+   si8->\> la16( sol16 fad8)\! r8                                        % 74
+   \clef "tenor"
+   la'8-3->( sol'8)^\markup{\bold\teeny (2)}
+   si16-1_\markup{\teeny II}( do'!16 si8)
+   sol'8-4->( fad'8^\markup{\bold\teeny (3)})
+   la16-1(_\markup{\teeny "II"} si16 la8)                                % 75
+   \clef "bass"
+   do'!16-4-> do'16 si16^\markup{\bold\teeny (3)} si16
+   la16^\markup{\bold\teeny (1)} la16 sol16-4 sol16 fad4\< si4-1\!       % 76
+   si16\mf( do'16 si8) la16( si16 la8) sol16-2( la16 sol8)
+   fad16( sol16 fad8)                                                    % 77
+   mi8-1 mi16( fad16 sol8) mi8 fad4( re8) r8                             % 78
+   re'16-2( mi'16 re'8) do'16-2( re'16 do'8) si16( do'16 si8)
+   la16( si16 la8)                                                       % 79
+   si8( re'8) dod'!8 sol'8 fad'4( dod'8) r8                              % 80
+   fad'16-3\mf( sol'16 fad'8) mi'16( fad'16 mi'8)
+   re'16-2( mi'16 re'8) dod'16( re'16 dod'8)                             % 81
+   re'16( mi'16 re'8) do'16-2( re'16 do'8)
+   si16( do'16 si8) la16( si16 la8)                                      % 82
+   sol8( si8) mi'8-4 re'8 dod'!8( sol'8-4) fad'8 mi'8                    % 83
+   fad'8( re'8-4) si8 fad8 re'4.\<( dod'8)\!                             % 84
+   si16\f( dod'16 re'16 dod'16) si16( dod'16 re'16 dod'16)
+   si16 si16 dod'16 dod'16 re'16 re'16 dod'16 dod'16                     % 85
+   re'16 re'16 si16 si16 la16\open la16 sol16-2 sol16
+   fad16 fad16 mi'16^\markup{\bold\teeny (4)} mi'16
+   re'16 re'16 dod'16 dod'16                                             % 86
+   si16-1( dod'16 re'16 dod'16) si16( dod'16 re'16 dod'16)
+   si16 si16 dod'16 dod'16 re'16 re'16 dod'16 dod'16                     % 87
+   re'16 re'16 fad'16-3 fad'16 la'16-3 la'16 sol'16-4 sol'16
+   fad'16 fad'16 mi'16 mi'16 re'16 re'16 dod'16 dod'16                   % 88
+   si16 si16 dod'16 dod'16 re'16 re'16 si16 si16
+   fad16 fad16 sol16 sol16 fad16 fad16 re16 re16                         % 89
+   si,16 si,16 lad,16 lad,16 si,16 si,16 lad,16 lad,16
+   si,16 si,16 lad,16 lad,16 si,16 si,16 lad,16 lad,16                   % 90
+   \set fingeringOrientations = #'(left)
+   si,4 r4 << <si,-1>4 <fad-1>4 <re'-2>4\downbow>> r4                    % 91
+   si,1\downbow\fermata                                                  % 92
+   \bar "|."
  }
 }
