@@ -57,9 +57,11 @@
    re'8.)( do'16 mi'8) re'8.( do'16 mi'8)                         % 12
    re'4.( re'8) r8 re8(                                           % 13
    sol4 sib8) re'4( fa'8-1)                                       % 14
-   <sib'-4>8.( sol'16 fa'8) sol'4( fa'8)\pp                       % 15
+   lab'8.-4( sol'16 fa'8) sol'4( fa'8)\pp                         % 15
    mi'4-4( mib'8) re'4^\markup{\bold\teeny (2)}( fad8)            % 16
    sol4.( sol8) r4                                                % 17
+   \mark \default
+   \bar "||"
    si8.-4\mf( sol16^\markup{\bold\teeny x1} la8)
    sib8.-1( do'16^\markup{\bold\teeny (3)}
    dod'8)^\markup{\bold\teeny (4)}                                % 18
@@ -81,8 +83,13 @@
    sol'4.-1\f\> re'4 r8\!                                         % 30
    <sib'-3>8.\p( la'16 sib'8) la'8.( <sol'-2>16 fad'8)            % 31
    sol'4.\f\> re'4-3\flageolet r8\!                               % 32
+   \mark \default
+   \clef "bass"
+   \bar "||"
    r4. r4 re8(\p                                                  % 33
    sol4-1_\markup{\small\italic "dolce"} sib8)                    % 34
+   \mark \default
+   \bar "||"
    re'4( sol'8-1)                                                 % 35
    sib'8.( la'16 sol'8) la'4 re'8-2\downbow(                      % 36
    re'8.)( do'16 mi'8) re'8.( do'16 mi'8)                         % 37
@@ -91,9 +98,6 @@
    fa'8)_\markup{\bold\teeny (1)} sol'4 sol8(-2\downbow           % 39
    sol8.)( fad16 la8) sol8.( fad16 sib8-4)                        % 40
    sol4.( sol8) r4                                                % 41
-   \mark \default
-   \clef "bass"
-   \bar "||"
    R2.                                                            % 42
    mi,2.\p(                                                       % 43
    \key mib \major

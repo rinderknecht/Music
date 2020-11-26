@@ -84,11 +84,11 @@
    fad'8-2( mi'8)^\markup{\bold\teeny x1}                                % 23
    sold'16^\markup{\bold\teeny (4)} fad'16^\markup{\bold\teeny (2)}
    mi'16^\markup{\bold\teeny x1} re'16-2
-   mi'16 re'16 dod'16 si16-1 la4 r4                                      % 24
-
-   \bar "||"
+   mi'16 re'16 dod'16 si16-1 la4\downbow
    \mark \default
-   la'4-2\mf(
+   r4                                                                    % 24
+   \bar "||"
+   la'4-2\mf\downbow(
    sold'4)^\markup{\bold\teeny (1)}_\markup{\small\italic "espressivo"}
    la'4( sold'4)                                                         % 25
    si'4.^\markup{\bold\teeny x3}( la'8^\markup{\bold\teeny (2)})
@@ -147,6 +147,7 @@
    si8-1 si16( dod'16 re'8) dod'8 si4( si,8) r8                          % 54
    R2*4^\markup{\small\italic "rit."}                                 % 55-56
 
+   \pageBreak
    \bar "||"
    \mark \default
    si,4\mf( mi4)_\markup{\small\italic "espressivo"}
@@ -156,7 +157,7 @@
    sol4-2( mi'4) re'2                                                    % 60
    \clef "tenor"
    sol'4.\f-2( fad'8)^\markup{\bold\teeny (1)}
-   la'4.(^\markup{\bold\teeny (3)} sol'8)                                % 61
+   la'4.(^\markup{\bold\teeny (3)} sol'8-4)                              % 61
    fad'4( re'4) la4( si4)                                                % 62
    \clef "bass"
    dod'!4.( si8) la8( sol8 mi8\> fad8)                                   % 63
@@ -167,14 +168,14 @@
    sol-2( mi'4) re'2                                                     % 68
    mi'4\f( re'4) do'4-2( si4)                                            % 69
    \clef "tenor"
-   la4( la'4) sol'4-4( mi'4)                                             % 70
+   la4( la'4-3\flageolet) sol'4-4( mi'4)                                 % 70
    dod'!4-1( re'4) si'4.-3_\markup{\small\italic "rit."}(
    la'8)^\markup{\bold\teeny (2)}                                        % 71
    sol'2.-1\> si'4-3\!                                                   % 72
    la'8-3->( si8-1)_\markup{\teeny "II"} si16( do'16 si8)
    sol'8->-4( si8-3) si16( do'16 si8)                                    % 73
    \clef "bass"
-   mi16 mi16\< fad16 fad16 sol16 sol16\! la16 la16
+   mi16-1 mi16\< fad16 fad16 sol16 sol16\! la16 la16
    si8->\> la16( sol16 fad8)\! r8                                        % 74
    \clef "tenor"
    la'8-3->( sol'8)^\markup{\bold\teeny (2)}
@@ -189,7 +190,7 @@
    mi8-1 mi16( fad16 sol8) mi8 fad4( re8) r8                             % 78
    re'16-2( mi'16 re'8) do'16-2( re'16 do'8) si16( do'16 si8)
    la16( si16 la8)                                                       % 79
-   si8( re'8) dod'!8 sol'8 fad'4( dod'8) r8                              % 80
+   si8( re'8) dod'!8 <sol'-4>8 fad'4( dod'8-3) r8                        % 80
    fad'16-3\mf( sol'16 fad'8) mi'16( fad'16 mi'8)
    re'16-2( mi'16 re'8) dod'16( re'16 dod'8)                             % 81
    re'16( mi'16 re'8) do'16-2( re'16 do'8)
@@ -203,7 +204,7 @@
    re'16 re'16 dod'16 dod'16                                             % 86
    si16-1( dod'16 re'16 dod'16) si16( dod'16 re'16 dod'16)
    si16 si16 dod'16 dod'16 re'16 re'16 dod'16 dod'16                     % 87
-   re'16 re'16 fad'16-3 fad'16 la'16-3 la'16 sol'16-4 sol'16
+   re'16 re'16 fad'16-3 fad'16 la'16-3\flageolet la'16 sol'16-4 sol'16
    fad'16 fad'16 mi'16 mi'16 re'16 re'16 dod'16 dod'16                   % 88
    si16 si16 dod'16 dod'16 re'16 re'16 si16 si16
    fad16 fad16 sol16 sol16 fad16 fad16 re16 re16                         % 89
