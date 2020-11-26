@@ -35,7 +35,7 @@
       re'8^\markup{\bold\teeny (2)}
       la8 re'8-4 do'16.(sib32\1) la8 sol16. fa32 fa8 mi8                 % 3
       re8 re'8-2 mi'8^\markup{\bold\teeny (4)}
-      re'8 dod'8^\markup{\bold\teeny (1)} re'8\open la8 dod'8            % 4
+      re'8 dod'8^\markup{\bold\teeny (1)} re'8 la8\open dod'8            % 4
       re'4^\markup{\bold\teeny (2)} r4\fermata
       re'4-1_\markup{\small\italic "canzone"}
       \set fingeringOrientations = #'(left)
