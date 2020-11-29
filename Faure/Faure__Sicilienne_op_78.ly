@@ -38,12 +38,12 @@
 
    \bar "||"
    \mark \default
-   r4. r4 re8(\p                                                  % 01
+   r4. r4 re8_(\p\downbow                                         % 01
    sol4-1_\markup{\small\italic "dolce"} sib8)                    % 02
    re'4( sol'8-1)                                                 % 03
    sib'8.( la'16 sol'8) la'4 re'8-2\downbow(                      % 04
    re'8.)( do'16 mi'8) re'8.( do'16 mi'8)                         % 05
-   re'4.( re'8) r8 re8( sol4-1 sib8) re'4( fa'8-1)                % 06
+   re'4.( re'8) r8 re8_(\downbow sol4-1 sib8) re'4( fa'8-1)       % 06
    lab'8.-4( sol'16^\markup{\bold\teeny (3)}
    fa'8)_\markup{\bold\teeny (1)} sol'4 sol8(-2\downbow           % 07
    sol8.)( fad16 la8) sol8.( fad16 sib8-4)                        % 08
@@ -55,14 +55,14 @@
    \clef "tenor"
    re'8-2\p^\markup{\small\italic "arco"}\downbow(                % 11
    re'8.)( do'16 mi'8) re'8.( do'16 mi'8)                         % 12
-   re'4.( re'8) r8 re8(                                           % 13
-   sol4 sib8) re'4( fa'8-1)                                       % 14
+   re'4.( re'8) r8 re8_(\downbow                                  % 13
+   sol4-1 sib8) re'4( fa'8-1)                                     % 14
    lab'8.-4( sol'16 fa'8) sol'4( fa'8)\pp                         % 15
    mi'4-4( mib'8) re'4^\markup{\bold\teeny (2)}( fad8)            % 16
    sol4.( sol8) r4                                                % 17
    \mark \default
    \bar "||"
-   si8.-4\mf( sol16^\markup{\bold\teeny x1} la8)
+   si8.-4\mf(\downbow sol16^\markup{\bold\teeny x1} la8)
    sib8.-1( do'16^\markup{\bold\teeny (3)}
    dod'8)^\markup{\bold\teeny (4)}                                % 18
    re'8.-1( mib'16  fa'8) sol'4(^\markup{\bold\teeny x4} re'8)    % 19
@@ -84,22 +84,21 @@
    <sib'-3>8.\p( la'16 sib'8) la'8.( <sol'-2>16 fad'8)            % 31
    sol'4.\f\> re'4-3\flageolet r8\!                               % 32
    \mark \default
-   \clef "bass"
    \bar "||"
-   r4. r4 re8(\p                                                  % 33
+   r4. r4 re8_(\p\downbow                                         % 33
    sol4-1_\markup{\small\italic "dolce"} sib8)                    % 34
-   \mark \default
-   \bar "||"
    re'4( sol'8-1)                                                 % 35
-   sib'8.( la'16 sol'8) la'4 re'8-2\downbow(                      % 36
-   re'8.)( do'16 mi'8) re'8.( do'16 mi'8)                         % 37
-   re'4.( re'8) r8 re8( sol4-1 sib8) re'4( fa'8-1)                % 38
+   sib'8.( la'16 sol'8) la'4 re'8-2\downbow(
+   re'8.)( do'16 mi'8) re'8.( do'16 mi'8)                         % 36
+   re'4.( re'8) r8 re8_(\downbow                                  % 37
+   sol4-1 sib8) re'4( fa'8-1)                                     % 38
    lab'8.-4( sol'16^\markup{\bold\teeny (3)}
    fa'8)_\markup{\bold\teeny (1)} sol'4 sol8(-2\downbow           % 39
    sol8.)( fad16 la8) sol8.( fad16 sib8-4)                        % 40
    sol4.( sol8) r4                                                % 41
    R2.                                                            % 42
-   mi,2.\p(                                                       % 43
+   \clef "bass"
+   mib,2.\p(                                                      % 43
    \key mib \major
    mib,4.)( mib,4) mib8-1\pp\upbow_\markup{\teeny "III"}          % 44
    reb'4-4(_\markup{\teeny "II"}_\markup{\small\italic "sempre dolce"}
@@ -133,12 +132,12 @@
    R2.                                                            % 68
    r4.^\markup{\small\italic "con sordina"} r4
    \clef "tenor"
-   re8(\p                                                         % 69
-   sol4-1_\markup{\small\italic "dolce"} sib8)                    % 70
-   re'4( sol'8-1)                                                 % 71
-   sib'8.( la'16 sol'8) la'4 re'8-2\downbow(                      % 72
-   re'8.)( do'16 mi'8) re'8.( do'16 mi'8)                         % 73
-   re'4.( re'8) r8 re8( sol4-1 sib8) re'4( fa'8-1)                % 74
+   re8_(\p                                                        % 69
+   sol4-1_\markup{\small\italic "dolce"} sib8) re'4( sol'8-1)     % 70
+   sib'8.( la'16 sol'8) la'4 re'8-2\downbow(                      % 71
+   re'8.)( do'16 mi'8) re'8.( do'16 mi'8)                         % 72
+   re'4.( re'8) r8 re8_(                                          % 73
+   sol4-1 sib8) re'4( fa'8-1)                                     % 74
    lab'8.-4( sol'16^\markup{\bold\teeny (3)}
    fa'8)_\markup{\bold\teeny (1)} sol'4 sol8(-2\downbow           % 75
    sol8.)( fad16 la8) sol8.( fad16 sib8-4)                        % 76
@@ -157,7 +156,7 @@
    sol2.)(                                                        % 84
    sol4.)
    <<sol,8\pp re8 sib8^\markup{\small\italic "pizzicato"}>> r4    % 85
-   <<sol,8\pp re8 sib8^\markup{\small\italic "pizzicato"}>> r4 r4. % 86
+   <<sol,8 re8 sib8>> r4 r4.                                      % 86
    \bar "|."
  }
 }
