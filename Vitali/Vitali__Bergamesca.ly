@@ -85,7 +85,7 @@
      do8 do'16 sol16 mi8 sol16 mi16 do8 do'16 sol16 mi8 do'16 sol16        % 34
      la8 do'16 la16 fa8 la16 fa16 re8 mi16 fa16 sol8 sol,8                 % 35
      do16 do'16(si16) la16(sol16) fa16(mi16) re16(do16) la16(sol16)
-     fa16(si16) re16(do16) si,16(                                          % 36
+     fa16(mi16) re16(do16) si,16(                                          % 36
      la,16) fa16(mi16) re16(do16) mi16(re16) do16(si,8) do8 sol8 sol,8     % 37
      do2                                                                   % 38
    }
