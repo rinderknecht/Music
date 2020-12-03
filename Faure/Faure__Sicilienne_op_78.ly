@@ -66,23 +66,24 @@
    sib8.-1( do'16^\markup{\bold\teeny (3)}
    dod'8)^\markup{\bold\teeny (4)}                                % 18
    re'8.-1( mib'16  fa'8) sol'4(^\markup{\bold\teeny x4} re'8)    % 19
-   sib8.-4( sol16 la8)
+   sib!8.-4( sol16 la8)^\markup{\bold\teeny (3)}
    sib8.-1( do'16^\markup{\bold\teeny (3)} dod'8)                 % 20
-   re'8.-1( mi'16^\markup{\bold\teeny x2} fad'8) sol'4.           % 21
+   re'8.-1( mi'16^\markup{\bold\teeny x2} fad'8) sol'4.-4         % 21
    si8.-4\pp( sol16^\markup{\bold\teeny x1} la8)
    sib8.-1( do'16^\markup{\bold\teeny (3)}
    dod'8)^\markup{\bold\teeny (4)}                                % 22
    re'8.-1( mib'16  fa'8) sol'4(^\markup{\bold\teeny x4} re'8)    % 23
-   sib8.-4( sol16 la8)
+   sib!8.-4( sol16 la8)^\markup{\bold\teeny (3)}
    sib8.-1( do'16^\markup{\bold\teeny (3)} dod'8)                 % 24
-   re'8.-1( mi'16^\markup{\bold\teeny x2} fad'8) sol'4 r8         % 25
-   sol'4.-1\f\> re'4-2 r8\!                                       % 26
+   re'8.-1( mi'16^\markup{\bold\teeny x2} fad'8) sol'4-4 r8       % 25
+   sol'4.-1\f\> re'4-3\flageolet r8\!                             % 26
    <sib'-3>8.\p( la'16 sib'8) la'8.( <sol'-2>16 fad'8)            % 27
-   sol'4.\f\> re'4-3\flageolet r8\!                               % 28
-   do'8.-4\p( la16 sib8) la8( sol16\< fad16 la16 re'16)\!         % 29
-   sol'4.-1\f\> re'4 r8\!                                         % 30
+   sol'4.-1\f\> re'4-3\flageolet r8\!                             % 28
+   do'8.-4\p( la16 sib8) la8(-4
+   sol16\< fad16 la16 re'16^\markup{\bold\teeny (2)})\!           % 29
+   sol'4.-1\f\> re'4-3\flageolet r8\!                             % 30
    <sib'-3>8.\p( la'16 sib'8) la'8.( <sol'-2>16 fad'8)            % 31
-   sol'4.\f\> re'4-3\flageolet r8\!                               % 32
+   sol'4.-1\f\> re'4-3\flageolet r8\!                             % 32
    \mark \default
    \bar "||"
    r4. r4 re8_(\p\downbow                                         % 33
@@ -121,11 +122,12 @@
    mib,4.)( mib,4) sib,8                                          % 61
    \clef "tenor"
    \key sib \major
-   sol'4.-1\f\> re'4-2 r8\!                                       % 62
+   sol'4.-1\f\> re'4-3\flageolet r8\!                             % 62
    <sib'-3>8.\p( la'16 sib'8) la'8.( <sol'-2>16 fad'8)            % 63
-   sol'4.\f\> re'4-3\flageolet r8\!                               % 64
-   do'8.-4\p( la16 sib8) la8( sol16\< fad16 la16 re'16)\!         % 65
-   sol'4.-1\f\> re'4 r8\!                                         % 66
+   sol'4.-1\f\> re'4-3\flageolet r8\!                             % 64
+   do'8.-4\p( la16 sib8) la8(-4
+   sol16\< fad16 la16 re'16)\!^\markup{\bold\teeny (2)}           % 65
+   sol'4.-1\f\> re'4-3\flageolet r8\!                             % 66
    \clef "bass"
    la,16^\markup{\small\italic "pizzicato"}
    sol16 la16 dod'16 mi'8 re,16 la,16 re16 fad16 la8              % 67
