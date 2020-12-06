@@ -104,7 +104,8 @@
    do'8_\markup{\small\italic "sempre dolce"} reb'4 sib8-2)       % 45
    do'4( mib8^\markup{\bold\teeny (2)}
    dob'4^\markup{\bold\teeny (3)} lab8-2)                         % 46
-   sib4( sol8 mib4)^\markup{\bold\teeny (4)} mib,8-2              % 47
+   sib4(^\markup{\bold\teeny (4)} sol8^\markup{\bold\teeny (1)}
+   mib4)^\markup{\bold\teeny (4)} mib,8-2                         % 47
    sib,4. fa4-1( sol8)^\markup{\bold\teeny (3)}                   % 48
    lab4.( sib4-1_\markup{\teeny II} do'8)                         % 49
    re'!4.( sib4.)                                                 % 50
