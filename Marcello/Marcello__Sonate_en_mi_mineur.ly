@@ -15,11 +15,19 @@
 \paper {
   paper-width  = 195\mm
   paper-height = 260\mm
+  indent = #0
+  page-count = #2
+  line-width = #184
+  print-page-number = ##f
+  ragged-last-bottom = ##t
+  ragged-bottom = ##f
+%  ragged-last = ##t
 }
 
 \score {
   \new Staff
-  \with {instrumentName = #"Cello "}{
+%  \with {instrumentName = #"Cello "}
+    {
     \tempo Adagio
     \clef "bass"
     \time 4/4
@@ -78,7 +86,7 @@
 
 \new score {
   \new Staff
-  \with {instrumentName = #"Cello "}{
+%  \with {instrumentName = #"Cello "}{
     \tempo Allegro
     \clef "bass"
     \time 4/4
@@ -96,8 +104,8 @@
       mi'16 re'16-4 do'16 si16 la8 re'8 si8 sol8
       re'16\f do'16 si16 la16                               % 4
       si8 sol8 re'16\p do'16 si16 la16 si8 sol8
-      <sol'-4>16\f fa'16 mi'16-4 re'16                      % 5
-      mi'8 do'8-\1 <sol'-4>16\p
+      sol'16-4\f fa'16 mi'16-4 re'16                        % 5
+      mi'8 do'8-\1 sol'16-4\p
       fa'16 mi'16-4 re'16
       mi'16 re'16 do'16-\1\< mi'16
       re'16-4 do'16 si16 re'16                              % 6
@@ -156,10 +164,10 @@
       la16(fad16) fad16(si16)
       si16 la16 sol16 fad16
       sol16 fad16 mi16 red16-1
-      mi8-2 la8\open                                        % 25
+      mi8^\markup{\bold\teeny (2)} la8\open                 % 25
       sol4-4 fad8.\trill(mi16)
       mi16(si16\p) si16(mi'16-4)
-      mi'16 re'16 do'16-1 si16-1                            % 26
+      mi'16 re'16 do'16-2 si16                              % 26
       do'16(la16) la16(re'16)
       re'16 do'16 si16 la16
       si16(sol16) sol16(do'16)
@@ -168,7 +176,7 @@
       si16 la16 sol16 fad16
       sol16\< mi16 fad16 sol16
       la16 si16 dod'16-1 red'16-3\!                         % 28
-      mi'8\f dod'8 mi'8 <la'-3\flageolet>8
+      mi'8\f dod'8 mi'8 la'8-3\flageolet
       sol'4-4 fad'8.\trill(mi'16)                           % 29
       mi'2. r4                                              % 30
     }
