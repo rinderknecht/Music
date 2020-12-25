@@ -150,7 +150,8 @@
    sol,8\pp                                                       % 77
    sib,4( mib8 sol4 sib8)                                         % 78
    \clef "tenor"
-   mib'4( fa'8 sol'4 la'!8)                                       % 79
+   mib'4-1( fa'8^\markup{\bold\teeny x2} 
+   sol'4 la'!8-3\flageolet)                                       % 79
    sib'4.\(( sib'8.) fad'16-1 la'8\)                              % 80
    sol'4
    \clef "bass"
