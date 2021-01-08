@@ -39,7 +39,7 @@
    \bar "||"
    \mark \default
    r4. r4 re8_(\p\downbow                                         % 01
-   sol4-1_\markup{\small\italic "dolce"} sib8) re'4( sol'8\1)     % 02
+   sol4\1_\markup{\small\italic "dolce"} sib8) re'4( sol'8\1)     % 02
    sib'8.( la'16 sol'8) la'4 re'8\2\downbow\((                    % 03
    re'8.) do'16^\markup{\bold\teeny x1} mi'8\) re'8.( do'16 mi'8) % 04
    re'4.( re'8) r8 re8_(\downbow                                  % 05
