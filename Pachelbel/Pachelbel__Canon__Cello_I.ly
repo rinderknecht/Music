@@ -138,11 +138,11 @@
     \mark \default
     \bar "||"
     \clef "bass"
-    re'8 re8 dod8 dod'8 si8 si,8 la,8 la8                                % 53
+    re'8 re8 dod8\4 dod'8-2 si8\1 si,8 la,8 la8                          % 53
     \clef "tenor"
     sol8 sol'8 fad'8 fad8  mi8 si8 mi8 mi'8                              % 54
-    fad'8 fad8 mi8 mi'8  re'8 re8 dod8 dod'8                             % 55
-    si8 si'8 la'8 la8  sol8. mi'16 la8 la8                               % 56
+    fad'8 fad8 mi8 mi'8  re'8 re8 dod8\4 dod'8-2                         % 55
+    si8\1 si'8\4 la'8-2 la8\open sol8.\4 mi'16 la8 la8                               % 56
     la4 r4 r4 r4                                                         % 57
     \bar "|."
   }
