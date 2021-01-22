@@ -15,6 +15,13 @@
 \paper {
   paper-width  = 195\mm
   paper-height = 260\mm
+  indent = #0
+  page-count = #2
+  line-width = #184
+  print-page-number = ##f
+  ragged-last-bottom = ##t
+  ragged-bottom = ##f
+%  ragged-last = ##t
 }
 
 ringsps = #"
@@ -144,7 +151,7 @@ allongerUne = \markup {
    mi4 r8
    \mark \default \breathe
    dod'8\upbow si4 r8 la8                                             % 34
-   sold8\4 mi8^\markup{\bold\teeny x1} 
+   sold8\4 mi8^\markup{\bold\teeny x1}
    dod4-4 re2                    % 35
    mi4 la,4 si,4.-2 si,8                       % 36
    dod8-4 la,8 la4.\2 si16 la16 sold8.( la16)   % 37
