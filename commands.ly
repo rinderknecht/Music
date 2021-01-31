@@ -1,3 +1,8 @@
+
+\set fingeringOrientations = #'(left)
+
+\finger\markup{\circle 1}
+
 % iPad Pro 12.9
 
 \paper {
