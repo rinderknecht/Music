@@ -143,8 +143,8 @@
     | re'2\2)\!
     | sol'2\1\>(
     | sol'2)\!
-    | si'4.^\markup{\teeny\bold x4}\p( sol'8-1)
-    | mi'4.\3( re'8-1)
+    | si'4.\3\p( sol'8-1)
+    | mi'4.-3(_\markup{\teeny II} re'8-2)
     | mi4.\1\upbow( re8)
     | <mi'\finger\markup{\circle 3}>4.\fermata\downbow_\markup{\teeny I}\>(
       re'8)\!
