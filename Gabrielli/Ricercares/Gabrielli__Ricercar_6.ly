@@ -217,7 +217,7 @@ vibrato = \markup {
        {fad4. <fad-1>8 fad8 fad8}>>
    | <<{sol4.\1 <do'\finger\markup{\circle 2}>8 do'8 do'8}\\
        {mi4._\markup{\bold\teeny x4} <mi-1>8 mi8 mi8}>>
-    | <<{do'4. do'8 si8 la8}\\{re2.}>>
+   | <<{do'4. do'8 si8 la8}\\{re2.}>>
    | <<{si4 la4.\stopped sol8}\\{re2.}>>
    | <<{sol,2.}\\{sol2.\mf}>>
    \bar "|."
