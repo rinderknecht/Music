@@ -37,7 +37,7 @@
       
       \transpose do'' do' {
       \repeat volta 2 {
-        re''4 sib''4.\mordent do'''8
+        | re''4 sib''4.\mordent do'''8
         | la''2\prall la''4
         | la'4 la''4.\mordent sib''8
         | sol''2\prall sol''4
