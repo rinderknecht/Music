@@ -83,7 +83,8 @@
       | sol,16( fad!16 do'16) si16 do'16 fad16 do'16 fad16
         sol,16\( fad16 do'16\) si16 do'16 fad16 do'16 fad16
       | sol,16( re16 si16) la16 si16 sol16 fad16 mi16
-        re16 do16 si,16 la,16 sol,16 fad,16 mi,16 re,16
+        re16 do16 si,16 la,16 sol,16 
+        fad,16^\markup{\bold\teeny x4} mi,16 re,16
       | dod,16\1 la,16-2( mi16-2 fad16-4) sol16\4 mi16 fad16 sol16
         dod,16\1 la,16( mi16 fad16) sol16\4 mi16 fad16 sol16
       | do,!16 la,16( re16 mi16) fad16 re16 mi16 fad16
@@ -115,20 +116,26 @@
       | fad16 la16 re16 la16 sol16\p la16 mi16 la16
         fad16 la16 re16 la16 sol16\mf la16 mi16 la16
       | fad16 la16 re16 la16 mi16 la16 fad16 la16
-        <<{\skip 16 la16[ \skip 16 la16]}\\
-          {sol16[ \skip 16 la16_\1] \skip 16}>>
-        <<{\skip 16 la16[ \skip 16 la16]}\\
-          {si16[ \skip 16 re16] \skip 16}>>
-      | <<{\skip 16 la16[ \skip 16 la16] \skip 16 la16[ \skip 16 la16]
-           \skip 16 la16[ \skip 16 la16] \skip 16 la16[ \skip 16 la16]}\\
-          {la16[ \skip 16 si16_\1] \skip 16 do'16[ \skip 16 re16] \skip 16
-           si16[ \skip 16 do'16] \skip 16 re'16[ \skip 16 si16] \skip16}>>
-      | <<{\skip 16 la16[ \skip 16 la16] \skip 16 la16[ \skip 16 la16]
-           \skip 16 la16[ \skip 16 la16] \skip 16 la16[ \skip 16 la16]}\\
-          {do'16[ \skip 16 si16] \skip 16 do'16[ \skip 16 la16_\1] \skip 16
-           si16[ \skip 16 la16] \skip 16 si16[ \skip 16 sol16_\1] \skip 16}>>
-      | <<{\skip 16 la16[ \skip 16 la16] \skip 16 la16[ \skip 16 la16]}\\
-          {la16[ \skip 16 sol16] \skip 16 la16[ \skip 16 fad16_\1] \skip 16}>>
+ %       <<{\skip 16 la16[ \skip 16 la16]}\\
+ %         {sol16[ \skip 16 la16_\1] \skip 16}>>
+ %       <<{\skip 16 la16[ \skip 16 la16]}\\
+ %         {si16[ \skip 16 re16] \skip 16}>>
+        sol16 la16 la16\1 la16 si16 la16 re16 la16
+%      | <<{\skip 16 la16[ \skip 16 la16] \skip 16 la16[ \skip 16 la16]
+%           \skip 16 la16[ \skip 16 la16] \skip 16 la16[ \skip 16 la16]}\\
+%          {la16[ \skip 16 si16_\1] \skip 16 do'16[ \skip 16 re16] \skip 16
+%           si16[ \skip 16 do'16] \skip 16 re'16[ \skip 16 si16] \skip16}>>
+      | la16 la16 si16\1 la16 do'16 la16 re16 la16 
+        si16 la16 do'16 la16 re'16 la16 si16 la16
+ %     | <<{\skip 16 la16[ \skip 16 la16] \skip 16 la16[ \skip 16 la16]
+ %          \skip 16 la16[ \skip 16 la16] \skip 16 la16[ \skip 16 la16]}\\
+ %         {do'16[ \skip 16 si16] \skip 16 do'16[ \skip 16 la16_\1] \skip 16
+ %          si16[ \skip 16 la16] \skip 16 si16[ \skip 16 sol16_\1] \skip 16}>>
+      | do'16 la16 si16 la16 do'16 la16 la16\1 la16
+        si16 la16 la16 la16 si16 la16 sol16\1 la16
+ %     | <<{\skip 16 la16[ \skip 16 la16] \skip 16 la16[ \skip 16 la16]}\\
+ %         {la16[ \skip 16 sol16] \skip 16 la16[ \skip 16 fad16_\1] \skip 16}>>
+      | la16 la16 sol16 la16 la16 la16 fad16\1 la16
         sol16 la16 fad16 la16 sol16 la16 mi16-1 la16
       | fad16 la16 re16 mi16 fa!16 re16 fad16\1 re16
         sol16 re16 sold16 re16 la16 re16 sib16\2 re16
