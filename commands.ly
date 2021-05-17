@@ -73,6 +73,14 @@ allongerQuatre = \markup {
   }
 }
 
+allongerCinq = \markup {
+  \center-column {
+    \combine
+    \draw-line #'(-10 . 0)
+    \arrow-head #X #RIGHT ##f
+  }
+}
+
 retenir = \markup {
   \center-column {
     \concat {
@@ -120,6 +128,27 @@ retenirQuatre = \markup {
       \arrow-head #X #LEFT ##f
       \hspace #-1
       \draw-line #'(-8 . 0)
+    }
+  }
+}
+
+retenirCinq = \markup {
+  \center-column {
+    \concat {
+      \arrow-head #X #LEFT ##f
+      \hspace #-1
+      \draw-line #'(-9 . 0)
+    }
+  }
+}
+
+retenirAppuyer = \markup {
+  \center-column {
+    \concat {
+      \arrow-head #X #LEFT ##f
+      \hspace #-1
+      \override #'(thickness . 3)
+      \draw-line #'(-5 . 0)
     }
   }
 }
