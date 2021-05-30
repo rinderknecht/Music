@@ -18,15 +18,15 @@
 %  indent = #0
   page-count = #2
   line-width = #184
-%  ragged-last = ##t
+  print-page-number = ##f
   ragged-last-bottom = ##t
   ragged-bottom = ##f
+%  ragged-last = ##t
 }
 
 \score {
   \new Staff
-  \with {instrumentName = #"Piccolo "}
-  {
+  \with {instrumentName = #"Piccolo "} {
     \override Hairpin.to-barline = ##f
     \tempo "Canon" 8 = 65
     \time 4/4
@@ -36,7 +36,8 @@
 %    \compressFullBarRests
 
     \mark \default
-    fad'4-1 mi'4 re'4 dod'4
+
+    | fad'4\1 mi'4 re'4 dod'4
     | si4 la4 si4 dod'4
     | re'4^\markup{\musicglyph #"scripts.segno"} dod'4 si4 la4
     | sol4 fad4 sol4 mi4
@@ -144,7 +145,7 @@
     | \clef "bass"
       re'8 re8 dod8\4 dod'8-2 si8\1 si,8 la,8 la8
     | \clef "tenor"
-     sol8 sol'8 fad'8 fad8  mi8 si8 mi8 mi'8
+      sol8 sol'8 fad'8 fad8  mi8 si8 mi8 mi'8
     | fad'8 fad8 mi8 mi'8  re'8 re8 dod8\4 dod'8-2
     | si8-1 si'8\4 la'8-2 la8\open sol8.\4 mi'16 la8 la8
     | la4 r4 r4 r4
