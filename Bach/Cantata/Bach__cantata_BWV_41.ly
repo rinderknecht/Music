@@ -20,14 +20,14 @@
 \score {
   <<
     \new Staff
-    \with {instrumentName = #"Piccolo"} {
+    \with {instrumentName = #"Piccolo"}{
       \override Hairpin.to-barline = ##f
       \tempo Adagio
       \time 4/4
       \key do \major
-      \clef "treble"
+      \clef "tenor"
 
-      \relative do'' {
+      \relative do' {
         \partial 4
           r16 mi16 si16 re16
 
@@ -37,15 +37,15 @@
           | la16 fa16 do16 mi16 re16 fa'16^\markup{\bold\teeny x1}
             si,,16 la'16 sold8
             \clef "bass"
-            mi,,8
-            \clef "treble"
+            mi,8
+            \clef "tenor"
             r16 mi''16 si'16 re16
           | do16 la,16 mi'16 sol16 fa16 la16 do16 mi16
             re16 si,16 re16 la'16 sol16 si16 re16 fa16
           | mi16 sol16 mi16 do16 sol16 do16 re16 si16 do8
             \clef "bass"
             do,,,8
-            \clef "treble"
+            \clef "tenor"
             r16 mi'''16\downbow fa32^\markup{\bold\teeny x1}\upbow(
             mi32 re32 do32)
           | sol'16-2--( re16-4--) mi32-4( re32 dod32-1 re32)
@@ -73,7 +73,7 @@
             r8 r16 sol''16-2 do,,16 si'16
             \clef "bass"
           | fa,,8 r8 r16 la'16 fa,16 re'16 mi,8 r8 r4
-            \clef "treble"
+            \clef "tenor"
           | r4 r16 si'''16 do32( si32 la32 si32)
             do16 la,16 mi'16 sol16 fad16 la16 do16 mi16
           | re16 si,16 re16 la'16 sold16 si16 re16 fa16
@@ -86,7 +86,7 @@
           | fa8
             \clef "bass"
             re,,8
-            \clef "treble"
+            \clef "tenor"
             r4 r4 r4
           | r4 r4 r4 r4
           | r4 r4 r4 r16 sol''16 re'16 fa16
