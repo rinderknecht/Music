@@ -15,26 +15,30 @@
 \paper {
   paper-width  = 195\mm
   paper-height = 260\mm
+  indent = #0
+  page-count = #1
+  line-width = #184
+  print-page-number = ##f
+  ragged-last-bottom = ##t
+  ragged-bottom = ##f
+%  ragged-last = ##t
 }
 
 \score {
-  \new Staff
-  \with {instrumentName = #"Cello "}{
+  \new Staff {
     \override Hairpin.to-barline = ##f
     \repeat volta 2 {
       \time 4/4
       \clef "tenor"
       \key re \minor
 
-      r8 re'8-2_\markup{\teeny I} re'16.(mi'32) re'8
-      sol16^\markup{\bold\teeny (2)} la16\open sib8-1 la8
-      dod'8^\markup{\bold\teeny (4)}                                     % 1
-      re'8-4 fa'8-2 fa'16.(sol'32) fa'8
-      sol'16.(dod'32-1 re'8) fa'8\4
-      mi'8^\markup{\bold\teeny (3)}                                      % 2
-      re'8^\markup{\bold\teeny (2)}
-      la8 re'8-4 do'16.(sib32\1) la8 sol16. fa32 fa8 mi8                 % 3
-      re8 re'8-2 mi'8^\markup{\bold\teeny (4)}
+      | r8 re'8\2_\markup{\teeny I} re'16.( mi'32) re'8
+        sol16-2 la16\open sib8\1 la8 dod'8\3                                     % 1
+      | re'8 fa'8\2 fa'16.( sol'32) fa'8
+        sol'16.( dod'32\1 re'8) fa'8^\markup{\bold\teeny x4} mi'8                                      % 2
+      | re'8-2 la8 re'8\4 do'16.( sib32^\marku{\bold\teeny x1}) 
+        la8 sol16. fa32 fa8 mi8                 % 3
+      | re8 re'8-2 mi'8^\markup{\bold\teeny (4)}
       re'8 dod'8^\markup{\bold\teeny (1)} re'8 la8\open dod'8            % 4
       re'4^\markup{\bold\teeny (2)} r4\fermata
       re'4-1_\markup{\small\italic "canzone"}
