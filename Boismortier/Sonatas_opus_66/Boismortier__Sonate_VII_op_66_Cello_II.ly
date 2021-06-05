@@ -36,7 +36,7 @@ M#(set-global-staff-size 21)
       \key re \major
       \clef "bass"
 
-      \partial 8 re8
+      | \partial 8 re8
       | fad4 r8 re8
       | la4 r8 fad,8
       | sol,4 la,4
@@ -54,7 +54,7 @@ M#(set-global-staff-size 21)
     }
 
     \repeat volta 2 {
-      \partial 8 r8
+      | \partial 8 r8
       | r4 r8 la8
       | re8 fad16 mi16 re8 fad8
       | sol8 fad8 mi8 sol8
@@ -74,9 +74,9 @@ M#(set-global-staff-size 21)
       | re8 fad,8 sol,8 la,8
       | si,4 dod4
       | re8 fad,8 sol,8 la,8
-      \cadenzaOn
-      | re,4.
-      \cadenzaOff
+      | \cadenzaOn
+        re,4.
+        \cadenzaOff
     }
   }
 }
@@ -92,7 +92,7 @@ M#(set-global-staff-size 21)
     \clef "bass"
 
     \repeat volta 2 {
-      \partial 2 r4 r4
+      | \partial 2 r4 r4
       | r4 r4 la4  dod4
       | re4 si4 sol4 mi4
       | dod4 la,4 si,4 sol,4
@@ -107,7 +107,7 @@ M#(set-global-staff-size 21)
     }
 
     \repeat volta 2 {
-      la8 mi8 sold8 mi8
+      | la8 mi8 sold8 mi8
       | la4 la,4 dod4 la,4
       | re4 re,4 r4 re4
       | mi4 sol8 fad8 mi4 sol4
@@ -144,7 +144,7 @@ M#(set-global-staff-size 21)
     \clef "bass"
 
     \repeat volta 2 {
-      re2 r4
+      | re2 r4
       | la8 la,16 si,16 dod8 la,8 mi8 la8
       | \acciaccatura sol8( fad4) re4 r4
       | sol8( fad8) sol8( la8) fad8( sol8)
@@ -192,7 +192,7 @@ M#(set-global-staff-size 21)
 
     \bar "||"
 
-    re2 r4
+    | re2 r4
     | la8 la,16 si,16 dod8 la,8 mi8 la8
     | \acciaccatura sol8( fad4) re4 r4
     | sol8( fad8) sol8( la8) fad8( sol8)
@@ -217,7 +217,7 @@ M#(set-global-staff-size 21)
     \clef "bass"
 
     \repeat volta 2 {
-      re2 r4
+      | re2 r4
       | re'4 re4 re4
       | re8 mi8 fad8 mi8 re4
       | sol4 fad4 re4
@@ -231,7 +231,7 @@ M#(set-global-staff-size 21)
     }
 
     \repeat volta 2 {
-      la,4 dod4 la,4
+      | la,4 dod4 la,4
       | re4 fad4 re4
       | sol4 sold2
       | la4 mi8 fad8 sol!4
@@ -262,7 +262,7 @@ M#(set-global-staff-size 21)
     \clef "bass"
 
     \repeat volta 2 {
-      r4 r4 r4
+      | r4 r4 r4
       | r4 r4 r4
       | fa8 sol8 la8 sol8 fa8 mi8
       | fa4-+ mi8 fa8 re4
@@ -273,7 +273,7 @@ M#(set-global-staff-size 21)
     }
 
     \repeat volta 2 {
-      fa4 sib,4 do4
+      | fa4 sib,4 do4
       | fa,4 la,4 do4
       | fa4 sib,4 do4
       | fa,4 la,4 do4

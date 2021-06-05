@@ -26,9 +26,7 @@
 
 \score {
   <<
-    \new Staff
-%    \with {instrumentName = #"Cello "}
-    {
+    \new Staff {
       \override Hairpin.to-barline = ##f
       \tempo 4 = 60
       \time 3/4

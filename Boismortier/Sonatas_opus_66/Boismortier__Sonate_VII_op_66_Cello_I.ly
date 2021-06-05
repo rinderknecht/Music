@@ -56,7 +56,7 @@
     \set Score.currentBarNumber = #13
 
     \repeat volta 2 {
-      \partial 8 mi'8\1\upbow
+      | \partial 8 mi'8\1\upbow
       | la8 dod'16\3 si16 la8\upbow dod'8\upbow
       | re'8\downbow re8 r8 re'16\downbow dod'16
       | si8 re'8 dod'8 si8
@@ -97,7 +97,7 @@
     \clef "bass"
 
     \repeat volta 2 {
-      \partial 2 re'4 fad4
+      | \partial 2 re'4 fad4
       | sol4\2 mi'4-4 dod'4-1 la4-4
       | fad4\3 re4 si8 re'8 sol8 si8
       | mi8 la8 dod8^\markup{\bold\teeny x4} mi8 re8 fad8 mi8 re8
@@ -117,7 +117,7 @@
     \set fingeringOrientations = #'(left)
 
     \repeat volta 2 {
-      \partial 2 mi'4\4\downbow mi'4
+      | \partial 2 mi'4\4\downbow mi'4
       | dod'4-1 la4-4 mi'8 la8\open mi'8 la8
       | fad'8\4( mi'8) re'4^\markup{\bold\teeny x1} fad'4 fad'4
       | fad'4 mi'8( re'8^\markup{\bold\teeny x1}) dod'4\4 si4-2
@@ -155,7 +155,7 @@
     \clef "bass"
 
     \repeat volta 2 {
-      re'8 re16 mi16 fad8 re8 la8 re'8
+      | re'8 re16 mi16 fad8 re8 la8 re'8
       | \acciaccatura re'8( dod'4) la4 r4
       | re'8( dod'8) si8( la8) sol8( fad8)
       | si4. dod'8 re'4
@@ -200,7 +200,7 @@
 
     \bar "||"
 
-    re'8 re16 mi16 fad8 re8 la8 re'8
+    | re'8 re16 mi16 fad8 re8 la8 re'8
     | \acciaccatura re'8( dod'4) la4 r4
     | re'8( dod'8) si8( la8) sol8( fad8)
     | si4. dod'8 re'4
@@ -226,7 +226,7 @@
     \clef "bass"
 
     \repeat volta 2 {
-      re'4 re4 re4
+      | re'4 re4 re4
       | re8 mi8 fad8 mi8 re4
       | fad8 sol8 la4 fad4
       | si4 la2
@@ -240,7 +240,7 @@
     }
 
     \repeat volta 2 {
-      mi4 mi8 fad8 sol4
+      | mi4 mi8 fad8 sol4
       | fad4 re'4 dod'4
       | si4 mi'4. fad'8
       | dod'4.-+ si8 la4
@@ -272,7 +272,7 @@
     \clef "bass"
 
     \repeat volta 2 {
-      fa8 sol8 la8 sol8 fa8 mi8
+      | fa8 sol8 la8 sol8 fa8 mi8
       | fa4-+ mi8 fa8 re4
       | re'8 mi'8 fa'8 mi'8 re'8 dod'8
       | re'4 la2
@@ -283,7 +283,7 @@
     }
 
     \repeat volta 2 {
-      la4 sib8 la8 sol8 sib8
+      | la4 sib8 la8 sol8 sib8
       | la4 fa4 sol4
       | la4 sib8 la8 sol8 sib8
       | la4 fa4 sol4
