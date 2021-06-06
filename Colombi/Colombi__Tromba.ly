@@ -31,7 +31,7 @@
       \key sol \major
       \clef "bass"
 
-      r8 re,8 sol,8 sol,8 sol,8 si,8 sol,8 sol,8
+      | r8 re,8 sol,8 sol,8 sol,8 si,8 sol,8 sol,8
       | sol,8 re,8 sol,16 sol,16 sol,16 sol,16 sol,8 si,8
         sol,16 sol,16 sol,16 sol,16
       | sol,8 si,8 re8 re8 re8 sol8 re8 re8
@@ -53,7 +53,7 @@
 
       \repeat volta 2 {
         \time 3/4
-        <<{si4 si4 la4}\\{sol4 sol4 fad4}>>
+        | <<{si4 si4 la4}\\{sol4 sol4 fad4}>>
         | <<{si2 la4}\\{sol2 fad4}>>
         | <<{si4 dod'?4. si16 dod'16}\\{sol4 mi2}>>
         | <<re'2. re2.>>
@@ -93,9 +93,8 @@
       | <<{la4.}\\{fad4.}>> re'8
         <<{la8 si8 do'8 si16 la16}\\{fad8 sol8 mi4}>>
 
-      \time 4/4
-
-      | si8 la16 si16
+      | \time 4/4
+        si8 la16 si16
         <<{si4}\\{sol8 sol16 la16}>> si8 si8 la8 sol8
       | re'16 la16 fad16 la16 re8 re'8
         <<{la8 si8 do'8 si16 la16}\\{fad4 mi4}>>
@@ -116,11 +115,9 @@
       \cadenzaOn
       | <<{re4.}\\{sol,4.}>>
       \cadenzaOff
-
-      \bar "|"
-      \set Score.currentBarNumber = #44
-
-      | r16 re,16 sol,16 re,16 sol,16 re,16 sol,16 re,16
+      
+      | \set Score.currentBarNumber = #44
+        r16 re,16 sol,16 re,16 sol,16 re,16 sol,16 re,16
         sol,16 sol,16 si,16 sol,16 si,16 sol,16 si,16 sol,16
       | re16 si,16 re16 si,16 re16 si,16 re16 si,16
         sol16 re16 sol16 re16 sol16 re16 sol16 re16

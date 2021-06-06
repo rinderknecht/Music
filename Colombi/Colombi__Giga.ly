@@ -30,7 +30,7 @@
     \key sol \major
     \clef "bass"
 
-    r8 re8 mi8 fad8 mi8 re8 la4 re'8 dod'?4 la8
+    | r8 re8 mi8 fad8 mi8 re8 la4 re'8 dod'?4 la8
     | re'4 fad8 mi8 do'8 si8
       <<{do'8 si8 do'8}\\{mi4}>> <<{re'8 re'8 mi'8}\\{re4}>>
     | fad'8 mi'8 re'8 sol'8 re8 mi8 fad8 mi8 re8 mi8 fad8 sol8
@@ -40,7 +40,7 @@
     | mi8 do'8 si8 <<{do'8 si8 do'8}\\{mi4}>>
       <<{re'8 re'8 mi'8}\\{re4}>> fad'8 mi'8 re'8
     | sol'8 re8 mi8 fad8 mi8 re8 mi8 fad8 sol8 do8 si,8 do8
-    | re8 la8 si8 do'8 si8 la8 sold8 mi8 la8 la4 sold8
+    | re8 la8 si8 do'8 si8 la8 sold8 mi8 la8 la4 sold!8
     | la8 mi8 re8 do8 re8 mi8 la,8 la8 sol8 fad8 re8 do8
     | si,8 sol8 fad8 mi8 do8 si,8 la,8 do'8 si8 la8 fad8 mi8
     | re8 mi8 fad8 sol8 sol,8 la,8 si,8 si8 do'8 re'8 do'8 si8
@@ -60,7 +60,8 @@
       do8 la8 la8 si,8 sol8 sol8
     | <<{fad4 la8 si4}\\{la,4 fad8 sol8 mi8 la8}>>
       re8 la,8 sol,8 fad,8 sol,8 la,8
-    | re,4.(re,4. re,4.)
+    | re,4.( re,4. re,4.)
+    
     \bar "|."
   }
 }
