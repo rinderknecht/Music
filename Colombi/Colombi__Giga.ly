@@ -60,8 +60,8 @@
       do8 la8 la8 si,8 sol8 sol8
     | <<{fad4 la8 si4}\\{la,4 fad8 sol8 mi8 la8}>>
       re8 la,8 sol,8 fad,8 sol,8 la,8
-    | re,4.( re,4. re,4.)
-    
+    | re,2.
+
     \bar "|."
   }
 }
