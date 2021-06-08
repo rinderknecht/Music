@@ -32,24 +32,36 @@
       \clef "tenor"
       \key la \minor
 
+      \repeat volta 2 {
       | la 4 fa'8 mi'4-+ re'8 do'8 si8 la8 mi4 sold8
-      | la 4 fa'8 mi'4 re'8 do'8 si8 la8 mi4 sold8
+      }
+
+      \repeat volta 2 {
       | la8 si8 do'8 re'8 mi'8 fa'8 sold8 mi8 la8 do'4 si8
-      | la8 si8 do'8 re'8 mi'8 fa'8 sold8 mi8 la8 do'4 si8
+      }
+
+      \repeat volta 2 {
       | la4 do'8 do'4 la8 sib8 do'8 re'8 do'4 sib8
-      | la4 do'8 do'4 la8 sib8 do'8 re'8 do'4 sib8
+      }
+
+      \repeat volta 2 {
       | la8 mi'16( re'16 mi'8) mi8 mi'16( re'16 mi'8)
         fa8 re'16( do'16 re'8) sold8. la16 si8
-      | la8 mi'16( re'16 mi'8) mi8 mi'16( re'16 mi'8)
-        fa8 re'16( do'16 re'8) sold8. la16 si8
+      }
+
+      \repeat volta 2 {
       | la8 mi'16( re'16 mi'16 fa'16) mi'8 mi8 sol8
         fa8 re'16( do'16 re'16 mi'16) re'8 do'8 si8
-      | la8 mi'16( re'16 mi'16 fa'16) mi'8 mi8 sol8
-        fa8 re'16( do'16 re'16 mi'16) re'8 do'8 si8
+      }
+
+      \repeat volta 2 {
       | la4 mi'8 mi'4 la8 sib8. do'16 sib8 la4-+ sold8
-      | la4 mi'8 mi'4 la8 sib8. do'16 sib8 la4 sold8
+      }
+
+      \repeat volta 2 {
       | la4 mi'8 fa'8. sol'16 fa'8 fa'8. mi'16 re'8 do'4-+ si8
-      | la4 mi'8 fa'8. sol'16 fa'8 fa'8. mi'16 re'8 do'4 si8
+      }
+
       | la4. r4. mi'4._\markup{\small\italic "canzone"} do'4 si8
       | la4.( la4) si8 do'8 re'8 mi'8 re'4-+ do'8
       | si4( la8) sol4 la8 si8 do'8 re'8 do'4 si8

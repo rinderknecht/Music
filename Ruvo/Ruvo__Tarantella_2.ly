@@ -3,7 +3,7 @@
 \version "2.18.2"
 
 \header {
-  title    = "Tarantella en fa majeur"
+  title    = "Tarantella en ré mineur"
   composer = "Giulio Ruvo (XVIII)"
   tagline  = ""
 }
@@ -29,7 +29,7 @@
     \override Hairpin.to-barline = ##f
     \time 12/8
     \clef "tenor"
-    \key fa \major
+    \key re \minor
 
     | re4. re'4. do'4. do4.
     | fa4. fa4. sol4. la4.
@@ -39,10 +39,12 @@
     | fa4 do8 fa8 mi8 fa8 sol8 fa8 sol8 la8 sol8 la8
     | re4 re'8 re'8 mi'8 re'8 do'4 do8 mi8 re8 mi8
     | fa4 do8 fa8 mi8 fa8 sol8 fa8 sol8 la8 sol8 la8
+
+    \repeat volta 2 {
     | re4. re'8 mi'8 re'8 do'8-+ sib8 la8 sib8 do'8-+ sib8
     | la8 sol8 fa8 sol8 la8 sol8 fa8 mi8 re8 la4 la,8
-    | re4. re'8 mi'8 re'8 do'8 sib8 la8 sib8 do'8 sib8
-    | la8 sol8 fa8 sol8 la8 sol8 fa8 mi8 re8 la4 la,8
+    }
+
     | re4. re'4 la8 sib4 sol8 do'4 sol8
     | la4 fa8 sib4 fa8 sol4 mi8 la4 la,8
     | re4. re'8 la8 re'8 sib8 sol8 sib8 do'8 sol8 do'8
