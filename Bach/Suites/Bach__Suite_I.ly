@@ -85,7 +85,7 @@
       dod,16\1( la,16 mi16) fad16 sol16\4 mi16 fad16 sol16
     | do,!16( la,16 re16) mi16 fad16 re16 mi16 fad16
       do,16( la,16 re16) mi16 fad16 re16 mi16 fad16
-    | do,16( la,16 re16) fad16 la16( dod'16 re'8\fermata)(
+    | do,16( la,16 re16) fad16 la16 dod'16 re'8\fermata(
       re'16) la,16 si,16 do!16 re16 mi16 fad16 sol16
     | la16 fad16 re16 mi16 fad16 sol16 la16 si16
       do'16 la16 fad16 sol16 la16 si16 do'16 re'16
@@ -94,14 +94,13 @@
     | re,16 la,16( re16 fad16) la16 si16 do'16 la16
       si16( sol16 re16) do16 si,16 sol,16 la,16 si,16
     | re,16 sol,16( si,16 re16) sol16 la16
-      si16 sol16 do'!16( sib16^\markup{\bold\teeny x1}  
-      la16 sib16)^\markup{\bold\teeny x1}
+      si16 sol16 dod'16( si16 la16 sib16)^\markup{\bold\teeny x1}
       sib16( la16 sold16\3 la16)-4
-    | la16-4( sol!16-2 fad16-1 sol16) sol16\4( 
+    | la16-4( sol!16-2 fad16-1 sol16) sol16\4(
       mi16 dod16^\markup{\bold\teeny x4} si,!16)
       la,16( dod16 mi16) sol16 la16 dod'16 re'16 dod'16
     | re'16( la16 fad16) mi16 fad16 la16 re16
-      fad16 la,16 re16 dod16^\markup{\bold\teeny x4} si,16 
+      fad16 la,16 re16 dod16^\markup{\bold\teeny x4} si,16
       la,16 sol,16\open fad,16^\markup{\bold\teeny x4} mi,16
     | re,8 do'!16( si16 la16 sol16 fad16 mi16
       re16) do'16( si16 la16 sol16 fad16 mi16 re16
