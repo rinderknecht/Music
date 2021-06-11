@@ -47,9 +47,9 @@
     | sol,16( mi16 si16)   la16 si16  sol16 fad16 sol16
       mi16 sol16 fad16 sol16
       si,16\1_\markup{\teeny III} re16-4 dod16 si,16
-    | dod16-3( sol16_\markup{\teeny II}-2 la16)\open sol16
+    | dod16-3( sol16_\markup{\teeny II}-2 la16)-4 sol16
       la16 sol16 la16 sol16
-      dod16( sol16 la16-4) sol16 la16 sol16 la16 sol16
+      dod16( sol16 la16) sol16 la16 sol16 la16 sol16
     | fad16-1( la16-4 re'16-2_\markup{\teeny I}) dod'16-1
       re'16 la16-4_\markup{\teeny II} sol16-2 la16
       fad16 la16 sol16 la16 re16 fad16\3 mi16 re16
