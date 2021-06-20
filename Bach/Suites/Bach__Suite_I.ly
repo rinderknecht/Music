@@ -132,7 +132,7 @@
  %     | <<{\skip 16 la16[ \skip 16 la16] \skip 16 la16[ \skip 16 la16]}\\
  %         {la16[ \skip 16 sol16] \skip 16 la16[ \skip 16 fad16_\1] \skip 16}>>
     | la16 la16\open sol16 la16\open la16 la16\open fad16\1 la16\open
-      sol16 la16\open fad16 la16\open sol16 la16\open mi16-1 la16\open
+      sol16 la16\open fad16 la16\open sol16 la16\open mi16\1 la16\open
     | fad16 la16\open re16 mi16 fa!16 re16 fad16\1 re16
       sol16 re16 sold16 re16 la16 re16 sib16\2 re16
     | si!16-3 re16 do'16-4 re16 dod'16\1 re16 re'16 re16
