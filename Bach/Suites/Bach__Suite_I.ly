@@ -35,7 +35,7 @@
     \time 4/4
     \key sol \major
     \clef "bass"
-    \set fingeringOrientations = #'(bottom)
+    \set fingeringOrientations = #'(left)
     | sol,16( re16 si16)   la16 si16  re16  si16  re16
       sol,16( re16 si16)   la16 si16  re16  si16  re16
     | sol,16( mi16 do'16)  si16 do'16 mi16  do'16 mi16
@@ -121,29 +121,30 @@
 %           \skip 16 la16[ \skip 16 la16] \skip 16 la16[ \skip 16 la16]}\\
 %          {la16[ \skip 16 si16_\1] \skip 16 do'16[ \skip 16 re16] \skip 16
 %           si16[ \skip 16 do'16] \skip 16 re'16[ \skip 16 si16] \skip16}>>
-    | la16-1 la16\open si16\1 la16\open do'16 la16\open re16 la16\open
-      si16 la16\open do'16 la16\open re'16 la16\open si16 la16\open
+    | la16-1 la16\open si16\1_\markup{\teeny II} la16\open do'16-2 la16\open re16 la16\open
+      si16 la16\open do'16 la16\open re'16-3 la16\open si16 la16\open
  %     | <<{\skip 16 la16[ \skip 16 la16] \skip 16 la16[ \skip 16 la16]
  %          \skip 16 la16[ \skip 16 la16] \skip 16 la16[ \skip 16 la16]}\\
  %         {do'16[ \skip 16 si16] \skip 16 do'16[ \skip 16 la16_\1] \skip 16
  %          si16[ \skip 16 la16] \skip 16 si16[ \skip 16 sol16_\1] \skip 16}>>
-    | do'16 la16\open si16 la16\open do'16 la16\open la16\1 la16\open
-      si16 la16\open la16 la16\open si16 la16\open sol16\1 la16\open
+    | do'16-2 la16\open si16-1 la16\open do'16 la16\open la16\1 la16\open
+      si16-3 la16\open la16 la16\open si16 la16\open sol16\1 la16\open
  %     | <<{\skip 16 la16[ \skip 16 la16] \skip 16 la16[ \skip 16 la16]}\\
  %         {la16[ \skip 16 sol16] \skip 16 la16[ \skip 16 fad16_\1] \skip 16}>>
     | la16 la16\open sol16 la16\open la16 la16\open fad16\1 la16\open
       sol16 la16\open fad16 la16\open sol16 la16\open mi16\1 la16\open
     | fad16 la16\open re16 mi16 fa!16 re16 fad16\1 re16
-      sol16 re16 sold16 re16 la16 re16 sib16\2 re16
-    | si!16-3 re16 do'16-4 re16 dod'16\1 re16 re'16 re16
-      mib'16 re16 mi'!16\1 re16 fa'!16 re16 fad'16 re16
-    | sol'16 si16( re16 si16) sol'16 si16 sol'16 si16
+      sol16 re16 sold16 re16 la16\open re16 sib16\1_\markup{\teeny I} re16
+    | si!16\1 re16 do'16-2 re16 dod'16 re16 re'16 re16
+      mib'16\4 re16 mi'!16\1 re16 fa'!16 re16 fad'16 re16
+    | \clef "tenor"
+      sol'16-4 si16(-3 re16\open si16) sol'16 si16 sol'16 si16
       sol'16 si16( re16 si16) sol'16 si16 sol'16 si16
-    | sol'16 la16( re16 la16) sol'16 la16 sol'16 la16
+    | sol'16 la16(-1 re16 la16) sol'16 la16 sol'16 la16
       sol'16 la16( re16 la16) sol'16 la16 sol'16 la16
-    | fad'16 do'16( re16 do'16) fad'16 do'16 fad'16 do'16
+    | fad'16\2 do'16(-3 re16 do'16) fad'16 do'16 fad'16 do'16
       fad'16 do'16( re16 do'16) fad'16 do'16 fad'16 do'16
-    | <<sol,1 si1 sol'1\fermata>>
+    | << sol,1 <si-2>1 <sol'-3>1\fermata>>
 
     \bar "|."
   }
