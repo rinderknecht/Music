@@ -30,12 +30,15 @@
 
 \score {
   \new Staff {
+    \set fingeringOrientations = #'(left)
+    \override Beam.auto-knee-gap = #2
     \override Hairpin.to-barline = ##f
+    
     \tempo "Prélude"
     \time 4/4
     \key sol \major
     \clef "bass"
-    \set fingeringOrientations = #'(left)
+
     | sol,16( re16 si16)   la16 si16  re16  si16  re16
       sol,16( re16 si16)   la16 si16  re16  si16  re16
     | sol,16( mi16 do'16)  si16 do'16 mi16  do'16 mi16
