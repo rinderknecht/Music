@@ -28,13 +28,15 @@
 
 \score {
   \new Staff {
+   \new Staff {
+    \set fingeringOrientations = #'(left)
+    \override Beam.auto-knee-gap = #2
     \override Hairpin.to-barline = ##f
+    
     \tempo "Allemande"
     \time 4/4
     \key sol \major
     \clef "bass"
-    \set fingeringOrientations = #'(left)
-    \override Beam.auto-knee-gap = #2
     
     \repeat volta 2 {
     | \partial 16
