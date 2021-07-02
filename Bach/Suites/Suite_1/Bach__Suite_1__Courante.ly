@@ -31,7 +31,7 @@
     \set fingeringOrientations = #'(left)
     \override Beam.auto-knee-gap = #2
     \override Hairpin.to-barline = ##f
-    
+
     \tempo "Courante"
     \time 3/4
     \key sol \major
@@ -52,9 +52,9 @@
     | <<sol,4. sol4.>> si16( la16 sol16 fad16 mi16 re16)
     | mi'8 dod'8 la8 si16( dod'16) re'16 fad16( mi16 re16)
     | la,8 re'8 dod'8\trill si16( la16) re'16 la16 si16 fad16
-    | sol16( fad16 sol16) mi16 sol16( fad16 sol16) mi16 
+    | sol16( fad16 sol16) mi16 sol16( fad16 sol16) mi16
       la,16 sol16 fad16 mi16
-    | sol16( fad16 sol16) mi16 sol16( fad16 sol16) mi16 
+    | sol16( fad16 sol16) mi16 sol16( fad16 sol16) mi16
       sol,16 fad16 mi16 re16
     | re'16( dod'16 si16 la16) re'8 dod'16( si16)
       la16( sol16 fad16 mi16)
@@ -64,11 +64,11 @@
       re16( mi16 re16) re'16
     | sol16( fad16 mi16 re16) dod16( si,16 la,16) sol16
       fad8.\trill( mi16)
-    | la16( sol16) si16( la16 sol16 fad16 mi16 re16) 
+    | la16( sol16) si16( la16 sol16 fad16 mi16 re16)
       la,8 dod8
     | \partial 2. re,2 r8
     }
-    
+
     \repeat volta 2 {
     | la8
     | \set Score.currentBarNumber = #19
@@ -98,11 +98,11 @@
       sol,16( la,16 sol,16) re16
     | sol,16( la,16 sol,16) mi16 sol,16( la,16 sol,16) fad16
       sol,16( la,16 sol,16) sol16
-    | do'16( si16 la16 sol16 fad16 mi16 re16 do'16) 
+    | do'16( si16 la16 sol16 fad16 mi16 re16 do'16)
       si8.\trill( la16)
-    | re'16( do'16 re'16) si16 re'16( do'16 re'16) si16 
+    | re'16( do'16 re'16) si16 re'16( do'16 re'16) si16
       mi16 re'16 do'16 si16
-    | do'16( si16 do'16) la16 do'16( si16 do'16) la16 
+    | do'16( si16 do'16) la16 do'16( si16 do'16) la16
       re16 do'16 si16 la16
     | si16( la16 si16) sol16 do16 si16 la16 sol16 re8 fad8
     | \partial 2. <<sol,2 sol2>> r8

@@ -97,7 +97,7 @@
     | re,16 la,16( re16 fad16) la16 si16 do'16 la16
       si16( sol16 re16) do16 si,16 sol,16 la,16 si,16
     | re,16 sol,16( si,16 re16) sol16 la16
-      si16 sol16 dod'16( si16 la16 sib16)^\markup{\bold\teeny x1}
+      si16 sol16 dod'16( sib16 la16 sib16)^\markup{\bold\teeny x1}
       sib16( la16 sold16\3 la16)-4
     | la16-4( sol!16-2 fad16-1 sol16) sol16\4(
       mi16 dod16^\markup{\bold\teeny x4} si,!16)
