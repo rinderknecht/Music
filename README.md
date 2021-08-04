@@ -19,7 +19,11 @@ I strongly recommend the use of
 A circled finger number implies shifting. An "x" follwed by a finger
 number means an extension. If the number is neither 1 nor 4, the
 extension is maintained while the finger is applied on the string. A
-simple finger number implies no shifting.
+simple finger number implies no shifting. Trills are special. In the
+case of baroque music, like Bach, the first note to play is one above
+the printed note, and the fingering reflects the note played first,
+not the one played next. In the case of classical music, the trill
+comes "from below".
 
 # LaTeX-typeset book
 
