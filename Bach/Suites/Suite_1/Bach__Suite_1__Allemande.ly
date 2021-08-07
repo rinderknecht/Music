@@ -22,6 +22,19 @@
 %  ragged-last = ##t
 }
 
+% function parentheAll allows for accidental symbol to be included in parentheses
+parentheAll = #(define-music-function (parser location note) (ly:music?)
+#{
+  \once \override ParenthesesItem.font-size = #-1
+  \once \override ParenthesesItem.stencil = #(lambda (grob)
+       (let* ((acc (ly:grob-object (ly:grob-parent grob Y) 'accidental-grob))
+              (dot (ly:grob-object (ly:grob-parent grob Y) 'dot)))
+         (if (not (null? acc)) (ly:pointer-group-interface::add-grob grob 'elements acc))
+         (if (not (null? dot)) (ly:pointer-group-interface::add-grob grob 'elements dot))
+         (parentheses-item::print grob)))
+  \parenthesize $note
+#})
+
 trillWithNatural = {
   \once \override TrillSpanner #'bound-details #'left #'text
     = \markup { \musicglyph #"scripts.trill" \smaller \raise #0.75 \natural }
@@ -36,6 +49,8 @@ trillWithNatural = {
     \set fingeringOrientations = #'(left)
     \override Beam.auto-knee-gap = #2
     \override Hairpin.to-barline = ##f
+    \override ParenthesesItem.padding = #0.1
+    \override ParenthesesItem.font-size = #-1
 
     \tempo "Allemande"
     \time 4/4
@@ -52,35 +67,43 @@ trillWithNatural = {
       si,16( do16 re16 mi16) fad16( sol16 la16 si16)
     | do'16( la16 sol16 fad16) sol16( mi16 fad16 sol16)
       la,16 re16( fad16 sol16) la16( si16 do'16) la16
-    | si16(_\markup{\small\italic "fort/léger"} sol16) 
+    | si16(_\markup{\small\italic "fort/léger"} sol16)
       sol16( re16) re16( si,16) si,16( sol,16)
       sol,8. si16 do'16 si16 la16 sol16
     | la16( si16 do'16) la16 sol16( fad16 sol16) la16
-      red8.\trill\2 do'16\4 si16 la16 sol16\4 fad16
+      %red8.\trill\2-1
+      \appoggiatura {\hide Stem \parenthesize mi8\2 \undo \hide Stem} red8.\trill
+
+      do'16\4 si16 la16 sol16\4 fad16
     | sol16( mi16) mi16( si,16) si,16( sol,16)
       sol,16( mi,16) mi,8. si,16 mi16 sol16\2 fad16 la16
     | sol16(\4 fad16 mi16) fad16 sol16 dod'16 sol16( fad16
       sol16) dod'16 mi16( fad16 sol16) mi16 la,16 sol16
-    | fad8\mordent re16( mi16) fad16 re16 sol16 mi16
+    | fad8\mordent( \grace {\hide Stem \parenthesize sol) \undo \hide Stem}
+      re16( mi16) fad16 re16 sol16 mi16
       fad16 re16( fad16 sol16) la16( si16 do'!16) la16
     | si16( re16 sol,16) re16 si16 sol16 la16 fad16
       sol16 mi16( sol16 la16) si16( dod'16 re'16) si16
     | dod'16( mi16 sol,16) mi16 dod'16 la16 si16 re'16
       dod'16 la16( re'16 si16) dod'16 la16 mi'16\4 sol16
-    | fad8.\trill-2 re'16 la16( sol16) fad16(\3 mi16)
+    | \appoggiatura {\hide Stem \parenthesize sol8 \undo \hide Stem}
+      fad8.\trill  %^\markup{\musicglyph #"scripts.trill" \tiny \finger 1-2}
+      re'16 la16( sol16) fad16(\3 mi16)
       re16 la16(\4 sol16 mi16)\1 fad16 re16 la16\4 do!16-2
-    | si,8.-2\trill sol16 re16( do16) si,16(\2 
-      la,16)^\markup{\bold\teeny x1} sol,16\open 
+    | \appoggiatura {\hide Stem \parenthesize do8 \undo \hide Stem} si,8.\trill
+      sol16 re16( do16) si,16(\3 la,16) sol,16\open
       re16(\4 do16-2 la,16)\1 si,16 sol,16 re16\4 fad,16-3
-    | mi,16(\3_\markup{\small\italic "crescendo"} sol,16 
-      la,16 si,16^\markup{\bold\teeny x2} 
+    | mi,16(\3_\markup{\small\italic "crescendo"} sol,16
+      la,16 si,16^\markup{\bold\teeny x2}
       dod16^\markup{\bold\teeny x4} re16 mi16 fad16)
       sol16( la16 dod'16\1 re'16) mi'16 la16 sol'8\4
-    | re16\upbow\open sol'16( fad'16 mi'16) fad'16(\4 
+    | re16\upbow\open sol'16( fad'16 mi'16) fad'16(\4
       re'16)^\markup{\bold\teeny x1} la16 re'16\4
-      re16( fad16 la16 do'!16) si8.\trill-2( la16)
+      re16( fad16 la16 do'!16)
+      \appoggiatura {\hide Stem \parenthesize do'8 \undo \hide Stem} si8.\trill(
+      la16)
     | <<sol,8. re8. si8.(>> la16) sol16( fad16 mi16 re'16\2)
-      dod'16 mi'16 la16(-4 sol16 fad16) re16 la,16\1 
+      dod'16 mi'16 la16(-4 sol16 fad16) re16 la,16\1
       dod16^\markup{\bold\teeny x4}
     | re,8. la,16 re16 fad16 la16 dod'16
       re'16 la16 fad16 re16 re,8.
@@ -94,24 +117,29 @@ trillWithNatural = {
       re16(\open mi16\1 fad16 sol16)\2 la16( fad16-1 re16-4 do!16)-2
     | si,16(-1 re16 sol16 fad16) sol16( la16\open si16\1 do'16)
       re'16( si16 la16 sol16) fa!16( mi16 fa16) re'16\upbow
-    | mi8-2[^\markup{\musicglyph #"scripts.trill" \smaller \raise #0.75 \natural}
-      \appoggiatura re8( do8)]
+    | \appoggiatura {\hide Stem \parentheAll fa8 \undo \hide Stem}
+      mi8[\trill \appoggiatura re8( do8)]
       do'16 la,16( si,16 do16) re,16 do'16( si16 do'16)
       re'16 si16 do'16 la16
-    | sold8\4\trill \appoggiatura fad8(\3 mi8) si16 re16( do16 si,16)
+    | \appoggiatura {\hide Stem \parenthesize la8\2 \undo \hide Stem}
+      sold8\trill \appoggiatura fad8(\3 mi8) si16 re16( do16 si,16)
       do16 mi16( fad16^\markup{\bold\teeny x2} sold16) la16 do'16( si16 la16)
     | re'8 si,16( do16) re16( mi16 fa16) la,16
-      sold,8.\2\trill mi16-2 si16\1 re'16( do'16 si16)
+      \appoggiatura {\hide Stem \parenthesize la,8\2 \undo \hide Stem}
+      sold,8.\trill mi16-2 si16\1 re'16( do'16 si16)
     | <<la,8. mi8. do'8.(>> si16) la16( sol!16 fa!16 mi16)
       fa16( re16) sib16(^\markup{\bold\teeny x1} la16) sib16( do'16 re'16) la16
     | sold16(\1 la16 si!16) mi16\1 fa!16 re16( do16 si,16)
-      do16( mi16 la16 si16) <<mi8. si8.-2\trill(>> la16)
+      do16( mi16 la16 si16)
+      <<mi8.
+        \appoggiatura {\hide Stem \parenthesize do'8 \undo \hide Stem}
+        si8.\trill(>> la16)
     | << la,8. mi8. la8.>> si16\3 do'16( si16 do'16) sol!16\2
       fad!16( sol16 la16) mi16\1 re16 do16 si,16 la,16
     | sol,16 re16( fad16 do'16) si16( la16 sol16 la16)
       si16( do'16 re'16\1 mi'16) re'16( mi'16 fa'16) re'16
     | mi'8 sol8 do16 re'16(\4 do'16 si16)
-      la16( si16 do'16 mi'16--)\4 re'8.(-2 
+      la16( si16 do'16 mi'16--)\4 re'8.(-2
       do'16)^\markup{\bold\teeny x1}
     | re'8-2 la8-4 si,16-1 do'16(\2 si16 la16)
       sol16( fad16 mi16) sol16 si16 re'16( do'16 si16)
@@ -121,7 +149,7 @@ trillWithNatural = {
       <<sol,8. re8. si8.>> re16 mi16 sol16 la16 dod'16
     | re'16 la16( fad16 mi16) re16 fa!16 sol16 si16
       do'16 sol16( mi16 re16) do16( mi16 la16 do'16)
-    | fad!16( la16 do'16\1 mi'16)^\markup{\bold\teeny x4} re'8.-2 
+    | fad!16( la16 do'16\1 mi'16)^\markup{\bold\teeny x4} re'8.-2
       do16\4\upbow
       si,16 sol16 la,16( sol,16) re,16( la,16) sol16 fad16
     | sol16 sol,16 si,16 re16 sol16 si16 re'16 fad'16\3
