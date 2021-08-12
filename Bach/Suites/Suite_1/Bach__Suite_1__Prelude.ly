@@ -90,7 +90,7 @@ vibrato = \markup {
       sol16( fad16 mi16) re'16 dod'16 si16 la16 sol16
     | fad16( mi16 re16) re'16\2 la16 re'16 fad16-1_\markup{\teeny II}
       la16-4 re16(\open mi16\1 fad16) la16 sol16 fad16 mi16 re16
-    | sold16^\markup{\bold\teeny x4} re16( fa16 mi16)
+    | sold16\4^\vibrato re16(\open fa16\2 mi16)
       fa16 re16 sold!16^\markup{\bold\teeny x4}
       re16 si16 re16( fa!16 mi16) fa16 re16 sold!16^\markup{\bold\teeny x4} re16
     | do16( mi16 la16) si16 do'16 la16 mi16 re16
@@ -116,7 +116,7 @@ vibrato = \markup {
       do,16(\p la,16 re16) mi16 fad16 re16 mi16 fad16
     | do,16(\mf la,16 re16) fad16_\markup{\small\italic "ritardando"}
       la16 dod'16 re'8\fermata(
-      re'16)[ \breathe la,16\p si,16 do!16] re16 mi16 fad16 sol16
+      re'16)[^\vibrato \breathe la,16\p si,16 do!16] re16 mi16 fad16 sol16
     | la16(^\allongerUne fad16 re16) mi16 fad16 sol16 la16 si16
       do'16(^\allongerUne la16 fad16) sol16 la16 si16 do'16 re'16
     | mib'16\4( re'16 dod'16 re'16) re'16\4( do'!16 si16 do'16)
@@ -129,7 +129,7 @@ vibrato = \markup {
     | la16-4( sol!16-2 fad16-1 sol16) sol16\4(
       mi16 dod16^\markup{\bold\teeny x4} si,!16)
       la,16(\< dod16 mi16) sol16 la16 dod'16 re'16 dod'16\1\mf
-    | re'16( la16 fad16) mi16 fad16 la16 re16
+    | re'16(^\allongerUne la16 fad16) mi16 fad16 la16 re16
       fad16 la,16 re16\> dod16^\markup{\bold\teeny x4} si,16
       la,16 sol,16\open fad,16^\markup{\bold\teeny x4} mi,16\!\p
     | re,8[\breathe do'!16(\mf si16] la16 sol16 fad16 mi16
