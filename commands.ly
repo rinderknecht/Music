@@ -174,3 +174,21 @@ vibrato = \markup {
 
 
 % \markup{\musicglyph #"scripts.segno"}
+
+    \override BreathingSign.text = \markup {
+      \translate #'(-1.75 . 1.6)
+      \musicglyph #"scripts.rcomma"
+    }
+
+% function parentheAll allows for accidental symbol to be included in parentheses
+parentheAll = #(define-music-function (parser location note) (ly:music?)
+#{
+  \once \override ParenthesesItem.font-size = #-1
+  \once \override ParenthesesItem.stencil = #(lambda (grob)
+       (let* ((acc (ly:grob-object (ly:grob-parent grob Y) 'accidental-grob))
+              (dot (ly:grob-object (ly:grob-parent grob Y) 'dot)))
+         (if (not (null? acc)) (ly:pointer-group-interface::add-grob grob 'elements acc))
+         (if (not (null? dot)) (ly:pointer-group-interface::add-grob grob 'elements dot))
+         (parentheses-item::print grob)))
+  \parenthesize $note
+#})
