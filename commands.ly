@@ -192,3 +192,9 @@ parentheAll = #(define-music-function (parser location note) (ly:music?)
          (parentheses-item::print grob)))
   \parenthesize $note
 #})
+
+
+trillWithNatural = {
+  \once \override TrillSpanner #'bound-details #'left #'text
+    = \markup { \musicglyph #"scripts.trill" \smaller \raise #0.75 \natural }
+}
