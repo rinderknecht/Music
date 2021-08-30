@@ -51,11 +51,11 @@ parentheAll = #(define-music-function (parser location note) (ly:music?)
 
     \repeat volta 2 {
         la'4(-4 fad'4)-1 re'4-4
-      | <<{dod'4(-3 la4\open) re'4-4}\\{sol2-4 fad4-3}>>
-      | la8\open la'8-4 sol'8-2 fad'8-1 mi'8\open re'8
-      | <<{dod'4( la4) re'4}\\{sol2 fad4}>>
-      | <<{dod'8-3[( si8 dod'8 re'8-4]) la4\open}\\{sol2-4 fad4-3}>>
-      | <<{sol4-4}\\{mi4-1}>> sol'4-2( fad'4-1)
+      | <<{dod'4(\1 la4\open) re'4-2}\\{sol2-2 fad4-1}>>
+      | la8\open la'8\4 sol'8-2 fad'8-1 mi'8\open re'8
+      | <<{dod'4(\1 la4) re'4}\\{sol2-2 fad4}>>
+      | <<{dod'8\2[( si8^\markup{\bold\teeny x1} dod'8 re'8-3]) la4\open}\\{sol2-3 fad4-2}>>
+      | <<{sol4\1}\\{mi4_\markup{\bold\teeny x4}}>> sol'4\2( fad'4-1)
       | fad'8(-1 mi'8)\open sol'8(-2 fad'8 mi'8\open re'8)
       | \appoggiatura re'8 dod'4(
         \tuplet 3/2 {dod'8) dod'8( re'8}
@@ -66,20 +66,21 @@ parentheAll = #(define-music-function (parser location note) (ly:music?)
       | <<{dod'4.( la8) re'4}\\{sol2 fad4}>>
       | <<{dod'8[( si8 dod'8 re'8]) la4}\\{sol2 fad4}>>
       | <<{sol4}\\{mi4}>> sol'8( mi'8 fad'8 re'8)
-      | sol16( si16 mi'16\1 sol'16)-4 
-       \appoggiatura {\hide Stem \parenthesize sol'8 \undo \hide Stem} mi'2\trill
-      | re'2.\4\fermata_\markup{\small\italic "Fine"}
+      | sol16( si16 mi'16 sol'16) 
+       \appoggiatura {\hide Stem \parenthesize fad'2 \undo \hide Stem} mi'2\trill
+      | re'2.\fermata_\markup{\small\italic "Fine"}
      }
 
      | fad'8( re'8) dod'8( si8 la8 sold8)^\markup{\bold\teeny x4}
      | la8( si8 dod'8 re'8) mi'8( mid'8)^\markup{\bold\teeny x1}
      | re8 fad'8 mi'8( re'8) dod'8( si8)
      | \appoggiatura la4 sold2^\markup{\bold\teeny x4} mi4
-     | dod'8 mi'8 la8 dod8-3 fad8-3 fad'8-1
+     | dod'8 mi'8 la8 dod8^\markup{\bold\teeny x4} fad8-3 fad'8-1
      | si8 re'8 sold8^\markup{\bold\teeny x4} si8 mi8 mi'8
      | la8 dod'8 fad8 la8 re8 re'8
      | si8 sold8^\markup{\bold\teeny x4} mi8 re8 dod8 mi'8
-     | re8 fad'8 si2\trill
+     | re8 fad'8 
+       \appoggiatura {\hide Stem \parenthesize dod'2 \undo \hide Stem} si2\trill
      | la4. la'8 fad'8( re'8)
      | re'4( \tuplet 3/2 {dod'8) la8( si8}
        \tuplet 3/2 {dod'8 re'8 mi'8)}
@@ -108,8 +109,8 @@ parentheAll = #(define-music-function (parser location note) (ly:music?)
      | <<{dod'4.( la8) re'4}\\{sol2 fad4}>>
      | <<{dod'8[( si8 dod'8 re'8]) la4}\\{sol2 fad4}>>
      | <<{sol4}\\{mi4}>> sol'8( mi'8 fad'8 re'8)
-     | sol16( si16 mi'16\1 sol'16)-3 
-       \appoggiatura {\hide Stem \parenthesize sol'8 \undo \hide Stem} mi'2\trill
+     | sol16( si16 mi'16 sol'16) 
+       \appoggiatura {\hide Stem \parenthesize fad'2 \undo \hide Stem} mi'2\trill
      | re'2\4 r4
      | fad'8( re'8) dod'8( si8) mi8 sol'8
      | fad'8( re'8) mi'8( dod'8) re'8 si8
