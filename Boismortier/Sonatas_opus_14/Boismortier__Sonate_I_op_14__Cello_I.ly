@@ -28,23 +28,24 @@
   \new Staff {
 %    \with {instrumentName = #"Cello"}
     \override Hairpin.to-barline = ##f
+    \override Beam.auto-knee-gap = #1
+    \set fingeringOrientations = #'(left)
+
     \tempo "Gravement" 8 = 70
     \time 4/4
     \key sol \major
     \clef "bass"
-    \set fingeringOrientations = #'(left)
-
+    
     \repeat volta 2 {
       re'8 do'8 si8\mordent la8 sol8 sol,8 r4
       | si8 do'8 re'8 sol8 fad8 re8 r4
       | re'8 do'16 si16 la8 si16 do'16 si8 la8 do'8 si8
       | la8 sol8 fad8 sol8 la8 re8 r8 sol16 fad16
-      | mi4 r8 la16\upbow sol16 fad8 mi16 re16 dod8 la,8
-      | re16 fad16 la16 re'16
-      | fad16 la16 re'16 la16 si16 sol16 si16
-      | re'16^\markup{\bold\teeny x3}
-      | sold16-4 si16 mi'16\4 si16\1 dod'16 la16 si16 dod'16
-      | re'16 do'16 si16 la16 si16 la16 sol16 fad16 mi8-. dod'8-.
+      | mi4 r8 la16\upbow sol16 fad8 mi16 re16 dod8^\markup{\bold\teeny x4} la,8
+      | re16 fad16 la16 re'16 fad16 la16 re'16 la16 si16 sol16 si16
+        re'16^\markup{\bold\teeny x3} sold16-4 si16 mi'16\4 si16\1 
+      | dod'16 la16 si16 dod'16 re'16 do'16 si16 la16 si16 la16 sol16 fad16 
+        mi8-. dod'8-.
       | re'16\mp fad16 sol16 la16 si4( si16) si16\< la16 sol16 la4(
       | la16) fad16 sol16 la16 si16 dod'16\1 re'16 mi'16
         la8-. re'8\mordent mi8-.\1 dod'!8-.\!
@@ -88,7 +89,7 @@
     \set fingeringOrientations = #'(left)
 
     \repeat volta 2 {
-      \partial 4 r8 re'8\upbow
+        \partial 4 r8 re'8\upbow
       | re'8\downbow sol16 la16 si8-.\upbow
         do'8-.\upbow re'8-. fad8-.
       | sol2 re4
@@ -126,7 +127,7 @@
     }
 
     \repeat volta2 {
-      \partial 4 r8 la8\upbow
+        \partial 4 r8 la8\upbow
       | la8\downbow re16 mi16 fad8\upbow sol8\upbow la8\4 dod-3
       | re2-4 r8 la8\upbow
       | la8\1 si8 la8 sol8\2 fad8 re8\open

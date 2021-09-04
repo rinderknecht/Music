@@ -198,3 +198,12 @@ trillWithNatural = {
   \once \override TrillSpanner #'bound-details #'left #'text
     = \markup { \musicglyph #"scripts.trill" \smaller \raise #0.75 \natural }
 }
+
+% Analysis brackets under the staff
+
+\layout {
+  \context {
+    \Voice
+    \consists "Horizontal_bracket_engraver"
+  }
+}

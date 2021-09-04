@@ -121,7 +121,7 @@ vibrato = \markup {
       re16^\allongerUne la16(\4 sol16 mi16)\1 fad16 re16 la16\4 do!16-2
     | \appoggiatura {\hide Stem \parenthesize do8 \undo \hide Stem} si,8.\trill
       sol16 re16(^\allongerUne\startGroup do16) si,16(\3^\allongerUne
-      la,16)\stopGroup sol,16\open
+      la,16)\stopGroup sol,16\open^\allongerUne
       re16(\4 do16-2 la,16)\1 si,16 sol,16 re16\4 fad,16-3^\vibrato
     | mi,16(\3\< sol,16 la,16 si,16^\markup{\bold\teeny x2}
       dod16^\markup{\bold\teeny x4} re16 mi16 fad16)
