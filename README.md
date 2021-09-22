@@ -16,7 +16,7 @@ I strongly recommend the use of
 
 # Convention for fingerings
 
-A circled finger number implies shifting. An "x" follwed by a finger
+A circled finger number implies shifting. An "x" followed by a finger
 number means an extension. If the number is neither 1 nor 4, the
 extension is maintained while the finger is applied on the string. A
 simple finger number implies no shifting. Trills are special. In the
