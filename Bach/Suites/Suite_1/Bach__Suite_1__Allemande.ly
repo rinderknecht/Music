@@ -74,7 +74,7 @@ vibrato = \markup {
 \score {
   \new Staff { 
     \set fingeringOrientations = #'(left)
-    \override Beam.auto-knee-gap = #1
+    \override Beam.auto-knee-gap = #2
     \override Hairpin.to-barline = ##f
     \override ParenthesesItem.padding = #0.1
     \override ParenthesesItem.font-size = #-1
@@ -153,7 +153,7 @@ vibrato = \markup {
       do16 mi16(\mf fad16^\markup{\bold\teeny x2} sold16) la16 do'16( si16 la16)
     | re'8^\allongerUne si,16(\p do16) re16( mi16 fa16) la,16
       \appoggiatura {\hide Stem \parenthesize la,8\2 \undo \hide Stem}
-      sold,8.\trill mi16-2 si16\1\mf re'16( do'16 si16)
+      sold,8.\trill mi16-2 si16\1\mf re'16( do'16_\markup{\small\italic "barré"} si16)
     | <<la,8. mi8. do'8.(>> si16) la16( sol!16 fa!16 mi16)
       fa16(^\allongerUne re16) sib16(^\markup{\bold\teeny x1} la16) sib16( do'16 re'16) la16
     | sold16(\1 la16 si!16) mi16\1 fa!16 re16( do16 si,16)
