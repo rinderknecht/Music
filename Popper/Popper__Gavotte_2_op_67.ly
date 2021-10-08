@@ -48,8 +48,8 @@
      \afterGrace sol4\trill_( {fa16 sol16)}
    | fa4 r4
      \clef "tenor"
-     fa'4\1\downbow sol'8^\markup{\bold\teeny x2} la'8
-   | sol'4-.( fa'4-.) mi'4\1 fa'8 sol'8
+     fa'4\2\downbow sol'8-4 la'8-3\flageolet
+   | sol'4-.( fa'4-.) mi'4-1 fa'8 sol'8
    | fa'4-.( mi'4-.) re'4\1 mi'8 fa'8
    | mi'4-.\upbow re'4-.\downbow dod'2\1\upbow
    | \clef "bass"
@@ -64,8 +64,7 @@
    | re'4) mi'8\1 fa'8 mi'2\upbow(
    | mi'4) fad'8-3 sol'8 fad'2\downbow
    | \time 2/4
-     sol'4\1\upbow la'8^\markup{\bold\teeny x2}
-     sib'8^\markup{\bold\teeny x3}
+     sol'4\1\upbow la'8^\markup{\bold\teeny x2} sib'8-3
    | \time 4/4
      sib'2. la'8--( sol'8--)
    | sol'8\4( fa'8) mi'8\3 re'8-1 fa'8-4( mi'8) re'8\2 dod'8-1
@@ -163,8 +162,8 @@
      \afterGrace sol4\trill_( {fa16 sol16)}
    | fa4\! r4\mf
      \clef "tenor"
-     fa'4\1\downbow sol'8^\markup{\bold\teeny x2} la'8
-   | sol'4-.( fa'4-.) mi'4\1 fa'8 sol'8
+     fa'4\2\downbow sol'8-4 la'8-3\flageolet
+   | sol'4-.( fa'4-.) mi'4-1 fa'8 sol'8
    | fa'4-.( mi'4-.) re'4\1 mi'8 fa'8
    | mi'4-.\upbow re'4-.\downbow dod'2\1\upbow
    | \clef "bass"
