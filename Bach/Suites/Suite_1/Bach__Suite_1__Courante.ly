@@ -93,7 +93,7 @@
     | sol,8 si8 la16( sol16 fad16 mi16) si,8\upbow red8\upbow_\markup{\bold\teeny x1}
     | mi,4. mi16( fad16 sol16 la16 si16 do'16)
     | re'!8 fa!8 si,8 mi16( fa16 sol16 fa16 mi16 re16)
-    | mi8 do8 do,8 do16( re16 mi16 fad!16 sol16 mi16)
+    | mi8 do8 \stemUp do,8 \stemDown do16( re16 \stemNeutral mi16 fad!16 sol16 mi16)
     | dod16(\3 sol16-2 la16)\open sol16 la16 sol16 dod16 sol16
       dod16( sol16 la16) sol16
     | do!16(-2 fad16-1 la16)\open fad16 la16 fad16 do16 fad16
