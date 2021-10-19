@@ -53,7 +53,6 @@ vibrato = \markup {
 \score {
   \new Staff {
     \set fingeringOrientations = #'(left)
-    \override Beam.auto-knee-gap = #1
     \override Hairpin.to-barline = ##f
     \override BreathingSign.text = \markup {
       \translate #'(-1.75 . 1.6)
@@ -133,11 +132,13 @@ vibrato = \markup {
     | re'16(^\allongerUne la16 fad16) mi16 fad16 la16 re16
       fad16 la,16^\allongerUne re16\> dod16^\markup{\bold\teeny x4} si,16
       la,16 sol,16\open fad,16^\markup{\bold\teeny x4} mi,16\!\p
-    | re,8[^\vibrato\breathe do'!16(\mf si16] la16 sol16 fad16 mi16
+    | \stemUp re,8[^\vibrato\breathe 
+      \stemDown do'!16(\mf si16] \stemNeutral la16 sol16 fad16 mi16
       re16) do'16( si16 la16 sol16 fad16 mi16 re16
     | do!16\1) si16(^\markup{\bold\teeny x4}
       la16^\markup{\bold\teeny x2} sol16-1 fad16\3 mi16 re16 do16\2
-      si,16-1) la16-4( sol16-2 fad16 mi16\1 re16 do16 si,16
+      si,16-1) la16-4( sol16-2 fad16 
+      \stemDown mi16\1 re16 do16 si,16 \stemNeutral
     | la,16) sol16( fad16 mi16) fad16 la16 re16 la16
       mi16 la16 fad16 la16 sol16 la16 mi16 la16
     | fad16 la16 re16 la16 sol16\p la16 mi16 la16

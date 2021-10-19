@@ -138,7 +138,7 @@ vibrato = \markup {
     | \partial 16
       la16\open
     | \set Score.currentBarNumber = #17
-      <<re4\mf la4(^\vibrato>> <<re16 la16)>> fad16(\1^\allongerUne sol16 la16)
+      <<re4\mf la4(>> <<re16 la16)>> fad16(\1^\allongerUne sol16 la16)
       re16(\open mi16\1 fad16 sol16)\2 la16( fad16-1 re16-4 do!16)-2
     | si,16(-1^\allongerUne re16 sol16 fad16) sol16( la16\open si16\1 do'16)
       re'16(^\allongerUne si16 la16 sol16) fa!16( mi16 fa16) re'16\upbow^\vibrato
@@ -177,7 +177,8 @@ vibrato = \markup {
       <<sol,8. re8. si8.[>> \breathe re16]\< mi16 sol16 la16 dod'16
     | re'16\!\mf^\vibrato la16( fad16 mi16) re16 fa!16 sol16 si16
       do'16^\vibrato sol16( mi16 re16) do16( mi16 la16 do'16)
-    | fad!16(^\allongerUne la16 do'16\1 mi'16)^\markup{\bold\teeny x4} re'8.-2
+    | fad!16(^\allongerUne la16 do'16\1 mi'16)^\markup{\bold\teeny x4} 
+      re'8.-2^\vibrato
       do16\4\upbow si,16 sol16 la,16( sol,16) re,16( la,16) sol16 fad16
     | sol16 sol,16\p si,16 re16 sol16 si16 re'16 fad'16\3
       sol'16 re'16\4 si16 sol16 sol,8
