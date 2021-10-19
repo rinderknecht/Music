@@ -27,7 +27,7 @@
 \score {
   \new Staff \with {\remove "Time_signature_engraver"}
   {
-    \clef bass
+    \clef "bass"
     <do, sol, re sol>1
   }
   \layout {
