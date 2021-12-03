@@ -207,3 +207,42 @@ trillWithNatural = {
     \consists "Horizontal_bracket_engraver"
   }
 }
+
+% Barre chords
+
+startModernBarre =
+#(define-event-function (parser location fretnum partial)
+   (number? number?)
+    #{
+      \tweak bound-details.left.text
+        \markup
+          \teeny \concat {
+          #(format #f "~@r" fretnum)
+          \hspace #.2
+          \lower #.3 \small \bold \fontsize #-2 #(number->string partial)
+          \hspace #.5
+        }
+      \tweak font-size -1
+      \tweak font-shape #'upright
+      \tweak style #'dashed-line
+      \tweak dash-fraction #0.3
+      \tweak dash-period #1
+      \tweak bound-details.left.stencil-align-dir-y #0.35
+      \tweak bound-details.left.padding 2.5 % was 0.25
+      \tweak bound-details.left.attach-dir -1
+      \tweak bound-details.left-broken.text ##f
+      \tweak bound-details.left-broken.attach-dir -1
+      %% adjust the numeric values to fit your needs:
+      \tweak bound-details.left-broken.padding 0.5 %% was 1.5
+      \tweak bound-details.right-broken.padding 0
+      \tweak bound-details.right.padding 0.25
+      \tweak bound-details.right.attach-dir 2
+      \tweak bound-details.right-broken.text ##f
+      \tweak bound-details.right.text
+        \markup
+          \with-dimensions #'(0 . 0) #'(-.3 . 0) %% was (0 . -1)
+          \draw-line #'(0 . -1)
+      \startTextSpan
+   #})
+
+stopBarre = \stopTextSpan

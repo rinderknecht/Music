@@ -50,6 +50,43 @@ vibrato = \markup {
   \postscript #ringsps
 }
 
+startModernBarre =
+#(define-event-function (parser location fretnum partial)
+   (number? number?)
+    #{
+      \tweak bound-details.left.text
+        \markup
+          \teeny \concat {
+          #(format #f "~@r" fretnum)
+          \hspace #.2
+          \lower #.3 \small \bold \fontsize #-2 #(number->string partial)
+          \hspace #.5
+        }
+      \tweak font-size -1
+      \tweak font-shape #'upright
+      \tweak style #'dashed-line
+      \tweak dash-fraction #0.3
+      \tweak dash-period #1
+      \tweak bound-details.left.stencil-align-dir-y #0.35
+      \tweak bound-details.left.padding 2.5 % was 0.25
+      \tweak bound-details.left.attach-dir -1
+      \tweak bound-details.left-broken.text ##f
+      \tweak bound-details.left-broken.attach-dir -1
+      %% adjust the numeric values to fit your needs:
+      \tweak bound-details.left-broken.padding 0.5 %% was 1.5
+      \tweak bound-details.right-broken.padding 0
+      \tweak bound-details.right.padding 0.25
+      \tweak bound-details.right.attach-dir 2
+      \tweak bound-details.right-broken.text ##f
+      \tweak bound-details.right.text
+        \markup
+          \with-dimensions #'(0 . 0) #'(-.3 . 0) %% was (0 . -1)
+          \draw-line #'(0 . -1)
+      \startTextSpan
+   #})
+
+stopBarre = \stopTextSpan
+
 \score {
   \new Staff {
     \set fingeringOrientations = #'(left)
@@ -72,26 +109,29 @@ vibrato = \markup {
       sol,16(\p fad16 do'16) si16 do'16 fad16 do'16 fad16
     | sol,16(\mf sol16 si16)  la16 si16  sol16 si16  sol16
       sol,16(\p sol16 si16)  la16 si16[ sol16 si16  fad16]
-    | sol,16(\mf mi16 si16)   la16 si16  sol16 fad16 sol16
-      mi16 sol16 fad16 sol16
+    | sol,16(\mf \startModernBarre #1 #1 mi16 si16) \stopBarre
+      la16 si16 sol16 fad16 sol16 mi16 sol16 fad16 sol16
       si,16\1_\markup{\teeny III} re16-4 dod16 si,16-1
-    | dod16-3( sol16_\markup{\teeny II}-2 la16)-4 sol16
+    | dod16-3( sol16-2 la16)-4 sol16
       la16 sol16 la16 sol16
       dod16(\p sol16 la16) sol16 la16 sol16 la16 sol16
     | fad16-1(\mf la16-4 re'16-2_\markup{\teeny I}) dod'16-1
       re'16 la16-4_\markup{\teeny II} sol16-2 la16
       fad16 la16 sol16 la16 re16 fad16\3 mi16 re16
-    | mi,16\1_\markup{\teeny IV}( si,16-1 sol16-2) fad16-1
+   %| NO BAR HERE OR ELSE \starModernBarre FAILS
+      \startModernBarre #4 #1 mi,16( si,16 \stopBarre sol16-2) fad16-1
       sol16 si,16 sol16 si,16
-      mi,16(\p si,16 sol16) fad16 sol16 si,16 sol16 si,16
+      \startModernBarre #4 #1 mi,16(\p si,16 \stopBarre sol16) fad16 
+      sol16 si,16 sol16 si,16
     | mi,16(\mf dod16-3 re16)\open
       mi16\1 re16 dod16^\markup{\bold\teeny x4} si,16 la,16
       sol16( fad16 mi16) re'16 dod'16 si16 la16 sol16
     | fad16( mi16 re16) re'16\2 la16 re'16 fad16-1_\markup{\teeny II}
       la16-4 re16(\open mi16\1 fad16) la16 sol16 fad16 mi16 re16
-    | sold16\4^\vibrato re16(\open fa16\2 mi16)
+    | sold16^\markup{\teeny\bold x4}^\vibrato re16(\open fa16 mi16)
       fa16 re16 sold!16^\markup{\bold\teeny x4}
-      re16 si16 re16( fa!16 mi16) fa16 re16 sold!16^\markup{\bold\teeny x4} re16
+      re16 si16 re16( fa!16 mi16) fa16
+      re16 sold!16^\markup{\bold\teeny x4} re16
     | do16( mi16 la16) si16 do'16 la16 mi16 re16
       do16( mi16 la16) si16 do'16 la16 fad!16\4 mi16-2
     | red16-1( fad16 red16) fad16 la16 fad16 la16 fad16
@@ -109,8 +149,10 @@ vibrato = \markup {
     | sol,16(\mf re16 si16) la16 si16\> sol16 fad16 mi16
       re16 do16 si,16 la,16 sol,16
       fad,16^\markup{\bold\teeny x4} mi,16 re,16\!\p
-    | dod,16\1(\mf la,16-2 mi16-2) fad16-4 sol16\4 mi16 fad16 sol16^\allongerUne
-      dod,16\1(\p la,16 mi16) fad16 sol16\4 mi16 fad16 sol16^\allongerUne
+    | dod,16\1(\mf \startModernBarre #4 #2 la,16 mi16) \stopBarre
+      fad16-4 sol16\4 mi16 fad16 sol16
+      dod,16\1(\p \startModernBarre #4 #2 la,16 mi16) \stopBarre
+      fad16 sol16\4 mi16 fad16 sol16^\allongerUne
     | do,!16(\mf la,16 re16) mi16 fad16 re16 mi16 fad16^\allongerUne
       do,16(\p la,16 re16) mi16 fad16 re16 mi16 fad16^\allongerUne
     | do,16(^\mf la,16 re16) fad16_\markup{\small\italic "ritardando"}
@@ -118,26 +160,26 @@ vibrato = \markup {
       re'16)[^\vibrato \breathe la,16\p si,16 do!16] re16 mi16 fad16 sol16
     | la16(^\allongerUne fad16 re16) mi16 fad16 sol16 la16 si16
       do'16(^\allongerUne la16 fad16) sol16 la16 si16 do'16 re'16
-    | mib'16\4(^\allongerUne re'16 dod'16 re'16) 
+    | mib'16\4(^\allongerUne re'16 dod'16 re'16)
       re'16\4(^\allongerUne do'!16 si16 do'16)
       do'16(^\allongerUne la16 fad16) mi!16 re16 la,16 si,16 do16
     | re,16^\allongerUne la,16( re16 fad16) la16 si16 do'16 la16
       si16(^\allongerUne sol16 re16) do16 si,16 sol,16 la,16 si,16
     | re,16^\allongerUne sol,16( si,16 re16) sol16 la16
-      si16 sol16 dod'16(^\allongerUne sib16^\markup{\bold\teeny x1} la16 sib16)
-      sib16(^\allongerUne la16 sold16\3 la16)-4
+      si16 sol16 dod'16(^\allongerUne sib16^\markup{\bold\teeny x1} la16
+      sib16) sib16(^\allongerUne la16 sold16\3 la16)-4
     | la16-4(^\allongerUne sol!16-2 fad16-1 sol16) sol16\4(^\allongerUne
       mi16 dod16^\markup{\bold\teeny x4} si,!16)
       la,16(\<^\allongerUne dod16 mi16) sol16 la16 dod'16 re'16 dod'16\mf
     | re'16(^\allongerUne la16 fad16) mi16 fad16 la16 re16
       fad16 la,16^\allongerUne re16\> dod16^\markup{\bold\teeny x4} si,16
       la,16 sol,16\open fad,16^\markup{\bold\teeny x4} mi,16\!\p
-    | \stemUp re,8[^\vibrato\breathe 
+    | \stemUp re,8[^\vibrato\breathe
       \stemDown do'!16(\mf si16] \stemNeutral la16 sol16 fad16 mi16
       re16) do'16( si16 la16 sol16 fad16 mi16 re16
     | do!16\1) si16(^\markup{\bold\teeny x4}
       la16^\markup{\bold\teeny x2} sol16-1 fad16\3 mi16 re16 do16\2
-      si,16-1) la16-4( sol16-2 fad16 
+      si,16-1) la16-4( sol16-2 fad16
       \stemDown mi16\1 re16 do16 si,16 \stemNeutral
     | la,16) sol16( fad16 mi16) fad16 la16 re16 la16
       mi16 la16 fad16 la16 sol16 la16 mi16 la16
@@ -153,7 +195,7 @@ vibrato = \markup {
 %           \skip 16 la16[ \skip 16 la16] \skip 16 la16[ \skip 16 la16]}\\
 %          {la16[ \skip 16 si16_\1] \skip 16 do'16[ \skip 16 re16] \skip 16
 %           si16[ \skip 16 do'16] \skip 16 re'16[ \skip 16 si16] \skip16}>>
-    | la16-1 la16\open si16\1_\markup{\teeny II} la16\open 
+    | la16-1 la16\open si16\1_\markup{\teeny II} la16\open
       do'16-2 la16\open re16\open la16\open
       si16-1 la16\open do'16-2 la16\open re'16-3 la16\open si16-1 la16\open
  %     | <<{\skip 16 la16[ \skip 16 la16] \skip 16 la16[ \skip 16 la16]
