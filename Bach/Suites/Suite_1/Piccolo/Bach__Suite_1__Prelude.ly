@@ -127,8 +127,8 @@ stopBarre = \stopTextSpan
     | mi,16(\mf dod16-3 re16)\open
       mi16\1 re16 dod16^\markup{\bold\teeny x4} si,16 la,16
       sol16( fad16 mi16) re'16 dod'16 si16 la16 sol16
-    | fad16( mi16 re16) re'16\2 la16 re'16 fad16-1_\markup{\teeny II}
-      la16-4 re16(\open mi16\1 fad16) la16 sol16 fad16 mi16 re16
+    | fad16( mi16 re16) re'16 la16 re'16 fad16
+      la16 re16(\open mi16 fad16) la16 sol16 fad16 mi16 re16
     | sold16^\markup{\teeny\bold x4}^\vibrato re16(\open fa16 mi16)
       fa16 re16 sold!16^\markup{\bold\teeny x4}
       re16 si16 re16( fa!16 mi16) fa16
