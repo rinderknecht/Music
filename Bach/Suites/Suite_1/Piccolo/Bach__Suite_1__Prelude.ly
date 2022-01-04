@@ -113,7 +113,7 @@ stopBarre = \stopTextSpan
     | sol,16(\mf \startModernBarre #1 #1 mi16 si16) \stopBarre
       la16 si16 sol16 fad16 sol16 mi16 sol16 fad16 sol16
       si,16\1_\markup{\teeny III} re16-4 dod16 si,16-1
-    | dod16-3( sol16-2 la16)-4 sol16
+    | dod16-3( sol16-2 la16)\open sol16
       la16 sol16 la16 sol16
       dod16(\p sol16 la16) sol16 la16 sol16 la16 sol16
     | fad16-1(\mf la16-4 re'16-2_\markup{\teeny I}) dod'16-1
@@ -128,8 +128,8 @@ stopBarre = \stopTextSpan
       mi16\1 re16 dod16^\markup{\bold\teeny x4} si,16 la,16
       sol16( fad16 mi16) re'16 dod'16 si16 la16 sol16
     | fad16( mi16 re16) re'16 la16 re'16 fad16
-      la16 re16(\open mi16 fad16) la16 sol16 fad16 mi16 re16
-    | sold16^\markup{\teeny\bold x4}^\vibrato re16(\open fa16 mi16)
+      la16 re16( mi16 fad16) la16 sol16 fad16 mi16 re16
+    | sold16^\markup{\teeny\bold x4}^\vibrato re16( fa16 mi16)
       fa16 re16 sold!16^\markup{\bold\teeny x4}
       re16 si16 re16( fa!16 mi16) fa16
       re16 sold!16^\markup{\bold\teeny x4} re16
@@ -137,8 +137,8 @@ stopBarre = \stopTextSpan
       do16( mi16 la16) si16 do'16 la16 fad!16\4 mi16-2
     | red16-1( fad16 red16) fad16 la16 fad16 la16 fad16
       red16(\p fad16 red16) fad16 la16 fad16 la16 fad16
-    | sol16(\4\mf fad16 mi16) sol16\2 fad16-1 sol16 la16-4 fad16
-      sol16\4\> fad16 mi16 re!16\open do16 si,16 la,16 sol,16\!\p
+    | sol16(\4\mf fad16 mi16) sol16 fad16 sol16 la16 fad16
+      sol16\> fad16 mi16 re!16 do16 si,16 la,16 sol,16\!\p
     | fad,16\3(\mf do16-2 re16\open) do16 re16 do16 re16 do16
       fad,16(\p do16 re16\open) do16 re16 do16 re16 do16
     | sol,16(\mf\open si,16\3 fa16) mi16 fa16 si,16 fa16 si,16

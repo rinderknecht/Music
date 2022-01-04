@@ -163,8 +163,8 @@ stopBarre = \stopTextSpan
       re'16) la16 re'16 re16( fad16 la16 do'!16)
       \appoggiatura {\hide Stem \parenthesize do'8 \undo \hide Stem} si8.-+(
       la16)
-    | <<sol,8. re8. si8.>> la16 sol16( fad16 mi16) re'16
-      dod'16 mi'16\open la16(\open sol16 fad16) re16 la,16
+    | <<sol,8. re8. si8.>> la16 sol16( fad16 mi16) re'16\2
+      dod'16 mi'16-4 la16(\open sol16\4 fad16) re16 la,16
       dod16^\markup{\bold\teeny x4}
     | re,8. la,16\p re16 fad16 la16 dod'16 re'16 la16 fad16 re16 re,8.
     }
