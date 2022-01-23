@@ -44,8 +44,8 @@
     | \partial 8
       sol8\upbow
     | sol8 re8 sol,8 si16( do'16 re'16 do'16 si16 la16)
-    | si8 re8 sol,8 sol16(\1 la16)^\markup{\bold\teeny "x2"} si8 sol8
-    | mi8\1 do8 do,8 la16( si16 do'16 si16 la16 sol16)
+    | si8 re8 sol,8 sol16( la16) si8 sol8
+    | mi8 do8 do,8 la16( si16 do'16 si16 la16 sol16)
     | fad8 re8 \stemUp re,8 \stemDown re16( mi16 \stemNeutral fad16 sol16 la16 si16)
     | do'16( si16 do'16) la16 do'16( si16 do'16) la16
       re16 do'16 si16 la16

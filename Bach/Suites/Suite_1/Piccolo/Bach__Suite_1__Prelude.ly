@@ -179,10 +179,9 @@ stopBarre = \stopTextSpan
     | \stemUp re,8[^\vibrato\breathe
       \stemDown do'!16(\mf si16] \stemNeutral la16 sol16 fad16 mi16
       re16) do'16( si16 la16 sol16 fad16 mi16 re16
-    | do!16\1) si16(^\markup{\bold\teeny x4}
-      la16^\markup{\bold\teeny x2} sol16-1 fad16\3 mi16 re16 do16\2
-      si,16-1) la16-4( sol16-2 fad16
-      \stemDown mi16\1 re16 do16 si,16 \stemNeutral
+    | do!16) si16( la16 sol16 fad16 mi16 re16 do16
+      si,16) la16( sol16 fad16
+      \stemDown mi16 re16 do16 si,16 \stemNeutral
     | la,16) sol16( fad16 mi16) fad16 la16 re16 la16
       mi16 la16 fad16 la16 sol16 la16 mi16 la16
     | fad16 la16 re16 la16 sol16\p la16 mi16 la16
@@ -216,14 +215,14 @@ stopBarre = \stopTextSpan
     | si!16\1 re16 do'16-2 re16 dod'16 re16 re'16 re16
       mib'16\4 re16 mi'!16\open re16 fa'!16\1 re16 fad'16-2 re16\f\!
     | \clef "tenor"
-      sol'16\2 si16(-1 re16\open si16) sol'16 si16 sol'16 si16
+      sol'16-3 si16(-2 re16\open si16) sol'16 si16 sol'16 si16
       sol'16 si16( re16 si16) sol'16 si16 sol'16 si16
     | sol'16 la16(\open re16 la16) sol'16 la16 sol'16 la16
       sol'16 la16( re16 la16) sol'16 la16 sol'16 la16
-    | fad'16-1^\vibrato do'16(-2 re16 do'16) fad'16 do'16 fad'16 do'16
+    | fad'16-2^\vibrato do'16(-3 re16 do'16) fad'16 do'16 fad'16 do'16
       fad'16 do'16( re16 do'16)
       fad'16_\markup{\small\italic "ritardando"} do'16 fad'16 do'16
-    | << sol,1 <si-1>1 <sol'-2>1\fermata>>
+    | << sol,1 <si-2>1 <sol'-3>1\fermata>>
 
     \bar "|."
   }
