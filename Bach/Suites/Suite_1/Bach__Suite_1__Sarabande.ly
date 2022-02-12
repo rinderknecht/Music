@@ -39,15 +39,15 @@
 
     \repeat volta 2 {
     | <<sol,4 re4 si4\upbow>> <<{do'4.( si8)}\\{<<sol,2 mi2>>}>>
-    | fad16( la16 si16 do'16) <<sol,4 re4 si4\trill>> la8( sol8)
+    | fad16( la16 si16 do'16) <<sol,4 re4 si4-+>> la8( sol8)
     | re'8 fa8 mi8._(
       \tuplet 3/2 {re32 do32 si,32}
       do8) mi8
-    | fad!16 do'16( si16 sol16) <<re,4 la,4 fad4\trill>> mi8( re8)
+    | fad!16 do'16( si16 sol16) <<re,4 la,4 fad4-+>> mi8( re8)
     | la16( fad16 re16 do16) si,8. sol,16 si,16( re16 sol16 la16)
     | si16( sol16 fad16 re16) 
       \stemUp
-      dod8.\trill la,32( si,32
+      dod8.-+\3 la,32\1( si,32
       dod16 re16 mi16 fad16)
       \stemNeutral
     | sol16( dod'16 re'16 dod'16) re'16 la16( sol16 fad16)
@@ -58,9 +58,9 @@
     \repeat volta 2 {
     | <<re,8 la,8 fad8>> mi16( re16) <<re,4. la,4. fad4. do'4.>>
       si16( la16)
-    | <<sol,16 re16 si16>> fad16( sol16 mi16) <<la,8. red8.(\trill>> mi16)
+    | <<sol,16 re16 si16>> fad16( sol16 mi16) <<la,8. red8.(-+>> mi16)
       fad16( sol16 la16 si16)
-    | red16 la16( si16 do'16) si8\trill la16( sol16)
+    | red16 la16( si16 do'16) si8-+ la16( sol16)
       fad16( mi16) la16( fad16)
     | sol16( mi16) fad16( red16) mi4 mi,4\downbow
     | <<si,8. re!8.(\upbow>> mi32 fa32) <<do,8. sol,8. mi8.(>> fad16)
