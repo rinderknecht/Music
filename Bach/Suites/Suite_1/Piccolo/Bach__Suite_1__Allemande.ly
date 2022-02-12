@@ -185,11 +185,11 @@ stopBarre = \stopTextSpan
     | re'8 si,16( do16) re16( mi16 fa16) la,16
       \appoggiatura {\hide Stem \parenthesize la,8\2 \undo \hide Stem}
       sold,8.-+ mi16-2 si16\1 re'16( do'16
-      \startModernBarre #1 #1 si16)
+      \startModernBarre #2 #1 si16)
     | <<la,8. mi8. do'8.(\stopBarre>> si16) la16( sol!16 fa!16 mi16)
       fa16(^\allongerUne re16) sib16(^\markup{\bold\teeny x1} la16) sib16( do'16 re'16) la16
     | sold16(\1 la16 si!16) mi16\1 fa!16 re16( do16 si,16)
-      do16( mi16 la16 \startModernBarre #1 #1 si16)
+      do16( mi16 la16 \startModernBarre #2 #1 si16)
       <<mi8.
         \appoggiatura {\hide Stem \parenthesize do'8 \undo \hide Stem}
         si8.-+(\stopBarre>> la16)
@@ -197,9 +197,9 @@ stopBarre = \stopTextSpan
       fad!16( sol16 la16) mi16 re16 do16 si,16 la,16
     | sol,16 re16( fad16 do'16) si16( la16 sol16 la16)
       si16( do'16 re'16\1 mi'16) re'16( mi'16 fa'16)-4 re'16
-    | mi'8-3 sol8-2 do16 re'16(\4 do'16 si16)
+    | mi'8-3 \startModernBarre #3 #1 sol8 do16 \stopBarre re'16(\4 do'16 si16)
       la16( si16 do'16 mi'16--)\4 re'8.(-2 do'16)^\markup{\bold\teeny x1}
-    | re'8-2 la8\open si,16-1 do'16(\2 si16 la16)
+    | re'8-2 la8\open si,16\3 do'16( si16 la16)
       sol16( fad16 mi16) sol16 si16 re'16( do'16 si16)
     | do'8 sol8 la,16 mi16( fad16 sol16)
       fad16 la16( si16 do'16) re16 do16 si,16 la,16
