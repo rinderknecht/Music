@@ -101,29 +101,29 @@ stopBarre = \stopTextSpan
     \key sol \major
     \clef "bass"
 
-    | sol,16(\mf re16 si16)   la16 si16  re16  si16  re16
-      sol,16(\p re16 si16)   la16 si16  re16  si16  re16
-    | sol,16(\mf mi16 do'16)  si16 do'16 mi16  do'16 mi16
-      sol,16(\p mi16 do'16)  si16 do'16 mi16  do'16 mi16
-    | sol,16(\mf fad16 do'16) si16 do'16 fad16 do'16 fad16
-      sol,16(\p fad16 do'16) si16 do'16 fad16 do'16 fad16
-    | sol,16(\mf sol16 si16)  la16 si16  sol16 si16  sol16
-      sol,16(\p sol16 si16)  la16 si16[ sol16 si16  fad16]
-    | sol,16(\mf \startModernBarre #1 #1 mi16 si16) \stopBarre
+    | sol,16( re16 si16)   la16 si16  re16  si16  re16
+      sol,16( re16 si16)   la16 si16  re16  si16  re16
+    | sol,16( mi16 do'16)  si16 do'16 mi16  do'16 mi16
+      sol,16( mi16 do'16)  si16 do'16 mi16  do'16 mi16
+    | sol,16( fad16 do'16) si16 do'16 fad16 do'16 fad16
+      sol,16( fad16 do'16) si16 do'16 fad16 do'16 fad16
+    | sol,16( sol16 si16)  la16 si16  sol16 si16  sol16
+      sol,16( sol16 si16)  la16 si16[ sol16 si16  fad16]
+    | sol,16( \startModernBarre #1 #1 mi16 si16) \stopBarre
       la16 si16 sol16 fad16 sol16 mi16 sol16 fad16 sol16
       si,16\1_\markup{\teeny III} re16-4 dod16 si,16-1
-    | dod16-3( sol16-2 la16)-4 sol16
+    | dod16-3( sol16-2 la16)\open sol16
       la16 sol16 la16 sol16
-      dod16(\p sol16 la16) sol16 la16 sol16 la16 sol16
-    | fad16-1(\mf la16-4 re'16-2_\markup{\teeny I}) dod'16-1
+      dod16( sol16 la16) sol16 la16 sol16 la16 sol16
+    | fad16-1( la16-4 re'16-2_\markup{\teeny I}) dod'16-1
       re'16 la16-4_\markup{\teeny II} sol16-2 la16
       fad16 la16 sol16 la16 re16 fad16\3 mi16 re16
    %| NO BAR HERE OR ELSE \starModernBarre FAILS
       \startModernBarre #4 #1 mi,16( si,16 \stopBarre sol16-2) fad16-1
       sol16 si,16 sol16 si,16
-      \startModernBarre #4 #1 mi,16(\p si,16 \stopBarre sol16) fad16 
+      \startModernBarre #4 #1 mi,16( si,16 \stopBarre sol16) fad16 
       sol16 si,16 sol16 si,16
-    | mi,16(\mf dod16-3 re16)\open
+    | mi,16( dod16-3 re16)\open
       mi16\1 re16 dod16^\markup{\bold\teeny x4} si,16 la,16
       sol16( fad16 mi16) re'16 dod'16 si16 la16 sol16
     | fad16( mi16 re16) re'16\2 la16 re'16 fad16-1_\markup{\teeny II}
@@ -135,48 +135,48 @@ stopBarre = \stopTextSpan
     | do16( mi16 la16) si16 do'16 la16 mi16 re16
       do16( mi16 la16) si16 do'16 la16 fad!16\4 mi16-2
     | red16-1( fad16 red16) fad16 la16 fad16 la16 fad16
-      red16(\p fad16 red16) fad16 la16 fad16 la16 fad16
-    | sol16(\4\mf fad16 mi16) sol16\2 fad16-1 sol16 la16-4 fad16
-      sol16\4\> fad16 mi16 re!16\open do16 si,16 la,16 sol,16\!\p
-    | fad,16\3(\mf do16-2 re16\open) do16 re16 do16 re16 do16
-      fad,16(\p do16 re16\open) do16 re16 do16 re16 do16
-    | sol,16(\mf\open si,16\3 fa16) mi16 fa16 si,16 fa16 si,16
-      sol,16_(\p si,16 fa16) mi16 fa16 si,16 fa16 si,16
-    | sol,16(\mf do16 mi16) re16 mi16 do16 mi16 do16
-      sol,16(\p do16 mi16) re16 mi16 do16 mi16 do16
-    | sol,16(\mf fad!16 do'16) si16 do'16 fad16 do'16 fad16
-      sol,16(\p fad16 do'16) si16 do'16 fad16 do'16 fad16
-    | sol,16(\mf re16 si16) la16 si16\> sol16 fad16 mi16
+      red16( fad16 red16) fad16 la16 fad16 la16 fad16
+    | sol16(\4 fad16 mi16) sol16\2 fad16-1 sol16 la16-4 fad16
+      sol16\4 fad16 mi16 re!16\open do16 si,16 la,16 sol,16
+    | fad,16\3( do16-2 re16\open) do16 re16 do16 re16 do16
+      fad,16( do16 re16\open) do16 re16 do16 re16 do16
+    | sol,16(\open si,16\3 fa16) mi16 fa16 si,16 fa16 si,16
+      sol,16_( si,16 fa16) mi16 fa16 si,16 fa16 si,16
+    | sol,16( do16 mi16) re16 mi16 do16 mi16 do16
+      sol,16( do16 mi16) re16 mi16 do16 mi16 do16
+    | sol,16( fad!16 do'16) si16 do'16 fad16 do'16 fad16
+      sol,16( fad16 do'16) si16 do'16 fad16 do'16 fad16
+    | sol,16( re16 si16) la16 si16 sol16 fad16 mi16
       re16 do16 si,16 la,16 sol,16
-      fad,16^\markup{\bold\teeny x4} mi,16 re,16\!\p
-    | dod,16\1(\mf \startModernBarre #4 #2 la,16 mi16) \stopBarre
+      fad,16^\markup{\bold\teeny x4} mi,16 re,16
+    | dod,16\1( \startModernBarre #4 #2 la,16 mi16) \stopBarre
       fad16-4 sol16\4 mi16 fad16 sol16
-      dod,16\1(\p \startModernBarre #4 #2 la,16 mi16) \stopBarre
+      dod,16\1( \startModernBarre #4 #2 la,16 mi16) \stopBarre
       fad16 sol16\4 mi16 fad16 sol16
-    | do,!16(\mf la,16 re16) mi16 fad16 re16 mi16 fad16
-      do,16(\p la,16 re16) mi16 fad16 re16 mi16 fad16
-    | do,16(^\mf la,16 re16) fad16_\markup{\small\italic "ritardando"}
+    | do,!16( la,16 re16) mi16 fad16 re16 mi16 fad16
+      do,16( la,16 re16) mi16 fad16 re16 mi16 fad16
+    | do,16( la,16 re16) fad16_\markup{\small\italic "ritardando"}
       la16 dod'16 re'8\fermata(
-      re'16)[^\vibrato \breathe la,16\p si,16 do!16] re16 mi16 fad16 sol16
+      re'16)[^\vibrato \breathe la,16 si,16 do!16] re16 mi16 fad16 sol16
     | la16( fad16 re16) mi16 fad16 sol16 la16 si16
       do'16( la16 fad16) sol16 la16 si16 do'16 re'16
-    | mib'16\4(^\allongerUne_\markup{\small\italic "doux"} re'16 dod'16 re'16)
+    | mib'16\4( re'16 dod'16 re'16)
       re'16\4( do'!16 si16 do'16)
       do'16( la16 fad16) mi!16 re16 la,16 si,16 do16
     | re,16 la,16( re16 fad16) la16 si16 do'16 la16
       si16( sol16 re16) do16 si,16 sol,16 la,16 si,16
     | re,16 sol,16( si,16 re16) sol16 la16
-      si16 sol16 dod'16(^\allongerUne_\markup{\small\italic "doux"} 
+      si16 sol16 dod'16( 
       sib16^\markup{\bold\teeny x1} la16
       sib16) sib16( la16 sold16\3 la16)-4
     | la16-4( sol!16-2 fad16-1 sol16) sol16\4(
       mi16 dod16^\markup{\bold\teeny x4} si,!16)
-      la,16(\< dod16 mi16) sol16 la16 dod'16 re'16 dod'16\mf
+      la,16( dod16 mi16) sol16 la16 dod'16 re'16 dod'16
     | re'16( la16 fad16) mi16 fad16 la16 re16
-      fad16 la,16^\allongerUne re16\> dod16^\markup{\bold\teeny x4} si,16
-      la,16 sol,16\open fad,16^\markup{\bold\teeny x4} mi,16\!\p
+      fad16 la,16 re16 dod16^\markup{\bold\teeny x4} si,16
+      la,16 sol,16\open fad,16^\markup{\bold\teeny x4} mi,16
     | \stemUp re,8[^\vibrato\breathe
-      \stemDown do'!16(\mf si16] \stemNeutral la16 sol16 fad16 mi16
+      \stemDown do'!16( si16] \stemNeutral la16 sol16 fad16 mi16
       re16) do'16( si16 la16 sol16 fad16 mi16 re16
     | do!16\1) si16(^\markup{\bold\teeny x4}
       la16^\markup{\bold\teeny x2} sol16-1 fad16\3 mi16 re16 do16\2
@@ -192,7 +192,7 @@ stopBarre = \stopTextSpan
  %       <<{\skip 16 la16[ \skip 16 la16]}\\
  %         {si16[ \skip 16 re16] \skip 16}>>
       sol16 la16\open la16\1 la16\open si16-3 la16\open re16\open la16\open
-%      | <<{\skip 16 la16[ \skip 16 la16] \skip 16 la16[ \skip 16 la16]
+%      | <<{\skip 16 la1h6[ \skip 16 la16] \skip 16 la16[ \skip 16 la16]
 %           \skip 16 la16[ \skip 16 la16] \skip 16 la16[ \skip 16 la16]}\\
 %          {la16[ \skip 16 si16_\1] \skip 16 do'16[ \skip 16 re16] \skip 16
 %           si16[ \skip 16 do'16] \skip 16 re'16[ \skip 16 si16] \skip16}>>
