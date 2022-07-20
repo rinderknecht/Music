@@ -145,9 +145,9 @@ stopBarre = \stopTextSpan
       re16( mi16) fad16 re16 sol16 mi16 fad16
       re16( fad16 sol16) la16( si16 do'!16) la16
     | si16( re16 sol,16) re16 si16 sol16 la16 fad16
-      sol16 mi16( sol16 la16) si16( dod'16 re'16) si16
+      sol16^\vibrato mi16( sol16 la16) si16( dod'16 re'16) si16
     | dod'16( mi16 sol,16) mi16 dod'16 la16 si16 re'16
-      dod'16 la16( re'16 si16) dod'16 la16 mi'16\4 sol16
+      dod'16^\vibrato la16( re'16 si16) dod'16 la16 mi'16\4 sol16
     | \appoggiatura {\hide Stem \parenthesize sol8 \undo \hide Stem}
       fad8.-+ re'16 
       la16( sol16) fad16(\3 mi16) re16
@@ -204,7 +204,7 @@ stopBarre = \stopTextSpan
     | re'8-2 la8-4 si,16-1 do'16(\2 si16 la16)
       sol16( fad16 mi16) sol16 si16 re'16( do'16 si16)
     | do'8 sol8 la,16 mi16( fad16 sol16)
-      fad16 la16( si16 do'16)^\vibrato re16 do16 si,16 la,16
+      fad16 la16( si16 do'16) re16 do16 si,16 la,16
     | sol,16 re16( fad16 la16) do'16 la16 fad16 re16
       <<sol,8. re8. si8.[>> \breathe re16] mi16 sol16 la16 dod'16
     | re'16^\vibrato la16( fad16 mi16) re16 fa!16 sol16 si16

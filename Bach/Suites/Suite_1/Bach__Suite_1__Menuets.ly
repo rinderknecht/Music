@@ -22,6 +22,57 @@
 %  ragged-last = ##t
 }
 
+ringsps = #"
+  0.15 setlinewidth
+  0.9 0.6 moveto
+  0.4 0.6 0.5 0 361 arc
+  stroke
+  1.0 0.6 0.5 0 361 arc
+  stroke
+  "
+
+vibrato = \markup {
+  \with-dimensions #'(-0.2 . 1.6) #'(0 . 1.2)
+  \postscript #ringsps
+}
+
+startModernBarre =
+#(define-event-function (parser location fretnum partial)
+   (number? number?)
+    #{
+      \tweak bound-details.left.text
+        \markup
+          \teeny \concat {
+          #(format #f "~@r" fretnum)
+          \hspace #.2
+          \lower #.3 \small \bold \fontsize #-2 #(number->string partial)
+          \hspace #.5
+        }
+      \tweak font-size -1
+      \tweak font-shape #'upright
+      \tweak style #'dashed-line
+      \tweak dash-fraction #0.3
+      \tweak dash-period #1
+      \tweak bound-details.left.stencil-align-dir-y #0.35
+      \tweak bound-details.left.padding 2.5 % was 0.25
+      \tweak bound-details.left.attach-dir -1
+      \tweak bound-details.left-broken.text ##f
+      \tweak bound-details.left-broken.attach-dir -1
+      %% adjust the numeric values to fit your needs:
+      \tweak bound-details.left-broken.padding 0.5 %% was 1.5
+      \tweak bound-details.right-broken.padding 0
+      \tweak bound-details.right.padding 0.25
+      \tweak bound-details.right.attach-dir 2
+      \tweak bound-details.right-broken.text ##f
+      \tweak bound-details.right.text
+        \markup
+          \with-dimensions #'(0 . 0) #'(-.3 . 0) %% was (0 . -1)
+          \draw-line #'(0 . -1)
+      \startTextSpan
+   #})
+
+stopBarre = \stopTextSpan
+
 % \phrasingSlurDashed
 % \SlurDashed
 % \slurSolid
@@ -38,32 +89,36 @@
     \tempo "Menuet I"
 
     \repeat volta 2 {
-    | sol,8( re8) si4 la8( si16 do'16)
+    | sol,8(\upbow re8) si4 la8( si16 do'16)
     | si8( la8) sol8( fad8) sol8( re8)
-    | mi8( sol8) do'8( la8) fad8\upbow( re'8)
-    | <<sol,2 re2 si2\trill(>> <<re4 la4)>>
-    | la,8( fad8) do'4 si8( do'16 re'16)
+    | mi8( sol8) do'8( la8) fad8( re'8)
+    
+    | <<sol,2 re2
+        \appoggiatura {\hide Stem \parenthesize do'8 \undo \hide Stem} si2-+>> 
+      \grace{ la16( si16)} <<re4 la4)>>
+    | la,8(\upbow fad8) do'4 si8( do'16 re'16)
     | do'8( si8) la8( sol8) fad8( mi8)
-    | fad8( sol16 la16) sol8( fad8) mi8( fad8)
+    | fad8(\1 sol16 la16) sol8( fad8) mi8(\1 fad8)
     | re4 la,4 re,4
     }
     
     \repeat volta 2 {
-    | re8( fad8) la4 sol8( la16 si16)
-    | la8( sol8) fad8( mi8) re8( fad8)
-    | si,8( re8 sold8) la8 si8 re'8
-    | la,8 re'8\downbow( do'8 si8) do'4
-    | red8( fad8 la8) do'8 si8 la8
-    | si8( mi8 sol,8) la8 do'8 si8
-    | la8( sol8 fad8 mi8) si,8( red8)
-    | mi,4. mi8( re!8 do8)
+    | re8(\downbow fad8)\1 la4 sol8(\1 la16^\markup{\teeny\bold x2} si16)
+    | la8( sol8) fad8(\3 mi8) re8( fad8)
+    | si,8(\2 re8 sold8) la8\open si8\1 re'8
+    | la,8\downbow re'8\downbow( do'8 si8) do'4
+    | red8(\1 fad8-4 la8\open) do'8\2 si8 la8\open
+   %| NO BAR HERE OR ELSE \starModernBarre FAILS
+      \startModernBarre #1 #1 si8( mi8 \stopBarre sol,8) la8 do'8 si8
+    | la8( sol8 fad8 mi8) si,8(\1 red8)^\markup{\teeny\bold x4}
+    | mi,4.-1 mi8(\1 re!8 do8)
     | si,8( re8) sol4 re8( mi16 fa!16)
     | fa!8( re8 mi8) do8 do,8 si,8
-    | dod8( mi8) la4 mi8( fad16 sol16)
+    | dod8(\1 mi8)-4 la4-2 mi8(\1 fad16 sol16)
     | sol8( mi8 fad8) re8 re,8 la,8
-    | re8( fad8 la8) do'!8 si8 re'8
-    | mi8( sol8 si8) re'8 do'8 mi'8
-    | re'8[ fad8 sol8 si,8] re,8[ fad8]
+    | re8( fad8 la8)\open do'!8\2 si8 re'8
+    | mi8( sol8 si8) re'8 do'8 mi'8\1^\vibrato
+    | re'8[\4 fad8 sol8 si,8] re,8[ fad8]
     | <<sol,2. sol2.>>
     }
   }

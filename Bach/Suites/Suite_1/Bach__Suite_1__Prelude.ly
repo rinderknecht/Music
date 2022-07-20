@@ -163,7 +163,7 @@ stopBarre = \stopTextSpan
     | mib'16\4( re'16 dod'16 re'16)
       re'16\4( do'!16 si16 do'16)
       do'16( la16 fad16) mi!16 re16 la,16 si,16 do16
-    | re,16 la,16( re16 fad16) la16 si16 do'16 la16
+    | re,16^\markup{\small\italic barré} la,16( re16 fad16) la16 si16 do'16 la16
       si16( sol16 re16) do16 si,16 sol,16 la,16 si,16
     | re,16 sol,16( si,16 re16) sol16 la16
       si16 sol16 dod'16( 
@@ -182,7 +182,7 @@ stopBarre = \stopTextSpan
       la16^\markup{\bold\teeny x2} sol16-1 fad16\3 mi16 re16 do16\2
       si,16-1) la16-4( sol16-2 fad16
       \stemDown mi16\1 re16 do16 si,16 \stemNeutral
-    | la,16) sol16( fad16 mi16) fad16 la16 re16 la16
+    | la,16) sol16( fad16 mi16) fad16_\mf la16 re16 la16
       mi16 la16 fad16 la16 sol16 la16 mi16 la16
     | fad16 la16 re16 la16 sol16\p la16 mi16 la16
       fad16 la16 re16 la16 sol16\mf la16 mi16 la16
