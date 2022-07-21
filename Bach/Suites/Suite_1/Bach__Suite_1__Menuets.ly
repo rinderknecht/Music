@@ -116,9 +116,9 @@ stopBarre = \stopTextSpan
     | fa!8( re8 mi8) do8 do,8 si,8
     | dod8(\1 mi8)-4 la4-2 mi8(\1 fad16 sol16)
     | sol8( mi8 fad8) re8 re,8 la,8
-    | re8( fad8 la8)\open do'!8\2 si8 re'8
-    | mi8( sol8 si8) re'8 do'8 mi'8\1^\vibrato
-    | re'8[\4 fad8 sol8 si,8] re,8[ fad8]
+    | re8( fad8 la8)\open do'!8 si8 re'8
+    | mi8( sol8 si8) re'8 do'8 mi'8\4
+    | re'8[-2 fad8 sol8 si,8]-1 re,8[\1 fad8]
     | <<sol,2. sol2.>>
     }
   }
