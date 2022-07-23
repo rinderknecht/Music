@@ -136,34 +136,37 @@ stopBarre = \stopTextSpan
     \tempo "Menuet II"
 
     \repeat volta 2 {
-    | sib8( la8 sib8) re8 mib8 sol,8
-    | fa,4 la4 re4\upbow
+    | sib8(\1 la8 sib8) re8 mib8-1 sol,8
+    | fa,4\4 la4 re4\upbow
     | sol8( fad8 sol8) sib,8 do8 mib,8
-    | re,8( la,8 re8) sol8 fad8 la8
-    | sib8( la8 sib8) re8 mib8 sol,8
-    | fa,!4 la4 re4\upbow
+   %| NO BAR HERE OR ELSE \starModernBarre FAILS
+   \startModernBarre #4 #1 re,8( la,8 \stopBarre
+   %re,8( la,8 
+   re8) sol8 fad8 la8
+    | sib8(\1 la8 sib8) re8 mib8-1 sol,8
+    | fa,4\4 la4 re4\upbow
     | sol8( fad8 sol8) sib,8 do8 mi,8
     | re,8( sol8) fad2
     }
     
     \repeat volta 2 {
-    | re8( fad8 la8) do'8 mib'8 re'8
-    | do'8( sib8 la8 sib8) sol4
-    | do8( mi8 sol8) sib8 re'8 do'8 
-    | sib8( la8 sol8 la8) fa8( mib8)
-    | re8 fa8 sib( la8 sib8) re8
-    | mib8 sol8 sib8( la8 sib8) re'8
-    | do'8( mib'8) re'8( sib8) fa8 la8
-    | sib8 fa8 re8 fa8 sib,4
-    | si,!8\downbow( re8 fa8) lab8 sol8 fa8
-    | mib8( sol8 do'8 re'8)-. mib'4
-    | la,8( do8 mib8) sol8 fa8 mib8
-    | re8( fa8 sib8 do'8)-. re'4
-    | fad,8( la,8 do8) mib8 re8 do8
-    | sib,( re8 sol8) la8 sib8 sol8
-    | do8 sib8( la8_\markup{\small\italic "Menuet I da Capo"} 
-      sol8) re8 fad8
-    | sol,2.
+    | re8( fad8 la8) do'8\1 mib'8 re'8
+    | do'8(\3 sib8-1 la8 sib8) sol4\4
+    | do8( mi8 sol8) sib8\1 re'8^\markup{\teeny\bold x4} do'8 
+    | sib8( la8 sol8\4 la8) fa8( mib8)^\markup{\teeny\bold x1}
+    | re8 fa8 sib(\1 la8 sib8) re8
+    | mib8-1 sol8^\markup{\teeny\bold x4} sib8( la8 sib8) re'8\3
+    | do'8( mib'8) re'8( sib8)\1 fa8 la8
+    | sib8 fa8 re8 fa8 sib,4\3
+    | si,!8\downbow( re8 fa8) lab8\4 sol8-3 fa8
+    | mib8(\1 sol8\3 do'8-1 re'8)-. mib'4
+    | la,8(\p-2 do8\4 mib8)^\markup{\teeny\bold x1} sol8 fa8 mib8
+    | re8( fa8 sib8^\markup{\teeny\bold x1} do'8)-. re'4
+    | fad,8(\1 la,8-4 do8)\1 mib8-4 re8\4 do8
+    | sib,(-1 re8-4 sol8)-2 la8\3 sib8-4 sol8-1
+    | do8-1 sib8(-4 la8_\markup{\small\italic "Menuet I da Capo"} 
+      sol8) re8-3 fad8-2
+    | sol,2.-3
     }
   }
 }
