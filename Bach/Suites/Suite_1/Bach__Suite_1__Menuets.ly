@@ -160,13 +160,13 @@ stopBarre = \stopTextSpan
     | sib8 fa8 re8 fa8 sib,4\3
     | si,!8\downbow( re8 fa8) lab8\4 sol8-3 fa8
     | mib8(\1 sol8\3 do'8-1 re'8)-. mib'4
-    | la,8(\p-2 do8\4 mib8)^\markup{\teeny\bold x1} sol8 fa8 mib8
+    | la,8(\p\1 do8 mib8)^\markup{\teeny\bold x1} sol8 fa8 mib8
     | re8( fa8 sib8^\markup{\teeny\bold x1} do'8)-. re'4
     | fad,8(\1 la,8-4 do8)\1 mib8-4 re8\4 do8
     | sib,(-1 re8-4 sol8)-2 la8\3 sib8-4 sol8-1
     | do8-1 sib8(-4 la8_\markup{\small\italic "Menuet I da Capo"} 
-      sol8) re8-3 fad8-2
-    | sol,2.-3
+      sol8) re8-3 fad8\1
+    | sol,2.\open
     }
   }
 }
