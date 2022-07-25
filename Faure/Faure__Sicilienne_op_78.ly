@@ -71,13 +71,13 @@
    | re'8.-1( mib'16  fa'8) sol'4(\4 re'8\1)
    | sib!8.-4( sol16 la8)-3 sib8.\1( do'16-3 dod'8)
    | re'8.\1( mi'16^\markup{\bold\teeny x2} fad'8) sol'4\4 r8
-   | sol'4.-1\f\> re'4-2\flageolet r8\!
-   | <sib'-3>8.\p( la'16 sib'8) la'8.( sol'16-2 fad'8)
-   | sol'4.-2\f\> re'4-3\flageolet r8\!
+   | sol'4.\1\f\> re'4-2\flageolet r8\!
+   | <sib'-3>8.\p( la'16 sib'8) la'8.( sol'16\2 fad'8)
+   | sol'4.\f\> re'4-3\flageolet r8\!
    | do'8.\4\p( la16 sib8) la8(-1 re16\open\< fad16\3 la16 re'16)\!
-   | sol'4.-1\f\> re'4-2\flageolet r8\!
-   | <sib'-3>8.\p( la'16 sib'8) la'8.( sol'16-2 fad'8)
-   | sol'4.-2\f\> re'4-3\flageolet r8\!
+   | sol'4.\1\f\> re'4-2\flageolet r8\!
+   | <sib'-3>8.\p( la'16 sib'8) la'8.( sol'16\2 fad'8)
+   | sol'4.\f\> re'4-3\flageolet r8\!
 
    \mark \default
    \bar "||"
@@ -95,36 +95,33 @@
    | \clef "bass"
      \key mib \major
      mib,2.\p(
-   |mib,4.)( mib,4) mib8-1\pp\upbow_\markup{\teeny "III"}
-   | reb'4-4(_\markup{\teeny "II"}
-     do'8_\markup{\small\italic "sempre dolce"} reb'4 sib8-2)
-   | do'4( mib8^\markup{\bold\teeny (2)}
-     dob'4^\markup{\bold\teeny (3)} lab8-2)
-   | sib4(^\markup{\bold\teeny (4)} sol8^\markup{\bold\teeny (1)}
-     mib4)^\markup{\bold\teeny (4)} mib,8-2
-   | sib,4. fa4-1( sol8)^\markup{\bold\teeny (3)}
-   | lab4.( sib4-1_\markup{\teeny II} do'8)
+   |mib,4.)( mib,4) mib8\1\pp\upbow_\markup{\teeny "III"}
+   | reb'4\4(_\markup{\teeny "II"}
+     do'8_\markup{\small\italic "sempre dolce"} reb'4 sib8\2)
+   | do'4( mib8-2 dob'4-3 lab8\2)
+   | sib4(-4 sol8-1 mib4)-4 mib,8\2
+   | sib,4. fa4\1( sol8)-3
+   | lab4.( sib4\1_\markup{\teeny II} do'8)
    | re'!4.( sib4.)
-   | sib,4.-2 fa4-1( sol8)
-   | lab4.( sib4-2 do'8)
-   | sib,2.-2
+   | sib,4.\2 fa4\1( sol8)
+   | lab4.( sib4\2 do'8)
+   | sib,2.\2
    | mib,4( sib,8 mib4 fa8)
-   | sol4-1\pp( lab8_\markup{\small\italic "dolce"} sib4-1 do'8)
-   | reb'4-4(_\markup{\teeny "II"}
-     do'8_\markup{\small\italic "sempre dolce"} reb'4 sib8-2)
-   | do'4( mib8^\markup{\bold\teeny (2)}
-     dob'4^\markup{\bold\teeny (3)} lab8-2)
+   | sol4\1\pp( lab8_\markup{\small\italic "dolce"} sib4\1 do'8)
+   | reb'4\4(_\markup{\teeny "II"}
+     do'8_\markup{\small\italic "sempre dolce"} reb'4 sib8\2)
+   | do'4( mib8-2 dob'4-3 lab8\2)
    | mib,2.(
    | mib,4.)( mib,4) sib,8
    | mib,2.(
    | mib,4.)( mib,4) sib,8
    | \clef "tenor"
      \key sib \major
-     sol'4.-1\f\> re'4-2\flageolet r8\!
-   | <sib'-3>8.\p( la'16 sib'8) la'8.( sol'16-2 fad'8)
-   | sol'4.-2\f\> re'4-3\flageolet r8\!
+     sol'4.\1\f\> re'4\2\flageolet r8\!
+   | <sib'\3>8.\p( la'16 sib'8) la'8.( sol'16\2 fad'8)
+   | sol'4.\2\f\> re'4\3\flageolet r8\!
    | do'8.\4\p( la16 sib8) la8(-1 re16\< fad16\3 la16 re'16)\!
-   | sol'4.-1\f\> re'4-2\flageolet r8\!
+   | sol'4.\1\f\> re'4-2\flageolet r8\!
    | \clef "bass"
      la,16^\markup{\small\italic "pizzicato"}
      sol16 la16 dod'16 mi'8 re,16 la,16 re16 fad16 la8
