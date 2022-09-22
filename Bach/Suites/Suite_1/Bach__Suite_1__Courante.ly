@@ -71,7 +71,7 @@
       \appoggiatura {\hide Stem \parenthesize sol8 \undo \hide Stem} fad8.-+(
       mi16)
     | la16(\upbow sol16) si16( la16) sol16( fad16 mi16 re16)
-      la,8 dod8
+      la,8 dod8^\markup{\bold\teeny x4}
     | \partial 2. re,2 r8
     }
 
