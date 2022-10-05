@@ -103,7 +103,7 @@ stopBarre = \stopTextSpan
 
     | sol,16( re16 si16)   la16 si16  re16  si16  re16
       sol,16( re16 si16)   la16 si16  re16  si16  re16
-    | sol,16( mi16 do'16)  si16 do'16 mi16  do'16 mi16
+    | sol,16( \startModernBarre #2 #1 mi16 do'16)\stopBarre  si16 do'16 mi16  do'16 mi16
       sol,16( mi16 do'16)  si16 do'16 mi16  do'16 mi16
     | sol,16( fad16 do'16) si16 do'16 fad16 do'16 fad16
       sol,16( fad16 do'16) si16 do'16 fad16 do'16 fad16
