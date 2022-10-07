@@ -26,6 +26,43 @@
 % \SlurDashed
 % \slurSolid
 
+startModernBarre =
+#(define-event-function (parser location fretnum partial)
+   (number? number?)
+    #{
+      \tweak bound-details.left.text
+        \markup
+          \teeny \concat {
+          #(format #f "~@r" fretnum)
+          \hspace #.2
+          \lower #.3 \small \bold \fontsize #-2 #(number->string partial)
+          \hspace #.5
+        }
+      \tweak font-size -1
+      \tweak font-shape #'upright
+      \tweak style #'dashed-line
+      \tweak dash-fraction #0.3
+      \tweak dash-period #1
+      \tweak bound-details.left.stencil-align-dir-y #0.35
+      \tweak bound-details.left.padding 2.5 % was 0.25
+      \tweak bound-details.left.attach-dir -1
+      \tweak bound-details.left-broken.text ##f
+      \tweak bound-details.left-broken.attach-dir -1
+      %% adjust the numeric values to fit your needs:
+      \tweak bound-details.left-broken.padding 0.5 %% was 1.5
+      \tweak bound-details.right-broken.padding 0
+      \tweak bound-details.right.padding 0.25
+      \tweak bound-details.right.attach-dir 2
+      \tweak bound-details.right-broken.text ##f
+      \tweak bound-details.right.text
+        \markup
+          \with-dimensions #'(0 . 0) #'(-.3 . 0) %% was (0 . -1)
+          \draw-line #'(0 . -1)
+      \startTextSpan
+   #})
+
+stopBarre = \stopTextSpan
+
 \score {
   \new Staff {
     \set fingeringOrientations = #'(left)
@@ -44,15 +81,17 @@
       \tuplet 3/2 {re32 do32 si,32}
       do8) mi8
     | fad!16 do'16( si16 sol16) <<re,4 la,4 fad4-+>> mi8( re8)
-    | la16( fad16 re16 do16) si,8. sol,16 si,16( re16 sol16 la16)
-    | si16( sol16 fad16 re16) 
+    | la16(\4 fad16-1 re16-4 do16)-2 si,8. sol,16\open 
+      si,16(-1 re16-4 sol16\1 la16)^\markup{\bold\teeny x2}
+    | si16(^\markup{\bold\teeny x4} sol16 mi16^\markup{\bold\teeny x4} re16)-2 
       \stemUp
-      dod8.-+\3 la,32\1( si,32
+      dod8.-+ la,32\1( si,32
       dod16 re16 mi16 fad16)
       \stemNeutral
-    | sol16( dod'16 re'16 dod'16) re'16 la16( sol16 fad16)
-      mi16( sol16) fad16( re16)
-    | la,16( re16) mi16( dod16) re4 re,4
+    | sol16(\2 dod'16 re'16 dod'16) re'16 la16( sol16 fad16)
+      mi16(\1 sol16) fad16( re16)
+    | la,16(\4_\markup{\teeny IV} re16)-2 mi16( dod16)-1 
+      re4\downbow re,4\1\downbow
     }
 
     \repeat volta 2 {
