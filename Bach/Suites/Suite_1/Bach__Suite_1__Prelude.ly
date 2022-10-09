@@ -210,8 +210,8 @@ stopBarre = \stopTextSpan
     | la16-3 la16\open sol16-1 la16\open la16 la16\open fad16\1 la16\open
       sol16-2 la16\open fad16-1 la16\open sol16-2 la16\open mi16\1 la16\open
     | fad16 la16\open re16\<
-      mi16 fa!16^\vibrato re16 fad16\1 re16
-      sol16 re16 sold16 re16 la16\open re16 sib16\1 re16
+      mi16 fa!16^\vibrato re16 fad16 re16
+      sol16 re16 sold16\4 re16 la16\open re16 sib16\1 re16
     | si!16\1 re16 do'16-2 re16 dod'16 re16 re'16 re16
       mib'16\4 re16 mi'!16\1 re16 fa'!16 re16 fad'16 re16\f\!
     | \clef "tenor"
