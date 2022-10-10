@@ -76,14 +76,14 @@ stopBarre = \stopTextSpan
 
     \repeat volta 2 {
     | <<sol,4 re4 si4\upbow>> <<{do'4.( si8)}\\{<<sol,2 mi2>>}>>
-    | fad16( la16 si16 do'16) <<sol,4 re4 si4-+>> la8( sol8)
+    | fad16(\upbow la16 si16 do'16) <<sol,4 re4 si4-+>> la8( sol8)
     | re'8 fa8 mi8._(
       \tuplet 3/2 {re32 do32 si,32}
       do8) mi8
     | fad!16 do'16( si16 sol16) <<re,4 la,4 fad4-+>> mi8( re8)
     | la16(\4 fad16-1 re16-4 do16)-2 si,8. sol,16\open 
       si,16(-1 re16-4 sol16\1 la16)^\markup{\bold\teeny x2}
-    | si16(^\markup{\bold\teeny x4} sol16 mi16^\markup{\bold\teeny x4} re16)-2 
+    | si16(\upbow^\markup{\bold\teeny x4} sol16 mi16^\markup{\bold\teeny x4} re16)-2 
       \stemUp
       dod8.-+ la,32\1( si,32
       dod16 re16 mi16 fad16)
@@ -91,7 +91,7 @@ stopBarre = \stopTextSpan
     | sol16(\2 dod'16 re'16 dod'16) re'16 la16( sol16 fad16)
       mi16(\1 sol16) fad16( re16)
     | la,16(\4_\markup{\teeny IV} re16)-2 mi16( dod16)-1 
-      re4\downbow re,4\1\downbow
+      re4 re,4\1
     }
 
     \repeat volta 2 {
