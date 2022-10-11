@@ -188,7 +188,7 @@ stopBarre = \stopTextSpan
       sold,8.-+ mi16-2 si16\1 re'16( do'16
       \startModernBarre #1 #1 si16)
     | <<la,8. mi8. do'8.(\stopBarre>> si16) la16( sol16 fa!16 mi16)
-      fa16( re16) sib16(^\allongerUne^\markup{\bold\teeny x1} la16) sib16( do'16 re'16) la16
+      fa16(^\allongerUne re16) sib16(^\allongerUne^\markup{\bold\teeny x1} la16) sib16( do'16 re'16) la16
     | sold16(\1 la16 si!16) mi16\1 fa!16 re16( do16 si,16)
       do16( mi16 la16 \startModernBarre #1 #1 si16)
       <<mi8.

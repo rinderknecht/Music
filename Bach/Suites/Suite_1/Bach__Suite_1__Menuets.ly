@@ -145,8 +145,8 @@ stopBarre = \stopTextSpan
    re8) sol8 fad8 la8
     | sib8(\1 la8 sib8) re8 mib8-1 sol,8
     | fa,4\4 la4 re4\upbow
-    | sol8( fad8 sol8) sib,8 do8 mi,8
-    | re,8( sol8) fad2
+    | sol8( fad8 sol8) sib,8 do8 mib,8
+    | re,8( sol8) fad2\mordent
     }
     
     \repeat volta 2 {
