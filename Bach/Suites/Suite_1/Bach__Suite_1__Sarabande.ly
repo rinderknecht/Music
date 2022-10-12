@@ -91,24 +91,24 @@ stopBarre = \stopTextSpan
     | sol16(\2 dod'16 re'16 dod'16) re'16 la16( sol16 fad16)
       mi16(\1 sol16) fad16( re16)
     | la,16(\4_\markup{\teeny IV} re16)-2 mi16( dod16)-1 
-      re4 re,4\1
+      re4 re,4\1 
     }
 
     \repeat volta 2 {
-    | <<re,8 la,8 fad8>> mi16( re16) <<re,4. la,4. fad4. do'4.>>
+    | <<re,8 la,8 \startModernBarre #4 #1 fad8>> mi16(\stopBarre re16) <<re,4. la,4. fad4. do'4.>>
       si16( la16)
-    | <<sol,16 re16 si16>> fad16( sol16 mi16) <<la,8. red8.(-+>> mi16)
-      fad16( sol16 la16 si16)
-    | red16 la16( si16 do'16) si8-+ la16( sol16)
-      fad16( mi16) la16( fad16)
-    | sol16( mi16) fad16( red16) mi4 mi,4\downbow
+    | <<sol,16 re16 si16>> fad16( sol16 mi16) <<la,8._\2 red8.(-1-+>> mi16)
+      fad16(\3 sol16 la16\1 si16)
+    | red16\1 la16(\1 si16 do'16) si8-+ la16(\4 sol16)
+      fad16(\2 mi16)^\markup{\bold\teeny x1} la16(\4 fad16)
+    | sol16(\4 mi16) fad16( red16)\1 mi4 mi,4\downbow
     | <<si,8. re!8.(\upbow>> mi32 fa32) <<do,8. sol,8. mi8.(>> fad16)
       sol16( la16 si16 do'16)
-    | sold,16 re'16( do'16 si16) <<la,8. mi8. do'8.(>> si16)
+    | sold,16^\markup{\bold\teeny x1} re'16( do'16 \startModernBarre #3 #1 si16) <<la,8. mi8. do'8.(\stopBarre>> si16)
       la16( sol!16 fad16 mi16)
     | <<{re4( re16)}\\{r16 si,16 do16 la,16 si,16 mi16^( fad16 sol16)}>>
-      la16( do'16) si16( sol16)
-    | re16( sol16) la16( fad16) sol4 sol,4
+      la16(\1 do'16) si16(\4 sol16)^\markup{\bold\teeny x1}
+    | re16(-2 sol16) la16(\4 fad16) sol4\downbow sol,4-4\downbow
     }
   }
 }
