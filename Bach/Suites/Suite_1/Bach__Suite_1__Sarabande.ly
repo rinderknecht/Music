@@ -22,6 +22,20 @@
 %  ragged-last = ##t
 }
 
+% function parentheAll allows for accidental symbol to be included in parentheses
+%
+parentheAll = #(define-music-function (parser location note) (ly:music?)
+#{
+  \once \override ParenthesesItem.font-size = #-1
+  \once \override ParenthesesItem.stencil = #(lambda (grob)
+       (let* ((acc (ly:grob-object (ly:grob-parent grob Y) 'accidental-grob))
+              (dot (ly:grob-object (ly:grob-parent grob Y) 'dot)))
+         (if (not (null? acc)) (ly:pointer-group-interface::add-grob grob 'elements acc))
+         (if (not (null? dot)) (ly:pointer-group-interface::add-grob grob 'elements dot))
+         (parentheses-item::print grob)))
+  \parenthesize $note
+#})
+
 % \phrasingSlurDashed
 % \SlurDashed
 % \slurSolid
@@ -76,11 +90,18 @@ stopBarre = \stopTextSpan
 
     \repeat volta 2 {
     | <<sol,4 re4 si4\upbow>> <<{do'4.( si8)}\\{<<sol,2 mi2>>}>>
-    | fad16(\upbow la16 si16 do'16) <<sol,4 re4 si4-+>> la8( sol8)
+    | fad16(\upbow la16 si16 do'16) 
+      \appoggiatura {\hide Stem \parenthesize do'4 \undo \hide Stem}
+      %<<sol,4 re4 si4-+>>
+      <<{si4-+}\\{<<{\stemDown re4}\\{sol,4}>>}>>
+      \stemNeutral la8( sol8)
     | re'8 fa8 mi8._(
       \tuplet 3/2 {re32 do32 si,32}
       do8) mi8
-    | fad!16 do'16( si16 sol16) <<re,4 la,4 fad4-+>> mi8( re8)
+    | fad!16 do'16( si16 sol16) 
+      \appoggiatura {\hide Stem \parenthesize sol4 \undo \hide Stem}
+      <<{fad4-+}\\{<<{la,4}\\{\stemUp re,4}>>}>> \stemNeutral
+      mi8( re8)
     | la16(\4 fad16-1 re16-4 do16)-2 si,8. sol,16\open 
       si,16(-1 re16-4 sol16\1 la16)^\markup{\bold\teeny x2}
     | si16(\upbow^\markup{\bold\teeny x4} sol16 mi16^\markup{\bold\teeny x4} re16)-2 
@@ -97,9 +118,12 @@ stopBarre = \stopTextSpan
     \repeat volta 2 {
     | <<re,8 la,8 \startModernBarre #4 #1 fad8>> mi16(\stopBarre re16) <<re,4. la,4. fad4. do'4.>>
       si16( la16)
-    | <<sol,16 re16 si16>> fad16( sol16 mi16) <<la,8._\2 red8.(-1-+>> mi16)
-      fad16(\3 sol16 la16\1 si16)
-    | red16\1 la16(\1 si16 do'16) si8-+ la16(\4 sol16)
+    | <<sol,16 re16 si16>> fad16( sol16 \startModernBarre #4 #2 mi16) <<la,8. red8.(-+\stopBarre>> mi16)\1
+      fad16( sol16 la16\open si16)
+    | red16^\markup{\teeny\bold x1} la16( si16 do'16) 
+      \appoggiatura {\hide Stem \parenthesize do'4 \undo \hide Stem}  
+      si8-+ 
+      la16(\4 sol16)
       fad16(\2 mi16)^\markup{\bold\teeny x1} la16(\4 fad16)
     | sol16(\4 mi16) fad16( red16)\1 mi4 mi,4\downbow
     | <<si,8. re!8.(\upbow>> mi32 fa32) <<do,8. sol,8. mi8.(>> fad16)
@@ -108,7 +132,7 @@ stopBarre = \stopTextSpan
       la16( sol!16 fad16 mi16)
     | <<{re4( re16)}\\{r16 si,16 do16 la,16 si,16 mi16^( fad16 sol16)}>>
       la16(\1 do'16) si16(\4 sol16)^\markup{\bold\teeny x1}
-    | re16(-2 sol16) la16(\4 fad16) sol4\downbow sol,4-4\downbow
+    | re16(-2 sol16) la16(\4 fad16) sol4\downbow sol,4_4\downbow
     }
   }
 }

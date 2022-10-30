@@ -215,14 +215,14 @@ stopBarre = \stopTextSpan
     | si!16\1 re16 do'16-2 re16 dod'16 re16 re'16 re16
       mib'16\4 re16 mi'!16\1 re16 fa'!16 re16 fad'16 re16\f\!
     | \clef "tenor"
-      sol'16-4 si16(-3 re16\open si16) sol'16 si16 sol'16 si16
+      sol'16-4^\markup{\small\italic "al tempo"} si16(-3 re16\open si16) sol'16 si16 sol'16 si16
       sol'16 si16( re16 si16) sol'16 si16 sol'16 si16
     | sol'16 la16(-1 re16 la16) sol'16 la16 sol'16 la16
       sol'16 la16( re16 la16) sol'16 la16 sol'16 la16
     | fad'16\2^\vibrato do'16(-3 re16 do'16) fad'16 do'16 fad'16 do'16
       fad'16 do'16( re16 do'16)
       fad'16_\markup{\small\italic "ritardando"} do'16 fad'16 do'16
-    | << sol,1 <si-2>1 <sol'-3>1\fermata>>
+    | << sol,1_\markup{\small\italic "solo"} <si-2>1 <sol'-3>1^\vibrato\fermata>>
 
     \bar "|."
   }

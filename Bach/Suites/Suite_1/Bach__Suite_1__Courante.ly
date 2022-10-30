@@ -59,7 +59,7 @@ vibrato = \markup {
 \score {
   \new Staff {
     \set fingeringOrientations = #'(left)
-    \override Beam.auto-knee-gap = #2
+    \override Beam.auto-knee-gap = #1
     \override Hairpin.to-barline = ##f
     \override ParenthesesItem.padding = #0.1
     \override ParenthesesItem.font-size = #-1
@@ -72,16 +72,21 @@ vibrato = \markup {
     \repeat volta 2 {
     | \partial 8
       sol8\upbow
-    | sol8 re8\startGroup sol,8\stopGroup si16( do'16 re'16 do'16 si16 la16)
-    | si8 re8 sol,8 sol16(\1 la16)^\markup{\bold\teeny "x2"} si8 sol8
-    | mi8\1 do8 do,8 la16( si16 do'16 si16 la16 sol16)
-    | fad8 re8 \stemUp re,8 \stemDown re16( mi16 \stemNeutral fad16 sol16 la16 si16)
+    | sol8 re8\startGroup^\markup{\small\italic "léger"} sol,8\stopGroup^\allongerUne
+      si16( do'16 re'16 do'16 si16 la16)
+    | si8 re8\startGroup^\markup{\small\italic "léger"} sol,8\stopGroup^\allongerUne
+      sol16(\1 la16)^\markup{\bold\teeny "x2"} si8 sol8
+    | mi8\1 do8\startGroup do,8\stopGroup la16( si16 do'16 si16 la16 sol16)
+    | fad8 re8\startGroup \stemUp re,8\stopGroup^\vibrato \stemDown re16( mi16 \stemNeutral fad16 sol16 la16 si16)
     | do'16( si16 do'16) la16 do'16( si16 do'16) la16
-      re16 do'16 si16 la16
+      re16^\allongerUne do'16 si16 la16
     | si16(\4 la16 si16) sol16^\markup{\bold\teeny "x1"} si16( la16 si16) sol16
-      do16-1 si16 la16 sol16
-    | fad16\1 la16 <re'-2>16 re16\open sol8[\4 si,8] re,8[ fad8]
-    | <<sol,4. sol4.>> si16( la16 sol16 fad16 mi16 re16)
+      do16-1^\allongerUne si16 la16 sol16
+    | fad16\1 la16 <re'-2>16 re16\open 
+    \override Beam.auto-knee-gap = #2
+    sol8[\4 si,8] re,8[ fad8]
+    | <<sol,4._\markup{\small\italic "brisé"} sol4.>> 
+      si16( la16 sol16 fad16 mi16 re16)
     | <mi'\finger \markup{\circle 4}>8 dod'8 la8 <si\finger\markup{\circle 1}>16(
       dod'16) re'16 fad16( mi16 re16)
     | la,8 re'8
@@ -108,8 +113,9 @@ vibrato = \markup {
     \repeat volta 2 {
     | la8\4
     | \set Score.currentBarNumber = #19
-      la8 fad8 re8\open mi16(\1 fad16 sol16 fad16 mi16 re16)
-    | <re'\finger\markup{\circle 2}>8 fad8-1 do8-2 si,16( do16 re16 do16 si,16\3 la,16)
+      la8 fad8\startGroup re8\open\stopGroup mi16(\1 fad16 sol16 fad16 mi16 re16)
+    | <re'\finger\markup{\circle 2}>8 fad8-1\startGroup do8-2\stopGroup 
+      si,16( do16 re16 do16 si,16\3 la,16)
     | si,16( sol16 la16 si16) do'16( si16 la16 sol16) fad8 re'8
     | si8 sol8 \stemUp sol,8 \stemNeutral si16( la16 do'16 si16 la16 sol16)\2
     | la8 fad8 red16\1( la16 si16\1 do'16) si16( la16 sol16 fad16)
