@@ -165,7 +165,7 @@ stopBarre = \stopTextSpan
       dod,8 la,8 sol4^\vibrato( sol16) sib16( la16 sol16)\startGroup
     | fa16\stopGroup( mi16 re16 mi16) fa16 re16 la16 fa16 re'16 la16 fa16 re16
     | sold,8 fa8 re'4^\vibrato( re'16) fa'16( mi'16 re'16)
-    | dod'16( si!16 la16) si16\< do'16 la16 re'16 la16 mi'16 la16 fa'16 la16
+    | dod'16( si!16 la16) si16\< dod'16 la16 re'16 la16 mi'16 la16 fa'16 la16
     | sol'16\!^\vibrato mi'16( dod'16 mi'16) la16(^\allongerUne dod'!16 mi'16) fa'16
       sol'16 fa'16 sol'16 mi'16
     \bar "||" \mark \default
