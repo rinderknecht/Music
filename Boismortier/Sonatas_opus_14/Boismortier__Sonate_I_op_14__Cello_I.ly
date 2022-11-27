@@ -28,7 +28,7 @@
   \new Staff {
 %    \with {instrumentName = #"Cello"}
     \override Hairpin.to-barline = ##f
-    \override Beam.auto-knee-gap = #1
+    \override Beam.auto-knee-gap = #2
     \set fingeringOrientations = #'(left)
 
     \tempo "Gravement" 8 = 70

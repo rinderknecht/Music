@@ -29,6 +29,8 @@
 %  \with {instrumentName = #"Cello "}
   {
     \override Hairpin.to-barline = ##f
+    \override Beam.auto-knee-gap = #2
+
     \tempo "Allegro" 4 = 112
     \time 4/4
     \key fa \major
@@ -191,7 +193,7 @@
       \tuplet 3/2 {sol'8 fa'8 mi'8} \tuplet 3/2 {re'8\4 do'8 sib8}
     | \tuplet 3/2 {la8 sol8 la8} \tuplet 3/2 {sib8 do'8 dod'8}
       \tuplet 3/2 {re'8 do'8 sib8} \tuplet 3/2 {la8 sol8 fa8}
-    | do2 \afterGrace <sol\finger\markup{\circle 1}>2\trill_(
+    | do2 \afterGrace <sol\finger\markup{\circle 1}>2-+_(
       {<fa\finger\markup{\circle 1}>16 sol16)}
     | fa4-1 la2^\markup{\bold\teeny x4}-> sol8\4-- fa8--
     | mi4 <sib\finger\markup{\circle 2}>2-> la8-- sol8\4--

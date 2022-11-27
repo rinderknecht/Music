@@ -27,6 +27,7 @@
   <<
     \new Staff {
       \override Hairpin.to-barline = ##f
+      \override Beam.auto-knee-gap = #2
       \time 4/4
       \key sol \major
       \clef "bass"

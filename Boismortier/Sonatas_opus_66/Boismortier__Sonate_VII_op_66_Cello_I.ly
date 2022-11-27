@@ -30,6 +30,7 @@
   \new Staff {
     \set Score.barNumberVisibility = #all-bar-numbers-visible
     \override Hairpin.to-barline = ##f
+    \override Beam.auto-knee-gap = #2
     \tempo "Gaiment"
     \time 2/4
     \key re \major

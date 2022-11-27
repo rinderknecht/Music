@@ -33,7 +33,7 @@
 
       \repeat volta 2 {
       | sol4 sol4 sol4
-      | \appoggiatura mi8 re4. fad8 mi4
+      | re4. fad8 mi4
       | si4 si,4 do4
       | \appoggiatura mi8 re4 re,4 sol,4
       }

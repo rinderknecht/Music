@@ -29,6 +29,7 @@
 %  \with {instrumentName = #"Cello I"}
   {
     \override Hairpin.to-barline = ##f
+    \override Beam.auto-knee-gap = #2
     \tempo "Largo"
     \time 12/8
     \key sol \major
