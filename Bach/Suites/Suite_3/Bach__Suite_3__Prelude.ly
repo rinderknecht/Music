@@ -125,15 +125,16 @@ stopBarre = \stopTextSpan
     | fad16(^\vibrato mi16 fad16 sol16) la16( sol16 fad16 mi16) re16 fad16 do16 fad16
     | si,16[^\vibrato \breathe la16](\downbow si16 do'16) re'16( do'16 si16 la16) sol16 si16 fad16 si16
     | mi16(^\vibrato re16 mi16 fad16) sol16( fad16 mi16 re16) do16 mi16 si,16 mi16
-    | la,16[^\vibrato \breathe sol16]( la16 si16) do'16( si16 la16 sol16) fad16 la16 mi16 la16
+    | la,16[^\vibrato \breathe sol16](\downbow la16 si16) do'16( si16 la16 sol16) fad16 la16 mi16 la16
     | re16(^\allongerUne do16 re16 mi16) fad16( mi16 re16 do16) si,16 re16 la,16 re16
     \bar "||" \mark \default
-      sol,16^\vibrato_[ \breathe re16]\downbow( mi16 fad16) sol16( la16 si16 do'16) re'16( do'16 si16 la16)
+      sol,16_[ \breathe re16]\downbow( mi16 fad16) sol16( la16 si16 do'16) re'16( do'16 si16 la16)
     | si16( do'16 re'16 do'16) si16( la16 sol16 la16) si16( la16 sol16 fa!16)
     | mi16[^\vibrato \breathe sol16( mi16 dod16)]^\markup{\teeny\bold x4} 
       la,16( si,16 dod16^\markup{\teeny\bold x4} re16) mi16( fa16 sol16 mi16)
     | fa16 re'16 la16 fa16 re16( mi16 fa16 sol16) la16( si16 do'!16 la16)
-    | si16 re'16 si16 sold16 mi16( fad16 sold16 la16) si16( do'16 re'16 si16)
+    | si16 re'16 si16 sold16^\markup{\bold\teeny x4} mi16( fad16^\markup{\bold\teeny x2} 
+      sold16^\markup{\bold\teeny x4} la16) si16( do'16 re'16 si16)
     | do'16( re'16 do'16 si16) la16 fa!16( mi16 re16) do16( si,16 la,16 sol,!16)
     | fa,16 la,16( si,16^\markup{\teeny\bold x2} dod16)^\markup{\teeny\bold x4} 
       re16( mi16 fa16) re16 si16\4 sold16-1 la16 re16-2
@@ -151,14 +152,17 @@ stopBarre = \stopTextSpan
     | red16-1 do'16 la16 sold16(\3 la16)-4 do'16^\markup{\teeny\bold x1} 
       la16\open sold16(-3 la16)-4 do'16(\2 la16 fa!16)
     | re!16 si16 sold16^\markup{\teeny\bold x4} fad16(^\markup{\teeny\bold x2} 
-      sold16) si16 fa!16 mi16( fa16) si16( mi16 re16)
+      sold16) si16 fa!16 mi16( fa16) 
+      \startModernBarre #2 #1 si16( mi16 \stopBarre re16)
     \bar "||" \mark \default
-      do16 la,16 do16 mi16 do16 la,16 do16 mi16 la16 do'16 la16 mi16
+      do16 \startModernBarre #3 #1 la,16 
+      do16 mi16 \stopBarre do16 la,16 do16 mi16 la16 do'16 la16 mi16
     | do16 la,16 do16 mi16 do16 la,16 do16 mi16 la16 do'16 la16 fa16
     | re16 si,16 re16 sol16 re16 si,16 re16 sol16 si16 re'16 si16 sol16
     | fa16 si,16 fa16 sol16 fa16 si,16 fa16 sol16 fa16 re'16 si16 sol16
-    | mi16 do16 mi16 sol16 mi16 do16 mi16 sol16 sib16 re'16 sib16 sol16
-    | mi16 do16 mi16 sol16 mi16 do16 mi16 sol16 do'16 sib16 la16 sol16
+    | mi16 do16 mi16 sol16 mi16 do16 mi16 sol16 sib16^\markup{\bold\teeny x1}
+      re'16 sib16 sol16
+    | mi16 do16 mi16 sol16 mi16 do16 mi16 sol16 do'16 sib16^\markup{\bold\teeny x1} la16 sol16
     \bar "||" \mark \default
       la16 fa16( mi16 fa16 sol16 la16 si!16 do'16 re'16) la16 fa16 re16
     | sol16 mi16( re16 mi16 fa16 sol16 la16 si16 do'16) la16 mi16 do16
@@ -167,12 +171,17 @@ stopBarre = \stopTextSpan
     | fa16) si,16 fa16 sol16( fa16) la,16 fa16 sol16( fa16) sol,16 fa16 sol16(
     \bar "||" \mark \default
       mi16) sol,16 do,16( sol,16 mi16) sol,16 do,16( sol,16 mi16) re16 do16 si,16
-    | la,16( mi16 do'16) mi16 la,16( mi16 do'16) mi16 la,16 sol16 fa16 mi16
-    | fa16 la,16 re,16( la,16 fa16) la,16 re,16_( la,16 fa16) mi16 re16 do16\2
-    | si,16( fad16 re'16) fad16 si,16( fad16 re'16) fad16 si,16 la16 sol16 fad16
-    | sol16 si,16 mi,16( si,16 sol16) si,16 mi,16_( si,16 sol16) fa!16 mi16 re16
-    | do16( sol16 mi'16) sol16 do16( sol16 mi'16) sol16 do16 sib16 la16 sol16
-    | la16 do16 fa,16( do16 la16) do16 fa,16_( do16 la16) sol16 fa16 mi16
+      \startModernBarre #3 #1 la,16( mi16 \stopBarre 
+      do'16) mi16 la,16( mi16 do'16) mi16 la,16 sol16 fa16 mi16
+    | fa16 \startModernBarre #4 #1 la,16 re,16( \stopBarre 
+      la,16 fa16) la,16 re,16_( la,16 fa16) mi16 re16 do16\2
+    | si,16(^\markup{\teeny III__1} fad16 
+      re'16) fad16 si,16( fad16 re'16) fad16 si,16 la16 sol16 fad16
+    | sol16 \startModernBarre #4 #1 si,16 mi,16( \stopBarre 
+      si,16 sol16) si,16 mi,16_( si,16 sol16) fa!16\2 mi16 re16
+      \startModernBarre #4 #1 do16( sol16 \stopBarre mi'16)-3 sol16 
+      do16( sol16 mi'16) sol16 do16 sib16-4 la16 sol16
+    | la16-3 do16-1 fa,16(-1 do16 la16) do16 fa,16_( do16 la16) sol16 fa16 mi16
     | re16( la16 fa'16) la16 re16( la16 fa'16) la16 re16 la16 si16 do'16
     \bar "||" \mark \default
       sol,16( si16 fa'16) si16 sol,16( si16 fa'16) si16 sol,16( si16 fa'16) si16

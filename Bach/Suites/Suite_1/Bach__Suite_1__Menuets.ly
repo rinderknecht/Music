@@ -136,16 +136,16 @@ stopBarre = \stopTextSpan
     \tempo "Menuet II"
 
     \repeat volta 2 {
-    | sib8(\1 la8 sib8) re8 mib8-1 sol,8
-    | fa,4\4 la4 re4\upbow
-    | sol8( fad8 sol8) sib,8 do8 mib,8
+    | sib8(\4 la8 sib8) re8-3 mib8-4 sol,8-3
+    | fa,4-1 la4-3 re4\open\upbow
+    | sol8(\4 fad8 sol8) sib,8 do8 mib,8
    %| NO BAR HERE OR ELSE \starModernBarre FAILS
    \startModernBarre #4 #1 re,8( la,8 \stopBarre
    %re,8( la,8 
-   re8) sol8 fad8 la8
-    | sib8(\1 la8 sib8) re8 mib8-1 sol,8
-    | fa,4\4 la4 re4\upbow
-    | sol8( fad8 sol8) sib,8 do8 mib,8
+   re8) sol8\2 fad8 la8\3
+    | sib8(-4 la8 sib8) re8-3 mib8-4 sol,8-3
+    | fa,4-1 la4-3 re4\open\upbow
+    | sol8(\4 fad8 sol8) sib,8 do8 mib,8
     | re,8( sol8) fad2\mordent
     }
     
@@ -156,10 +156,10 @@ stopBarre = \stopTextSpan
     | sib8( la8 sol8\4 la8) fa8( mib8)^\markup{\teeny\bold x1}
     | re8 fa8 sib(\1 la8 sib8) re8
     | mib8-1 sol8^\markup{\teeny\bold x4} sib8( la8 sib8) re'8\3
-    | do'8( mib'8) re'8( sib8)\1 fa8 la8
-    | sib8 fa8 re8 fa8 sib,4-3
+    | do'8( mib'8) re'8(\4 sib8)^\markup{\bold\teeny x1} fa8\3 la8
+    | sib8-1 fa8 re8 fa8 sib,4-3
     | si,!8\downbow( re8 fa8) lab8\4 sol8-3 fa8
-    | mib8(\1 sol8\3 do'8-1 re'8)-. mib'4
+    | mib8(\1 sol8\3 do'8-1 re'8)-3-. mib'4-4
     | la,8(\p\1 do8 mib8)^\markup{\teeny\bold x1} sol8 fa8 mib8
     | re8( fa8 sib8^\markup{\teeny\bold x1} do'8)-. re'4
     | fad,8(\1 la,8-4 do8)\1 mib8-4 re8\4 do8
