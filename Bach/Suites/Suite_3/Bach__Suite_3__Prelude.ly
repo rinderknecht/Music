@@ -181,7 +181,7 @@ stopBarre = \stopTextSpan
       si,16 sol16) si,16 mi,16_( si,16 sol16) fa!16\2 mi16 re16
       \startModernBarre #4 #1 do16( sol16 \stopBarre mi'16)-3 sol16 
       do16( sol16 mi'16) sol16 do16 sib16-4 la16 sol16
-    | la16-3 do16-1 fa,16(-1 do16 la16) do16 fa,16_( do16 la16) sol16 fa16 mi16
+    | la16-3 do16-1 fa,16(-1 do16 la16) do16 fa,16_( do16 la16) sol16 fa16\2 mi16
     | re16( la16 fa'16) la16 re16( la16 fa'16) la16 re16 la16 si16 do'16
     \bar "||" \mark \default
       sol,16( si16 fa'16) si16 sol,16( si16 fa'16) si16 sol,16( si16 fa'16) si16
