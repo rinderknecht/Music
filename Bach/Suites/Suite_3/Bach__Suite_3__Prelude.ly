@@ -164,8 +164,8 @@ stopBarre = \stopTextSpan
       re'16 sib16 sol16
     | mi16 do16 mi16 sol16 mi16 do16 mi16 sol16 do'16 sib16^\markup{\bold\teeny x1} la16 sol16
     \bar "||" \mark \default
-      la16 fa16( mi16 fa16 sol16 la16 si!16 do'16 re'16) la16 fa16 re16
-    | sol16 mi16( re16 mi16 fa16 sol16 la16 si16 do'16) la16 mi16 do16
+      la16^\allongerUne fa16( mi16 fa16 sol16 la16 si!16 do'16 re'16) la16 fa16 re16
+    | sol16_\markup{\small\italic talon} mi16( re16 mi16 fa16 sol16 la16 si16 do'16) la16 mi16 do16
     \bar "||" \mark \default
       fa16 re16 fa16 sol16( fa16) re16 fa16 sol16( fa16) do16 fa16 sol16(
     | fa16) si,16 fa16 sol16( fa16) la,16 fa16 sol16( fa16) sol,16 fa16 sol16(
@@ -182,10 +182,10 @@ stopBarre = \stopTextSpan
       \startModernBarre #4 #1 do16( sol16 \stopBarre mi'16)-3 sol16 
       do16( sol16 mi'16) sol16 do16 sib16-4 la16 sol16
     | la16-3 do16-1 fa,16(-1 do16 la16) do16 fa,16_( do16 la16) sol16 fa16\2 mi16
-    | re16( la16 fa'16) la16 re16( la16 fa'16) la16 re16 la16 si16 do'16
+      \startModernBarre #3 #1 re16( la16 \stopBarre fa'16)-2 la16 re16( la16 fa'16) la16 re16 la16-1 si16 do'16
     \bar "||" \mark \default
-      sol,16( si16 fa'16) si16 sol,16( si16 fa'16) si16 sol,16( si16 fa'16) si16
-    | sol,16( do'16 mi'16) do'16 sol,16( do'16 mi'16) do'16 sol,16( do'16 mi'16) do'16
+      sol,16(\open si16-3 fa'16) si16 sol,16( si16 fa'16) si16 sol,16( si16 fa'16) si16
+    | sol,16( do'16-4 mi'16) do'16 sol,16( do'16 mi'16) do'16 sol,16( do'16 mi'16) do'16
     | sol,16( do'16 re'16) do'16 sol,16( si16 re'16) si16 sol,16( la16 re'16) la16
     | sol,16( si16 re'16) si16 sol,16( si16 sol'16) si16 sol,16( si16 re'16) si16 
     | sol,16( si16 do'16) si16  sol,16( la16 do'16) la16 sol,16( sol16 do'16) sol16

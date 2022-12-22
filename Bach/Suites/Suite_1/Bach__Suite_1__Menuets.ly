@@ -82,7 +82,7 @@ stopBarre = \stopTextSpan
     \set fingeringOrientations = #'(left)
     \override Beam.auto-knee-gap = #2
     \override Hairpin.to-barline = ##f
-    
+
     \time 3/4
     \key sol \major
     \clef "bass"
@@ -92,16 +92,16 @@ stopBarre = \stopTextSpan
     | sol,8(\upbow re8) si4 la8( si16 do'16)
     | si8( la8) sol8( fad8) sol8( re8)
     | mi8( sol8) do'8( la8) fad8( re'8)
-    
+
     | <<sol,2 re2
-        \appoggiatura {\hide Stem \parenthesize do'8 \undo \hide Stem} si2-+>> 
+        \appoggiatura {\hide Stem \parenthesize do'8 \undo \hide Stem} si2-+>>
       \grace{ la16( si16)} <<re4 la4)>>
     | la,8(\upbow fad8) do'4 si8( do'16 re'16)
     | do'8( si8) la8( sol8) fad8( mi8)
     | fad8(\1 sol16 la16) sol8( fad8) mi8(\1 fad8)
     | re4 la,4 re,4
     }
-    
+
     \repeat volta 2 {
     | re8(\downbow fad8)\1 la4 sol8(\1 la16^\markup{\teeny\bold x2} si16)
     | la8( sol8) fad8(\3 mi8) re8( fad8)
@@ -129,7 +129,7 @@ stopBarre = \stopTextSpan
     \set fingeringOrientations = #'(left)
     \override Beam.auto-knee-gap = #2
     \override Hairpin.to-barline = ##f
-  
+
     \time 3/4
     \key sib \major
     \clef "bass"
@@ -141,18 +141,18 @@ stopBarre = \stopTextSpan
     | sol8(\4 fad8 sol8) sib,8 do8 mib,8
    %| NO BAR HERE OR ELSE \starModernBarre FAILS
    \startModernBarre #4 #1 re,8( la,8 \stopBarre
-   %re,8( la,8 
+   %re,8( la,8
    re8) sol8\2 fad8 la8\3
     | sib8(-4 la8 sib8) re8-3 mib8-4 sol,8-3
     | fa,4-1 la4-3 re4\open\upbow
     | sol8(\4 fad8 sol8) sib,8 do8 mib,8
     | re,8( sol8) fad2\mordent
     }
-    
+
     \repeat volta 2 {
     | re8( fad8 la8) do'8\1 mib'8 re'8
     | do'8(\3 sib8-1 la8 sib8) sol4\4
-    | do8( mi8 sol8) sib8\1 re'8^\markup{\teeny\bold x4} do'8 
+    | do8( mi8 sol8) sib8\1 re'8^\markup{\teeny\bold x4} do'8
     | sib8( la8 sol8\4 la8) fa8( mib8)^\markup{\teeny\bold x1}
     | re8 fa8 sib(\1 la8 sib8) re8
     | mib8-1 sol8^\markup{\teeny\bold x4} sib8( la8 sib8) re'8\3
@@ -164,7 +164,7 @@ stopBarre = \stopTextSpan
     | re8( fa8 sib8^\markup{\teeny\bold x1} do'8)-. re'4
     | fad,8(\1 la,8-4 do8)\1 mib8-4 re8\4 do8
     | sib,(-1 re8-4 sol8)-2 la8\3 sib8-4 sol8-1
-    | do8-1 sib8(-4 la8_\markup{\small\italic "Menuet I da Capo"} 
+    | do8-1 sib8(-4 la8_\markup{\small\italic "Menuet I da Capo"}
       sol8) re8-3 fad8\1
     | sol,2.-4
     }
