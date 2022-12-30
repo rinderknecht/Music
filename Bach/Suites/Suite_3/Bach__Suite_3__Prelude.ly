@@ -122,14 +122,15 @@ stopBarre = \stopTextSpan
     \bar "||" \mark \default
       do16[^\vibrato \breathe si16]\downbow( do'16\1 re'16)^\markup{\teeny\bold x2} 
       mi'16( re'16 do'16\2 si16) la16 do'16 sol16 do'16
-    | fad16(^\vibrato mi16 fad16 sol16) la16( sol16 fad16 mi16) re16 fad16 do16 fad16
-    | si,16[^\vibrato \breathe la16](\downbow si16 do'16) re'16( do'16 si16 la16) sol16 si16 fad16 si16
+    | fad16(^\vibrato mi16 fad16 sol16)\2 la16( sol16 fad16\3 mi16) re16 fad16\1 do16 fad16
+    | si,16[^\vibrato \breathe la16\open](\downbow si16\1 do'16) re'16( do'16 si16 la16) sol16 si16 fad16 si16
     | mi16(^\vibrato re16 mi16 fad16) sol16( fad16 mi16 re16) do16 mi16 si,16 mi16
     | la,16[^\vibrato \breathe sol16](\downbow la16 si16) do'16( si16 la16 sol16) fad16 la16 mi16 la16
     | re16(^\allongerUne do16 re16 mi16) fad16( mi16 re16 do16) si,16 re16 la,16 re16
     \bar "||" \mark \default
       sol,16_[ \breathe re16]\downbow( mi16 fad16) sol16( la16 si16 do'16) re'16( do'16 si16 la16)
-    | si16( do'16 re'16 do'16) si16( la16 sol16 la16) si16( la16 sol16 fa!16)
+    | si16( do'16 re'16 do'16) si16( la16 sol16\1 la16)^\markup{\teeny\bold x2} si16(^\markup{\teeny\bold x4} 
+      la16 sol16 fa!16)\2
     | mi16[^\vibrato \breathe sol16( mi16 dod16)]^\markup{\teeny\bold x4} 
       la,16( si,16 dod16^\markup{\teeny\bold x4} re16) mi16( fa16 sol16 mi16)
     | fa16 re'16 la16 fa16 re16( mi16 fa16 sol16) la16( si16 do'!16 la16)

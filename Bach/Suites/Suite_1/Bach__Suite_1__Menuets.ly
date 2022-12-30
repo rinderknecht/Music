@@ -158,7 +158,7 @@ stopBarre = \stopTextSpan
     | mib8-1 sol8^\markup{\teeny\bold x4} sib8( la8 sib8) re'8\3
     | do'8( mib'8) re'8(\4 sib8)^\markup{\bold\teeny x1} fa8\3 la8
     | sib8-1 fa8 re8 fa8 sib,4-3
-    | si,!8\downbow( re8 fa8) lab8\4 sol8-3 fa8
+    | si,!8-4\downbow( re8 fa8)-3 lab8\4 sol8-3 fa8
     | mib8(\1 sol8\3 do'8-1 re'8)-3-. mib'4-4
     | la,8(\p\1 do8 mib8)^\markup{\teeny\bold x1} sol8 fa8 mib8
     | re8( fa8 sib8^\markup{\teeny\bold x1} do'8)-. re'4
