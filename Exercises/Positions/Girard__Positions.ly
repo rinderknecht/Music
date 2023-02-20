@@ -101,8 +101,8 @@
    % Ligne 2
 
    \repeat volta 2 {fad'4\2  sold'4 mi'4 fad'4  | sold'4\2 la'4   fad'4  sold'4}
-   \repeat volta 2 {sold'4\4 fad'4  mi'4 sold'4 | la'4\3   sold'4 fad'4  la'4  }
-   \repeat volta 2 {sold'4\4 mi'4  fad'4 sold'4 | la'4\3   fad'4  sold'4 la'4  }
+   \repeat volta 2 {sold'4\3 fad'4  mi'4 sold'4 | la'4\3   sold'4 fad'4  la'4  }
+   \repeat volta 2 {sold'4\3 mi'4  fad'4 sold'4 | la'4\3   fad'4  sold'4 la'4  }
  }
 }
 
