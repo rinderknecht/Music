@@ -199,8 +199,8 @@ stopBarre = \stopTextSpan
       do'16( si16 do'16) sol16\2
       fad!16( sol16 la16) mi16\1 re16 do16 si,16 la,16
     | sol,16 re16( fad16 do'16) si16( la16 sol16 la16)
-      si16( do'16 re'16\1 mi'16) re'16( mi'16 fa'16) re'16
-    | mi'8 sol8 do16 re'16(\4 do'16 si16)
+      si16( do'16 re'16\1 mi'16) re'16( mi'16 fa'16)-4 re'16
+    | mi'8-3 \startModernBarre #3 #1 sol8 do16 \stopBarre re'16(\4 do'16 si16)
       la16( si16 do'16 mi'16--)\4 re'8.(-2
       do'16)^\markup{\bold\teeny x1}
     | re'8-2^\vibrato la8-4 si,16-1 do'16(\2 si16 la16)
