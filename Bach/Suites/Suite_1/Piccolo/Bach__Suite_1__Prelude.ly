@@ -104,7 +104,7 @@ stopBarre = \stopTextSpan
 
     | sol,16( re16 si16)   la16 si16  re16  si16  re16
       sol,16( re16 si16)   la16 si16  re16  si16  re16
-    | sol,16( mi16 do'16)  si16 do'16 mi16  do'16 mi16
+    | sol,16( \startModernBarre #2 #1 mi16 do'16)\stopBarre  si16 do'16 mi16  do'16 mi16
       sol,16( mi16 do'16)  si16 do'16 mi16  do'16 mi16
     | sol,16( fad16 do'16) si16 do'16 fad16 do'16 fad16
       sol,16( fad16 do'16) si16 do'16 fad16 do'16 fad16
@@ -161,14 +161,13 @@ stopBarre = \stopTextSpan
       re'16)[^\vibrato \breathe la,16\p si,16 do!16] re16 mi16 fad16 sol16
     | la16( fad16 re16) mi16 fad16 sol16 la16 si16
       do'16( la16 fad16) sol16 la16 si16 do'16 re'16
-    | mib'16\4(^\allongerUne re'16 dod'16 re'16)
+    | mib'16\4( re'16 dod'16 re'16)
       re'16\4( do'!16 si16 do'16)
       do'16( la16 fad16) mi!16 re16 la,16 si,16 do16
- %| NO BAR HERE OR ELSE \starModernBarre FAILS
-      \startModernBarre #4 #1 re,16 la,16( \stopBarre re16 fad16) la16 si16 do'16 la16
+    | re,16^\markup{\small\italic barré} la,16( re16 fad16) la16 si16 do'16 la16
       si16( sol16 re16) do16 si,16 sol,16 la,16 si,16
     | re,16 sol,16( si,16 re16) sol16 la16
-      si16 sol16 dod'16(^\allongerUne
+      si16 sol16 dod'16(
       sib16^\markup{\bold\teeny x1} la16
       sib16) sib16( la16 sold16\3 la16)-4
     | la16-4( sol!16-2 fad16-1 sol16) sol16\4(
@@ -214,16 +213,16 @@ stopBarre = \stopTextSpan
       mi16 fa!16^\vibrato re16 fad16\1 re16
       sol16 re16 sold16 re16 la16\open re16 sib16\1 re16
     | si!16\1 re16 do'16-2 re16 dod'16 re16 re'16 re16
-      mib'16\4 re16 mi'!16\open re16 fa'!16\1 re16 fad'16-2 re16\f\!
+      mib'16\4 re16 mi'!16\1 re16 fa'!16 re16 fad'16 re16\f\!
     | \clef "tenor"
-      sol'16-3 si16(-2 re16\open si16) sol'16 si16 sol'16 si16
+      sol'16\2^\markup{\small\italic "al tempo"} si16(-1 re16\open si16) sol'16 si16 sol'16 si16
       sol'16 si16( re16 si16) sol'16 si16 sol'16 si16
     | sol'16 la16(\open re16 la16) sol'16 la16 sol'16 la16
       sol'16 la16( re16 la16) sol'16 la16 sol'16 la16
-    | fad'16-2^\vibrato do'16(-3 re16 do'16) fad'16 do'16 fad'16 do'16
+    | fad'16-1^\vibrato_\markup{\teeny V} do'16(-2 re16 do'16) fad'16 do'16 fad'16 do'16
       fad'16 do'16( re16 do'16)
       fad'16_\markup{\small\italic "ritardando"} do'16 fad'16 do'16
-    | << sol,1 <si-2>1 <sol'-3>1\fermata>>
+    | << sol,1_\markup{\small\italic "solo"} <si-1>1 <sol'-2>1^\vibrato\fermata>>
 
     \bar "|."
   }
