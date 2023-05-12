@@ -51,7 +51,7 @@
       re16 do'16 si16 la16
     | si16( la16 si16) sol16 si16( la16 si16) sol16
       do16 si16 la16 sol16
-    | fad16 la16 re'16 re16\open sol8[ si,8] re,8[ fad8]
+    | fad16 la16 re'16 re16 sol8[ si,8] re,8[ fad8]
     | <<sol,4. sol4.>> si16( la16 sol16 fad16 mi16 re16)
     | mi'8 dod'8 la8 si16( dod'16) re'16 fad16( mi16 re16)
     | la,8 re'8

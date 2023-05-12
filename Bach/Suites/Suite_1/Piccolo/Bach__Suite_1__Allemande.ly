@@ -151,10 +151,10 @@ stopBarre = \stopTextSpan
       dod'16^\vibrato la16( re'16^\allongerUne si16) dod'16 la16 mi'16\4^\allongerUne sol16
     | \appoggiatura {\hide Stem \parenthesize sol8 \undo \hide Stem}
       fad8.-+ re'16^\allongerUne la16( sol16) fad16(\3 mi16) re16
-      la16(\4 sol16 mi16)\1 fad16 re16 la16\4 do!16-2
+      la16( sol16 mi16) fad16 re16 la16 do!16\2
     | \appoggiatura {\hide Stem \parenthesize do8 \undo \hide Stem} si,8.-+
       sol16^\allongerUne re16( do16) si,16(\3 la,16) sol,16\open
-      re16(\4 do16-2 la,16)\1 si,16 sol,16 re16\4 fad,16-3^\vibrato
+      re16( do16 la,16) si,16 sol,16 re16 fad,16\3^\vibrato
     | mi,16(\3 sol,16 la,16 si,16^\markup{\bold\teeny x2}
       dod16^\markup{\bold\teeny x4} re16 mi16 fad16)
       sol16( la16 dod'16 re'16) mi'16\open la16 <sol'\finger 2>8^\vibrato
@@ -172,9 +172,9 @@ stopBarre = \stopTextSpan
     | \partial 16
       la16\open
     | \set Score.currentBarNumber = #17
-      <<re4 la4(>> <<re16 la16)>> fad16(\1 sol16 la16)
-      re16(\open mi16\1 fad16 sol16)\2 la16( fad16-1 re16-4 do!16)-2
-    | si,16(-1 re16 sol16 fad16) sol16( la16\open si16\1 do'16)
+      <<re4 la4(>> <<re16 la16)>> fad16( sol16 la16)
+      re16( mi16 fad16 sol16) la16( fad16 re16 do!16)
+    | si,16( re16 sol16 fad16) sol16( la16 si16 do'16)
       re'16( si16 la16 sol16) fa!16( mi16 fa16) re'16\upbow^\vibrato
     | \appoggiatura {\hide Stem \parentheAll fa8 \undo \hide Stem}
       mi8[-+ \appoggiatura re8( do8)] do'16^\allongerUne la,16( si,16 do16) re,16
@@ -193,8 +193,8 @@ stopBarre = \stopTextSpan
       <<mi8.
         \appoggiatura {\hide Stem \parenthesize do'8 \undo \hide Stem}
         si8.-+(\stopBarre>> la16)
-    | <<la,8. mi8. la8.[>> \breathe si16]\3 do'16( si16 do'16) sol16\2
-      fad!16( sol16 la16) mi16\1 re16 do16 si,16 la,16
+    | <<la,8. mi8. la8.[>> \breathe si16] do'16( si16 do'16) sol16
+      fad!16( sol16 la16) mi16 re16 do16 si,16 la,16
     | sol,16 re16( fad16 do'16) si16( la16 sol16 la16)
       si16( do'16 re'16\1 mi'16) re'16( mi'16 fa'16)-4 re'16
     | mi'8-3 \startModernBarre #3 #1 sol8 do16 \stopBarre re'16(\4 do'16 si16)
