@@ -115,7 +115,8 @@ stopBarre = \stopTextSpan
     | si,8( re8) sol4 re8( mi16 fa!16)
     | fa!8( re8 mi8) do8 do,8 si,8
     | dod8(\1 mi8)-4 la4-2 mi8(\1 fad16 sol16)
-    | sol8( mi8 fad8) re8 re,8 la,8
+    | sol8( mi8 fad8) re8 
+      \startModernBarre #4 #1 re,8 la,8 \stopBarre
     | re8( fad8 la8)\open do'!8 si8 re'8
     | mi8( sol8 si8) re'8 do'8 mi'8\4
     | re'8[-2 fad8 sol8 si,8]-1 re,8[\1 fad8]
@@ -162,7 +163,7 @@ stopBarre = \stopTextSpan
     | mib8(\1 sol8\3 do'8-1 re'8)-3-. mib'4-4
     | la,8(\p\1 do8 mib8)^\markup{\teeny\bold x1} sol8 fa8 mib8
     | re8( fa8 sib8^\markup{\teeny\bold x1} do'8)-. re'4
-    | fad,8(^\markup{\teeny\bold x4} la,8 do8) mib8 re8 do8
+    | fad,8(^\markup{\teeny\bold x4} la,8 do8) mib8^\markup{\teeny\bold x1} re8 do8
     | sib,( re8 sol8) la8 sib8^\markup{\teeny\bold x1} sol8
     | do8 sib8(^\markup{\teeny\bold x1} la8_\markup{\small\italic "Menuet I da Capo"}
       sol8) re8 fad8
