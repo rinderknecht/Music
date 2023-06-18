@@ -146,7 +146,7 @@ stopBarre = \stopTextSpan
       re16( mi16) fad16 re16 sol16 mi16 fad16
       re16( fad16 sol16) la16( si16 do'!16) la16
     | si16^\allongerUne( re16 sol,16) re16 si16 sol16 la16 fad16
-      sol16^\vibrato mi16 mi16( sol16 la16) si16( dod'16 re'16) 
+      sol16^\vibrato mi16( sol16 la16) si16( dod'16 re'16) si16 
     | dod'16^\allongerUne( mi16 sol,16) mi16 dod'16^\allongerUne la16 si16 re'16
       dod'16^\vibrato la16( re'16^\allongerUne si16) dod'16 la16 mi'16\4^\allongerUne sol16
     | \appoggiatura {\hide Stem \parenthesize sol8 \undo \hide Stem}
