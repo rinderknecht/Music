@@ -102,19 +102,21 @@ stopBarre = \stopTextSpan
     \key re \major
     \clef "bass"
      
-    \partial 8 fad8
-      <<fad2( re2 la,2>> fad16) mi16 fad16 la16 sol16 fad16 mi16 re16
-    | <<{re16 la8._( la16_) sol16 fad16 mi16}\\{re2}>> 
+    \partial 8 fad8\upbow
+      <<fad2( re,2 la,2>> fad16) mi16 fad16 la16 sol16 fad16 mi16 re16
+    | <<{re16 la8._( la16_) sol16 fad16 mi16}\\{fad,4}>> 
       fad16 la16 si16 do'!16( do'16) la16 sol16 fad16(
     | fad16) do'!16 si16 la16 si16 sol16 mi'8( mi'16) re'16 dod'!16 si16 
       la16 sol32 fad32 sol16 mi'16
-    | sol4( fad4)\mordent( fad16) la16 si16 dod'16 re'16 dod'16 si16 la16 
-    | <<{la8 fad'4.( \stemDown fad'16) sol'16 fad'16 mi'16}\\{la2}>>
+    | %sol4( fad4)\mordent(
+      re'8 dod'16 si16 la16 re'16 fad16 la16
+      re16 la16 si16 dod'16 re'16 dod'16 si16 la16 
+    | \clef "tenor" 
+      <<{re'2}\\{la8 fad'4.^( \stemDown fad'16^) sol'16 fad'16 mi'16}>>
       fad'16 re'16 lad8(
     | lad16) dod'16 si16 lad16 lad16 si8.( si16) re'16 dod'16 si16 dod'16 
       re'16 mi'16 fad'16
-    | \clef "tenor" 
-      \tuplet 3/2 {sol'16 fad'16 mi'16} si'8(
+    | \tuplet 3/2 {sol'16 fad'16 mi'16} si'8(
       si'16) la'16 sol'16 fad'16 \tuplet 3/2 {sol'16 fad'16 mi'16} sol'8( 
       sol'16) fad'16 mi'16 re'16 
     | \tuplet 3/2 {mi'16 re'16 dod'16} mi'8( mi'16) re'16 dod'16 si16  
