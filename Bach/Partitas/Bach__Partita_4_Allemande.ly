@@ -138,6 +138,14 @@ stopBarre = \stopTextSpan
     | mi'32 fa'32 sol'32 fa'32 mi'32 fa'32 mi'32 re'32( 
       re'8.) \tuplet 3/2 {dod'32 re'32 mi'32} re'16 dod'16 dod'16 re'16
       re'16 mi'16 sold'16 si'16
+    | re'32 mi'32 fa'32 mi'32 re'32 mi'32 re'32 do'32( 
+      do'8.) \tuplet 3/2 {si32 do'32 re'32}
+      do'16 si16 si16 do'16 do'16 fad'32 sold'32 la'16 do'16(
+    | \tuplet 3/2 {do'16) si16 la16} \tuplet 3/2 {si16 la16 sold16}
+      \tuplet 3/2 {fa'16 mi'16 re'16} \tuplet 3/2 {mi'16 re'16 do'16}
+      \tuplet 3/2 {la'16 sold'16 fad'16} \tuplet 3/2 {sold'16 fad'16 mi'16}
+      \tuplet 3/2 {do''16 si'16 la'16} \tuplet 3/2 {si'16 la'16 sold'16}
+    | 
   }
   \layout {}
   \midi{}
