@@ -191,13 +191,14 @@ stopBarre = \stopTextSpan
     | sol,16( si16 do'16) si16  sol,16( la16 do'16) la16 sol,16( sol16 do'16) sol16
     | sol,16( la16 do'16) la16 sol,16( la16 fa'16)\1 la16 sol,16( la16 do'16)\2 la16
     | sol,16( la16 si16) la16 sol,16( sol16 si16) sol16 sol,16( fa16 si16) fa16
-    | sol,16( sol16 si16) sol16 sol,16( sol16 mi'16) sol16 sol,16( sol16 si16) sol16
+    | sol,16( sol16 si16) sol16 sol,16( sol16\2 mi'16) sol16\4 sol,16( sol16 si16) sol16
     | sol,16( sol16 la16) sol16 sol,16( fa16 la16) fa16 sol,16( mi16 la16) mi16
     | sol,16( fa16 la16) fa16 sol,16( fa16 re'16) fa16 sol,16( fa16 la16) fa16
     | sol,16( fa16 si16) fa16 sol,16( fa16 re'16) fa16 sol,16( fa16 si16) fa16
-    | sol,16( mi16 do'16) mi16 sol,16( mi16 mi'16) mi16 sol,16( mi16 do'16) mi16
+    | sol,16( mi16 do'16) mi16 sol,16( mi16 mi'16)\open mi16 sol,16( mi16 do'16) mi16
     | sol,16( fa16 si16) fa16 sol,16( fa16 re'16) fa16 sol,16( fa16 la16) fa16
-    | sol,16( mib16 do'16) mib16 sol,16( mib16 mib'16) mib16 sol,16( mib16 do'16) mib16
+    | sol,16( mib16\1 do'16)-3 mib16 sol,16( mib16\1 mib'16)^\markup{\bold\teeny x4} 
+      mib16 sol,16( mib16 do'16) mib16
     | sol,16( fad16 do'16) fad16 sol,16( re16 do'16) re16 sol,16( mi!16 do'16) mi16
     | sol,16( fad16 do'16) fad16  sol,16( mi16 do'16) mi16 sol,16( fad16 do'16) fad16 
     \bar "||" \mark \default
@@ -206,14 +207,15 @@ stopBarre = \stopTextSpan
     | fa16) re16( la16 sol16 fa16 mi16 re16 do!16) fa16 re16 fa16 do16 
     | fa16 si,16 fa16 sol16( fa16) si,16 fa16 sol16( fa16) si,16 fa16 sol16(
     | mi16) do16( sol16 fa16 mi16 re16 do16 si,16) do16 la,16 do16 sol,16
-    | do16 fad,16 do16 re16( do16) fad,16  do16 re16( do16) fad,16 do16 re16
-    | si,16 sol,16 si,16 re16 si,16 sol,16 si,16 re16 si,16 fa,!16 si,16 re16
+    | do16\1 fad,16 do16 re16( do16) fad,16  do16 re16( do16) fad,16 do16 re16
+    | si,16\3 sol,16 si,16 re16 si,16 sol,16 si,16 re16 si,16 fa,!16 si,16 re16
     | sib,16 mi,16 sib,16 do16( sib,16) mi,16 sib,16 do16( sib,16) mi,16 sib,16 do16
     | la,16 fa,16 la,16 do16 la,16 fa,16 la,16 do16 la,16 mi,16 la,16 do16
     | si,!16 re,16 si,16 fa16 si,16 re,16 si,16 fa16 si,16 re,16 si,16 fa16
     \bar "||" \mark \default
       mi16 do,16 re,16 mi,16 fa,16 sol,16 la,16 si,16 do16 re16 mi16 fa16
-    | sol16 mi16 do16( re16 mi16 fa16 sol16 la16 sib16 la16) sib16 sol16
+    | sol16 mi16 do16( re16 mi16 fa16 sol16 la16 sib16^\markup{\bold\teeny x1} 
+      la16) sib16 sol16
     | la16 fa16 re16( mi16 fa16 sol16 la16 si!16 do'16 si16) do'16 la16
     | si16 sol16 mi16( fa16 sol16 la16 si16 do'16 re'16 do'16) re'16 si16
     | do'16 la16 fa16( sol16 la16 si16 do'16 re'16 mi'16 re'16) mi'16 do'16
