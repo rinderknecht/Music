@@ -95,7 +95,7 @@ stopBarre = \stopTextSpan
 
     | <<sol,2 re2
         \appoggiatura {\hide Stem \parenthesize do'8 \undo \hide Stem} si2-+>>
-      \grace{ la16( si16)} <<re4 la4)>>
+      \grace{ la16( si16)} <<re4 la4>>
     | la,8(\upbow fad8) do'4 si8( do'16 re'16)
     | do'8( si8) la8( sol8) fad8( mi8)
     | fad8(\1 sol16 la16) sol8( fad8) mi8(\1 fad8)
