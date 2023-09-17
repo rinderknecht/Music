@@ -117,8 +117,8 @@ stopBarre = \stopTextSpan
     | do,4( do,16) re,16 mi,16 fa,16 sol,16 la,16 si,16 do16
     | re16( do16 si,16 la,16) sol,16( la,16 si,16 do16) re16( mi16 fa16 re16)
     | mi16( fa16 mi16 re16) do16( re16 mi16 fa16) sol16( la16 si16 do'16)
-    | re'16( do'16 si16 la16) sol16( la16 si16 do'16) re'16( mi'16 fa'16 re'16)
-    | mi'16( fa'16 mi'16 re'16) do'16 do'16 si16 la16 sol16 fa16 mi16 re16
+    | re'16( do'16 si16 la16) sol16( la16 si16 do'16) re'16( mi'16 fa'16^\markup{\teeny\bold x1} re'16)
+    | mi'16( fa'16^\markup{\teeny\bold x1} mi'16 re'16) do'16 do'16 si16 la16 sol16 fa16 mi16 re16
     \bar "||" \mark \default
       do16[^\vibrato \breathe si16]\downbow( do'16\1 re'16)^\markup{\teeny\bold x2} 
       mi'16( re'16 do'16\2 si16) la16 do'16 sol16 do'16
@@ -155,7 +155,7 @@ stopBarre = \stopTextSpan
       sold16) si16 fa!16 mi16( fa16) 
       \startModernBarre #2 #1 si16( mi16 \stopBarre re16)
     \bar "||" \mark \default
-      do16 \startModernBarre #3 #1 la,16 
+      do16\p \startModernBarre #3 #1 la,16 
       do16 mi16 \stopBarre do16 la,16 do16 mi16 la16 do'16 la16 mi16
     | do16 la,16 do16 mi16 do16 la,16 do16 mi16 la16 do'16 la16 fa16
     | re16 si,16 re16 sol16 re16 si,16 re16 sol16 si16 re'16 si16 sol16
@@ -164,13 +164,13 @@ stopBarre = \stopTextSpan
       re'16 sib16 sol16
     | mi16 do16 mi16 sol16 mi16 do16 mi16 sol16 do'16 sib16^\markup{\bold\teeny x1} la16 sol16
     \bar "||" \mark \default
-      la16^\allongerUne fa16( mi16 fa16 sol16 la16 si!16 do'16 re'16) la16 fa16 re16
+      la16\mf^\allongerUne fa16( mi16 fa16 sol16 la16 si!16 do'16 re'16) la16 fa16 re16
     | sol16_\markup{\small\italic talon} mi16( re16 mi16 fa16 sol16 la16 si16 do'16) la16 mi16 do16
     \bar "||" \mark \default
-      fa16 re16 fa16 sol16( fa16) re16 fa16 sol16( fa16) do16 fa16 sol16(
+      fa16\> re16 fa16 sol16( fa16) re16 fa16 sol16( fa16) do16 fa16 sol16(
     | fa16) si,16 fa16 sol16( fa16) la,16 fa16 sol16( fa16) sol,16 fa16 sol16(
     \bar "||" \mark \default
-      mi16) sol,16 do,16( sol,16 mi16) sol,16 do,16( sol,16 mi16) re16 do16 si,16
+      mi16)\! sol,16 do,16( sol,16 mi16) sol,16 do,16( sol,16 mi16) re16 do16 si,16
       \startModernBarre #3 #1 la,16( mi16 \stopBarre 
       do'16) mi16 la,16( mi16 do'16) mi16 la,16 sol16 fa16 mi16
     | fa16 \startModernBarre #4 #1 la,16 re,16( \stopBarre 
@@ -191,39 +191,39 @@ stopBarre = \stopTextSpan
     | sol,16( si16 do'16) si16  sol,16( la16 do'16) la16 sol,16( sol16 do'16) sol16
     | sol,16( la16 do'16) la16 sol,16( la16 fa'16)\1 la16 sol,16( la16 do'16)\2 la16
     | sol,16( la16 si16) la16 sol,16( sol16 si16) sol16 sol,16( fa16 si16) fa16
-    | sol,16( sol16 si16) sol16 sol,16( sol16\2 mi'16) sol16\4 sol,16( sol16 si16) sol16
+    | sol,16( sol16 si16) sol16 sol,16( sol16\2 mi'16) sol16 sol,16( sol16\4 si16) sol16
     | sol,16( sol16 la16) sol16 sol,16( fa16 la16) fa16 sol,16( mi16 la16) mi16
     | sol,16( fa16 la16) fa16 sol,16( fa16 re'16) fa16 sol,16( fa16 la16) fa16
     | sol,16( fa16 si16) fa16 sol,16( fa16 re'16) fa16 sol,16( fa16 si16) fa16
     | sol,16( mi16 do'16) mi16 sol,16( mi16 mi'16)\open mi16 sol,16( mi16 do'16) mi16
     | sol,16( fa16 si16) fa16 sol,16( fa16 re'16) fa16 sol,16( fa16 la16) fa16
-    | sol,16( mib16\1 do'16)-3 mib16 sol,16( mib16\1 mib'16)^\markup{\bold\teeny x4} 
+    | sol,16( mib16\1 do'16)-3 mib16 sol,16( mib16 mib'16)^\markup{\bold\teeny xx4} 
       mib16 sol,16( mib16 do'16) mib16
     | sol,16( fad16 do'16) fad16 sol,16( re16 do'16) re16 sol,16( mi!16 do'16) mi16
     | sol,16( fad16 do'16) fad16  sol,16( mi16 do'16) mi16 sol,16( fad16 do'16) fad16 
     \bar "||" \mark \default
-      sol,16 sol16( si16 la16 sol16 fa!16 mi16 re16) sol16 mi16 sol16 re16
-    | sol16 dod16 sol16 la16( sol16) dod16 sol16 la16( sol16) dod16 sol16 la16(
-    | fa16) re16( la16 sol16 fa16 mi16 re16 do!16) fa16 re16 fa16 do16 
-    | fa16 si,16 fa16 sol16( fa16) si,16 fa16 sol16( fa16) si,16 fa16 sol16(
-    | mi16) do16( sol16 fa16 mi16 re16 do16 si,16) do16 la,16 do16 sol,16
-    | do16\1 fad,16 do16 re16( do16) fad,16  do16 re16( do16) fad,16 do16 re16
+      sol,16 sol16( si16 la16 sol16 fa!16 mi16 re16) sol16 mi16\startGroup sol16 re16
+    | sol16 dod16\3\stopGroup sol16 la16( sol16) dod16 sol16 la16( sol16) dod16 sol16 la16(
+    | fa16)\2 re16( la16 sol16 fa16 mi16 re16 do!16) fa16 re16\startGroup fa16 do16 
+    | fa16 si,16\stopGroup fa16 sol16( fa16) si,16 fa16 sol16( fa16) si,16 fa16 sol16(
+    | mi16) do16( sol16 fa16 mi16 re16 do16 si,16) do16 la,16\startGroup do16 sol,16
+    | do16\1 fad,16\stopGroup do16 re16( do16) fad,16  do16 re16( do16) fad,16 do16 re16
     | si,16\3 sol,16 si,16 re16 si,16 sol,16 si,16 re16 si,16 fa,!16 si,16 re16
     | sib,16 mi,16 sib,16 do16( sib,16) mi,16 sib,16 do16( sib,16) mi,16 sib,16 do16
     | la,16 fa,16 la,16 do16 la,16 fa,16 la,16 do16 la,16 mi,16 la,16 do16
     | si,!16 re,16 si,16 fa16 si,16 re,16 si,16 fa16 si,16 re,16 si,16 fa16
     \bar "||" \mark \default
-      mi16 do,16 re,16 mi,16 fa,16 sol,16 la,16 si,16 do16 re16 mi16 fa16
-    | sol16 mi16 do16( re16 mi16 fa16 sol16 la16 sib16^\markup{\bold\teeny x1} 
-      la16) sib16 sol16
-    | la16 fa16 re16( mi16 fa16 sol16 la16 si!16 do'16 si16) do'16 la16
-    | si16 sol16 mi16( fa16 sol16 la16 si16 do'16 re'16 do'16) re'16 si16
-    | do'16 la16 fa16( sol16 la16 si16 do'16 re'16 mi'16 re'16) mi'16 do'16
-    | si16( la16 si16) sol16 fa16( mi16 fa16) re16 si,16( la,16 si,16) sol,16
+      mi16 do,16\< re,16 mi,16 fa,16 sol,16 la,16 si,16 do16 re16 mi16 fa16
+    | sol16\! mi16 do16(\< re16 mi16 fa16 sol16 la16 sib16^\markup{\bold\teeny x1} 
+       la16)\! sib16 sol16
+    | la16 fa16 re16(\< mi16 fa16 sol16 la16 si!16 do'16 si16)\! do'16 la16
+    | si16 sol16 mi16(\< fa16 sol16 la16 si16 do'16 re'16 do'16)\! re'16 si16
+    | do'16 la16 fa16(\< sol16 la16 si16 do'16 re'16 mi'16 re'16)\! mi'16 do'16
+    | si16(\> la16 si16) sol16 fa16( mi16 fa16) re16 si,16( la,16 si,16) sol,16\!
     \bar "||" \mark \default
-      <<si4 re4 sol,4 fa,4>> r4 r4
-    | mi,16 re'16( si16 la16) sol16 fa16 mi16 re16 do16 sol,16 mi,16 sol,16
-    | <<la4 sol4 sol,4 mib,4>> r4 r4
+      <<si4 re4 sol,4 fa,4\f>> r4 r4
+    | mi,16\downbow do'16( si16 la16) sol16 fa16 mi16 re16 do16 sol,16 mi,16 sol,16
+    | <<la4 sol4 sol,4 mib,4\f>> r4 r4
     | <<si4 fa4 sol,4 re,4>> r4 r4
     | <<do'4 mi4 sol,4 do,4>> <<{do'4( si4)}\\{<<re2 sol,2>>}>>
     | <<do'4( mi4 sol,4 do,4>> do'16) mi16( do'16 re'16) do'16( mi16 do'16) re'16
