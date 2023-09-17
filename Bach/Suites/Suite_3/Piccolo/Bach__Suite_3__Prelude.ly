@@ -116,9 +116,9 @@ stopBarre = \stopTextSpan
       do'8\upbow si16 la16 sol16 fa16 mi16 re16 do16 sol,16 mi,16 sol,16
     | do,4( do,16) re,16 mi,16 fa,16 sol,16 la,16 si,16 do16
     | re16( do16 si,16 la,16) sol,16( la,16 si,16 do16) re16( mi16 fa16 re16)
-    | mi16( fa16 mi16 re16) do16( re16 mi16 fa16) sol16( la16 si16 do'16)
+    | mi16(\upbow fa16 mi16 re16) do16( re16 mi16 fa16) sol16( la16 si16 do'16)
     | re'16( do'16 si16 la16) sol16( la16 si16 do'16) re'16( mi'16 fa'16^\markup{\teeny\bold x1} re'16)
-    | mi'16( fa'16^\markup{\teeny\bold x1} mi'16 re'16) do'16 do'16 si16 la16 sol16 fa16 mi16 re16
+    | mi'16(\upbow fa'16^\markup{\teeny\bold x1} mi'16 re'16) do'16 do'16 si16 la16 sol16 fa16 mi16 re16
     \bar "||" \mark \default
       do16[^\vibrato \breathe si16]\downbow( do'16\1 re'16)^\markup{\teeny\bold x2} 
       mi'16( re'16 do'16\2 si16) la16 do'16 sol16 do'16
@@ -199,14 +199,14 @@ stopBarre = \stopTextSpan
     | sol,16( fa16 si16) fa16 sol,16( fa16 re'16) fa16 sol,16( fa16 la16) fa16
     | sol,16( mib16\1 do'16)-3 mib16 sol,16( mib16 mib'16)^\markup{\bold\teeny xx4} 
       mib16 sol,16( mib16 do'16) mib16
-    | sol,16( fad16 do'16) fad16 sol,16( re16 do'16) re16 sol,16( mi!16 do'16) mi16
-    | sol,16( fad16 do'16) fad16  sol,16( mi16 do'16) mi16 sol,16(_\markup{\small\italic rall.} fad16 do'16) fad16 
+    | sol,16( fad16\3 do'16) fad16 sol,16( re16 do'16) re16 sol,16( mi!16 do'16) mi16
+    | sol,16( fad16 do'16) fad16  sol,16( mi16 do'16) mi16 sol,16( fad16 do'16) fad16 
     \bar "||" \mark \default
-      sol,16 sol16( si16 la16 sol16 fa!16 mi16 re16) sol16 mi16\startGroup sol16 re16
+      \stemDown sol,16[ \breathe sol16(] \stemNeutral si16 la16 sol16 fa!16 mi16 re16) sol16 mi16\startGroup sol16 re16
     | sol16 dod16\3\stopGroup sol16 la16( sol16) dod16 sol16 la16( sol16) dod16 sol16 la16(
-    | fa16)\2 re16( la16 sol16 fa16 mi16 re16 do!16) fa16 re16\startGroup fa16 do16 
+    | fa16)\2 re16 la16( sol16 fa16 mi16 re16 do!16) fa16 re16\startGroup fa16 do16 
     | fa16 si,16\stopGroup fa16 sol16( fa16) si,16 fa16 sol16( fa16) si,16 fa16 sol16(
-    | mi16) do16( sol16 fa16 mi16 re16 do16 si,16) do16 la,16\startGroup do16 sol,16
+    | mi16) do16 sol16( fa16 mi16 re16 do16 si,16) do16 la,16\startGroup do16 sol,16
     | do16\1 fad,16\stopGroup do16 re16( do16) fad,16  do16 re16( do16) fad,16 do16 re16
     | si,16\3 sol,16 si,16 re16 si,16 sol,16 si,16 re16 si,16 fa,!16 si,16 re16
     | sib,16 mi,16 sib,16 do16( sib,16) mi,16 sib,16 do16( sib,16) mi,16 sib,16 do16
