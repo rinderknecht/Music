@@ -200,7 +200,7 @@ stopBarre = \stopTextSpan
     | sol,16( mib16\1 do'16)-3 mib16 sol,16( mib16 mib'16)^\markup{\bold\teeny xx4} 
       mib16 sol,16( mib16 do'16) mib16
     | sol,16( fad16 do'16) fad16 sol,16( re16 do'16) re16 sol,16( mi!16 do'16) mi16
-    | sol,16( fad16 do'16) fad16  sol,16( mi16 do'16) mi16 sol,16( fad16 do'16) fad16 
+    | sol,16( fad16 do'16) fad16  sol,16( mi16 do'16) mi16 sol,16(_\markup{\small\italic rall.} fad16 do'16) fad16 
     \bar "||" \mark \default
       sol,16 sol16( si16 la16 sol16 fa!16 mi16 re16) sol16 mi16\startGroup sol16 re16
     | sol16 dod16\3\stopGroup sol16 la16( sol16) dod16 sol16 la16( sol16) dod16 sol16 la16(
@@ -227,8 +227,9 @@ stopBarre = \stopTextSpan
     | <<si4 fa4 sol,4 re,4>> r4 r4
     | <<do'4 mi4 sol,4 do,4>> <<{do'4( si4)}\\{<<re2 sol,2>>}>>
     | <<do'4( mi4 sol,4 do,4>> do'16) mi16( do'16 re'16) do'16( mi16 do'16) re'16
-    | <<sib4( mi4 sol,4 do,4>> sib16) mi16( sib16 do'16) sib16( mi16 sib16) do'16
-    | <<la4( fa4 la,4 do,4>> la16) fa16( mi16 fa16) la16 fa16( mi16 fa16)
+    | <<sib4(\1 mi4-2 sol,4 do,4>> sib16) mi16( sib16-2 do'16)-3 sib16( mi16 sib16) do'16
+    | 
+    <<la4(fa4 la,4 do,4>> la16) fa16( mi16 fa16) la16 fa16( mi16 fa16)
     | <<{si!4( si16) do'16( si16 do'16 si16 do'16 si16 do'16)}\\
         {<<re4( lab,4 do,4>> re16) mi16( re16 mi16 re16 mi16 re16 mi16)}>> 
     | <<\appoggiatura {\hide Stem \parenthesize do'4 \undo \hide Stem} si2.-+( re2.>>
