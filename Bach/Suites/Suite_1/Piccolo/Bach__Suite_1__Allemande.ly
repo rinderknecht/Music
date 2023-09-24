@@ -210,7 +210,7 @@ stopBarre = \stopTextSpan
     | fad!16( la16 do'16\1 mi'16)^\markup{\bold\teeny x4} re'8.-2^\vibrato
       do16\4\upbow si,16( sol16) la,16 sol,16
       \startModernBarre #4 #1 re,16( la,16) \stopBarre sol16 fad16
-    | sol16 sol,16(\p si,16) re16 sol16( si16) re'16 fad'16
+    | sol16 sol,16(\p si,16 re16) sol16( si16) re'16 fad'16
       sol'16( re'16) si16 sol16 sol,8
     }
   }
