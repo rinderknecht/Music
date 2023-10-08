@@ -159,10 +159,14 @@ stopBarre = \stopTextSpan
       fad'16) fad'32 sold'32 la'32 si'32 dod''16(
       dod''32) la'32 si'32 dod''32 si'16 sold'16(
       sold'16) sold'32 la'32 si'32 dod''32 re''16(
-    | \tuplet 3/2 {re''16 dod''16 si'16}
+    | \tuplet 3/2 {re''16) dod''16 si'16}
       \tuplet 3/2 {dod''16 si'16 la'16}
       \tuplet 3/2 {re''16 do''16 si'16}
       \tuplet 3/2 {do''16 si'16 la'16}
+      do''!16 red'8  mi'16( 
+      \tuplet 3/2 {mi'16) la'16 si'16}
+      \tuplet 3/2 {do''16 si'16 la'16}
+    | fa''!16
       
   }
   \layout {}
