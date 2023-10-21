@@ -1,6 +1,6 @@
 #(set-global-staff-size 21)
 
-\version "2.18.2"
+\version "2.24.0"
 
 \header {
   title = "Suite III (BWV 1009)"
@@ -51,7 +51,7 @@ vibrato = \markup {
 }
 
 startModernBarre =
-#(define-event-function (parser location fretnum partial)
+#(define-event-function (fretnum partial)
    (number? number?)
     #{
       \tweak bound-details.left.text
@@ -100,11 +100,11 @@ stopBarre = \stopTextSpan
   \new Staff \with{instrumentName=#"Piccolo"}{
     \override Hairpin.to-barline = ##f
     \override Beam.auto-knee-gap = #2
-    \override ParenthesesItem.padding = #0.1
-    \override ParenthesesItem.font-size = #-1
+    \override Parentheses.padding = #0.1
+    \override Parentheses.font-size = #-1
     \override BreathingSign.text = \markup {
       \translate #'(-1.75 . 1.6)
-      \musicglyph #"scripts.rcomma"
+      \musicglyph "scripts.rcomma"
     }
 
     \tempo "Prélude"
@@ -117,13 +117,13 @@ stopBarre = \stopTextSpan
     | do,4( do,16) re,16 mi,16 fa,16 sol,16 la,16 si,16 do16
     | re16( do16 si,16 la,16) sol,16( la,16 si,16 do16) re16( mi16 fa16 re16)
     | mi16(\upbow fa16 mi16 re16) do16( re16 mi16 fa16) sol16( la16 si16 do'16)
-    | re'16( do'16 si16 la16) sol16( la16 si16 do'16) re'16( mi'16 fa'16^\markup{\teeny\bold x1} re'16)
-    | mi'16(\upbow fa'16^\markup{\teeny\bold x1} mi'16 re'16) do'16 do'16 si16 la16 sol16 fa16 mi16 re16
+    | re'16( do'16 si16 la16) sol16( la16 si16 do'16) re'16(\1 mi'16 fa'16 re'16)
+    | mi'16(\upbow fa'16 mi'16 re'16) do'16\2 do'16 si16 la16 sol16 fa16 mi16 re16
     \bar "||" \mark \default
       do16[^\vibrato \breathe si16]\downbow( do'16\1 re'16)^\markup{\teeny\bold x2} 
       mi'16( re'16 do'16\2 si16) la16 do'16 sol16 do'16
-    | fad16(^\vibrato mi16 fad16 sol16) la16( sol16 fad16 mi16) re16 fad16\1 do16 fad16
-    | si,16[^\vibrato \breathe la16\open](\downbow si16\1 do'16) re'16( do'16 si16 la16) sol16 si16 fad16 si16
+    | fad16(^\vibrato mi16 fad16 sol16) la16( sol16 fad16 mi16) re16 fad16 do16 fad16
+    | si,16[^\vibrato \breathe la16\open](\downbow si16 do'16) re'16( do'16 si16 la16) sol16 si16 fad16 si16
     | mi16(^\vibrato re16 mi16 fad16) sol16( fad16 mi16 re16) do16 mi16 si,16 mi16
     | la,16[^\vibrato \breathe sol16](\downbow la16 si16) do'16( si16 la16 sol16) fad16 la16 mi16 la16
     | re16(^\allongerUne do16 re16 mi16) fad16( mi16 re16 do16) si,16 re16 la,16 re16
@@ -138,7 +138,7 @@ stopBarre = \stopTextSpan
     | do'16( re'16 do'16 si16) la16 fa!16( mi16 re16) do16( si,16 la,16 sol,!16)
     | fa,16 la,16( si,16^\markup{\teeny\bold x2} dod16)^\markup{\teeny\bold x4} 
       re16( mi16 fa16) re16 si16\4 sold16-1 la16 re16-2
-    \startModernBarre #4 #1 mi,16\1 si,16( \stopBarre re16\open la16)\2 
+    \startModernBarre #4 #1 mi,16\1 si,16( re16\open \stopBarre la16)\2 
     sold16 si16 mi16\1 sold16 si16 re'16\2 do'16^\markup{\teeny\bold x1} 
     sold16^\markup{\teeny\bold x3}
     \bar "||" \mark \default
@@ -152,8 +152,7 @@ stopBarre = \stopTextSpan
     | red16-1 do'16 la16 sold16(\3 la16)-4 do'16^\markup{\teeny\bold x1} 
       la16\open sold16(-3 la16)-4 do'16(\2 la16 fa!16)
     | re!16 si16 sold16^\markup{\teeny\bold x4} fad16(^\markup{\teeny\bold x2} 
-      sold16) si16 fa!16 mi16( fa16) 
-      \startModernBarre #2 #1 si16( mi16 \stopBarre re16)
+      sold16) si16 fa!16 mi16( fa16) \startModernBarre #2 #1 si16( mi16 re16) \stopBarre %re16)
     \bar "||" \mark \default
       do16\p \startModernBarre #3 #1 la,16 
       do16 mi16 \stopBarre do16 la,16 do16 mi16 la16 do'16 la16 mi16
