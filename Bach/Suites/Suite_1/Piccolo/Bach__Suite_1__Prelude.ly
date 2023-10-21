@@ -1,6 +1,6 @@
 #(set-global-staff-size 21)
 
-\version "2.18.2"
+\version "2.24.0"
 
 \header {
   title = "Suite I (BWV 1007)"
@@ -21,7 +21,7 @@
   print-page-number = ##f
   ragged-last-bottom = ##t
   ragged-bottom = ##f
-%  ragged-last = ##t
+  ragged-last = ##t
 }
 
 % \phrasingSlurDashed
@@ -51,7 +51,7 @@ vibrato = \markup {
 }
 
 startModernBarre =
-#(define-event-function (parser location fretnum partial)
+#(define-event-function (fretnum partial)
    (number? number?)
     #{
       \tweak bound-details.left.text
@@ -94,7 +94,7 @@ stopBarre = \stopTextSpan
     \override Hairpin.to-barline = ##f
     \override BreathingSign.text = \markup {
       \translate #'(-1.75 . 1.6)
-      \musicglyph #"scripts.rcomma"
+      \musicglyph "scripts.rcomma"
     }
 
     \tempo "Prélude"
@@ -104,7 +104,7 @@ stopBarre = \stopTextSpan
 
     | sol,16( re16 si16)   la16 si16  re16  si16  re16
       sol,16( re16 si16)   la16 si16  re16  si16  re16
-    | sol,16( \startModernBarre #2 #1 mi16 do'16)\stopBarre  si16 do'16 mi16  do'16 mi16
+    | sol,16( mi16 do'16)  si16 do'16 mi16  do'16 mi16
       sol,16( mi16 do'16)  si16 do'16 mi16  do'16 mi16
     | sol,16( fad16 do'16) si16 do'16 fad16 do'16 fad16
       sol,16( fad16 do'16) si16 do'16 fad16 do'16 fad16
@@ -213,15 +213,15 @@ stopBarre = \stopTextSpan
       mi16 fa!16^\vibrato re16 fad16\1 re16
       sol16 re16 sold16 re16 la16\open re16 sib16\1 re16
     | si!16\1 re16 do'16-2 re16 dod'16 re16 re'16 re16
-      mib'16\4 re16 mi'!16\open re16 fa'!16\1 re16 fad'16\1 re16\f\!
+      mib'16\1 re16 mi'!16-2 re16 fa'!16-3 re16 fad'16\1 re16\f\!
     | \clef "tenor"
-      sol'16\2^\markup{\small\italic "al tempo"} si16(-1 re16\open si16) sol'16 si16 sol'16 si16
+      sol'16-2 si16(-1 re16\open si16) sol'16 si16 sol'16 si16
       sol'16 si16( re16 si16) sol'16 si16 sol'16 si16
     | sol'16 la16(\open re16 la16) sol'16 la16 sol'16 la16
       sol'16 la16( re16 la16) sol'16 la16 sol'16 la16
     | fad'16-1^\vibrato do'16(-2 re16 do'16) fad'16 do'16 fad'16 do'16
-      fad'16 do'16( re16 do'16)
-      fad'16_\markup{\small\italic "ritardando"} do'16 fad'16 do'16
+      fad'16^\markup{\small\italic "ritardando"} do'16( re16 do'16)
+      fad'16 do'16 fad'16 do'16
     | << sol,1_\markup{\small\italic "solo"} <si-1>1 <sol'-2>1^\vibrato\fermata>>
 
     \bar "|."
