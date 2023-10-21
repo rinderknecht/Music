@@ -1,6 +1,6 @@
 #(set-global-staff-size 21)
 
-\version "2.18.2"
+\version "2.24.0"
 
 \header {
   tagline  = ""
@@ -24,15 +24,15 @@
 
 % function parentheAll allows for accidental symbol to be included in parentheses
 %
-parentheAll = #(define-music-function (parser location note) (ly:music?)
+parentheAll = #(define-music-function (note) (ly:music?)
 #{
-  \once \override ParenthesesItem.font-size = #-1
-  \once \override ParenthesesItem.stencil = #(lambda (grob)
+  \once \override Parentheses.font-size = #-1
+  \once \override Parentheses.stencil = #(lambda (grob)
        (let* ((acc (ly:grob-object (ly:grob-parent grob Y) 'accidental-grob))
               (dot (ly:grob-object (ly:grob-parent grob Y) 'dot)))
          (if (not (null? acc)) (ly:pointer-group-interface::add-grob grob 'elements acc))
          (if (not (null? dot)) (ly:pointer-group-interface::add-grob grob 'elements dot))
-         (parentheses-item::print grob)))
+         (parentheses-interface::print grob)))
   \parenthesize $note
 #})
 
@@ -41,7 +41,7 @@ parentheAll = #(define-music-function (parser location note) (ly:music?)
 % \slurSolid
 
 startModernBarre =
-#(define-event-function (parser location fretnum partial)
+#(define-event-function (fretnum partial)
    (number? number?)
     #{
       \tweak bound-details.left.text
@@ -116,9 +116,9 @@ stopBarre = \stopTextSpan
     }
 
     \repeat volta 2 {
-    | <<re,8 la,8 \startModernBarre #4 #1 fad8>> mi16(\stopBarre re16) <<re,4. la,4. fad4. do'4.>>
+    | <<re,8 la,8 \startModernBarre #4 #1 fad8>> mi16( re16) <<re,4. \stopBarre la,4. fad4. do'4.>>
       si16( la16)
-    | <<sol,16 re16 si16>> fad16( sol16 \startModernBarre #4 #2 mi16) <<la,8. red8.(-+\stopBarre>> mi16)\1
+    | <<sol,16 re16 si16>> fad16( sol16 \startModernBarre #4 #2 mi16) <<la,8. red8.(-+>> mi16)\1\stopBarre
       fad16( sol16 la16\open si16)
     | red16^\markup{\teeny\bold x1} la16( si16 do'16) 
       \appoggiatura {\hide Stem \parenthesize do'4 \undo \hide Stem}  
@@ -128,7 +128,7 @@ stopBarre = \stopTextSpan
     | sol16( mi16) fad16( red16)^\markup{\bold\teeny x1} mi4 mi,4\downbow
     | <<si,8. re!8.(\upbow>> mi32 fa32) <<do,8. sol,8. mi8.(>> fad16)
       sol16( la16 si16 do'16)
-    | sold,16^\markup{\bold\teeny x1} re'16( do'16 \startModernBarre #3 #1 si16) <<la,8. mi8. do'8.(\stopBarre>> si16)
+    | sold,16^\markup{\bold\teeny x1} re'16( do'16 \startModernBarre #3 #1 si16) <<la,8. mi8. do'8.(>> si16)\stopBarre
       la16( sol!16 fad16 mi16)
     | <<{re4( re16)}\\{r16 si,16 do16 la,16 si,16 mi16^( fad16 sol16)}>>
       la16( do'16) si16( sol16)

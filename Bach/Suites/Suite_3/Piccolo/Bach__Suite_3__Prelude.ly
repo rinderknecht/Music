@@ -172,12 +172,12 @@ stopBarre = \stopTextSpan
       mi16)\! sol,16 do,16( sol,16 mi16) sol,16 do,16( sol,16 mi16) re16 do16 si,16
       \startModernBarre #3 #1 la,16( mi16 \stopBarre 
       do'16) mi16 la,16( mi16 do'16) mi16 la,16 sol16 fa16 mi16
-    | fa16 \startModernBarre #4 #1 la,16 re,16( \stopBarre 
-      la,16 fa16) la,16 re,16_( la,16 fa16) mi16 re16 do16\2
+    | fa16 \startModernBarre #4 #1 la,16 re,16( la,16 \stopBarre 
+      fa16) la,16 re,16_( la,16 fa16) mi16 re16 do16\2
     | si,16(^\markup{\teeny III__1} fad16 
       re'16) fad16 si,16( fad16 re'16) fad16 si,16 la16 sol16 fad16
-    | sol16 \startModernBarre #4 #1 si,16 mi,16( \stopBarre 
-      si,16 sol16) si,16 mi,16_( si,16 sol16) fa!16\2 mi16 re16
+    | sol16 \startModernBarre #4 #1 si,16 mi,16( si,16 \stopBarre 
+      sol16) si,16 mi,16_( si,16 sol16) fa!16\2 mi16 re16
       \startModernBarre #4 #1 do16( sol16 \stopBarre mi'16)-3 sol16 
       do16( sol16 mi'16) sol16 do16 sib16-4 la16 sol16
     | la16-3 do16-1 fa,16(-1 do16 la16) do16 fa,16_( do16 la16) sol16 fa16\2 mi16

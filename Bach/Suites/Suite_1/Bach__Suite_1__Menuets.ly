@@ -1,6 +1,6 @@
 #(set-global-staff-size 21)
 
-\version "2.18.2"
+\version "2.24.0"
 
 \header {
   tagline  = ""
@@ -37,7 +37,7 @@ vibrato = \markup {
 }
 
 startModernBarre =
-#(define-event-function (parser location fretnum partial)
+#(define-event-function (fretnum partial)
    (number? number?)
     #{
       \tweak bound-details.left.text

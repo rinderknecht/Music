@@ -1,6 +1,6 @@
 #(set-global-staff-size 21)
 
-\version "2.18.2"
+\version "2.24.0"
 
 \header {
   title = "Suite III (BWV 1009)"
@@ -51,7 +51,7 @@ vibrato = \markup {
 }
 
 startModernBarre =
-#(define-event-function (parser location fretnum partial)
+#(define-event-function (fretnum partial)
    (number? number?)
     #{
       \tweak bound-details.left.text
@@ -100,11 +100,11 @@ stopBarre = \stopTextSpan
   \new Staff {
     \override Hairpin.to-barline = ##f
     \override Beam.auto-knee-gap = #2
-    \override ParenthesesItem.padding = #0.1
-    \override ParenthesesItem.font-size = #-1
+    \override Parentheses.padding = #0.1
+    \override Parentheses.font-size = #-1
     \override BreathingSign.text = \markup {
       \translate #'(-1.75 . 1.6)
-      \musicglyph #"scripts.rcomma"
+      \musicglyph "scripts.rcomma"
     }
 
     \tempo "Bourrée I"
@@ -155,11 +155,11 @@ stopBarre = \stopTextSpan
   \new Staff {
     \override Hairpin.to-barline = ##f
     \override Beam.auto-knee-gap = #2
-    \override ParenthesesItem.padding = #0.1
-    \override ParenthesesItem.font-size = #-1
+    \override Parentheses.padding = #0.1
+    \override Parentheses.font-size = #-1
     \override BreathingSign.text = \markup {
       \translate #'(-1.75 . 1.6)
-      \musicglyph #"scripts.rcomma"
+      \musicglyph "scripts.rcomma"
     }
 
     \tempo "Bourrée II"

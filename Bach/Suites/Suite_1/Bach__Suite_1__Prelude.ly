@@ -1,6 +1,6 @@
 #(set-global-staff-size 21)
 
-\version "2.18.2"
+\version "2.24.0"
 
 \header {
   title = "Suite I (BWV 1007)"
@@ -21,7 +21,7 @@
   print-page-number = ##f
   ragged-last-bottom = ##t
   ragged-bottom = ##f
-%  ragged-last = ##t
+  ragged-last = ##t
 }
 
 % \phrasingSlurDashed
@@ -51,7 +51,7 @@ vibrato = \markup {
 }
 
 startModernBarre =
-#(define-event-function (parser location fretnum partial)
+#(define-event-function (fretnum partial)
    (number? number?)
     #{
       \tweak bound-details.left.text
@@ -93,7 +93,7 @@ stopBarre = \stopTextSpan
     \override Hairpin.to-barline = ##f
     \override BreathingSign.text = \markup {
       \translate #'(-1.75 . 1.6)
-      \musicglyph #"scripts.rcomma"
+      \musicglyph "scripts.rcomma"
     }
 
     \tempo "Prélude"
@@ -103,7 +103,7 @@ stopBarre = \stopTextSpan
 
     | sol,16( re16 si16)   la16 si16  re16  si16  re16
       sol,16( re16 si16)   la16 si16  re16  si16  re16
-    | sol,16( \startModernBarre #2 #1 mi16 do'16)\stopBarre  si16 do'16 mi16  do'16 mi16
+    | sol,16( mi16 do'16)  si16 do'16 mi16  do'16 mi16
       sol,16( mi16 do'16)  si16 do'16 mi16  do'16 mi16
     | sol,16( fad16 do'16) si16 do'16 fad16 do'16 fad16
       sol,16( fad16 do'16) si16 do'16 fad16 do'16 fad16

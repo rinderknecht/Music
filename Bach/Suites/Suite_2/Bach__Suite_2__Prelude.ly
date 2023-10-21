@@ -1,6 +1,6 @@
 #(set-global-staff-size 21)
 
-\version "2.18.2"
+\version "2.24.0"
 
 \header {
   title = "Suite II (BWV 1008)"
@@ -51,7 +51,7 @@ vibrato = \markup {
 }
 
 startModernBarre =
-#(define-event-function (parser location fretnum partial)
+#(define-event-function (fretnum partial)
    (number? number?)
     #{
       \tweak bound-details.left.text
@@ -101,7 +101,7 @@ stopBarre = \stopTextSpan
     \override Hairpin.to-barline = ##f
     \override BreathingSign.text = \markup {
       \translate #'(-1.75 . 1.6)
-      \musicglyph #"scripts.rcomma"
+      \musicglyph "scripts.rcomma"
     }
 
     \tempo "Prélude"

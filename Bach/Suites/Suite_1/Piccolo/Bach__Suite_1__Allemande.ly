@@ -1,6 +1,6 @@
 #(set-global-staff-size 21)
 
-\version "2.18.2"
+\version "2.24.0"
 
 \header {
   tagline  = ""
@@ -24,15 +24,15 @@
 
 % function parentheAll allows for accidental symbol to be included in parentheses
 %
-parentheAll = #(define-music-function (parser location note) (ly:music?)
+parentheAll = #(define-music-function (note) (ly:music?)
 #{
-  \once \override ParenthesesItem.font-size = #-1
-  \once \override ParenthesesItem.stencil = #(lambda (grob)
+  \once \override Parentheses.font-size = #-1
+  \once \override Parentheses.stencil = #(lambda (grob)
        (let* ((acc (ly:grob-object (ly:grob-parent grob Y) 'accidental-grob))
               (dot (ly:grob-object (ly:grob-parent grob Y) 'dot)))
          (if (not (null? acc)) (ly:pointer-group-interface::add-grob grob 'elements acc))
          (if (not (null? dot)) (ly:pointer-group-interface::add-grob grob 'elements dot))
-         (parentheses-item::print grob)))
+         (parentheses-interface::print grob)))
   \parenthesize $note
 #})
 
@@ -63,7 +63,7 @@ vibrato = \markup {
 }
 
 startModernBarre =
-#(define-event-function (parser location fretnum partial)
+#(define-event-function (fretnum partial)
    (number? number?)
     #{
       \tweak bound-details.left.text
@@ -114,8 +114,8 @@ stopBarre = \stopTextSpan
     \set fingeringOrientations = #'(left)
     \override Beam.auto-knee-gap = #2
     \override Hairpin.to-barline = ##f
-    \override ParenthesesItem.padding = #0.1
-    \override ParenthesesItem.font-size = #-1
+    \override Parentheses.padding = #0.1
+    \override Parentheses.font-size = #-1
 
     \tempo "Allemande" 4 = 66
     \time 4/4

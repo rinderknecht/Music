@@ -1,6 +1,6 @@
 #(set-global-staff-size 21)
 
-\version "2.18.2"
+\version "2.24.1"
 
 \header {
   title = "Suite III (BWV 1009)"
@@ -51,7 +51,7 @@ vibrato = \markup {
 }
 
 startModernBarre =
-#(define-event-function (parser location fretnum partial)
+#(define-event-function (fretnum partial)
    (number? number?)
     #{
       \tweak bound-details.left.text
@@ -100,11 +100,11 @@ stopBarre = \stopTextSpan
   \new Staff {
     \override Hairpin.to-barline = ##f
     \override Beam.auto-knee-gap = #2
-    \override ParenthesesItem.padding = #0.1
-    \override ParenthesesItem.font-size = #-1
+    \override Parentheses.padding = #0.1
+    \override Parentheses.font-size = #-1
     \override BreathingSign.text = \markup {
       \translate #'(-1.75 . 1.6)
-      \musicglyph #"scripts.rcomma"
+      \musicglyph "scripts.rcomma"
     }
 
     \tempo "Prélude"
@@ -154,7 +154,7 @@ stopBarre = \stopTextSpan
       la16\open sold16(-3 la16)-4 do'16(\2 la16 fa!16)
     | re!16 si16 sold16^\markup{\teeny\bold x4} fad16(^\markup{\teeny\bold x2} 
       sold16) si16 fa!16 mi16( fa16) 
-      \startModernBarre #2 #1 si16( mi16 \stopBarre re16)
+      \startModernBarre #2 #1 si16( mi16 re16) \stopBarre
     \bar "||" \mark \default
       do16 \startModernBarre #3 #1 la,16 
       do16 mi16 \stopBarre do16 la,16 do16 mi16 la16 do'16 la16 mi16
@@ -174,12 +174,12 @@ stopBarre = \stopTextSpan
       mi16) sol,16 do,16( sol,16 mi16) sol,16 do,16( sol,16 mi16) re16 do16 si,16
       \startModernBarre #3 #1 la,16( mi16 \stopBarre 
       do'16) mi16 la,16( mi16 do'16) mi16 la,16 sol16 fa16 mi16
-    | fa16 \startModernBarre #4 #1 la,16 re,16( \stopBarre 
-      la,16 fa16) la,16 re,16_( la,16 fa16) mi16 re16 do16\2
+    | fa16 \startModernBarre #4 #1 la,16 re,16( 
+      la,16 \stopBarre fa16) la,16 re,16_( la,16 fa16) mi16 re16 do16\2
     | si,16(^\markup{\teeny III__1} fad16 
       re'16) fad16 si,16( fad16 re'16) fad16 si,16 la16 sol16 fad16
-    | sol16 \startModernBarre #4 #1 si,16 mi,16( \stopBarre 
-      si,16 sol16) si,16 mi,16_( si,16 sol16) fa!16\2 mi16 re16
+    | sol16 \startModernBarre #4 #1 si,16 mi,16( 
+      si,16 \stopBarre sol16) si,16 mi,16_( si,16 sol16) fa!16\2 mi16 re16
       \startModernBarre #4 #1 do16( sol16 \stopBarre mi'16)-3 sol16 
       do16( sol16 mi'16) sol16 do16 sib16-4 la16 sol16
     | la16-3 do16-1 fa,16(-1 do16 la16) do16 fa,16_( do16 la16) sol16 fa16\2 mi16

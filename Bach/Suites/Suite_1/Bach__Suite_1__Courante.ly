@@ -1,6 +1,6 @@
 #(set-global-staff-size 21)
 
-\version "2.18.2"
+\version "2.24.0"
 
 \header {
   tagline  = ""
@@ -61,8 +61,8 @@ vibrato = \markup {
     \set fingeringOrientations = #'(left)
     \override Beam.auto-knee-gap = #1
     \override Hairpin.to-barline = ##f
-    \override ParenthesesItem.padding = #0.1
-    \override ParenthesesItem.font-size = #-1
+    \override Parentheses.padding = #0.1
+    \override Parentheses.font-size = #-1
 
     \tempo "Courante"
     \time 3/4

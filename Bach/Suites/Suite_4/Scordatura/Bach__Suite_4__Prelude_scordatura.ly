@@ -1,6 +1,6 @@
 #(set-global-staff-size 21)
 
-\version "2.18.2"
+\version "2.24.1"
 
 \header {
   title = "Suite IV (BWV 1007)"
@@ -69,7 +69,7 @@ vibrato = \markup {
     \override Hairpin.to-barline = ##f
     \override BreathingSign.text = \markup {
       \translate #'(-1.75 . 1.6)
-      \musicglyph #"scripts.rcomma"
+      \musicglyph "scripts.rcomma"
     }
 
     \tempo "Prélude"

@@ -1,6 +1,6 @@
 #(set-global-staff-size 21)
 
-\version "2.18.2"
+\version "2.24.0"
 
 \header {
   tagline  = ""
@@ -37,7 +37,7 @@ vibrato = \markup {
 }
 
 startModernBarre =
-#(define-event-function (parser location fretnum partial)
+#(define-event-function (fretnum partial)
    (number? number?)
     #{
       \tweak bound-details.left.text
@@ -115,8 +115,8 @@ stopBarre = \stopTextSpan
     | si,8( re8) sol4 re8( mi16 fa!16)
     | fa!8( re8 mi8) do8 do,8 si,8
     | dod8(\1 mi8)-4 la4-2 mi8(\1 fad16 sol16)
-    | sol8( mi8 fad8) re8 
-      \startModernBarre #4 #1 re,8 la,8 \stopBarre
+    | sol8( mi8 fad8)
+      \startModernBarre #4 #1 re8 re,8 la,8 \stopBarre
     | re8( fad8 la8)\open do'!8 si8 re'8
     | mi8( sol8 si8) re'8 do'8 mi'8\4
     | re'8[-2 fad8 sol8 si,8]-1 re,8[\1 fad8]
