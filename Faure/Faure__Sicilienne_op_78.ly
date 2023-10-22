@@ -1,6 +1,6 @@
 #(set-global-staff-size 21)
 
-\version "2.18.2"
+\version "2.24.0"
 
 \header {
   title    = "Sicilienne (opus 78)"
@@ -32,7 +32,7 @@
    \tempo "Andantino" 4. =  50
    \clef "tenor"
    \set fingeringOrientations = #'(left)
-%   \compressFullBarRests
+%   \compressEmptyMeasures
 
    \bar "||"
    \mark \default

@@ -1,6 +1,6 @@
 #(set-global-staff-size 20)
 
-\version "2.18.2"
+\version "2.24.0"
 
 \header {
   title    = "Duo I opus 22 (cello I)"

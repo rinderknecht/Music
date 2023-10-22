@@ -1,6 +1,6 @@
 #(set-global-staff-size 21)
 
-\version "2.18.2"
+\version "2.24.0"
 
 \header {
   title    = "Manuscrit Drexel 5871 (WKO 200)"
@@ -26,15 +26,15 @@
 
 % function parentheAll allows for accidental symbol to be included in parentheses
 %
-parentheAll = #(define-music-function (parser location note) (ly:music?)
+parentheAll = #(define-music-function (note) (ly:music?)
 #{
-  \once \override ParenthesesItem.font-size = #-1
-  \once \override ParenthesesItem.stencil = #(lambda (grob)
+  \once \override Parentheses.font-size = #-1
+  \once \override Parentheses.stencil = #(lambda (grob)
        (let* ((acc (ly:grob-object (ly:grob-parent grob Y) 'accidental-grob))
               (dot (ly:grob-object (ly:grob-parent grob Y) 'dot)))
          (if (not (null? acc)) (ly:pointer-group-interface::add-grob grob 'elements acc))
          (if (not (null? dot)) (ly:pointer-group-interface::add-grob grob 'elements dot))
-         (parentheses-item::print grob)))
+         (parentheses-interface::print grob)))
   \parenthesize $note
 #})
 
@@ -67,7 +67,7 @@ parentheAll = #(define-music-function (parser location note) (ly:music?)
       | <<{dod'8[( si8 dod'8 re'8]) la4}\\{sol2 fad4}>>
       | <<{sol4}\\{mi4}>> sol'8( mi'8 fad'8 re'8)
       | sol16( si16 mi'16 sol'16) 
-       \appoggiatura {\hide Stem \parenthesize fad'2 \undo \hide Stem} mi'2-+l
+       \appoggiatura {\hide Stem \parenthesize fad'2 \undo \hide Stem} mi'2-+
       | re'2.\fermata_\markup{\small\italic "Fine"}
      }
 

@@ -1,6 +1,6 @@
 #(set-global-staff-size 21)
 
-\version "2.18.2"
+\version "2.24.0"
 
 \header {
   title    = "Gavotte 2 opus 67"
@@ -141,7 +141,7 @@
      fa8\f\upbow sol8\downbow_\markup{\small\italic "legato"}
    | <<re4 la4\upbow>> la8 si8 <<la,4 mi4 do'4\downbow>> do'8 re'8
    | <<re4 mi'4\1\upbow>> mi'8 fad'8 <<sol,4 si4 sol'4\downbow>> r4
-   | \compressFullBarRests
+   | \compressEmptyMeasures
      R1*3
 
    \mark \default

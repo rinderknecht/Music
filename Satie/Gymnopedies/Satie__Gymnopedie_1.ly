@@ -1,6 +1,6 @@
 #(set-global-staff-size 21)
 
-\version "2.18.2"
+\version "2.24.0"
 
 \header {
   title    = "Gymnopédie 1"
@@ -80,7 +80,7 @@ vibrato = \markup {
     | mi'4^\markup{\bold\teeny x4}\>( re'4 si4\1)
     | re'2.(
     | re'2)\! re'4\downbow\<
-    | sol'2.\4 \mark\markup{\musicglyph #"scripts.coda" }
+    | sol'2.\4 \mark\markup{\musicglyph "scripts.coda" }
     | fad'2.\!
     | si4\1^\vibrato( la4^\vibrato si4^\vibrato)
     | dod'4\1^\vibrato( re'4^\vibrato mi'4^\vibrato)

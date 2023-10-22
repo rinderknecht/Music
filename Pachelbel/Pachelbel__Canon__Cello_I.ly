@@ -1,6 +1,6 @@
 #(set-global-staff-size 21)
 
-\version "2.18.2"
+\version "2.24.0"
 
 \header {
   title    = "Canon"
@@ -33,13 +33,13 @@
     \key re \major
     \clef "tenor"
 
-%    \compressFullBarRests
+%    \compressEmptyMeasures
 
     \mark \default
 
     | fad'4\1 mi'4 re'4 dod'4
     | si4 la4 si4 dod'4
-    | re'4^\markup{\musicglyph #"scripts.segno"} dod'4 si4 la4
+    | re'4^\markup{\musicglyph "scripts.segno"} dod'4 si4 la4
     | sol4 fad4 sol4 mi4
     | re8 fad8 la8 sol8 fad8 re8 fad8 mi8
     | re8 si,8 re8 la8 sol8 si8 la8 sol8

@@ -1,6 +1,6 @@
 #(set-global-staff-size 21)
 
-\version "2.18.2"
+\version "2.24.0"
 
 \header {
   title    = "Concertino opus 35 (Allegro moderato)"
@@ -32,7 +32,7 @@
    \tempo "Allegro moderato"
    \clef "tenor"
    \set fingeringOrientations = #'(left)
-   \compressFullBarRests
+   \compressEmptyMeasures
 
    | R1*4
 

@@ -1,6 +1,6 @@
 #(set-global-staff-size 21)
 
-\version "2.18.2"
+\version "2.24.0"
 
 \header {
   title    = "Canon"
@@ -52,7 +52,7 @@ vibrato = \markup {
 
    re'8\downbow dod'16(si16) la16 si16 sol16 la16
    fad8 re8\upbow r8 mi8\upbow
-   | fad8^\markup{\musicglyph #"scripts.segno"}
+   | fad8^\markup{\musicglyph "scripts.segno"}
      sol8 la8 la,8
      re16 re'16 dod'16 si16 la8 sol8
    | fad8 si8 dod'16 re'16 si16 dod'16

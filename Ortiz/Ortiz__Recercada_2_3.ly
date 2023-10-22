@@ -1,6 +1,6 @@
 #(set-global-staff-size 21)
 
-\version "2.18.2"
+\version "2.24.0"
 
 \header {
   title    = "Recercada segunda (tenor)"
@@ -87,6 +87,6 @@
     \cadenzaOn
     si,8 la,8 sol,2\fermata
     \cadenzaOff
-    \bar ".|"
+    \bar ".|-|"
   }
 }

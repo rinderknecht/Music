@@ -1,6 +1,6 @@
 #(set-global-staff-size 21)
 
-\version "2.18.2"
+\version "2.24.0"
 
 \header {
   title    = "Spring Song"
@@ -34,7 +34,7 @@
     \clef "bass"
 
     \set fingeringOrientations = #'(left)
-    \compressFullBarRests
+    \compressEmptyMeasures
     R1*2
     \mark \default
 

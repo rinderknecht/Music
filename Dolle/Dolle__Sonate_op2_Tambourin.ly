@@ -1,6 +1,6 @@
 #(set-global-staff-size 21)
 
-\version "2.18.2"
+\version "2.24.0"
 
 \header {
   title    = "Sonate opus 2, Suite 3, Tambourin"
@@ -42,7 +42,7 @@
       | <<{mi'8 mi'8 mi'8 mi'8}\\{mi8 mi8 mi 8 mi8}>>
       | <<{dod'4-+}\\{la4}>>
         \clef "bass"
-        la,,4^\markup{\musicglyph #"scripts.segno"}
+        la,,4^\markup{\musicglyph "scripts.segno"}
     }
 
     \repeat volta 2 {
