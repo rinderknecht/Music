@@ -155,7 +155,7 @@ stopBarre = \stopTextSpan
     | \appoggiatura {\hide Stem \parenthesize do8 \undo \hide Stem} si,8.-+
       sol16(^\allongerUne re16 do16 si,16\3 la,16) sol,16(\open
       re16) do16 la,16 si,16( sol,16) re16 fad,16\3^\vibrato
-    | mi,16\3\upbow sol,16( la,16 si,16)
+    | mi,16\3\upbow sol,16( la,16 si,16)^\markup{\bold\teeny x2}
       dod16(^\markup{\bold\teeny x4} re16 mi16 fad16)
       sol16( la16 dod'16 re'16) mi'16\open la16 <sol'\finger 2>8^\vibrato
     | re16\upbow\open sol'16( fad'16-1 mi'16) fad'16(-1
@@ -182,7 +182,7 @@ stopBarre = \stopTextSpan
     | \appoggiatura {\hide Stem \parenthesize la8\2 \undo \hide Stem}
       sold8-+ \appoggiatura fad8(\3 mi8) si16^\allongerUne re16( do16 si,16)
       do16 mi16( fad16^\markup{\bold\teeny x2} sold16) la16( do'16 si16 la16)
-    | re'8\upbow si,16( do16) re16( mi16 fa16 la,16)
+    | re'8\upbow si,16( do16) re16(\startModernBarre #3 #1 mi16 fa16 la,16) \stopBarre
       \appoggiatura {\hide Stem \parenthesize la,8\2 \undo \hide Stem}
       sold,8.-+( mi16-2) si16\1( re'16 do'16
       \startModernBarre #2 #1 si16)
