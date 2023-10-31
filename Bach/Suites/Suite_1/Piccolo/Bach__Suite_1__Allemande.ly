@@ -165,7 +165,9 @@ stopBarre = \stopTextSpan
     | <<sol,8. re8. si8.>> la16\downbow sol16( fad16 mi16) re'16\2
       dod'16( mi'16) la16-4 sol16 fad16( re16)\open la,16\1
       dod16^\markup{\bold\teeny x4}
-    | re,8.(\upbow la,16)\p re16( fad16) la16 dod'16 re'16( la16) fad16 re16 re,8.
+  % | 
+      \startModernBarre #4 #1 re,8.(\upbow la,16)\p \stopBarre 
+      re16( fad16) la16 dod'16 re'16( la16) fad16 re16 re,8.
     }
 
     \repeat volta 2 {
