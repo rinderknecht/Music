@@ -124,7 +124,7 @@ stopBarre = \stopTextSpan
 
     \repeat volta 2 {
     | \partial 16
-      si16^\upbow
+      si16^\upbow_\markup{\bold\teeny G}
     | <<sol,4 re4 si4(^\vibrato>>
       si16_\markup{\italic\small "alla breve"} la16 sol16 fad16 sol16) re16( mi16 fad16
       sol16 la16 si16 do'16)
@@ -132,13 +132,13 @@ stopBarre = \stopTextSpan
       si,16) do16( re16 mi16 fad16 sol16 la16 si16)
     | do'16( la16 sol16 fad16 sol16) mi16( fad16 sol16)
       la,16( re16 fad16 sol16) la16( si16 do'16 la16)
-    | si16(\startGroup sol16) sol16( re16) re16( si,16)
-      si,16( sol,16) sol,8.\stopGroup si16( do'16 si16 la16 sol16)
+    | si16\(( sol16) sol16( re16) re16( si,16)
+      si,16( sol,16) sol,8.\) si16( do'16 si16 la16 sol16)
     | la16( si16 do'16) la16 sol16 fad16( sol16 la16)
       \appoggiatura {\hide Stem \parenthesize mi8\2 \undo \hide Stem} red8.-+
       do'16-3( si16 la16 sol16\4 fad16)
-    | sol16(\startGroup mi16) mi16( si,16)
-      si,16( sol,16) sol,16( mi,16) mi,8.^\vibrato\stopGroup
+    | sol16\(( mi16) mi16( si,16)
+      si,16( sol,16) sol,16( mi,16) mi,8.^\vibrato\)
       si,16\p mi16( sol16) fad16( la16)
     | sol16( fad16 mi16) fad16 sol16( dod'16) sol16 fad16
       sol16( dod'16) mi16 fad16 sol16( mi16 la,16) sol16
@@ -155,8 +155,8 @@ stopBarre = \stopTextSpan
     | \appoggiatura {\hide Stem \parenthesize do8 \undo \hide Stem} si,8.-+
       sol16(^\allongerUne re16 do16 si,16\3 la,16) sol,16(\open
       re16) do16 la,16 si,16( sol,16) re16 fad,16\3^\vibrato
-    | mi,16\3\upbow sol,16( la,16 si,16)^\markup{\bold\teeny x2}
-      dod16(^\markup{\bold\teeny x4} re16 mi16 fad16)
+    | mi,16\3( sol,16 la,16 si,16^\markup{\bold\teeny x2}
+      dod16^\markup{\bold\teeny x4} re16 mi16 fad16)
       sol16( la16 dod'16 re'16) mi'16\open la16 <sol'\finger 2>8^\vibrato
     | re16\upbow\open sol'16( fad'16-1 mi'16) fad'16(-1
       re'16) la16 re'16 re16( fad16 la16 do'!16)
@@ -186,10 +186,10 @@ stopBarre = \stopTextSpan
       do16 mi16( fad16^\markup{\bold\teeny x2} sold16) la16( do'16 si16 la16)
     | re'8\upbow si,16( do16) re16(\startModernBarre #3 #1 mi16 fa16 la,16) \stopBarre
       \appoggiatura {\hide Stem \parenthesize la,8\2 \undo \hide Stem}
-      sold,8.-+( mi16-2) si16\1( re'16 do'16
+      sold,8.-+( mi16-2) si16\1^\vibrato( re'16 do'16
       \startModernBarre #2 #1 si16)
     | <<la,8. mi8. do'8.(\stopBarre>> si16) la16( sol!16 fa!16 mi16)
-      fa16^\allongerUne re16 sib16(^\markup{\bold\teeny x1} la16) sib16( do'16 re'16 la16)
+      fa16^\vibrato re16 sib16(^\markup{\bold\teeny x1} la16) sib16( do'16 re'16 la16)
     | sold16(\1 la16 si!16) mi16\1 fa!16( re16) do16( si,16)
       do16( mi16) la16 \startModernBarre #1 #1 si16
       <<mi8.

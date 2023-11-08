@@ -163,12 +163,12 @@ stopBarre = \stopTextSpan
       re'16 la16 fa16 re16 do'!16( sib16^\markup{\bold\teeny x1} la16)
     \bar "||" \mark \default
       sol16( la16 sib16)^\markup{\bold\teeny x1} re16 mib16^\markup{\bold\teeny x1} 
-      fa16 sol16 la16\3 sib16-4 sol16-1 mib'16-2 sol16-1\(
+      fa16 sol16 la16\3 sib16-4 sol16-1 mib'16-2 sol16\(
     | fa16(\2 sol16 la16)\) dod16^\markup{\bold\teeny x4} re16 mi!16 fa16 sol16 la16 fa16 re'16 fa16\(
     | mi16( fa16 sol16)\) sib,16 la,16 si,!16^\markup{\bold\teeny x2} 
       dod16^\markup{\bold\teeny x4} re16 mi16 sib,16 sol16 sib,16
     \bar "||" \mark \default
-      dod,8\1 la,8-1 sol4\4^\vibrato( sol16) sib16(^\markup{\bold\teeny x1} la16 sol16)
+      dod,8\1 la,8-2 sol4\4^\vibrato( sol16) sib16(^\markup{\bold\teeny x1} la16 sol16)
     | fa16( mi16 re16 mi16) fa16 re16 la16 fa16 re'16 la16 fa16 re16
     | sold,8\upbow^\markup{\bold\teeny x1} fa8 re'4^\vibrato( re'16) fa'16(^\markup{\bold\teeny x1} mi'16 re'16)
     | \clef "tenor"
