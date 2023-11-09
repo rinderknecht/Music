@@ -126,22 +126,22 @@ stopBarre = \stopTextSpan
     | mi16^\vibrato si,16( do16 mi16) sol16 re16( mi16 do16) sib,16( \startModernBarre #3 #1 la,16 mi16) sib,16 \stopBarre 
     \bar "||" \mark \default
       fa,8^\allongerUne la,8 do4(^\vibrato do16) sib,16( la,16 sol,16)
-    | fad,16^\markup{\bold\teeny x4} la,16( sib,16 do16) re,16 do16( sib,16 la,16) 
+    | fad,16^\allongerUne^\markup{\bold\teeny x4} la,16( sib,16 do16) re,16 do16( sib,16 la,16) 
       fad16 mib16(^\markup{\bold\teeny x1} re16 do16)
-    | sib,16( la,16 sol,16) sib,16 re4( re16) do16( sib,16 la,16)
+    | sib,16( la,16 sol,16)^\allongerUne sib,16 re4( re16) do16( sib,16 la,16)
     | sold,16\1^\vibrato si,16(\3 do16 re16) mi,16 re16( do16 si,16) sold16^\markup{\bold\teeny x4} fa16( mi16 re16)
     \bar "||" \mark \default
-      do16( si,16 la,16 do16) fa16( mi16 fa16 sold16)^\markup{\bold\teeny x4} la16( fa16 re16 do16)
+      do16( si,16 la,16^\allongerUne do16) fa16( mi16 fa16 sold16)^\markup{\bold\teeny x4} la16( fa16 re16 do16)
     | si,16(\upbow^\vibrato re16 sold16^\markup{\bold\teeny x4} si16) re'8.(^\vibrato do'16) si16( la16 sold16 la16)
-    | do16^\allongerUne mi16( la16 do'16) mi'8.(\1^\vibrato do'16)-4 si16(\4 la16 sold16 la16) 
-    | re16-2^\vibrato fa16\2( la16 re'16) fa'8.(\2^\vibrato mi'16)-1 re'16(\4 do'16 si16 re'16)
+    | do16^\vibrato mi16( la16 do'16) mi'8.(\1^\vibrato do'16)-4 si16(\4 la16 sold16 la16) 
+    | re16-2^\allongerUne fa16\2( la16 re'16) fa'8.(\2^\vibrato mi'16)-1 re'16(\4 do'16 si16 re'16)
     | mi16\(^\vibrato re'16( do'16 si16) la16 do'16( si16 la16)\)
       re16\(^\allongerUne si16( la16 sold16)^\markup{\bold\teeny x4}
     | do16 la16( sol16 fa16)\) 
       dod16^\markup{\bold\teeny x4}^\allongerUne\( sol16( fa16 mi16) re16 fa16( mi16 re16)\)\breathe
-    | sold,16\1^\vibrato re16( mi16\1 fa16) si16 fa16( mi16 re16) sold,16 re16( do16 si,16)
-    | la,16( si,16 do16 mi16) la16( si16 do'16 la16) mi16( do16 la,16 sol,!16)
-    | \breathe fad,16^\markup{\bold\teeny x4}\upbow la,16( do16 re16) mib8.(\1^\vibrato re16) do16(\4 sib,16 do16) la16^\allongerUne
+    | sold,16\1^\vibrato re16( mi16\1 fa16) si16 fa16( mi16 re16) sold,16^\allongerUne re16( do16 si,16)
+    | la,16(^\allongerUne si,16 do16 mi16) la16( si16 do'16\> la16) mi16( do16 la,16 sol,!16)\!
+    | \breathe fad,16^\allongerUne^\markup{\bold\teeny x4}\upbow la,16( do16 re16) mib8.(\1^\vibrato re16) do16(\4 sib,16 do16) la16^\allongerUne
     | sib,16( la,16 sib,16) re16 sol,16^\allongerUne mib16(\1 fa16^\markup{\bold\teeny x2} sol16)^\markup{\bold\teeny x4} 
       la,16\1^\vibrato sol16( fa16 mib16)
     | re16( do16 re16) fa16 sib,16^\vibrato sol16(\1 la16-3 sib16)-4 
@@ -151,7 +151,7 @@ stopBarre = \stopTextSpan
     | la16( sol16 la16) do'16 fa16^\vibrato re'16(\1 mi'16 fa'16)
       sol16^\vibrato fa'16( mi'16 re'16)
     \bar "||" \mark \default
-      dod'16\3 sol16( fa16 mi16) la,16^\vibrato mi16( fa16 sol16) dod'16( sib16^\markup{\bold\teeny x1} la16) sol16
+      dod'16\3 sol16( fa16 mi16) la,16\fp^\vibrato mi16( fa16 sol16) dod'16( sib16^\markup{\bold\teeny x1} la16) sol16
     | fa16( sol16 la16) dod'16 re'16 la16( sol16 fa16) la16 fa16( mi16 re16)
     | sold16^\markup{\bold\teeny x4} re16( mi16 fa16) la,16^\vibrato fa16( mi16 re16) sold16( fa16 mi16) re16
     | dod16(^\markup{\bold\teeny x4} si,16^\markup{\bold\teeny x2} dod16) 
@@ -165,7 +165,7 @@ stopBarre = \stopTextSpan
       sol16( la16 sib16)^\markup{\bold\teeny x1} re16 mib16^\markup{\bold\teeny x1} 
       fa16 sol16 la16\3 sib16-4 sol16-1 mib'16-2 sol16\(
     | fa16(\2 sol16 la16)\) dod16^\markup{\bold\teeny x4} re16 mi!16 fa16 sol16 la16 fa16 re'16 fa16\(
-    | mi16( fa16 sol16)\) sib,16 la,16 si,!16^\markup{\bold\teeny x2} 
+    | mi16( fa16 sol16)\) sib,16 la,16^\vibrato si,!16^\markup{\bold\teeny x2} 
       dod16^\markup{\bold\teeny x4} re16 mi16 sib,16 sol16 sib,16
     \bar "||" \mark \default
       dod,8\1 la,8-2 sol4\4^\vibrato( sol16) sib16(^\markup{\bold\teeny x1} la16 sol16)
@@ -184,9 +184,9 @@ stopBarre = \stopTextSpan
     | \clef "bass" 
       re'16^\vibrato si!16( la16 si16) fa16( sold16^\markup{\bold\teeny x4} si16) dod'16
       re'16 dod'16 re'16 si16
-    | <<dod'4\fermata mi4 sol,4>> r4 r4
+    | <<dod'4\fermata mi4 sol,4\f>> r4 r4
     \bar "||" \mark \default
-      sib!16^\markup{\bold\teeny x1} sol16( fad16 sol16) mib16^\markup{\bold\teeny x1} sol16 re16 sol16
+      sib!16\f^\markup{\bold\teeny x1} sol16( fad16 sol16) mib16^\markup{\bold\teeny x1} sol16 re16 sol16
       mib16(^\markup{\bold\teeny x1} sol16 sib16)^\markup{\bold\teeny x1} re16^\allongerUne
     | dod16(--^\markup{\bold\teeny x4} mi!16 sol16 la16) sib8.(\4^\vibrato la16)-3 sol16(-1 fad16\1 sol16)-2 mi'16-4
     | fa!16\2 re'16 sib16^\markup{\bold\teeny x1} sol16 la16( fa16) mi16( sol16)
@@ -202,7 +202,7 @@ stopBarre = \stopTextSpan
       re'16 sib!16 do'!16 la16
     | sol,16^\allongerUne re16( sol16 la16) sib16 sol16( fad16 sol16)
       mib'16 sol16 re'16 sol16
-    | <<dod'2. sol2. la,2.\p>>
+    | <<dod'2. sol2. la,2.\sp>>
     | <<re'2. fa2. la,2._\markup{\italic\small "ritardando"}>> 
     | <<re'2. mi2. la,2.>>
     | <<dod'2. mi2. la,2.>>
