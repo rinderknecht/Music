@@ -122,15 +122,15 @@ stopBarre = \stopTextSpan
     | re16( fa16 la16 do'16) sib16(^\markup{\bold\teeny x1} sol16 la16 fa16) mi16( fa16 la16) fa16
     | sol,16[^\allongerUne sib,16( re16 fa16)] sib8.\1^\vibrato( la16) sol16(\4 fa16 mi16 sol16)
     | la,16^\vibrato do16( mi16 sol16) do'16 la16( mi16 sol16) fa16( la16 re16) mib16^\markup{\bold\teeny x1}
-    | re16 la,16(^\vibrato sib,16 re16) sol16 sib16(^\markup{\bold\teeny x1} la16 do'16) sib16( sol16 re'16) fa16
-    | mi16 si,16(^\vibrato do16 mi16) sol16 re16( mi16 do16) sib,16( \startModernBarre #3 #1 la,16 mi16) sib,16 \stopBarre 
+    | re16 la,16(^\allongerUne sib,16 re16) sol16 sib16(^\markup{\bold\teeny x1} la16 do'16) sib16( sol16 re'16) fa16
+    | mi16 si,16(^\allongerUne do16 mi16) sol16 re16( mi16 do16) sib,16( \startModernBarre #3 #1 la,16 mi16) sib,16 \stopBarre 
     \bar "||" \mark \default
       fa,8^\allongerUne la,8 do4(^\vibrato do16) sib,16( la,16 sol,16)
     | fad,16^\allongerUne^\markup{\bold\teeny x4} la,16( sib,16 do16) re,16 do16( sib,16 la,16) 
       fad16 mib16(^\markup{\bold\teeny x1} re16 do16)
     | sib,16( la,16 sol,16)^\allongerUne sib,16 re4( re16) do16( sib,16 la,16)
     | sold,16\1^\vibrato \startModernBarre #1 #4 si,16(\1 do16 re16) mi,16 re16( do16 si,16) \stopBarre 
-      sold16-3 fa16\2 mi16 re16)
+      sold16-3 fa16\2( mi16 re16)
     \bar "||" \mark \default
       do16( si,16 la,16^\allongerUne do16) fa16( mi16 fa16\1 sold16) la16(\open fa16 re16 do16)-3
     | si,16(\upbow^\vibrato re16 sold16-4 si16)\1 re'8.(^\vibrato do'16) si16( la16 sold16 la16)
@@ -158,10 +158,9 @@ stopBarre = \stopTextSpan
     | dod16(^\markup{\bold\teeny x4} si,16^\markup{\bold\teeny x2} dod16) 
       mi16 la16 mi16( do16 mi16) la,16^\vibrato sol!16( fa16 mi16)
     | fa16( mi16 fa16) la16 re'16 la16( fa16 la16) re16^\allongerUne do'!16( sib16^\markup{\bold\teeny x1} la16)
-    | sol16( fa16 sol16) dod'16\1 mi'16 dod'16( sol16 dod'16)
-    | la,16\1^\vibrato sol16( fa16 mi16)
-    | re16[^\allongerUne la16 re'16 mi'16] fa'16^\markup{\bold\teeny x1} 
-      re'16 la16 fa16 re16 do'!16( sib16^\markup{\bold\teeny x1} la16)
+    | sol16( fa16 sol16) dod'16\1 mi'16 dod'16( sol16 dod'16) la,16\1^\vibrato sol16( fa16 mi16)
+    | re16[^\allongerUne la16 re'16\1 mi'16] fa'16 
+      re'16 la16 fa16\2 re16 do'!16( sib16^\markup{\bold\teeny x1} la16)
     \bar "||" \mark \default
       sol16( la16 sib16)^\markup{\bold\teeny x1} re16 mib16^\markup{\bold\teeny x1} 
       fa16 sol16 la16\3 sib16-4 sol16-1 mib'16-2 sol16\(
@@ -170,10 +169,10 @@ stopBarre = \stopTextSpan
       dod16^\markup{\bold\teeny x4} re16 mi16 sib,16 sol16 sib,16
     \bar "||" \mark \default
       dod,8\1 la,8-2 sol4\4^\vibrato( sol16) sib16(^\markup{\bold\teeny x1} la16 sol16)
-    | fa16( mi16 re16 mi16) fa16 re16 la16 fa16 re'16 la16 fa16 re16
-    | sold,8\upbow^\markup{\bold\teeny x1} fa8 re'4^\vibrato( re'16) fa'16(^\markup{\bold\teeny x1} mi'16 re'16)
+    | fa16( mi16 re16) mi16 fa16 re16 la16 fa16 re'16 la16 fa16 re16
+    | sold,8\1 fa8-3 re'4\1^\vibrato( re'16) fa'16( mi'16 re'16)
     | \clef "tenor"
-      dod'16\upbow( si!16 la16) si16\< dod'16 la16 re'16 la16 mi'16 la16 fa'16\1 la16
+      dod'16\3( si!16 la16) si16\< dod'16 la16 re'16 la16 mi'16 la16 fa'16\1 la16
     | sol'16-3\!^\vibrato mi'16( dod'16-4 mi'16) la16(^\allongerUne dod'!16 mi'16) fa'16
       sol'16 fa'16 sol'16 mi'16
     \bar "||" \mark \default
@@ -183,28 +182,30 @@ stopBarre = \stopTextSpan
     | mi'16^\allongerUne dod'16(\3 si!16 dod'16) la16(^\allongerUne si16 dod'16) re'16
       mi'16 re'16 mi'16 dod'16
     | \clef "bass" 
-      re'16^\vibrato si!16( la16 si16) fa16( sold16^\markup{\bold\teeny x4} si16) dod'16
+      re'16^\vibrato si!16( la16 si16) fa16(\1 sold16 si16)\1 dod'16
       re'16 dod'16 re'16 si16
     | <<dod'4\fermata mi4 sol,4\f>> r4 r4
     \bar "||" \mark \default
-      sib!16\f^\markup{\bold\teeny x1} sol16( fad16 sol16) mib16^\markup{\bold\teeny x1} sol16 re16 sol16
-      mib16(^\markup{\bold\teeny x1} sol16 sib16)^\markup{\bold\teeny x1} re16^\allongerUne
-    | dod16(--^\markup{\bold\teeny x4} mi!16 sol16 la16) sib8.(\4^\vibrato la16)-3 sol16(-1 fad16\1 sol16)-2 mi'16-4
+      sib!16\f\1 sol16(^\markup{\bold\teeny x4} fad16^\markup{\bold\teeny x3} 
+      sol16) mib16-1 sol16 re16 sol16 mib16( sol16 sib16)-1 re16^\allongerUne
+    | dod16(--\4 mi!16^\markup{\bold\teeny x1} sol16-3 la16)\open
+      sib8.(\4^\vibrato la16)-3 sol16(\2 fad16 sol16) mi'16-4
     | fa!16\2 re'16 sib16^\markup{\bold\teeny x1} sol16 la16( fa16) mi16( sol16)
       fa16( re16) dod16(^\markup{\bold\teeny x4} mi16)
     | re16 sib,16( la,16 sol,16) fad,16--(^\markup{\bold\teeny x4} la,16 do!16 
       mib16)^\markup{\bold\teeny x1} re16( do16 sib,16 la,16)
     | sib,16 sol,16( fad,16^\markup{\bold\teeny x4} sol,16) mib,16 sol,16 re,16 sol,16 mib,16( sol,16 sib,16) re,16
-    | <<{sol8._( fa16_)}\\{<<sib,4 dod,4^\markup{\bold\teeny x1}>>}>> mi!16( re16 dod16 si,!16 la,16 sol,16 fa,16 mi,16)
+    | <<{sol8._( fa16_)}\\{<<sib,4 dod,4>>}>> mi!16( re16 
+      dod16^\markup{\bold\teeny x4} si,!16^\markup{\bold\teeny x2} la,16 sol,16 fa,16 mi,16)
     \bar "||" \mark \default
-      re,16--(^\vibrato la,16 re16 mi16) fa16( mi16 re16 do!16 sib,!16 la,16 sol,16 fa,16)
-    | mi,16--(^\vibrato la,16 dod16 mi16) sol16( fa16 mi16 re16 dod16 si,!16 la,16 sol,16)
+      re,16--(^\vibrato^\markup{\small\italic "barré"} la,16 re16 mi16) fa16( mi16 re16 do!16 sib,!16 la,16 sol,16 fa,16)
+    | mi,16--(^\vibrato la,16 dod16^\markup{\bold\teeny x4} mi16) sol16( fa16 mi16 re16 dod16 si,!16 la,16 sol,16)
     | fa,16^\vibrato la,16( re16 fa16) la16 re16( fa16 la16)
-      re'16 sib!16 do'!16 la16
-    | sol,16^\allongerUne re16( sol16 la16) sib16 sol16( fad16 sol16)
-      mib'16 sol16 re'16 sol16
-    | <<dod'2. sol2. la,2.\sp>>
-    | <<re'2. fa2. la,2._\markup{\italic\small "ritardando"}>> 
+      re'16 sib!16^\markup{\bold\teeny x1} do'!16 la16
+    | sol,16^\allongerUne re16( sol16\1 la16) sib16-4 sol16(\2 fad16 sol16)
+      mib'16-3 \startModernBarre #2 #2 sol16 re'16 sol16 \stopBarre
+    | <<dod'2.\3 sol2. la,2.\sp>>
+    | <<re'2. fa2. la,2.>> 
     | <<re'2. mi2. la,2.>>
     | <<dod'2. mi2. la,2.>>
     | <<re'2. fa2. la,2. re,2.>>
