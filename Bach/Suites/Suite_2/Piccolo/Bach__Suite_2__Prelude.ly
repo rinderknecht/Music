@@ -142,7 +142,7 @@ stopBarre = \stopTextSpan
       dod16-4^\allongerUne\( sol16( fa16 mi16)\1 re16 fa16( mi16 re16)\)
     | sold,16\1^\vibrato re16( mi16\1 fa16) si16 fa16( mi16 re16) sold,16^\allongerUne re16( do16 si,16)
     | la,16(^\allongerUne si,16 do16 mi16) la16( si16 do'16\> la16) mi16( do16 la,16 sol,!16)\!
-    | \breathe fad,16^\allongerUne^\markup{\bold\teeny x4}\upbow la,16( do16 re16) mib8.(\1^\vibrato re16) do16(\4 sib,16 do16) la16^\allongerUne
+    | fad,16^\allongerUne^\markup{\bold\teeny x4}\upbow la,16( do16 re16) mib8.(\1^\vibrato re16) do16(\4 sib,16 do16) la16^\allongerUne
     | sib,16( la,16 sib,16) re16 sol,16^\allongerUne mib16(\1 fa16^\markup{\bold\teeny x2} sol16)^\markup{\bold\teeny x4} 
       la,16\1^\vibrato sol16( fa16 mib16)
     | re16( do16 re16) fa16 sib,16^\vibrato sol16(\1 la16-3 sib16)-4 
