@@ -53,7 +53,7 @@
       do16 si16 la16 sol16
     | fad16 la16 re'16 re16 sol8[ si,8] re,8[ fad8]
     | <<sol,4. sol4.>> si16( la16 sol16 fad16 mi16 re16)
-    | mi'8\3 dod'8 la8\open si16(\1 dod'16) re'16 fad16( mi16 re16)
+    | mi'8\4 dod'8 la8\open si16(\1 dod'16) re'16 fad16( mi16 re16)
     | la,8 re'8
       \appoggiatura {\hide Stem \parenthesize re'8 \undo \hide Stem} dod'8-+
       si16( la16) re'16 la16 si16 fad16
