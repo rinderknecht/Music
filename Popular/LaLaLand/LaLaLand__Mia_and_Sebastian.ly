@@ -4,6 +4,7 @@
 
 \header {
   title    = "Mia & Sebastian"
+  composer = "Justin Hurwitz"
   tagline  = "Transcribed by Bruno Vittoruzzo"
 }
 
@@ -95,4 +96,3 @@
     \bar "|."
     }
   }
-}
