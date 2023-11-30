@@ -179,8 +179,8 @@ stopBarre = \stopTextSpan
       fa'16-1^\vibrato re'16(^\markup{\bold\teeny x4} dod'16^\markup{\bold\teeny x3} 
       re'16) la16(^\allongerUne dod'16 re'16) mi'16 
       fa'16 mi'16 fa'16 re'16
-    | mi'16^\allongerUne dod'16(\3 si!16 dod'16) la16(^\allongerUne si16 dod'16) re'16
-      mi'16 re'16 mi'16 dod'16
+    | mi'16^\allongerUne dod'16(\3 si!16 dod'16) la16(^\allongerUne si16 dod'16) re'16\2
+      mi'16 re'16 mi'16 dod'16\3
     | \clef "bass" 
       re'16^\vibrato si!16( la16 si16) fa16(\1 sold16 si16)\1 dod'16
       re'16 dod'16 re'16 si16
