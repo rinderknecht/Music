@@ -4,7 +4,7 @@
 
 \header {
   title    = "Skye Boat song"
-  composer = ""
+  composer = "Scottish fiddle tune"
   tagline  = "Arranged by Alice Kim"
 }
 
