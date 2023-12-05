@@ -4,7 +4,7 @@
 
 \header {
   title    = "Outlander"
-  composer = "Traditional music"
+  composer = "From the Skye Boat Song"
   tagline  = "Arranged by Bear McCreary"
 }
 
@@ -45,24 +45,18 @@ vibrato = \markup {
     \clef "bass"
     \tempo "Moderato"
 
+    \repeat volta 2 {
     sol,4.\p la,8 sol,4
     | do2^\vibrato do8 do8
     | re4. mi8 re4
     | sol2.^\vibrato
     | mi4. re8 mi4
     | la,2^\vibrato la,4\upbow
-    | sol,2.^\vibrato\(
+    | sol,2.\1^\vibrato\(
     | sol,2\) r4
-    | sol,4.\downbow la,8 sol,4
-    | do2^\vibrato do4\upbow
-    | re4. mi8 re4
-    | sol2.^\vibrato
-    | mi4. re8 mi4
-    | la,2^\vibrato la,4\upbow
-    | sol,2.^\vibrato\(
-    | sol,2\) r4
-    \bar "||"
-    mi4\mp\downbow\( do4 mi4\)
+    }
+    
+    mi4\1\mp\downbow\( do4 mi4\)
     | mi2.^\vibrato
     | re4\( la,4 re4\)
     | re2.\1^\vibrato
@@ -85,9 +79,9 @@ vibrato = \markup {
     | sol2.^\vibrato
     | mi4. re8 mi4
     | la,2^\vibrato la,4\upbow
-    | sol,2.^\vibrato\(
+    | sol,2.\1^\vibrato\(
     | sol,2\) r4
-    | sol,4.\downbow la,8 sol,4
+    | sol,4.\open\downbow la,8\1 sol,4
     | do2^\vibrato do4\upbow
     | re4. mi8 re4
     | sol2.^\vibrato
