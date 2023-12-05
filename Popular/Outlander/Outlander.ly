@@ -56,6 +56,7 @@ vibrato = \markup {
     | sol,2\) r4
     }
     
+    \repeat volta 2 {
     mi4\1\mp\downbow\( do4 mi4\)
     | mi2.^\vibrato
     | re4\( la,4 re4\)
@@ -64,15 +65,8 @@ vibrato = \markup {
     | do2^\vibrato do4\upbow
     | la,2.^\vibrato\(
     | la,2\) r4
-    | mi4\downbow\( do4 mi4\)
-    | mi2.^\vibrato
-    | re4\( la,4 re4\)
-    | re2.\1^\vibrato
-    | do4\4\( la,4 do4\)
-    | do2^\vibrato do4\upbow
-    | la,2.^\vibrato\<\( 
-    | la,2\)\! r4
-    \bar "||"
+    }
+
     sol,4.\f\downbow la,8 sol,4
     | do2^\vibrato do8 do8
     | re4. mi8 re4
