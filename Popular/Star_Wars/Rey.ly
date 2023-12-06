@@ -103,7 +103,7 @@ vibrato = \markup {
     | re4\open\downbow fa4\2 re4 la4
     | si!4 sol2^\vibrato r4 
     | re2\( re8\) mi8\( fa8 re8\)
-    | fa2 mi2
+    | fa2^\vibrato mi2^\vibrato
     | re2\( re8\) mi8\( fa8 la,8\)
     | fa2 mi2
     | re'2\( re'8\) mi'8\( fa'8 sol8\)
@@ -113,13 +113,13 @@ vibrato = \markup {
     \bar "||"
     \key sol \major
     | sol4\downbow\ff si4 si,4 mi4
-    | la4 si2 r4
+    | la4 si2^\vibrato r4
     | mi4.la16\( sol16\) fad4. sol8
-    | mi2. r4
+    | mi2.^\vibrato r4
     
     \repeat volta 3 {
       \volta #'() { s1*0^\markup { \bold "3×" } }
-      \volta 1 {| mi2\downbow\( mi8\)_\markup{\small\italic "ritardando"} fad\( sol8 mi8\) | sol2 fad2}
+      \volta 1 {| mi2\downbow\( mi8\)_\markup{\small\italic "ritardando"} fad\( sol8 mi8\) | sol2^\vibrato fad2^\vibrato}
     }
 
     | si4-.--\mp la4-.--_\markup{\small\italic "a tempo"} si4.-.-- sol8-.-- 
@@ -133,8 +133,8 @@ vibrato = \markup {
                   mi8-._\markup{\small\italic "ritardando"} sol16\( mi16\) si,8-.\upbow re8-.\upbow}
     }
     
-    | mi8-.\downbow\> sol16\( mi16\) mi2\! r4
-    | mi8-.\pp sol16\( mi16\) mi2 r4
+    | mi8-.\downbow\> sol16\( mi16\) mi2\!^\vibrato r4
+    | mi8-.\pp sol16\( mi16\) mi2^\vibrato r4
     \bar "|."
   }
 }
