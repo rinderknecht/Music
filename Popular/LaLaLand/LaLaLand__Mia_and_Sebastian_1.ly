@@ -77,7 +77,7 @@ vibrato = \markup {
     | dod'8\3 si8 la8 si8 la8\( sold8\)^\markup{\bold\teeny x4}
     | fad2.^\vibrato
     | re'8 dod'8 si8 dod'8 si8\( la8\)
-    | fad2^\vibrato\( la4\)
+    | fad2\2^\vibrato\( la4\)
     | dod'4 mi4 mid4
     | fad4 la4 dod'4
     | fad'8\4 mi'8 re'8\2 mi'8 re'8\(\4 dod'8\)

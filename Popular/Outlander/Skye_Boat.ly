@@ -4,7 +4,7 @@
 
 \header {
   title    = "Skye Boat song"
-  composer = "Scottish fiddle tune"
+  composer = "Scottish fiddle tune\n(piccolo cello)"
   tagline  = "Arranged by Alice Kim"
 }
 
@@ -15,7 +15,7 @@
 \paper {
   paper-width  = 195\mm
   paper-height = 260\mm
-%  indent = #0
+  indent = #0
   page-count = #1
   line-width = #184
 %  ragged-last = ##t
@@ -38,7 +38,8 @@ vibrato = \markup {
 }
 
 \score {
-  \new Staff \with{instrumentName=#"Piccolo"}{
+  \new Staff %\with{instrumentName=#"Piccolo"}
+  {
     \override Hairpin.to-barline = ##f
     \time 3/4
     \key re \major
@@ -48,10 +49,10 @@ vibrato = \markup {
     \repeat volta 2 {
     <<la4. re4.>> si8 la4
     | <<re'2 re2>> re'4
-    | <<mi'4. re4.>> fad'8 mi'4
-    | <<la'2. re2.>>
-    | <<fad'4. re4.>> mi'8 fad'4
-    | <<si2^\vibrato re2>> <<si4 re4>>
+    | <<mi'4.\1 re4.>> fad'8 mi'4
+    | <<la'2.\3_\markup{\teeny I} re2.>>
+    | <<fad'4.\3 re4.>> mi'8 fad'4
+    | <<si2\1^\vibrato re2>> <<si4 re4>>
     \alternative {
       \volta 1 {<<{\stemDown la2.\( la2\)}\\{re2. re2}>> r4}
       \volta 2 {<<{\stemDown la2.\( la2\)}\\{re2. re2}>> <<fad4 si,4>>}
@@ -59,10 +60,10 @@ vibrato = \markup {
     }
       
     \repeat volta 2 {
-    | fad'4 re'4 fad'4
-    | <<fad'2.\3 si2.>>
+    | fad'4_\markup{\teeny V} re'4 fad'4
+    | <<fad'2. si2.>>
     | mi'4 si4 mi'4
-    | <<mi'2. la2.>>
+    | <<mi'2.\open la2.>>
     | <<re'4 fad4 si,4>> si4 re'4
     | <<re'2 fad2>> dod'4
     \alternative {
@@ -74,9 +75,9 @@ vibrato = \markup {
     \repeat volta 2 {
     <<la4. re4.>> si8 la4
     | <<re'2 re2>> re'4
-    | <<mi'4. re4.>> fad'8 mi'4
-    | <<la'2. re2.>>
-    | <<fad'4. re4.>> mi'8 fad'4
+    | <<mi'4.\1 re4.>> fad'8 mi'4
+    | <<la'2.\3_\markup{\teeny I} re2.>>
+    | <<fad'4.\3 re4.>> mi'8 fad'4
     \alternative {
       \volta 1 {<<{\stemDown si2 si4 la2.\( la2\)}\\{re2 \skip4 re2. re2}>> r4}
       \volta 2 {<<{\stemDown si2.\( si2\)}\\{re2. re2}>> <<si4 re4>> <<la2.\fermata re2.>> }
