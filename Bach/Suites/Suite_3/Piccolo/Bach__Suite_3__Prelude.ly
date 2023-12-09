@@ -3,7 +3,7 @@
 \version "2.24.0"
 
 \header {
-  title = "Suite III (BWV 1009)"
+  title = "Suite III (BWV 1009, piccolo cello)"
   composer = "Johann Sebastian Bach"
   tagline  = ""
 }
@@ -15,7 +15,7 @@
 \paper {
   paper-width  = 195\mm
   paper-height = 260\mm
-%  indent = #0
+  indent = #0
   page-count = #3
   line-width = #184
   print-page-number = ##f
@@ -97,7 +97,7 @@ stopBarre = \stopTextSpan
 }
 
 \score {
-  \new Staff \with{instrumentName=#"Piccolo"}{
+  \new Staff {%\with{instrumentName=#"Piccolo"}{
     \override Hairpin.to-barline = ##f
     \override Beam.auto-knee-gap = #2
     \override Parentheses.padding = #0.1
