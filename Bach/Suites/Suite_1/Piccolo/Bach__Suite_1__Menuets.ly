@@ -13,7 +13,7 @@
 \paper {
   paper-width  = 195\mm
   paper-height = 260\mm
-%  indent = #0
+  indent = #0
   page-count = #1
   line-width = #184
   print-page-number = ##f
@@ -78,7 +78,7 @@ stopBarre = \stopTextSpan
 % \slurSolid
 
 \score {
-  \new Staff \with{instrumentName=#"Piccolo"}{
+  \new Staff { %\with{instrumentName=#"Piccolo"}{
     \set fingeringOrientations = #'(left)
     \override Beam.auto-knee-gap = #2
     \override Hairpin.to-barline = ##f
@@ -86,7 +86,7 @@ stopBarre = \stopTextSpan
     \time 3/4
     \key sol \major
     \clef "bass"
-    \tempo "Menuet I"
+    \tempo "Menuet I (piccolo cello)"
 
     \repeat volta 2 {
     | sol,8(\upbow re8) si4 la8( si16 do'16)
@@ -126,7 +126,7 @@ stopBarre = \stopTextSpan
 }
 
 \score {
-  \new Staff \with{instrumentName=#"Piccolo"}{
+  \new Staff {%\with{instrumentName=#"Piccolo"}{
     \set fingeringOrientations = #'(left)
     \override Beam.auto-knee-gap = #2
     \override Hairpin.to-barline = ##f

@@ -13,7 +13,7 @@
 \paper {
   paper-width  = 195\mm
   paper-height = 260\mm
-%  indent = #0
+  indent = #0
   page-count = #2
   line-width = #184
   print-page-number = ##f
@@ -109,15 +109,14 @@ stopBarre = \stopTextSpan
 }
 
 \score {
-  \new Staff
-  \with{instrumentName=#"Piccolo"}{
+  \new Staff {%\with{instrumentName=#"Piccolo"}{
     \set fingeringOrientations = #'(left)
     \override Beam.auto-knee-gap = #2
     \override Hairpin.to-barline = ##f
     \override Parentheses.padding = #0.1
     \override Parentheses.font-size = #-1
 
-    \tempo "Allemande" 4 = 66
+    \tempo "Allemande (piccolo cello)" 4 = 66
     \time 4/4
     \key sol \major
     \clef "bass"
