@@ -3,7 +3,7 @@
 \version "2.24.0"
 
 \header {
-  title = "Suite II (BWV 1008)"
+  title = "Suite II (BWV 1008, piccolo cello)"
   composer = "Johann Sebastian Bach"
   tagline  = ""
 }
@@ -15,7 +15,7 @@
 \paper {
   paper-width  = 195\mm
   paper-height = 260\mm
-%  indent = #0
+  indent = #0
   page-count = #2
   line-width = #184
   print-page-number = ##f
@@ -97,8 +97,7 @@ stopBarre = \stopTextSpan
 }
 
 \score {
-  \new Staff 
-  \with{instrumentName=#"Piccolo"}{
+  \new Staff {%\with{instrumentName=#"Piccolo"}{
     \override Hairpin.to-barline = ##f
     \override BreathingSign.text = \markup {
       \translate #'(-1.75 . 1.6)
