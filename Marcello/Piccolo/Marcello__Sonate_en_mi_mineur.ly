@@ -79,14 +79,14 @@ vibrato = \markup {
     | do'16( la16) si16( sold16^\markup{\bold\teeny x4})
       la8\open do'8 re16\open( mi16 fad16 sol16) la16( si16 do'16 la16)
     | si16( sol16) la16( fad16) sol8 mi8\2
-      mi8.\trill( red32 mi32) fad8\upbow fad8\3\upbow
-    | fad8.\trill(mi32\< fad32) sol8\upbow sol8\2\upbow
-      sol8.\trill( fad32 sol32) la8\upbow la8\upbow\!
-    | la4\fermata\f r16 la16\upbow( sol16 fad16)
-      sol16\4( mi16) fad16\4( red16) mi8-2 la8\4
-    | sol4 fad8.\trill( mi16\2) mi4. fad8
-    | red8 si,8 mi8 fad8 sol4\4_\markup{\small\italic "rit."}
-     \appoggiatura {\hide Stem \parenthesize sol8 \undo \hide Stem} fad8.\trill( mi16)
+      mi8.-+( red32 mi32) fad8\upbow fad8\3\upbow
+    | fad8.-+(mi32\< fad32) sol8\upbow sol8\2\upbow
+      sol8.-+( fad32 sol32) la8\upbow la8\upbow\!
+    | la4\fermata\f r16 la16\open\upbow( sol16\4 fad16)
+      sol16( mi16) fad16\4( red16) mi8-2 la8
+    | sol4\4 fad8.-+( mi16) mi4. fad8
+    | red8\1 si,8 mi8 fad8 sol4\4_\markup{\small\italic "rit."}
+     \appoggiatura {\hide Stem \parenthesize sol8 \undo \hide Stem} fad8.-+( mi16)
     | mi1^\vibrato
     
     \bar "|."

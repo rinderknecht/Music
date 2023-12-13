@@ -50,7 +50,7 @@ vibrato = \markup {
    | re'2.\2 re'4
    | mi'8( re'16 do'16)^\markup{\bold\teeny x1}
      do'4.\2 la8 do'16 si16 la16 sol16
-   | fad4.\upbow sol8\upbow <<sol,8 sol8 si8>> <<sol,8 sol8 si8>>
+   | fad4. \upbow sol8\upbow <<sol,8 sol8 si8>> <<sol,8 sol8 si8>>
      <<sol,8 sol8 si8>> <<sol,8 sol8 si8>>
    | <<sol,4 sol4 si4>> r4 r16
      si16 la16 si16 sol16 si16 la16 sol16
@@ -119,7 +119,7 @@ vibrato = \markup {
    | do'8 si16 lad16-1 si4. dod'16-4 si16 lad8. si16
    | si4
      \clef "tenor"
-     r8 fad'!8 sol'8 sol'8 sol'8 sol'8
+     r8 fad'!8\1 sol'8 sol'8 sol'8 sol'8
    | mi'8 mi'8 r8 mi'8 fad'8 fad'8 fad'8 fad'8
    | \clef "bass"
      red'8\4 si8^\markup{\bold\teeny x1} mi'8\4
@@ -215,12 +215,12 @@ vibrato = \markup {
    | do'8( si8 do'8) la8( sol8 la8) fad8( sol8 la8) la4 sol8
    | sol4.
      \clef "tenor"
-     r4 re'8_\markup{\small\italic "piano"}
-     mi'8( re'8 mi'8) fad'8( mi'8 fad'8)
-   | sol'4. r4 si8 do'8( si8 do'8) re'8( do'8 re'8)
-   | mi'4.
+     r4 re'8\2_\markup{\small\italic "piano"}
+     mi'8( re'8 mi'8) fad'8(\3 mi'8 fad'8)
+   | sol'4. r4 si8\1 do'8( si8 do'8) re'8( do'8 re'8)
+   | mi'4.\1
      \clef "bass"
-     r4 sol8 la8( sol8 la8) si8( la8 si8)
+     r4 sol8\4 la8( sol8 la8) si8( la8 si8)
    | do'8( si8 do'8) la8( sol8 la8) fad8( sol8 la8) la4 sol8
    | sol4.r4. r4. r4.
 
