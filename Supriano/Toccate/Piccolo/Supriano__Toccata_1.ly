@@ -28,7 +28,7 @@
   \new Staff {
    \override Hairpin.to-barline = ##f
    \time 3/4
-   \key sol \major
+   \key do \major
    \clef "bass"
 
    | sol,4\downbow si,4\upbow re4\upbow
