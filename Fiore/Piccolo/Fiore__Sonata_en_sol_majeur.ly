@@ -189,7 +189,7 @@ parentheAll = #(define-music-function (note) (ly:music?)
       | sol2.\4 sol4 la4 sol4
       | fad2. fad4 sol4 fad4
       | mi2 mi4 fad4 sol4 la4
-      | si2. la4 sol4 fad?4
+      | si2. la4 sol4 fad4
       | sol4 la4 fad2. mi4
       | mi2. mi4 la4 si4
       | do'4 la4 sold2.\1 la4
@@ -266,8 +266,8 @@ parentheAll = #(define-music-function (note) (ly:music?)
       \repeat volta 2 {
       | re4 la,8 re8 mi8 fad8 mi8 fad8 sol8 la4 sol8
       | fad4 re8 r4. sol4 re8 sol8 la8 si8
-      | la8 si8 do'8 re'8 do'8 re'8 si8 sol8 si8 mi'8 do'8 mi'8
-      | do'8 la8 do'8 re'8 la8 re'8 si8 sol8 si8 do'8 sol8 do'8
+      | la8 si8 do'8 re'8 do'8 re'8 si8 sol8 si8 mi'8\4 do'8^\markup{\bold\teeny x1} mi'8
+      | do'8\2 la8 do'8 re'8 la8 re'8 si8 sol8 si8 do'8 sol8 do'8
       | la8 si8 la8 sol8 la8 sol8 fad8 re8 fad8 sol8 fad8 sol8
       | la8 sol8 la8 si8 la8 si8 do'8 si8 do'8 la8 si8 do'8
       | re'8 do'8 re'8 si8 la8 sol8 do'8 si8 do'8 re'4 re8
@@ -285,7 +285,7 @@ parentheAll = #(define-music-function (note) (ly:music?)
       | sol2.( sol4.) fad4.
       | sol4. mi4. fad4. re4.
       | mi4. do4. re4. sol4.
-      | red?4. la,4. red4. sol4.
+      | red4. la,4. red4. sol4.
       | fad4 re8 la4 la,8 re4 sol,8 la,4.
       | re,2. re,2.
 
@@ -294,7 +294,7 @@ parentheAll = #(define-music-function (note) (ly:music?)
       | re'4. re'4 do'8 si4. si4 sol8
       | la4. fad4. sol4. sol4.
       | la4. fad4. sol4. mi4.
-      | fad4. mi4. red?4. si,4.
+      | fad4. mi4. red4. si,4.
       | la,4. sol,4. la,4. fad,4 la,8
       | sol,4. si,4. do4. re4.
       | sol,4 do8 re4 re,8 sol,2.
