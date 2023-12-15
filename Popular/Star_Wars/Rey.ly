@@ -3,7 +3,7 @@
 \version "2.24.0"
 
 \header {
-  title    = "Rey's theme"
+  title    = "Rey's theme (piccolo cello)"
   composer = "John Williams"
   tagline  = "Star Wars: The Force Awakens"
 }
@@ -15,7 +15,7 @@
 \paper {
   paper-width  = 195\mm
   paper-height = 260\mm
-%  indent = #0
+  indent = #0
   page-count = #1
   line-width = #184
 %  ragged-last = ##t
@@ -38,8 +38,7 @@ vibrato = \markup {
 }
 
 \score {
-  \new Staff 
-    \with{instrumentName=#"Piccolo"}{ 
+  \new Staff { %\with{instrumentName=#"Piccolo"}{ 
     \override Hairpin.to-barline = ##f
     \time 4/4
     \key do \major
@@ -67,13 +66,13 @@ vibrato = \markup {
     | la2 r4 la4
     | la4 do'4 la4. mi'8\open
     | fad'4 re'2 r4
-    | la2\4\( la8\) sol8\(\4 do8 fa8\)
+    | la2\( la8\) sol8\( do8 fa8\)
     | re2.\1
     ^\vibrato r4
-    | fa'2\downbow\( fa'8\) mi'8\open\( mi8\1 re'8\)
+    | fa'2\1\downbow\( fa'8\) mi'8\open\( mi8\1 re'8\)
     | si2.^\vibrato r4
-    | do'2\4^\vibrato\downbow\( do'8\) si8\( re8-1 si8\)
-    | la2-1^\vibrato sol2\2^\vibrato
+    | do'2^\vibrato\downbow\( do'8\) si8\( re8 si8\)
+    | la2\1^\vibrato sol2\2^\vibrato
     | la1^\vibrato
     | r1
     \bar "||"
