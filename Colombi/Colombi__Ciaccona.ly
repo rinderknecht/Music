@@ -90,8 +90,8 @@
       | si16 do'16 si16 la16 sol16 fad16 mi16 re16 do16 re16 mi16 do16
       | re16 re'16 do'16 re'16 re16 do16 re16 re,16 sol,8. sol16
       | sol8. la16 si8. do'16 re'8. re'16
-      | re'8. mi'16 fad'8 mi'16 re'16 sol'8. re16
-      | mi8. fad16 sol8. la16
+      | re'8.\1 mi'16^\markup{\bold\teeny x2} fad'8^\markup{\bold\teeny x4} mi'16 re'16 sol'8.\4 re16\open
+      | mi8.\1 fad16 sol8. la16
         <<{si8 do'16 si16}\\{sol8 r8}>>
       | <<{la8 re'8 la8 la8 si4}\\{fad8 r8 fad8 r8 sol4}>>
       | <<{si4 do'4 re'4}\\{sol4 mi4 re4}>>
@@ -107,8 +107,8 @@
       | re'8 do'16 re'16 re8 mi16 fad16 mi8 re16 do16
       | si,8 si16 do'16 re'8 la,16 si,16 do8 mi16 fad16
       | sol8 si,16 do16 re8 re,8 sol,4
-      | re'4 mi'4 fad'4
-      | <<{fad'2 mi'4}\\{la4 si4 do'4}>>
+      | re'4 mi'4\1 fad'4
+      | <<{fad'2-3 mi'4}\\{la4_\markup{\tiny\italic "barré"} si4 do'4}>>
       | <<{mi'4 fad'4 sol'4}\\{\skip2 si4}>>
         <<{sol'4. fad'8 <<sol'4 re4 sol,4>>}\\{la2}>>
       | sol,4 sol,4 sol,4

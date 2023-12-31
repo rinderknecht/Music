@@ -5,7 +5,7 @@
 \header {
   title    = "Gigue"
   composer = "Giuseppe Colombi (1645-1694)"
-  tagline  = "" %"Transposition de fa majeur"
+  tagline  = ""
 }
 
 \language "italiano"
@@ -27,20 +27,20 @@
   \new Staff {
     \override Hairpin.to-barline = ##f
     \time 12/8
-    \key sol \major
+    \key sol \major %  Should really be re major but the tonality is messy
     \clef "bass"
 
-    | r8 re8 mi8 fad8 mi8 re8 la4 re'8 dod'?4 la8
+    | r8 re8 mi8 fad8 mi8 re8 la4 re'8 dod'4 la8
     | re'4 fad8 mi8 do'8 si8
-      <<{do'8 si8 do'8}\\{mi4}>> <<{re'8 re'8 mi'8}\\{re4}>>
-    | fad'8 mi'8 re'8 sol'8 re8 mi8 fad8 mi8 re8 mi8 fad8 sol8
-    | do8 si,8 do8 re8 la8 si8 do'8 si8 la8 sold8 mi8 la8
-    | la4 sold8 la8 mi8 re8 do8 re8 mi8 la,8 re8 mi8
-    | fad8 mi8 re8 la4 re'8 dod'?4 la8 re'4 fad8
+      <<{do'8 si8 do'8}\\{mi4}>> <<{re'8\1 re'8 mi'8^\markup{\bold\teeny x2}}\\{re4\open}>>
+    | fad'8^\markup{\bold\teeny x4} mi'8 re'8 sol'8\4 re8\open mi8\1 fad8 mi8 re8 mi8 fad8 sol8
+    | do8 si,8 do8 re8 la8 si8 do'8 si8 la8 sold8^\markup{\bold\teeny x4} mi8 la8
+    | la4 sold8^\markup{\bold\teeny x4} la8 mi8 re8 do8 re8 mi8 la,8 re8 mi8
+    | fad8 mi8 re8 la4 re'8 dod'4 la8 re'4 fad8
     | mi8 do'8 si8 <<{do'8 si8 do'8}\\{mi4}>>
-      <<{re'8 re'8 mi'8}\\{re4}>> fad'8 mi'8 re'8
-    | sol'8 re8 mi8 fad8 mi8 re8 mi8 fad8 sol8 do8 si,8 do8
-    | re8 la8 si8 do'8 si8 la8 sold8 mi8 la8 la4 sold!8
+      <<{re'8\1 re'8 mi'8^\markup{\bold\teeny x2}}\\{re4\open}>> fad'8^\markup{\bold\teeny x4} mi'8 re'8
+    | sol'8\4 re8\open mi8\1 fad8 mi8 re8 mi8 fad8 sol8 do8 si,8 do8
+    | re8 la8 si8 do'8 si8 la8 sold8^\markup{\bold\teeny x4} mi8 la8 la4 sold8^\markup{\bold\teeny x4}
     | la8 mi8 re8 do8 re8 mi8 la,8 la8 sol8 fad8 re8 do8
     | si,8 sol8 fad8 mi8 do8 si,8 la,8 do'8 si8 la8 fad8 mi8
     | re8 mi8 fad8 sol8 sol,8 la,8 si,8 si8 do'8 re'8 do'8 si8
