@@ -3,8 +3,8 @@
 \version "2.24.0"
 
 \header {
-  title    = "Moonlight Serenade (piccolo cello)"
-  composer = "Klaus Badelt"
+  title    = "Davy Jones Plays his Organ (piccolo cello)"
+  composer = "Hans Zimmer"
   tagline  = "Pirates of the Caribbean"
 }
 
@@ -77,52 +77,64 @@ stopBarre = \stopTextSpan
 \score {
   \new Staff { %\with{instrumentName=#"Piccolo"}{ 
     \override Hairpin.to-barline = ##f
-    \time 4/4
-    \key la \minor
-    \clef "bass"
-    \tempo "Adagio molto"
-
-    la2\1\downbow\p mi4-3\(_\markup{\small\italic "molto legato"} la4\)
-    | si2-3 \startModernBarre #3 #3 mi4\( si4\) \stopBarre
-    | do'2-4 si4\( la4\)
-    | si1^\vibrato\breathe
-    | do'2\downbow si4\( la4\)
-    | sol2\4 mi2
-    | fa2 do4\( re4\)
-    | mi1^\vibrato\breathe
-    | la2\1\downbow mi4-3\( la4\)
-    | si2-3 \startModernBarre #3 #3 mi4\( si4\) \stopBarre
-    | do'2-4 fa4-4\( re'4\)-3\flageolet
-    | mi'1-1\(
-    | mi'2\)\breathe \tempo "Adagio" la4\mp\(\open si4\)\1
-     \bar "||" do'2.\downbow re'8\2\( mi'8\)
-    | re'2. do'8\2\( si8\)
-    | do'2. re'8\2\( mi'8\)
-    | re'2. do'8\2\( re'8\)
-    | mi'2.\4 re'8\( do'8\)^\markup{\bold\teeny x1} 
-    | si2.\1 la8\( sol8\)
-    | la2\1\(( la8) si8\) sol4\1
-    | la2.-3\downbow la8\1\( si8\)
-    | do'2. si8\( do'8\)
-    | re'2.\3_\markup{\teeny II} do'8\( re'8\)
-    | mi'2\1 re'4\3_\markup{\teeny II}\( do'4\)
-    | la1\1\(
-    | la4\) r4 la4\( si4\)
-    | do'2 re'4\3\( mi'4\1\)
-    | fa'2 la4\open\( re'4\4\)
-    | do'4.\( re'8\) si2
     \time 3/4
-    | r4 la4\upbow\( si4\)
-    \time 4/4
-    | do'2. si8\( do'8\)
-    | re'2. do'8\( re'8\)
-    | mi'2\1 re'4\2\( do'4\)
-    | la2.\1 la8\( si8\)
-    | do'2 re'4\3_\markup{\teeny II}\( mi'4\1\)
-    | fa'2 la4\1\( re'4\3_\markup{\teeny II}\) 
-    | do'4.\( re'8-3\flageolet\) si4 r4
-    | la4.\downbow\>\( si8\) sold2\1
-    | la1\!
+    \key re \minor
+    \clef "bass"
+    
+      re2\f\downbow\( mi4\)_\markup{\small\italic legato}
+    | fa2\( sol4\)
+    | \startModernBarre #3 #1 la2\1\( sib4\)
+    | la2\( re4-1\)\stopBarre
+    | la2\( sib4\)
+    | do'2\2_\markup{\teeny II}\( re'4^\markup{\teeny\bold x3}\)
+    | la2\3\( sol4\)
+    | la2 r4
+    | sib2\2\( do'4\)
+    | la2\( fa4-4\)
+    | sol2\4\( la4\)
+    | fa2\( re4\)
+    | mi2\( do4\)
+    \mark\markup{\musicglyph "scripts.coda" }
+    | \startModernBarre #3 #1 la,2\( mi4\) \stopBarre
+    | re2.\1
+    | re2 r4
+    \bar "||"
+    \key mi \minor
+      mi2\downbow\1\( fad4\)
+    | sol2\( la4\)
+    | si2\( do'4\) 
+    | si2\( mi4\)
+    | si2\( do'4\)
+    | re'2\2\( mi'4\)
+    | si2\1\( la4\)
+    | si2.
+    | do'2\( re'4\)
+    | si2\( sol4\)
+    | la2\( si4\)
+    | sol2\( mi4\)
+    | fad2\( re4\)
+    | si,4_\markup{\small\italic "D.C. al coda"} r4 r4
+    \bar "|."
+  }
+}
+
+\score {
+  \new Staff {
+    \clef "bass"
+    \time 2/4
+    \key re \minor
+    \tempo "Coda"
+    \override Hairpin.to-barline = ##f
+     re8\upbow\( mi8 fa8 la8\)
+     \bar "||" 
+     \time 4/4
+     si1\(
+     | si2\) sib2
+     | si2\< fad2
+     | \time 3/4
+       la2 si4
+     | \time 4/4 
+       sol1\fermata\ff\!
     \bar "|."
   }
 }
