@@ -241,10 +241,11 @@
       | sol4 re4 sol4 sol,4
       | re4. sol8 sol4 fad4
       | sol4 re4 sol4 sol,4
-      | re4. re8 re4 mi8 fad8
+      | re4. 
+        \key sol \major
+        re8 re4 mi8 fad8
       | sol4 mi8 fad8 sol4 sol,4
-      | \key sol \major
-        re2 fad4 mi8 fad8
+      | re2 fad4 mi8 fad8
       | sol4 re4 re8 sol8 re4
       | sol,8 sol8 re4 re8 sol8 re4
       | sol,4. re8 re4 mi8 fad8
