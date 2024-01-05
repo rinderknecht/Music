@@ -116,7 +116,7 @@ stopBarre = \stopTextSpan
     \time 4/4
     | do'2. si8\( do'8\)
     | re'2. do'8\( re'8\)
-    | mi'2\1 re'4\2\( do'4\)
+    | mi'2\1 re'4\3_\markup{\teeny II}\( do'4\)
     | la2.\1 la8\( si8\)
     | do'2 re'4\3_\markup{\teeny II}\( mi'4\1\)
     | fa'2 la4\1\( re'4\3_\markup{\teeny II}\) 
