@@ -115,12 +115,12 @@ vibrato = \markup {
    | do8 la16 sol16 la16 do16 si,16 la,16 si,8
      mi'16\2 fad'16 red'8.-1 mi'16
    | mi'4 r8 mi'8 fad'8 mi'8 fad'8 dod'8\3
-   | re'8 si8 r8 si8\2 do'!8 do'8 do'8 do'8
+   | re'8 si8\upbow r8 si8\2\upbow do'!8 do'8 do'8 do'8
    | do'8 si16 lad16-1 si4. dod'16-4 si16 lad8. si16
    | si4
      \clef "tenor"
      r8 fad'!8\1 sol'8 sol'8 sol'8 sol'8
-   | mi'8 mi'8 r8 mi'8 fad'8 fad'8 fad'8 fad'8
+   | mi'8 mi'8\upbow r8 mi'8\upbow fad'8 fad'8 fad'8 fad'8
    | \clef "bass"
      red'8\4 si8^\markup{\bold\teeny x1} mi'8\4
      mi'8 mi'8 re'?16-2 dod'16-1 re'4(
