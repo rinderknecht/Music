@@ -99,8 +99,8 @@ vibrato = \markup {
      sol16 sol16 la16 si16 la8. sol16
    | fad16 mi16 re16 fad16 sol16 fad16 mi16 sol16
      la16 sol16 fad16 la16 si16 la16 sol16 si16
-   | do'16 si16 la16 do'16 re'16 do'16 si16 re'16
-     mi'8.\4 re'16\4 do'16 si16 la16 sol16
+   | do'16 si16 la16 do'16 re'16 do'16 si16 re'16\2
+     mi'8. re'16\4 do'16 si16 la16 sol16
    | fad16 sol16 la16 si16
      <<{\set fingeringOrientations = #'(left)
         la8. sol16 sol8 si8 <si\finger\markup{\circle 2}>16
