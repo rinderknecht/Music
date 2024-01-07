@@ -106,8 +106,8 @@ vibrato = \markup {
         la8. sol16 sol8 si8 <si\finger\markup{\circle 2}>16
         la16 sol16_\4 fad16}\\
        {re4 sol,8 s8 red4-1}>>
-   | <<{s8 sol8\1 do'16 si16 la16 sol16 s8 la8 re'16 do'16 si16 la16}\\
-       {sol8 mi8_\markup{\bold\teeny x4} mi4_\1 la8 fad8 fad4}>>
+   | <<{s8 sol8 do'16 si16 la16 sol16 s8 la8 re'16 do'16 si16 la16}\\
+       {sol8\1 mi8_\markup{\bold\teeny x4} mi4_\1 la8 fad8 fad4}>>
    | si16 sol16 si16 sol16 mi16 sol16 do'16 sol16
      la16 fad16 la16 fad16 red16^\markup{\bold\teeny x1} la16 sol fad16
    | sol8 do'16 si16  do'16 mi16 re16 do16
