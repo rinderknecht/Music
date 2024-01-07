@@ -83,7 +83,7 @@ stopBarre = \stopTextSpan
     \override Beam.auto-knee-gap = #2
     \override Hairpin.to-barline = ##f
 
-    \tempo "Sarabande (piccolo cello)"
+    \tempo "Sarabande"
     \time 3/4
     \key sol \major
     \clef "bass"
@@ -104,15 +104,15 @@ stopBarre = \stopTextSpan
       mi8( re8)
     | la16( fad16 re16 do16) si,8. sol,16
       si,16( re16 sol16 la16)
-    | si16(\upbow sol16 mi16 re16) 
+    | si16( sol16 mi16 re16) 
       \stemUp
       \appoggiatura {\hide Stem \parenthesize re4\2 \undo \hide Stem} dod8.-+ la,32\1( si,32
       dod16 re16 mi16 fad16)
       \stemNeutral
     | sol16( dod'16 re'16 dod'16) re'16 la16( sol16 fad16)
       mi16( sol16) fad16( re16)
-    | la,16( re16) mi16(\4 dod16)-1 
-      re4 re,4\1 
+    | la,16( re16) mi16( dod16)^\markup{\bold\teeny x4} 
+      re4\downbow re,4\downbow 
     }
 
     \repeat volta 2 {
@@ -125,7 +125,7 @@ stopBarre = \stopTextSpan
       si8-+ 
       la16( sol16)
       fad16( mi16) la16( fad16)
-    | sol16( mi16) fad16( red16)^\markup{\bold\teeny x1} mi4 mi,4\downbow
+    | sol16( mi16) fad16( red16)^\markup{\bold\teeny x1} mi4\downbow mi,4\downbow
     | <<si,8. re!8.(\upbow>> mi32 fa32) <<do,8. sol,8. mi8.(>> fad16)
       sol16( la16 si16 do'16)
     | sold,16^\markup{\bold\teeny x1} re'16( do'16 \startModernBarre #3 #1 si16) <<la,8. mi8. do'8.(>> si16)\stopBarre
