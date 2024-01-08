@@ -6,6 +6,12 @@
   tagline  = ""
 }
 
+\header {
+  title = "Suite I (BWV 1007, piccolo cello)"
+  composer = "Johann Sebastian Bach"
+  tagline  = ""
+}
+
 \language "italiano"
 
 % iPad Pro 12.9
@@ -86,7 +92,7 @@ stopBarre = \stopTextSpan
     \time 3/4
     \key sol \major
     \clef "bass"
-    \tempo "Menuet I (piccolo cello)"
+    \tempo "Menuet I"
 
     \repeat volta 2 {
     | sol,8(\upbow re8) si4 la8( si16 do'16)

@@ -3,6 +3,8 @@
 \version "2.24.0"
 
 \header {
+  title = "Suite I (BWV 1007, piccolo cello)"
+  composer = "Johann Sebastian Bach"
   tagline  = ""
 }
 
@@ -13,7 +15,7 @@
 \paper {
   paper-width  = 195\mm
   paper-height = 260\mm
-%  indent = #0
+  indent = #0
   page-count = #1
   line-width = #184
   print-page-number = ##f
@@ -27,8 +29,9 @@
 % \slurSolid
 
 \score {
-  \new Staff
-  \with{instrumentName=#"Piccolo"}{
+  \new Staff 
+  %\with{instrumentName=#"Piccolo"}
+  {
     \set fingeringOrientations = #'(left)
     \override Beam.auto-knee-gap = #2
     \override Hairpin.to-barline = ##f
