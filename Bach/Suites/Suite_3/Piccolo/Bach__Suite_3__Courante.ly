@@ -123,7 +123,7 @@ stopBarre = \stopTextSpan
     | mi8( re8 do8 si,8 do8) sol,8
     | do,4. \stemDown do16( re16 mi8 fad8) \stemNeutral
     | si,8 re8 sol8 la8 si8 do'8
-    | sold8\3 re'8-2 mi8\1 re'8( do'8 si8)
+    | sold8^\markup{\bold\teeny x4} re'8 mi8 re'8( do'8 si8)
     | do'8( si8 la8) sold8^\markup{\bold\teeny x4} la8 mi8
     | do8( re8 mi8) do8 la,8 sol,8
     | fad,8^\markup{\bold\teeny x4} la,8 re8 mi8 fad8 sol8
@@ -136,7 +136,7 @@ stopBarre = \stopTextSpan
     | do8 mi8 re8 do8 si,8 la,8
     | sol,8 si8( do'8 si8) mi8 si8
     | la,8 do'8( re'8 do'8) fad8 do'8
-    | si,8 re'8\upbow( mi'8 re'8 do'8 si8
+    | si,8 re'8\upbow(\2 mi'8 re'8 do'8\2 si8
     | la8\downbow sol8 fa!8 mi8 fa8) re8
     | do,8 fa8( mi8 re8 mi8 do8)
     | si,8 do8( re8 mi8 fad8 sol8)
@@ -161,7 +161,7 @@ stopBarre = \stopTextSpan
     | re'8 si8 sol8 re8 si,8 re8\upbow
     | fa!8\upbow re8( si,8 la,8 si,8) sol,8
     | do,8 fa8( mi8 re8 mi8 sol8)
-    | do'8( re'8 mi'8) si8 do'8 la8
+    | do'8(\1 re'8^\markup{\bold\teeny x2} mi'8)^\markup{\bold\teeny x4} si8\1 do'8 la8
     | fa8( sol8 la8) mi8 fa8 re8
     | si,8 la8( si8 do'8 re'8 si8)
     | sold8(^\markup{\bold\teeny x4} fad8^\markup{\bold\teeny x2} sold8) la8 si8 sold8
