@@ -36,6 +36,14 @@ allongerUne = \markup {
   }
 }
 
+allongerTrois = \markup {
+  \center-column {
+    \combine
+    \draw-line #'(-6 . 0)
+    \arrow-head #X #RIGHT ##f
+  }
+}
+
 ringsps = #"
   0.15 setlinewidth
   0.9 0.6 moveto
@@ -107,14 +115,14 @@ stopBarre = \stopTextSpan
       \musicglyph "scripts.rcomma"
     }
 
-    \tempo "Courante"
+    \tempo "Courante (1-3)"
     \time 3/4
     \key do \major
     \clef "bass"
 
     \repeat volta 2 {
     | \partial 8 do'8\upbow
-    | do'8 sol8 mi8 do8 sol,8 mi,8
+    | do'8^\vibrato sol8 mi8 do8 sol,8 mi,8
     | do,8 do'8( re'8 do'8 si8 do'8)
     | re'8 si8 sol8 re8 si,8 sol,8\upbow
     | fa,8\upbow re'8( do'8 si8 la8 sol8)
@@ -126,7 +134,7 @@ stopBarre = \stopTextSpan
     | sold8^\markup{\bold\teeny x4} re'8 mi8 re'8( do'8 si8)
     | do'8( si8 la8) sold8^\markup{\bold\teeny x4} la8 mi8
     | do8( re8 mi8) do8 la,8 sol,8
-    | fad,8^\markup{\bold\teeny x4} la,8 re8 mi8 fad8 sol8
+    | fad,8^\allongerUne^\markup{\bold\teeny x4} la,8 re8 mi8 fad8 sol8
     | la8 fad8 re8 do'8( si8 la8)
     | si8( la8 sol8) fad8 sol8 re8
     | si,8( do8 re8) si,8 sol,8 fa,8
@@ -134,73 +142,73 @@ stopBarre = \stopTextSpan
     | do8 re8 do8 si,8 la,8 sol,8
     | fad,8^\markup{\bold\teeny x4} la8( si8 la8 sol8 la8)
     | do8 mi8 re8 do8 si,8 la,8
-    | sol,8 si8( do'8 si8) mi8 si8
-    | la,8 do'8( re'8 do'8) fad8 do'8
-    | si,8 re'8\upbow(\2 mi'8 re'8 do'8\2 si8
-    | la8\downbow sol8 fa!8 mi8 fa8) re8
+    | sol,8^\allongerUne si8( do'8 si8) mi8 si8
+    | la,8^\allongerUne do'8( re'8 do'8) fad8 do'8
+    | si,8^\vibrato re'8(\2 mi'8 re'8 do'8\2 si8)
+    | la8(^\allongerUne sol8 fa!8 mi8 fa8) re8
     | do,8 fa8( mi8 re8 mi8 do8)
-    | si,8 do8( re8 mi8 fad8 sol8)
-    | la,8 re8( mi8 fad8 sol8 la8)
-    | sol,8 mi8( fad8 sol8 la8 si8)
-    | re,8 do'8 la8 do'8 fad8 do'8
-    | re8 do'8 la8 do'8 fad8 do'8
-    | re8 sib8^\markup{\bold\teeny x1} sol8 sib8 fad8 sib8
-    | re8 sib8^\markup{\bold\teeny x1} sol8 sib8 fad8 sib8
-    | mib8^\markup{\bold\teeny x1} la8 sol8 la8 fad8 la8
-    | mib8^\markup{\bold\teeny x1} la8 sol8 la8 fad8 la8
+    | si,8^\allongerUne do8( re8 mi8 fad8 sol8)
+    | la,8^\allongerUne re8( mi8 fad8 sol8 la8)
+    | sol,8^\allongerUne mi8( fad8 sol8 la8 si8)
+    | re,8^\vibrato do'8\startGroup la8 do'8 fad8^\allongerUne do'8
+    | re8 do'8 la8 do'8 fad8^\allongerUne do'8 \stopGroup
+    | re8\startGroup sib8^\markup{\bold\teeny x1} sol8 sib8 fad8^\allongerUne sib8
+    | re8 sib8^\markup{\bold\teeny x1} sol8 sib8 fad8^\allongerUne sib8 \stopGroup
+    | mib8^\markup{\bold\teeny x1}\startGroup la8 sol8 la8 fad8^\allongerUne la8
+    | mib8^\markup{\bold\teeny x1} la8 sol8 la8 fad8^\allongerUne la8 \stopGroup
     | do'8 la8 fad8 re8 la,8 fad,8^\markup{\bold\teeny x4}
     | re,4. re8 fad8 la8
-    | si!8( do'8 re'8) la8 si8 sol8
-    | la8( si8 do'8) sol8 la8 fad8
-    | sol8 re8 mi8 do8 la,8 fad8
+    | si!8(^\allongerUne do'8 re'8) la8 si8 sol8
+    | la8(^\allongerUne si8 do'8) sol8 la8 fad8
+    | sol8^\allongerUne re8 mi8 do8 la,8 fad8
     | sol,2 r8
     }    
     
     \repeat volta 2 {
     | \partial 8 re'8\upbow
-    | re'8 si8 sol8 re8 si,8 re8\upbow
+    | re'8^\vibrato si8 sol8 re8 si,8 re8\upbow
     | fa!8\upbow re8( si,8 la,8 si,8) sol,8
     | do,8 fa8( mi8 re8 mi8 sol8)
-    | do'8(\1 re'8^\markup{\bold\teeny x2} mi'8)^\markup{\bold\teeny x4} si8\1 do'8 la8
-    | fa8( sol8 la8) mi8 fa8 re8
+    | do'8(\1^\allongerUne re'8^\markup{\bold\teeny x2} mi'8)^\markup{\bold\teeny x4} si8\1 do'8 la8
+    | fa8(^\allongerUne sol8 la8) mi8 fa8 re8
     | si,8 la8( si8 do'8 re'8 si8)
     | sold8(^\markup{\bold\teeny x4} fad8^\markup{\bold\teeny x2} sold8) la8 si8 sold8
     | mi8 si8 sold8^\markup{\bold\teeny x4} mi8 mi'8\4 re8\open
     | do8\4 la8 mi8 do8 si,8 sol!8
     | la,8 fa8 do8 la,8 sol,8 mi8
     | fa,8 re8 la,8 fa,8 mi,8 do8
-    | re,8 do'8( si8 do'8 re'8) sold8^\markup{\bold\teeny x4}
+    | re,8^\vibrato do'8( si8 do'8 re'8) sold8^\markup{\bold\teeny x4}
     | do,8 mi'8(\4 re'8 do'8\2 si8 la8)
     | mi8 re'8( do'8 si8 la8 sold8)^\markup{\bold\teeny x4}
     | la8 mi8(\upbow re8 do8 re8 mi8)
     | la,4. la16( si16 do'16 si16 do'16 la16)
-    | sol!8 mi8 do8 mi8 sol8 sib8^\markup{\bold\teeny x1}
-    | mi,8 re'8( do'8 sib8^\markup{\bold\teeny x1} la8 sol8)
+    | sol!8\startGroup mi8 do8 mi8 sol8 sib8^\markup{\bold\teeny x1}\stopGroup
+    | mi,8^\vibrato re'8( do'8 sib8^\markup{\bold\teeny x1} la8 sol8)
     | la8 fa8( mi8 fa8) do8 fa8
-    | la,8 do8 fa,8 la8( sol8 la8)
+    | la,8 do8 fa,8^\allongerUne la8( sol8 la8)
     | sib8(^\markup{\bold\teeny x1} la8 sol8) fa8 mi8 sol8
     | dod8^\markup{\bold\teeny x4} mi8 sol,8 sib,8( la,8 sol,8)
     | fa,8( mi,8 fa,8) sol,8 la,8 fa,8
     | re,8 fa,8 la,8 re8( mi8 fa8)
-    | sold,8^\markup{\bold\teeny x1} fa8( mi8 re8 do8 si,!8)
-    | la,8 do8 fa8 la8 fa8 re8
-    | si,8 la8( sol!8 fa8 mi8 re8)
-    | do8 mi8 la8 do'8 la8 fa8
-    | re8 do'8( si8 la8 sol8 fa8)
-    | mi8 sol8 do'8 mi'8\4 do'8\2 la8
-    | fa8 mi'8(\4 re'8 do'8\2 si8 la8)
+    | sold,8^\markup{\bold\teeny x1}^\allongerUne fa8( mi8 re8 do8 si,!8)
+    | la,8^\allongerUne do8 fa8 la8 fa8 re8
+    | si,8^\allongerUne la8( sol!8 fa8 mi8 re8)
+    | do8^\allongerUne mi8 la8 do'8 la8 fa8
+    | re8^\allongerUne do'8( si8 la8 sol8 fa8)
+    | mi8^\allongerUne sol8 do'8 mi'8\4 do'8\2 la8
+    | fa8^\allongerUne mi'8(\4 re'8 do'8\2 si8 la8)
     | si8 re'8 si8 sol8 re8 si,8
-    | sol,8 fa8 re8 fa8 si,8 fa8
-    | sol,8 fa8 re8 fa8 si,8 fa8
-    | sol,8 mib8^\markup{\bold\teeny x1} do8 mib8 si,8 mib8
-    | sol,8 mib8^\markup{\bold\teeny x1} do8 mib8 si,8 mib8
-    | lab,8^\markup{\bold\teeny x1} re8 do8 re8 si,8 re8
-    | lab,8^\markup{\bold\teeny x1} re8 do8 re8 si,8 re8
+    | sol,8\startGroup^\allongerUne fa8 re8 fa8 si,8^\allongerUne fa8
+    | sol,8^\allongerUne fa8 re8 fa8 si,8^\allongerUne fa8\stopGroup
+    | sol,8\startGroup^\allongerUne mib8^\markup{\bold\teeny x1} do8 mib8 si,8^\allongerUne mib8
+    | sol,8^\allongerUne mib8^\markup{\bold\teeny x1} do8 mib8 si,8^\allongerUne mib8\stopGroup
+    | lab,8^\markup{\bold\teeny x1}\startGroup^\allongerUne re8 do8 re8 si,8^\allongerUne re8
+    | lab,8^\markup{\bold\teeny x1}^\allongerUne re8 do8 re8 si,8^\allongerUne re8\stopGroup
     | fa8 sol,8 si,8 re8 fa8 si8
     | re'4. do'8 si8 la8
-    | sol8( fa8 mi8) sol8 fa8 re8
-    | mi8( re8 do8) mi8 re8 si,8
-    | do8 sol8 la8 fa8 re8 si8
+    | sol8(^\allongerTrois fa8 mi8) sol8 fa8 re8
+    | mi8(^\allongerTrois re8 do8) mi8 re8 si,8
+    | do8_\markup{\small\italic "ritenuto"} sol8 la8 fa8 re8 si8
     | <<do'2 mi2 sol,2 do,2>> r8
     }
   }
