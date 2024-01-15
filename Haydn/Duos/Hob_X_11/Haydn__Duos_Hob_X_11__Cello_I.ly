@@ -16,7 +16,7 @@
   paper-width  = 195\mm
   paper-height = 260\mm
   indent = #0
-%  page-count = #1
+  page-count = #3
   line-width = #184
 %  ragged-last = ##t
   ragged-last-bottom = ##t
@@ -38,9 +38,9 @@
       | re'2
       | dod'16( si16) re'16( si16) la8 fad'16 re'16
       | dod'16( si16) re'16( si16) la8 fad'16 re'16
-      | la4( \afterGrace sol4\trill)_( {fad16 sol16)}
+      | la4( \afterGrace sol4-+ {fad16 sol16)}
       | sol4( fad8) r8
-      | r8 re8\upbow  mi8 fad8
+      | r8 re8[\upbow  mi8 fad8]
       | sol4 fad4
       | sol4 fad4
       | r8 re8[\upbow mi8 la,8]
@@ -62,7 +62,7 @@
       | re'16( dod'16 sid16 dod'16) dod'16( re'16 mi'16 mid'16)
       | fad'8 si8\downbow( si16) re'16( dod'16 si16)
       | si16( la16 sold16 la16) la'4
-      | sold'32( fad'32 mi'32 re'32) re'32( dod'32 si32 la32) \afterGrace si4(\trill {la16 si16)}
+      | sold'32( fad'32 mi'32 re'32) re'32( dod'32 si32 la32) \afterGrace si4_(-+ {la16 si16)}
       \clef "bass"
         la8 dod8\upbow[ re8 mi8]
       | fad8 si16([ re'16)] dod'16( la16) sold16( si16)
@@ -75,35 +75,51 @@
     \repeat volta 2 {
         \partial 8 mi8\upbow
       | la2
+      
+      \repeat volta 2 {
       | sold16( fad16) la16( fad16) mi8 dod'16 la16
+      }
+      
       | mi4\(( mi16) re16 dod16 re16\)
       | re4( dod8) r8
       | r8 re8\upbow[ mi8 fad8]
+      
+      \repeat volta 2 {
       | sol4 fad4
-      | sol4 fad4
+      }
+      
       | r8 re8\upbow[ mi8 la,8]
       | re8 fad16 sol16 la16 si16 do'16 re'16
       | mi'8 re'4 do'8
+      
+      \repeat volta 2{
       | si4 re'16( do'16 si16 la16)
-      | si4 re'16( do'16 si16 la16)
+      }
+      
       | si8 mi'8( mi'16) re'16( dod'!16 si16)
+      
+      \repeat volta 2 {
       | dod'4 mi'16( re'16 dod'16 si16)
-      | dod'4 mi'16( re'16 dod'16 si16)
+      }
+      
       | dod'8 la8(\downbow la16) sol16( fad16 mi16)
+      
+      \repeat volta 2 {
       | fad4 la16( sol16 fad16 mi16)
-      | fad4 la16( sol16 fad16 mi16)
+      }
+      
       | re8[ sol8 sol8 sol8]
       | sol16( fad16 mid16 fad16) fad16( sol16 la16 lad16)
       | si8 mi8( mi16) sol16( fad16 mi16)
       | mi16( re16 dod16 re16) re'4
-      | dod'32( si32 la32 sol32) sol32( fad32 mi32 re32) \afterGrace mi4\trill( {re16 mi16)}
+      | dod'32( si32 la32 sol32) sol32( fad32 mi32 re32) \afterGrace mi4-+_( {re16 mi16)}
       | re4 r8 fad8\upbow
       | \tuplet 3/2 {sol16( la16 si16)} si16 si16 si8 sol8
       | \tuplet 3/2 {fad16( mi16 re16)} re16 re16 re8 fad8
       | <<mi8 la,8>> mi'8( dod'8) re'8
       | dod'8 sol'4 fad'8
       | la8 \tuplet 3/2 {dod'16( re'16 mi'16)} mi'8 re'8
-      | re'8\trill( dod'8) r4
+      | re'8-+( dod'8) r4
       | r8 fad8\upbow[ mi8 re8]
       | dod8[ la,8 si,8 dod8]
       | re8 la8\downbow( la16) re'16( dod'16 si16)
@@ -205,6 +221,8 @@
     }
   }
 }
+
+\pageBreak
 
 \score {
   \new Staff {
