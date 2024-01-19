@@ -181,13 +181,13 @@ stopBarre = \stopTextSpan
     | mi'16^\allongerUne dod'16(\3 si!16 dod'16) la16(^\allongerUne si16 dod'16) re'16\2
       mi'16 re'16 mi'16 dod'16\3
     | \clef "bass" 
-      re'16^\vibrato si!16( la16 si16) fa16(\1 sold16 si16)\1 dod'16
+      re'16^\vibrato si!16( la16 si16) fa16(\1 sold16 si16)^\markup{\bold\teeny x1} dod'16
       re'16 dod'16 re'16 si16
     | <<dod'4\fermata mi4 sol,4\f>> r4 r4
     \bar "||" \mark \default
-      sib!16\f\1 sol16(^\markup{\bold\teeny x4} fad16^\markup{\bold\teeny x3} 
-      sol16) mib16-1 sol16^\markup{\bold\teeny x4} re16 sol16^\markup{\bold\teeny x4}
-      mib16( sol16 sib16)-1 re16^\allongerUne
+      sib!16\f^\markup{\bold\teeny x1} sol16( fad16 
+      sol16) mib16^\markup{\bold\teeny x1} sol16 re16 sol16
+      mib16( sol16 sib16)^\markup{\bold\teeny x1} re16^\allongerUne
     | dod16(--\4 mi!16^\markup{\bold\teeny x1} sol16-3 la16)\open
       sib8.(\4^\vibrato la16)-3 sol16(\2 fad16 sol16) mi'16-4
     | fa!16\2 re'16 sib16^\markup{\bold\teeny x1} sol16 la16( fa16) mi16( sol16)
