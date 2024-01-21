@@ -162,7 +162,7 @@ stopBarre = \stopTextSpan
       re'16 la16 fa16\2 re16 do'!16( sib16^\markup{\bold\teeny x1} la16)
     \bar "||" \mark \default
       sol16( la16 sib16)^\markup{\bold\teeny x1} re16 mib16^\markup{\bold\teeny x1} 
-      fa16 sol16 la16\3 sib16-4 sol16-1 mib'16-2 sol16\(
+      fa16 sol16 la16 sib16^\markup{\bold\teeny x1} sol16\1 mib'16-2 sol16\(
     | fa16(\2 sol16 la16)\) dod16^\markup{\bold\teeny x4} re16 mi!16 fa16 sol16 la16 fa16 re'16 fa16\(
     | mi16( fa16 sol16)\) sib,16 la,16^\vibrato si,!16^\markup{\bold\teeny x2} 
       dod16^\markup{\bold\teeny x4} re16 mi16 sib,16 sol16 sib,16
@@ -203,8 +203,8 @@ stopBarre = \stopTextSpan
       dod16^\markup{\bold\teeny x4} si,!16^\markup{\bold\teeny x2} la,16 sol,16)
     | fa,16^\vibrato la,16( re16 fa16) la16 re16( fa16 la16)
       re'16 sib!16^\markup{\bold\teeny x1} do'!16 la16
-    | sol,16^\allongerUne re16( sol16\1 la16) sib16-4 sol16(\2 fad16 sol16)
-      mib'16-3 \startModernBarre #2 #2 sol16 re'16 sol16 \stopBarre
+    | sol,16^\allongerUne re16( sol16 la16) sib16^\markup{\bold\teeny x1} sol16( fad16 sol16)
+      mib'16\2 \startModernBarre #2 #1 sol16-1 re'16 sol16 \stopBarre
     | <<dod'2.\3 sol2. la,2.\sp>>
     | <<re'2. fa2. la,2.>> 
     | <<re'2. mi2. la,2.>>
