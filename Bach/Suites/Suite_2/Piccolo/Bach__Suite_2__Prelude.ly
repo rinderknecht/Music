@@ -128,11 +128,11 @@ stopBarre = \stopTextSpan
     | fad,16^\allongerUne^\markup{\bold\teeny x4} la,16( sib,16 do16) re,16 do16( sib,16 la,16) 
       fad16 mib16(^\markup{\bold\teeny x1} re16 do16)
     | sib,16( la,16 sol,16)^\allongerUne sib,16 re4( re16) do16( sib,16 la,16)
-    | sold,16\1^\vibrato \startModernBarre #4 #1 si,16(\1 do16 re16) mi,16 re16( do16 si,16) \stopBarre 
+    | sold,16\1^\vibrato si,16(\1 do16 re16) mi,16 re16( do16 si,16) 
       sold16-3 fa16\2( mi16 re16)
     \bar "||" \mark \default
       do16( si,16 la,16^\allongerUne do16) fa16( mi16 fa16\1 sold16) la16(\open fa16 re16 do16)-3
-    | si,16(\upbow^\vibrato re16 sold16\1 si16) re'8.(\4^\vibrato do'16) si16( la16 sold16 la16)
+    | si,16(\upbow^\vibrato re16 sold16-4 si16)\1 re'8.(^\vibrato do'16) si16( la16 sold16 la16)
     | do16^\vibrato mi16( la16 do'16) mi'8.(\1^\vibrato do'16)-4 si16(\4 la16 sold16 la16) 
     | re16-2^\allongerUne fa16\2( la16 re'16) fa'8.(\2^\vibrato mi'16)-1 re'16(\4 do'16 si16 re'16)
     | mi16\(^\vibrato re'16( do'16 si16) la16 do'16( si16 la16)\)
