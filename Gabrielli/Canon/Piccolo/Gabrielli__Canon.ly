@@ -3,7 +3,7 @@
 \version "2.24.0"
 
 \header {
-  title    = "Canon"
+  title    = "Canon (piccolo cello)"
   composer = "Domenico Gabrielli (1689)"
   tagline  = ""
 }
@@ -15,7 +15,7 @@
 \paper {
   paper-width  = 195\mm
   paper-height = 260\mm
-%  indent = #0
+  indent = #0
   page-count = #2
   line-width = #184
   print-page-number = ##f
@@ -39,8 +39,8 @@ vibrato = \markup {
 }
 
 \score {
-  \new Staff 
-   \with {instrumentName = #"Piccolo"}{
+  \new Staff {
+   %\with {instrumentName = #"Piccolo"}{
    \override Hairpin.to-barline = ##f
    \set fingeringOrientations = #'(left)
    \override Beam.auto-knee-gap = #2
@@ -71,12 +71,12 @@ vibrato = \markup {
    | mi16 fad16 mi16 re16 dod16\1
      re16-2 mi16 dod16 re4
      \mark \default
-     r8 si8\2\upbow_\markup{\teeny III}
-   | si4^\vibrato lad4^\vibrato
-     si16-2 dod'16-4 si16 la16^\markup{\bold\teeny x1}
-     sol16\1 la16-3 sol16 fad16\3
-   | mi16 sol16\2 fad16 sol16
-     dod16-3 fad16-1 mi16\1 fad16
+     r8 si8\1\upbow
+   | si4^\vibrato lad4\1^\vibrato
+     si16-2 dod'16-4 si16 la16\open
+     sol16\4 la16 sol16 fad16
+   | mi16 sol16 fad16 sol16
+     dod16\3 fad16-1 mi16\1 fad16
      re4.\open mi16( fad16)
    | sol16 si16 la16 si16 mi16 la16 sol16 la16
      fad8-1 re'4^\vibrato-2 do'8\2\downbow
