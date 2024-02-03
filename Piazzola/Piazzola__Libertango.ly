@@ -63,8 +63,6 @@ vibrato = \markup {
     | r8 re8 mi8 re8-. si8 fa8-. re8 mi8-.
     | r8 do8 re8 do8-. re8 do8-. la8 mi8-.
     | r8 do8 re8 do8-. la8 mi8-. do8 re8-.
-    | r8 do8 re8 do8-. re8 do8-. la8 mi8-.
-    | r8 do8 re8 do8-. la8 mi8-. do8 re8-.
     | r8 do8 re8 do8-. re8 do8-. la8 mib8-.
     | r8 do8 re8 do8-. la8 mib8-. do8 re8-.
     | r8 si,8 do8 si,8-. do8 si,8-. sold8 re8-.
