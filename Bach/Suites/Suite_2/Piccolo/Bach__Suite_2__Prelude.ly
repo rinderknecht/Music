@@ -157,7 +157,7 @@ stopBarre = \stopTextSpan
     | dod16(^\markup{\bold\teeny x4} si,16^\markup{\bold\teeny x2} dod16) 
       mi16 la16 mi16( do16 mi16) la,16^\vibrato sol!16( fa16 mi16)
     | fa16( mi16 fa16) la16 re'16 la16( fa16 la16) re16^\allongerUne do'16( sib16^\markup{\bold\teeny x1} la16)
-    | sol16( fa16 sol16) dod'16\1 mi'16 dod'16( sol16 dod'16) la,16\1^\vibrato sol16( fa16 mi16)
+    | sol16( fa16 sol16) dod'16 mi'16\4 dod'16( sol16 dod'16) la,16\1^\vibrato sol16( fa16 mi16)
     | re16[^\allongerUne la16 re'16\1 mi'16] fa'16 
       re'16 la16 fa16\2 re16 do'!16( sib16^\markup{\bold\teeny x1} la16)
     \bar "||" \mark \default
