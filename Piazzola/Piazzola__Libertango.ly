@@ -55,20 +55,20 @@ vibrato = \markup {
     \clef "bass"
     
     \mark \default
-    r8 mi8\f fa8 mi8-. fa8( mi8-.) do'8 la8-.
-    | r8 mi8( fa8) mi8-. do'8 la8-. mi8 fa8-.
-    | r8 red8\1 mi8 red8-. mi8 red8-. si8 fad8-.
-    | r8 red8 mi8 red8-. si8 fad8-. red8 mi8-.
-    | r8 re8 mi8\1 re8-. mi8 re8-. si8 fa8-.
-    | r8 re8 mi8 re8-. si8 fa8-. re8 mi8-.
-    | r8 do8 re8 do8-. re8 do8-. la8 mi8-.
-    | r8 do8 re8 do8-. la8 mi8-. do8 re8-.
-    | r8 do8 re8 do8-. re8 do8-. la8 mib8-.
-    | r8 do8 re8 do8-. la8 mib8-. do8 re8-.
-    | r8 si,8 do8 si,8-. do8 si,8-. sold8 re8-.
-    | r8 si,8 do8 si,8-. sold8 re8-. si,8 do8-.
-    | r8 si,8 do8 si,8-. do8 si,8-. sold8 re8-.
-    | r8 si,8 do8 si,8-. sold8 mi8-. do8 r8
+    r8 mi8\f fa8 mi8 fa8 mi8 do'8 la8
+    | r8 mi8 fa8 mi8 do'8 la8 mi8 fa8
+    | r8 red8\1 mi8 red8 mi8 red8 si8 fad8
+    | r8 red8 mi8 red8 si8 fad8 red8 mi8
+    | r8 re8 mi8\1 re8 mi8 re8 si8 fa8
+    | r8 re8 mi8 re8 si8 fa8 re8 mi8
+    | r8 do8 re8 do8 re8 do8 la8 mi8
+    | r8 do8 re8 do8 la8 mi8 do8 re8
+    | r8 do8 re8 do8 re8 do8 la8 mib8
+    | r8 do8 re8 do8 la8 mib8 do8 re8
+    | r8 si,8\2 do8 si,8 do8 si,8 sold8 re8
+    | r8 si,8 do8 si,8 sold8 re8 si,8 do8
+    | r8 si,8 do8 si,8 do8 si,8 sold8 re8
+    | r8 si,8 do8 si,8 sold8 mi8^\markup{\bold\teeny x1} do8\4 r8
     
     \mark \default
     \tempo "arco"
