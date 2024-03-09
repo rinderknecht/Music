@@ -150,14 +150,14 @@ stopBarre = \stopTextSpan
     | si,8^\allongerUne do8( re8 mi8 fad8 sol8)
     | la,8^\allongerUne re8( mi8 fad8 sol8 la8)
     | sol,8^\allongerUne mi8( fad8 sol8 la8 si8)
-    | re,8^\vibrato do'8\startGroup la8 do'8 fad8^\allongerUne do'8
-    | re8 do'8 la8 do'8 fad8^\allongerUne do'8 \stopGroup
-    | re8\startGroup sib8^\markup{\bold\teeny x1} sol8 sib8 fad8^\allongerUne sib8
-    | re8 sib8^\markup{\bold\teeny x1} sol8 sib8 fad8^\allongerUne sib8 \stopGroup
-    | mib8^\markup{\bold\teeny x1}\startGroup la8 sol8 la8 fad8^\allongerUne la8
-    | mib8^\markup{\bold\teeny x1} la8 sol8 la8 fad8^\allongerUne la8 \stopGroup
-    | do'8 la8 fad8 re8 la,8 fad,8^\markup{\bold\teeny x4}
-    | re,4. re8 fad8 la8
+    | re,8^\vibrato do'8 la8 do'8 fad8^\allongerUne do'8
+    | re8 do'8 la8 do'8 fad8^\allongerUne do'8
+    | re8 sib8^\markup{\bold\teeny x1} sol8 sib8 fad8^\allongerUne sib8
+    | re8 sib8^\markup{\bold\teeny x1} sol8 sib8 fad8^\allongerUne sib8
+    | mib8^\markup{\bold\teeny x1} la8 sol8 la8 fad8^\allongerUne la8
+    | mib8^\markup{\bold\teeny x1} la8 sol8 la8 fad8^\allongerUne la8
+    | do'8^\vibrato la8 fad8 re8 la,8 fad,8^\markup{\bold\teeny x4}
+    | re,4.^\vibrato re8 fad8 la8
     | si!8(^\allongerUne do'8 re'8) la8 si8 sol8
     | la8(^\allongerUne si8 do'8) sol8 la8 fad8
     | sol8^\allongerUne re8 mi8 do8 la,8 fad8
@@ -165,7 +165,7 @@ stopBarre = \stopTextSpan
     }    
     
     \repeat volta 2 {
-    | \partial 8 re'8\upbow
+      \partial 8 re'8\upbow
     | re'8^\vibrato si8 sol8 re8 si,8 re8\upbow
     | fa!8\upbow re8( si,8 la,8 si,8) sol,8
     | do,8 fa8( mi8 re8 mi8 sol8)
@@ -181,7 +181,7 @@ stopBarre = \stopTextSpan
     | do,8 mi'8(\4 re'8 do'8\2 si8 la8)
     | mi8 re'8( do'8 si8 la8 sold8)^\markup{\bold\teeny x4}
     | la8 mi8(\upbow re8 do8 re8 mi8)
-    | la,4. la16( si16 do'16 si16 do'16 la16)
+    | la,4.^\vibrato la16( si16 do'16 si16 do'16 la16)
     | sol!8\startGroup mi8 do8 mi8 sol8 sib8^\markup{\bold\teeny x1}\stopGroup
     | mi,8^\vibrato re'8( do'8 sib8^\markup{\bold\teeny x1} la8 sol8)
     | la8 fa8( mi8 fa8) do8 fa8
@@ -198,12 +198,12 @@ stopBarre = \stopTextSpan
     | mi8^\allongerUne sol8 do'8 mi'8\4 do'8\2 la8
     | fa8^\allongerUne mi'8(\4 re'8 do'8\2 si8 la8)
     | si8 re'8 si8 sol8 re8 si,8
-    | sol,8\startGroup^\allongerUne fa8 re8 fa8 si,8^\allongerUne fa8
-    | sol,8^\allongerUne fa8 re8 fa8 si,8^\allongerUne fa8\stopGroup
-    | sol,8\startGroup^\allongerUne mib8^\markup{\bold\teeny x1} do8 mib8 si,8^\allongerUne mib8
-    | sol,8^\allongerUne mib8^\markup{\bold\teeny x1} do8 mib8 si,8^\allongerUne mib8\stopGroup
-    | lab,8^\markup{\bold\teeny x1}\startGroup^\allongerUne re8 do8 re8 si,8^\allongerUne re8
-    | lab,8^\markup{\bold\teeny x1}^\allongerUne re8 do8 re8 si,8^\allongerUne re8\stopGroup
+    | sol,8^\allongerUne fa8 re8 fa8 si,8^\allongerUne fa8
+    | sol,8^\allongerUne fa8 re8 fa8 si,8^\allongerUne fa8
+    | sol,8^\allongerUne mib8^\markup{\bold\teeny x1} do8 mib8 si,8^\allongerUne mib8
+    | sol,8^\allongerUne mib8^\markup{\bold\teeny x1} do8 mib8 si,8^\allongerUne mib8
+    | lab,8^\markup{\bold\teeny x1}^\allongerUne re8 do8 re8 si,8^\allongerUne re8
+    | lab,8^\markup{\bold\teeny x1}^\allongerUne re8 do8 re8 si,8^\allongerUne re8
     | fa8 sol,8 si,8 re8 fa8 si8
     | re'4. do'8 si8 la8
     | sol8(^\allongerTrois fa8 mi8) sol8 fa8 re8
