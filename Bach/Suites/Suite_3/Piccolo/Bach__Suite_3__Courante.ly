@@ -142,8 +142,8 @@ stopBarre = \stopTextSpan
     | do8 re8 do8 si,8 la,8 sol,8
     | fad,8^\markup{\bold\teeny x4} la8( si8 la8 sol8 la8)
     | do8 mi8 re8 do8 si,8 la,8
-    | sol,8^\allongerUne si8( do'8 si8) mi8 si8
-    | la,8^\allongerUne do'8( re'8 do'8) fad8 do'8
+    | sol,8^\allongerUne \startModernBarre #3 #1 si8( do'8 si8) mi8 si8
+    | la,8^\allongerUne\stopBarre do'8( re'8 do'8) fad8 do'8
     | si,8^\vibrato re'8(\2 mi'8 re'8 do'8\2 si8)
     | la8(^\allongerUne sol8 fa!8 mi8 fa8) re8
     | do,8 fa8( mi8 re8 mi8 do8)
@@ -208,8 +208,8 @@ stopBarre = \stopTextSpan
     | re'4. do'8 si8 la8
     | sol8(^\allongerTrois fa8 mi8) sol8 fa8 re8
     | mi8(^\allongerTrois re8 do8) mi8 re8 si,8
-    | do8_\markup{\small\italic "ritenuto"} sol8 la8 fa8 re8 si8
-    | <<do'2 mi2 sol,2 do,2>> r8
+    | do8_\markup{\small\italic "ritenuto"} sol8 la8 fa8 re8 \startModernBarre #4 #1 si8
+    | <<do'2 mi2 sol,2 do,2>> \stopBarre r8
     }
   }
 }
