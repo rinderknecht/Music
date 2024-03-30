@@ -170,8 +170,8 @@ stopBarre = \stopTextSpan
       sib16^\markup{\bold\teeny x1} la16
       sib16) sib16( la16 sold16\3 la16)-4
     | la16-4( sol!16-2 fad16-1 sol16) sol16\4(
-      mi16 dod16^\markup{\bold\teeny x4} si,!16)
-      la,16( dod16 mi16) sol16 la16 dod'16 re'16 dod'16
+      mi16 dod16^\markup{\bold\teeny x4} si,!16)^\markup{\bold\teeny x2}
+      la,16( dod16^\markup{\bold\teeny x4} mi16) sol16 la16 dod'16 re'16 dod'16
     | re'16( la16 fad16) mi16 fad16 la16 re16
       fad16 la,16 re16 dod16^\markup{\bold\teeny x4} si,16
       la,16 sol,16\open fad,16^\markup{\bold\teeny x4} mi,16

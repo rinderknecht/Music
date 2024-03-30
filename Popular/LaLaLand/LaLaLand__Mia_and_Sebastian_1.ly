@@ -3,7 +3,7 @@
 \version "2.24.0"
 
 \header {
-  title    = "Mia & Sebastian"
+  title    = "Mia & Sebastian (piccolo cello)"
   composer = "Justin Hurwitz"
   tagline  = "Transcribed by Bruno Vittoruzzo"
 }
@@ -29,7 +29,7 @@ vibrato = \markup {
 \paper {
   paper-width  = 195\mm
   paper-height = 260\mm
-%  indent = #0
+  indent = #0
   page-count = #1
   line-width = #184
   print-page-number = ##f
@@ -44,7 +44,8 @@ vibrato = \markup {
 
 \score {
   \new Staff
-  \with{instrumentName=#"Piccolo"}{
+  %  \with{instrumentName=#"Piccolo"}
+   {
     \set fingeringOrientations = #'(left)
     \override Beam.auto-knee-gap = #2
     \override Hairpin.to-barline = ##f
