@@ -50,11 +50,11 @@ vibrato = \markup {
     \override Parentheses.padding = #0.1
     \override Parentheses.font-size = #-1
 
-    \transpose do fa {
+%    \transpose do fa {
     \time 4/4
     \key re \major
-    \clef "tenor"
-       mi,8.\mp\(\upbow sol,16 si,8 mi8( mi8.)\) mi16_( re8. si,16)
+    \clef "bass" % tenor
+      mi,8.\mp\(\upbow sol,16 si,8 mi8( mi8.)\) mi16_( re8. si,16)
      | mi,8.\(\upbow sol,16 si,8 mi8( mi8.)\) mi16_( re8. si,16)
        
      | mi8.(\upbow fad16 sol8) si8(^\vibrato si2)(
@@ -115,6 +115,6 @@ vibrato = \markup {
      | r1\fermata\!
      
     \bar "|."
-    }
+ %   }
     }
   }
