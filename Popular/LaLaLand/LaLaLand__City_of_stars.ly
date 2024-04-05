@@ -50,27 +50,28 @@ vibrato = \markup {
     \override Parentheses.padding = #0.1
     \override Parentheses.font-size = #-1
 
+    \transpose do fa {
     \time 4/4
     \key re \major
-    \clef "bass"
-       mi,8.\mp\(\downbow sol,16 si,8 mi8( mi8.)\) mi16_( re8. si,16)
-     | mi,8.\( sol,16 si,8 mi8( mi8.)\) mi16_( re8. si,16)
+    \clef "tenor"
+       mi,8.\mp\(\upbow sol,16 si,8 mi8( mi8.)\) mi16_( re8. si,16)
+     | mi,8.\(\upbow sol,16 si,8 mi8( mi8.)\) mi16_( re8. si,16)
        
      | mi8.(\upbow fad16 sol8) si8(^\vibrato si2)(
      | si4) dod'8.( re'16 si8. dod'16 la8. si16)
      | fad1^\vibrato
-     | si,8.\(\downbow re16 fad8 si8( si8.)\) si16( la8. fad16) 
-     | si,8.\( re16 fad8 si8( si8.)\) si16( la8. fad16) 
+     | si,8.\(\upbow re16 fad8 si8( si8.)\) si16( la8. fad16) 
+     | si,8.\(\upbow re16 fad8 si8( si8.)\) si16( la8. fad16) 
      | mi8.(\upbow fad16 sol8) si8(^\vibrato si2)(
      | si4) dod'8.( re'16 si8. dod'16 la8. si16)
      | fad1^\vibrato
-     | re8.\( fad16 la8 re'8( re'8.)\) re'16( dod'8. si16)
-     | re8.\( fad16 la8 re'8( re'8.)\) re'16( dod'8. si16)
+%     | re8.\( fad16 la8 re'8( re'8.)\) re'16( dod'8. si16)
+%     | re8.\( fad16 la8 re'8( re'8.)\) re'16( dod'8. si16)
      | fad4\upbow sol2.(
-     | sol8.) si16( la8. si16 la8 si8 la8 si8)
+     | sol8.) si16( la8. si16 la8. si16 la8. si16)
      | fad4. fad8 fad4. fad8
-     | fad2 r4 fad'4\downbow
-     | mi'4 r4 si2
+     | fad2^\vibrato r4 fad'4\downbow
+     | mi'4 r4 si2^\vibrato
      | dod'4.\upbow fad8 \tuplet 3/2 {fad'4( mi'4 re'4)}
      | si2 r2
      | mi8.(\upbow fad16 sol8) si8(^\vibrato si2)
@@ -114,5 +115,6 @@ vibrato = \markup {
      | r1\fermata\!
      
     \bar "|."
+    }
     }
   }
