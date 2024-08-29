@@ -208,7 +208,7 @@ stopBarre = \stopTextSpan
     | re'4. do'8 si8 la8
     | sol8(^\allongerTrois fa8 mi8) sol8 fa8 re8
     | mi8(^\allongerTrois re8 do8) mi8 re8 si,8
-    | do8_\markup{\small\italic "ritenuto"} sol8 la8 fa8 re8 \startModernBarre #4 #1 si8
+    | do8_\markup{\small\italic "ritenuto"} sol8 la8 fa8 re8 \startModernBarre #2 #1 si8
     | <<do'2 mi2 sol,2 do,2>> \stopBarre r8
     }
   }
