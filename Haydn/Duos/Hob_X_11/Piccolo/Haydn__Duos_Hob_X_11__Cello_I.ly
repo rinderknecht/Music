@@ -67,7 +67,7 @@
         la8 dod8\4\upbow[ re8 mi8]^\markup{\bold\teeny x1}
       | fad8\3 si16([ re'16)] dod'16( la16) sold16(\1 si16)
       | la8 dod8-1\upbow[ re8 mi8]\1
-      | fad8\3 \tuplet 3/2 {si16( dod'16 re'16)} \tuplet 3/2 {dod'16( si16 la16)}
+      | fad8 \tuplet 3/2 {si16( dod'16 re'16)} \tuplet 3/2 {dod'16( si16 la16)}
         \tuplet 3/2 {sold16(\1 la16 si16)}
       | \partial 4. la8[ mi8\1 la,8]
     }
