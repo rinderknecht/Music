@@ -53,7 +53,7 @@ vibrato = \markup {
       | dod'16( si16) re'16( si16) la8 fad'16-. re'16-.
       | la4\4(\upbow \afterGrace sol4-+ {fad16 sol16)}
       | sol4(^\vibrato fad8) r8
-      | r8 re8[\upbow  mi8 fad8]
+      | r8 re8\open[\upbow  mi8\1 fad8]
       | sol4 fad4 
       | sol4 fad4
       | r8 re8[\upbow mi8 la,8]
@@ -89,7 +89,7 @@ vibrato = \markup {
         \partial 8 mi8\upbow
       | la2\4^\vibrato
       | sold16( fad16)-1 la16( fad16) mi8\1 dod'16-. la16-.
-      | sold16( fad16)-1 la16( fad16) mi8\1 dod'16-. la16-.
+      | sold16(\3 fad16)-1 la16( fad16) mi8\1 dod'16-. la16-.
       | mi4\4^\vibrato\(( mi16) re16 dod16-1 re16\)
       | re4(^\vibrato dod8) r8
       | r8 re8\open\upbow[ mi8\1 fad8]
