@@ -98,14 +98,14 @@ vibrato = \markup {
       | r8 re8\upbow[ mi8 la,8]
       | re8 fad16 sol16 la16 si16 do'16 re'16
       | mi'8 re'4 do'8
-      | si4 re'16( do'16 si16 la16)
-      | si4 re'16( do'16 si16 la16)
-      | si8 mi'8\downbow( mi'16) re'16( dod'!16 si16)
-      | dod'4 mi'16( re'16 dod'16 si16)
-      | dod'4 mi'16( re'16 dod'16 si16)
-      | dod'8 la8(\downbow la16) sol16( fad16 mi16)
-      | fad4 la16( sol16 fad16 mi16)
-      | fad4 la16( sol16 fad16 mi16)
+      | si4^\vibrato re'16( do'16 si16 la16)
+      | si4^\vibrato re'16( do'16 si16 la16)
+      | si8^\vibrato mi'8\downbow( mi'16) re'16( dod'!16 si16)
+      | dod'4^\vibrato mi'16( re'16 dod'16 si16)
+      | dod'4^\vibrato mi'16( re'16 dod'16 si16)
+      | dod'8^\vibrato la8(\downbow la16) sol16( fad16 mi16)
+      | fad4^\vibrato la16( sol16 fad16 mi16)
+      | fad4^\vibrato la16( sol16 fad16 mi16)
       | re8[ sol8 sol8 sol8]
       | sol16( fad16 mid16 fad16) fad16( sol16 la16 lad16)^\markup{\bold\teeny x1}
       | si8 mi8(^\vibrato mi16) sol16( fad16 mi16)
