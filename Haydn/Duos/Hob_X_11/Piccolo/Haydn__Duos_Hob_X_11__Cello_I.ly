@@ -49,8 +49,8 @@ vibrato = \markup {
     \repeat volta 2 {
       \partial 8 la8\upbow
       | re'2^\vibrato
-      | dod'16( si16) re'16( si16) la8 fad'16-. re'16-.
-      | dod'16( si16) re'16( si16) la8 fad'16-. re'16-.
+      | dod'16( si16) re'16( si16) la8 fad'16-- re'16--
+      | dod'16( si16) re'16( si16) la8 fad'16-- re'16--
       | la4\4(\upbow \afterGrace sol4-+ {fad16 sol16)}
       | sol4(^\vibrato fad8) r8
       | r8 re8\open[\upbow  mi8\1 fad8]
@@ -65,8 +65,8 @@ vibrato = \markup {
       | la8 mi'8( dod'8) re'8 
       | dod'8 \tuplet 3/2 {mi'16( fad'16 sol'16)} sol'8^\vibrato fad'8
       | fad'8\trill( mi'8) r8 la16\downbow dod'16
-      | mi'4(^\vibrato mi'16) la'16( sold'16 fad'16)
-      | mi'8 mi'8\downbow(^\vibrato mi'16) re'16( dod'16 si16)
+      | mi'4( mi'16) la'16( sold'16 fad'16)
+      | mi'8 mi'8\downbow( mi'16) re'16( dod'16 si16)
       |  dod'8 dod'8[ si8 la8]
       | sold8[\4 mi8^\markup{\bold\teeny x1} fad8 sold8]
       | la8 fad'8^\vibrato\1\downbow( fad'16) la'16( sold'16 fad'16)
@@ -77,9 +77,9 @@ vibrato = \markup {
       | si16( la16 sold16^\markup{\bold\teeny x4} la16) la'4^\vibrato
       | sold'32( fad'32 mi'32 re'32) re'32( dod'32 si32 la32) \afterGrace si4_(-+ {la16 si16)}
       \clef "bass"
-        la8 dod8\4\upbow[ re8 mi8]^\markup{\bold\teeny x1}
+        la8\upbow dod8\4\upbow[ re8 mi8]^\markup{\bold\teeny x1}
       | fad8\3 si16([ re'16)] dod'16( la16) sold16(\1 si16)
-      | la8 dod8-1\upbow[ re8\open mi8]\1
+      | la8\upbow dod8-1\upbow[ re8\open mi8]\1
       | fad8 \tuplet 3/2 {si16( dod'16 re'16)} \tuplet 3/2 {dod'16( si16 la16)}
         \tuplet 3/2 {sold16(\1 la16 si16)}
       | \partial 4. la8[ mi8\1 la,8]^\vibrato
@@ -88,8 +88,8 @@ vibrato = \markup {
     \repeat volta 2 {
         \partial 8 mi8\upbow
       | la2\4^\vibrato
-      | sold16( fad16)-1 la16( fad16) mi8\1 dod'16-. la16-.
-      | sold16(\3 fad16)-1 la16( fad16) mi8\1 dod'16-. la16-.
+      | sold16( fad16)-1 la16( fad16) mi8\1 dod'16-- la16--
+      | sold16(\3 fad16)-1 la16( fad16) mi8\1 dod'16-- la16--
       | mi4\4^\vibrato\(( mi16) re16 dod16-1 re16\)
       | re4(^\vibrato dod8) r8
       | r8 re8\open\upbow[ mi8\1 fad8]
@@ -109,8 +109,8 @@ vibrato = \markup {
       | re8[ sol8 sol8 sol8]
       | sol16( fad16 mid16 fad16) fad16( sol16 la16 lad16)^\markup{\bold\teeny x1}
       | si8 mi8(^\vibrato mi16) sol16( fad16 mi16)
-      | mi16( re16 dod16^\markup{\bold\teeny x4} re16) re'4^\vibrato
-      | dod'32( si32 la32 sol32) sol32( fad32 mi32 re32) \afterGrace mi4-+_( {re16 mi16)}
+      | mi16(\4 re16 dod16 re16) re'4-1^\vibrato
+      | dod'32(\3 si32 la32 sol32) sol32( fad32 mi32 re32) \afterGrace mi4-+_( {re16 mi16)}
       | re4 r8 fad8\upbow
       | \tuplet 3/2 {sol16( la16 si16)} si16 si16 si8^\vibrato sol8
       | \tuplet 3/2 {fad16( mi16 re16)} re16 re16 re8 fad8
