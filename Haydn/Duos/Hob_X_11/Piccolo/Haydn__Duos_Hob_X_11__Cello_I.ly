@@ -69,12 +69,12 @@ vibrato = \markup {
       | mi'8 mi'8\downbow( mi'16) re'16( dod'16 si16)
       |  dod'8 dod'8[ si8 la8]
       | sold8[\4 mi8^\markup{\bold\teeny x1} fad8 sold8]
-      | la8 fad'8^\vibrato\1\downbow( fad'16) la'16( sold'16 fad'16)
-      |fad'16( mi'16 red'16^\markup{\bold\teeny x4} mi'16) mi'8.( fad'32 sold'32)
-      | la'8 re'8^\vibrato\downbow( re'16) fad'16( mi'16 re'16)
+      | la8 fad'8^\vibrato\1\downbow(_\markup{\tiny I} fad'16) la'16(^\markup{\bold\teeny x3} sold'16 fad'16)
+      | fad'16(\4 mi'16 red'16-1 mi'16) mi'8.(\1 fad'32 sold'32)
+      | la'8-3\flageolet re'8^\vibrato\downbow( re'16) fad'16( mi'16 re'16)
       | re'16( dod'16 sid16-2 dod'16) dod'16( re'16 mi'16 mid'16)^\markup{\bold\teeny x1}
       | fad'8 si8^\vibrato\downbow( si16) re'16( dod'16 si16)
-      | si16( la16 sold16^\markup{\bold\teeny x4} la16) la'4^\vibrato
+      | si16(\4 la16 sold16-1 la16) la'4-3\flageolet
       | sold'32( fad'32 mi'32 re'32) re'32( dod'32 si32 la32) \afterGrace si4_(-+ {la16 si16)}
       \clef "bass"
         la8\upbow dod8\4\upbow[ re8 mi8]^\markup{\bold\teeny x1}
@@ -193,7 +193,7 @@ vibrato = \markup {
 %    \set Score.currentBarNumber = #0
 
     \repeat volta 2 {
-        \partial 4 la4\upbow
+        \partial 4 re'4\upbow
       | \acciaccatura re'8( dod'4) si8 la8 re'4
       | si4 si4\upbow la4\upbow
       | \acciaccatura la8( sol4) fad8 mi8 la4
