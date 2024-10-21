@@ -123,10 +123,10 @@ vibrato = \markup {
       | re8 la8\downbow( la16) re'16( dod'16 si16)
       | la8 la8(\downbow la16) sol16( fad16 mi16)
       | re16( fad16 re16 fad16 re16 fad16 re16 fad16)
-      | dod16(^\markup{\bold\teeny x4} mi16 dod16 mi16 dod16 mi16 dod16 mi16)
-      | si,16( re16 si,16 re16 si,16 re16 si,16 re16)
-      | la,16( dod16^\markup{\bold\teeny x4} la,16 dod16 la,16 dod16 la,16 dod16)
-      | sol,16( si,16 sol,16 si,16 sol,16 si,16 sol,16 si,16) fad,4\4 r8 fad,8
+      | dod16(\1 mi16 dod16 mi16 dod16 mi16 dod16 mi16)
+      | si,16(\1 re16 si,16 re16 si,16 re16 si,16 re16)
+      | la,16(\1 dod16 la,16 dod16 la,16 dod16 la,16 dod16)
+      | sol,16(\open si,16\2 sol,16 si,16 sol,16 si,16 sol,16 si,16) fad,4 r8 fad,8
       | sol,8 si,8-2 la,8\1 la,8
       | re,8^\vibrato fad16(\1 re'16) sol16( re'16) la16( re'16)
       | si4\1^\vibrato r8 la8
