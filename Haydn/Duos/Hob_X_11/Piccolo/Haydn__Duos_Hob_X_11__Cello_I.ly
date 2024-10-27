@@ -109,7 +109,7 @@ vibrato = \markup {
       | re8[ sol8 sol8 sol8]
       | sol16( fad16 mid16 fad16) fad16( sol16 la16 lad16)^\markup{\bold\teeny x1}
       | si8 mi8(^\vibrato mi16) sol16( fad16 mi16)
-      | mi16(\4 re16 dod16 re16) re'4-1^\vibrato
+      | mi16(\4 re16 dod16 re16) re'4\1^\vibrato
       | dod'32(\3 si32 la32 sol32) sol32( fad32 mi32 re32) \afterGrace mi4-+_( {re16 mi16)}
       | re4 r8 fad8\upbow
       | \tuplet 3/2 {sol16( la16 si16)} si16 si16 si8^\vibrato sol8
