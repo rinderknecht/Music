@@ -108,14 +108,14 @@ vibrato = \markup {
       | fad4^\vibrato la16( sol16 fad16 mi16)
       | re8[ sol8 sol8 sol8]
       | sol16( fad16 mid16 fad16) fad16( sol16 la16 lad16)^\markup{\bold\teeny x1}
-      | si8 mi8(^\vibrato mi16) sol16( fad16 mi16)
+      | si8 mi8(\downbow^\vibrato mi16) sol16( fad16 mi16)
       | mi16(\4 re16 dod16 re16) re'4\1^\vibrato
       | dod'32(\3 si32 la32 sol32) sol32( fad32 mi32 re32) \afterGrace mi4-+_( {re16 mi16)}
-      | re4 r8 fad8\upbow
+      | re4\upbow r8 fad8\upbow
       | \tuplet 3/2 {sol16( la16 si16)} si16 si16 si8^\vibrato sol8
-      | \tuplet 3/2 {fad16( mi16 re16)} re16 re16 re8 fad8
+      | \tuplet 3/2 {fad16(\upbow mi16 re16)} re16 re16 re8 fad8
       | <<mi8 la,8>> mi'8( dod'8) re'8
-      | dod'8 sol'4^\vibrato fad'8
+      | dod'8\upbow sol'4^\vibrato fad'8
       | la8 \tuplet 3/2 {dod'16(\1 re'16 mi'16)} mi'8^\vibrato re'8
       | re'8\trill( dod'8) r4
       | r8 fad8\3\upbow[ mi8 re8]
