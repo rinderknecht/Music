@@ -73,7 +73,7 @@ vibrato = \markup {
       | fad'16(\4 mi'16 red'16-1 mi'16) mi'8.(\1 fad'32^\markup{\bold\teeny x2} sold'32)
       | la'8-3\flageolet re'8^\1\vibrato\downbow( re'16) fad'16(^\markup{\bold\teeny x4} mi'16 re'16)
       | re'16(\4 dod'16 sid16-2 dod'16) dod'16( re'16 mi'16\1 mid'16)-2
-      | fad'8 si8^\vibrato\downbow( si16)\1 re'16(^\markup{\bold\teeny x3} dod'16 si16)
+      | fad'8 si8^\vibrato\downbow( si16)\1 re'16(^\markup{\bold\teeny x3nn} dod'16 si16)
       | si16(\4 la16 sold16-1 la16) la'4\1
       | sold'32(\3 fad'32 mi'32 re'32) re'32( dod'32 si32 la32) \afterGrace si4_(-+ {la16 si16)}
       \clef "bass"
@@ -237,20 +237,24 @@ vibrato = \markup {
         la'4. fad'8
       | sol'8[ mi'8 re'8 dod'8]
     
-      \repeat volta 2 {
-        re'4 r4
+      
+      | re'4 r4
       | r4 sol'16(\upbow fad'16 mi'16 fad'16)
       | sol'4 r4
       | r4 fad'16( mi'16 re'16 dod'16)
-      }
-    
-        re'4 r8 la8
+      
+      | re'4 r4
+      | r4 sol'16(\upbow fad'16 mi'16 fad'16)
+      | sol'4 r4
+      | r4 fad'16( mi'16 re'16 dod'16)
+      
+      | re'4 r8 la8
       | re'16( dod'16 re'16 mi'16) fad'16( mi'16 fad'16 sol'16)
       | la'4 r8 la8
       | \clef "bass" 
-        sold8[( fad8 mi8 re'8--)]
-      | dod'8[( si8 la8 la8--)]
-      | sold8[( fad8 mi8 re'8--)]
+        sold8[\(( fad8 mi8) re'8--\)]
+      | dod'8[\(( si8 la8) la8--\)]
+      | sold8[\(( fad8 mi8) re'8--\)]
       | dod'8[( si8 la8) dod8]\upbow
       | re4 mi4
       | fad4 r8 mi8
@@ -304,9 +308,9 @@ vibrato = \markup {
       | fad8 re,8[ fad,8 la,8]
       | re16( dod16 re16 mi16) fad16( mi16 fad16 sol16)
       | la4 r8 re'8
-      | dod'8[( si8 la8 si8--)]
-      | la8[( sol8 fad8 re'8--)]
-      | dod'8[( si8 la8 si8--)]
+      | dod'8[\(( si8 la8) si8--\)]
+      | la8[\(( sol8 fad8) re'8--\)]
+      | dod'8[\(( si8 la8) si8--\)]
       | la8[( sol8 fad8) la8\upbow]
       | si8[ sol8 mi8 dod8]
       | re16( mi16 fad16 mi16) re8 fad,8\upbow
@@ -319,9 +323,9 @@ vibrato = \markup {
       | <<{dod'16_( si16 dod'16 re'16)}\\{<<mi4 la,4>>}>> dod'8\upbow re'8\upbow 
       | mi'8[( dod'8) re'8\upbow si8\upbow]
       | <<dod'4 mi4 la,4>> r8 re8
-      | dod8[( si,8 la,8 sol8--)]
-      | fad8[( mi8 re8 re8--)]
-      | dod8[( si,8 la,8 sol8--)]
+      | dod8[\(( si,8 la,8) sol8--\)]
+      | fad8[\(( mi8 re8) re8--\)]
+      | dod8[\(( si,8 la,8) sol8--\)]
       | fad8[( mi8 re8)] fad,8\upbow
       | sol,4 la,4
       | si,4 r8 fad,8
