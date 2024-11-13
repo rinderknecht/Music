@@ -73,7 +73,7 @@ vibrato = \markup {
       | fad'16(\4 mi'16 red'16-1 mi'16) mi'8.(\1 fad'32^\markup{\bold\teeny x2} sold'32)
       | la'8-3\flageolet re'8^\1\vibrato\downbow( re'16) fad'16(^\markup{\bold\teeny x4} mi'16 re'16)
       | re'16(\4 dod'16 sid16-2 dod'16) dod'16( re'16 mi'16\1 mid'16)-2
-      | fad'8 si8^\vibrato\downbow( si16)\1 re'16(^\markup{\bold\teeny x3nn} dod'16 si16)
+      | fad'8 si8^\vibrato\downbow( si16)\1 re'16(^\markup{\bold\teeny x3} dod'16 si16)
       | si16(\4 la16 sold16-1 la16) la'4\1
       | sold'32(\3 fad'32 mi'32 re'32) re'32( dod'32 si32 la32) \afterGrace si4_(-+ {la16 si16)}
       \clef "bass"
