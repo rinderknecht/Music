@@ -3,7 +3,7 @@
 \version "2.24.0"
 
 \header {
-  title    = "Canon"
+  title    = "Canon (piccolo cello)"
   composer = "Domenico Gabrielli (1689)"
   tagline  = ""
 }
@@ -40,6 +40,7 @@ vibrato = \markup {
 
 \score {
   \new Staff {
+   %\with {instrumentName = #"Piccolo"}{
    \override Hairpin.to-barline = ##f
    \set fingeringOrientations = #'(left)
    \override Beam.auto-knee-gap = #2
@@ -51,33 +52,33 @@ vibrato = \markup {
 
    re'8\downbow dod'16(si16) la16 si16 sol16 la16
    fad8 re8\upbow r8 mi8\upbow
-   | fad8\1^\markup{\musicglyph "scripts.segno"}
-     sol8 la8 la,8\1
+   | fad8^\markup{\musicglyph "scripts.segno"}
+     sol8 la8 la,8
      re16 re'16 dod'16 si16 la8 sol8
    | fad8 si8 dod'16 re'16 si16 dod'16
      re'16 si16 la16 sol16 fad16 sol16 mi16 fad16
    | re8 sol8 mi8 fad8 si,4 re8\upbow mi\upbow
    | fad8 si8 re'4.(dod'8) si4(
    | si8) sol8 mi8 fad8 si,4\upbow re8\4 sol8-2
-   | dod8-3 mi8\3 mi8 re8 re4.
+   | dod8-3 mi8\1 mi8 re8 re4.
      \mark \default \breathe
-     si16-3\upbow la16\downbow
-   | sol4.\4( fad8) fad16 sol16 fad16 mi16 re8 re'16( dod'16)
+     si16\upbow la16\downbow
+   | sol4.( fad8) fad16 sol16 fad16 mi16 re8 re'16( dod'16)
    | si16 dod'16 si16 la16 sol16 la16 si16 dod'16
-     re'4.^\vibrato fad8\1
-   | sol16 la16 sol16 fad16 mi16\1 fad16 sol16\2
-     la16-4 fad8-1 la8 fad8 re8\open
-   | mi16\1 fad16 mi16 re16 dod16\1
+     re'4.^\vibrato fad8
+   | sol16 la16 sol16 fad16 mi16 fad16 sol16
+     la16 fad8 la8 fad8 re8
+   | mi16 fad16 mi16 re16 dod16\1
      re16-2 mi16 dod16 re4
      \mark \default
-     r8 si8\2\upbow_\markup{\teeny II}
-   | si4^\vibrato lad4^\vibrato
-     si16-2 dod'16-4 si16 la16^\markup{\bold\teeny x1}
-     sol16\1 la16-3 sol16 fad16\3
-   | mi16 sol16\2 fad16 sol16
-     dod16-3 fad16-1 mi16\1 fad16
+     r8 si8\1\upbow
+   | si4^\vibrato lad4\1^\vibrato
+     si16-2 dod'16-4 si16 la16\open
+     sol16\4 la16 sol16 fad16
+   | mi16 sol16 fad16 sol16
+     dod16\3 fad16-1 mi16\1 fad16
      re4.\open mi16( fad16)
-   | sol16 si16 la16 si16 mi16 la16\4 sol16 la16
+   | sol16 si16 la16 si16 mi16 la16 sol16 la16
      fad8-1 re'4^\vibrato-2 do'8\2\downbow
    | si16\upbow sol16 fad16 sol16 mi8 dod8^\markup{\bold\teeny x4} re4 fad4
    | sol8\upbow sol,8 la,4^\vibrato re,4
@@ -107,7 +108,7 @@ vibrato = \markup {
      dod4^\markup{\bold\teeny x4} <mi'\finger\markup{\circle 1}>4^\vibrato mi'4^\vibrato mi'4^\vibrato
    | mi'4\downbow dod'16\4\downbow si16 dod'16 la16\2
      si16 la16 si16 sold16 la16 sold16 la16 fad16\2
-   | sold8-4 mi8^\markup{\bold\teeny x1} la4\open mi4\1 fad4
+   | sold8-4 mi8\1 la4\open mi4 fad4
    | mi4\upbow dod16\1 re16 mi16 re16 dod8
      mi'16-2 mi'16 mi'8.^\vibrato( red'16)
    | mi'4^\vibrato la4.-2 sold8 fad4\3
@@ -127,8 +128,8 @@ vibrato = \markup {
    | <fad'\finger\markup{\circle 3}>8\upbow 
      <re'\finger\markup{\circle 4}>8\upbow fad8 si8 sol8 mi8 la8 la,8
    | re4\downbow r16 la16 sol16 fad16 si4 r16 dod'16 si16 dod'16
-   | <re'\finger\markup{\circle 2}>16\downbow la16-4 sol16 la16 fad4-1
-     r16 sol16 fad16 sol16 mi4\1\downbow
+   | re'16\downbow la16 sol16 la16 fad4
+     r16 sol16 fad16 sol16 mi4\downbow
    | fad16\downbow fad16 mi16 fad16 re16\4 re16 dod16-3 re16
      si,16-1 mi16\4 re16-2 mi16 dod16\3 dod16 si,16-1 dod16
    | re4-4 si,4-1 sol,4\open la,4\1
