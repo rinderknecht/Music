@@ -39,6 +39,7 @@ vibrato = \markup {
 }
 
 \score {
+  \new StaffGroup
   <<
   \new Staff {
    \override Hairpin.to-barline = ##f
