@@ -58,36 +58,36 @@ vibrato = \markup {
    | fad8 si8 dod'16 re'16 si16 dod'16
      re'16 si16 la16 sol16 fad16 sol16 mi16 fad16
    | re8 sol8 mi8 fad8\> si,4\! re8 mi\upbow
-   | fad8 si8 re'4. dod'8 si4(
+   | fad8 si8 re'4.^\vibrato dod'8 si4(
    | si8) sol8 mi8 fad8\> si,4\! re8 sol8\upbow^\markup{\bold\teeny x3}
    | dod8^\markup{\bold\teeny x4} mi8 mi8-+ re8\> re4.\!
      \mark \default \breathe
      si16\upbow la16\downbow
    | sol4.( fad8) fad16 sol16 fad16 mi16 re8 re'16( dod'16)
    | si16 dod'16 si16 la16 sol16 la16 si16 dod'16
-     re'4. fad8
+     re'4.^\vibrato fad8
    | sol16 la16 sol16 fad16 mi16 fad16 sol16
      la16 fad8 la8 fad8 re8
    | mi16 fad16^\markup{\bold\teeny x2} mi16 re16 dod16^\markup{\bold\teeny x4}
      re16 mi16 dod16 re4
      \mark \default
      r8 si8
-   | si4 lad4-+
+   | si4^\vibrato lad4-+
      si16 dod'16 si16 la16
      sol16 la16 sol16 fad16
    | mi16 sol16^\markup{\bold\teeny x3} fad16^\markup{\bold\teeny x2} sol16
      dod16^\markup{\bold\teeny x4} fad16 mi16 fad16
      re4. mi16( fad16)
    | sol16 si16 la16 si16 mi16 la16 sol16 la16
-     fad8 re'4 do'8
-   | si16\upbow sol16 fad16 sol16 mi8 dod8 re4 fad4-+
-   | sol8 sol,8 la,4 re,4
+     fad8 re'4^\vibrato do'8
+   | si16\upbow sol16 fad16 sol16 mi8 dod8^\markup{\bold\teeny x4} re4 fad4-+
+   | sol8 sol,8 la,4 re,4^\vibrato
      \mark \default \breathe
      re'4\upbow(
    | re'8) dod'16\mordent si16 la16 si16 sol16 la16
      fad8 re8 fad8 mi16(re16)
-   | la8 mi8 dod8^\markup{\bold\teeny x4} la,8 re8 si,8 re'4
-   | dod'4\upbow mi8 dod8^\markup{\bold\teeny x4} si,4^\markup{\bold\teeny x2} si4\4
+   | la8 mi8 dod8^\markup{\bold\teeny x4} la,8 re8 si,8^\markup{\bold\teeny x2} re'4^\markup{\bold\teeny x3}
+   | dod'4\upbow^\markup{\bold\teeny x2} mi8 dod8^\markup{\bold\teeny x4} si,4^\markup{\bold\teeny x2} si4\4
    | la2(-2^\vibrato la4.) sold8-1
    | la4
      \mark \default
@@ -96,7 +96,7 @@ vibrato = \markup {
    | re'8( dod'8) r8 dod'8\upbow^\markup{\bold\teeny x2}
      dod'8 sold16(^\markup{\bold\teeny x4} la16) si8 si8
    | si8( la8) r8 la8\upbow la8 mi16( fad16)^\markup{\bold\teeny x2} sold4^\markup{\bold\teeny x4}
-   | la4 r8 la8\upbow dod8^\markup{\bold\teeny x4} dod16( re16) mi8 mi,8
+   | la4 r8 la8\upbow dod8^\markup{\bold\teeny x4} dod16( re16) mi8 mi,8-3
    | la,4
      \mark \default
      r8 la,8\upbow mi16 re16 mi16 fad16 mi16 fad16 mi16 re16
@@ -108,7 +108,7 @@ vibrato = \markup {
      dod4^\markup{\bold\teeny x4} mi'4\open mi'4 mi'4
    | mi'4 dod'16\downbow si16 dod'16 la16
      si16 la16 si16 sold16^\markup{\bold\teeny x4} la16 sold16 la16 fad16^\markup{\bold\teeny x2}
-   | sold8 mi8 la4 mi4 fad4
+   | sold8^\markup{\bold\teeny x4} mi8 la4 mi4 fad4
    | mi4 dod16^\markup{\bold\teeny x4} re16 mi16 re16 dod8
      mi'16\2 mi'16 mi'8.-+( red'16)
    | mi'4 la4.-2 sold8-1 fad4\3-+
@@ -129,10 +129,10 @@ vibrato = \markup {
    | re4 r16 la16 sol16 fad16 si4 r16 dod'16 si16 dod'16
    | re'16 la16 sol16 la16 fad4
      r16 sol16 fad16 sol16 mi4
-   | fad16\downbow fad16 mi16 fad16 re16 re16 dod16 re16
-     si,16 mi16 re16 mi16 dod16 dod16 si,16 dod16
-   | re4 si,4 sol,4 la,4
-   | re,4 r4 r2
+   | fad16\downbow^\markup{\bold\teeny x2} fad16 mi16 fad16 re16 re16 dod16^\markup{\bold\teeny x4} re16
+     si,16^\markup{\bold\teeny x2} mi16 re16 mi16 dod16^\markup{\bold\teeny x4} dod16 si,16^\markup{\bold\teeny x2} dod16
+   | re4 si,4-3 sol,4 la,4
+   | re,4^\vibrato r4 r2
    \bar "|."
  }
  
