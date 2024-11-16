@@ -91,16 +91,16 @@ vibrato = \markup {
    | la2(-2^\vibrato la4.) sold8-1
    | la4
      \mark \default
-     r8 mi'8\open\upbow mi'8 si16(\1 dod'16)
-     re'8 re'8
-   | re'8( dod'8) r8 dod'8\upbow^\markup{\bold\teeny x2}
+     r8 mi'8\open\upbow mi'8 si16(\1 dod'16)^\markup{\bold\teeny x2}
+     re'8^\markup{\bold\teeny x3} re'8
+   | re'8(-+ dod'8) r8 dod'8\upbow^\markup{\bold\teeny x2}
      dod'8 sold16(^\markup{\bold\teeny x4} la16) si8 si8
-   | si8( la8) r8 la8\upbow la8 mi16( fad16)^\markup{\bold\teeny x2} sold4^\markup{\bold\teeny x4}
+   | si8(-+ la8) r8 la8\upbow la8 mi16( fad16)^\markup{\bold\teeny x2} sold4^\markup{\bold\teeny x4}
    | la4 r8 la8\upbow dod8^\markup{\bold\teeny x4} dod16( re16) mi8 mi,8-3
    | la,4
      \mark \default
      r8 la,8\upbow mi16 re16 mi16 fad16 mi16 fad16 mi16 re16
-   | dod16^\markup{\bold\teeny x4} si,16 dod16 la,16
+   | dod16^\markup{\bold\teeny x4} si,16^\markup{\bold\teeny x2} dod16 la,16
      la16\4 sold16 la16 fad16-1 sold16-3 fad16 sold16 la16 sold8 si8\1
    | dod'8^\markup{\bold\teeny x2} mi8 dod8^\markup{\bold\teeny x4} la8\open mi4 r8 mi8
    | la,4 mi8\upbow dod8\upbow sold16^\markup{\bold\teeny x4}
