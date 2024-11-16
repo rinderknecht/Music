@@ -86,17 +86,17 @@ vibrato = \markup {
      re'4\upbow(
    | re'8) dod'16\mordent si16 la16 si16 sol16 la16
      fad8 re8 fad8 mi16(re16)
-   | la8 mi8 dod8 la,8 re8 si,8 re'4
-   | dod'4\upbow mi8 dod8 si,4 si4
-   | la2( la4.) sold8
+   | la8 mi8 dod8^\markup{\bold\teeny x4} la,8 re8 si,8 re'4
+   | dod'4\upbow mi8 dod8^\markup{\bold\teeny x4} si,4^\markup{\bold\teeny x2} si4\4
+   | la2(-2^\vibrato la4.) sold8-1
    | la4
      \mark \default
-     r8 mi'8\upbow mi'8 si16( dod'16)
+     r8 mi'8\open\upbow mi'8 si16(\1 dod'16)
      re'8 re'8
-   | re'8( dod'8) r8 dod'8\upbow
-     dod'8 sold16( la16) si8 si8
-   | si8( la8) r8 la8\upbow la8 mi16( fad16) sold4
-   | la4 r8 la8\upbow dod8 dod16( re16) mi8 mi,8
+   | re'8( dod'8) r8 dod'8\upbow^\markup{\bold\teeny x2}
+     dod'8 sold16(^\markup{\bold\teeny x4} la16) si8 si8
+   | si8( la8) r8 la8\upbow la8 mi16( fad16)^\markup{\bold\teeny x2} sold4^\markup{\bold\teeny x4}
+   | la4 r8 la8\upbow dod8^\markup{\bold\teeny x4} dod16( re16) mi8 mi,8
    | la,4
      \mark \default
      r8 la,8\upbow mi16 re16 mi16 fad16 mi16 fad16 mi16 re16
@@ -111,17 +111,17 @@ vibrato = \markup {
    | sold8 mi8 la4 mi4 fad4
    | mi4 dod16^\markup{\bold\teeny x4} re16 mi16 re16 dod8
      mi'16\2 mi'16 mi'8.-+( red'16)
-   | mi'4 la4.-2 sold8-1 fad4\3
+   | mi'4 la4.-2 sold8-1 fad4\3-+
    | mi4 r8
      \mark \default \breathe
-     dod'8\upbow si4 r8 la8
-   | sold8 mi8 dod4 re2
-   | mi4 la,4 si,4. si,8
-   | dod8 la,8 la4. si16 la16 sold8.( la16)
-   | la4 dod4 re4 mi4
-   | fad4 la,4 si,4 dod4
-   | re4\downbow la8 si16 la16 sol8 la16 si16 la8.( sol16)
-   | fad4 fad8 fad,8 sol,4 la,4
+     dod'8\upbow si4 r8 la8\2
+   | sold8-1 mi8-4 dod4-1 re2-2^\vibrato
+   | mi4-4 la,4\1 si,4.^\markup{\bold\teeny x2} si,8
+   | dod8^\markup{\bold\teeny x4} la,8 la4.\2 si16 la16 sold8.(-+ la16)
+   | la4-2 dod4-1 re4-2 mi4\1
+   | fad4 la,4 si,4^\markup{\bold\teeny x2} dod4^\markup{\bold\teeny x4}
+   | re4\downbow la8\2 si16 la16 sol8^\markup{\bold\teeny x1} la16 si16 la8.(-+ sol16)
+   | fad4\1 fad8 fad,8-3 sol,4 la,4\1
    | re4\upbow
      \mark \default \breathe
      re'8 re'8 mi'8 mi'8 mi'8 re'16( mi'16)
