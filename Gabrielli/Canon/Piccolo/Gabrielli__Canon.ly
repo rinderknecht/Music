@@ -103,7 +103,7 @@ vibrato = \markup {
    | dod16^\markup{\bold\teeny x4} si,16^\markup{\bold\teeny x2} dod16 la,16
      la16\4 sold16 la16 fad16-1 sold16-3 fad16 sold16 la16 sold8 si8\1
    | dod'8^\markup{\bold\teeny x2} mi8 dod8^\markup{\bold\teeny x4} la8\open mi4 r8 mi8
-   | la,4 mi8\upbow dod8\upbow sold16^\markup{\bold\teeny x4}
+   | la,4 mi8\upbow dod8\upbow^\markup{\bold\teeny x4} sold16^\markup{\bold\teeny x4}
      la16 si16 la16 sold16 fad16^\markup{\bold\teeny x2} mi16 re16
      dod4^\markup{\bold\teeny x4} mi'4\open mi'4 mi'4
    | mi'4 dod'16\downbow si16 dod'16 la16
