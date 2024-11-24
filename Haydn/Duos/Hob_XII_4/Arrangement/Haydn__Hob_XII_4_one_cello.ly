@@ -143,9 +143,9 @@ vibrato = \markup {
     \repeat volta 2 {
       \partial 8 re'8\upbow
       | \tuplet 3/2 {si16\( do'16 re'16\)} re'16 re'16 \tuplet 3/2 {re'16\( mi'16 fa'16\)} fa'16 fa'16
-      | fa'4\( \autoBeamOff mi'8\) mi'8\upbow \autoBeamOn
+      | fa'4\(^\vibrato \autoBeamOff mi'8\) mi'8\upbow \autoBeamOn
       | \tuplet 3/2 {dod'16\( re'16 mi'16\)} mi'16 mi'16 \tuplet 3/2 {mi'16\( fad'16 sol'16\)} sol'16 sol'16
-      | sol'4\( \autoBeamOff fad'8\) re'8\upbow \autoBeamOn
+      | sol'4\(^\vibrato \autoBeamOff fad'8\) re'8\upbow \autoBeamOn
       | \tuplet 3/2 {re'16\( do'16 si16\)} si16 si16 \tuplet 3/2 {re'16\( do'16 si16\)} si16 si16
       | <<{la8.\( si16\)}\\{fad8.\( sol16\)}>> 
        \autoBeamOff do'8 do'8\upbow \autoBeamOn
