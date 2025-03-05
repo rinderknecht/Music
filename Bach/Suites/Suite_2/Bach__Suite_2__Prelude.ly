@@ -122,7 +122,7 @@ stopBarre = \stopTextSpan
     | sol,16[^\allongerUne sib,16( re16 fa16)] sib8.^\vibrato( la16) sol16( fa16 mi16 sol16)
     | la,16^\allongerUne do16( mi16 sol16) do'16 la16( mi16 sol16) fa16( la16 re16) mib16
     | re16^\allongerUne la,16( sib,16 re16) sol16 sib16( la16 do'16) sib16( sol16 re'16) fa16
-    | mi16^\allongerUne si,16( do16 mi16) sol16 re16( mi16 do16) sib,16( la,16 mi16) sib,16
+    | mi16^\allongerUne si,16( do16 mi16) sol16 re16( mi16 do16) sib,16( sol,16 mi16) sib,16
     \bar "||" \mark \default
       fa,8^\allongerUne la,8 do4( do16) sib,16( la,16 sol,16)
     | fad,16^\allongerUne la,16( sib,16 do16) re,16 do16( sib,16 la,16) fad16 mib16( re16 do16)
